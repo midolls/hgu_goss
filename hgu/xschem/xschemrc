@@ -1,0 +1,17 @@
+
+
+#### set this variable according to your installation
+set PDK_ROOT /home/schippes/share/pdk
+# set PDK_ROOT .../share/pdk
+
+
+set PDK sky130A
+set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/ngspice
+set SKYWATER_STDCELLS ${PDK_ROOT}/${PDK}/libs.ref/sky130_fd_sc_hd/spice
+
+
+set XSCHEM_LIBRARY_PATH $XSCHEM_SHAREDIR/xschem_library
+append XSCHEM_LIBRARY_PATH :[pwd]
+append XSCHEM_LIBRARY_PATH :$PDK_ROOT/$PDK/libs.tech/xschem
+set netlist_dir [pwd]
+
