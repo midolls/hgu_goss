@@ -157,7 +157,7 @@ N 890 -850 910 -850 {
 lab=tah_vn}
 N 1320 -550 1320 -530 {
 lab=VREF}
-N 1360 -550 1360 -530 {
+N 1350 -550 1350 -530 {
 lab=VSS}
 N 1740 -950 1740 -930 {
 lab=tah_vp}
@@ -175,11 +175,13 @@ N 510 -920 580 -920 {
 lab=vip}
 N 1380 -1270 1380 -1250 {
 lab=VDD}
+N 1380 -550 1380 -530 {
+lab=VDD}
 C {hgu_sarlogic.sym} 2510 -900 0 0 {name=x1}
 C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
-C {devices/lab_wire.sym} 1360 -545 2 1 {name=p4 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1350 -545 2 1 {name=p4 sig_type=std_logic lab=VSS}
 C {hgu_tah.sym} 650 -900 0 0 {name=x21}
 C {devices/lab_wire.sym} 570 -920 0 0 {name=p29 sig_type=std_logic lab=vip
 
@@ -378,3 +380,4 @@ C {devices/lab_pin.sym} 1430 -280 1 1 {name=p98 sig_type=std_logic lab=result2_s
 C {hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
 C {hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
 C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 1380 -545 2 1 {name=p17 sig_type=std_logic lab=VDD}
