@@ -95,7 +95,7 @@ N -300 20 -300 40 {
 lab=vin}
 N -1030 -600 -110 -600 {
 lab=VSS}
-C {/foss/designs/goss_test/module/tah/tah.sym} -160 -140 0 0 {name=x1}
+C {../xschem/hgu_tah.sym} -160 -140 0 0 {name=x1}
 C {devices/vsource.sym} -520 -190 0 0 {name=V2 value=1.8
 }
 C {devices/gnd.sym} -520 -160 0 0 {name=l1 lab=GND}
@@ -187,7 +187,7 @@ C {devices/lab_wire.sym} -410 100 0 0 {name=p2 sig_type=std_logic lab=vip
 C {devices/lab_wire.sym} -200 110 0 0 {name=p10 sig_type=std_logic lab=vin
 
 }
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sample_clk_gen.sym} -370 -370 0 0 {name=x3}
+C {../xschem/sample_clk_gen.sym} -370 -370 0 0 {name=x3}
 C {devices/vdd.sym} -970 -540 1 0 {name=l4 lab=cap_ctrl_code[7]}
 C {devices/vdd.sym} -860 -540 1 0 {name=l9 lab=cap_ctrl_code[6]}
 C {devices/vdd.sym} -750 -540 1 0 {name=l18 lab=cap_ctrl_code[5]}

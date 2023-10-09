@@ -173,12 +173,12 @@ N 2070 -920 2360 -920 {
 lab=COMP_RESULT}
 N 510 -920 580 -920 {
 lab=vip}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/jh_top.sym} 2510 -900 0 0 {name=x1}
-C {/foss/designs/goss_test/module/comparator/comp.sym} 1910 -900 0 0 {name=x2}
-C {/foss/designs/goss_test/module/cdac/cdac_half.sym} 510 -890 0 0 {name=x3}
-C {/foss/designs/goss_test/module/cdac/cdac_half.sym} 510 -910 2 1 {name=x4}
+C {hgu_sarlogic.sym} 2510 -900 0 0 {name=x1}
+C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
+C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
+C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
 C {devices/lab_wire.sym} 1360 -545 2 1 {name=p4 sig_type=std_logic lab=VSS}
-C {/foss/designs/goss_test/module/tah/tah.sym} 650 -900 0 0 {name=x21}
+C {hgu_tah.sym} 650 -900 0 0 {name=x21}
 C {devices/lab_wire.sym} 570 -920 0 0 {name=p29 sig_type=std_logic lab=vip
 
 }
@@ -298,7 +298,7 @@ C {devices/vsource.sym} 720 -560 0 0 {name=V57 value=0}
 C {devices/vsource.sym} 800 -560 0 0 {name=V60 value="PULSE(0 1.8 0 10p 10p 50n 100n)"}
 C {devices/gnd.sym} 800 -530 0 0 {name=l57 lab=GND}
 C {devices/lab_pin.sym} 800 -590 2 0 {name=p75 sig_type=std_logic lab=EXT_CLK}
-C {/foss/designs/goss_test/module/vref_gen/vref_gen.sym} 1800 -560 0 0 {name=x5}
+C {hgu_vgen_vref.sym} 1800 -560 0 0 {name=x5}
 C {devices/lab_wire.sym} 1940 -620 2 0 {name=p9 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1870 -570 0 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1870 -670 0 0 {name=p78 sig_type=std_logic lab=VDD}
@@ -319,41 +319,59 @@ C {devices/vsource.sym} 2230 -460 3 0 {name=V58 value=1.8}
 C {devices/gnd.sym} 2260 -460 0 0 {name=l55 lab=GND}
 C {devices/vsource.sym} 2230 -490 3 0 {name=V59 value=1.8}
 C {devices/gnd.sym} 2260 -490 0 0 {name=l56 lab=GND}
-C {devices/lab_pin.sym} 1060 -1340 1 0 {name=p14 sig_type=std_logic lab=result_sw[7]}
-C {devices/lab_pin.sym} 1060 -460 3 0 {name=p16 sig_type=std_logic lab=result_sw_b[7]}
-C {devices/lab_pin.sym} 1090 -1340 1 0 {name=p17 sig_type=std_logic lab=result_sw[6]}
-C {devices/lab_pin.sym} 1090 -460 3 0 {name=p18 sig_type=std_logic lab=result_sw_b[6]}
-C {devices/lab_pin.sym} 1120 -1340 1 0 {name=p19 sig_type=std_logic lab=result_sw[5]}
-C {devices/lab_pin.sym} 1120 -460 3 0 {name=p20 sig_type=std_logic lab=result_sw_b[5]}
-C {devices/lab_pin.sym} 1150 -1340 1 0 {name=p21 sig_type=std_logic lab=result_sw[4]}
-C {devices/lab_pin.sym} 1150 -460 3 0 {name=p22 sig_type=std_logic lab=result_sw_b[4]}
-C {devices/lab_pin.sym} 1180 -1340 1 0 {name=p23 sig_type=std_logic lab=result_sw[3]}
-C {devices/lab_pin.sym} 1180 -460 3 0 {name=p24 sig_type=std_logic lab=result_sw_b[3]}
-C {devices/lab_pin.sym} 1210 -1340 1 0 {name=p28 sig_type=std_logic lab=result_sw[2]}
-C {devices/lab_pin.sym} 1210 -460 3 0 {name=p76 sig_type=std_logic lab=result_sw_b[2]}
-C {devices/lab_pin.sym} 1240 -1340 1 0 {name=p77 sig_type=std_logic lab=result_sw[1]}
-C {devices/lab_pin.sym} 1240 -460 3 0 {name=p80 sig_type=std_logic lab=result_sw_b[1]}
 C {devices/lab_pin.sym} 2660 -860 2 0 {name=p81 sig_type=std_logic lab=result_sw[1:7]}
 C {devices/lab_pin.sym} 2660 -840 2 0 {name=p82 sig_type=std_logic lab=result_sw_b[1:7]}
 C {devices/lab_pin.sym} 2660 -820 2 0 {name=p83 sig_type=std_logic lab=result2_sw[1:7]}
 C {devices/lab_pin.sym} 2660 -800 2 0 {name=p84 sig_type=std_logic lab=result2_sw_b[1:7]}
-C {devices/lab_pin.sym} 1610 -1340 3 1 {name=p85 sig_type=std_logic lab=result2_sw[7]}
-C {devices/lab_pin.sym} 1580 -1340 3 1 {name=p86 sig_type=std_logic lab=result2_sw[6]}
-C {devices/lab_pin.sym} 1550 -1340 3 1 {name=p87 sig_type=std_logic lab=result2_sw[5]}
-C {devices/lab_pin.sym} 1520 -1340 3 1 {name=p88 sig_type=std_logic lab=result2_sw[4]}
-C {devices/lab_pin.sym} 1490 -1340 3 1 {name=p89 sig_type=std_logic lab=result2_sw[3]}
-C {devices/lab_pin.sym} 1460 -1340 3 1 {name=p90 sig_type=std_logic lab=result2_sw[2]}
-C {devices/lab_pin.sym} 1430 -1340 3 1 {name=p91 sig_type=std_logic lab=result2_sw[1]}
-C {devices/lab_pin.sym} 1610 -460 1 1 {name=p92 sig_type=std_logic lab=result2_sw_b[7]}
-C {devices/lab_pin.sym} 1580 -460 1 1 {name=p93 sig_type=std_logic lab=result2_sw_b[6]}
-C {devices/lab_pin.sym} 1550 -460 1 1 {name=p94 sig_type=std_logic lab=result2_sw_b[5]}
-C {devices/lab_pin.sym} 1520 -460 1 1 {name=p95 sig_type=std_logic lab=result2_sw_b[4]}
-C {devices/lab_pin.sym} 1490 -460 1 1 {name=p96 sig_type=std_logic lab=result2_sw_b[3]}
-C {devices/lab_pin.sym} 1460 -460 1 1 {name=p97 sig_type=std_logic lab=result2_sw_b[2]}
-C {devices/lab_pin.sym} 1430 -460 1 1 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
 C {devices/lab_pin.sym} 1970 -1010 2 0 {name=p27 sig_type=std_logic lab=X}
 C {devices/lab_pin.sym} 1970 -990 2 0 {name=p5 sig_type=std_logic lab=Y}
 C {devices/lab_pin.sym} 1970 -1050 2 0 {name=p6 sig_type=std_logic lab=P}
 C {devices/lab_pin.sym} 1970 -1030 2 0 {name=p25 sig_type=std_logic lab=Q}
 C {devices/lab_pin.sym} 1970 -970 2 0 {name=p26 sig_type=std_logic lab=X_drive}
 C {devices/lab_pin.sym} 1970 -950 2 0 {name=p35 sig_type=std_logic lab=Y_drive}
+C {devices/lab_pin.sym} 1060 -1520 1 0 {name=p36 sig_type=std_logic lab=result_sw[7]}
+C {devices/lab_pin.sym} 1090 -1520 1 0 {name=p37 sig_type=std_logic lab=result_sw[6]}
+C {devices/lab_pin.sym} 1120 -1520 1 0 {name=p38 sig_type=std_logic lab=result_sw[5]}
+C {devices/lab_pin.sym} 1150 -1520 1 0 {name=p44 sig_type=std_logic lab=result_sw[4]}
+C {devices/lab_pin.sym} 1180 -1520 1 0 {name=p46 sig_type=std_logic lab=result_sw[3]}
+C {devices/lab_pin.sym} 1210 -1520 1 0 {name=p47 sig_type=std_logic lab=result_sw[2]}
+C {devices/lab_pin.sym} 1240 -1520 1 0 {name=p48 sig_type=std_logic lab=result_sw[1]}
+C {devices/lab_pin.sym} 1610 -1520 3 1 {name=p49 sig_type=std_logic lab=result2_sw[7]}
+C {devices/lab_pin.sym} 1580 -1520 3 1 {name=p50 sig_type=std_logic lab=result2_sw[6]}
+C {devices/lab_pin.sym} 1550 -1520 3 1 {name=p51 sig_type=std_logic lab=result2_sw[5]}
+C {devices/lab_pin.sym} 1520 -1520 3 1 {name=p52 sig_type=std_logic lab=result2_sw[4]}
+C {devices/lab_pin.sym} 1490 -1520 3 1 {name=p53 sig_type=std_logic lab=result2_sw[3]}
+C {devices/lab_pin.sym} 1460 -1520 3 1 {name=p54 sig_type=std_logic lab=result2_sw[2]}
+C {devices/lab_pin.sym} 1430 -1520 3 1 {name=p55 sig_type=std_logic lab=result2_sw[1]}
+C {/foss/designs/goss_test/module/sw_buffer.sym} 1150 -1420 0 0 {name=x6}
+C {/foss/designs/goss_test/module/sw_buffer.sym} 1520 -1420 0 1 {name=x7}
+C {devices/lab_wire.sym} 1060 -1300 0 0 {name=p56 sig_type=std_logic lab=sw6
+}
+C {devices/lab_wire.sym} 1090 -1300 0 0 {name=p57 sig_type=std_logic lab=sw5
+}
+C {devices/lab_wire.sym} 1120 -1300 0 0 {name=p58 sig_type=std_logic lab=sw4
+}
+C {devices/lab_wire.sym} 1150 -1300 0 0 {name=p59 sig_type=std_logic lab=sw3
+}
+C {devices/lab_wire.sym} 1180 -1300 0 0 {name=p60 sig_type=std_logic lab=sw2
+}
+C {devices/lab_wire.sym} 1210 -1300 0 0 {name=p61 sig_type=std_logic lab=sw1
+}
+C {devices/lab_wire.sym} 1240 -1300 0 0 {name=p62 sig_type=std_logic lab=sw0
+}
+C {devices/lab_pin.sym} 1060 -280 3 0 {name=p16 sig_type=std_logic lab=result_sw_b[7]}
+C {devices/lab_pin.sym} 1090 -280 3 0 {name=p18 sig_type=std_logic lab=result_sw_b[6]}
+C {devices/lab_pin.sym} 1120 -280 3 0 {name=p20 sig_type=std_logic lab=result_sw_b[5]}
+C {devices/lab_pin.sym} 1150 -280 3 0 {name=p22 sig_type=std_logic lab=result_sw_b[4]}
+C {devices/lab_pin.sym} 1180 -280 3 0 {name=p24 sig_type=std_logic lab=result_sw_b[3]}
+C {devices/lab_pin.sym} 1210 -280 3 0 {name=p76 sig_type=std_logic lab=result_sw_b[2]}
+C {devices/lab_pin.sym} 1240 -280 3 0 {name=p80 sig_type=std_logic lab=result_sw_b[1]}
+C {devices/lab_pin.sym} 1610 -280 1 1 {name=p92 sig_type=std_logic lab=result2_sw_b[7]}
+C {devices/lab_pin.sym} 1580 -280 1 1 {name=p93 sig_type=std_logic lab=result2_sw_b[6]}
+C {devices/lab_pin.sym} 1550 -280 1 1 {name=p94 sig_type=std_logic lab=result2_sw_b[5]}
+C {devices/lab_pin.sym} 1520 -280 1 1 {name=p95 sig_type=std_logic lab=result2_sw_b[4]}
+C {devices/lab_pin.sym} 1490 -280 1 1 {name=p96 sig_type=std_logic lab=result2_sw_b[3]}
+C {devices/lab_pin.sym} 1460 -280 1 1 {name=p97 sig_type=std_logic lab=result2_sw_b[2]}
+C {devices/lab_pin.sym} 1430 -280 1 1 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
+C {/foss/designs/goss_test/module/sw_buffer.sym} 1150 -380 2 1 {name=x8}
+C {/foss/designs/goss_test/module/sw_buffer.sym} 1520 -380 2 0 {name=x9}

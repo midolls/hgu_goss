@@ -33,13 +33,13 @@ N 470 -700 470 -660 {
 lab=tah<31:0>}
 N 290 -700 290 -660 {
 lab=tah<63:0>}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1300 -750 2 0 {name=x1 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1130 -750 2 0 {name=x2[1:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 970 -750 2 0 {name=x3[3:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 800 -750 2 0 {name=x4[7:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 640 -750 2 0 {name=x5[15:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 470 -750 2 0 {name=x6[31:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 290 -750 2 0 {name=x7[63:0] csize=1}
+C {hgu_cdac_unit.sym} 1300 -750 2 0 {name=x1 csize=1}
+C {hgu_cdac_unit.sym} 1130 -750 2 0 {name=x2[1:0] csize=1}
+C {hgu_cdac_unit.sym} 970 -750 2 0 {name=x3[3:0] csize=1}
+C {hgu_cdac_unit.sym} 800 -750 2 0 {name=x4[7:0] csize=1}
+C {hgu_cdac_unit.sym} 640 -750 2 0 {name=x5[15:0] csize=1}
+C {hgu_cdac_unit.sym} 470 -750 2 0 {name=x6[31:0] csize=1}
+C {hgu_cdac_unit.sym} 290 -750 2 0 {name=x7[63:0] csize=1}
 C {devices/iopin.sym} 1300 -840 0 0 {name=p1 lab=drv<0>
 }
 C {devices/iopin.sym} 1130 -840 0 0 {name=p2 lab=drv<1:0>}

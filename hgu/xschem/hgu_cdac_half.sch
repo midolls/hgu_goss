@@ -96,12 +96,12 @@ N 940 -440 940 -390 {
 lab=tb<1> bus=true}
 N 890 -440 890 -390 {
 lab=tb<0>}
-C {/foss/designs/goss_test/module/cdac/8bit_cdac_array.sym} 370 -420 0 0 {name=x1}
-C {/foss/designs/goss_test/module/cdac/cdac_drv.sym} 750 -690 0 0 {name=x2}
-C {/foss/designs/goss_test/module/cdac/8bit_cdac_array.sym} 990 -420 0 1 {name=x3}
-C {/foss/designs/goss_test/module/cdac/cdac_drv.sym} 610 -690 0 1 {name=x4}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 610 -490 2 0 {name=x9 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 750 -490 2 0 {name=x10 csize=1}
+C {hgu_cdac_8bit_array.sym} 370 -420 0 0 {name=x1}
+C {hgu_cdac_drv.sym} 750 -690 0 0 {name=x2}
+C {hgu_cdac_8bit_array.sym} 990 -420 0 1 {name=x3}
+C {hgu_cdac_drv.sym} 610 -690 0 1 {name=x4}
+C {hgu_cdac_unit.sym} 610 -490 2 0 {name=x9 csize=1}
+C {hgu_cdac_unit.sym} 750 -490 2 0 {name=x10 csize=1}
 C {devices/iopin.sym} 120 -810 3 0 {name=p2 lab=d<6>}
 C {devices/iopin.sym} 180 -810 3 0 {name=p3 lab=d<5>}
 C {devices/iopin.sym} 240 -810 3 0 {name=p4 lab=d<4>
