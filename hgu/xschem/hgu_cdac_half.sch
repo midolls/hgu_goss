@@ -141,3 +141,6 @@ C {devices/iopin.sym} 890 -390 1 0 {name=p34 lab=tb<0>}
 C {devices/lab_pin.sym} 680 -580 1 0 {name=p35 sig_type=std_logic lab=VSS}
 C {devices/iopin.sym} 610 -440 3 1 {name=p36 lab=tu}
 C {devices/iopin.sym} 750 -440 3 1 {name=p37 lab=tub}
+C {devices/ipin.sym} -80 -760 0 0 {name=p38 lab=VDD}
+C {devices/lab_pin.sym} 530 -760 1 0 {name=p39 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 830 -760 1 0 {name=p40 sig_type=std_logic lab=VDD}

@@ -14,9 +14,9 @@ lab=sw<3>}
 N 330 -310 330 -150 {
 lab=sw<2>}
 N 360 -390 360 -230 {
-lab=sw<3>}
+lab=sar_val<2>}
 N 390 -390 390 -230 {
-lab=sw<2>}
+lab=sar_val<1>}
 C {sky130_stdcells/buf_1.sym} 330 -350 1 0 {name=x6 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_1.sym} 270 -350 1 0 {name=x7 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_1.sym} 210 -350 1 0 {name=x9 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }

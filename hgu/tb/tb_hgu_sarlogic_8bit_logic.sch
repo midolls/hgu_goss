@@ -38,7 +38,7 @@ C {devices/lab_pin.sym} 90 -370 0 0 {name=p1 sig_type=std_logic lab=clk}
 C {devices/vsource.sym} 90 -430 0 0 {name=V12 value="PULSE(0 1.8 0 5p 5p 10n 100n)"}
 C {devices/gnd.sym} 90 -400 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 90 -460 0 0 {name=p7 sig_type=std_logic lab=reset}
-C {./../xschem/8bit_sar_logic.sym} 590 -310 0 0 {name=x3 csize=0.001}
+C {../xschem/hgu_sarlogic_8bit_logic.sym} 590 -310 0 0 {name=x3 csize=0.001}
 C {devices/capa.sym} 770 -360 3 0 {name=C1
 m=1
 value=10f

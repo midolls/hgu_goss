@@ -13,8 +13,6 @@ N 310 -370 330 -370 {
 lab=VDD}
 N 330 -400 330 -370 {
 lab=VDD}
-N 310 -400 330 -400 {
-lab=VDD}
 N 310 -260 330 -260 {
 lab=VSS}
 N 330 -260 330 -230 {
@@ -31,10 +29,15 @@ N 200 -310 270 -310 {
 lab=IN}
 N 310 -310 390 -310 {
 lab=OUT}
-N 310 -230 310 -210 {}
+N 310 -230 310 -210 {
+lab=VSS}
+N 330 -440 330 -400 {
+lab=VDD}
+N 200 -440 330 -440 {
+lab=VDD}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Stefan Schippers"}
 C {devices/ipin.sym} 200 -310 0 0 {name=p4 lab=IN}
-C {devices/ipin.sym} 200 -420 0 0 {name=p5 lab=VDD}
+C {devices/ipin.sym} 200 -420 0 0 {name=p5 lab=VREF}
 C {devices/ipin.sym} 200 -210 0 0 {name=p6 lab=VSS}
 C {devices/opin.sym} 390 -310 0 0 {name=p1 lab=OUT}
 C {sky130_fd_pr/nfet_01v8.sym} 290 -260 0 0 {name=M1
@@ -65,3 +68,4 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/ipin.sym} 200 -440 0 0 {name=p2 lab=VDD}
