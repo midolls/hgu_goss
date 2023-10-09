@@ -78,64 +78,64 @@ lab=tah_vp}
 N 1610 -850 1740 -850 {
 lab=tah_vn}
 N 1060 -1340 1060 -1250 {
-lab=result_sw[7]}
+lab=sw6}
 N 1090 -1340 1090 -1250 {
-lab=result_sw[6]}
+lab=sw5}
 N 1120 -1340 1120 -1250 {
-lab=result_sw[5]}
+lab=sw4}
 N 1150 -1340 1150 -1250 {
-lab=result_sw[4]}
+lab=sw3}
 N 1180 -1340 1180 -1250 {
-lab=result_sw[3]}
+lab=sw2}
 N 1210 -1340 1210 -1250 {
-lab=result_sw[2]}
+lab=sw1}
 N 1240 -1340 1240 -1250 {
-lab=result_sw[1]}
+lab=sw0}
 N 1430 -1340 1430 -1250 {
-lab=result2_sw[1]}
+lab=#net1}
 N 1460 -1340 1460 -1250 {
-lab=result2_sw[2]}
+lab=#net2}
 N 1490 -1340 1490 -1250 {
-lab=result2_sw[3]}
+lab=#net3}
 N 1520 -1340 1520 -1250 {
-lab=result2_sw[4]}
+lab=#net4}
 N 1550 -1340 1550 -1250 {
-lab=result2_sw[5]}
+lab=#net5}
 N 1580 -1340 1580 -1250 {
-lab=result2_sw[6]}
+lab=#net6}
 N 1610 -1340 1610 -1250 {
-lab=result2_sw[7]}
+lab=#net7}
 N 1240 -550 1240 -460 {
-lab=result_sw_b[1]}
+lab=#net8}
 N 1210 -550 1210 -460 {
-lab=result_sw_b[2]}
+lab=#net9}
 N 1180 -550 1180 -460 {
-lab=result_sw_b[3]}
+lab=#net10}
 N 1150 -550 1150 -460 {
-lab=result_sw_b[4]}
+lab=#net11}
 N 1120 -550 1120 -460 {
-lab=result_sw_b[5]}
+lab=#net12}
 N 1090 -550 1090 -460 {
-lab=result_sw_b[6]}
+lab=#net13}
 N 1060 -550 1060 -460 {
-lab=result_sw_b[7]}
+lab=#net14}
 N 1610 -550 1610 -460 {
-lab=result2_sw_b[7]}
+lab=#net15}
 N 1580 -550 1580 -460 {
-lab=result2_sw_b[6]}
+lab=#net16}
 N 1550 -550 1550 -460 {
-lab=result2_sw_b[5]}
+lab=#net17}
 N 1520 -550 1520 -460 {
-lab=result2_sw_b[4]}
+lab=#net18}
 N 1490 -550 1490 -460 {
-lab=result2_sw_b[3]}
+lab=#net19}
 N 1460 -550 1460 -460 {
-lab=result2_sw_b[2]}
+lab=#net20}
 N 1430 -550 1430 -460 {
-lab=result2_sw_b[1]}
+lab=#net21}
 N 1320 -1270 1320 -1250 {
 lab=VREF}
-N 1360 -1270 1360 -1250 {
+N 1350 -1270 1350 -1250 {
 lab=VSS}
 N 800 -930 880 -930 {
 lab=tah_vp}
@@ -173,6 +173,8 @@ N 2070 -920 2360 -920 {
 lab=COMP_RESULT}
 N 510 -920 580 -920 {
 lab=vip}
+N 1380 -1270 1380 -1250 {
+lab=VDD}
 C {hgu_sarlogic.sym} 2510 -900 0 0 {name=x1}
 C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
@@ -193,7 +195,7 @@ C {devices/gnd.sym} 720 -820 0 0 {name=l25 lab=GND}
 C {devices/vdd.sym} 720 -980 0 0 {name=l26 lab=VDD}
 C {devices/lab_wire.sym} 1320 -1270 0 0 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1320 -545 2 1 {name=p3 sig_type=std_logic lab=VREF}
-C {devices/lab_wire.sym} 1360 -1270 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1350 -1270 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 510 -950 2 0 {name=V5 value="SINE(0.9 0.45 2MEG 0 0 0)"}
 C {devices/gnd.sym} 510 -980 2 0 {name=l23 lab=GND}
 C {devices/vsource.sym} 510 -850 0 1 {name=V6 value="SINE(0.9 0.45 2MEG 0 0 180)"}
@@ -375,3 +377,4 @@ C {devices/lab_pin.sym} 1460 -280 1 1 {name=p97 sig_type=std_logic lab=result2_s
 C {devices/lab_pin.sym} 1430 -280 1 1 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
 C {hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
 C {hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
+C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
