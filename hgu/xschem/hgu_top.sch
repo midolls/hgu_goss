@@ -380,4 +380,8 @@ C {devices/lab_pin.sym} 1430 -280 1 1 {name=p98 sig_type=std_logic lab=result2_s
 C {hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
 C {hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
 C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
+<<<<<<< HEAD
 C {devices/lab_wire.sym} 1380 -545 2 1 {name=p17 sig_type=std_logic lab=VDD}
+=======
+C {devices/lab_wire.sym} 1380 -530 2 1 {name=p17 sig_type=std_logic lab=VDD}
+>>>>>>> 6e2dd7e (jh_1010_just_run_sim)
