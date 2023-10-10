@@ -81,7 +81,7 @@ N 420 -490 420 -330 {
 lab=VDD}
 N -420 -450 410 -450 {
 lab=VREF}
-C {hgu_inverter.sym} -340 -320 1 0 {name=x7[63:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} -340 -320 1 0 {name=x7[63:0] multp=1 multn=1}
 C {devices/ipin.sym} -420 -450 0 0 {name=p1 lab=VREF}
 C {devices/ipin.sym} -420 -190 0 0 {name=p2 lab=VSS}
 C {devices/ipin.sym} -340 -380 1 0 {name=p3 lab=SAR<6>}
@@ -105,10 +105,10 @@ C {devices/opin.sym} 260 -250 1 0 {name=p14 lab=C<1:0>
 }
 C {devices/opin.sym} 380 -250 1 0 {name=p15 lab=C<0>
 }
-C {hgu_inverter.sym} 380 -320 1 0 {name=x1 multp=1 multn=1}
-C {hgu_inverter.sym} 260 -320 1 0 {name=x2[1:0] multp=1 multn=1}
-C {hgu_inverter.sym} 140 -320 1 0 {name=x3[3:0] multp=1 multn=1}
-C {hgu_inverter.sym} 20 -320 1 0 {name=x4[7:0] multp=1 multn=1}
-C {hgu_inverter.sym} -100 -320 1 0 {name=x5[15:0] multp=1 multn=1}
-C {hgu_inverter.sym} -220 -320 1 0 {name=x6[31:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} 380 -320 1 0 {name=x1 multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} 260 -320 1 0 {name=x2[1:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} 140 -320 1 0 {name=x3[3:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} 20 -320 1 0 {name=x4[7:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} -100 -320 1 0 {name=x5[15:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} -220 -320 1 0 {name=x6[31:0] multp=1 multn=1}
 C {devices/ipin.sym} -420 -490 0 0 {name=p16 lab=VDD}
