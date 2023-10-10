@@ -27,7 +27,7 @@ N 530 -350 530 -270 {
 lab=sample_clk}
 N 510 -440 510 -420 {
 lab=EOB}
-C {hgu_clk_asynch.sym} 710 -350 0 0 {name=x1}
+C {hgu_clk_async.sym} 710 -350 0 0 {name=x1}
 C {hgu_clk_sample.sym} 330 -220 0 0 {name=x2}
 C {hgu_sarlogic_8bit_logic.sym} 1130 -360 0 0 {name=x3 csize=0.001}
 C {devices/lab_pin.sym} 180 -230 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
