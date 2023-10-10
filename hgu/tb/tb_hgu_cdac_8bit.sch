@@ -135,7 +135,7 @@ N 670 -200 670 -110 {
 lab=dnb0}
 N 560 -920 560 -900 {
 lab=VREF}
-N 600 -920 600 -900 {
+N 590 -920 590 -900 {
 lab=VSS}
 N -40 -620 -40 -610 {
 lab=#net1}
@@ -225,14 +225,18 @@ N 850 -110 850 -60 {
 lab=dnb6}
 N 560 -200 560 -180 {
 lab=VREF}
-N 600 -200 600 -180 {
+N 590 -200 590 -180 {
 lab=VSS}
-C {/foss/designs/goss_test/module/cdac/cdac_half.sym} -250 -540 0 0 {name=x1}
-C {/foss/designs/goss_test/module/cdac/cdac_half.sym} -250 -560 2 1 {name=x2}
+N 620 -920 620 -900 {
+lab=VDD}
+N 620 -200 620 -180 {
+lab=VSS}
+C {../xschem/hgu_cdac_half.sym} -250 -540 0 0 {name=x1}
+C {../xschem/hgu_cdac_half.sym} -250 -560 2 1 {name=x2}
 C {devices/vsource.sym} 300 -1020 2 0 {name=V1 value="PULSE(0 1.8 42.5n 1p 1p 157.5n 200n)"
 }
 C {devices/vsource.sym} 330 -1030 2 0 {name=V2 value="PULSE(0 1.8 65n 1p 1p 135n 200n)"}
-C {devices/lab_wire.sym} 600 -195 2 1 {name=p4 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 590 -195 2 1 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/capa.sym} 980 -570 0 0 {name=C1
 m=1
 value=0.01f
@@ -266,7 +270,7 @@ C {devices/vsource.sym} -480 -840 0 0 {name=V12 value=0}
 C {devices/gnd.sym} -480 -810 0 0 {name=l18 lab=GND}
 C {devices/lab_pin.sym} -480 -870 0 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -400 -870 0 0 {name=p9 sig_type=std_logic lab=VREF}
-C {/foss/designs/goss_test/module/tah/tah.sym} -110 -550 0 0 {name=x21}
+C {../xschem/hgu_tah.sym} -110 -550 0 0 {name=x21}
 C {devices/vsource.sym} -140 -730 2 0 {name=V13 value="0 pulse(0 1.8 0 1p 1p 20n 200n)"
 }
 C {devices/vsource.sym} -70 -680 2 1 {name=V14 value="0 pulse(1.8 0 0 1p 1p 20n 200n)"
@@ -308,7 +312,7 @@ C {devices/vsource.sym} 760 -1040 2 0 {name=V18 value=1.8}
 C {devices/vsource.sym} 730 -1030 2 0 {name=V19 value=1.8}
 C {devices/vsource.sym} 700 -1030 2 0 {name=V20 value=1.8}
 C {devices/vsource.sym} 670 -1020 2 0 {name=V21 value=1.8}
-C {devices/lab_wire.sym} 600 -920 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 590 -920 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 300 -1050 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 330 -1060 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 360 -1060 0 0 {name=p12 sig_type=std_logic lab=VSS}
@@ -387,3 +391,5 @@ C {devices/vsource.sym} -300 -440 0 0 {name=V5 value=1.35}
 C {devices/gnd.sym} -300 -410 0 0 {name=l23 lab=GND}
 C {devices/vsource.sym} -250 -440 0 0 {name=V6 value=0.45}
 C {devices/gnd.sym} -250 -410 0 0 {name=l5 lab=GND}
+C {devices/lab_wire.sym} 620 -920 0 0 {name=p2 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 620 -195 2 1 {name=p33 sig_type=std_logic lab=VDD}

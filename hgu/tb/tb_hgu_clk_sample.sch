@@ -57,7 +57,7 @@ C {devices/gnd.sym} 210 -140 0 0 {name=l8 lab=GND}
 C {devices/gnd.sym} 170 -340 1 0 {name=l9 lab=GND}
 C {devices/vdd.sym} 170 -360 3 0 {name=l10 lab=VDD}
 C {devices/vsource.sym} 210 -170 0 0 {name=V4 value=1.8}
-C {sample_clk_gen.sym} 320 -310 0 0 {name=x1}
+C {../xschem/hgu_clk_sample.sym} 320 -310 0 0 {name=x1}
 C {devices/gnd.sym} 170 -280 1 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 170 -300 1 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 170 -320 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}

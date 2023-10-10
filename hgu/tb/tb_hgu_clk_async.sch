@@ -12,7 +12,7 @@ lab=READY}
 C {devices/vsource.sym} 430 -100 0 0 {name=V3 value="PULSE(1.8 0 20n 5p 5p 6n 10n)"}
 C {devices/gnd.sym} 430 -70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 430 -130 0 0 {name=p13 sig_type=std_logic lab=READY}
-C {async_clk_gen.sym} 500 -380 0 0 {name=x1}
+C {../xschem/hgu_clk_async.sym} 500 -380 0 0 {name=x1}
 C {devices/lab_pin.sym} 350 -420 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 350 -400 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 350 -220 0 0 {name=p8 sig_type=std_logic lab=READY}

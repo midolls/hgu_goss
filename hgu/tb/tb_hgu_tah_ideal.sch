@@ -76,7 +76,7 @@ N -20 50 -20 200 {
 lab=vin}
 N -20 250 -20 290 {
 lab=#net2}
-C {/foss/designs/goss_test/module/tah/tah.sym} 120 0 0 0 {name=x1}
+C {../xschem/hgu_tah.sym} 120 0 0 0 {name=x1}
 C {devices/vsource.sym} -240 -50 0 0 {name=V2 value=1.62
 }
 C {devices/gnd.sym} -240 -20 0 0 {name=l1 lab=GND}
@@ -124,9 +124,9 @@ value=0.4p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 310 130 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 90 -180 2 0 {name=V3 value="0 pulse(0 1.62 0 1p 1p 30n 200n)"
+C {devices/vsource.sym} 90 -180 2 0 {name=V3 value="0 pulse(0 1.62 0 1p 1p 20n 200n)"
 }
-C {devices/vsource.sym} 160 -130 2 1 {name=V4 value="0 pulse(1.62 0 0 1p 1p 30n 200n)"
+C {devices/vsource.sym} 160 -130 2 1 {name=V4 value="0 pulse(1.62 0 0 1p 1p 20n 200n)"
 }
 C {devices/gnd.sym} 90 -210 2 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 160 -160 2 0 {name=l7 lab=GND}

@@ -55,7 +55,7 @@ N 490 -450 520 -450 {
 lab=Y_drive}
 N 390 -290 390 -280 {
 lab=clk}
-C {/foss/designs/goss_test/module/comparator/comp.sym} 430 -400 0 0 {name=x1}
+C {../xschem/hgu_comp.sym} 430 -400 0 0 {name=x1}
 C {devices/vsource.sym} 100 -80 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 180 -80 0 0 {name=V2 value=0}
 C {devices/gnd.sym} 180 -40 0 0 {name=l1 lab=GND}

@@ -47,12 +47,12 @@ C {devices/vdd.sym} 780 -160 0 0 {name=l6 lab=VSS}
 C {devices/gnd.sym} 780 -100 0 0 {name=l9 lab=GND}
 C {devices/vsource.sym} 780 -130 0 0 {name=V5 value=0}
 C {devices/vsource.sym} 1310 -130 0 0 {name=V3 value="PULSE(1.8 0 22n 5p 5p 3n 10n)"}
-C {jh_top.sym} 1040 -360 0 0 {name=x4}
-C {devices/lab_pin.sym} 890 -400 0 0 {name=p20 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 890 -380 0 0 {name=p21 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 890 -360 0 0 {name=p22 sig_type=std_logic lab=EXT_CLK}
-C {devices/lab_pin.sym} 890 -340 0 0 {name=p23 sig_type=std_logic lab=COMP_RESULT}
-C {devices/lab_pin.sym} 890 -320 0 0 {name=p24 sig_type=std_logic lab=READY}
+C {../xschem/hgu_sarlogic.sym} 1040 -360 0 0 {name=x4}
+C {devices/lab_pin.sym} 890 -440 0 0 {name=p20 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 890 -420 0 0 {name=p21 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 890 -400 0 0 {name=p22 sig_type=std_logic lab=EXT_CLK}
+C {devices/lab_pin.sym} 890 -380 0 0 {name=p23 sig_type=std_logic lab=COMP_RESULT}
+C {devices/lab_pin.sym} 890 -360 0 0 {name=p24 sig_type=std_logic lab=READY}
 C {devices/lab_pin.sym} 1190 -420 2 0 {name=p25 sig_type=std_logic lab=sar_clk}
 C {devices/lab_pin.sym} 1190 -400 2 0 {name=p26 sig_type=std_logic lab=EOB}
 C {devices/lab_pin.sym} 1190 -380 2 0 {name=p27 sig_type=std_logic lab=result[0:7]}
@@ -66,7 +66,7 @@ device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1320 -320 3 0 {name=p30 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1530 -250 0 0 {name=p120 sig_type=std_logic lab=sel_bit[0]}
 C {devices/lab_pin.sym} 1530 -220 0 0 {name=p1 sig_type=std_logic lab=sel_bit[1]}
-C {devices/lab_pin.sym} 890 -420 0 0 {name=p2 sig_type=std_logic lab=sel_bit[0:1]}
+C {devices/lab_pin.sym} 890 -460 0 0 {name=p2 sig_type=std_logic lab=sel_bit[0:1]}
 C {devices/vsource.sym} 1560 -220 3 0 {name=V6 value=1.8}
 C {devices/gnd.sym} 1590 -220 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 1560 -250 3 0 {name=V7 value=1.8}
@@ -83,7 +83,7 @@ C {devices/vsource.sym} 1650 -110 0 0 {name=V10 value=1.8}
 C {devices/vdd.sym} 1550 -140 0 0 {name=l16 lab=VPWR}
 C {devices/gnd.sym} 1700 -80 0 0 {name=l17 lab=GND}
 C {devices/vsource.sym} 1700 -110 0 0 {name=V11 value=0}
-C {devices/lab_pin.sym} 890 -300 0 0 {name=p3 sig_type=std_logic lab=cap_ctrl_code[0:7]}
+C {devices/lab_pin.sym} 890 -340 0 0 {name=p3 sig_type=std_logic lab=cap_ctrl_code[0:7]}
 C {devices/vdd.sym} 770 -540 1 0 {name=l18 lab=cap_ctrl_code[7]}
 C {devices/vdd.sym} 880 -540 1 0 {name=l19 lab=cap_ctrl_code[6]}
 C {devices/vdd.sym} 990 -540 1 0 {name=l20 lab=cap_ctrl_code[5]}

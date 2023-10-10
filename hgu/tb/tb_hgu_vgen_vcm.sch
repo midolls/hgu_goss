@@ -17,7 +17,7 @@ N 680 -80 770 -80 {
 lab=GND}
 N 770 -160 770 -140 {
 lab=clk}
-C {/foss/designs/goss_test/module/vref_gen/vcm_clkgen.sym} 310 -150 0 0 {name=x1}
+C {../xschem/hgu_vgen_vcm_clkgen.sym} 310 -150 0 0 {name=x1}
 C {devices/lab_wire.sym} 260 -70 2 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 160 -150 0 0 {name=p1 sig_type=std_logic lab=clk
 }

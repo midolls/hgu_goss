@@ -88,4 +88,4 @@ C {devices/lab_pin.sym} 230 -450 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
 C {devices/vsource.sym} 420 -240 0 0 {name=V12 value="PULSE(0 1.8 1n 5p 5p 30n 50n)"}
 C {devices/gnd.sym} 420 -210 0 0 {name=l25 lab=GND}
 C {devices/lab_pin.sym} 420 -270 0 0 {name=p3 sig_type=std_logic lab=EXT_CLK}
-C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 380 -450 0 0 {name=x1}
+C {../xschem/hgu_delay_no_code.sym} 380 -450 0 0 {name=x1}

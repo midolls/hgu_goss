@@ -43,7 +43,7 @@ C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
 .save all
 
 "}
-C {/foss/designs/mySAR_SKY130/xschem/dff_4.sym} 320 -310 0 0 {name=x1}
+C {../xschem/hgu_dff4.sym} 320 -310 0 0 {name=x1}
 C {devices/lab_pin.sym} 170 -360 0 0 {name=p9 sig_type=std_logic lab=D}
 C {devices/gnd.sym} 470 -280 0 0 {name=l3 lab=GND}
 C {devices/capa.sym} 470 -310 0 0 {name=C2

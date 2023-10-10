@@ -49,26 +49,14 @@ N 340 -380 1220 -380 {
 lab=tah_vp}
 N 340 -250 1220 -250 {
 lab=tah_vn}
-N 1070 -760 1070 -630 {
-lab=VREF}
-N 950 -760 950 -630 {
-lab=VREF}
 N 1110 -690 1110 -670 {
 lab=DN2}
 N 990 -690 990 -670 {
 lab=DN1}
-N 950 -760 1220 -760 {
-lab=VREF}
-N 490 -760 490 -630 {
-lab=VREF}
-N 610 -760 610 -630 {
-lab=VREF}
 N 450 -690 450 -670 {
 lab=UP2}
 N 570 -690 570 -670 {
 lab=UP1}
-N 340 -760 610 -760 {
-lab=VREF}
 N 1110 40 1110 60 {
 lab=DNb2}
 N 990 40 990 60 {
@@ -111,30 +99,46 @@ N -110 -280 -110 -240 {
 lab=vip}
 N -60 -270 -60 -240 {
 lab=vin}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 570 -470 2 0 {name=x3 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -470 2 0 {name=x4[1:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 690 -470 2 0 {name=x5 csize=1}
+N 480 -760 480 -620 {
+lab=VREF}
+N 490 -790 490 -640 {
+lab=VDD}
+N 610 -790 610 -640 {
+lab=VDD}
+N 350 -760 600 -760 {
+lab=VREF}
+N 600 -760 600 -620 {
+lab=VREF}
+N 350 -790 610 -790 {
+lab=VDD}
+N 960 -760 1210 -760 {
+lab=VREF}
+N 950 -790 1210 -790 {
+lab=VDD}
+N 960 -760 960 -620 {
+lab=VREF}
+N 1080 -760 1080 -620 {
+lab=VREF}
+N 1070 -790 1070 -640 {
+lab=VDD}
+N 950 -790 950 -640 {
+lab=VDD}
+C {../xschem/hgu_cdac_unit.sym} 570 -470 2 0 {name=x3 csize=1}
+C {../xschem/hgu_cdac_unit.sym} 450 -470 2 0 {name=x4[1:0] csize=1}
+C {../xschem/hgu_cdac_unit.sym} 690 -470 2 0 {name=x5 csize=1}
 C {devices/gnd.sym} 690 -520 2 0 {name=l1 lab=GND}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 990 -470 2 1 {name=x8 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1110 -470 2 1 {name=x9[1:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 870 -470 2 1 {name=x10 csize=1}
+C {../xschem/hgu_cdac_unit.sym} 990 -470 2 1 {name=x8 csize=1}
+C {../xschem/hgu_cdac_unit.sym} 1110 -470 2 1 {name=x9[1:0] csize=1}
+C {../xschem/hgu_cdac_unit.sym} 870 -470 2 1 {name=x10 csize=1}
 C {devices/gnd.sym} 870 -520 2 1 {name=l2 lab=GND}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 510 -140 1 1 {name=x11 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 390 -140 1 1 {name=x12[1:0] multp=1 multn=1 }
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 570 -160 0 1 {name=x13 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -160 0 1 {name=x14[1:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 690 -160 0 1 {name=x15 csize=1}
+C {../xschem/hgu_cdac_unit.sym} 570 -160 0 1 {name=x13 csize=1}
+C {../xschem/hgu_cdac_unit.sym} 450 -160 0 1 {name=x14[1:0] csize=1}
+C {../xschem/hgu_cdac_unit.sym} 690 -160 0 1 {name=x15 csize=1}
 C {devices/gnd.sym} 690 -110 0 1 {name=l3 lab=GND}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 990 -160 0 0 {name=x18 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1110 -160 0 0 {name=x19[1:0] csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 870 -160 0 0 {name=x20 csize=1}
+C {../xschem/hgu_cdac_unit.sym} 990 -160 0 0 {name=x18 csize=1}
+C {../xschem/hgu_cdac_unit.sym} 1110 -160 0 0 {name=x19[1:0] csize=1}
+C {../xschem/hgu_cdac_unit.sym} 870 -160 0 0 {name=x20 csize=1}
 C {devices/gnd.sym} 870 -110 0 0 {name=l4 lab=GND}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1050 -140 3 0 {name=x16 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1170 -140 3 0 {name=x17[1:0] multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1050 -490 3 1 {name=x1 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1170 -490 3 1 {name=x2[1:0] multp=1 multn=1 }
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 510 -490 1 0 {name=x6 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 390 -490 1 0 {name=x7[1:0] multp=1 multn=1}
 C {devices/capa.sym} 1220 -350 0 0 {name=C1
 m=1
 value=0.01f
@@ -191,23 +195,12 @@ C {devices/vsource.sym} -210 -610 0 0 {name=V11 value=0.9}
 C {devices/gnd.sym} -210 -580 0 0 {name=l17 lab=GND}
 C {devices/vsource.sym} -290 -610 0 0 {name=V12 value=0}
 C {devices/gnd.sym} -290 -580 0 0 {name=l18 lab=GND}
-C {devices/lab_pin.sym} 410 0 1 0 {name=p25 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 530 0 1 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 410 -630 0 0 {name=p18 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 530 -630 0 0 {name=p19 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1150 -630 0 1 {name=p20 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1030 -630 0 1 {name=p26 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1150 0 3 1 {name=p4 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1030 0 3 1 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -290 -640 0 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -210 -640 0 0 {name=p8 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 350 -760 0 0 {name=p10 sig_type=std_logic lab=VREF}
-C {devices/lab_pin.sym} 490 0 3 0 {name=p3 sig_type=std_logic lab=VREF}
-C {devices/lab_pin.sym} 1220 -760 0 1 {name=p11 sig_type=std_logic lab=VREF}
-C {devices/lab_pin.sym} 610 0 3 0 {name=p14 sig_type=std_logic lab=VREF}
-C {devices/lab_pin.sym} 950 0 1 0 {name=p16 sig_type=std_logic lab=VREF}
-C {devices/lab_pin.sym} 1070 0 1 0 {name=p27 sig_type=std_logic lab=VREF}
-C {/foss/designs/goss_test/module/tah/tah.sym} 80 -320 0 0 {name=x21}
+C {../xschem/hgu_tah.sym} 80 -320 0 0 {name=x21}
 C {devices/vsource.sym} 50 -500 2 0 {name=V13 value="0 pulse(0 1.8 0 80p 80p 20n 200n)"
 }
 C {devices/vsource.sym} 120 -450 2 1 {name=V14 value="0 pulse(1.8 0 0 80p 80p 20n 200n)"
@@ -239,3 +232,28 @@ C {devices/vsource.sym} -110 -210 0 0 {name=V1 value=1.35}
 C {devices/gnd.sym} -110 -180 0 0 {name=l23 lab=GND}
 C {devices/vsource.sym} -60 -210 0 0 {name=V2 value=0.45}
 C {devices/gnd.sym} -60 -180 0 0 {name=l5 lab=GND}
+C {../xschem/hgu_inverter.sym} 570 -630 1 0 {name=x2}
+C {../xschem/hgu_inverter.sym} 450 -630 1 0 {name=x1[1:0]}
+C {devices/lab_pin.sym} 350 -790 0 0 {name=p21 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1150 -630 0 1 {name=p20 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1030 -630 0 1 {name=p22 sig_type=std_logic lab=VSS}
+C {../xschem/hgu_inverter.sym} 990 -630 3 1 {name=x1}
+C {../xschem/hgu_inverter.sym} 1110 -630 3 1 {name=x2[1:0]}
+C {devices/lab_pin.sym} 1210 -760 0 1 {name=p26 sig_type=std_logic lab=VREF}
+C {devices/lab_pin.sym} 1210 -790 0 1 {name=p33 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 410 0 2 1 {name=p3 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 530 0 2 1 {name=p11 sig_type=std_logic lab=VSS}
+C {../xschem/hgu_inverter.sym} 570 0 1 1 {name=x4}
+C {../xschem/hgu_inverter.sym} 450 0 1 1 {name=x5[1:0]}
+C {devices/lab_pin.sym} 480 -10 1 0 {name=p14 sig_type=std_logic lab=VREF}
+C {devices/lab_pin.sym} 600 -10 1 0 {name=p17 sig_type=std_logic lab=VREF}
+C {devices/lab_pin.sym} 490 10 3 0 {name=p25 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 610 10 3 0 {name=p34 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1150 0 2 0 {name=p35 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1030 0 2 0 {name=p36 sig_type=std_logic lab=VSS}
+C {../xschem/hgu_inverter.sym} 990 0 3 0 {name=x6}
+C {../xschem/hgu_inverter.sym} 1110 0 3 0 {name=x7[1:0]}
+C {devices/lab_pin.sym} 1080 -10 3 1 {name=p37 sig_type=std_logic lab=VREF}
+C {devices/lab_pin.sym} 960 -10 3 1 {name=p38 sig_type=std_logic lab=VREF}
+C {devices/lab_pin.sym} 1070 10 1 1 {name=p39 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 950 10 1 1 {name=p40 sig_type=std_logic lab=VDD}
