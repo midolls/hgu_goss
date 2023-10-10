@@ -197,7 +197,7 @@ C {hgu_sarlogic.sym} 2510 -900 0 0 {name=x1}
 C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
-C {devices/lab_wire.sym} 1350 -545 2 1 {name=p4 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1350 -530 2 1 {name=p4 sig_type=std_logic lab=VSS}
 C {hgu_tah.sym} 650 -900 0 0 {name=x21}
 C {devices/lab_wire.sym} 570 -920 0 0 {name=p29 sig_type=std_logic lab=vip
 
@@ -212,7 +212,7 @@ C {devices/lab_wire.sym} 570 -880 0 0 {name=p32 sig_type=std_logic lab=vin
 C {devices/gnd.sym} 720 -820 0 0 {name=l25 lab=GND}
 C {devices/vdd.sym} 720 -980 0 0 {name=l26 lab=VDD}
 C {devices/lab_wire.sym} 1320 -1270 0 0 {name=p1 sig_type=std_logic lab=VREF}
-C {devices/lab_wire.sym} 1320 -545 2 1 {name=p3 sig_type=std_logic lab=VREF}
+C {devices/lab_wire.sym} 1320 -530 2 1 {name=p3 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1350 -1270 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 510 -950 2 0 {name=V5 value="SINE(0.9 0.45 2MEG 0 0 0)"}
 C {devices/gnd.sym} 510 -980 2 0 {name=l23 lab=GND}
@@ -319,7 +319,7 @@ C {devices/vsource.sym} 800 -560 0 0 {name=V60 value="PULSE(0 1.8 0 10p 10p 50n 
 C {devices/gnd.sym} 800 -530 0 0 {name=l57 lab=GND}
 C {devices/lab_pin.sym} 800 -590 2 0 {name=p75 sig_type=std_logic lab=EXT_CLK}
 C {hgu_vgen_vref.sym} 1800 -560 0 0 {name=x5}
-C {devices/lab_wire.sym} 1940 -620 2 0 {name=p9 sig_type=std_logic lab=VREF}
+C {devices/lab_wire.sym} 1860 -490 2 0 {name=p9 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1870 -570 0 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1870 -670 0 0 {name=p78 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1810 -620 0 0 {name=p79 sig_type=std_logic lab=EXT_CLK}
@@ -403,3 +403,6 @@ C {devices/lab_wire.sym} 1520 -1300 0 1 {name=p28 sig_type=std_logic lab=swd3
 }
 C {devices/lab_wire.sym} 1490 -1300 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
+C {devices/gnd.sym} 1860 -430 0 0 {name=l1 lab=GND}
+C {devices/vsource.sym} 1860 -460 0 0 {name=V1 value=0.9}
+C {devices/noconn.sym} 1940 -620 2 0 {name=l2}

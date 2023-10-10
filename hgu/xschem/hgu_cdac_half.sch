@@ -6,33 +6,33 @@ V {}
 S {}
 E {}
 N 120 -620 120 -580 {
-lab=#net1 bus=true}
+lab=sw6 bus=true}
 N 180 -620 180 -580 {
-lab=#net2 bus=true}
+lab=sw5 bus=true}
 N 240 -620 240 -580 {
-lab=#net3 bus=true}
+lab=sw4 bus=true}
 N 300 -620 300 -580 {
-lab=#net4 bus=true}
+lab=sw3 bus=true}
 N 360 -620 360 -580 {
-lab=#net5 bus=true}
+lab=sw2 bus=true}
 N 420 -620 420 -580 {
-lab=#net6 bus=true}
+lab=#net1 bus=true}
 N 470 -620 470 -580 {
-lab=#net7 }
+lab=#net2 }
 N 1240 -620 1240 -580 {
-lab=#net8 bus=true}
+lab=swd6 bus=true}
 N 1180 -620 1180 -580 {
-lab=#net9 bus=true}
+lab=swd5 bus=true}
 N 1120 -620 1120 -580 {
-lab=#net10 bus=true}
+lab=swd4 bus=true}
 N 1060 -620 1060 -580 {
-lab=#net11 bus=true}
+lab=swd3 bus=true}
 N 1000 -620 1000 -580 {
-lab=#net12 bus=true}
+lab=swd2 bus=true}
 N 940 -620 940 -580 {
-lab=#net13 bus=true}
+lab=#net3 bus=true}
 N 890 -620 890 -580 {
-lab=#net14}
+lab=#net4}
 N 120 -810 120 -760 {
 lab=d<6> bus=true
 }
@@ -144,3 +144,23 @@ C {devices/iopin.sym} 750 -440 3 1 {name=p37 lab=tub}
 C {devices/ipin.sym} -80 -760 0 0 {name=p38 lab=VDD}
 C {devices/lab_pin.sym} 530 -760 1 0 {name=p39 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 830 -760 1 0 {name=p40 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 120 -590 0 0 {name=p56 sig_type=std_logic lab=sw6
+}
+C {devices/lab_wire.sym} 180 -590 0 0 {name=p57 sig_type=std_logic lab=sw5
+}
+C {devices/lab_wire.sym} 240 -590 0 0 {name=p58 sig_type=std_logic lab=sw4
+}
+C {devices/lab_wire.sym} 300 -590 0 0 {name=p59 sig_type=std_logic lab=sw3
+}
+C {devices/lab_wire.sym} 360 -590 0 0 {name=p60 sig_type=std_logic lab=sw2
+}
+C {devices/lab_wire.sym} 1240 -600 0 1 {name=p41 sig_type=std_logic lab=swd6
+}
+C {devices/lab_wire.sym} 1180 -600 0 1 {name=p42 sig_type=std_logic lab=swd5
+}
+C {devices/lab_wire.sym} 1120 -600 0 1 {name=p43 sig_type=std_logic lab=swd4
+}
+C {devices/lab_wire.sym} 1060 -600 0 1 {name=p44 sig_type=std_logic lab=swd3
+}
+C {devices/lab_wire.sym} 1000 -600 0 1 {name=p63 sig_type=std_logic lab=swd2
+}

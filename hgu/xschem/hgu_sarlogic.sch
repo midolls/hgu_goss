@@ -89,7 +89,7 @@ C {devices/opin.sym} 1290 -200 0 0 {name=p57 lab=vss_sw_b[1:7]}
 C {hgu_sarlogic_sw_ctrl.sym} 1140 -210 0 0 {name=x4}
 C {devices/lab_pin.sym} 990 -220 0 0 {name=p36 sig_type=std_logic lab=sar_result[1:7]}
 C {devices/lab_pin.sym} 990 -200 0 0 {name=p37 sig_type=std_logic lab=check[0:6]}
-C {devices/lab_pin.sym} 990 -180 0 0 {name=p38 sig_type=std_logic lab=READY}
 C {devices/lab_pin.sym} 990 -160 0 0 {name=p39 sig_type=std_logic lab=sample_clk_b}
 C {devices/lab_pin.sym} 990 -260 0 0 {name=p40 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 990 -240 0 0 {name=p41 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 990 -180 0 0 {name=p38 sig_type=std_logic lab=sar_clk}
