@@ -11,7 +11,7 @@ N 90 -20 90 30 {
 lab=MINUS}
 C {devices/capa.sym} 90 -50 0 0 {name=C1
 m=csize
-value=9f
+value=8f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/iopin.sym} 90 -130 0 0 {name=p1 lab=PLUS}
