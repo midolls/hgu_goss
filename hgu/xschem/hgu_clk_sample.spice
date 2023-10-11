@@ -1,0 +1,364 @@
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_sample.sch
+**.subckt hgu_clk_sample VDD VSS SET RESET CLK SAMPLE_CLK
+*+ cap_ctrl_code[0],cap_ctrl_code[1],cap_ctrl_code[2],cap_ctrl_code[3],cap_ctrl_code[4],cap_ctrl_code[5],cap_ctrl_code[6],cap_ctrl_code[7] SAMPLE_CLK_b
+*.ipin VDD
+*.ipin VSS
+*.ipin SET
+*.ipin RESET
+*.ipin CLK
+*.opin SAMPLE_CLK
+*.ipin
+*+ cap_ctrl_code[0],cap_ctrl_code[1],cap_ctrl_code[2],cap_ctrl_code[3],cap_ctrl_code[4],cap_ctrl_code[5],cap_ctrl_code[6],cap_ctrl_code[7]
+*.opin SAMPLE_CLK_b
+x1 net2 CLK RESET SET hgu_clk_div
+x2 VDD net2 net5 VSS cap_ctrl_code[0] cap_ctrl_code[1] cap_ctrl_code[2] cap_ctrl_code[3]
++ cap_ctrl_code[4] cap_ctrl_code[5] cap_ctrl_code[6] cap_ctrl_code[7] hgu_delay DELAY_CAP=8f
+x7 net5 VGND VNB VPB VPWR net1 sky130_fd_sc_hd__inv_1
+C1 net1 VSS 5f m=1
+C2 net2 VSS 5f m=1
+C3 net5 VSS 5f m=1
+x3 net2 net1 VGND VNB VPB VPWR net3 sky130_fd_sc_hd__nand2_1
+XM1 SAMPLE_CLK net3 VSS VSS sky130_fd_pr__nfet_01v8 L=0.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 SAMPLE_CLK net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=3.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net4 net3 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net4 net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 SAMPLE_CLK_b net4 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 SAMPLE_CLK_b net4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.98 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+
+* expanding   symbol:  hgu_clk_div.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_div.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_div.sch
+.subckt hgu_clk_div DIV_CLK CLK RESET SET
+*.opin DIV_CLK
+*.ipin SET
+*.ipin RESET
+*.ipin CLK
+x2 CLK D_loop net1 net2 VGND VNB VPB VPWR DIV_CLK D_loop sky130_fd_sc_hd__dfbbp_1
+x3 SET VGND VNB VPB VPWR net2 sky130_fd_sc_hd__inv_1
+x4 RESET VGND VNB VPB VPWR net1 sky130_fd_sc_hd__inv_1
+.ends
+
+
+* expanding   symbol:  hgu_delay.sym # of pins=5
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay.sch
+.subckt hgu_delay VDD IN OUT VSS CAP_CTRL_CODE[0] CAP_CTRL_CODE[1] CAP_CTRL_CODE[2] CAP_CTRL_CODE[3]
++ CAP_CTRL_CODE[4] CAP_CTRL_CODE[5] CAP_CTRL_CODE[6] CAP_CTRL_CODE[7]  DELAY_CAP=DELAY_CAP
+*.ipin IN
+*.ipin VDD
+*.ipin VSS
+*.opin OUT
+*.ipin
+*+ CAP_CTRL_CODE[0],CAP_CTRL_CODE[1],CAP_CTRL_CODE[2],CAP_CTRL_CODE[3],CAP_CTRL_CODE[4],CAP_CTRL_CODE[5],CAP_CTRL_CODE[6],CAP_CTRL_CODE[7]
+XM1 net1 IN VSS VSS sky130_fd_pr__nfet_01v8 L=3.69 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 IN VDD VDD sky130_fd_pr__pfet_01v8 L=1.5 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VSS net1 VSS VSS sky130_fd_pr__nfet_01v8 L=2.045 W=1.375 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 OUT net1 net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 OUT net1 net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net3 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VDD OUT net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 VSS OUT net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x2 CAP_CTRL_CODE[0] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x3[1] CAP_CTRL_CODE[1] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x3[0] CAP_CTRL_CODE[1] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[3] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[2] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[1] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[0] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[7] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[6] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[5] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[4] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[3] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[2] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[1] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[0] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[15] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[14] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[13] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[12] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[11] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[10] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[9] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[8] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[7] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[6] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[5] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[4] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[3] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[2] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[1] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[0] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[31] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[30] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[29] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[28] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[27] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[26] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[25] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[24] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[23] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[22] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[21] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[20] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[19] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[18] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[17] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[16] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[15] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[14] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[13] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[12] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[11] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[10] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[9] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[8] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[7] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[6] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[5] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[4] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[3] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[2] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[1] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[0] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[63] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[62] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[61] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[60] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[59] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[58] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[57] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[56] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[55] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[54] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[53] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[52] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[51] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[50] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[49] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[48] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[47] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[46] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[45] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[44] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[43] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[42] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[41] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[40] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[39] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[38] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[37] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[36] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[35] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[34] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[33] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[32] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[31] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[30] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[29] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[28] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[27] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[26] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[25] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[24] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[23] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[22] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[21] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[20] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[19] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[18] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[17] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[16] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[15] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[14] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[13] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[12] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[11] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[10] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[9] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[8] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[7] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[6] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[5] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[4] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[3] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[2] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[1] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[0] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[127] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[126] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[125] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[124] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[123] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[122] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[121] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[120] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[119] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[118] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[117] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[116] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[115] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[114] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[113] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[112] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[111] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[110] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[109] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[108] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[107] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[106] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[105] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[104] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[103] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[102] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[101] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[100] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[99] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[98] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[97] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[96] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[95] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[94] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[93] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[92] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[91] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[90] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[89] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[88] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[87] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[86] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[85] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[84] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[83] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[82] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[81] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[80] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[79] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[78] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[77] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[76] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[75] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[74] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[73] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[72] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[71] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[70] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[69] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[68] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[67] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[66] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[65] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[64] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[63] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[62] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[61] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[60] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[59] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[58] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[57] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[56] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[55] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[54] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[53] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[52] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[51] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[50] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[49] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[48] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[47] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[46] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[45] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[44] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[43] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[42] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[41] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[40] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[39] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[38] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[37] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[36] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[35] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[34] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[33] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[32] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[31] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[30] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[29] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[28] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[27] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[26] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[25] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[24] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[23] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[22] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[21] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[20] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[19] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[18] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[17] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[16] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[15] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[14] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[13] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[12] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[11] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[10] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[9] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[8] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[7] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[6] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[5] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[4] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[3] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[2] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[1] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[0] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+.ends
+
+
+* expanding   symbol:  hgu_sw_cap.sym # of pins=3
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sch
+.subckt hgu_sw_cap SW VSS DELAY_SIGNAL  DELAY_CAP=DELAY_CAP
+*.ipin SW
+*.ipin VSS
+*.iopin DELAY_SIGNAL
+C5 net1 VSS DELAY_CAP m=1
+XM14 DELAY_SIGNAL SW net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

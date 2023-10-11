@@ -280,7 +280,7 @@ C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 .OPTIONS savecurrents
-.tran 10ps 450ns
+.tran 10ps 800ns
 
 .control
 	run

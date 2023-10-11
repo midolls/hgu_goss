@@ -10,7 +10,7 @@ lab=VSS}
 N 230 -190 230 -170 {
 lab=#net1}
 C {devices/capa.sym} 230 -140 0 0 {name=C5
-m=m_num
+m=1
 value=DELAY_CAP
 footprint=1206
 device="ceramic capacitor"}
@@ -19,7 +19,7 @@ C {sky130_fd_pr/nfet_01v8.sym} 210 -220 0 0 {name=M14
 L=0.15
 W=0.42
 nf=1 
-mult=m_num
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

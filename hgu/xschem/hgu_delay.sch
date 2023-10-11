@@ -300,11 +300,11 @@ C {devices/lab_pin.sym} 1640 -420 3 0 {name=p11 sig_type=std_logic lab=CAP_CTRL_
 C {devices/lab_pin.sym} 1780 -420 3 0 {name=p12 sig_type=std_logic lab=CAP_CTRL_CODE[2]}
 C {devices/lab_pin.sym} 1920 -420 3 0 {name=p13 sig_type=std_logic lab=CAP_CTRL_CODE[1]}
 C {devices/lab_pin.sym} 2060 -420 3 0 {name=p14 sig_type=std_logic lab=CAP_CTRL_CODE[0]}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 2130 -580 0 0 {name=x2 DELAY_CAP=DELAY_CAP m_num=1}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 1990 -580 0 0 {name=x3[1:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 1850 -580 0 0 {name=x4[3:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 1710 -580 0 0 {name=x5[7:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 1570 -580 0 0 {name=x6[15:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 1430 -580 0 0 {name=x7[31:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 1290 -580 0 0 {name=x8[63:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sw_cap.sym} 1150 -580 0 0 {name=x1[127:0] DELAY_CAP=DELAY_CAP m_num=1}
+C {hgu_sw_cap.sym} 2130 -580 0 0 {name=x2 DELAY_CAP=DELAY_CAP}
+C {hgu_sw_cap.sym} 1990 -580 0 0 {name=x3[1:0] DELAY_CAP=DELAY_CAP}
+C {hgu_sw_cap.sym} 1850 -580 0 0 {name=x4[3:0] DELAY_CAP=DELAY_CAP}
+C {hgu_sw_cap.sym} 1710 -580 0 0 {name=x5[7:0] DELAY_CAP=DELAY_CAP}
+C {hgu_sw_cap.sym} 1570 -580 0 0 {name=x6[15:0] DELAY_CAP=DELAY_CAP}
+C {hgu_sw_cap.sym} 1430 -580 0 0 {name=x7[31:0] DELAY_CAP=DELAY_CAP}
+C {hgu_sw_cap.sym} 1290 -580 0 0 {name=x8[63:0] DELAY_CAP=DELAY_CAP}
+C {hgu_sw_cap.sym} 1150 -580 0 0 {name=x1[127:0] DELAY_CAP=DELAY_CAP}

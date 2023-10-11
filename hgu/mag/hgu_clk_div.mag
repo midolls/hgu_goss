@@ -1,0 +1,65 @@
+magic
+tech sky130A
+timestamp 1697026605
+<< checkpaint >>
+rect -649 1202 1845 1226
+rect -649 1178 2002 1202
+rect -649 326 2159 1178
+rect -668 278 2159 326
+rect -687 230 2159 278
+rect -706 -402 2159 230
+rect -706 -1278 925 -402
+rect -706 -1326 906 -1278
+rect -706 -1350 887 -1326
+rect -549 -1374 887 -1350
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 -19 0 1 -600
+box -19 -24 157 296
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
+timestamp 1683767628
+transform 1 0 138 0 1 -624
+box -19 -24 157 296
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_2
+timestamp 1683767628
+transform 1 0 -38 0 1 -648
+box -19 -24 157 296
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_3
+timestamp 1683767628
+transform 1 0 119 0 1 -672
+box -19 -24 157 296
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_4
+timestamp 1683767628
+transform 1 0 -57 0 1 -696
+box -19 -24 157 296
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_5
+timestamp 1683767628
+transform 1 0 100 0 1 -720
+box -19 -24 157 296
+use sky130_fd_sc_hd__dfbbp_1  x2 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 0 0 1 300
+box -19 -24 1215 296
+use sky130_fd_sc_hd__inv_1  x3
+timestamp 1683767628
+transform 1 0 1215 0 1 276
+box -19 -24 157 296
+use sky130_fd_sc_hd__inv_1  x4
+timestamp 1683767628
+transform 1 0 1372 0 1 252
+box -19 -24 157 296
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 128 0 0 0 DIV_CLK
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 128 0 0 0 CLK
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 128 0 0 0 RESET
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 128 0 0 0 SET
+port 3 nsew
+<< end >>
