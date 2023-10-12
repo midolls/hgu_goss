@@ -1,0 +1,181 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697024668
+<< error_s >>
+rect 2392 813 2433 845
+rect 4822 765 4863 797
+rect 7252 717 7293 749
+rect 9682 669 9723 701
+rect 12112 621 12153 653
+rect 14542 573 14583 605
+rect 16972 525 17013 557
+rect 19402 477 19443 509
+rect 21832 429 21873 461
+rect 24262 381 24303 413
+rect 26692 333 26733 365
+rect 29122 285 29163 317
+rect 31552 237 31593 269
+rect 33982 189 34023 221
+rect 36412 141 36453 173
+rect 38842 93 38883 125
+rect 41272 45 41313 77
+rect 43702 -3 43743 29
+rect 45894 -99 45935 -67
+use sky130_fd_sc_hd__dfbbp_1  x20 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 0 0 1 600
+box -38 -48 2430 592
+use sky130_fd_sc_hd__inv_1  x22[0] $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 51270 0 1 -1176
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[1]
+timestamp 1683767628
+transform 1 0 50956 0 1 -1128
+box -38 -48 314 592
+use sky130_fd_sc_hd__buf_1  x22 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 51584 0 1 -1224
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[2]
+timestamp 1683767628
+transform 1 0 50642 0 1 -1080
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[3]
+timestamp 1683767628
+transform 1 0 50328 0 1 -1032
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[4]
+timestamp 1683767628
+transform 1 0 50014 0 1 -984
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[5]
+timestamp 1683767628
+transform 1 0 49700 0 1 -936
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[6]
+timestamp 1683767628
+transform 1 0 49386 0 1 -888
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[7]
+timestamp 1683767628
+transform 1 0 49072 0 1 -840
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[8]
+timestamp 1683767628
+transform 1 0 48758 0 1 -792
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[9]
+timestamp 1683767628
+transform 1 0 48444 0 1 -744
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[10]
+timestamp 1683767628
+transform 1 0 48130 0 1 -696
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[11]
+timestamp 1683767628
+transform 1 0 47816 0 1 -648
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[12]
+timestamp 1683767628
+transform 1 0 47502 0 1 -600
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[13]
+timestamp 1683767628
+transform 1 0 47188 0 1 -552
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[14]
+timestamp 1683767628
+transform 1 0 46874 0 1 -504
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[15]
+timestamp 1683767628
+transform 1 0 46560 0 1 -456
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[16]
+timestamp 1683767628
+transform 1 0 46246 0 1 -408
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x22[17]
+timestamp 1683767628
+transform 1 0 45932 0 1 -360
+box -38 -48 314 592
+use sky130_fd_sc_hd__dfbbp_1  x27
+timestamp 1683767628
+transform 1 0 2430 0 1 552
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x30
+timestamp 1683767628
+transform 1 0 4860 0 1 504
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x33
+timestamp 1683767628
+transform 1 0 7290 0 1 456
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x36
+timestamp 1683767628
+transform 1 0 9720 0 1 408
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x39
+timestamp 1683767628
+transform 1 0 12150 0 1 360
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x42
+timestamp 1683767628
+transform 1 0 14580 0 1 312
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x45
+timestamp 1683767628
+transform 1 0 17010 0 1 264
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x48
+timestamp 1683767628
+transform 1 0 19440 0 1 216
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x51
+timestamp 1683767628
+transform 1 0 21870 0 1 168
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x54
+timestamp 1683767628
+transform 1 0 24300 0 1 120
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x57
+timestamp 1683767628
+transform 1 0 26730 0 1 72
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x60
+timestamp 1683767628
+transform 1 0 29160 0 1 24
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x63
+timestamp 1683767628
+transform 1 0 31590 0 1 -24
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x66
+timestamp 1683767628
+transform 1 0 34020 0 1 -72
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x69
+timestamp 1683767628
+transform 1 0 36450 0 1 -120
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x72
+timestamp 1683767628
+transform 1 0 38880 0 1 -168
+box -38 -48 2430 592
+use sky130_fd_sc_hd__dfbbp_1  x75
+timestamp 1683767628
+transform 1 0 41310 0 1 -216
+box -38 -48 2430 592
+use sky130_fd_sc_hd__inv_1  x77
+timestamp 1683767628
+transform 1 0 43740 0 1 -264
+box -38 -48 314 592
+use sky130_fd_sc_hd__mux4_4  x78 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 44054 0 1 -312
+box -38 -48 1878 592
+<< end >>

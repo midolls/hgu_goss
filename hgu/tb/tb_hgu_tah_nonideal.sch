@@ -187,7 +187,7 @@ C {devices/lab_wire.sym} -410 100 0 0 {name=p2 sig_type=std_logic lab=vip
 C {devices/lab_wire.sym} -200 110 0 0 {name=p10 sig_type=std_logic lab=vin
 
 }
-C {../xschem/sample_clk_gen.sym} -370 -370 0 0 {name=x3}
+C {../xschem/hgu_clk_sample.sym} -370 -370 0 0 {name=x3}
 C {devices/vdd.sym} -970 -540 1 0 {name=l4 lab=cap_ctrl_code[7]}
 C {devices/vdd.sym} -860 -540 1 0 {name=l9 lab=cap_ctrl_code[6]}
 C {devices/vdd.sym} -750 -540 1 0 {name=l18 lab=cap_ctrl_code[5]}

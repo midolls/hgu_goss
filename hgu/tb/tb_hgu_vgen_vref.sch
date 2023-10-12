@@ -33,7 +33,7 @@ N 250 -190 300 -190 {
 lab=VSS}
 N 250 -190 250 -160 {
 lab=VSS}
-C {/foss/designs/goss_test/module/vref_gen/vref_gen.sym} 140 -190 0 0 {name=x1}
+C {../xschem/hgu_vgen_vref.sym} 140 -190 0 0 {name=x1}
 C {devices/vsource.sym} 450 -90 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 510 -90 0 0 {name=V2 value=0}
 C {devices/vsource.sym} 580 -90 0 0 {name=V3 value="PULSE(0 1.8 0 50p 50p 50n 100n)"}

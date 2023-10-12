@@ -7,22 +7,6 @@ S {}
 E {}
 N -420 -190 340 -190 {
 lab=VSS}
-N -300 -450 -300 -320 {
-lab=VREF}
-N -180 -450 -180 -320 {
-lab=VREF}
-N -60 -450 -60 -320 {
-lab=VREF}
-N 60 -450 60 -320 {
-lab=VREF}
-N 180 -450 180 -320 {
-lab=VREF}
-N 300 -450 300 -320 {
-lab=VREF}
-N 420 -450 420 -320 {
-lab=VREF}
-N -420 -450 420 -450 {
-lab=VREF}
 N -340 -380 -340 -360 {
 lab=SAR<6>}
 N -220 -380 -220 -360 {
@@ -51,13 +35,53 @@ N -260 -320 -260 -190 {
 lab=VSS}
 N -380 -320 -380 -190 {
 lab=VSS}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 320 -180 1 0 {name=x1 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 200 -180 1 0 {name=x2[1:0] multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 80 -180 1 0 {name=x3[3:0] multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} -40 -180 1 0 {name=x4[7:0] multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} -160 -180 1 0 {name=x5[15:0] multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} -280 -180 1 0 {name=x6[31:0] multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} -400 -180 1 0 {name=x7[63:0] multp=1 multn=1}
+N -310 -450 -310 -310 {
+lab=VREF}
+N -310 -450 -310 -310 {
+lab=VREF}
+N -300 -490 -300 -330 {
+lab=VDD}
+N -420 -490 420 -490 {
+lab=VDD}
+N -190 -450 -190 -310 {
+lab=VREF}
+N -190 -450 -190 -310 {
+lab=VREF}
+N -180 -490 -180 -330 {
+lab=VDD}
+N -70 -450 -70 -310 {
+lab=VREF}
+N -70 -450 -70 -310 {
+lab=VREF}
+N -60 -490 -60 -330 {
+lab=VDD}
+N 50 -450 50 -310 {
+lab=VREF}
+N 50 -450 50 -310 {
+lab=VREF}
+N 60 -490 60 -330 {
+lab=VDD}
+N 170 -450 170 -310 {
+lab=VREF}
+N 170 -450 170 -310 {
+lab=VREF}
+N 180 -490 180 -330 {
+lab=VDD}
+N 290 -450 290 -310 {
+lab=VREF}
+N 290 -450 290 -310 {
+lab=VREF}
+N 300 -490 300 -330 {
+lab=VDD}
+N 410 -450 410 -310 {
+lab=VREF}
+N 410 -450 410 -310 {
+lab=VREF}
+N 420 -490 420 -330 {
+lab=VDD}
+N -420 -450 410 -450 {
+lab=VREF}
+C {../xschem/hgu_inverter.sym} -340 -320 1 0 {name=x7[63:0] multp=1 multn=1}
 C {devices/ipin.sym} -420 -450 0 0 {name=p1 lab=VREF}
 C {devices/ipin.sym} -420 -190 0 0 {name=p2 lab=VSS}
 C {devices/ipin.sym} -340 -380 1 0 {name=p3 lab=SAR<6>}
@@ -81,3 +105,10 @@ C {devices/opin.sym} 260 -250 1 0 {name=p14 lab=C<1:0>
 }
 C {devices/opin.sym} 380 -250 1 0 {name=p15 lab=C<0>
 }
+C {../xschem/hgu_inverter.sym} 380 -320 1 0 {name=x1 multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} 260 -320 1 0 {name=x2[1:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} 140 -320 1 0 {name=x3[3:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} 20 -320 1 0 {name=x4[7:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} -100 -320 1 0 {name=x5[15:0] multp=1 multn=1}
+C {../xschem/hgu_inverter.sym} -220 -320 1 0 {name=x6[31:0] multp=1 multn=1}
+C {devices/ipin.sym} -420 -490 0 0 {name=p16 lab=VDD}

@@ -1,0 +1,28 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697026606
+<< checkpaint >>
+rect -1313 -2913 1629 111
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM14
+timestamp 1697025759
+transform 1 0 158 0 1 -1401
+box -211 -252 211 252
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 SW
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VSS
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 DELAY_SIGNAL
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 {}
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 DELAY_CAP=DELAY_CAP
+port 4 nsew
+<< end >>
