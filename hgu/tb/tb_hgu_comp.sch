@@ -55,7 +55,17 @@ N 490 -450 520 -450 {
 lab=Y_drive}
 N 390 -290 390 -280 {
 lab=clk}
-C {../xschem/hgu_comp.sym} 430 -400 0 0 {name=x1}
+N 620 -460 620 -420 {
+lab=outp}
+N 620 -470 620 -460 {
+lab=outp}
+N 620 -470 770 -470 {
+lab=outp}
+N 620 -380 620 -360 {
+lab=outn}
+N 620 -360 770 -360 {
+lab=outn}
+C {/foss/designs/goss_test/module/comparator/comp.sym} 430 -400 0 0 {name=x1}
 C {devices/vsource.sym} 100 -80 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 180 -80 0 0 {name=V2 value=0}
 C {devices/gnd.sym} 180 -40 0 0 {name=l1 lab=GND}
@@ -63,7 +73,7 @@ C {devices/lab_pin.sym} 100 -130 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -130 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 340 -500 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 340 -280 0 0 {name=p4 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} 250 -80 0 0 {name=V3 value="PULSE(0 1.8 0 5p 5p 5n 20n)"}
+C {devices/vsource.sym} 250 -80 0 0 {name=V3 value="PULSE(0 1.8 0 100p 100p 5n 20n)"}
 C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="PULSE(0.9017578125 0.8982421875 0 5p 5p 25n 50n)"}
 C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="PULSE(0.8982421875 0.9017578125 0 5p 5p 25n 50n)"}
 C {devices/gnd.sym} 480 -110 0 0 {name=l2 lab=GND}
@@ -85,10 +95,11 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .tran 1ns 100ns
+
 .temp 25
 .control
     run
-     let svdd = 1.8
+     let svdd = 1.98
      let max = svdd*0.8
      let min = svdd*0.2
      let mid = svdd*0.5
@@ -109,7 +120,7 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
   	meas tran falling_e find time when V(outp)=min FALL=1 TD=50n
    	let falling_time = falling_e-falling_s
 
-    print rising_delay falling_delay rising_time falling_time
+    print rising_time falling_time rising_delay falling_delay
     plot V(outp)+6 V(P)-2  V(X)+2  V(clk) V(inn) V(inp) V(Y)+2  V(outn)+6 V(Q)-2 V(ready) V(X_drive)+4 V(Y_drive)+4
 .endc
 .save all
@@ -119,15 +130,33 @@ C {devices/lab_pin.sym} 520 -550 2 0 {name=p16 sig_type=std_logic lab=P}
 C {devices/lab_pin.sym} 520 -530 2 0 {name=p17 sig_type=std_logic lab=Q}
 C {devices/lab_pin.sym} 520 -470 2 0 {name=p18 sig_type=std_logic lab=X_drive}
 C {devices/lab_pin.sym} 520 -450 2 0 {name=p19 sig_type=std_logic lab=Y_drive}
-C {devices/capa.sym} 610 -350 0 0 {name=C1
+C {sky130_stdcells/dfbbp_1.sym} 860 -460 0 0 {name=x2[7:0] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dfbbp_1.sym} 860 -350 0 0 {name=x1[7:0] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 770 -380 0 0 {name=p20 sig_type=std_logic lab=clk
+}
+C {devices/lab_pin.sym} 770 -490 0 0 {name=p21 sig_type=std_logic lab=clk
+}
+C {devices/capa.sym} 680 -330 0 0 {name=C1
 m=1
-value=250f
+value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 610 -320 2 0 {name=p20 sig_type=std_logic lab=VSS}
-C {devices/capa.sym} 610 -450 2 0 {name=C2
+C {devices/capa.sym} 680 -500 2 1 {name=C2
 m=1
-value=40f
+value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 610 -480 2 0 {name=p21 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 680 -300 0 0 {name=p22 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 680 -530 0 0 {name=p23 sig_type=std_logic lab=VSS}
+C {devices/noconn.sym} 950 -490 0 1 {name=l7}
+C {devices/noconn.sym} 950 -470 0 1 {name=l8}
+C {devices/noconn.sym} 950 -380 0 1 {name=l3}
+C {devices/noconn.sym} 950 -360 0 1 {name=l4}
+C {devices/lab_pin.sym} 770 -340 0 0 {name=p24 sig_type=std_logic lab=clk
+}
+C {devices/lab_pin.sym} 770 -320 0 0 {name=p25 sig_type=std_logic lab=clk
+}
+C {devices/lab_pin.sym} 770 -450 0 0 {name=p26 sig_type=std_logic lab=clk
+}
+C {devices/lab_pin.sym} 770 -430 0 0 {name=p27 sig_type=std_logic lab=clk
+}

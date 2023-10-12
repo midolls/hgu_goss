@@ -1,16 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1697025759
+timestamp 1697022684
 << error_p >>
 rect -29 156 29 162
 rect -29 122 -17 156
 rect -29 116 29 122
-rect -29 -122 29 -116
-rect -29 -156 -17 -122
-rect -29 -162 29 -156
-<< pwell >>
-rect -211 -294 211 294
 << nmos >>
 rect -15 -84 15 84
 << ndiff >>
@@ -25,56 +20,26 @@ rect 15 -84 73 -72
 << ndiffc >>
 rect -61 -72 -27 72
 rect 27 -72 61 72
-<< psubdiff >>
-rect -175 224 -79 258
-rect 79 224 175 258
-rect -175 162 -141 224
-rect 141 162 175 224
-rect -175 -224 -141 -162
-rect 141 -224 175 -162
-rect -175 -258 -79 -224
-rect 79 -258 175 -224
-<< psubdiffcont >>
-rect -79 224 79 258
-rect -175 -162 -141 162
-rect 141 -162 175 162
-rect -79 -258 79 -224
 << poly >>
 rect -33 156 33 172
 rect -33 122 -17 156
 rect 17 122 33 156
 rect -33 106 33 122
 rect -15 84 15 106
-rect -15 -106 15 -84
-rect -33 -122 33 -106
-rect -33 -156 -17 -122
-rect 17 -156 33 -122
-rect -33 -172 33 -156
+rect -15 -122 15 -84
 << polycont >>
 rect -17 122 17 156
-rect -17 -156 17 -122
 << locali >>
-rect -175 224 -79 258
-rect 79 224 175 258
-rect -175 162 -141 224
-rect 141 162 175 224
 rect -33 122 -17 156
 rect 17 122 33 156
 rect -61 72 -27 88
 rect -61 -88 -27 -72
 rect 27 72 61 88
 rect 27 -88 61 -72
-rect -33 -156 -17 -122
-rect 17 -156 33 -122
-rect -175 -224 -141 -162
-rect 141 -224 175 -162
-rect -175 -258 -79 -224
-rect 79 -258 175 -224
 << viali >>
 rect -17 122 17 156
 rect -61 -72 -27 72
 rect 27 -72 61 72
-rect -17 -156 17 -122
 << metal1 >>
 rect -29 156 29 162
 rect -29 122 -17 156
@@ -88,10 +53,6 @@ rect 21 72 67 84
 rect 21 -72 27 72
 rect 61 -72 67 72
 rect 21 -84 67 -72
-rect -29 -122 29 -116
-rect -29 -156 -17 -122
-rect 17 -156 29 -122
-rect -29 -162 29 -156
 << properties >>
 string FIXED_BBOX -158 -241 158 241
 string gencell sky130_fd_pr__nfet_01v8
