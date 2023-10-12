@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_vgen_vref.sch
-*.subckt hgu_vgen_vref VDD VSS clk vcm
+.subckt hgu_vgen_vref VDD VSS clk vcm
 *.PININFO VDD:B VSS:B clk:I vcm:B
 X1 clk VDD VSS phi1_n phi1 phi2 phi2_n adc_vcm_clkgen
 x_decap_1 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
@@ -92,7 +92,7 @@ X6 phi1_n mimtop2 phi1 vcm VDD VSS adc_vcm_switch
 X5 phi1_n mimtop1 phi1 vcm VDD VSS adc_vcm_switch
 **** begin user architecture code
 
-.include /foss/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 **** end user architecture code
 .ends

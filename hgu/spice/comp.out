@@ -1,99 +1,127 @@
 
-Circuit 1 cell sky130_fd_sc_hd__inv_1 is a black box; will not flatten Circuit 2
-Warning: Equate pins:  cell sky130_fd_sc_hd__inv_1 is a placeholder, treated as a black box.
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__inv_1          |Circuit 2: sky130_fd_sc_hd__inv_1          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__inv_1          |Circuit 2: sky130_fd_sc_hd__inv_1          
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |A                                          
-(no matching pin)                          |VGND                                       
-(no matching pin)                          |VPWR                                       
-(no matching pin)                          |Y                                          
-(no matching pin)                          |VNB                                        
-(no matching pin)                          |VPB                                        
-1                                          |(no matching pin)                          
-2                                          |(no matching pin)                          
-3                                          |(no matching pin)                          
-4                                          |(no matching pin)                          
-5                                          |(no matching pin)                          
-6                                          |(no matching pin)                          
+Y                                          |Y                                          
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 altered to match.
+Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 are equivalent.
 
-Circuit 1 cell sky130_fd_sc_hd__buf_4 is a black box; will not flatten Circuit 2
-Warning: Equate pins:  cell sky130_fd_sc_hd__buf_4 is a placeholder, treated as a black box.
+Class sky130_fd_sc_hd__buf_4 (0):  Merged 6 parallel devices.
+Class sky130_fd_sc_hd__buf_4 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__buf_4          |Circuit 2: sky130_fd_sc_hd__buf_4          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (5->2)             |sky130_fd_pr__nfet_01v8 (5->2)             
+sky130_fd_pr__pfet_01v8_hvt (5->2)         |sky130_fd_pr__pfet_01v8_hvt (5->2)         
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__buf_4          |Circuit 2: sky130_fd_sc_hd__buf_4          
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |A                                          
-(no matching pin)                          |VGND                                       
-(no matching pin)                          |VPWR                                       
-(no matching pin)                          |X                                          
-(no matching pin)                          |VNB                                        
-(no matching pin)                          |VPB                                        
-(no matching pin)                          |a_27_47#                                   
-1                                          |(no matching pin)                          
-2                                          |(no matching pin)                          
-3                                          |(no matching pin)                          
-4                                          |(no matching pin)                          
-5                                          |(no matching pin)                          
-6                                          |(no matching pin)                          
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+A                                          |A                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for sky130_fd_sc_hd__buf_4 and sky130_fd_sc_hd__buf_4 altered to match.
+Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__buf_4 and sky130_fd_sc_hd__buf_4 are equivalent.
 
-Circuit 1 cell sky130_fd_sc_hd__dlymetal6s6s_1 is a black box; will not flatten Circuit 2
-Warning: Equate pins:  cell sky130_fd_sc_hd__dlymetal6s6s_1 is a placeholder, treated as a black box.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__dlymetal6s6s_1 |Circuit 2: sky130_fd_sc_hd__dlymetal6s6s_1 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (6)                |sky130_fd_pr__nfet_01v8 (6)                
+sky130_fd_pr__pfet_01v8_hvt (6)            |sky130_fd_pr__pfet_01v8_hvt (6)            
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__dlymetal6s6s_1 |Circuit 2: sky130_fd_sc_hd__dlymetal6s6s_1 
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |A                                          
-(no matching pin)                          |VGND                                       
-(no matching pin)                          |VPWR                                       
-(no matching pin)                          |X                                          
-(no matching pin)                          |a_240_47#                                  
-(no matching pin)                          |VNB                                        
-(no matching pin)                          |VPB                                        
-(no matching pin)                          |a_629_47#                                  
-(no matching pin)                          |a_523_47#                                  
-(no matching pin)                          |a_346_47#                                  
-(no matching pin)                          |a_63_47#                                   
-1                                          |(no matching pin)                          
-2                                          |(no matching pin)                          
-3                                          |(no matching pin)                          
-4                                          |(no matching pin)                          
-5                                          |(no matching pin)                          
-6                                          |(no matching pin)                          
+X                                          |X                                          
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for sky130_fd_sc_hd__dlymetal6s6s_1 and sky130_fd_sc_hd__dlymetal6s6s_1 altered to match.
+Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__dlymetal6s6s_1 and sky130_fd_sc_hd__dlymetal6s6s_1 are equivalent.
 
-Circuit 1 cell sky130_fd_sc_hd__nand2_1 is a black box; will not flatten Circuit 2
-Warning: Equate pins:  cell sky130_fd_sc_hd__nand2_1 is a placeholder, treated as a black box.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_sc_hd__nand2_1        |Circuit 2: sky130_fd_sc_hd__nand2_1        
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |A                                          
-(no matching pin)                          |B                                          
-(no matching pin)                          |VGND                                       
-(no matching pin)                          |VPWR                                       
-(no matching pin)                          |Y                                          
-(no matching pin)                          |VNB                                        
-(no matching pin)                          |VPB                                        
-(no matching pin)                          |a_113_47#                                  
-1                                          |(no matching pin)                          
-2                                          |(no matching pin)                          
-3                                          |(no matching pin)                          
-4                                          |(no matching pin)                          
-5                                          |(no matching pin)                          
-6                                          |(no matching pin)                          
-7                                          |(no matching pin)                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+A                                          |A                                          
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+B                                          |B                                          
+Y                                          |Y                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for sky130_fd_sc_hd__nand2_1 and sky130_fd_sc_hd__nand2_1 altered to match.
+Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__nand2_1 and sky130_fd_sc_hd__nand2_1 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
@@ -138,108 +166,62 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-
 Subcircuit summary:
 Circuit 1: adc_noise_decoup_cell1          |Circuit 2: adc_noise_decoup_cell1          
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
 sky130_fd_pr__cap_var_lvt (1)              |sky130_fd_pr__cap_var_lvt (1)              
-(no matching element)                      |c (10)                                     
-Number of devices: 2 **Mismatch**          |Number of devices: 12 **Mismatch**         
+Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 5                          |Number of nets: 5                          
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
 Circuit 1: adc_noise_decoup_cell1          |Circuit 2: adc_noise_decoup_cell1          
-
+-------------------------------------------|-------------------------------------------
+nmoscap_bot                                |nmoscap_bot                                
+pwell                                      |pwell                                      
+nmoscap_top                                |nmoscap_top                                
+mimcap_top                                 |mimcap_top                                 
+mimcap_bot                                 |mimcap_bot                                 
 ---------------------------------------------------------------------------------------
-Net: nmoscap_top                           |Net: nmoscap_top                           
-  sky130_fd_pr__cap_var_lvt/1 = 1          |  sky130_fd_pr__cap_var_lvt/1 = 1          
-                                           |  c/bottom = 1                             
-                                           |  c/top = 3                                
-                                           |                                           
-Net: nmoscap_bot                           |Net: nmoscap_bot                           
-  sky130_fd_pr__cap_var_lvt/2 = 1          |  sky130_fd_pr__cap_var_lvt/2 = 1          
-                                           |  c/top = 4                                
-                                           |                                           
-Net: pwell                                 |Net: pwell                                 
-  sky130_fd_pr__cap_var_lvt/3 = 1          |  sky130_fd_pr__cap_var_lvt/3 = 1          
-                                           |  c/bottom = 4                             
-                                           |                                           
-Net: mimcap_top                            |Net: mimcap_top                            
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
-                                           |  c/bottom = 3                             
-                                           |  c/top = 1                                
-                                           |                                           
-Net: mimcap_bot                            |Net: mimcap_bot                            
-  sky130_fd_pr__cap_mim_m3_1/2 = 1         |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
-                                           |  c/bottom = 2                             
-                                           |  c/top = 2                                
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: adc_noise_decoup_cell1          |Circuit 2: adc_noise_decoup_cell1          
+Cell pin lists are equivalent.
+Device classes adc_noise_decoup_cell1 and adc_noise_decoup_cell1 are equivalent.
+Flattening unmatched subcell adc_vcm_clkgen in circuit hgu_vgen_vref (0)(1 instance)
+Flattening unmatched subcell adc_vcm_switch in circuit hgu_vgen_vref (0)(5 instances)
+Flattening unmatched subcell pfet_01v8_w500_l500_nf2 in circuit hgu_vgen_vref (1)(5 instances)
+Flattening unmatched subcell nfet_01v8_w500_l500_nf2 in circuit hgu_vgen_vref (1)(5 instances)
 
+Class hgu_vgen_vref (1):  Merged 10 parallel devices.
+Subcircuit summary:
+Circuit 1: hgu_vgen_vref                   |Circuit 2: hgu_vgen_vref                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__inv_1 (5)                 |sky130_fd_sc_hd__inv_1 (5)                 
+sky130_fd_sc_hd__buf_4 (4)                 |sky130_fd_sc_hd__buf_4 (4)                 
+sky130_fd_sc_hd__dlymetal6s6s_1 (6)        |sky130_fd_sc_hd__dlymetal6s6s_1 (6)        
+sky130_fd_sc_hd__nand2_1 (2)               |sky130_fd_sc_hd__nand2_1 (2)               
+adc_noise_decoup_cell1 (83)                |adc_noise_decoup_cell1 (83)                
+sky130_fd_pr__pfet_01v8 (5)                |sky130_fd_pr__pfet_01v8 (10->5)            
+sky130_fd_pr__nfet_01v8 (5)                |sky130_fd_pr__nfet_01v8 (10->5)            
+Number of devices: 110                     |Number of devices: 110                     
+Number of nets: 24                         |Number of nets: 24                         
 ---------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: c:0                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:1                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:2                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:3                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:4                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:5                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:6                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:7                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:8                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c:9                              
-                                           |  top = 5                                  
-                                           |  bottom = 5                               
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 3 symmetries.
+
+Subcircuit pins:
+Circuit 1: hgu_vgen_vref                   |Circuit 2: hgu_vgen_vref                   
+-------------------------------------------|-------------------------------------------
+vcm                                        |vcm                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+clk                                        |clk                                        
 ---------------------------------------------------------------------------------------
-Netlists do not match.
-  Flattening non-matched subcircuits adc_noise_decoup_cell1 adc_noise_decoup_cell1
-Flattening unmatched subcell adc_vcm_clkgen in circuit hgu_vgen_vref.sch.spice (0)(1 instance)
-Flattening unmatched subcell adc_vcm_switch in circuit hgu_vgen_vref.sch.spice (0)(5 instances)
+Cell pin lists are equivalent.
+Device classes hgu_vgen_vref and hgu_vgen_vref are equivalent.
 
-Class hgu_vgen_vref.sch.spice (0):  Merged 198 parallel devices.
-Cells have no pins;  pin matching not needed.
-Device classes hgu_vgen_vref.sch.spice and hgu_vgen_vref.spice are equivalent.
-
-Final result: Verify:  cell hgu_vgen_vref.spice has no elements and/or nodes.  Not checked.
+Final result: Circuits match uniquely.
+.
