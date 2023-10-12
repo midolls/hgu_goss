@@ -74,7 +74,7 @@ C {devices/lab_pin.sym} 180 -130 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 340 -500 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 340 -280 0 0 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 250 -80 0 0 {name=V3 value="PULSE(0 1.8 0 100p 100p 5n 20n)"}
-C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="PULSE(0.9017578125 0.8982421875 0 5p 5p 25n 50n)"}
+C {devices/vsource.sym} 370 -170 0 0 {name=V4 value=0.9}
 C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="PULSE(0.8982421875 0.9017578125 0 5p 5p 25n 50n)"}
 C {devices/gnd.sym} 480 -110 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 250 -130 0 0 {name=p5 sig_type=std_logic lab=clk
@@ -91,39 +91,21 @@ C {devices/lab_pin.sym} 520 -330 2 0 {name=p14 sig_type=std_logic lab=ready}
 C {devices/lab_pin.sym} 620 -420 2 0 {name=p11 sig_type=std_logic lab=outp}
 C {devices/lab_pin.sym} 620 -380 2 0 {name=p15 sig_type=std_logic lab=outn}
 C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
 
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.tran 1ns 100ns
-
 .temp 25
 .control
-    run
-     let svdd = 1.98
-     let max = svdd*0.8
-     let min = svdd*0.2
-     let mid = svdd*0.5
-
-	meas tran rising_s_d find time when V(clk)=mid RISE=1 TD=30n
-	meas tran rising_e_d find time when V(outp)=mid RISE=1 TD=1000p
-	let rising_delay = rising_e_d-rising_s_d
-
-	meas tran falling_s_d find time when V(clk)=mid RISE=1 TD=50n
-	meas tran falling_e_d find time when V(outp)=mid FALL=1 TD=50n
-	let falling_delay = falling_e_d-falling_s_d
-
-	meas tran rising_s find time when V(outp)=min RISE=1 TD=30n
-   	meas tran rising_e find time when V(outp)=max RISE=1 TD=30n
-   	let rising_time = rising_e-rising_s
-
-   	meas tran falling_s find time when V(outp)=max FALL=1 TD=50n
-  	meas tran falling_e find time when V(outp)=min FALL=1 TD=50n
-   	let falling_time = falling_e-falling_s
-
-    print rising_time falling_time rising_delay falling_delay
-    plot V(outp)+6 V(P)-2  V(X)+2  V(clk) V(inn) V(inp) V(Y)+2  V(outn)+6 V(Q)-2 V(ready) V(X_drive)+4 V(Y_drive)+4
+	save all
+	dc v5 0.8 0.9 0.001
+	write tb_hgu_comp.raw
+	set appendwrite
+	op
+	save all
+	write tb_hgu_comp.raw
 .endc
-.save all
 
 "}
 C {devices/lab_pin.sym} 520 -550 2 0 {name=p16 sig_type=std_logic lab=P}
@@ -159,4 +141,8 @@ C {devices/lab_pin.sym} 770 -320 0 0 {name=p25 sig_type=std_logic lab=clk
 C {devices/lab_pin.sym} 770 -450 0 0 {name=p26 sig_type=std_logic lab=clk
 }
 C {devices/lab_pin.sym} 770 -430 0 0 {name=p27 sig_type=std_logic lab=clk
+}
+C {devices/launcher.sym} 720 -200 0 0 {name=h15
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
