@@ -1,0 +1,11 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697519791
+<< checkpaint >>
+rect -1260 -1260 5003 6752
+use adc_array_circuit_1  x1
+timestamp 1697519791
+transform 1 0 53 0 1 4400
+box -53 -4400 3690 1092
+<< end >>

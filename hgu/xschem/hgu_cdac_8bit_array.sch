@@ -33,13 +33,26 @@ N 470 -700 470 -660 {
 lab=tah<31:0>}
 N 290 -700 290 -660 {
 lab=tah<63:0>}
-C {hgu_cdac_unit.sym} 1300 -750 2 0 {name=x1 csize=1}
-C {hgu_cdac_unit.sym} 1130 -750 2 0 {name=x2[1:0] csize=1}
-C {hgu_cdac_unit.sym} 970 -750 2 0 {name=x3[3:0] csize=1}
-C {hgu_cdac_unit.sym} 800 -750 2 0 {name=x4[7:0] csize=1}
-C {hgu_cdac_unit.sym} 640 -750 2 0 {name=x5[15:0] csize=1}
-C {hgu_cdac_unit.sym} 470 -750 2 0 {name=x6[31:0] csize=1}
-C {hgu_cdac_unit.sym} 290 -750 2 0 {name=x7[63:0] csize=1}
+N 340 -910 340 -800 {
+lab=#net1}
+N 340 -910 1180 -910 {
+lab=#net1}
+N 1180 -910 1180 -800 {
+lab=#net1}
+N 520 -910 520 -800 {}
+N 690 -910 690 -800 {}
+N 850 -910 850 -800 {}
+N 1020 -910 1020 -800 {}
+N 1180 -910 1350 -910 {}
+N 1350 -890 1350 -800 {}
+N 1350 -910 1350 -890 {}
+C {hgu_cdac_unit.sym} 1300 -750 2 0 {name=x1 }
+C {hgu_cdac_unit.sym} 1130 -750 2 0 {name=x2[1:0] }
+C {hgu_cdac_unit.sym} 970 -750 2 0 {name=x3[3:0] }
+C {hgu_cdac_unit.sym} 800 -750 2 0 {name=x4[7:0] }
+C {hgu_cdac_unit.sym} 640 -750 2 0 {name=x5[15:0]}
+C {hgu_cdac_unit.sym} 470 -750 2 0 {name=x6[31:0] }
+C {hgu_cdac_unit.sym} 290 -750 2 0 {name=x7[63:0] }
 C {devices/iopin.sym} 1300 -840 0 0 {name=p1 lab=drv<0>
 }
 C {devices/iopin.sym} 1130 -840 0 0 {name=p2 lab=drv<1:0>}
@@ -64,3 +77,6 @@ C {devices/iopin.sym} 640 -660 0 0 {name=p12 lab=tah<15:0>
 C {devices/iopin.sym} 470 -660 0 0 {name=p13 lab=tah<31:0>
 }
 C {devices/iopin.sym} 290 -660 0 0 {name=p14 lab=tah<63:0>}
+C {devices/iopin.sym} 210 -890 0 0 {name=p21 lab=SUB
+}
+C {devices/lab_pin.sym} 760 -910 0 0 {name=p22 sig_type=std_logic lab=SUB}

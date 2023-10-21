@@ -1,0 +1,24 @@
+| units: 500000 tech: sky130A format: MIT
+x a_482_57# a_170_212# VDD VDD s=9920,444 d=5280,226 l=30 w=160 x=536 y=574 sky130_fd_pr__pfet_01v8
+x a_482_57# VDD a_662_574# VDD s=5280,226 d=5280,226 l=30 w=160 x=632 y=574 sky130_fd_pr__pfet_01v8
+x a_482_57# a_662_574# a_170_212# VDD s=5280,226 d=9920,444 l=30 w=160 x=728 y=574 sky130_fd_pr__pfet_01v8
+x a_482_57# a_170_212# a_566_252# VSS s=5208,292 d=2772,150 l=30 w=84 x=536 y=252 sky130_fd_pr__nfet_01v8
+x a_482_57# a_566_252# VSS VSS s=2772,150 d=2772,150 l=30 w=84 x=632 y=252 sky130_fd_pr__nfet_01v8
+x a_482_57# VSS a_566_252# VSS s=2772,150 d=5208,292 l=30 w=84 x=728 y=252 sky130_fd_pr__nfet_01v8
+x sample_n vcom cbot VDD s=9920,444 d=5280,226 l=30 w=160 x=232 y=542 sky130_fd_pr__pfet_01v8
+x sample cbot a_170_212# VDD s=5280,226 d=9920,444 l=30 w=160 x=328 y=542 sky130_fd_pr__pfet_01v8
+x sample_n a_170_212# cbot VSS s=5208,292 d=2772,150 l=30 w=84 x=232 y=212 sky130_fd_pr__nfet_01v8
+x sample cbot vcom VSS s=2772,150 d=5208,292 l=30 w=84 x=328 y=212 sky130_fd_pr__nfet_01v8
+C floatingctop cbot 3.2
+R col 122
+R vcom 885
+R sample 683
+R sample_n 976
+R VDD 4569
+R VSS 1214
+R li_856_108# 131
+R a_566_252# 821
+R a_662_574# 554
+R cbot 818
+R a_170_212# 3615
+R a_482_57# 2653

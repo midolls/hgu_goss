@@ -1,0 +1,13 @@
+v {xschem version=3.4.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+C {sky130_fd_pr/vpp_cap.sym} -50 20 0 0 {name=C1
+model=cap_vpp_02p4x04p6_m1m2_noshield
+W=1
+L=1 
+mult=1 
+spiceprefix=X}

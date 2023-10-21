@@ -1,0 +1,10 @@
+magic
+tech sky130A
+timestamp 1697536697
+<< checkpaint >>
+rect -630 -330 872 1389
+use sky130_fd_pr__cap_vpp_02p4x04p6_m1m2_noshield  XC1
+timestamp 1697421620
+transform 1 0 44 0 1 300
+box -44 0 198 459
+<< end >>
