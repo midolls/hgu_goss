@@ -1,11 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1697022684
-<< error_p >>
-rect -29 156 29 162
-rect -29 122 -17 156
-rect -29 116 29 122
+timestamp 1697452276
 << nmos >>
 rect -15 -84 15 84
 << ndiff >>
@@ -21,30 +17,17 @@ rect 15 -84 73 -72
 rect -61 -72 -27 72
 rect 27 -72 61 72
 << poly >>
-rect -33 156 33 172
-rect -33 122 -17 156
-rect 17 122 33 156
-rect -33 106 33 122
-rect -15 84 15 106
-rect -15 -122 15 -84
-<< polycont >>
-rect -17 122 17 156
+rect -15 84 15 110
+rect -15 -110 15 -84
 << locali >>
-rect -33 122 -17 156
-rect 17 122 33 156
 rect -61 72 -27 88
 rect -61 -88 -27 -72
 rect 27 72 61 88
 rect 27 -88 61 -72
 << viali >>
-rect -17 122 17 156
 rect -61 -72 -27 72
 rect 27 -72 61 72
 << metal1 >>
-rect -29 156 29 162
-rect -29 122 -17 156
-rect 17 122 29 156
-rect -29 116 29 122
 rect -67 72 -21 84
 rect -67 -72 -61 72
 rect -27 -72 -21 72
