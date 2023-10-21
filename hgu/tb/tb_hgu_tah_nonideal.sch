@@ -7,8 +7,6 @@ S {}
 E {}
 N -520 -250 -520 -220 {
 lab=VDD}
-N -90 -210 -90 -200 {
-lab=#net1}
 N 30 -110 30 -70 {
 lab=tah_vn}
 N -350 -160 -230 -160 {
@@ -56,9 +54,9 @@ lab=vin}
 N -300 0 -300 20 {
 lab=vin}
 N -370 130 -240 130 {
-lab=#net2}
+lab=#net1}
 N -300 130 -300 190 {
-lab=#net2}
+lab=#net1}
 N -300 250 -300 260 {
 lab=GND}
 N -370 170 -340 170 {
@@ -70,13 +68,13 @@ lab=GND}
 N -260 170 -260 260 {
 lab=GND}
 N -410 180 -410 300 {
-lab=#net3}
+lab=#net2}
 N -410 300 -200 300 {
-lab=#net3}
+lab=#net2}
 N -200 180 -200 300 {
-lab=#net3}
+lab=#net2}
 N -300 300 -300 330 {
-lab=#net3}
+lab=#net2}
 N -410 100 -410 120 {
 lab=vip}
 N -200 100 -200 120 {
@@ -108,7 +106,7 @@ C {devices/code.sym} -515 -100 0 0 {name=s1 only_toplevel=false value="
 
 .control
 run
-	plot v(sw)-0.9 tah_vp-tah_vn vip-vin
+	plot v(sw) v(sw_n) tah_vp-tah_vn vip-vin
         let svdd = 1.8
         let max = svdd*0.8
         let min = svdd*0.2

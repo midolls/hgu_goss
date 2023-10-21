@@ -3,41 +3,41 @@ tech sky130A
 magscale 1 2
 timestamp 1697710383
 << nwell >>
-rect -211 -303 211 303
+rect -211 -207 211 195
 << pmos >>
-rect -15 -84 15 84
+rect -15 -114 15 54
 << pdiff >>
-rect -73 72 -15 84
-rect -73 -72 -61 72
-rect -27 -72 -15 72
-rect -73 -84 -15 -72
-rect 15 72 73 84
-rect 15 -72 27 72
-rect 61 -72 73 72
-rect 15 -84 73 -72
+rect -73 42 -15 54
+rect -73 -102 -61 42
+rect -27 -102 -15 42
+rect -73 -114 -15 -102
+rect 15 42 73 54
+rect 15 -102 27 42
+rect 61 -102 73 42
+rect 15 -114 73 -102
 << pdiffc >>
-rect -61 -72 -27 72
-rect 27 -72 61 72
+rect -61 -102 -27 42
+rect 27 -102 61 42
 << poly >>
-rect -15 84 15 115
-rect -15 -115 15 -84
+rect -15 54 15 85
+rect -15 -141 15 -114
 << locali >>
-rect -61 72 -27 88
-rect -61 -88 -27 -72
-rect 27 72 61 88
-rect 27 -88 61 -72
+rect -61 42 -27 58
+rect -61 -118 -27 -102
+rect 27 42 61 58
+rect 27 -118 61 -102
 << viali >>
-rect -61 -72 -27 72
-rect 27 -72 61 72
+rect -61 -102 -27 42
+rect 27 -102 61 42
 << metal1 >>
-rect -67 72 -21 84
-rect -67 -72 -61 72
-rect -27 -72 -21 72
-rect -67 -84 -21 -72
-rect 21 72 67 84
-rect 21 -72 27 72
-rect 61 -72 67 72
-rect 21 -84 67 -72
+rect -67 42 -21 54
+rect -67 -102 -61 42
+rect -27 -102 -21 42
+rect -67 -114 -21 -102
+rect 21 42 67 54
+rect 21 -102 27 42
+rect 61 -102 67 42
+rect 21 -114 67 -102
 << properties >>
 string FIXED_BBOX -158 -250 158 250
 string gencell sky130_fd_pr__pfet_01v8

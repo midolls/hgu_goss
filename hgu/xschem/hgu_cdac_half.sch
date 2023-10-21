@@ -96,6 +96,12 @@ N 940 -440 940 -390 {
 lab=tb<1> bus=true}
 N 890 -440 890 -390 {
 lab=tb<0>}
+N 660 -580 660 -540 {
+lab=VSS}
+N 750 -580 800 -580 {
+lab=VSS}
+N 800 -580 800 -540 {
+lab=VSS}
 C {../xschem/hgu_cdac_8bit_array.sym} 370 -420 0 0 {name=x1}
 C {../xschem/hgu_cdac_drv.sym} 750 -690 0 0 {name=x2}
 C {../xschem/hgu_cdac_8bit_array.sym} 990 -420 0 1 {name=x3}
@@ -164,3 +170,5 @@ C {devices/lab_wire.sym} 1060 -600 0 1 {name=p44 sig_type=std_logic lab=swd3
 }
 C {devices/lab_wire.sym} 1000 -600 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
+C {devices/lab_pin.sym} 60 -500 0 0 {name=p45 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1300 -500 2 0 {name=p46 sig_type=std_logic lab=VSS}

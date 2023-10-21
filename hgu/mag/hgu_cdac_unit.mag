@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1697641878
+use sky130_fd_pr__cap_vpp_02p4x04p6_m1m2_noshield  XC2
+timestamp 1697641878
+transform 1 0 44 0 1 300
+box -44 0 198 459
+<< end >>
