@@ -41,56 +41,42 @@ N -120 -400 -120 -240 {
 lab=sw_n}
 N -300 -90 -300 -70 {
 lab=vin}
-N -300 -70 -300 -60 {
-lab=vin}
-N -300 -60 -300 -50 {
-lab=vin}
-N -300 -50 -300 -40 {
-lab=vin}
-N -300 -40 -300 -30 {
-lab=vin}
-N -300 -30 -300 0 {
-lab=vin}
-N -300 0 -300 20 {
-lab=vin}
-N -370 130 -240 130 {
+N -640 120 -510 120 {
 lab=#net1}
-N -300 130 -300 190 {
+N -570 120 -570 180 {
 lab=#net1}
-N -300 250 -300 260 {
+N -570 240 -570 250 {
 lab=GND}
-N -370 170 -340 170 {
+N -640 160 -610 160 {
 lab=GND}
-N -340 170 -340 260 {
+N -610 160 -610 250 {
 lab=GND}
-N -260 170 -240 170 {
+N -530 160 -510 160 {
 lab=GND}
-N -260 170 -260 260 {
+N -530 160 -530 250 {
 lab=GND}
-N -410 180 -410 300 {
+N -680 170 -680 290 {
 lab=#net2}
-N -410 300 -200 300 {
+N -680 290 -470 290 {
 lab=#net2}
-N -200 180 -200 300 {
+N -470 170 -470 290 {
 lab=#net2}
-N -300 300 -300 330 {
+N -570 290 -570 320 {
 lab=#net2}
-N -410 100 -410 120 {
-lab=vip}
-N -200 100 -200 120 {
-lab=vin}
-N -300 40 -200 40 {
-lab=vin}
-N -200 40 -200 100 {
-lab=vin}
-N -410 40 -350 40 {
-lab=vip}
-N -410 40 -410 100 {
-lab=vip}
+N -680 90 -680 110 {
+lab=#net3}
+N -470 90 -470 110 {
+lab=#net4}
+N -570 30 -470 30 {
+lab=#net4}
+N -470 30 -470 90 {
+lab=#net4}
+N -680 30 -620 30 {
+lab=#net3}
+N -680 30 -680 90 {
+lab=#net3}
 N -350 -40 -350 40 {
 lab=vip}
-N -300 20 -300 40 {
-lab=vin}
 N -1030 -600 -110 -600 {
 lab=VSS}
 C {../xschem/hgu_tah.sym} -160 -140 0 0 {name=x1}
@@ -106,7 +92,7 @@ C {devices/code.sym} -515 -100 0 0 {name=s1 only_toplevel=false value="
 
 .control
 run
-	plot v(sw) v(sw_n) tah_vp-tah_vn vip-vin
+	plot v(sw)-0.9 v(sw_n)-0.9 tah_vp-tah_vn vip-vin
         let svdd = 1.8
         let max = svdd*0.8
         let min = svdd*0.2
@@ -138,7 +124,7 @@ C {sky130_fd_pr/corner.sym} -645 -100 0 0 {name=CORNER only_toplevel=false corne
 C {devices/vdd.sym} -520 -250 0 0 {name=l3 lab=VDD}
 C {devices/capa.sym} 30 -40 0 0 {name=C2
 m=1
-value=0.5p
+value=1.5p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 30 -10 0 0 {name=l5 lab=GND}
@@ -154,7 +140,7 @@ C {devices/lab_wire.sym} 30 -90 0 0 {name=p7 sig_type=std_logic lab=tah_vn
 }
 C {devices/capa.sym} 70 -120 0 0 {name=C1
 m=1
-value=0.5p
+value=1.4p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 70 -90 0 0 {name=l8 lab=GND}
@@ -168,23 +154,17 @@ C {devices/vdd.sym} -90 -220 0 0 {name=l2 lab=VDD}
 C {devices/vsource.sym} 0 -290 0 0 {name=V1 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
 C {devices/gnd.sym} 0 -260 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 0 -320 0 0 {name=p4 sig_type=std_logic lab=EXT_CLK}
-C {devices/vsource.sym} -300 220 0 0 {name=V4 value="SIN(0 0.9 2.5MEG 0n)"}
-C {devices/vcvs.sym} -410 150 0 1 {name=E1 value=0.5
+C {devices/vsource.sym} -570 210 0 0 {name=V4 value="SIN(0 0.9 2.5MEG 0n)"}
+C {devices/vcvs.sym} -680 140 0 1 {name=E1 value=0.5
 }
-C {devices/vcvs.sym} -200 150 0 0 {name=E2 value=-0.5
+C {devices/vcvs.sym} -470 140 0 0 {name=E2 value=-0.5
 }
-C {devices/gnd.sym} -300 260 0 0 {name=l14 lab=GND}
-C {devices/gnd.sym} -340 260 0 0 {name=l15 lab=GND}
-C {devices/gnd.sym} -260 260 0 0 {name=l16 lab=GND}
-C {devices/vsource.sym} -300 360 0 0 {name=V6 value=0.9
+C {devices/gnd.sym} -570 250 0 0 {name=l14 lab=GND}
+C {devices/gnd.sym} -610 250 0 0 {name=l15 lab=GND}
+C {devices/gnd.sym} -530 250 0 0 {name=l16 lab=GND}
+C {devices/vsource.sym} -570 350 0 0 {name=V6 value=0.9
 }
-C {devices/gnd.sym} -300 390 0 0 {name=l17 lab=GND}
-C {devices/lab_wire.sym} -410 100 0 0 {name=p2 sig_type=std_logic lab=vip
-
-}
-C {devices/lab_wire.sym} -200 110 0 0 {name=p10 sig_type=std_logic lab=vin
-
-}
+C {devices/gnd.sym} -570 380 0 0 {name=l17 lab=GND}
 C {../xschem/hgu_clk_sample.sym} -370 -370 0 0 {name=x3}
 C {devices/vdd.sym} -970 -540 1 0 {name=l4 lab=cap_ctrl_code[7]}
 C {devices/vdd.sym} -860 -540 1 0 {name=l9 lab=cap_ctrl_code[6]}
@@ -237,3 +217,9 @@ C {devices/vsource.sym} -920 -370 0 0 {name=V10 value=1.8}
 C {devices/vdd.sym} -1020 -400 0 0 {name=l38 lab=VPWR}
 C {devices/gnd.sym} -870 -340 0 0 {name=l39 lab=GND}
 C {devices/vsource.sym} -870 -370 0 0 {name=V11 value=0}
+C {devices/vsource.sym} -350 70 0 0 {name=V3 value="PULSE(0.9 1.8 127n 200n 200n 10p 400n)"
+}
+C {devices/gnd.sym} -350 100 0 0 {name=l40 lab=GND}
+C {devices/vsource.sym} -300 -40 0 0 {name=V5 value="PULSE(1.8 0.9 127n 200n 200n 10p 400n)"
+}
+C {devices/gnd.sym} -300 -10 0 0 {name=l41 lab=GND}

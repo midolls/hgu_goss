@@ -155,7 +155,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1180 -300 0 0 {name=M10
 L=0.15
-W=1.13
+W=1.4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -201,7 +201,7 @@ C {devices/lab_pin.sym} 1320 -210 2 0 {name=p29 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1320 -330 2 0 {name=p30 sig_type=std_logic lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 1200 -590 1 0 {name=M13
 L=0.15
-W=2.5
+W=1.9
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

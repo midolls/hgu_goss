@@ -19,6 +19,14 @@ N 400 -140 400 -100 {
 lab=a}
 N 240 60 240 70 {
 lab=GND}
+N 370 -60 380 -60 {
+lab=GND}
+N 370 -60 370 -40 {
+lab=GND}
+N 370 -60 370 -40 {
+lab=GND}
+N 370 -40 400 -40 {
+lab=GND}
 C {devices/gnd.sym} 400 -40 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 55 -170 0 0 {name=s1 only_toplevel=false value="
 .save all 
@@ -28,7 +36,7 @@ C {devices/code.sym} 55 -170 0 0 {name=s1 only_toplevel=false value="
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .control
 	run
-        plot v(input) V(Q) 
+        plot v(a) 
 	let svdd = 1.62
 	let max = svdd*0.8
 	let min = svdd*0.2
@@ -62,14 +70,7 @@ C {devices/lab_pin.sym} 400 -130 0 0 {name=p1 sig_type=std_logic lab=a}
 C {devices/vsource.sym} 240 30 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 240 70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 240 0 0 0 {name=p4 sig_type=std_logic lab=vdd}
-C {devices/capa.sym} 400 -70 0 0 {name=C1
-m=1
-value=1p
-footprint=1206
-device="ceramic capacitor"}
-C {sky130_fd_pr/vpp_cap.sym} 530 -70 0 0 {name=C2
-model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-W=1
-L=1 
+C {sky130_fd_pr/vpp_cap.sym} 400 -70 0 0 {name=C1
+model=cap_vpp_02p4x04p6_m1m2_noshield 
 mult=1 
 spiceprefix=X}

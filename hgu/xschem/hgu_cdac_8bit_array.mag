@@ -1,0 +1,10 @@
+magic
+tech sky130A
+timestamp 1698022638
+<< checkpaint >>
+rect -630 -330 730 1830
+use hgu_cdac_unit  x1
+timestamp 1698022638
+transform 1 0 0 0 1 1100
+box 0 -800 739 759
+<< end >>

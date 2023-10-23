@@ -1,9 +1,7 @@
 * NGSPICE file created from hgu_cdac_unit_flat.ext - technology: sky130A
 
-
-* Top level circuit hgu_cdac_unit_flat
-
-C0 sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C1 sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C0 11.9f
-C1 sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C0 sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.SUB 2.76f $ **FLOATING
-.end
+.subckt hgu_cdac_unit_flat C1 C0
+C0 C1 C0 4.38f
+C1 C1 VSUBS 1.24f
+.ends
 
