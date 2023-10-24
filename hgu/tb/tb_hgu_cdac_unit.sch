@@ -33,28 +33,11 @@ C {devices/code.sym} 55 -170 0 0 {name=s1 only_toplevel=false value="
 .temp = 100
 .tran 100p 400n
 .OPTIONS savecurrent
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit_flat.spice
+
 .control
 	run
-        plot v(a) 
-	let svdd = 1.62
-	let max = svdd*0.8
-	let min = svdd*0.2
-	let mid = svdd*0.5
-	meas tran rising_s find time when V(Q)=min RISE=1 TD=1000p
-        meas tran rising_e find time when V(Q)=max RISE=1 TD=1000p
-        let rising_time = rising_e-rising_s
-        meas tran falling_s find time when V(Q)=max FALL=1 TD=1000p
-        meas tran falling_e find time when V(Q)=min FALL=1 TD=1000p
-        let falling_time = falling_e-falling_s
-        meas tran IN find time when V(input)=mid RISE=1 TD=1000p
-        meas tran OUT find time when V(Q)=mid RISE=1 TD=1000p
-        let rising_delay = OUT-IN
-	meas tran fIN find time when V(input)=mid FALL=1 TD=1000p
-        meas tran fOUT find time when V(Q)=mid FALL=1 TD=1000p
-        let falling_delay = fOUT-fIN
-
-        print rising_time falling_time rising_delay falling_delay
+        plot v(a)
 
 .endc
 "}
@@ -70,7 +53,5 @@ C {devices/lab_pin.sym} 400 -130 0 0 {name=p1 sig_type=std_logic lab=a}
 C {devices/vsource.sym} 240 30 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 240 70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 240 0 0 0 {name=p4 sig_type=std_logic lab=vdd}
-C {sky130_fd_pr/vpp_cap.sym} 400 -70 0 0 {name=C1
-model=cap_vpp_02p4x04p6_m1m2_noshield 
-mult=1 
-spiceprefix=X}
+C {../xschem/hgu_vpp_cap.sym} 400 -70 0 0 {name=hgu_cdac_unit_flat
+}
