@@ -1,5 +1,2 @@
 | units: 500000 tech: sky130A format: MIT
-C sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C0 sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C1 11.9
-R sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C1 38
-C sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C00 2.8
-R sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1_0.C0 49
+C C1 C0 4.4

@@ -1,0 +1,88 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698045515
+<< checkpaint >>
+rect 216 2374 5109 3948
+rect -944 -766 5109 2374
+rect -206 -872 5109 -766
+<< error_s >>
+rect 298 1115 333 1132
+rect 299 1114 333 1115
+rect 299 1078 369 1114
+rect 685 1078 738 1079
+rect 129 1047 187 1053
+rect 129 1013 141 1047
+rect 316 1044 387 1078
+rect 667 1044 738 1078
+rect 129 1007 187 1013
+rect 129 719 187 725
+rect 129 685 141 719
+rect 129 679 187 685
+rect 316 583 386 1044
+rect 668 1043 738 1044
+rect 685 1009 756 1043
+rect 498 976 556 982
+rect 498 942 510 976
+rect 498 936 556 942
+rect 498 666 556 672
+rect 498 632 510 666
+rect 498 626 556 632
+rect 316 547 369 583
+rect 685 530 755 1009
+rect 867 941 925 947
+rect 867 907 879 941
+rect 867 901 925 907
+rect 867 613 925 619
+rect 867 579 879 613
+rect 867 573 925 579
+rect 685 494 738 530
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+use inverter  x1
+timestamp 1698045514
+transform 1 0 1529 0 1 1588
+box -53 -1200 738 1100
+use inverter  x2
+timestamp 1698045514
+transform 1 0 2320 0 1 1588
+box -53 -1200 738 1100
+use inverter  x3
+timestamp 1698045514
+transform 1 0 3111 0 1 1588
+box -53 -1200 738 1100
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM1
+timestamp 0
+transform 1 0 896 0 1 760
+box -211 -319 211 319
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM2
+timestamp 0
+transform 1 0 158 0 1 866
+box -211 -319 211 319
+use sky130_fd_pr__nfet_01v8_648S5X  XM3
+timestamp 0
+transform 1 0 1265 0 1 698
+box -211 -310 211 310
+use sky130_fd_pr__nfet_01v8_648S5X  XM10
+timestamp 0
+transform 1 0 527 0 1 804
+box -211 -310 211 310
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 a
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 Q
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 VDD
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 b
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 VSS
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 SEL
+port 5 nsew
+<< end >>

@@ -19,34 +19,51 @@ N 400 -140 400 -100 {
 lab=a}
 N 240 60 240 70 {
 lab=GND}
+N 370 -60 380 -60 {
+lab=GND}
+N 370 -60 370 -40 {
+lab=GND}
+N 370 -60 370 -40 {
+lab=GND}
+N 370 -40 400 -40 {
+lab=GND}
+N 400 -140 650 -140 {
+lab=a}
+N 650 -140 650 -100 {
+lab=a}
+N 590 -140 590 -100 {
+lab=a}
+N 530 -140 530 -100 {
+lab=a}
+N 470 -140 470 -100 {
+lab=a}
+N 450 -40 470 -40 {
+lab=GND}
+N 450 -60 450 -40 {
+lab=GND}
+N 510 -60 510 -40 {
+lab=GND}
+N 510 -40 530 -40 {
+lab=GND}
+N 570 -60 570 -40 {
+lab=GND}
+N 570 -40 590 -40 {
+lab=GND}
+N 630 -60 630 -40 {
+lab=GND}
+N 630 -40 650 -40 {
+lab=GND}
 C {devices/gnd.sym} 400 -40 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 55 -170 0 0 {name=s1 only_toplevel=false value="
 .save all 
 .temp = 100
 .tran 100p 400n
 .OPTIONS savecurrent
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+
 .control
 	run
-        plot v(input) V(Q) 
-	let svdd = 1.62
-	let max = svdd*0.8
-	let min = svdd*0.2
-	let mid = svdd*0.5
-	meas tran rising_s find time when V(Q)=min RISE=1 TD=1000p
-        meas tran rising_e find time when V(Q)=max RISE=1 TD=1000p
-        let rising_time = rising_e-rising_s
-        meas tran falling_s find time when V(Q)=max FALL=1 TD=1000p
-        meas tran falling_e find time when V(Q)=min FALL=1 TD=1000p
-        let falling_time = falling_e-falling_s
-        meas tran IN find time when V(input)=mid RISE=1 TD=1000p
-        meas tran OUT find time when V(Q)=mid RISE=1 TD=1000p
-        let rising_delay = OUT-IN
-	meas tran fIN find time when V(input)=mid FALL=1 TD=1000p
-        meas tran fOUT find time when V(Q)=mid FALL=1 TD=1000p
-        let falling_delay = fOUT-fIN
-
-        print rising_time falling_time rising_delay falling_delay
+        plot v(a)
 
 .endc
 "}
@@ -62,14 +79,52 @@ C {devices/lab_pin.sym} 400 -130 0 0 {name=p1 sig_type=std_logic lab=a}
 C {devices/vsource.sym} 240 30 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 240 70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 240 0 0 0 {name=p4 sig_type=std_logic lab=vdd}
-C {devices/capa.sym} 400 -70 0 0 {name=C1
+C {../xschem/hgu_vpp_cap.sym} 470 120 0 0 {symname=hgu_cdac_unit
+name=x1
+
+}
+C {devices/capa.sym} 590 -70 0 0 {name=C1
 m=1
-value=1p
+value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {sky130_fd_pr/vpp_cap.sym} 530 -70 0 0 {name=C2
-model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-W=1
-L=1 
-mult=1 
-spiceprefix=X}
+C {../xschem/hgu_vpp_cap.sym} 540 120 0 0 {symname=hgu_cdac_unit
+name=x2
+
+}
+C {../xschem/hgu_vpp_cap.sym} 600 120 0 0 {symname=hgu_cdac_unit
+name=x3
+
+}
+C {../xschem/hgu_vpp_cap.sym} 660 120 0 0 {symname=hgu_cdac_unit
+name=x4
+
+}
+C {../xschem/hgu_vpp_cap.sym} 720 120 0 0 {symname=hgu_cdac_unit
+name=x5
+
+}
+C {devices/gnd.sym} 470 -40 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 530 -40 0 0 {name=l5 lab=GND}
+C {devices/gnd.sym} 590 -40 0 0 {name=l6 lab=GND}
+C {devices/gnd.sym} 650 -40 0 0 {name=l7 lab=GND}
+C {devices/capa.sym} 400 -70 0 0 {name=C2
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 470 -70 0 0 {name=C3
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 530 -70 0 0 {name=C4
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 650 -70 0 0 {name=C5
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}

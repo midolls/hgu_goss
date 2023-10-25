@@ -1,0 +1,20 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698042337
+<< error_s >>
+rect 527 2946 577 2984
+rect 603 2946 653 2984
+rect 679 2946 729 2984
+rect 527 2366 577 2404
+rect 603 2366 653 2404
+rect 679 2366 729 2404
+use hgu_inverter  x1
+timestamp 1697875053
+transform 1 0 53 0 1 2200
+box 320 160 742 825
+use hgu_inverter  x2
+timestamp 1697875053
+transform -1 0 1203 0 1 2200
+box 320 160 742 825
+<< end >>

@@ -1,42 +1,60 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1697710383
+timestamp 1697875053
 << nwell >>
-rect -211 -207 211 195
+rect -211 -153 211 233
 << pmos >>
 rect -15 -114 15 54
 << pdiff >>
 rect -73 42 -15 54
-rect -73 -102 -61 42
-rect -27 -102 -15 42
+rect -73 -11 -61 42
+rect -27 -11 -15 42
+rect -73 -49 -15 -11
+rect -73 -102 -61 -49
+rect -27 -102 -15 -49
 rect -73 -114 -15 -102
 rect 15 42 73 54
-rect 15 -102 27 42
-rect 61 -102 73 42
+rect 15 -11 27 42
+rect 61 -11 73 42
+rect 15 -49 73 -11
+rect 15 -102 27 -49
+rect 61 -102 73 -49
 rect 15 -114 73 -102
 << pdiffc >>
-rect -61 -102 -27 42
-rect 27 -102 61 42
+rect -61 -11 -27 42
+rect -61 -102 -27 -49
+rect 27 -11 61 42
+rect 27 -102 61 -49
 << poly >>
 rect -15 54 15 85
 rect -15 -141 15 -114
 << locali >>
 rect -61 42 -27 58
+rect -61 -49 -27 -11
 rect -61 -118 -27 -102
 rect 27 42 61 58
+rect 27 -49 61 -11
 rect 27 -118 61 -102
 << viali >>
-rect -61 -102 -27 42
-rect 27 -102 61 42
+rect -61 -11 -27 42
+rect -61 -102 -27 -49
+rect 27 -11 61 42
+rect 27 -102 61 -49
 << metal1 >>
 rect -67 42 -21 54
-rect -67 -102 -61 42
-rect -27 -102 -21 42
+rect -67 -11 -61 42
+rect -27 -11 -21 42
+rect -67 -49 -21 -11
+rect -67 -102 -61 -49
+rect -27 -102 -21 -49
 rect -67 -114 -21 -102
 rect 21 42 67 54
-rect 21 -102 27 42
-rect 61 -102 67 42
+rect 21 -11 27 42
+rect 61 -11 67 42
+rect 21 -49 67 -11
+rect 21 -102 27 -49
+rect 61 -102 67 -49
 rect 21 -114 67 -102
 << properties >>
 string FIXED_BBOX -158 -250 158 250

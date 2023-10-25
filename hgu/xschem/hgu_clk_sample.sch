@@ -9,9 +9,9 @@ N 970 -400 970 -330 {
 lab=#net1}
 N 970 -400 1010 -400 {
 lab=#net1}
-N 560 -310 610 -310 {
+N 560 -330 610 -330 {
 lab=#net2}
-N 610 -440 610 -310 {
+N 610 -440 610 -330 {
 lab=#net2}
 N 610 -440 1010 -440 {
 lab=#net2}
@@ -76,16 +76,15 @@ lab=SAMPLE_CLK_b}
 N 1270 -270 1280 -270 {
 lab=#net5}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
-C {../xschem/hgu_clk_div.sym} 410 -290 0 0 {name=x1}
-C {../xschem/hgu_delay.sym} 710 -300 0 0 {name=x2 DELAY_CAP=8f}
+C {../xschem/hgu_clk_div.sym} 410 -310 0 0 {name=x1}
+C {../xschem/hgu_delay.sym} 710 -270 0 0 {name=x2 DELAY_CAP=8f}
 C {devices/ipin.sym} 260 -380 0 0 {name=p11 lab=VDD}
 C {devices/ipin.sym} 260 -360 0 0 {name=p12 lab=VSS}
-C {devices/lab_pin.sym} 560 -330 0 0 {name=p1 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 560 -310 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 560 -290 0 0 {name=p2 sig_type=std_logic lab=VSS}
-C {devices/ipin.sym} 260 -270 0 0 {name=p9 lab=SET}
-C {devices/ipin.sym} 260 -290 0 0 {name=p10 lab=RESET}
-C {devices/ipin.sym} 260 -310 0 0 {name=p14 lab=CLK}
-C {devices/lab_pin.sym} 560 -270 0 0 {name=p26 sig_type=std_logic lab=cap_ctrl_code[0:7]}
+C {devices/ipin.sym} 260 -290 0 0 {name=p9 lab=SET}
+C {devices/ipin.sym} 260 -310 0 0 {name=p10 lab=RESET}
+C {devices/ipin.sym} 260 -330 0 0 {name=p14 lab=CLK}
 C {sky130_stdcells/inv_1.sym} 900 -330 0 0 {name=x7 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/capa.sym} 970 -300 0 0 {name=C1
 m=1
@@ -105,7 +104,6 @@ value=5f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 860 -270 0 0 {name=p4 sig_type=std_logic lab=VSS}
-C {devices/ipin.sym} 260 -220 0 0 {name=p5 lab=cap_ctrl_code[0:7]}
 C {sky130_stdcells/nand2_1.sym} 1070 -420 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/opin.sym} 1560 -270 0 0 {name=p21 lab=SAMPLE_CLK}
 C {devices/opin.sym} 1560 -420 0 0 {name=p22 lab=SAMPLE_CLK_b}
@@ -155,7 +153,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1180 -300 0 0 {name=M10
 L=0.15
-W=1.13
+W=1.4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -201,7 +199,7 @@ C {devices/lab_pin.sym} 1320 -210 2 0 {name=p29 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1320 -330 2 0 {name=p30 sig_type=std_logic lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 1200 -590 1 0 {name=M13
 L=0.15
-W=2.5
+W=1.9
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -291,3 +289,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/ipin.sym} 260 -210 0 0 {name=p5 lab=CAP_CTRL_CODE1[0:3]}
+C {devices/ipin.sym} 260 -190 0 0 {name=p6 lab=CAP_CTRL_CODE2[0:3]}
+C {devices/ipin.sym} 260 -170 0 0 {name=p7 lab=CAP_CTRL_CODE3[0:3]}
+C {devices/ipin.sym} 260 -230 0 0 {name=p8 lab=CAP_CTRL_CODE0[0:3]}
+C {devices/lab_pin.sym} 560 -270 0 0 {name=p13 sig_type=std_logic lab=CAP_CTRL_CODE0[0:3]}
+C {devices/lab_pin.sym} 560 -250 0 0 {name=p15 sig_type=std_logic lab=CAP_CTRL_CODE1[0:3]}
+C {devices/lab_pin.sym} 560 -230 0 0 {name=p16 sig_type=std_logic lab=CAP_CTRL_CODE2[0:3]}
+C {devices/lab_pin.sym} 560 -210 0 0 {name=p17 sig_type=std_logic lab=CAP_CTRL_CODE3[0:3]}

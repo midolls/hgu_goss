@@ -1,15 +1,21 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1697026606
-<< checkpaint >>
-rect -1313 -2913 1629 111
+timestamp 1697348449
+<< error_s >>
+rect 129 -1287 187 -1281
+rect 129 -1321 141 -1287
+rect 129 -1327 187 -1321
 << metal1 >>
 rect 0 0 200 200
 rect 0 -400 200 -200
 rect 0 -800 200 -600
 rect 0 -1200 200 -1000
 rect 0 -1600 200 -1400
+use sky130_fd_pr__cap_mim_m3_1_FJFAMD  XC1
+timestamp 1697348449
+transform 1 0 755 0 1 -1413
+box -386 -240 386 240
 use sky130_fd_pr__nfet_01v8_L7T3GD  XM14
 timestamp 1697025759
 transform 1 0 158 0 1 -1401

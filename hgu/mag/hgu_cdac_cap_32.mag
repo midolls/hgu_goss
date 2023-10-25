@@ -1,0 +1,16 @@
+magic
+tech sky130A
+timestamp 1698242286
+<< metal3 >>
+rect 2394 0 2487 34
+<< metal4 >>
+rect 2394 0 2487 34
+use hgu_cdac_cap_16  hgu_cdac_cap_16_0
+timestamp 1698242123
+transform 1 0 2424 0 1 0
+box 0 0 2457 1056
+use hgu_cdac_cap_16  hgu_cdac_cap_16_1
+timestamp 1698242123
+transform 1 0 0 0 1 0
+box 0 0 2457 1056
+<< end >>

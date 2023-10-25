@@ -1,0 +1,42 @@
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_comp.sch
+.subckt hgu_comp cdac_vn cdac_vp VSS VDD clk ready comp_outp comp_outn
+*.PININFO cdac_vn:I cdac_vp:I VSS:I VDD:I clk:I ready:O comp_outp:O comp_outn:O
+XM1 net1 clk VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=4 m=1
+XM4 Y X Q VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM5 X Y P VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM6 X Y VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM7 Y X VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM8 X clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM9 P clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM10 Y clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM11 Q clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM16 RS_n RS_p VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM17 RS_p RS_n VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM19 RS_p Y_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM23 RS_n X_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM2 P cdac_vp net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=8 m=1
+XM3 Q cdac_vn net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=8 m=1
+XM12 X_inv X VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM13 X_inv X VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM14 X_drive X_inv VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.52 nf=3 m=1
+XM15 X_drive X_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1.38 nf=3 m=1
+XM18 Y_inv Y VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM20 Y_inv Y VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM21 Y_drive Y_inv VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.52 nf=3 m=1
+XM22 Y_drive Y_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1.38 nf=3 m=1
+XM24 net2 Y_drive X_drive VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM25 net2 X_drive Y_drive VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM26 net2 Y_drive net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM27 net3 X_drive VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM28 ready net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM29 ready net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM30 net4 RS_p VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM31 net4 RS_p VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM32 comp_outp net4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.52 nf=3 m=1
+XM33 comp_outp net4 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1.38 nf=3 m=1
+XM34 net5 RS_n VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+XM35 net5 RS_n VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM36 comp_outn net5 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.52 nf=3 m=1
+XM37 comp_outn net5 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1.38 nf=3 m=1
+.ends
+.end

@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_unit.sch
+**.subckt hgu_cdac_unit PLUS MINUS
+*.iopin PLUS
+*.iopin MINUS
+XC2 PLUS MINUS sky130_fd_pr__cap_mim_m3_1 W=1.41 L=1.41 MF=1 m=1
+**.ends
+.end
