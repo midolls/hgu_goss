@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-N -520 -250 -520 -220 {
+N -620 -250 -620 -220 {
 lab=VDD}
 N 30 -110 30 -70 {
 lab=tah_vn}
@@ -80,9 +80,9 @@ lab=vip}
 N -1030 -600 -110 -600 {
 lab=VSS}
 C {../xschem/hgu_tah.sym} -160 -140 0 0 {name=x1}
-C {devices/vsource.sym} -520 -190 0 0 {name=V2 value=1.8
+C {devices/vsource.sym} -620 -190 0 0 {name=V2 value=1.8
 }
-C {devices/gnd.sym} -520 -160 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} -620 -160 0 0 {name=l1 lab=GND}
 C {devices/code.sym} -515 -100 0 0 {name=s1 only_toplevel=false value="
 .save all 
 .temp = 25
@@ -121,7 +121,7 @@ run
 "
 }
 C {sky130_fd_pr/corner.sym} -645 -100 0 0 {name=CORNER only_toplevel=false corner=ss}
-C {devices/vdd.sym} -520 -250 0 0 {name=l3 lab=VDD}
+C {devices/vdd.sym} -620 -250 0 0 {name=l3 lab=VDD}
 C {devices/capa.sym} 30 -40 0 0 {name=C2
 m=1
 value=1.5p
