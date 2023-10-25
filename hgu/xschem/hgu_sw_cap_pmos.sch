@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-T {4.37e-15 F} 150 -150 0 0 0.2 0.2 {}
+T {5.64e-15 F} 150 -150 0 0 0.2 0.2 {}
 N 230 -110 230 -90 {
 lab=DELAY_SIGNAL}
 N 230 -190 230 -170 {
@@ -31,8 +31,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/capa.sym} 230 -140 0 0 {name=C1
-m=1
-value=5f
-footprint=1206
-device="ceramic capacitor"}
+C {devices/ipin.sym} 130 -40 0 0 {name=p8 lab=VSS}
+C {../xschem/hgu_vpp_cap.sym} 230 -140 0 0 {name=hgu_cdac_unit}
+C {devices/lab_pin.sym} 210 -130 3 0 {name=p5 sig_type=std_logic lab=VSS}

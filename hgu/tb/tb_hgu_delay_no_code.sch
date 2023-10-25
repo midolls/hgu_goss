@@ -154,13 +154,6 @@ C {devices/vsource.sym} 790 -260 0 0 {name=V56 value=1.8}
 C {devices/vdd.sym} 690 -290 0 0 {name=l53 lab=VPWR}
 C {devices/gnd.sym} 840 -230 0 0 {name=l54 lab=GND}
 C {devices/vsource.sym} 840 -260 0 0 {name=V57 value=0}
-C {devices/simulator_commands_shown.sym} 60 -830 0 0 {name=COMMANDS
-simulator=ngspice
-only_toplevel=false 
-value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-"}
 C {devices/lab_pin.sym} 1220 -460 2 0 {name=p11 sig_type=std_logic lab=Vout2}
 C {devices/gnd.sym} 1220 -400 0 0 {name=l16 lab=GND}
 C {devices/capa.sym} 1220 -430 0 0 {name=C5
@@ -179,3 +172,11 @@ value=10f
 footprint=1206
 device="ceramic capacitor"}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 1070 -440 0 0 {name=x5}
+C {devices/simulator_commands_shown.sym} 100 -850 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false 
+value="
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+"}

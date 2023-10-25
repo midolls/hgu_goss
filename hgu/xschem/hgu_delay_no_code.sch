@@ -228,3 +228,4 @@ C {devices/lab_pin.sym} 810 -280 0 0 {name=p7 sig_type=std_logic lab=code[1]}
 C {devices/lab_pin.sym} 950 -280 0 0 {name=p8 sig_type=std_logic lab=code[0]}
 C {devices/lab_pin.sym} 810 -740 0 0 {name=p9 sig_type=std_logic lab=code[3]}
 C {devices/lab_pin.sym} 610 -510 3 0 {name=p6 sig_type=std_logic lab=Uc}
+C {devices/lab_pin.sym} 670 -600 0 0 {name=p10 sig_type=std_logic lab=VSS}
