@@ -474,3 +474,11 @@ value="
 "}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1240 0 0 {name=x10}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1330 0 0 {name=x11}
+C {devices/noconn.sym} 2820 -1350 2 0 {name=l7}
+C {devices/noconn.sym} 2820 -1260 2 0 {name=l8}
+C {devices/noconn.sym} 2520 -1350 0 0 {name=l9}
+C {devices/noconn.sym} 2520 -1330 0 0 {name=l10}
+C {devices/noconn.sym} 2520 -1310 0 0 {name=l15}
+C {devices/noconn.sym} 2520 -1260 0 0 {name=l16}
+C {devices/noconn.sym} 2520 -1240 0 0 {name=l17}
+C {devices/noconn.sym} 2520 -1220 0 0 {name=l18}

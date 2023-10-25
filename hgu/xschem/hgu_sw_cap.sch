@@ -5,15 +5,10 @@ K {}
 V {}
 S {}
 E {}
-T {4.37e-15 F} 160 -140 0 0 0.2 0.2 {}
 N 230 -110 230 -90 {
 lab=VSS}
 N 230 -190 230 -170 {
 lab=#net1}
-N 210 -130 210 -110 {
-lab=VSS}
-N 210 -110 230 -110 {
-lab=VSS}
 C {devices/lab_pin.sym} 230 -220 2 0 {name=p32 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 210 -220 0 0 {name=M14
 L=0.15
@@ -35,12 +30,8 @@ C {devices/lab_pin.sym} 190 -220 0 0 {name=p3 sig_type=std_logic lab=SW}
 C {devices/ipin.sym} 130 -120 0 0 {name=p4 lab=SW}
 C {devices/ipin.sym} 130 -60 0 0 {name=p6 lab=VSS}
 C {devices/iopin.sym} 130 -90 2 0 {name=p7 lab=DELAY_SIGNAL}
-C {devices/capa.sym} 380 -240 0 0 {name=C1
+C {devices/capa.sym} 230 -140 0 0 {name=C1
 m=1
 value=4.37f
 footprint=1206
 device="ceramic capacitor"}
-C {sky130_fd_pr/vpp_cap.sym} 230 -140 0 0 {name=C2
-model=cap_vpp_02p4x04p6_m1m2_noshield
-mult=1 
-spiceprefix=X}
