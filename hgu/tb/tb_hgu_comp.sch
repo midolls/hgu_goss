@@ -53,6 +53,14 @@ N 620 -380 620 -360 {
 lab=outn}
 N 620 -360 770 -360 {
 lab=outn}
+N 470 -500 500 -500 {
+lab=P}
+N 470 -480 500 -480 {
+lab=Q}
+N 470 -460 500 -460 {
+lab=X}
+N 470 -440 500 -440 {
+lab=Y}
 C {../xschem/hgu_comp.sym} 430 -400 0 0 {name=x1}
 C {devices/vsource.sym} 100 -80 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 180 -80 0 0 {name=V2 value=0}
@@ -61,9 +69,9 @@ C {devices/lab_pin.sym} 100 -130 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -130 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 340 -500 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 340 -280 0 0 {name=p4 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} 250 -80 0 0 {name=V3 value="PULSE(0 1.8 0 100p 100p 5n 20n)"}
-C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="PULSE(0.9017578125 0.8982421875 0 5p 5p 25n 50n)"}
-C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="PULSE(0.8982421875 0.9017578125 0 5p 5p 25n 50n)"}
+C {devices/vsource.sym} 250 -80 0 0 {name=V3 value="PULSE(0 1.8 0 91p 77p 5n 20n)"}
+C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="PULSE(0.903515625 0.896484375 0 5p 5p 25n 50n)"}
+C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="PULSE(0.896484375 0.903515625 0 5p 5p 25n 50n)"}
 C {devices/gnd.sym} 480 -110 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 250 -130 0 0 {name=p5 sig_type=std_logic lab=clk
 }
@@ -77,11 +85,11 @@ C {devices/lab_pin.sym} 520 -330 2 0 {name=p14 sig_type=std_logic lab=ready}
 C {devices/lab_pin.sym} 620 -420 2 0 {name=p11 sig_type=std_logic lab=outp}
 C {devices/lab_pin.sym} 620 -380 2 0 {name=p15 sig_type=std_logic lab=outn}
 C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
-
+.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .tran 1ns 100ns
-.temp 100
+.temp 25
 .control
     run
      let svdd = 1.8
@@ -106,7 +114,8 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
       let falling_time = falling_e-falling_s
 
     print rising_time falling_time rising_delay falling_delay 
-    plot V(outp)+6 V(P)-2  V(X)+2  V(clk) V(inn) V(inp) V(Y)+2  V(outn)+6 V(Q)-2 V(ready) V(X_drive)+4 V(Y_drive)+4
+    plot V(clk) V(inn) V(inp) V(ready) V(outp)+2 V(outn)+2
+    plot V(outp) V(outn)
 .endc
 .save all
 "}
@@ -140,3 +149,7 @@ C {devices/lab_pin.sym} 770 -450 0 0 {name=p26 sig_type=std_logic lab=clk
 }
 C {devices/lab_pin.sym} 770 -430 0 0 {name=p27 sig_type=std_logic lab=clk
 }
+C {devices/lab_pin.sym} 500 -500 2 0 {name=p12 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} 500 -480 2 0 {name=p13 sig_type=std_logic lab=Q}
+C {devices/lab_pin.sym} 500 -460 2 0 {name=p16 sig_type=std_logic lab=X}
+C {devices/lab_pin.sym} 500 -440 2 0 {name=p17 sig_type=std_logic lab=Y}
