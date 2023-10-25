@@ -1,0 +1,31 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+node "hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0" 3 357.146 1944 0 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 135840 4552 135840 4552 0 0 0 0
+node "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0" 3 315.276 1338 0 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 135840 4552 135840 4552 0 0 0 0
+node "hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0" 3 315.276 732 0 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 135840 4552 135840 4552 0 0 0 0
+node "hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0" 3 357.488 126 0 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 135840 4552 135840 4552 0 0 0 0
+node "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" 32 2531.96 0 128 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1322580 42664 1322580 42664 0 0 0 0
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C0"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C1"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C0"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" "hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" "hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C0"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" "hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C1"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" "hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C0"
+node "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1" 21 2599.21 0 1150 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 893460 28360 893460 28360 0 0 0 0
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C1"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1" "hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1"
+equiv "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1" "hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C1"
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" 4311.61
+cap "hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0" 67.7184
+cap "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" 17675.8
+cap "hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" 4311.61
+cap "hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" 4311.61
+cap "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0" 67.7184
+cap "hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0" "hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0" 67.7184
+cap "hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0" "hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1" 4311.61
