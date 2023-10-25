@@ -79,7 +79,7 @@ C {devices/lab_pin.sym} 400 -130 0 0 {name=p1 sig_type=std_logic lab=a}
 C {devices/vsource.sym} 240 30 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 240 70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 240 0 0 0 {name=p4 sig_type=std_logic lab=vdd}
-C {../xschem/hgu_vpp_cap.sym} 470 120 0 0 {symname=hgu_cdac_unit
+C {../xschem/hgu_vpp_cap.sym} 390 100 0 0 {symname=hgu_cdac_unit
 name=x1
 
 }

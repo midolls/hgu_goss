@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698147323
+timestamp 1698248449
 << psubdiff >>
 rect 356 204 706 208
 rect 356 166 398 204
@@ -87,7 +87,7 @@ rect 512 166 550 204
 rect 588 166 626 204
 rect 664 166 742 204
 rect 320 160 742 166
-use sky130_fd_pr__nfet_01v8_L7T3GD  sky130_fd_pr__nfet_01v8_L7T3GD_0
+use sky130_fd_pr__nfet_01v8_L8T3GD  sky130_fd_pr__nfet_01v8_L8T3GD_0 /foss/designs/hgu_goss/hgu/mag
 timestamp 1697868789
 transform 1 0 531 0 1 264
 box -73 -28 73 108
