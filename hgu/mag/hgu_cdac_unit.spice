@@ -1,0 +1,7 @@
+* NGSPICE file created from hgu_cdac_unit.ext - technology: sky130A
+
+.subckt hgu_cdac_unit C1 C0
+C0 C0 C1 4.32f
+C1 C1 VSUBS 1.32f
+.ends
+

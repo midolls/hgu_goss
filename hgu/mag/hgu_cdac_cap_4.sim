@@ -1,0 +1,10 @@
+| units: 500000 tech: sky130A format: MIT
+C hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0 hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 4.3
+C hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0 hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 4.3
+C hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 8.9
+R hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 17
+= hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_2_1.hgu_cdac_unit_0.C0
+= hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_2_0.hgu_cdac_unit_1.C1
+= hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_2_0.hgu_cdac_unit_0.C0
+R hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 11
+= hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 hgu_cdac_cap_2_0.hgu_cdac_unit_0.C1
