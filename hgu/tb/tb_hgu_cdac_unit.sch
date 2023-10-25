@@ -33,7 +33,7 @@ C {devices/code.sym} 55 -170 0 0 {name=s1 only_toplevel=false value="
 .temp = 100
 .tran 100p 400n
 .OPTIONS savecurrent
-.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit_flat.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
 
 .control
 	run
@@ -53,5 +53,5 @@ C {devices/lab_pin.sym} 400 -130 0 0 {name=p1 sig_type=std_logic lab=a}
 C {devices/vsource.sym} 240 30 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 240 70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 240 0 0 0 {name=p4 sig_type=std_logic lab=vdd}
-C {../xschem/hgu_vpp_cap.sym} 400 -70 0 0 {name=hgu_cdac_unit_flat
+C {../xschem/hgu_vpp_cap.sym} 400 -70 0 0 {name=hgu_cdac_unit
 }
