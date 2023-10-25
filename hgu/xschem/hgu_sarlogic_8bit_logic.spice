@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_8bit_logic.sch
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_sarlogic_8bit_logic.sch
 **.subckt hgu_sarlogic_8bit_logic clk_sar VDD VSS comparator_out reset EOB
 *+ D[0],D[1],D[2],D[3],D[4],D[5],D[6],D[7] check[0],check[1],check[2],check[3],check[4],check[5],check[6],check[7] sel_bit[0],sel_bit[1]
 *+ D_b[0],D_b[1],D_b[2],D_b[3],D_b[4],D_b[5],D_b[6],D_b[7]
@@ -33,25 +33,6 @@ x75 VSS VSS resetb net12 VGND VNB VPB VPWR net1 net13 sky130_fd_sc_hd__dfbbp_1
 x77 EOB VGND VNB VPB VPWR net12 sky130_fd_sc_hd__inv_1
 x78 check[2] check[1] check[0] net2 sel_bit[0] sel_bit[1] VGND VNB VPB VPWR EOB
 + sky130_fd_sc_hd__mux4_4
-x22[17] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[16] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[15] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[14] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[13] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[12] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[11] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[10] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[9] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[8] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[7] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[6] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[5] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[4] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[3] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[2] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[1] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22[0] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
-x22 clk_sar VGND VNB VPB VPWR clk_sar_buff sky130_fd_sc_hd__buf_1
 C2[17] resetb VSS 5f m=1
 C2[16] resetb VSS 5f m=1
 C2[15] resetb VSS 5f m=1
@@ -113,5 +94,11 @@ C40 D_b[3] VSS 5f m=1
 C41 D_b[2] VSS 5f m=1
 C42 D_b[1] VSS 5f m=1
 C43 D_b[0] VSS 5f m=1
+x1 reset VGND VNB VPB VPWR net14 sky130_fd_sc_hd__buf_1
+x2 clk_sar VGND VNB VPB VPWR net15 sky130_fd_sc_hd__buf_1
+x3 net14 VGND VNB VPB VPWR net16 sky130_fd_sc_hd__buf_4
+x4 net16 VGND VNB VPB VPWR resetb sky130_fd_sc_hd__buf_8
+x5 net15 VGND VNB VPB VPWR net17 sky130_fd_sc_hd__buf_4
+x6 net17 VGND VNB VPB VPWR clk_sar_buff sky130_fd_sc_hd__buf_8
 **.ends
 .end

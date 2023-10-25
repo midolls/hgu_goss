@@ -1,0 +1,53 @@
+magic
+tech sky130A
+timestamp 1697519975
+<< checkpaint >>
+rect -630 -3430 730 730
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+rect 0 -800 100 -700
+rect 0 -1000 100 -900
+rect 0 -1200 100 -1100
+rect 0 -1400 100 -1300
+rect 0 -1600 100 -1500
+rect 0 -1800 100 -1700
+rect 0 -2000 100 -1900
+rect 0 -2200 100 -2100
+rect 0 -2400 100 -2300
+rect 0 -2600 100 -2500
+rect 0 -2800 100 -2700
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 128 0 0 0 drv<31:0>
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 128 0 0 0 drv<1:0>
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 128 0 0 0 drv<0>
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 128 0 0 0 drv<3:0>
+port 3 nsew
+flabel metal1 0 -800 100 -700 0 FreeSans 128 0 0 0 drv<63:0>
+port 4 nsew
+flabel metal1 0 -1000 100 -900 0 FreeSans 128 0 0 0 drv<15:0>
+port 5 nsew
+flabel metal1 0 -1200 100 -1100 0 FreeSans 128 0 0 0 drv<7:0>
+port 6 nsew
+flabel metal1 0 -1400 100 -1300 0 FreeSans 128 0 0 0 tah<63:0>
+port 7 nsew
+flabel metal1 0 -1600 100 -1500 0 FreeSans 128 0 0 0 {}
+port 8 nsew
+flabel metal1 0 -1800 100 -1700 0 FreeSans 128 0 0 0 tah<31:0>
+port 9 nsew
+flabel metal1 0 -2000 100 -1900 0 FreeSans 128 0 0 0 tah<15:0>
+port 10 nsew
+flabel metal1 0 -2200 100 -2100 0 FreeSans 128 0 0 0 tah<7:0>
+port 11 nsew
+flabel metal1 0 -2400 100 -2300 0 FreeSans 128 0 0 0 tah<3:0>
+port 12 nsew
+flabel metal1 0 -2600 100 -2500 0 FreeSans 128 0 0 0 tah<1:0>
+port 13 nsew
+flabel metal1 0 -2800 100 -2700 0 FreeSans 128 0 0 0 tah<0>
+port 14 nsew
+<< end >>

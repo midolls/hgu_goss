@@ -1,0 +1,39 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698049494
+<< checkpaint >>
+rect -1260 -660 4424 4560
+use hgu_inverter  hgu_inverter_0
+timestamp 1698049794
+transform 1 0 0 0 1 2200
+box 0 -1600 528 800
+use hgu_inverter  hgu_inverter_1
+timestamp 1698049794
+transform 1 0 528 0 1 2200
+box 0 -1600 528 800
+use hgu_inverter  hgu_inverter_2
+timestamp 1698049794
+transform 1 0 1056 0 1 2200
+box 0 -1600 528 800
+use hgu_inverter  hgu_inverter_3
+timestamp 1698049794
+transform 1 0 1584 0 1 2200
+box 0 -1600 528 800
+use hgu_inverter  x1
+timestamp 1698049794
+transform 1 0 53 0 1 2200
+box 0 -1600 528 800
+use hgu_inverter  x2
+timestamp 1698049794
+transform 1 0 844 0 1 2200
+box 0 -1600 528 800
+use hgu_inverter  x3
+timestamp 1698049794
+transform 1 0 1635 0 1 2200
+box 0 -1600 528 800
+use hgu_inverter  x4
+timestamp 1698049794
+transform 1 0 2426 0 1 2200
+box 0 -1600 528 800
+<< end >>

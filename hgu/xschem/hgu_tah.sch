@@ -130,8 +130,8 @@ lab=VSS}
 N -170 540 50 540 {
 lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 50 -50 1 0 {name=M1
-L=0.22
-W=7.6
+L=0.15
+W=11
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -144,8 +144,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} -170 230 1 1 {name=M4
-L=0.22
-W=7.6
+L=0.15
+W=11
 nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -180,8 +180,8 @@ C {devices/ipin.sym} -370 0 0 0 {name=p10 lab=sw_n
 
 }
 C {sky130_fd_pr/pfet_01v8.sym} -170 -50 1 0 {name=M2
-L=0.22
-W=15.2
+L=0.15
+W=22
 nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -194,9 +194,9 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 50 240 1 1 {name=M3
-L=0.22
-W=3.8
-nf=1 
+L=0.15
+W=5.5
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -228,8 +228,8 @@ C {devices/lab_wire.sym} -410 470 0 0 {name=p17 sig_type=std_logic lab=VDD
 C {devices/lab_wire.sym} -410 540 0 0 {name=p18 sig_type=std_logic lab=VSS
 }
 C {sky130_fd_pr/pfet_01v8.sym} -170 360 1 0 {name=M9
-L=0.22
-W=15.2
+L=0.15
+W=22
 nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -242,8 +242,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 50 360 1 0 {name=M7
-L=0.22
-W=7.6
+L=0.15
+W=11
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -256,8 +256,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} -170 640 1 1 {name=M5
-L=0.22
-W=7.6
+L=0.15
+W=11
 nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -270,9 +270,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 50 650 1 1 {name=M6
-L=0.22
-W=3.8
-nf=1 
+L=0.15
+W=5.5
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -283,59 +283,59 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/capa.sym} -300 130 0 0 {name=C1
+C {devices/capa.sym} -360 190 0 0 {name=C1
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/capa.sym} 180 130 0 0 {name=C2
+C {devices/capa.sym} -280 260 0 0 {name=C2
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/capa.sym} -300 540 0 0 {name=C3
+C {devices/capa.sym} -400 350 0 0 {name=C3
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/capa.sym} 180 540 0 0 {name=C4
+C {devices/capa.sym} -250 320 0 0 {name=C4
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} -300 160 0 0 {name=p21 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -360 220 0 0 {name=p21 sig_type=std_logic lab=VSS
 }
-C {devices/lab_wire.sym} 180 160 0 0 {name=p22 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -280 290 0 0 {name=p22 sig_type=std_logic lab=VSS
 }
-C {devices/lab_wire.sym} -300 570 0 0 {name=p23 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -400 380 0 0 {name=p23 sig_type=std_logic lab=VSS
 }
-C {devices/lab_wire.sym} 180 570 0 0 {name=p24 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -250 350 0 0 {name=p24 sig_type=std_logic lab=VSS
 }
-C {devices/capa.sym} -60 10 0 0 {name=C5
+C {devices/capa.sym} -350 270 0 0 {name=C5
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} -60 40 0 0 {name=p25 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -350 300 0 0 {name=p25 sig_type=std_logic lab=VSS
 }
-C {devices/capa.sym} -60 240 0 0 {name=C6
+C {devices/capa.sym} -430 270 0 0 {name=C6
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} -60 270 0 0 {name=p26 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -430 300 0 0 {name=p26 sig_type=std_logic lab=VSS
 }
-C {devices/capa.sym} -60 420 0 0 {name=C7
+C {devices/capa.sym} -470 340 0 0 {name=C7
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} -60 450 0 0 {name=p27 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -470 370 0 0 {name=p27 sig_type=std_logic lab=VSS
 }
-C {devices/capa.sym} -60 650 0 0 {name=C8
+C {devices/capa.sym} -320 350 0 0 {name=C8
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} -60 680 0 0 {name=p28 sig_type=std_logic lab=VSS
+C {devices/lab_wire.sym} -320 380 0 0 {name=p28 sig_type=std_logic lab=VSS
 }

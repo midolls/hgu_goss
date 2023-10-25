@@ -1,0 +1,24 @@
+v {xschem version=3.4.0 file_version=1.2
+}
+G {}
+K {type=primative
+format="@model @pinlist @name"
+template="name=C1"
+}
+V {}
+S {}
+E {}
+L 4 0 2.5 0 30 {}
+L 4 0 -30 0 -5 {}
+L 4 -10 -5 10 -5 {}
+B 5 -2.5 -32.5 2.5 -27.5 {name=c0 dir=inout}
+B 5 -2.5 27.5 2.5 32.5 {name=c1 dir=inout}
+B 5 -22.5 7.5 -17.5 12.5 {name=b dir=in}
+A 4 -0 23.75 21.25 61.92751306414704 56.14497387170592 {}
+T {c0} 5 -27.5 0 0 0.15 0.15 {layer=7}
+T {c1} 5 18.75 0 0 0.15 0.15 {layer=7}
+T {@name} 20 -28.75 0 0 0.2 0.2 {}
+T {} 20 16.25 0 0 0.2 0.2 {layer=13}
+T {@model} 5 -13.75 0 0 0.1 0.1 {}
+T {sub} -15 7.5 0 0 0.15 0.15 {layer=7}
+T {} 20 1.25 0 0 0.2 0.2 {layer=13}
