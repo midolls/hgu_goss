@@ -1,11 +1,6 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698065390
-use sky130_fd_pr__nfet_01v8_A6LSUL  sky130_fd_pr__nfet_01v8_A6LSUL_0
-timestamp 1698065390
-transform 1 0 73 0 1 68
-box -146 -136 0 0
 timestamp 1697868789
 << nmos >>
 rect -15 -2 15 82
