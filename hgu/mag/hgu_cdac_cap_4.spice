@@ -3,10 +3,6 @@
 
 * Top level circuit hgu_cdac_cap_4
 
-C0 hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0 4.31f
-C1 hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 8.87f
-C2 hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0 4.31f
-C3 hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 VSUBS 1.68f $ **FLOATING
-C4 hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 VSUBS 1.7f $ **FLOATING
+C0 hgu_cdac_unit_3.CTOP hgu_cdac_unit_3.SUB 4.58f $ **FLOATING
 .end
 

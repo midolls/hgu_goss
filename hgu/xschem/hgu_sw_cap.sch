@@ -30,6 +30,16 @@ C {devices/lab_pin.sym} 190 -220 0 0 {name=p3 sig_type=std_logic lab=SW}
 C {devices/ipin.sym} 130 -120 0 0 {name=p4 lab=SW}
 C {devices/ipin.sym} 130 -60 0 0 {name=p6 lab=VSS}
 C {devices/iopin.sym} 130 -90 2 0 {name=p7 lab=DELAY_SIGNAL}
+<<<<<<< HEAD
 C {../xschem/hgu_vpp_cap.sym} 230 -140 0 0 {symname=hgu_cdac_unit
 name=x1}
 C {devices/lab_pin.sym} 210 -130 3 0 {name=p5 sig_type=std_logic lab=VSS}
+=======
+C {devices/capa.sym} 380 -240 0 0 {name=C1
+m=1
+value=4.37f
+footprint=1206
+device="ceramic capacitor"}
+C {/foss/designs/hgu_goss/hgu/xschem/hgu_vpp_cap.sym} 230 -140 0 0 {name=x1
+model=hgu_cdac_unit}
+>>>>>>> 7289b1b1690da569ce6fb4e324067928620fabe7
