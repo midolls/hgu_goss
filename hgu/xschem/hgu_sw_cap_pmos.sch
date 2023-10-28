@@ -32,5 +32,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/ipin.sym} 130 -40 0 0 {name=p8 lab=VSS}
-C {../xschem/hgu_vpp_cap.sym} 230 -140 0 0 {name=hgu_cdac_unit}
+C {../xschem/hgu_vpp_cap.sym} 230 -140 0 0 {symname=hgu_cdac_unit
+name=x1}
 C {devices/lab_pin.sym} 210 -130 3 0 {name=p5 sig_type=std_logic lab=VSS}
