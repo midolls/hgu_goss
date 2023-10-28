@@ -1,0 +1,11 @@
+* NGSPICE file created from hgu_cdac_cap_2_flat.ext - technology: sky130A
+
+
+* Top level circuit hgu_cdac_cap_2_flat
+
+C0 x2.CTOP x1.CBOT 5.11f
+C1 x2.CBOT x2.CTOP 5.11f
+C2 x1.CBOT x2.SUB 1.38f $ **FLOATING
+C3 x2.CBOT x2.SUB 1.38f $ **FLOATING
+.end
+

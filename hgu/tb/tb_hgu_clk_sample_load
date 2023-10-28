@@ -1,0 +1,231 @@
+v {xschem version=3.4.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -1140 -490 -1140 -460 {
+lab=VDD}
+N -160 -370 -160 -330 {
+lab=tah_vn}
+N -540 -420 -420 -420 {
+lab=vip}
+N -540 -420 -540 -360 {
+lab=vip}
+N -540 -360 -540 -300 {
+lab=vip}
+N -310 -500 -310 -480 {
+lab=sw_n}
+N -380 -480 -350 -480 {
+lab=sw}
+N -380 -550 -380 -480 {
+lab=sw}
+N -200 -430 -120 -430 {
+lab=tah_vp}
+N -200 -370 -160 -370 {
+lab=tah_vn}
+N -120 -430 -120 -410 {
+lab=tah_vp}
+N -490 -380 -420 -380 {
+lab=vin}
+N -490 -380 -490 -350 {
+lab=vin}
+N -410 -680 -310 -680 {
+lab=sw_n}
+N -490 -350 -490 -330 {
+lab=vin}
+N -830 -140 -700 -140 {
+lab=#net1}
+N -760 -140 -760 -80 {
+lab=#net1}
+N -760 -20 -760 -10 {
+lab=GND}
+N -830 -100 -800 -100 {
+lab=GND}
+N -800 -100 -800 -10 {
+lab=GND}
+N -720 -100 -700 -100 {
+lab=GND}
+N -720 -100 -720 -10 {
+lab=GND}
+N -870 -90 -870 30 {
+lab=#net2}
+N -870 30 -660 30 {
+lab=#net2}
+N -660 -90 -660 30 {
+lab=#net2}
+N -760 30 -760 60 {
+lab=#net2}
+N -870 -170 -870 -150 {
+lab=#net3}
+N -660 -170 -660 -150 {
+lab=#net4}
+N -760 -230 -660 -230 {
+lab=#net4}
+N -660 -230 -660 -170 {
+lab=#net4}
+N -870 -230 -810 -230 {
+lab=#net3}
+N -870 -230 -870 -170 {
+lab=#net3}
+N -540 -300 -540 -220 {
+lab=vip}
+N -410 -660 -380 -660 {
+lab=sw}
+N -380 -660 -380 -550 {
+lab=sw}
+N -1060 -960 -590 -960 {
+lab=VSS}
+N -90 -660 -90 -510 {
+lab=sw}
+N -90 -510 -90 -470 {
+lab=sw}
+N -90 -470 30 -470 {
+lab=sw}
+N -380 -660 -20 -660 {
+lab=sw}
+N -310 -680 -310 -500 {
+lab=sw_n}
+N -310 -760 -310 -680 {
+lab=sw_n}
+N -310 -760 -250 -760 {
+lab=sw_n}
+C {../xschem/hgu_tah.sym} -350 -400 0 0 {name=x1}
+C {devices/vsource.sym} -1140 -430 0 0 {name=V2 value=1.8
+}
+C {devices/gnd.sym} -1140 -400 0 0 {name=l1 lab=GND}
+C {devices/code.sym} -705 -360 0 0 {name=s1 only_toplevel=false value="
+.save all 
+.temp = 25
+.tran 10p 500n
+.OPTIONS savecurrents
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+
+.control
+run
+	plot v(sw)-0.9 v(sw_n)-0.9 tah_vp-tah_vn vip-vin
+        let svdd = 1.8
+        let max = svdd*0.8
+        let min = svdd*0.2
+        let mid = svdd*0.5
+	let input = vip-vin
+        meas tran rising_s find time when V(tah_vp-tah_vn)=min RISE=1 TD=100n
+        meas tran rising_e find time when V(tah_vp-tah_vn)=max RISE=1 TD=100n
+        let rising_time = rising_e-rising_s
+        meas tran falling_s find time when V(tah_vp-tah_vn)=max FALL=1 TD=1000p
+        meas tran falling_e find time when V(tah_vp-tah_vn)=min FALL=1 TD=1000p
+        let falling_time = falling_e-falling_s
+        meas tran IN find time when V(sw)=mid RISE=1 TD=350n
+        meas tran OUT find time when V(tah_vp-tah_vn)=mid RISE=1 TD=350n
+        let rising_delay = OUT-IN
+        meas tran fIN find time when V(sw)=mid RISE=1 TD=100n
+        meas tran fOUT find time when V(tah_vp-tah_vn)=mid FALL=1 TD=100n
+        let falling_delay = fOUT-fIN
+	meas tran holdval find input when V(sw)=mid FALL=1 TD=300n 
+
+
+        print holdval
+
+*plot v(sw)+2 v(sw) tah_vp tah_vn+2
+*plot v(sw) tah_vp-tah_vn vip-vin
+.endc
+"
+}
+C {sky130_fd_pr/corner.sym} -835 -360 0 0 {name=CORNER only_toplevel=false corner=ss}
+C {devices/vdd.sym} -1140 -490 0 0 {name=l3 lab=VDD}
+C {devices/capa.sym} -160 -300 0 0 {name=C2
+m=1
+value=1.5p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} -160 -270 0 0 {name=l5 lab=GND}
+C {devices/lab_wire.sym} -380 -490 0 0 {name=p3 sig_type=std_logic lab=sw
+}
+C {devices/lab_wire.sym} -310 -490 0 0 {name=p5 sig_type=std_logic lab=sw_n
+
+}
+C {devices/lab_wire.sym} -430 -420 0 0 {name=p6 sig_type=std_logic lab=vip
+
+}
+C {devices/lab_wire.sym} -160 -350 0 0 {name=p7 sig_type=std_logic lab=tah_vn
+}
+C {devices/capa.sym} -120 -380 0 0 {name=C1
+m=1
+value=1.4p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} -120 -350 0 0 {name=l8 lab=GND}
+C {devices/lab_wire.sym} -130 -430 0 0 {name=p8 sig_type=std_logic lab=tah_vp
+}
+C {devices/lab_wire.sym} -430 -380 0 0 {name=p9 sig_type=std_logic lab=vin
+
+}
+C {devices/gnd.sym} -280 -320 0 0 {name=l10 lab=GND}
+C {devices/vdd.sym} -280 -480 0 0 {name=l2 lab=VDD}
+C {devices/vsource.sym} -760 -50 0 0 {name=V4 value="SIN(0 0.9 2.5MEG 0n)"}
+C {devices/vcvs.sym} -870 -120 0 1 {name=E1 value=0.5
+}
+C {devices/vcvs.sym} -660 -120 0 0 {name=E2 value=-0.5
+}
+C {devices/gnd.sym} -760 -10 0 0 {name=l14 lab=GND}
+C {devices/gnd.sym} -800 -10 0 0 {name=l15 lab=GND}
+C {devices/gnd.sym} -720 -10 0 0 {name=l16 lab=GND}
+C {devices/vsource.sym} -760 90 0 0 {name=V6 value=0.9
+}
+C {devices/gnd.sym} -760 120 0 0 {name=l17 lab=GND}
+C {../xschem/hgu_clk_sample.sym} -560 -600 0 0 {name=x3}
+C {devices/gnd.sym} -710 -660 1 0 {name=l21 lab=GND}
+C {devices/vdd.sym} -710 -680 3 0 {name=l22 lab=VDD}
+C {devices/gnd.sym} -710 -600 1 0 {name=l24 lab=GND}
+C {devices/gnd.sym} -710 -620 1 0 {name=l35 lab=GND}
+C {devices/lab_pin.sym} -710 -640 0 0 {name=p11 sig_type=std_logic lab=EXT_CLK}
+C {devices/vdd.sym} -1060 -660 0 0 {name=l7 lab=VGND}
+C {devices/gnd.sym} -1210 -600 0 0 {name=l11 lab=GND}
+C {devices/vsource.sym} -1210 -630 0 0 {name=V8 value=1.8}
+C {devices/vdd.sym} -1160 -660 0 0 {name=l12 lab=VNB}
+C {devices/gnd.sym} -1160 -600 0 0 {name=l13 lab=GND}
+C {devices/vsource.sym} -1160 -630 0 0 {name=V9 value=0}
+C {devices/vdd.sym} -1110 -660 0 0 {name=l36 lab=VPB}
+C {devices/gnd.sym} -1110 -600 0 0 {name=l37 lab=GND}
+C {devices/vsource.sym} -1110 -630 0 0 {name=V10 value=1.8}
+C {devices/vdd.sym} -1210 -660 0 0 {name=l38 lab=VPWR}
+C {devices/gnd.sym} -1060 -600 0 0 {name=l39 lab=GND}
+C {devices/vsource.sym} -1060 -630 0 0 {name=V11 value=0}
+C {devices/vsource.sym} -540 -190 0 0 {name=V3 value="PULSE(0.9 1.8 127n 200n 200n 10p 400n)"
+}
+C {devices/gnd.sym} -540 -160 0 0 {name=l40 lab=GND}
+C {devices/vsource.sym} -490 -300 0 0 {name=V5 value="PULSE(1.8 0.9 127n 200n 200n 10p 400n)"
+}
+C {devices/gnd.sym} -490 -270 0 0 {name=l41 lab=GND}
+C {devices/vdd.sym} -1010 -900 1 0 {name=l42 lab=async_resetb_delay_cap_ctrl_code[3]}
+C {devices/vdd.sym} -900 -900 1 0 {name=l43 lab=async_resetb_delay_cap_ctrl_code[2]}
+C {devices/vdd.sym} -790 -1020 1 0 {name=l44 lab=async_resetb_delay_cap_ctrl_code[1]}
+C {devices/vdd.sym} -680 -1020 1 0 {name=l45 lab=async_resetb_delay_cap_ctrl_code[0]}
+C {devices/vsource.sym} -680 -990 0 0 {name=V7 value=1.8}
+C {devices/vsource.sym} -1010 -930 0 0 {name=V24 value=0}
+C {devices/vsource.sym} -900 -930 0 0 {name=V25 value=0}
+C {devices/vsource.sym} -790 -930 0 0 {name=V26 value=0}
+C {devices/lab_pin.sym} -1060 -960 0 0 {name=p1 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} -790 -990 0 0 {name=V27 value=1.8}
+C {devices/vsource.sym} -900 -990 0 0 {name=V32 value=1.8}
+C {devices/vsource.sym} -1010 -990 0 0 {name=V33 value=1.8}
+C {devices/vsource.sym} -680 -930 0 0 {name=V34 value=0}
+C {devices/noconn.sym} -1010 -1020 2 0 {name=l46}
+C {devices/noconn.sym} -900 -1020 2 0 {name=l47}
+C {devices/noconn.sym} -790 -900 2 0 {name=l48}
+C {devices/noconn.sym} -680 -900 2 0 {name=l49}
+C {devices/lab_pin.sym} -710 -580 0 0 {name=p2 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} -710 -560 0 0 {name=p10 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} -710 -540 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} -710 -520 0 0 {name=p13 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {sky130_stdcells/dfbbp_1.sym} 70 -630 0 0 {name=x27 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/mux2_1.sym} 70 -530 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/buf_1.sym} -210 -760 0 0 {name=x4 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/buf_4.sym} -130 -760 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/buf_16.sym} -50 -760 0 0 {name=x6 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dfbbp_1.sym} 80 -770 0 0 {name=x20 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/vsource.sym} -1170 -290 0 0 {name=V12 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
+C {devices/gnd.sym} -1170 -260 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} -1170 -320 0 0 {name=p14 sig_type=std_logic lab=EXT_CLK}
