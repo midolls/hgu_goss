@@ -1,4 +1,142 @@
 magic
 tech sky130A
-timestamp 1697616495
+magscale 1 2
+timestamp 1698585871
+<< nwell >>
+rect 10320 2060 15469 3189
+rect 15609 2170 15919 2218
+rect 10320 2027 15908 2060
+rect 10320 2007 15469 2027
+<< poly >>
+rect 15446 2211 15480 2262
+rect 15404 2195 15480 2211
+rect 15404 2161 15414 2195
+rect 15448 2161 15480 2195
+rect 15404 2145 15480 2161
+rect 15330 1733 15404 1851
+<< polycont >>
+rect 15414 2161 15448 2195
+<< locali >>
+rect 15414 2195 15448 2212
+rect 15580 2186 15775 2220
+rect 15414 2145 15448 2161
+rect 10352 1884 10444 2082
+rect 15567 1775 15775 1809
+<< viali >>
+rect 15414 2161 15448 2195
+<< metal1 >>
+rect 15408 2195 15454 2211
+rect 15408 2161 15414 2195
+rect 15448 2161 15454 2195
+rect 15408 2149 15454 2161
+rect 10210 2079 10316 2137
+rect 10357 2015 10441 2080
+rect 15414 2015 15448 2149
+rect 10357 1974 15448 2015
+rect 15827 1977 16014 2023
+rect 15276 1871 15322 1974
+<< metal4 >>
+rect 10306 3351 15964 3486
+rect 10307 2312 10442 3351
+rect 15536 2393 15964 3351
+rect 10307 641 10442 1224
+rect 15409 641 15951 1639
+rect 10307 506 15952 641
+rect 10307 504 10442 506
+use hgu_sw_cap  x2
+timestamp 1698584986
+transform -1 0 11543 0 1 154
+box 369 540 1041 1854
+use hgu_sw_cap  x3[0]
+timestamp 1698584986
+transform -1 0 12755 0 1 154
+box 369 540 1041 1854
+use hgu_sw_cap  x3[1]
+timestamp 1698584986
+transform -1 0 12149 0 1 154
+box 369 540 1041 1854
+use hgu_pfet_hvt_stack_in_delay  x3
+timestamp 1698584986
+transform 0 1 9591 -1 0 2442
+box 49 669 443 900
+use hgu_sw_cap  x4[0]
+timestamp 1698584986
+transform -1 0 15431 0 1 154
+box 369 540 1041 1854
+use hgu_sw_cap  x4[1]
+timestamp 1698584986
+transform -1 0 14699 0 1 154
+box 369 540 1041 1854
+use hgu_sw_cap  x4[2]
+timestamp 1698584986
+transform -1 0 14093 0 1 154
+box 369 540 1041 1854
+use hgu_sw_cap  x4[3]
+timestamp 1698584986
+transform -1 0 13361 0 1 154
+box 369 540 1041 1854
+use hgu_nfet_hvt_stack_in_delay  x4
+timestamp 1698581447
+transform 0 -1 11195 1 0 1093
+box 85 731 838 903
+use hgu_sw_cap_pmos  x5[0]
+timestamp 1698585871
+transform 1 0 14375 0 -1 3838
+box 369 518 1041 1841
+use hgu_sw_cap_pmos  x5[1]
+timestamp 1698585871
+transform 1 0 13769 0 -1 3838
+box 369 518 1041 1841
+use hgu_sw_cap_pmos  x5[2]
+timestamp 1698585871
+transform 1 0 13163 0 -1 3838
+box 369 518 1041 1841
+use hgu_sw_cap_pmos  x5[3]
+timestamp 1698585871
+transform 1 0 12557 0 -1 3838
+box 369 518 1041 1841
+use hgu_sw_cap_pmos  x5[4]
+timestamp 1698585871
+transform 1 0 11951 0 -1 3838
+box 369 518 1041 1841
+use hgu_sw_cap_pmos  x5[5]
+timestamp 1698585871
+transform 1 0 11345 0 -1 3838
+box 369 518 1041 1841
+use hgu_sw_cap_pmos  x5[6]
+timestamp 1698585871
+transform 1 0 10739 0 -1 3838
+box 369 518 1041 1841
+use hgu_sw_cap_pmos  x5[7]
+timestamp 1698585871
+transform 1 0 10133 0 -1 3838
+box 369 518 1041 1841
+use sky130_fd_pr__nfet_01v8_MVW3GX  XM1
+timestamp 1698581447
+transform -1 0 15758 0 -1 1889
+box -125 -130 125 84
+use sky130_fd_pr__nfet_01v8_43TXAA  XM2
+timestamp 1698584986
+transform 0 1 15202 -1 0 1281
+box -658 -68 658 130
+use sky130_fd_pr__nfet_01v8_ZPNSVB  XM13
+timestamp 1698581447
+transform 0 -1 15499 1 0 1748
+box -73 -106 73 107
+use sky130_fd_pr__nfet_01v8_ZPNSVB  XM15
+timestamp 1698581447
+transform 0 -1 15499 1 0 1836
+box -73 -106 73 107
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM46
+timestamp 1698581447
+transform 0 -1 15537 1 0 2159
+box -109 -78 110 90
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM47
+timestamp 1698581447
+transform 0 -1 15537 1 0 2247
+box -109 -78 110 90
+use sky130_fd_pr__pfet_01v8_hvt_M433PY  XM48
+timestamp 1698581447
+transform -1 0 15758 0 1 2106
+box -161 -139 161 91
 << end >>

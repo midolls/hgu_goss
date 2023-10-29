@@ -201,11 +201,3 @@ C {sky130_stdcells/buf_4.sym} 420 -610 0 0 {name=x27 VGND=VSS VNB=VSS VPB=VDD VP
 C {sky130_stdcells/buf_16.sym} 500 -610 0 0 {name=x30 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 280 -910 0 0 {name=p5 sig_type=std_logic lab=READY_buff}
 C {devices/lab_pin.sym} 540 -610 2 0 {name=p6 sig_type=std_logic lab=READY_buff}
-C {devices/simulator_commands_shown.sym} 610 -1440 0 0 {name=COMMANDS
-simulator=ngspice
-only_toplevel=false 
-value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
-"}

@@ -467,6 +467,7 @@ value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 "}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1240 0 0 {name=x10}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1330 0 0 {name=x11}

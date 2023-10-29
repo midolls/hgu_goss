@@ -1,0 +1,34 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698502036
+<< error_s >>
+rect 305 719 363 725
+rect 305 685 317 719
+rect 305 679 363 685
+<< nwell >>
+rect 97 766 131 852
+rect 144 735 349 765
+<< pdiff >>
+rect 97 839 131 852
+rect 97 766 131 779
+<< pdiffc >>
+rect 97 779 131 839
+<< poly >>
+rect 144 721 349 751
+<< locali >>
+rect 97 839 131 910
+rect 97 763 131 779
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM1
+timestamp 1698497316
+transform -1 0 334 0 1 808
+box -109 -139 109 89
+use sky130_fd_pr__pfet_01v8_hvt_MWB9BZ  XM2
+timestamp 1698497316
+transform -1 0 231 0 1 809
+box -110 -79 110 91
+use sky130_fd_pr__pfet_01v8_hvt_MWB9BZ  XM3
+timestamp 1698497316
+transform -1 0 159 0 1 809
+box -110 -79 110 91
+<< end >>
