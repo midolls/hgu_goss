@@ -1,0 +1,15 @@
+* NGSPICE file created from hgu_inverter.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_L8T3GD a_n15_n28# a_n73_n2# a_15_n2# VSUBS
+X0 a_15_n2# a_n15_n28# a_n73_n2# VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_MQX2PY a_15_n114# w_n152_n152# a_n15_n141# a_n73_n114#
+X0 a_15_n114# a_n15_n141# a_n73_n114# w_n152_n152# sky130_fd_pr__pfet_01v8 ad=0.244 pd=2.26 as=0.244 ps=2.26 w=0.84 l=0.15
+.ends
+
+.subckt hgu_inverter OUT VREF VDD VSS IN
+Xsky130_fd_pr__nfet_01v8_L8T3GD_0 IN VSS OUT VSS sky130_fd_pr__nfet_01v8_L8T3GD
+XXM2 OUT VDD IN VREF sky130_fd_pr__pfet_01v8_MQX2PY
+.ends
+
