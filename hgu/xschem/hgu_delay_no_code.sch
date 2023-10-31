@@ -106,7 +106,7 @@ lab=Uc}
 N 740 -550 740 -510 {
 lab=Uc}
 N 810 -740 810 -610 {
-lab=code[3]}
+lab=#net3}
 N 670 -410 670 -280 {
 lab=code[2]}
 N 810 -410 810 -280 {
@@ -212,12 +212,11 @@ C {devices/ipin.sym} 220 -210 0 0 {name=p5 lab=code[0:3]}
 C {devices/lab_pin.sym} 670 -280 0 0 {name=p188 sig_type=std_logic lab=code[2]}
 C {devices/lab_pin.sym} 810 -280 0 0 {name=p7 sig_type=std_logic lab=code[1]}
 C {devices/lab_pin.sym} 950 -280 0 0 {name=p8 sig_type=std_logic lab=code[0]}
-C {devices/lab_pin.sym} 810 -740 0 0 {name=p9 sig_type=std_logic lab=code[3]}
+C {devices/lab_pin.sym} 730 -740 0 0 {name=p9 sig_type=std_logic lab=code[3]}
 C {devices/lab_pin.sym} 610 -510 3 0 {name=p6 sig_type=std_logic lab=Uc}
-C {devices/lab_pin.sym} 670 -600 0 0 {name=p10 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 550 -490 1 0 {name=M2
-L=6
-W=0.42
+L=0.42
+W=6
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -229,3 +228,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {sky130_stdcells/inv_1.sym} 770 -740 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }

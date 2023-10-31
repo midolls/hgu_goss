@@ -1,175 +1,40 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1697348449
+timestamp 1698595725
 << error_s >>
-rect 2392 813 2433 845
-rect 44 -783 74 -773
-rect 38 -799 74 -783
-rect 38 -803 72 -799
-rect 38 -817 74 -803
-rect 82 -817 112 -799
-rect 122 -817 152 -783
-rect 4 -845 34 -817
-rect 44 -851 74 -841
-rect 6 -879 36 -869
-rect 0 -904 36 -879
-rect 38 -885 74 -851
-rect 82 -845 118 -817
-rect 358 -831 388 -821
-rect 82 -879 112 -845
-rect 352 -847 388 -831
-rect 352 -851 386 -847
-rect 44 -904 74 -895
-rect 82 -904 114 -879
-rect 122 -885 152 -851
-rect 0 -913 114 -904
-rect -34 -941 123 -913
-rect -5 -951 123 -941
-rect 166 -947 172 -851
-rect 352 -865 388 -851
-rect 396 -865 426 -847
-rect 436 -865 466 -831
-rect 200 -913 206 -879
-rect 318 -893 348 -865
-rect 358 -899 388 -889
-rect 320 -927 350 -917
-rect 0 -955 123 -951
-rect 314 -952 350 -927
-rect 352 -933 388 -899
-rect 396 -893 432 -865
-rect 396 -927 426 -893
-rect 358 -952 388 -943
-rect 396 -952 428 -927
-rect 436 -933 466 -899
-rect -32 -972 -2 -965
-rect 0 -972 232 -955
-rect 314 -961 428 -952
-rect -32 -975 232 -972
-rect -38 -992 232 -975
-rect 280 -989 437 -961
-rect -38 -1000 -2 -992
-rect 6 -997 232 -992
-rect 4 -1000 232 -997
-rect 309 -999 437 -989
-rect -38 -1009 232 -1000
-rect -72 -1037 232 -1009
-rect 314 -1003 437 -999
-rect 282 -1023 312 -1013
-rect -43 -1047 232 -1037
-rect -38 -1077 232 -1047
-rect 276 -1048 312 -1023
-rect 314 -1029 546 -1003
-rect 340 -1039 546 -1029
-rect 320 -1045 546 -1039
-rect 318 -1048 546 -1045
-rect 276 -1057 546 -1048
-rect -12 -1081 232 -1077
-rect -46 -1093 232 -1081
-rect 242 -1083 546 -1057
-rect 242 -1085 514 -1083
-rect -46 -1096 -42 -1093
-rect -34 -1096 232 -1093
-rect 271 -1095 514 -1085
-rect -76 -1105 232 -1096
-rect -81 -1143 232 -1105
-rect 276 -1125 514 -1095
-rect 302 -1129 514 -1125
-rect -50 -1147 232 -1143
-rect 268 -1141 514 -1129
-rect 268 -1144 272 -1141
-rect 280 -1144 514 -1141
-rect -114 -1153 232 -1147
-rect 238 -1153 514 -1144
-rect -114 -1215 194 -1153
-rect 233 -1179 514 -1153
-rect 233 -1191 476 -1179
-rect 264 -1195 476 -1191
-rect -72 -1227 194 -1215
-rect -88 -1273 -50 -1245
-rect -46 -1261 -2 -1227
-rect 0 -1233 36 -1227
-rect -46 -1273 0 -1261
-rect -76 -1307 -50 -1279
-rect -46 -1304 -2 -1273
-rect 44 -1275 74 -1227
-rect 84 -1233 114 -1227
-rect 124 -1249 194 -1227
-rect 124 -1275 156 -1249
-rect 200 -1263 476 -1195
-rect -38 -1329 -2 -1304
-rect 6 -1371 36 -1311
-rect 46 -1329 76 -1295
-rect 192 -1313 200 -1279
-rect 226 -1293 234 -1273
-rect 242 -1275 476 -1263
-rect 226 -1321 264 -1293
-rect 268 -1309 312 -1275
-rect 314 -1281 350 -1275
-rect 268 -1321 314 -1309
-rect 238 -1355 264 -1327
-rect 268 -1352 312 -1321
-rect 358 -1323 388 -1275
-rect 398 -1281 428 -1275
-rect 276 -1377 312 -1352
-rect 320 -1419 350 -1359
-rect 360 -1377 390 -1343
-<< metal1 >>
-rect 0 0 200 200
-rect 0 -400 200 -200
-rect 0 -800 200 -600
-rect 0 -1200 200 -1000
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1683767628
-transform 1 0 -38 0 1 -1200
-box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
-timestamp 1683767628
-transform 1 0 276 0 1 -1248
-box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_2
-timestamp 1683767628
-transform 1 0 -76 0 1 -1296
-box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_3
-timestamp 1683767628
-transform 1 0 238 0 1 -1344
-box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_4
-timestamp 1683767628
-transform 1 0 -114 0 1 -1392
-box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_5
-timestamp 1683767628
-transform 1 0 200 0 1 -1440
-box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_6
-timestamp 1683767628
-transform 1 0 -152 0 1 -1488
-box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_7
-timestamp 1683767628
-transform 1 0 162 0 1 -1536
-box -38 -48 314 592
+rect 27 647 30 654
+rect 64 647 79 654
+rect 109 647 163 654
+rect 193 647 245 654
+rect 299 647 351 654
+rect 29 599 63 603
+rect 121 599 155 603
+rect 213 599 247 603
+rect 0 589 298 599
+rect 305 589 339 593
+rect 397 589 431 593
+rect 489 589 523 593
+rect 581 589 595 593
+rect 0 583 615 589
+rect -12 549 264 565
+rect 310 549 586 555
+rect 17 545 51 549
+rect 109 545 143 549
+rect 201 545 235 549
+rect 339 545 373 549
+rect 431 545 465 549
+rect 523 545 557 549
 use sky130_fd_sc_hd__dfbbp_1  x2 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1683767628
+timestamp 1697358018
 transform 1 0 0 0 1 600
 box -38 -48 2430 592
-use sky130_fd_sc_hd__inv_1  x3
-timestamp 1683767628
-transform 1 0 2430 0 1 552
+use sky130_fd_sc_hd__inv_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697965495
+transform 1 0 -12 0 1 4
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  x4
-timestamp 1683767628
-transform 1 0 2744 0 1 504
+timestamp 1697965495
+transform 1 0 310 0 1 -6
 box -38 -48 314 592
-<< labels >>
-flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 DIV_CLK
-port 0 nsew
-flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 CLK
-port 1 nsew
-flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 RESET
-port 2 nsew
-flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 SET
-port 3 nsew
 << end >>

@@ -1,19 +1,4 @@
 
-Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
-
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
@@ -29,607 +14,92 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
-Subcircuit summary:
-Circuit 1: sky130_fd_sc_hd__buf_1          |Circuit 2: sky130_fd_sc_hd__buf_1          
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
-sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 7                          |Number of nets: 7                          
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
 ---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Flattening unmatched subcell sky130_fd_sc_hd__dfbbn_1 in circuit hgu_sarlogic_sw_ctrl_sch (1)(14 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__mux2_1 in circuit hgu_sarlogic_sw_ctrl_sch (1)(14 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit hgu_sarlogic_sw_ctrl_sch (1)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_4 in circuit hgu_sarlogic_sw_ctrl_sch (1)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_16 in circuit hgu_sarlogic_sw_ctrl_sch (1)(2 instances)
+
+Class hgu_sarlogic_sw_ctrl_flat (0):  Merged 92 parallel devices.
+Class hgu_sarlogic_sw_ctrl_sch (1):  Merged 92 parallel devices.
+Subcircuit summary:
+Circuit 1: hgu_sarlogic_sw_ctrl_flat       |Circuit 2: hgu_sarlogic_sw_ctrl_sch        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (422->376)         |sky130_fd_pr__nfet_01v8 (422->376)         
+sky130_fd_pr__pfet_01v8_hvt (422->376)     |sky130_fd_pr__pfet_01v8_hvt (422->376)     
+Number of devices: 752                     |Number of devices: 752                     
+Number of nets: 422                        |Number of nets: 422                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: sky130_fd_sc_hd__buf_1          |Circuit 2: sky130_fd_sc_hd__buf_1          
+Circuit 1: hgu_sarlogic_sw_ctrl_flat       |Circuit 2: hgu_sarlogic_sw_ctrl_sch        
 -------------------------------------------|-------------------------------------------
-VGND                                       |VGND                                       
-X                                          |X                                          
-VNB                                        |VNB                                        
-A                                          |A                                          
-VPWR                                       |VPWR                                       
-VPB                                        |VPB                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_sc_hd__buf_1 and sky130_fd_sc_hd__buf_1 are equivalent.
-
-Class sky130_fd_sc_hd__buf_4 (0):  Merged 6 parallel devices.
-Class sky130_fd_sc_hd__buf_4 (1):  Merged 6 parallel devices.
-Subcircuit summary:
-Circuit 1: sky130_fd_sc_hd__buf_4          |Circuit 2: sky130_fd_sc_hd__buf_4          
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_hvt (5->2)         |sky130_fd_pr__pfet_01v8_hvt (5->2)         
-sky130_fd_pr__nfet_01v8 (5->2)             |sky130_fd_pr__nfet_01v8 (5->2)             
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 7                          |Number of nets: 7                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_sc_hd__buf_4          |Circuit 2: sky130_fd_sc_hd__buf_4          
--------------------------------------------|-------------------------------------------
-X                                          |X                                          
-VGND                                       |VGND                                       
-VNB                                        |VNB                                        
-VPWR                                       |VPWR                                       
-VPB                                        |VPB                                        
-A                                          |A                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_sc_hd__buf_4 and sky130_fd_sc_hd__buf_4 are equivalent.
-
-Class sky130_fd_sc_hd__buf_16 (0):  Merged 40 parallel devices.
-Class sky130_fd_sc_hd__buf_16 (1):  Merged 40 parallel devices.
-Subcircuit summary:
-Circuit 1: sky130_fd_sc_hd__buf_16         |Circuit 2: sky130_fd_sc_hd__buf_16         
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (22->2)            |sky130_fd_pr__nfet_01v8 (22->2)            
-sky130_fd_pr__pfet_01v8_hvt (22->2)        |sky130_fd_pr__pfet_01v8_hvt (22->2)        
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 7                          |Number of nets: 7                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_sc_hd__buf_16         |Circuit 2: sky130_fd_sc_hd__buf_16         
--------------------------------------------|-------------------------------------------
-X                                          |X                                          
-VPWR                                       |VPWR                                       
-VPB                                        |VPB                                        
-VGND                                       |VGND                                       
-VNB                                        |VNB                                        
-A                                          |A                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_sc_hd__buf_16 and sky130_fd_sc_hd__buf_16 are equivalent.
-
-Subcircuit summary:
-Circuit 1: sky130_fd_sc_hd__dfbbn_1        |Circuit 2: sky130_fd_sc_hd__dfbbn_1        
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (20)               |sky130_fd_pr__nfet_01v8 (20)               
-sky130_fd_pr__pfet_01v8_hvt (20)           |sky130_fd_pr__pfet_01v8_hvt (20)           
-Number of devices: 40                      |Number of devices: 40                      
-Number of nets: 29                         |Number of nets: 29                         
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_sc_hd__dfbbn_1        |Circuit 2: sky130_fd_sc_hd__dfbbn_1        
--------------------------------------------|-------------------------------------------
-D                                          |D                                          
-RESET_B                                    |RESET_B                                    
-Q                                          |Q                                          
-Q_N                                        |Q_N                                        
-CLK_N                                      |CLK_N                                      
-VPWR                                       |VPWR                                       
-VNB                                        |VNB                                        
-VPB                                        |VPB                                        
-VGND                                       |VGND                                       
-SET_B                                      |SET_B                                      
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_sc_hd__dfbbn_1 and sky130_fd_sc_hd__dfbbn_1 are equivalent.
-
-Subcircuit summary:
-Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_hvt (6)            |sky130_fd_pr__pfet_01v8_hvt (6)            
-sky130_fd_pr__nfet_01v8 (6)                |sky130_fd_pr__nfet_01v8 (6)                
-Number of devices: 12                      |Number of devices: 12                      
-Number of nets: 14                         |Number of nets: 14                         
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
--------------------------------------------|-------------------------------------------
-VPB                                        |VPB                                        
-VNB                                        |VNB                                        
-A0                                         |A0                                         
-A1                                         |A1                                         
-X                                          |X                                          
-VPWR                                       |VPWR                                       
-S                                          |S                                          
-VGND                                       |VGND                                       
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 are equivalent.
-
-Cell hgu_sarlogic_sw_ctrl (0) disconnected node: async_clk
-Subcircuit summary:
-Circuit 1: hgu_sarlogic_sw_ctrl            |Circuit 2: hgu_sarlogic_sw_ctrl_sch        
--------------------------------------------|-------------------------------------------
-sky130_fd_sc_hd__buf_1 (2)                 |sky130_fd_sc_hd__buf_1 (2)                 
-sky130_fd_sc_hd__buf_4 (2)                 |sky130_fd_sc_hd__buf_4 (2)                 
-sky130_fd_sc_hd__buf_16 (2)                |sky130_fd_sc_hd__buf_16 (2)                
-sky130_fd_sc_hd__dfbbn_1 (14)              |sky130_fd_sc_hd__dfbbn_1 (14)              
-sky130_fd_sc_hd__mux2_1 (14)               |sky130_fd_sc_hd__mux2_1 (14)               
-Number of devices: 34                      |Number of devices: 34                      
-Number of nets: 66                         |Number of nets: 66                         
----------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: hgu_sarlogic_sw_ctrl            |Circuit 2: hgu_sarlogic_sw_ctrl_sch        
-
----------------------------------------------------------------------------------------
-Net: VSS_SW[7]                             |Net: vss_sw[7]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VDD_SW[2]                             |Net: vdd_sw[2]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VSS_SW[2]                             |Net: vss_sw[2]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VSS_SW[6]                             |Net: vss_sw[6]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VDD_SW[1]                             |Net: vdd_sw[1]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VDD_SW[5]                             |Net: vdd_sw[5]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VSS_SW[1]                             |Net: vss_sw[1]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VSS_SW[5]                             |Net: vss_sw[5]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VSS_SW[4]                             |Net: vss_sw[4]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VDD_SW[4]                             |Net: vdd_sw[4]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VDD_SW[3]                             |Net: vdd_sw[3]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VDD_SW[7]                             |Net: vdd_sw[7]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VSS_SW[3]                             |Net: vss_sw[3]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VDD_SW[6]                             |Net: vdd_sw[6]                             
-  sky130_fd_sc_hd__dfbbn_1/Q = 1           |  sky130_fd_sc_hd__dfbbn_1/Q = 1           
-                                           |                                           
-Net: VSS_SW_b[7]                           |Net: vss_sw_b[7]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VDD_SW_b[2]                           |Net: vdd_sw_b[2]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VSS_SW_b[2]                           |Net: vss_sw_b[2]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VSS_SW_b[6]                           |Net: vss_sw_b[6]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VDD_SW_b[1]                           |Net: vdd_sw_b[1]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VDD_SW_b[5]                           |Net: vdd_sw_b[5]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VSS_SW_b[1]                           |Net: vss_sw_b[1]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VSS_SW_b[5]                           |Net: vss_sw_b[5]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VSS_SW_b[4]                           |Net: vss_sw_b[4]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VDD_SW_b[4]                           |Net: vdd_sw_b[4]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VDD_SW_b[3]                           |Net: vdd_sw_b[3]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VDD_SW_b[7]                           |Net: vdd_sw_b[7]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VSS_SW_b[3]                           |Net: vss_sw_b[3]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-Net: VDD_SW_b[6]                           |Net: vdd_sw_b[6]                           
-  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         |  sky130_fd_sc_hd__dfbbn_1/Q_N = 1         
-                                           |                                           
-(no matching net)                          |Net: reset                                 
-                                           |  sky130_fd_sc_hd__buf_1/A = 1             
-                                           |                                           
-(no matching net)                          |Net: resetb                                
-                                           |  sky130_fd_sc_hd__dfbbn_1/SET_B = 7       
-                                           |  sky130_fd_sc_hd__dfbbn_1/RESET_B = 7     
-                                           |  sky130_fd_sc_hd__buf_16/X = 1            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: x12/X                                 |Net: net16                                 
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__buf_4/X = 1             
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__buf_16/A = 1            
-                                           |                                           
-Net: x11/X                                 |Net: net15                                 
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__buf_1/X = 1             
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__buf_4/A = 1             
-                                           |                                           
-Net: x17/X                                 |Net: net14                                 
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x13/X                                 |Net: net12                                 
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x10/X                                 |Net: net10                                 
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x18/X                                 |Net: net8                                  
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x16/X                                 |Net: net6                                  
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x14/X                                 |Net: net4                                  
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x15/X                                 |Net: net2                                  
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: D[1]                                  |Net: D[1]                                  
-  sky130_fd_sc_hd__dfbbn_1/D = 2           |  sky130_fd_sc_hd__dfbbn_1/D = 2           
-                                           |                                           
-Net: D[2]                                  |Net: D[2]                                  
-  sky130_fd_sc_hd__dfbbn_1/D = 2           |  sky130_fd_sc_hd__dfbbn_1/D = 2           
-                                           |                                           
-Net: D[3]                                  |Net: D[3]                                  
-  sky130_fd_sc_hd__dfbbn_1/D = 2           |  sky130_fd_sc_hd__dfbbn_1/D = 2           
-                                           |                                           
-Net: D[4]                                  |Net: D[4]                                  
-  sky130_fd_sc_hd__dfbbn_1/D = 2           |  sky130_fd_sc_hd__dfbbn_1/D = 2           
-                                           |                                           
-Net: D[5]                                  |Net: D[5]                                  
-  sky130_fd_sc_hd__dfbbn_1/D = 2           |  sky130_fd_sc_hd__dfbbn_1/D = 2           
-                                           |                                           
-Net: D[6]                                  |Net: D[6]                                  
-  sky130_fd_sc_hd__dfbbn_1/D = 2           |  sky130_fd_sc_hd__dfbbn_1/D = 2           
-                                           |                                           
-Net: D[7]                                  |Net: D[7]                                  
-  sky130_fd_sc_hd__dfbbn_1/D = 2           |  sky130_fd_sc_hd__dfbbn_1/D = 2           
-                                           |                                           
-Net: x20/X                                 |Net: net13                                 
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x9/X                                  |Net: net11                                 
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x8/X                                  |Net: net9                                  
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x6/X                                  |Net: net7                                  
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x7/X                                  |Net: net5                                  
-  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x3/X                                  |Net: net3                                  
-  sky130_fd_sc_hd__buf_4/X = 1             |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__buf_16/A = 1            |  sky130_fd_sc_hd__mux2_1/X = 1            
-                                           |                                           
-Net: x3/A                                  |Net: net1                                  
-  sky130_fd_sc_hd__buf_1/X = 1             |  sky130_fd_sc_hd__dfbbn_1/CLK_N = 1       
-  sky130_fd_sc_hd__buf_4/A = 1             |  sky130_fd_sc_hd__mux2_1/X = 1            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: VSS                                   |Net: VSS                                   
-  sky130_fd_sc_hd__buf_1/VGND = 2          |  sky130_fd_sc_hd__buf_1/VGND = 2          
-  sky130_fd_sc_hd__buf_1/VNB = 2           |  sky130_fd_sc_hd__buf_1/VNB = 2           
-  sky130_fd_sc_hd__buf_4/VGND = 2          |  sky130_fd_sc_hd__buf_4/VGND = 2          
-  sky130_fd_sc_hd__buf_4/VNB = 2           |  sky130_fd_sc_hd__buf_4/VNB = 2           
-  sky130_fd_sc_hd__buf_16/VGND = 2         |  sky130_fd_sc_hd__buf_16/VGND = 2         
-  sky130_fd_sc_hd__buf_16/VNB = 2          |  sky130_fd_sc_hd__buf_16/VNB = 2          
-  sky130_fd_sc_hd__dfbbn_1/VGND = 14       |  sky130_fd_sc_hd__dfbbn_1/VGND = 14       
-  sky130_fd_sc_hd__dfbbn_1/VNB = 14        |  sky130_fd_sc_hd__dfbbn_1/VNB = 14        
-  sky130_fd_sc_hd__mux2_1/A0 = 14          |  sky130_fd_sc_hd__mux2_1/A0 = 14          
-  sky130_fd_sc_hd__mux2_1/VGND = 14        |  sky130_fd_sc_hd__mux2_1/VGND = 14        
-  sky130_fd_sc_hd__mux2_1/VNB = 14         |  sky130_fd_sc_hd__mux2_1/VNB = 14         
-                                           |                                           
-Net: VDD                                   |Net: VDD                                   
-  sky130_fd_sc_hd__buf_1/VPWR = 2          |  sky130_fd_sc_hd__buf_1/VPWR = 2          
-  sky130_fd_sc_hd__buf_1/VPB = 2           |  sky130_fd_sc_hd__buf_1/VPB = 2           
-  sky130_fd_sc_hd__buf_4/VPWR = 2          |  sky130_fd_sc_hd__buf_4/VPWR = 2          
-  sky130_fd_sc_hd__buf_4/VPB = 2           |  sky130_fd_sc_hd__buf_4/VPB = 2           
-  sky130_fd_sc_hd__buf_16/VPWR = 2         |  sky130_fd_sc_hd__buf_16/VPWR = 2         
-  sky130_fd_sc_hd__buf_16/VPB = 2          |  sky130_fd_sc_hd__buf_16/VPB = 2          
-  sky130_fd_sc_hd__dfbbn_1/RESET_B = 14    |  sky130_fd_sc_hd__dfbbn_1/RESET_B = 7     
-  sky130_fd_sc_hd__dfbbn_1/VPWR = 14       |  sky130_fd_sc_hd__dfbbn_1/VPWR = 14       
-  sky130_fd_sc_hd__dfbbn_1/VPB = 14        |  sky130_fd_sc_hd__dfbbn_1/VPB = 14        
-  sky130_fd_sc_hd__mux2_1/VPWR = 14        |  sky130_fd_sc_hd__mux2_1/VPWR = 14        
-  sky130_fd_sc_hd__mux2_1/VPB = 14         |  sky130_fd_sc_hd__mux2_1/VPB = 14         
-                                           |  sky130_fd_sc_hd__dfbbn_1/SET_B = 7       
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: x35/SET_B                             |(no matching net)                          
-  sky130_fd_sc_hd__dfbbn_1/SET_B = 8       |                                           
-                                           |                                           
-Net: sample_clk                            |(no matching net)                          
-  sky130_fd_sc_hd__buf_1/A = 1             |                                           
-  sky130_fd_sc_hd__buf_16/X = 1            |                                           
-  sky130_fd_sc_hd__dfbbn_1/SET_B = 6       |                                           
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: hgu_sarlogic_sw_ctrl            |Circuit 2: hgu_sarlogic_sw_ctrl_sch        
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__dfbbn_1:x19     |Instance: sky130_fd_sc_hd__dfbbn_1:35      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 15                             
-  SET_B = 8                                |  SET_B = 82                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x29     |Instance: sky130_fd_sc_hd__dfbbn_1:32      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 15                             
-  SET_B = 8                                |  SET_B = 82                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1_0       |Instance: sky130_fd_sc_hd__dfbbn_1:29      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 15                             
-  SET_B = 8                                |  SET_B = 82                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x28     |Instance: sky130_fd_sc_hd__dfbbn_1:26      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 15                             
-  SET_B = 8                                |  SET_B = 82                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x25     |Instance: sky130_fd_sc_hd__dfbbn_1:24      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 15                             
-  SET_B = 8                                |  SET_B = 82                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x26     |Instance: sky130_fd_sc_hd__dfbbn_1:21      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 15                             
-  SET_B = 8                                |  SET_B = 82                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x24     |Instance: sky130_fd_sc_hd__dfbbn_1:5       
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 15                             
-  SET_B = 8                                |  SET_B = 82                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x35     |Instance: sky130_fd_sc_hd__dfbbn_1:34      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 82                             
-  SET_B = 8                                |  SET_B = 15                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x23     |Instance: sky130_fd_sc_hd__dfbbn_1:31      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 82                             
-  SET_B = 8                                |  SET_B = 15                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x34     |Instance: sky130_fd_sc_hd__dfbbn_1:28      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 82                             
-  SET_B = 8                                |  SET_B = 15                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x21     |Instance: sky130_fd_sc_hd__dfbbn_1:25      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 82                             
-  SET_B = 8                                |  SET_B = 15                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x32     |Instance: sky130_fd_sc_hd__dfbbn_1:23      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 82                             
-  SET_B = 8                                |  SET_B = 15                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x31     |Instance: sky130_fd_sc_hd__dfbbn_1:19      
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 82                             
-  SET_B = 8                                |  SET_B = 15                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
-                                           |                                           
-Instance: sky130_fd_sc_hd__dfbbn_1:x5      |Instance: sky130_fd_sc_hd__dfbbn_1:4       
-  CLK_N = 2                                |  CLK_N = 2                                
-  D = 2                                    |  D = 2                                    
-  RESET_B = 82                             |  RESET_B = 82                             
-  SET_B = 8                                |  SET_B = 15                               
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  Q = 1                                    |  Q = 1                                    
-  Q_N = 1                                  |  Q_N = 1                                  
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__buf_16:x2       |Instance: sky130_fd_sc_hd__buf_16:2        
-  A = 2                                    |  A = 2                                    
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  X = 8                                    |  X = 15                                   
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__buf_1:x1        |Instance: sky130_fd_sc_hd__buf_1:1         
-  A = 8                                    |  A = 1                                    
-  VGND = 82                                |  VGND = 82                                
-  VPWR = 82                                |  VPWR = 82                                
-  X = 2                                    |  X = 2                                    
-  VNB = 82                                 |  VNB = 82                                 
-  VPB = 82                                 |  VPB = 82                                 
----------------------------------------------------------------------------------------
-Netlists do not match.
-
-Subcircuit pins:
-Circuit 1: hgu_sarlogic_sw_ctrl            |Circuit 2: hgu_sarlogic_sw_ctrl_sch        
--------------------------------------------|-------------------------------------------
-VSS_SW[7]                                  |reset **Mismatch**                         
-VDD_SW[2]                                  |vdd_sw[7] **Mismatch**                     
-VSS_SW[2]                                  |vdd_sw[6] **Mismatch**                     
-VSS_SW[6]                                  |vdd_sw[5] **Mismatch**                     
-VDD_SW[1]                                  |vdd_sw[4] **Mismatch**                     
-VDD_SW[5]                                  |vdd_sw[3] **Mismatch**                     
-VSS_SW[1]                                  |vdd_sw[2] **Mismatch**                     
-VSS_SW[5]                                  |vdd_sw[1] **Mismatch**                     
-VSS_SW[4]                                  |vdd_sw_b[7] **Mismatch**                   
-VDD_SW[4]                                  |vdd_sw_b[6] **Mismatch**                   
-VDD_SW[3]                                  |vdd_sw_b[5] **Mismatch**                   
-VDD_SW[7]                                  |vdd_sw_b[4] **Mismatch**                   
-VSS_SW[3]                                  |vdd_sw_b[3] **Mismatch**                   
-VDD_SW[6]                                  |vdd_sw_b[2] **Mismatch**                   
-VSS_SW_b[7]                                |vdd_sw_b[1] **Mismatch**                   
-VDD_SW_b[2]                                |vss_sw[7] **Mismatch**                     
-VSS_SW_b[2]                                |vss_sw[6] **Mismatch**                     
-VSS_SW_b[6]                                |vss_sw[5] **Mismatch**                     
-VDD_SW_b[1]                                |vss_sw[4] **Mismatch**                     
-VDD_SW_b[5]                                |vss_sw[3] **Mismatch**                     
-VSS_SW_b[1]                                |vss_sw[2] **Mismatch**                     
-VSS_SW_b[5]                                |vss_sw[1] **Mismatch**                     
-VSS_SW_b[4]                                |vss_sw_b[7] **Mismatch**                   
-VDD_SW_b[4]                                |vss_sw_b[6] **Mismatch**                   
-VDD_SW_b[3]                                |vss_sw_b[5] **Mismatch**                   
-VDD_SW_b[7]                                |vss_sw_b[4] **Mismatch**                   
+VDD_SW[7]                                  |vdd_sw[7]                                  
+VDD_SW[6]                                  |vdd_sw[6]                                  
+VDD_SW[5]                                  |vdd_sw[5]                                  
+VDD_SW[4]                                  |vdd_sw[4]                                  
+VDD_SW[3]                                  |vdd_sw[3]                                  
+VDD_SW[2]                                  |vdd_sw[2]                                  
+VDD_SW[1]                                  |vdd_sw[1]                                  
+VSS_SW[7]                                  |vss_sw[7]                                  
+VSS_SW[6]                                  |vss_sw[6]                                  
+VSS_SW[5]                                  |vss_sw[5]                                  
+VSS_SW[4]                                  |vss_sw[4]                                  
+VSS_SW[3]                                  |vss_sw[3]                                  
+VSS_SW[2]                                  |vss_sw[2]                                  
+VSS_SW[1]                                  |vss_sw[1]                                  
+VDD_SW_b[7]                                |vdd_sw_b[7]                                
+VDD_SW_b[6]                                |vdd_sw_b[6]                                
+VDD_SW_b[5]                                |vdd_sw_b[5]                                
+VDD_SW_b[4]                                |vdd_sw_b[4]                                
+VDD_SW_b[3]                                |vdd_sw_b[3]                                
+VDD_SW_b[2]                                |vdd_sw_b[2]                                
+VDD_SW_b[1]                                |vdd_sw_b[1]                                
+VSS_SW_b[7]                                |vss_sw_b[7]                                
+VSS_SW_b[6]                                |vss_sw_b[6]                                
+VSS_SW_b[5]                                |vss_sw_b[5]                                
+VSS_SW_b[4]                                |vss_sw_b[4]                                
 VSS_SW_b[3]                                |vss_sw_b[3]                                
-VDD_SW_b[6]                                |vss_sw_b[2] **Mismatch**                   
-D[3]                                       |(no matching pin)                          
-D[4]                                       |(no matching pin)                          
-D[5]                                       |(no matching pin)                          
-D[1]                                       |(no matching pin)                          
-D[6]                                       |(no matching pin)                          
-D[2]                                       |(no matching pin)                          
-D[7]                                       |(no matching pin)                          
-check[1]                                   |check[0] **Mismatch**                      
-check[2]                                   |check[1] **Mismatch**                      
-check[3]                                   |check[2] **Mismatch**                      
-check[4]                                   |check[3] **Mismatch**                      
-check[0]                                   |check[4] **Mismatch**                      
-check[5]                                   |check[5]                                   
+VSS_SW_b[2]                                |vss_sw_b[2]                                
+VSS_SW_b[1]                                |vss_sw_b[1]                                
+ready                                      |READY                                      
+reset                                      |reset                                      
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+D[7]                                       |D[7]                                       
+D[6]                                       |D[6]                                       
+D[5]                                       |D[5]                                       
+D[4]                                       |D[4]                                       
+D[3]                                       |D[3]                                       
+D[2]                                       |D[2]                                       
+D[1]                                       |D[1]                                       
 check[6]                                   |check[6]                                   
-VDD                                        |VSS **Mismatch**                           
-VSS                                        |VDD **Mismatch**                           
+check[5]                                   |check[5]                                   
+check[4]                                   |check[4]                                   
+check[3]                                   |check[3]                                   
+check[2]                                   |check[2]                                   
+check[1]                                   |check[1]                                   
+check[0]                                   |check[0]                                   
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes hgu_sarlogic_sw_ctrl and hgu_sarlogic_sw_ctrl_sch are equivalent.
+Device classes hgu_sarlogic_sw_ctrl_flat and hgu_sarlogic_sw_ctrl_sch are equivalent.
 
-Final result: Netlists do not match.
+Final result: Circuits match uniquely.
+.

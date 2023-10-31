@@ -95,8 +95,8 @@ C {devices/vsource.sym} 420 -240 0 0 {name=V12 value="PULSE(0 1.8 1n 5p 5p 30n 5
 C {devices/gnd.sym} 420 -210 0 0 {name=l25 lab=GND}
 C {devices/lab_pin.sym} 420 -270 0 0 {name=p3 sig_type=std_logic lab=EXT_CLK}
 C {../xschem/hgu_delay_no_code.sym} 380 -440 0 0 {name=x1}
-C {devices/vdd.sym} 390 -10 1 0 {name=l11 lab=async_resetb_delay_cap_ctrl_code[3]}
-C {devices/vdd.sym} 500 -10 1 0 {name=l12 lab=async_resetb_delay_cap_ctrl_code[2]}
+C {devices/vdd.sym} 390 -130 1 0 {name=l11 lab=async_resetb_delay_cap_ctrl_code[3]}
+C {devices/vdd.sym} 500 -130 1 0 {name=l12 lab=async_resetb_delay_cap_ctrl_code[2]}
 C {devices/vdd.sym} 610 -130 1 0 {name=l13 lab=async_resetb_delay_cap_ctrl_code[1]}
 C {devices/vdd.sym} 720 -130 1 0 {name=l14 lab=async_resetb_delay_cap_ctrl_code[0]}
 C {devices/vsource.sym} 720 -100 0 0 {name=V3 value=1.8}
@@ -108,8 +108,8 @@ C {devices/vsource.sym} 610 -100 0 0 {name=V4 value=1.8}
 C {devices/vsource.sym} 500 -100 0 0 {name=V13 value=1.8}
 C {devices/vsource.sym} 390 -100 0 0 {name=V14 value=1.8}
 C {devices/vsource.sym} 720 -40 0 0 {name=V19 value=0}
-C {devices/noconn.sym} 390 -130 2 0 {name=l20}
-C {devices/noconn.sym} 500 -130 2 0 {name=l21}
+C {devices/noconn.sym} 390 -10 2 0 {name=l20}
+C {devices/noconn.sym} 500 -10 2 0 {name=l21}
 C {devices/noconn.sym} 610 -10 2 0 {name=l22}
 C {devices/noconn.sym} 720 -10 2 0 {name=l24}
 C {devices/lab_pin.sym} 230 -410 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}

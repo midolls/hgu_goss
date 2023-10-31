@@ -1,0 +1,7 @@
+x11.inv_1 0 600 comment
+x11.VGND 68 647 ndif
+x11.Y 150 647 ndif
+x11.VPWR 68 897 pdif
+x11.A 64 799 p
+x11.VPB -37 861 nw
+x11.VNB -1073741823 -1073741823 space
