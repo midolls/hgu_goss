@@ -53,14 +53,6 @@ N 620 -380 620 -360 {
 lab=outn}
 N 620 -360 770 -360 {
 lab=outn}
-N 470 -500 500 -500 {
-lab=P}
-N 470 -480 500 -480 {
-lab=Q}
-N 470 -460 500 -460 {
-lab=X}
-N 470 -440 500 -440 {
-lab=Y}
 C {../xschem/hgu_comp.sym} 430 -400 0 0 {name=x1}
 C {devices/vsource.sym} 100 -80 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 180 -80 0 0 {name=V2 value=0}
@@ -88,7 +80,8 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.tran 1ns 100ns
+
+.tran 0.1ns 100ns
 .temp 25
 .control
     run
@@ -115,7 +108,6 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
 
     print rising_time falling_time rising_delay falling_delay 
     plot V(clk) V(inn) V(inp) V(ready) V(outp)+2 V(outn)+2
-    plot V(outp) V(outn)
 .endc
 .save all
 "}
@@ -132,7 +124,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 680 -500 2 1 {name=C2
 m=1
-value=5f
+value=50f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 680 -300 0 0 {name=p22 sig_type=std_logic lab=VSS}
@@ -149,7 +141,3 @@ C {devices/lab_pin.sym} 770 -450 0 0 {name=p26 sig_type=std_logic lab=clk
 }
 C {devices/lab_pin.sym} 770 -430 0 0 {name=p27 sig_type=std_logic lab=clk
 }
-C {devices/lab_pin.sym} 500 -500 2 0 {name=p12 sig_type=std_logic lab=P}
-C {devices/lab_pin.sym} 500 -480 2 0 {name=p13 sig_type=std_logic lab=Q}
-C {devices/lab_pin.sym} 500 -460 2 0 {name=p16 sig_type=std_logic lab=X}
-C {devices/lab_pin.sym} 500 -440 2 0 {name=p17 sig_type=std_logic lab=Y}

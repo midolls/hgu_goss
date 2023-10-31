@@ -91,7 +91,6 @@ C {devices/lab_pin.sym} 520 -330 2 0 {name=p14 sig_type=std_logic lab=ready}
 C {devices/lab_pin.sym} 620 -420 2 0 {name=p11 sig_type=std_logic lab=outp}
 C {devices/lab_pin.sym} 620 -380 2 0 {name=p15 sig_type=std_logic lab=outn}
 C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
-
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .tran 1ns 100ns
@@ -120,7 +119,8 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
       let falling_time = falling_e-falling_s
 
     print rising_time falling_time rising_delay falling_delay 
-    plot V(outp)+6 V(P)-2  V(X)+2  V(clk) V(inn) V(inp) V(Y)+2  V(outn)+6 V(Q)-2 V(ready) V(X_drive)+4 V(Y_drive)+4
+    plot V(clk) V(inn) V(inp) V(ready) V(outp)+2 V(outn)+2
+    plot V(outp) V(outn)
 .endc
 .save all
 "}

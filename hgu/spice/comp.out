@@ -29,28 +29,12 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
-
 Class hgu_comp_flat (1):  Merged 33 parallel devices.
 Subcircuit summary:
 Circuit 1: hgu_comp                        |Circuit 2: hgu_comp_flat                   
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (16)               |sky130_fd_pr__nfet_01v8 (27->16)           
+sky130_fd_pr__nfet_01v8 (18)               |sky130_fd_pr__nfet_01v8 (43->18)           
 sky130_fd_pr__pfet_01v8 (19)               |sky130_fd_pr__pfet_01v8 (27->19)           
-sky130_fd_pr__nfet_01v8_lvt (2)            |sky130_fd_pr__nfet_01v8_lvt (16->2)        
 Number of devices: 37                      |Number of devices: 37                      
 Number of nets: 23                         |Number of nets: 23                         
 ---------------------------------------------------------------------------------------
