@@ -1,34 +1,57 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1697348449
+timestamp 1698477894
 << error_s >>
-rect 129 -1287 187 -1281
-rect 129 -1321 141 -1287
-rect 129 -1327 187 -1321
-<< metal1 >>
-rect 0 0 200 200
-rect 0 -400 200 -200
-rect 0 -800 200 -600
-rect 0 -1200 200 -1000
-rect 0 -1600 200 -1400
-use sky130_fd_pr__cap_mim_m3_1_FJFAMD  XC1
-timestamp 1697348449
-transform 1 0 755 0 1 -1413
-box -386 -240 386 240
+rect 553 1709 984 1773
+rect 600 1705 664 1709
+rect 555 1676 664 1705
+rect 680 1676 744 1709
+rect 760 1705 824 1709
+rect 840 1705 904 1709
+rect 760 1676 904 1705
+rect 920 1676 984 1709
+rect 555 1674 622 1676
+rect 129 913 187 919
+rect 129 879 141 913
+rect 129 873 187 879
+rect 129 719 187 725
+rect 129 685 141 719
+rect 129 679 187 685
+rect 555 675 562 1674
+rect 496 646 562 675
+rect 615 615 622 1674
+rect 436 613 622 615
+rect 675 1674 742 1676
+rect 675 615 682 1674
+rect 735 615 742 1674
+rect 675 613 742 615
+rect 795 1674 862 1676
+rect 795 615 802 1674
+rect 855 615 862 1674
+rect 915 619 922 1674
+rect 975 679 982 1674
+rect 982 642 1042 675
+rect 795 613 862 615
+rect 915 613 1041 615
+rect 436 586 1041 613
+rect 553 582 1041 586
+rect 553 549 984 582
+rect 600 516 664 549
+rect 680 516 744 549
+rect 760 516 824 549
+rect 840 516 904 549
+rect 920 516 984 549
+use hgu_cdac_unit  x1
+timestamp 1698474146
+transform 1 0 -190 0 1 -84
+box 686 598 1358 1826
+use hgu_cdac_unit  x2
+timestamp 1698474146
+transform 1 0 -317 0 1 -51
+box 686 598 1358 1826
 use sky130_fd_pr__nfet_01v8_L7T3GD  XM14
-timestamp 1697025759
-transform 1 0 158 0 1 -1401
+timestamp 1698474146
+transform 1 0 158 0 1 799
 box -211 -252 211 252
-<< labels >>
-flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 SW
-port 0 nsew
-flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VSS
-port 1 nsew
-flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 DELAY_SIGNAL
-port 2 nsew
-flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 {}
-port 3 nsew
-flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 DELAY_CAP=DELAY_CAP
-port 4 nsew
 << end >>

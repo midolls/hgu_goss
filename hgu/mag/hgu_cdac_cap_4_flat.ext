@@ -1,0 +1,18 @@
+timestamp 1698381494
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+node "x1[0].CTOP" 0 4577.57 686 2798 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1664784 53356 1664784 53356 0 0 0 0
+equiv "x1[0].CTOP" "x1[0].CBOT"
+equiv "x1[0].CTOP" "x1[2].CTOP"
+equiv "x1[0].CTOP" "x1[2].CBOT"
+equiv "x1[0].CTOP" "x1[1].CTOP"
+equiv "x1[0].CTOP" "x1[1].CBOT"
+equiv "x1[0].CTOP" "x1[3].CTOP"
+equiv "x1[0].CTOP" "x1[3].CBOT"
+substrate "x1[0].SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "x1[0].SUB" "x1[2].SUB"
+equiv "x1[0].SUB" "x1[1].SUB"
+equiv "x1[0].SUB" "x1[3].SUB"

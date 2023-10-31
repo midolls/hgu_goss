@@ -172,4 +172,3 @@ C {devices/lab_wire.sym} 1000 -600 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
 C {devices/lab_pin.sym} 60 -500 0 0 {name=p45 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1300 -500 2 0 {name=p46 sig_type=std_logic lab=VSS}
-

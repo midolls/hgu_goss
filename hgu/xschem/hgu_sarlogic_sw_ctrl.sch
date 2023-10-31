@@ -195,9 +195,9 @@ device="ceramic capacitor"}
 C {devices/lab_pin.sym} 620 -750 2 0 {name=p4 sig_type=std_logic lab=VSS}
 C {sky130_stdcells/buf_1.sym} 340 -690 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_4.sym} 420 -690 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/buf_16.sym} 500 -690 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/buf_16.sym} 500 -690 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_1.sym} 340 -610 0 0 {name=x22 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_4.sym} 420 -610 0 0 {name=x27 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/buf_16.sym} 500 -610 0 0 {name=x30 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/buf_16.sym} 500 -610 0 0 {name=x30 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 280 -910 0 0 {name=p5 sig_type=std_logic lab=READY_buff}
 C {devices/lab_pin.sym} 540 -610 2 0 {name=p6 sig_type=std_logic lab=READY_buff}

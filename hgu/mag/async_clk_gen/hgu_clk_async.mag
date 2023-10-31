@@ -1,0 +1,60 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698589191
+<< nwell >>
+rect -667 1716 2455 2165
+rect -516 1603 -245 1716
+rect -534 -1768 -198 -1665
+rect -645 -1815 -198 -1768
+rect -645 -1883 -251 -1815
+<< viali >>
+rect -156 1379 -122 1413
+rect -153 -1553 -119 -1519
+<< metal1 >>
+rect -5891 2782 703 2816
+rect -5891 1476 -5857 2782
+rect 669 2347 703 2782
+rect 669 2301 829 2347
+rect -231 1751 2417 1835
+rect -5275 90 -5234 91
+rect -5449 60 -5234 90
+rect -5448 2 -5274 32
+rect -5447 -56 -5273 -26
+rect -5446 -114 -5272 -84
+rect -5445 -172 -5271 -142
+rect -5444 -230 -5234 -200
+rect -5275 -231 -5234 -230
+<< metal2 >>
+rect -5830 -3156 -5796 -1619
+rect 1454 -3034 1488 2149
+rect 2264 2093 2298 3088
+use hgu_delay_no_code  x2
+timestamp 1698585954
+transform 1 0 -16100 0 -1 464
+box 10210 504 16014 3486
+use sky130_fd_sc_hd__mux2_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 1589 0 -1 2424
+box -38 -48 866 592
+use hgu_delay_no_code  x4
+timestamp 1698585954
+transform 1 0 -16100 0 1 -604
+box 10210 504 16014 3486
+use sky130_fd_sc_hd__mux2_1  x8
+timestamp 1683767628
+transform 1 0 762 0 -1 2424
+box -38 -48 866 592
+use sky130_fd_sc_hd__inv_1  x9 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697965495
+transform 1 0 -231 0 -1 -1301
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x10
+timestamp 1697965495
+transform 1 0 -231 0 1 1161
+box -38 -48 314 592
+use sky130_fd_sc_hd__dfbbp_1  x27 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697358018
+transform 1 0 25 0 1 1161
+box -38 -48 2430 592
+<< end >>

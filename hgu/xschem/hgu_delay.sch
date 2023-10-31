@@ -47,10 +47,10 @@ C {devices/ipin.sym} 860 -500 0 0 {name=p1 lab=VDD}
 C {devices/ipin.sym} 860 -480 0 0 {name=p2 lab=VSS}
 C {devices/opin.sym} 2490 -660 0 0 {name=p3 lab=OUT}
 C {devices/ipin.sym} 860 -420 0 0 {name=p9 lab=CAP_CTRL_CODE1[0:3]}
-C {hgu_delay_no_code.sym} 1270 -570 0 0 {name=x4}
-C {hgu_delay_no_code.sym} 1620 -590 0 0 {name=x1}
-C {hgu_delay_no_code.sym} 1970 -610 0 0 {name=x2}
-C {hgu_delay_no_code.sym} 2340 -630 0 0 {name=x3}
+C {../xschem/hgu_delay_no_code.sym} 1270 -570 0 0 {name=x4}
+C {../xschem/hgu_delay_no_code.sym} 1620 -590 0 0 {name=x1}
+C {../xschem/hgu_delay_no_code.sym} 1970 -610 0 0 {name=x2}
+C {../xschem/hgu_delay_no_code.sym} 2340 -630 0 0 {name=x3}
 C {devices/ipin.sym} 860 -400 0 0 {name=p5 lab=CAP_CTRL_CODE2[0:3]}
 C {devices/ipin.sym} 860 -380 0 0 {name=p6 lab=CAP_CTRL_CODE3[0:3]}
 C {devices/ipin.sym} 860 -440 0 0 {name=p7 lab=CAP_CTRL_CODE0[0:3]}

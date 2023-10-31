@@ -2,6 +2,7 @@ v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {type=capacitor
+
 format="@name @pinlist @model"
 template="name=x1
 model=hgu_cdac_unit"

@@ -1,0 +1,20 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698574134
+<< error_s >>
+rect 662 2154 720 2160
+rect 662 2120 674 2154
+rect 662 2114 720 2120
+rect 662 1942 720 1948
+rect 662 1908 674 1942
+rect 662 1902 720 1908
+use hgu_cdac_unit  x1
+timestamp 1698474146
+transform 1 0 -317 0 1 -51
+box 686 598 1358 1826
+use sky130_fd_pr__pfet_01v8_M479BZ  XM16
+timestamp 1698574134
+transform 1 0 691 0 1 2031
+box -211 -261 211 261
+<< end >>

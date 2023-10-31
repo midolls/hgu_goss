@@ -1,4 +1,6 @@
 | units: 500000 tech: sky130A format: MIT
-C hgu_cdac_unit_1.C1 hgu_cdac_unit_1.C0 4.3
-C hgu_cdac_unit_0.C1 hgu_cdac_unit_1.C1 4.5
-= hgu_cdac_unit_1.C1 hgu_cdac_unit_0.C0
+C x2.CBOT x2.CTOP 5.1
+C x1.CBOT x2.CTOP 5.1
+= x2.CTOP x1.CTOP
+= SUB x1.SUB
+= SUB x2.SUB
