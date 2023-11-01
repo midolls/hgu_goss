@@ -77,7 +77,7 @@ N 1270 -270 1280 -270 {
 lab=#net5}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {../xschem/hgu_clk_div.sym} 410 -310 0 0 {name=x1}
-C {../xschem/hgu_delay.sym} 710 -270 0 0 {name=x2 DELAY_CAP=8f}
+C {../xschem/hgu_delay.sym} 710 -260 0 0 {name=x2 DELAY_CAP=8f}
 C {devices/ipin.sym} 260 -380 0 0 {name=p11 lab=VDD}
 C {devices/ipin.sym} 260 -360 0 0 {name=p12 lab=VSS}
 C {devices/lab_pin.sym} 560 -310 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -297,3 +297,5 @@ C {devices/lab_pin.sym} 560 -270 0 0 {name=p13 sig_type=std_logic lab=CAP_CTRL_C
 C {devices/lab_pin.sym} 560 -250 0 0 {name=p15 sig_type=std_logic lab=CAP_CTRL_CODE1[0:3]}
 C {devices/lab_pin.sym} 560 -230 0 0 {name=p16 sig_type=std_logic lab=CAP_CTRL_CODE2[0:3]}
 C {devices/lab_pin.sym} 560 -210 0 0 {name=p17 sig_type=std_logic lab=CAP_CTRL_CODE3[0:3]}
+C {devices/ipin.sym} 260 -130 0 0 {name=p18 lab=sample_delay_offset}
+C {devices/lab_pin.sym} 560 -190 0 0 {name=p19 sig_type=std_logic lab=sample_delay_offset}

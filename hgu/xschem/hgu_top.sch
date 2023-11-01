@@ -208,7 +208,7 @@ N 3030 -680 3950 -680 {
 lab=VSS}
 N 2150 -680 3030 -680 {
 lab=VSS}
-C {hgu_sarlogic.sym} 2610 -920 0 0 {name=x1}
+C {hgu_sarlogic.sym} 2610 -900 0 0 {name=x1}
 C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
@@ -484,3 +484,5 @@ C {devices/lab_pin.sym} 1870 -570 0 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1870 -670 0 0 {name=p78 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1810 -620 0 0 {name=p79 sig_type=std_logic lab=EXT_CLK}
 C {devices/noconn.sym} 1940 -620 2 0 {name=l2}
+C {devices/lab_pin.sym} 2460 -820 0 0 {name=p25 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2460 -800 0 0 {name=p26 sig_type=std_logic lab=VSS}

@@ -1,13 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698497316
-<< error_p >>
-rect -29 -89 29 -83
-rect -29 -123 -17 -89
-rect -29 -129 29 -123
+timestamp 1698804823
 << nwell >>
-rect -109 -79 109 89
+rect -110 -78 110 90
 << pmoshvt >>
 rect -15 -42 15 42
 << pdiff >>
@@ -15,35 +11,33 @@ rect -73 30 -15 42
 rect -73 -30 -61 30
 rect -27 -30 -15 30
 rect -73 -42 -15 -30
-rect 15 -42 73 42
+rect 15 30 73 42
+rect 15 -30 27 30
+rect 61 -30 73 30
+rect 15 -42 73 -30
 << pdiffc >>
 rect -61 -30 -27 30
+rect 27 -30 61 30
 << poly >>
 rect -15 42 15 72
-rect -15 -73 15 -42
-rect -33 -89 33 -73
-rect -33 -123 -17 -89
-rect 17 -123 33 -89
-rect -33 -139 33 -123
-<< polycont >>
-rect -17 -123 17 -89
+rect -15 -72 15 -42
 << locali >>
 rect -61 30 -27 46
 rect -61 -46 -27 -30
-rect -33 -123 -17 -89
-rect 17 -123 33 -89
+rect 27 30 61 46
+rect 27 -46 61 -30
 << viali >>
 rect -61 -30 -27 30
-rect -17 -123 17 -89
+rect 27 -30 61 30
 << metal1 >>
 rect -67 30 -21 42
 rect -67 -30 -61 30
 rect -27 -30 -21 30
 rect -67 -42 -21 -30
-rect -29 -89 29 -83
-rect -29 -123 -17 -89
-rect 17 -123 29 -89
-rect -29 -129 29 -123
+rect 21 30 67 42
+rect 21 -30 27 30
+rect 61 -30 67 30
+rect 21 -42 67 -30
 << properties >>
 string FIXED_BBOX -158 -208 158 208
 string gencell sky130_fd_pr__pfet_01v8_hvt

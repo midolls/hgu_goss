@@ -57,7 +57,21 @@ C {devices/ipin.sym} 860 -440 0 0 {name=p7 lab=CAP_CTRL_CODE0[0:3]}
 C {devices/lab_pin.sym} 990 -660 0 0 {name=p152 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1120 -580 0 0 {name=p8 sig_type=std_logic lab=IN}
 C {devices/lab_pin.sym} 1000 -730 0 0 {name=p10 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1120 -540 3 0 {name=p11 sig_type=std_logic lab=CAP_CTRL_CODE0[0:3]}
-C {devices/lab_pin.sym} 1470 -560 3 0 {name=p12 sig_type=std_logic lab=CAP_CTRL_CODE1[0:3]}
-C {devices/lab_pin.sym} 1820 -580 3 0 {name=p13 sig_type=std_logic lab=CAP_CTRL_CODE2[0:3]}
-C {devices/lab_pin.sym} 2190 -600 3 0 {name=p14 sig_type=std_logic lab=CAP_CTRL_CODE3[0:3]}
+C {devices/lab_pin.sym} 1120 -540 0 0 {name=p11 sig_type=std_logic lab=CAP_CTRL_CODE0[0:3]}
+C {devices/lab_pin.sym} 1470 -560 0 0 {name=p12 sig_type=std_logic lab=CAP_CTRL_CODE1[0:3]}
+C {devices/lab_pin.sym} 1820 -580 0 0 {name=p13 sig_type=std_logic lab=CAP_CTRL_CODE2[0:3]}
+C {devices/lab_pin.sym} 2190 -600 0 0 {name=p14 sig_type=std_logic lab=CAP_CTRL_CODE3[0:3]}
+C {devices/ipin.sym} 860 -340 0 0 {name=p15 lab=sample_delay_offset}
+C {devices/lab_pin.sym} 1120 -520 0 0 {name=p16 sig_type=std_logic lab=sample_delay_offset}
+C {devices/lab_pin.sym} 1470 -540 0 0 {name=p17 sig_type=std_logic lab=sample_delay_offset}
+C {devices/lab_pin.sym} 1820 -560 0 0 {name=p18 sig_type=std_logic lab=sample_delay_offset}
+C {devices/lab_pin.sym} 2190 -580 0 0 {name=p19 sig_type=std_logic lab=sample_delay_offset}
+C {devices/simulator_commands_shown.sym} 700 -910 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false 
+value="
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
+"}

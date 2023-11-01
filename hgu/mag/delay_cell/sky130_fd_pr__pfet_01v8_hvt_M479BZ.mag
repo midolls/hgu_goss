@@ -1,9 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698581447
+timestamp 1698807554
 << nwell >>
-rect -109 -78 110 90
+rect -110 -80 109 88
 << pmoshvt >>
 rect -15 -42 15 42
 << pdiff >>
@@ -26,6 +26,18 @@ rect -61 30 -27 46
 rect -61 -46 -27 -30
 rect 27 30 61 46
 rect 27 -46 61 -30
+<< viali >>
+rect -61 -30 -27 30
+rect 27 -30 61 30
+<< metal1 >>
+rect -67 30 -21 42
+rect -67 -30 -61 30
+rect -27 -30 -21 30
+rect -67 -42 -21 -30
+rect 21 30 67 42
+rect 21 -30 27 30
+rect 61 -30 67 30
+rect 21 -42 67 -30
 << properties >>
 string FIXED_BBOX -158 -208 158 208
 string gencell sky130_fd_pr__pfet_01v8_hvt

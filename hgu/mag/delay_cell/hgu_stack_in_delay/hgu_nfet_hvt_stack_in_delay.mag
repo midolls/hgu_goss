@@ -1,55 +1,86 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698501754
-<< ndiff >>
-rect 791 827 825 843
-rect 791 757 825 771
-<< ndiffc >>
-rect 94 771 128 827
-rect 791 771 825 827
+timestamp 1698839491
 << poly >>
-rect 135 888 179 903
-rect 135 858 780 888
-<< locali >>
-rect 94 827 128 843
-rect 94 693 128 771
-rect 791 827 825 905
-rect 791 755 825 771
-use sky130_fd_pr__nfet_01v8_56T3VD  XM1
-timestamp 1698498532
-transform -1 0 693 0 1 800
-box -73 -69 73 69
-use sky130_fd_pr__nfet_01v8_56T3VD  XM2
-timestamp 1698498532
-transform -1 0 621 0 1 800
-box -73 -69 73 69
-use sky130_fd_pr__nfet_01v8_56T3VD  XM3
-timestamp 1698498532
-transform -1 0 549 0 1 800
-box -73 -69 73 69
-use sky130_fd_pr__nfet_01v8_56T3VD  XM4
-timestamp 1698498532
-transform -1 0 477 0 1 800
-box -73 -69 73 69
-use sky130_fd_pr__nfet_01v8_56T3VD  XM5
-timestamp 1698498532
-transform -1 0 405 0 1 800
-box -73 -69 73 69
-use sky130_fd_pr__nfet_01v8_56T3VD  XM6
-timestamp 1698498532
-transform -1 0 765 0 1 800
-box -73 -69 73 69
-use sky130_fd_pr__nfet_01v8_L7T3GD  XM7
-timestamp 1698498532
-transform -1 0 302 0 1 799
-box -73 -68 73 68
-use sky130_fd_pr__nfet_01v8_L7T3GD  XM8
-timestamp 1698498532
-transform -1 0 230 0 1 799
-box -73 -68 73 68
-use sky130_fd_pr__nfet_01v8_L7T3GD  XM9
-timestamp 1698498532
+rect 143 856 245 886
+<< metal1 >>
+rect 251 697 297 757
+rect 91 561 137 621
+rect 251 423 297 483
+rect 91 286 137 346
+rect 251 146 297 206
+rect 91 10 137 70
+rect 251 -128 297 -68
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM1
+timestamp 1698804095
 transform -1 0 158 0 1 799
-box -73 -68 73 68
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM2
+timestamp 1698804095
+transform 1 0 230 0 1 799
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM3
+timestamp 1698804095
+transform 1 0 230 0 1 661
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM4
+timestamp 1698804095
+transform -1 0 158 0 1 661
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM5
+timestamp 1698804095
+transform -1 0 158 0 1 523
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM6
+timestamp 1698804095
+transform 1 0 230 0 1 523
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM7
+timestamp 1698804095
+transform 1 0 230 0 1 385
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM8
+timestamp 1698804095
+transform -1 0 158 0 1 385
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM9
+timestamp 1698804095
+transform -1 0 158 0 1 247
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM10
+timestamp 1698804095
+transform 1 0 230 0 1 247
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM11
+timestamp 1698804095
+transform 1 0 230 0 1 109
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM12
+timestamp 1698804095
+transform -1 0 158 0 1 109
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM13
+timestamp 1698804095
+transform -1 0 158 0 1 -29
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM14
+timestamp 1698804095
+transform 1 0 230 0 1 -29
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM15
+timestamp 1698804095
+transform 1 0 230 0 1 -167
+box -73 -68 73 70
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM16
+timestamp 1698804095
+transform -1 0 158 0 1 -167
+box -73 -68 73 70
+<< labels >>
+flabel poly 143 856 245 886 0 FreeSans 320 0 0 0 input_stack
+port 0 nsew
+flabel space 97 769 131 829 0 FreeSans 320 0 0 0 output_stack
+port 1 nsew
+flabel space 97 -197 131 -137 0 FreeSans 320 0 0 0 vss
+port 3 nsew
 << end >>

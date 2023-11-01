@@ -1,0 +1,427 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698843101
+<< checkpaint >>
+rect -1389 -427 2331 364
+rect -1389 -436 5935 -427
+rect 9423 -436 12143 316
+rect -1389 -475 12143 -436
+rect -1389 -1492 12343 -475
+rect -1389 -4556 12657 -1492
+rect 9071 -4604 12657 -4556
+rect 9785 -4652 12657 -4604
+<< error_p >>
+rect 15496 680 15531 714
+rect 15497 661 15531 680
+rect 15327 612 15385 618
+rect 15327 578 15339 612
+rect 15327 572 15385 578
+rect 15327 418 15385 424
+rect 15327 384 15339 418
+rect 15327 378 15385 384
+rect 15516 282 15531 661
+rect 15550 627 15585 661
+rect 15865 627 15900 661
+rect 15550 282 15584 627
+rect 15866 608 15900 627
+rect 15696 559 15754 565
+rect 15696 525 15708 559
+rect 15696 519 15754 525
+rect 15696 365 15754 371
+rect 15696 331 15708 365
+rect 15696 325 15754 331
+rect 15550 248 15565 282
+rect 15885 229 15900 608
+rect 15919 574 15954 608
+rect 16234 574 16269 608
+rect 15919 229 15953 574
+rect 16235 555 16269 574
+rect 16065 506 16123 512
+rect 16065 472 16077 506
+rect 16065 466 16123 472
+rect 16065 312 16123 318
+rect 16065 278 16077 312
+rect 16065 272 16123 278
+rect 15919 195 15934 229
+rect 16254 176 16269 555
+rect 16288 521 16323 555
+rect 16288 176 16322 521
+rect 16434 453 16492 459
+rect 16434 419 16446 453
+rect 16434 413 16492 419
+rect 16434 259 16492 265
+rect 16434 225 16446 259
+rect 16434 219 16492 225
+rect 16288 142 16303 176
+<< error_s >>
+rect -24 -2653 10 -2649
+rect 68 -2653 102 -2649
+rect 160 -2653 194 -2649
+rect -53 -2673 15 -2653
+rect 57 -2673 219 -2653
+rect -87 -2707 15 -2687
+rect 30 -2707 185 -2687
+rect -62 -2711 -28 -2707
+rect 30 -2711 64 -2707
+rect 122 -2711 156 -2707
+rect 29 -2729 59 -2725
+rect 23 -2749 59 -2729
+rect 107 -2749 137 -2729
+rect 29 -2751 59 -2749
+rect 67 -2763 97 -2751
+rect -11 -2783 19 -2763
+rect 29 -2783 59 -2773
+rect 23 -2817 59 -2783
+rect 67 -2783 103 -2763
+rect 67 -2831 97 -2783
+rect 107 -2817 137 -2783
+rect -11 -2851 19 -2831
+rect 29 -2851 59 -2841
+rect 23 -2885 59 -2851
+rect 67 -2851 103 -2831
+rect 67 -2904 97 -2851
+rect 107 -2885 137 -2851
+rect -20 -2936 108 -2904
+rect -20 -2951 111 -2936
+rect 5 -2985 11 -2951
+rect 29 -2965 217 -2955
+rect 27 -2985 217 -2965
+rect 29 -2987 217 -2985
+rect 39 -3019 45 -2999
+rect 73 -3001 91 -2987
+rect 39 -3023 57 -3019
+rect 67 -3023 97 -3001
+rect 15 -3038 67 -3023
+rect 15 -3064 59 -3038
+rect 23 -3069 59 -3064
+rect 29 -3071 59 -3069
+rect 73 -3071 91 -3023
+rect 107 -3069 137 -3049
+rect 67 -3083 97 -3071
+rect -11 -3103 19 -3083
+rect 29 -3103 59 -3093
+rect 23 -3137 59 -3103
+rect 67 -3103 103 -3083
+rect 67 -3179 97 -3103
+rect 107 -3137 137 -3103
+rect -53 -3217 -27 -3197
+rect -24 -3217 10 -3193
+rect 68 -3197 102 -3193
+rect 160 -3197 194 -3193
+rect 19 -3217 219 -3197
+rect -87 -3251 -27 -3231
+rect 19 -3251 185 -3231
+rect -62 -3255 -28 -3251
+rect 30 -3255 64 -3251
+rect 122 -3255 156 -3251
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+use hgu_nfet_hvt_stack_in_delay  hgu_nfet_hvt_stack_in_delay_0
+timestamp 1698843025
+transform 1 0 7254 0 1 1334
+box 0 -800 5694 800
+use hgu_nfet_hvt_stack_in_delay  hgu_nfet_hvt_stack_in_delay_1
+timestamp 1698843025
+transform 1 0 4675 0 1 -2496
+box 0 -800 5694 800
+use hgu_pfet_hvt_stack_in_delay  hgu_pfet_hvt_stack_in_delay_0
+timestamp 1698843025
+transform 1 0 5250 0 1 1334
+box 0 -800 2004 809
+use hgu_pfet_hvt_stack_in_delay  hgu_pfet_hvt_stack_in_delay_1
+timestamp 1698843025
+transform 1 0 2671 0 1 -2496
+box 0 -800 2004 809
+use hgu_sw_cap  hgu_sw_cap_0
+timestamp 1698843025
+transform 1 0 2250 0 1 2134
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_1
+timestamp 1698843025
+transform 1 0 2450 0 1 2134
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_2
+timestamp 1698843025
+transform 1 0 2650 0 1 2134
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_3
+timestamp 1698843025
+transform 1 0 2850 0 1 2134
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_4
+timestamp 1698843025
+transform 1 0 3050 0 1 2134
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_5
+timestamp 1698843025
+transform 1 0 3250 0 1 2134
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_6
+timestamp 1698843025
+transform 1 0 3450 0 1 2134
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_7
+timestamp 1698843025
+transform 1 0 13262 0 1 2086
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_8
+timestamp 1698843025
+transform 1 0 -129 0 1 -1696
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_9
+timestamp 1698843025
+transform 1 0 71 0 1 -1696
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_10
+timestamp 1698843025
+transform 1 0 271 0 1 -1696
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_11
+timestamp 1698843025
+transform 1 0 471 0 1 -1696
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_12
+timestamp 1698843025
+transform 1 0 671 0 1 -1696
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_13
+timestamp 1698843025
+transform 1 0 871 0 1 -1696
+box 0 -1600 200 800
+use hgu_sw_cap  hgu_sw_cap_14
+timestamp 1698843025
+transform 1 0 10683 0 1 -1744
+box 0 -1600 200 800
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_0
+timestamp 1698843025
+transform 1 0 5549 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_1
+timestamp 1698843025
+transform 1 0 5971 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_2
+timestamp 1698843025
+transform 1 0 6393 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_3
+timestamp 1698843025
+transform 1 0 6815 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_4
+timestamp 1698843025
+transform 1 0 7237 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_5
+timestamp 1698843025
+transform 1 0 7659 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_6
+timestamp 1698843025
+transform 1 0 8081 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_7
+timestamp 1698843025
+transform 1 0 8503 0 1 1082
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_8
+timestamp 1698843025
+transform 1 0 3650 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_9
+timestamp 1698843025
+transform 1 0 3850 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_10
+timestamp 1698843025
+transform 1 0 4050 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_11
+timestamp 1698843025
+transform 1 0 4250 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_12
+timestamp 1698843025
+transform 1 0 4450 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_13
+timestamp 1698843025
+transform 1 0 4650 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_14
+timestamp 1698843025
+transform 1 0 4850 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_15
+timestamp 1698843025
+transform 1 0 5050 0 1 1334
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_16
+timestamp 1698843025
+transform 1 0 13462 0 1 1286
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_17
+timestamp 1698843025
+transform 1 0 1071 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_18
+timestamp 1698843025
+transform 1 0 1271 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_19
+timestamp 1698843025
+transform 1 0 1471 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_20
+timestamp 1698843025
+transform 1 0 1671 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_21
+timestamp 1698843025
+transform 1 0 1871 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_22
+timestamp 1698843025
+transform 1 0 2071 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_23
+timestamp 1698843025
+transform 1 0 2271 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_24
+timestamp 1698843025
+transform 1 0 2471 0 1 -2496
+box 0 -800 200 809
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_25
+timestamp 1698843025
+transform 1 0 10883 0 1 -2544
+box 0 -800 200 809
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697965495
+transform 1 0 11140 0 1 282
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
+timestamp 1697965495
+transform 1 0 12298 0 1 234
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_2
+timestamp 1697965495
+transform 1 0 12948 0 1 534
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_3
+timestamp 1697965495
+transform 1 0 13662 0 1 486
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_4
+timestamp 1697965495
+transform 1 0 10369 0 1 -3296
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_5
+timestamp 1697965495
+transform 1 0 11083 0 1 -3344
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x1
+timestamp 1697965495
+transform 1 0 -53 0 1 -3200
+box -38 -48 314 592
+use hgu_sw_cap  x2
+timestamp 1698843025
+transform 1 0 2595 0 1 1882
+box 0 -1600 200 800
+use hgu_pfet_hvt_stack_in_delay  x3
+timestamp 1698843025
+transform 1 0 8925 0 1 1082
+box 0 -800 2004 809
+use hgu_sw_cap  x3[0]
+timestamp 1698843025
+transform 1 0 3439 0 1 1882
+box 0 -1600 200 800
+use hgu_sw_cap  x3[1]
+timestamp 1698843025
+transform 1 0 3017 0 1 1882
+box 0 -1600 200 800
+use hgu_nfet_hvt_stack_in_delay  x4
+timestamp 1698843025
+transform 1 0 11139 0 1 282
+box 0 -800 5694 800
+use hgu_sw_cap  x4[0]
+timestamp 1698843025
+transform 1 0 5127 0 1 1882
+box 0 -1600 200 800
+use hgu_sw_cap  x4[1]
+timestamp 1698843025
+transform 1 0 4705 0 1 1882
+box 0 -1600 200 800
+use hgu_sw_cap  x4[2]
+timestamp 1698843025
+transform 1 0 4283 0 1 1882
+box 0 -1600 200 800
+use hgu_sw_cap  x4[3]
+timestamp 1698843025
+transform 1 0 3861 0 1 1882
+box 0 -1600 200 800
+use sky130_fd_sc_hd__inv_1  x5
+timestamp 1697965495
+transform 1 0 -91 0 1 -3248
+box -38 -48 314 592
+use hgu_sw_cap_pmos  x6
+timestamp 1698843025
+transform 1 0 11929 0 1 1034
+box 0 -800 200 809
+use hgu_sw_cap  x7
+timestamp 1698843025
+transform 1 0 11507 0 1 1834
+box 0 -1600 200 800
+use sky130_fd_pr__nfet_01v8_UPW3PC  XM1
+timestamp 0
+transform 1 0 978 0 1 684
+box 0 0 1 1
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM13
+timestamp 0
+transform 1 0 158 0 1 799
+box 0 0 1 1
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM15
+timestamp 0
+transform 1 0 527 0 1 746
+box 0 0 1 1
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM46
+timestamp 0
+transform 1 0 1429 0 1 649
+box 0 0 1 1
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM47
+timestamp 0
+transform 1 0 1798 0 1 596
+box 0 0 1 1
+use sky130_fd_pr__pfet_01v8_hvt_MASHPY  XM48
+timestamp 0
+transform 1 0 2249 0 1 534
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 IN
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VDD
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 VSS
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 OUT
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 {code\[0\]}
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 {code\[1\]}
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 {code\[2\]}
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 {code\[3\]}
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 code_offset
+port 8 nsew
+<< end >>
