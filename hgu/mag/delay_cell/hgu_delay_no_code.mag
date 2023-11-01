@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698857709
+timestamp 1698858133
 << nwell >>
 rect 9453 2146 9501 2202
 rect 9760 1662 15943 2993
@@ -633,6 +633,14 @@ use hgu_sw_cap  hgu_sw_cap_7
 timestamp 1698849506
 transform -1 0 15252 0 1 -246
 box 368 546 1041 1833
+use sky130_fd_pr__nfet_01v8_MVW3GX  sky130_fd_pr__nfet_01v8_MVW3GX_0
+timestamp 1698807554
+transform 1 0 15828 0 -1 1520
+box -125 -130 125 68
+use sky130_fd_pr__pfet_01v8_hvt_M433PY  sky130_fd_pr__pfet_01v8_hvt_M433PY_0
+timestamp 1698807554
+transform 1 0 15828 0 1 1723
+box -161 -139 161 90
 use sky130_fd_sc_hd__inv_1  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1697965495
 transform 1 0 9300 0 1 1760
