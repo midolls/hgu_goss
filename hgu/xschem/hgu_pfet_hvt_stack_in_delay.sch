@@ -33,7 +33,10 @@ N 250 -260 270 -260 {
 lab=VDD}
 N 270 -270 270 -230 {
 lab=VDD}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 230 -110 0 0 {name=M49
+C {devices/ipin.sym} 270 -340 1 0 {name=p2 lab=VDD}
+C {devices/ipin.sym} 160 -110 0 0 {name=p1 lab=input_stack}
+C {devices/iopin.sym} 250 -50 0 0 {name=p7 lab=output_stack}
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 230 -110 0 0 {name=M1
 L=0.15
 W=0.42
 nf=1
@@ -47,7 +50,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 230 -170 0 0 {name=M41
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 230 -170 0 0 {name=M2
 L=0.15
 W=0.43
 nf=1
@@ -61,7 +64,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 230 -230 0 0 {name=M51
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 230 -230 0 0 {name=M3
 L=0.15
 W=0.43
 nf=1
@@ -75,6 +78,3 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {devices/ipin.sym} 270 -340 1 0 {name=p2 lab=VDD}
-C {devices/ipin.sym} 160 -110 0 0 {name=p1 lab=input_stack}
-C {devices/iopin.sym} 250 -50 0 0 {name=p7 lab=output_stack}

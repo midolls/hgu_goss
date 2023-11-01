@@ -5,14 +5,14 @@ K {}
 V {}
 S {}
 E {}
-T {4.37e-15 F} 150 -150 0 0 0.2 0.2 {}
+T {5.11e-15 F} 150 -150 0 0 0.2 0.2 {}
 N 230 -110 230 -90 {
-lab=DELAY_SIGNAL}
+lab=VDD}
 N 230 -190 230 -170 {
 lab=#net1}
 C {devices/lab_pin.sym} 230 -220 2 0 {name=p32 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 230 -90 2 0 {name=p1 sig_type=std_logic lab=DELAY_SIGNAL}
-C {devices/lab_pin.sym} 230 -250 1 0 {name=p2 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 230 -250 2 0 {name=p1 sig_type=std_logic lab=DELAY_SIGNAL}
+C {devices/lab_pin.sym} 230 -90 3 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 190 -220 0 0 {name=p3 sig_type=std_logic lab=SW}
 C {devices/ipin.sym} 130 -120 0 0 {name=p4 lab=SW}
 C {devices/ipin.sym} 130 -60 0 0 {name=p6 lab=VDD}
@@ -31,8 +31,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/capa.sym} 230 -140 0 0 {name=C1
-m=1
-value=5f
-footprint=1206
-device="ceramic capacitor"}
+C {../xschem/hgu_vpp_cap.sym} 230 -140 0 0 {symname=hgu_cdac_unit
+name=x1}
+C {devices/lab_pin.sym} 210 -130 3 0 {name=p5 sig_type=std_logic lab=VDD}

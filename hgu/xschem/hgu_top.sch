@@ -287,10 +287,6 @@ C {devices/noconn.sym} 2870 -620 2 0 {name=l41}
 C {devices/noconn.sym} 2980 -620 2 0 {name=l42}
 C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
-
 .OPTIONS savecurrents
 .tran 10ps 350ns
 
@@ -324,11 +320,7 @@ C {devices/vsource.sym} 720 -560 0 0 {name=V57 value=0}
 C {devices/vsource.sym} 800 -560 0 0 {name=V60 value="PULSE(0 1.8 50p 10p 10p 50n 100n)"}
 C {devices/gnd.sym} 800 -530 0 0 {name=l57 lab=GND}
 C {devices/lab_pin.sym} 800 -590 2 0 {name=p75 sig_type=std_logic lab=EXT_CLK}
-C {hgu_vgen_vref.sym} 1800 -560 0 0 {name=x5}
-C {devices/lab_wire.sym} 1860 -490 2 0 {name=p9 sig_type=std_logic lab=VREF}
-C {devices/lab_pin.sym} 1870 -570 0 0 {name=p15 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1870 -670 0 0 {name=p78 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 1810 -620 0 0 {name=p79 sig_type=std_logic lab=EXT_CLK}
+C {devices/lab_wire.sym} 1860 -490 0 0 {name=p9 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2760 -940 2 0 {name=p8 sig_type=std_logic lab=sample_clk_b}
 C {devices/lab_pin.sym} 650 -980 1 0 {name=p10 sig_type=std_logic lab=sample_clk}
 C {devices/lab_pin.sym} 690 -980 1 0 {name=p11 sig_type=std_logic lab=sample_clk_b}
@@ -398,7 +390,6 @@ C {devices/lab_wire.sym} 1490 -1300 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
 C {devices/gnd.sym} 1860 -430 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 1860 -460 0 0 {name=V1 value=0.9}
-C {devices/noconn.sym} 1940 -620 2 0 {name=l2}
 C {devices/vsource.sym} 510 -850 0 1 {name=V2 value="PULSE(1.8 0.9 0 250n 250n 10p 500n)"}
 C {devices/vsource.sym} 510 -950 2 0 {name=V4 value="PULSE(0.9 1.8 0 250n 250n 10p 500n)"}
 C {devices/vdd.sym} 2210 -320 1 0 {name=l11 lab=async_resetb_delay_cap_ctrl_code[3]}
@@ -475,6 +466,21 @@ only_toplevel=false
 value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 "}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1240 0 0 {name=x10}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1330 0 0 {name=x11}
+C {devices/noconn.sym} 2820 -1350 2 0 {name=l7}
+C {devices/noconn.sym} 2820 -1260 2 0 {name=l8}
+C {devices/noconn.sym} 2520 -1350 0 0 {name=l9}
+C {devices/noconn.sym} 2520 -1330 0 0 {name=l10}
+C {devices/noconn.sym} 2520 -1310 0 0 {name=l15}
+C {devices/noconn.sym} 2520 -1260 0 0 {name=l16}
+C {devices/noconn.sym} 2520 -1240 0 0 {name=l17}
+C {devices/noconn.sym} 2520 -1220 0 0 {name=l18}
+C {hgu_vgen_vref.sym} 1800 -560 0 0 {name=x5}
+C {devices/lab_pin.sym} 1870 -570 0 0 {name=p15 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1870 -670 0 0 {name=p78 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1810 -620 0 0 {name=p79 sig_type=std_logic lab=EXT_CLK}
+C {devices/noconn.sym} 1940 -620 2 0 {name=l2}

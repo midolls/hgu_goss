@@ -14,8 +14,8 @@ XM16 RS_n RS_p VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
 XM17 RS_p RS_n VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
 XM19 RS_p Y_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 m=1
 XM23 RS_n X_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 m=1
-XM2 P cdac_vp net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=8 m=1
-XM3 Q cdac_vn net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=8 m=1
+XM2 P cdac_vp net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=8 nf=8 m=1
+XM3 Q cdac_vn net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=8 nf=8 m=1
 XM12 X_inv X VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
 XM13 X_inv X VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
 XM14 X_drive X_inv VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.52 nf=3 m=1

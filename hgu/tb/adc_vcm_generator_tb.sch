@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -87,4 +87,4 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/gnd.sym} 730 -340 0 0 {name=l2 lab=GND}
-C {adc_vcm_generator.sym} 460 -440 0 0 {name=x1}
+C {../xschem/adc_vcm_generator.sym} 460 -440 0 0 {name=x1}

@@ -1,0 +1,40 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698595725
+<< error_s >>
+rect 27 647 30 654
+rect 64 647 79 654
+rect 109 647 163 654
+rect 193 647 245 654
+rect 299 647 351 654
+rect 29 599 63 603
+rect 121 599 155 603
+rect 213 599 247 603
+rect 0 589 298 599
+rect 305 589 339 593
+rect 397 589 431 593
+rect 489 589 523 593
+rect 581 589 595 593
+rect 0 583 615 589
+rect -12 549 264 565
+rect 310 549 586 555
+rect 17 545 51 549
+rect 109 545 143 549
+rect 201 545 235 549
+rect 339 545 373 549
+rect 431 545 465 549
+rect 523 545 557 549
+use sky130_fd_sc_hd__dfbbp_1  x2 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697358018
+transform 1 0 0 0 1 600
+box -38 -48 2430 592
+use sky130_fd_sc_hd__inv_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697965495
+transform 1 0 -12 0 1 4
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  x4
+timestamp 1697965495
+transform 1 0 310 0 1 -6
+box -38 -48 314 592
+<< end >>

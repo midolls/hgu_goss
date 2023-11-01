@@ -14,5 +14,5 @@ C {devices/iopin.sym} 90 30 0 0 {name=p2 lab=MINUS
 }
 C {devices/iopin.sym} 70 -40 0 1 {name=p3 lab=SUB
 }
-C {../xschem/hgu_vpp_cap.sym} 90 -50 0 0 {name=x1
-model=hgu_cdac_unit}
+C {../xschem/hgu_vpp_cap.sym} 90 -50 0 0 {symname=hgu_cdac_unit
+name=x1}
