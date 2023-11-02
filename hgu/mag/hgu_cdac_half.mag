@@ -1,32 +1,4 @@
 magic
 tech sky130A
-timestamp 1697555072
-<< checkpaint >>
-rect -630 4430 62198 5589
-rect -630 2489 62298 4430
-rect -630 -330 62782 2489
-use hgu_cdac_8bit_array  x1
-timestamp 1697555071
-transform 1 0 0 0 1 3300
-box 0 -3000 30734 1659
-use hgu_cdac_drv  x2
-timestamp 1697555071
-transform 1 0 30734 0 1 3700
-box 0 -3400 100 100
-use hgu_cdac_8bit_array  x3
-timestamp 1697555071
-transform 1 0 30834 0 1 3300
-box 0 -3000 30734 1659
-use hgu_cdac_drv  x4
-timestamp 1697555071
-transform 1 0 61568 0 1 3700
-box 0 -3400 100 100
-use hgu_cdac_unit  x9
-timestamp 1697555071
-transform 1 0 61668 0 1 1100
-box 0 -800 242 759
-use hgu_cdac_unit  x10
-timestamp 1697555071
-transform 1 0 61910 0 1 1100
-box 0 -800 242 759
+timestamp 1698655397
 << end >>

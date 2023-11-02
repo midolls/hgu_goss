@@ -762,7 +762,7 @@ C {devices/opin.sym} 400 -280 0 1 {name=p11 lab=P}
 C {devices/opin.sym} 620 -260 0 0 {name=p12 lab=Q}
 C {sky130_fd_pr/nfet_01v8.sym} 410 -210 0 0 {name=M2
 L=0.15
-W=10
+W=8
 nf=8
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
@@ -776,7 +776,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 610 -210 0 1 {name=M3
 L=0.15
-W=10
+W=8
 nf=8
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 

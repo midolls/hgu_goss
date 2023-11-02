@@ -1,8 +1,7 @@
 * NGSPICE file created from hgu_cdac_cap_4.ext - technology: sky130A
 
-
-* Top level circuit hgu_cdac_cap_4
-
-C0 hgu_cdac_unit_3.CTOP hgu_cdac_unit_3.SUB 4.58f $ **FLOATING
-.end
+.subckt hgu_cdac_cap_4 SUB
+C0 x1[3].CTOP x1[2].CTOP 10.1f
+C1 x1[3].CBOT x1[3].CTOP 10.1f
+.ends
 

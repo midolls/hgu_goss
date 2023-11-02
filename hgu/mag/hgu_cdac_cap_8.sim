@@ -1,20 +1,29 @@
 | units: 500000 tech: sky130A format: MIT
-C hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0 4.3
-C hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0 4.3
-C hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 17.7
-C hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C0 4.3
-C hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C0 4.3
-C hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C10 2.5
-R hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 32
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C0
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C1
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C0
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C0
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_1.C1
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_1.C1 hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C0
-C hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C10 2.6
-R hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 21
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C1
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 hgu_cdac_cap_4_0.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1
-= hgu_cdac_cap_4_1.hgu_cdac_cap_2_1.hgu_cdac_unit_0.C1 hgu_cdac_cap_4_1.hgu_cdac_cap_2_0.hgu_cdac_unit_0.C1
+C x1[7].CTOP x1[7].CBOT 20.2
+C x1[7].CTOP x1[6].CTOP 20.2
+= SUB x1[0].SUB
+= SUB x1[1].SUB
+= SUB x1[2].SUB
+= SUB x1[3].SUB
+= SUB x1[5].SUB
+= SUB x1[7].SUB
+= SUB x1[4].SUB
+= SUB x1[6].SUB
+R x1[6].CTOP 16
+= x1[6].CTOP x1[0].CTOP
+= x1[6].CTOP x1[2].CTOP
+= x1[6].CTOP x1[4].CTOP
+C x1[7].CTOP0 2.6
+R x1[7].CTOP 37
+= x1[7].CTOP x1[0].CBOT
+= x1[7].CTOP x1[1].CTOP
+= x1[7].CTOP x1[2].CBOT
+= x1[7].CTOP x1[3].CTOP
+= x1[7].CTOP x1[5].CTOP
+= x1[7].CTOP x1[4].CBOT
+= x1[7].CTOP x1[6].CBOT
+C x1[7].CBOT0 2.8
+R x1[7].CBOT 24
+= x1[7].CBOT x1[1].CBOT
+= x1[7].CBOT x1[3].CBOT
+= x1[7].CBOT x1[5].CBOT

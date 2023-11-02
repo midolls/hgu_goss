@@ -1,0 +1,17 @@
+* NGSPICE file created from hgu_inverter_flat.ext - technology: sky130A
+
+.subckt hgu_inverter_flat OUT VREF IN VDD VSS
+X0 OUT.t0 IN.t0 VREF.t0 VDD.t0 sky130_fd_pr__pfet_01v8 ad=0.244 pd=2.26 as=0.244 ps=2.26 w=0.84 l=0.15
+X1 OUT.t1 IN.t1 VSS.t1 VSS.t0 sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+R0 IN.n0 IN.t0 221.337
+R1 IN.n0 IN.t1 121.722
+R2 IN IN.n0 13.4536
+R3 VREF VREF.t0 77.7879
+R4 OUT OUT.t0 125.531
+R5 OUT OUT.t1 73.0683
+R6 VDD VDD.t0 632.465
+R7 VSS.n0 VSS.t0 1716.73
+R8 VSS.n0 VSS.t1 77.5865
+R9 VSS VSS.n0 0.15516
+.ends
+

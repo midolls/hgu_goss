@@ -1,2 +1,4 @@
-hgu_cdac_unit_3.CTOP 0 0 m3
-hgu_cdac_unit_3.SUB -1073741823 -1073741823 space
+SUB 1602 3874 pw
+x1[2].CTOP 686 2798 m3
+x1[3].CTOP 686 2930 m3
+x1[3].CBOT 686 4090 m3
