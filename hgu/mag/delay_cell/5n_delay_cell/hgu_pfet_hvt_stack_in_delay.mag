@@ -1,9 +1,15 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698839620
+timestamp 1699184006
+<< error_p >>
+rect 129 931 187 937
+rect 129 897 141 931
+rect 129 891 187 897
 << nwell >>
-rect 48 40 268 898
+rect 48 349 268 898
+rect -98 181 268 349
+rect 48 40 268 181
 << pmoshvt >>
 rect 143 766 173 850
 rect 143 628 173 712
@@ -73,6 +79,13 @@ rect 97 226 131 286
 rect 185 226 219 286
 rect 97 88 131 148
 rect 185 88 219 148
+<< nsubdiff >>
+rect -52 277 31 301
+rect -52 242 -28 277
+rect 6 242 31 277
+rect -52 217 31 242
+<< nsubdiffcont >>
+rect -28 242 6 277
 << poly >>
 rect 125 931 191 947
 rect 125 897 141 931
@@ -106,12 +119,21 @@ rect 97 424 131 440
 rect 97 348 131 364
 rect 185 424 219 440
 rect 185 348 219 364
+rect -52 277 31 301
+rect -52 242 -28 277
+rect 6 242 31 277
+rect -52 217 31 242
 rect 97 286 131 302
+rect -39 153 18 217
 rect 97 210 131 226
 rect 185 286 219 302
 rect 185 210 219 226
-rect 97 148 131 164
-rect 97 72 131 88
+rect 97 153 131 164
+rect -39 148 131 153
+rect -39 88 97 148
+rect -39 82 131 88
+rect -39 81 62 82
+rect 97 72 131 82
 rect 185 148 219 164
 rect 185 72 219 88
 << viali >>
@@ -179,8 +201,8 @@ rect 179 76 225 88
 << labels >>
 flabel metal1 141 897 175 931 0 FreeSans 320 0 0 0 input_stack
 port 0 nsew
-flabel space 97 88 131 148 0 FreeSans 320 0 0 0 vdd
+flabel nwell 97 88 131 148 0 FreeSans 320 0 0 0 vdd
 port 1 nsew
-flabel space 97 778 131 838 0 FreeSans 320 0 0 0 output_stack
-port 3 nsew
+flabel metal1 91 838 137 850 0 FreeSans 320 0 0 0 output_stack
+port 6 nsew
 << end >>

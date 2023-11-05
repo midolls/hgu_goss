@@ -1,0 +1,13 @@
+* NGSPICE file created from test.ext - technology: sky130A
+
+.subckt hgu_sw_cap_pmos SW delay_signal VDD
+X0 delay_signal SW a_872_1723# VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt test
+Xhgu_sw_cap_pmos_1 hgu_sw_cap_pmos_1/SW hgu_sw_cap_pmos_1/delay_signal hgu_sw_cap_pmos_1/VDD
++ hgu_sw_cap_pmos
+Xhgu_sw_cap_pmos_0 hgu_sw_cap_pmos_1/SW hgu_sw_cap_pmos_0/delay_signal hgu_sw_cap_pmos_0/VDD
++ hgu_sw_cap_pmos
+.ends
+

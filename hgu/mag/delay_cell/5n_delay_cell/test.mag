@@ -1,0 +1,19 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699172750
+<< nwell >>
+rect 591 49 688 133
+<< pdiff >>
+rect 591 49 688 133
+<< metal1 >>
+rect 546 173 733 220
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_0
+timestamp 1699170759
+transform -1 0 1647 0 -1 1856
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  hgu_sw_cap_pmos_1
+timestamp 1699170759
+transform 1 0 -369 0 -1 1856
+box 369 500 1054 1856
+<< end >>

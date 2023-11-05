@@ -217,10 +217,10 @@ C {devices/lab_pin.sym} 800 -280 0 0 {name=p188 sig_type=std_logic lab=code[2]}
 C {devices/lab_pin.sym} 940 -280 0 0 {name=p7 sig_type=std_logic lab=code[1]}
 C {devices/lab_pin.sym} 1080 -280 0 0 {name=p8 sig_type=std_logic lab=code[0]}
 C {devices/lab_pin.sym} 860 -740 0 0 {name=p9 sig_type=std_logic lab=code[3]}
-C {sky130_stdcells/inv_1.sym} 900 -740 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 900 -740 0 0 {name=x10 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 710 -410 0 0 {name=x7 DELAY_CAP=5f m_num=1}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sym} 710 -610 2 0 {name=x6 DELAY_CAP=5f m_num=1}
-C {sky130_stdcells/inv_1.sym} 690 -730 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 690 -730 0 0 {name=x11 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 640 -410 0 0 {name=p6 sig_type=std_logic lab=code_offset}
 C {devices/ipin.sym} 220 -190 0 0 {name=p10 lab=code_offset}
 C {/foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sym} 370 -580 0 0 {name=x8}

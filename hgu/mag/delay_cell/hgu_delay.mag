@@ -1,16 +1,20 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699014468
+timestamp 1699184817
 << nwell >>
-rect 6688 3772 7242 3812
-rect 6602 3138 7254 3772
+rect 6688 3774 7508 3812
+rect 6688 3772 7592 3774
+rect 6602 3168 7592 3772
+rect 6602 3138 7254 3168
 rect 6690 2894 7004 3138
 rect 6690 2842 7010 2894
 rect 6693 2840 7010 2842
 rect 6693 2591 6754 2840
 rect 6713 -1799 6992 -1241
-rect 6221 -2467 6992 -1799
+rect 6221 -1860 6992 -1799
+rect 6188 -2464 6992 -1860
+rect 6221 -2467 6992 -2464
 << pwell >>
 rect 24 -606 13310 1820
 << psubdiff >>
@@ -403,21 +407,21 @@ rect 6354 -2373 6573 -2332
 rect 13544 -2392 13943 3731
 rect -2 -2536 13943 -2392
 use hgu_delay_no_code  x1
-timestamp 1699011938
+timestamp 1699184232
 transform 1 0 -2529 0 1 795
-box 9238 267 15993 2993
+box 9238 267 15997 2986
 use hgu_delay_no_code  x2
-timestamp 1699011938
+timestamp 1699184232
 transform -1 0 22702 0 -1 526
-box 9238 267 15993 2993
+box 9238 267 15997 2986
 use hgu_delay_no_code  x3
-timestamp 1699011938
+timestamp 1699184232
 transform -1 0 15993 0 -1 526
-box 9238 267 15993 2993
+box 9238 267 15997 2986
 use hgu_delay_no_code  x4
-timestamp 1699011938
+timestamp 1699184232
 transform 1 0 -9238 0 1 795
-box 9238 267 15993 2993
+box 9238 267 15997 2986
 << labels >>
 flabel metal1 24 -1114 78 -1068 0 FreeSans 320 0 0 0 out
 port 1 nsew
@@ -452,15 +456,13 @@ port 20 nsew
 flabel metal1 283 543 10975 571 0 FreeSans 320 0 0 0 sample_code2[2]
 port 22 nsew
 flabel metal1 283 851 9256 879 0 FreeSans 320 0 0 0 sample_code1[2]
-port 13 nsew
+port 28 nsew
+flabel metal4 12555 217 13464 1150 0 FreeSans 320 0 0 0 VSS
+port 30 nsew
 flabel metal1 283 1019 2547 1047 0 FreeSans 320 0 0 0 sample_code0[2]
-port 12 nsew
+port 31 nsew
 flabel metal1 283 963 4973 991 0 FreeSans 320 0 0 0 sample_code0[1]
-port 11 nsew
+port 32 nsew
 flabel metal1 283 907 5829 935 0 FreeSans 320 0 0 0 sample_code0[0]
-port 10 nsew
-flabel space 4 811 13464 1150 0 FreeSans 320 0 0 0 VSS
-port 3 nsew
-flabel metal4 4 867 13464 1150 0 FreeSans 320 0 0 0 VSS
-port 24 nsew
+port 34 nsew
 << end >>

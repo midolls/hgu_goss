@@ -8,7 +8,13 @@ E {}
 N 230 -110 230 -90 {
 lab=VSS}
 N 230 -190 230 -170 {
-lab=#net1}
+lab=VSS}
+N 230 -170 260 -170 {
+lab=VSS}
+N 260 -170 260 -110 {
+lab=VSS}
+N 230 -110 260 -110 {
+lab=VSS}
 C {devices/lab_pin.sym} 230 -220 2 0 {name=p32 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 210 -220 0 0 {name=M14
 L=0.15
@@ -24,7 +30,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 230 -250 1 0 {name=p1 sig_type=std_logic lab=DELAY_SIGNAL}
+C {devices/lab_pin.sym} 230 -250 2 0 {name=p1 sig_type=std_logic lab=DELAY_SIGNAL}
 C {devices/lab_pin.sym} 230 -90 3 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 190 -220 0 0 {name=p3 sig_type=std_logic lab=SW}
 C {devices/ipin.sym} 130 -120 0 0 {name=p4 lab=SW}
