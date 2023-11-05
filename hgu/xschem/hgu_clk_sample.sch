@@ -76,16 +76,16 @@ lab=SAMPLE_CLK_b}
 N 1270 -270 1280 -270 {
 lab=#net5}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
-C {../xschem/hgu_clk_div.sym} 410 -310 0 0 {name=x1}
+C {../xschem/hgu_clk_div.sym} 410 -290 0 0 {name=x1}
 C {../xschem/hgu_delay.sym} 710 -260 0 0 {name=x2 DELAY_CAP=8f}
-C {devices/ipin.sym} 260 -380 0 0 {name=p11 lab=VDD}
-C {devices/ipin.sym} 260 -360 0 0 {name=p12 lab=VSS}
+C {devices/ipin.sym} 260 -330 0 0 {name=p11 lab=VDD}
+C {devices/ipin.sym} 260 -310 0 0 {name=p12 lab=VSS}
 C {devices/lab_pin.sym} 560 -310 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 560 -290 0 0 {name=p2 sig_type=std_logic lab=VSS}
-C {devices/ipin.sym} 260 -290 0 0 {name=p9 lab=SET}
-C {devices/ipin.sym} 260 -310 0 0 {name=p10 lab=RESET}
-C {devices/ipin.sym} 260 -330 0 0 {name=p14 lab=CLK}
-C {sky130_stdcells/inv_1.sym} 900 -330 0 0 {name=x7 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/ipin.sym} 260 -250 0 0 {name=p9 lab=SET}
+C {devices/ipin.sym} 260 -270 0 0 {name=p10 lab=RESET}
+C {devices/ipin.sym} 260 -290 0 0 {name=p14 lab=CLK}
+C {sky130_stdcells/inv_1.sym} 900 -330 0 0 {name=x7 VGND=VSS VNB=VSS VPB=vDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/capa.sym} 970 -300 0 0 {name=C1
 m=1
 value=5f
@@ -104,7 +104,7 @@ value=5f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 860 -270 0 0 {name=p4 sig_type=std_logic lab=VSS}
-C {sky130_stdcells/nand2_1.sym} 1070 -420 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/nand2_1.sym} 1070 -420 0 0 {name=x3 VGND=VSS VNB=VSS VPB=vDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/opin.sym} 1560 -270 0 0 {name=p21 lab=SAMPLE_CLK}
 C {devices/opin.sym} 1560 -420 0 0 {name=p22 lab=SAMPLE_CLK_b}
 C {sky130_fd_pr/nfet_01v8.sym} 1300 -390 0 0 {name=M7
