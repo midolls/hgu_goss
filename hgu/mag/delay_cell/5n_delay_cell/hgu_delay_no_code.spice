@@ -4,27 +4,21 @@
 X0 a_15_n42# a_n15_n73# a_n73_n42# w_n110_n80# sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
 .ends
 
+.subckt sky130_fd_pr__nfet_01v8_L7T3GD a_15_n42# a_n15_n69# a_n73_n42# VSUBS
+X0 a_15_n42# a_n15_n69# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
 .subckt sky130_fd_sc_hd__inv_1 A VGND VPWR Y VNB VPB
 X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
 X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_L7T3GD a_15_n42# a_n15_n69# a_n73_n42# VSUBS
-X0 a_15_n42# a_n15_n69# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.subckt hgu_sw_cap_nmos SW delay_signal a_873_1723# CTOP
+X0 delay_signal SW a_873_1723# CTOP sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
 .ends
 
-.subckt sky130_fd_pr__pfet_01v8_hvt_M433PY a_63_n42# a_n125_n42# w_n161_n79# a_33_n68#
-+ a_n81_n139# a_n33_n42#
-X0 a_n33_n42# a_n81_n139# a_n125_n42# w_n161_n79# sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
-X1 a_63_n42# a_33_n68# a_n33_n42# w_n161_n79# sky130_fd_pr__pfet_01v8_hvt ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
-.ends
-
-.subckt hgu_sw_cap SW CTOP x2.SUB x2.CBOT
-X0 CTOP SW x2.CBOT x2.SUB sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
-.ends
-
-.subckt hgu_sw_cap_pmos SW CTOP delay_signal x1.SUB x1.CBOT w_836_1687#
-X0 delay_signal SW x1.CBOT w_836_1687# sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.subckt hgu_sw_cap_pmos SW delay_signal a_872_1723# CTOP
+X0 delay_signal SW a_872_1723# CTOP sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
 .ends
 
 .subckt hgu_pfet_hvt_stack_in_delay input_stack a_85_766# w_48_40# a_85_76#
@@ -61,33 +55,40 @@ X0 a_63_n42# a_33_n68# a_n33_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 
 X1 a_n33_n42# a_n81_n130# a_n125_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
 .ends
 
-.subckt hgu_delay_no_code IN OUT VDD VSS code[3] code_offset code[0] code[1] code[2]
-XXM47 m1_15709_1756# VDD x5/VPB VSS sky130_fd_pr__pfet_01v8_hvt_M479BZ
-XXM46 m1_15709_1756# OUT x5/VPB VSS sky130_fd_pr__pfet_01v8_hvt_M479BZ
-Xx1 code[3] VSS VDD x1/Y VSUBS x5/VPB sky130_fd_sc_hd__inv_1
-XXM13 m1_15709_1421# VSS OUT VSUBS sky130_fd_pr__nfet_01v8_L7T3GD
-XXM48 m1_15709_1756# m1_15709_1756# x5/VPB OUT OUT VSS sky130_fd_pr__pfet_01v8_hvt_M433PY
-XXM15 m1_15709_1421# VSS VSS VSUBS sky130_fd_pr__nfet_01v8_L7T3GD
-Xx2 code[0] VSS VSUBS x2/x2.CBOT hgu_sw_cap
-Xx5 code_offset VSS VDD x5/Y VSUBS x5/VPB sky130_fd_sc_hd__inv_1
-Xx6 x5/Y VDD VSS x5/VPB x6/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx3[1] code[1] VSS VSUBS x3[1]/x2.CBOT hgu_sw_cap
-Xx7 code_offset VSS VSUBS x7/x2.CBOT hgu_sw_cap
-Xx8 IN VSS x5/VPB VDD hgu_pfet_hvt_stack_in_delay
-Xx3[0] code[1] VSS VSUBS x3[1]/x2.CBOT hgu_sw_cap
-Xx9 IN VSS VSS VSUBS hgu_nfet_hvt_stack_in_delay
-XXM1 m1_15709_1421# m1_15709_1421# OUT OUT VDD VSUBS sky130_fd_pr__nfet_01v8_MVW3GX
-Xx4[3] code[2] VSS VSUBS x4[3]/x2.CBOT hgu_sw_cap
-Xx4[2] code[2] VSS VSUBS x4[3]/x2.CBOT hgu_sw_cap
-Xx4[1] code[2] VSS VSUBS x4[3]/x2.CBOT hgu_sw_cap
-Xx4[0] code[2] VSS VSUBS x4[3]/x2.CBOT hgu_sw_cap
-Xx5[7] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx5[6] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx5[5] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx5[4] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx5[3] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx5[2] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx5[0] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
-Xx5[1] x1/Y VDD VSS x5/VPB x5[7]/x1.CBOT x5/VPB hgu_sw_cap_pmos
+.subckt sky130_fd_pr__pfet_01v8_hvt_M433PY a_63_n42# a_n125_n42# w_n161_n79# a_33_n68#
++ a_n81_n139# a_n33_n42#
+X0 a_n33_n42# a_n81_n139# a_n125_n42# w_n161_n79# sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X1 a_63_n42# a_33_n68# a_n33_n42# w_n161_n79# sky130_fd_pr__pfet_01v8_hvt ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+.ends
+
+.subckt hgu_delay_no_code IN OUT code[3] code[1] code[2] VDD VSS code_offset code[0]
+XXM47 m1_15709_1756# VDD VDD x7/delay_signal sky130_fd_pr__pfet_01v8_hvt_M479BZ
+XXM46 m1_15709_1756# OUT VDD x7/delay_signal sky130_fd_pr__pfet_01v8_hvt_M479BZ
+XXM13 m1_15709_1421# x7/delay_signal OUT VSS sky130_fd_pr__nfet_01v8_L7T3GD
+Xx1 code[3] VSS VDD code[0] VSS VDD sky130_fd_sc_hd__inv_1
+XXM15 m1_15709_1421# x7/delay_signal VSS VSS sky130_fd_pr__nfet_01v8_L7T3GD
+Xx2 code[0] x7/delay_signal x2/a_873_1723# VSS hgu_sw_cap_nmos
+Xx5 code_offset VSS VDD x5/Y VSS VDD sky130_fd_sc_hd__inv_1
+Xx6 x5/Y x7/delay_signal x6/a_872_1723# VDD hgu_sw_cap_pmos
+Xx3[1] code[1] x7/delay_signal x3[1]/a_873_1723# VSS hgu_sw_cap_nmos
+Xx7 code_offset x7/delay_signal x7/a_873_1723# VSS hgu_sw_cap_nmos
+Xx3[0] code[1] x7/delay_signal x3[1]/a_873_1723# VSS hgu_sw_cap_nmos
+Xx8 IN x7/delay_signal VDD VDD hgu_pfet_hvt_stack_in_delay
+Xx9 IN VSS x7/delay_signal VSS hgu_nfet_hvt_stack_in_delay
+Xsky130_fd_pr__nfet_01v8_MVW3GX_0 m1_15709_1421# m1_15709_1421# OUT OUT VDD VSS sky130_fd_pr__nfet_01v8_MVW3GX
+Xx4[3] code[2] x7/delay_signal x4[3]/a_873_1723# VSS hgu_sw_cap_nmos
+Xx4[2] code[2] x7/delay_signal x4[3]/a_873_1723# VSS hgu_sw_cap_nmos
+Xx4[1] code[2] x7/delay_signal x4[3]/a_873_1723# VSS hgu_sw_cap_nmos
+Xx4[0] code[2] x7/delay_signal x4[3]/a_873_1723# VSS hgu_sw_cap_nmos
+Xsky130_fd_pr__pfet_01v8_hvt_M433PY_0 m1_15709_1756# m1_15709_1756# VDD OUT OUT VSS
++ sky130_fd_pr__pfet_01v8_hvt_M433PY
+Xx5[7] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
+Xx5[6] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
+Xx5[5] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
+Xx5[4] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
+Xx5[3] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
+Xx5[2] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
+Xx5[0] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
+Xx5[1] code[0] x7/delay_signal x5[7]/a_872_1723# VDD hgu_sw_cap_pmos
 .ends
 

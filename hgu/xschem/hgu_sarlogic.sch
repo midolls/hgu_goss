@@ -29,7 +29,7 @@ N 1280 -530 1450 -530 {
 lab=EOB}
 C {../xschem/hgu_clk_async.sym} 710 -410 0 0 {name=x1}
 C {../xschem/hgu_clk_sample.sym} 330 -180 0 0 {name=x2}
-C {../xschem/hgu_sarlogic_8bit_logic.sym} 1300 -450 0 0 {name=x3 csize=0.001}
+C {../xschem/hgu_sarlogic_8bit_logic_RC.sym} 1300 -450 0 0 {name=x3}
 C {devices/lab_pin.sym} 180 -230 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 180 -270 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -250 0 0 {name=p3 sig_type=std_logic lab=VSS}

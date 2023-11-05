@@ -14,51 +14,244 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
-Cell hgu_sw_cap (0) disconnected node: CTOP
-Subcircuit summary:
-Circuit 1: hgu_sw_cap                      |Circuit 2: hgu_sw_cap                      
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
-(no matching element)                      |hgu_cdac_unit (1)                          
-Number of devices: 1 **Mismatch**          |Number of devices: 2 **Mismatch**          
-Number of nets: 4                          |Number of nets: 4                          
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Flattening unmatched subcell hgu_sw_cap in circuit hgu_delay_no_code (1)(8 instances)
+Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_delay_no_code (1)(9 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_delay_no_code (1)(2 instances)
+Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_delay_no_code (1)(1 instance)
+Flattening unmatched subcell hgu_nfet_hvt_stack_in_delay in circuit hgu_delay_no_code (1)(1 instance)
+
+Class hgu_delay_no_code (0):  Merged 13 parallel devices.
+Class hgu_delay_no_code (1):  Merged 11 parallel devices.
+Subcircuit summary:
+Circuit 1: hgu_delay_no_code               |Circuit 2: hgu_delay_no_code               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (12->11)       |sky130_fd_pr__pfet_01v8_hvt (11)           
+sky130_fd_pr__pfet_01v8 (9->2)             |sky130_fd_pr__pfet_01v8 (9->2)             
+sky130_fd_pr__nfet_01v8 (30->25)           |sky130_fd_pr__nfet_01v8 (29->25)           
+Number of devices: 38                      |Number of devices: 38                      
+Number of nets: 39 **Mismatch**            |Number of nets: 40 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: hgu_sw_cap                      |Circuit 2: hgu_sw_cap                      
+Circuit 1: hgu_delay_no_code               |Circuit 2: hgu_delay_no_code               
 
 ---------------------------------------------------------------------------------------
-Net: delay_signal                          |Net: DELAY_SIGNAL                          
+Net: x1.Y                                  |Net: code[0]                               
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: code[2]                               |Net: code[2]                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: code[1]                               |Net: code[1]                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+(no matching net)                          |Net: net4                                  
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+  Flattening non-matched subcircuits hgu_delay_no_code hgu_delay_no_code
+
+Subcircuit summary:
+Circuit 1: hgu_delay                       |Circuit 2: hgu_delay_sch                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (48->44)       |sky130_fd_pr__pfet_01v8_hvt (44)           
+sky130_fd_pr__pfet_01v8 (36->8)            |sky130_fd_pr__pfet_01v8 (36->8)            
+sky130_fd_pr__nfet_01v8 (120->100)         |sky130_fd_pr__nfet_01v8 (116->100)         
+Number of devices: 152                     |Number of devices: 152                     
+Number of nets: 144 **Mismatch**           |Number of nets: 148 **Mismatch**           
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: hgu_delay                       |Circuit 2: hgu_delay_sch                   
+
+---------------------------------------------------------------------------------------
+Net: sample_code1[1]                       |Net: CAP_CTRL_CODE1[0]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code1[2]                       |Net: CAP_CTRL_CODE1[1]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code2[1]                       |Net: CAP_CTRL_CODE1[2]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code2[2]                       |Net: CAP_CTRL_CODE2[0]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code3[1]                       |Net: CAP_CTRL_CODE2[1]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code3[2]                       |Net: CAP_CTRL_CODE2[2]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code0[1]                       |Net: CAP_CTRL_CODE3[0]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code0[2]                       |Net: CAP_CTRL_CODE3[1]                     
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sample_code3[0]                       |Net: CAP_CTRL_CODE3[2]                     
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: sample_code0[0]                       |Net: CAP_CTRL_CODE0[0]                     
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+(no matching net)                          |Net: CAP_CTRL_CODE0[1]                     
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+(no matching net)                          |Net: CAP_CTRL_CODE0[2]                     
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+(no matching net)                          |Net: hgu_delay_no_code:4/net4              
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+(no matching net)                          |Net: hgu_delay_no_code:3/net4              
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: hgu_delay_no_code:x1/x4[3].hgu_cdac_u |Net: hgu_delay_no_code:1/hgu_sw_cap:2/net1 
   sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
                                            |                                           
-Net: x2.CBOT                               |Net: net1                                  
+Net: hgu_delay_no_code:x1/x3[1].hgu_cdac_u |Net: hgu_delay_no_code:1/hgu_sw_cap:3[1]/n 
   sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  hgu_cdac_unit/1 = 1                      
                                            |                                           
-Net: VSUBS                                 |Net: VSS                                   
-  sky130_fd_pr__nfet_01v8/4 = 1            |  sky130_fd_pr__nfet_01v8/4 = 1            
-                                           |  hgu_cdac_unit/2 = 1                      
-                                           |  hgu_cdac_unit/3 = 1                      
+Net: hgu_delay_no_code:x2/x4[3].hgu_cdac_u |Net: hgu_delay_no_code:1/hgu_sw_cap:4[3]/n 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: hgu_delay_no_code:x2/x3[1].hgu_cdac_u |Net: hgu_delay_no_code:2/hgu_sw_cap:2/net1 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: hgu_delay_no_code:2/hgu_sw_cap:3[1]/n 
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: hgu_delay_no_code:2/hgu_sw_cap:4[3]/n 
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8_hvt/4 = 44       |  sky130_fd_pr__pfet_01v8_hvt/4 = 44       
+  sky130_fd_pr__pfet_01v8/4 = 8            |  sky130_fd_pr__pfet_01v8/4 = 8            
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 16   |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 16   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSS                                   
+  sky130_fd_pr__nfet_01v8/4 = 100          |  sky130_fd_pr__nfet_01v8/4 = 100          
+  sky130_fd_pr__nfet_01v8/(1|3) = 16       |  sky130_fd_pr__nfet_01v8/(1|3) = 16       
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 4    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 4    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: hgu_delay_no_code:x2/x7.delay_signal  |Net: hgu_delay_no_code:2/net1              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
+  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+Net: hgu_delay_no_code:x1/x7.delay_signal  |Net: hgu_delay_no_code:1/net1              
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 5        |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 5        
+  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: hgu_sw_cap                      |Circuit 2: hgu_sw_cap                      
+Circuit 1: hgu_delay                       |Circuit 2: hgu_delay_sch                   
 
 ---------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: hgu_cdac_unit:2                  
-                                           |  1 = 2                                    
-                                           |  2 = 3                                    
-                                           |  3 = 3                                    
+Instance: hgu_delay_no_code:x2/sky130_fd_p |Instance: hgu_delay_no_code:2/hgu_sw_cap:4 
+  (1,3) = (12,1)                           |  (1,3) = (12,1)                           
+  2 = 1                                    |  2 = 1                                    
+  4 = 120                                  |  4 = 120                                  
+                                           |                                           
+Instance: hgu_delay_no_code:x2/sky130_fd_p |Instance: hgu_delay_no_code:2/hgu_sw_cap:3 
+  (1,3) = (12,1)                           |  (1,3) = (12,1)                           
+  2 = 1                                    |  2 = 1                                    
+  4 = 120                                  |  4 = 120                                  
+                                           |                                           
+Instance: hgu_delay_no_code:x1/sky130_fd_p |Instance: hgu_delay_no_code:2/hgu_sw_cap:2 
+  (1,3) = (12,1)                           |  (1,3) = (12,1)                           
+  2 = 1                                    |  2 = 1                                    
+  4 = 120                                  |  4 = 120                                  
+                                           |                                           
+Instance: hgu_delay_no_code:x1/sky130_fd_p |Instance: hgu_delay_no_code:1/hgu_sw_cap:4 
+  (1,3) = (12,1)                           |  (1,3) = (12,1)                           
+  2 = 1                                    |  2 = 1                                    
+  4 = 120                                  |  4 = 120                                  
+                                           |                                           
+(no matching instance)                     |Instance: hgu_delay_no_code:1/hgu_sw_cap:3 
+                                           |  (1,3) = (12,1)                           
+                                           |  2 = 1                                    
+                                           |  4 = 120                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: hgu_delay_no_code:1/hgu_sw_cap:2 
+                                           |  (1,3) = (12,1)                           
+                                           |  2 = 1                                    
+                                           |  4 = 120                                  
+                                           |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 
 Subcircuit pins:
-Circuit 1: hgu_sw_cap                      |Circuit 2: hgu_sw_cap                      
+Circuit 1: hgu_delay                       |Circuit 2: hgu_delay_sch                   
 -------------------------------------------|-------------------------------------------
-delay_signal                               |DELAY_SIGNAL                               
-SW                                         |SW                                         
-(no matching pin)                          |VSS                                        
-CTOP                                       |(no matching pin)                          
----------------------------------------------------------------------------------------
-Cell pin lists for hgu_sw_cap and hgu_sw_cap altered to match.
-Device classes hgu_sw_cap and hgu_sw_cap are equivalent.
+sample_code1[1]                            |CAP_CTRL_CODE1[0] **Mismatch**             
+sample_code1[2]                            |CAP_CTRL_CODE1[1] **Mismatch**             
+sample_code2[1]                            |CAP_CTRL_CODE1[2] **Mismatch**             
+sample_code2[2]                            |CAP_CTRL_CODE2[0] **Mismatch**             
+sample_code3[1]                            |CAP_CTRL_CODE2[1] **Mismatch**             
+sample_code3[2]                            |CAP_CTRL_CODE2[2] **Mismatch**             
+sample_code0[1]                            |CAP_CTRL_CODE3[0] **Mismatch**             
+sample_code0[2]                            |CAP_CTRL_CODE3[1] **Mismatch**             
+sample_code3[0]                            |CAP_CTRL_CODE3[2] **Mismatch**             
+sample_code0[0]                            |CAP_CTRL_CODE0[0] **Mismatch**             
+Cell pin lists are equivalent.
+Device classes hgu_delay and hgu_delay_sch are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Netlists do not match.

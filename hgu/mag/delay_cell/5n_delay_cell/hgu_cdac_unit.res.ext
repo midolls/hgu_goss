@@ -1,0 +1,4 @@
+scale 1000 1 500000
+rnode "SUB" 0 0 1006 1014 0
+rnode "CBOT" 0 5100 948 1348 0
+rnode "CTOP" 0 5100 1066 758 0

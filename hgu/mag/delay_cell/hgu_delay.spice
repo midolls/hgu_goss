@@ -1,0 +1,70 @@
+* NGSPICE file created from hgu_delay.ext - technology: sky130A
+
+.subckt hgu_delay_no_code IN OUT x1.A code[1] code[2] x5.A x1.Y VSS VDD
+X0 a_9939_2268# IN a_9851_2130# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X1 x7.delay_signal x1.Y x5[7].x1.CBOT VDD sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X2 x7.delay_signal code[2] x4[3].hgu_cdac_unit_psub_0.CBOT VSS sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X3 x5[7].x1.CBOT x1.Y x7.delay_signal VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X4 x7.delay_signal x5.A x7.hgu_cdac_unit_psub_0.CBOT VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X5 a_15703_1340# OUT VDD VSS sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X6 x3[1].hgu_cdac_unit_psub_0.CBOT code[1] x7.delay_signal VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X7 a_9893_879# IN a_9805_879# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X8 a_9965_465# IN a_9893_465# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X9 a_9939_2544# IN a_9851_2682# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X10 a_9965_1017# IN a_9893_1017# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X11 a_15703_1340# x7.delay_signal VSS VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X12 a_15703_1681# x7.delay_signal OUT VDD sky130_fd_pr__pfet_01v8_hvt ad=0.0651 pd=0.73 as=0.122 ps=1.42 w=0.42 l=0.15
+X13 x4[3].hgu_cdac_unit_psub_0.CBOT code[2] x7.delay_signal VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X14 VDD OUT a_15703_1340# VSS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0651 ps=0.73 w=0.42 l=0.15
+X15 a_9893_465# IN a_9805_327# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X16 VDD x5.A x5.Y VDD sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X17 VSS IN a_9893_327# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X18 a_9939_2544# IN a_9851_2406# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X19 x7.delay_signal x1.Y x5[7].x1.CBOT VDD sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X20 x5[7].x1.CBOT x1.Y x7.delay_signal VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X21 x7.delay_signal code[1] x3[1].hgu_cdac_unit_psub_0.CBOT VSS sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X22 a_9965_741# IN a_9893_741# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X23 a_9893_327# IN a_9805_327# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X24 x1.Y x1.A VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X25 a_15703_1681# x7.delay_signal VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X26 x7.delay_signal IN a_9851_2130# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X27 x7.delay_signal x5.Y x6.x1.CBOT VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X28 a_9939_2268# IN a_9851_2406# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X29 VSS x5.A x5.Y VSS sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X30 a_9893_1293# IN a_9805_1155# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X31 x5[7].x1.CBOT x1.Y x7.delay_signal VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X32 a_15703_1681# OUT VSS VDD sky130_fd_pr__pfet_01v8_hvt ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X33 a_9893_741# IN a_9805_603# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X34 x5[7].x1.CBOT x1.Y x7.delay_signal VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X35 x7.delay_signal x1.Y x5[7].x1.CBOT VDD sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X36 x7.delay_signal code[2] x4[3].hgu_cdac_unit_psub_0.CBOT VSS sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X37 a_9965_465# IN a_9893_603# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X38 VDD IN a_9851_2682# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X39 x4[3].hgu_cdac_unit_psub_0.CBOT code[2] x7.delay_signal VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X40 a_15703_1340# x7.delay_signal OUT VSS sky130_fd_pr__nfet_01v8 ad=0.0651 pd=0.73 as=0.122 ps=1.42 w=0.42 l=0.15
+X41 x7.delay_signal IN a_9893_1293# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X42 x1.Y x1.A VSS VSS sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X43 a_9893_1155# IN a_9805_1155# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X44 x7.delay_signal x1.Y x5[7].x1.CBOT VDD sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X45 VSS OUT a_15703_1681# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.0651 ps=0.73 w=0.42 l=0.15
+X46 x2.hgu_cdac_unit_psub_0.CBOT x1.Y x7.delay_signal VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.124 ps=1.43 w=0.42 l=0.15
+X47 a_9893_603# IN a_9805_603# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X48 a_9965_1017# IN a_9893_1155# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X49 a_9965_741# IN a_9893_879# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X50 a_9893_1017# IN a_9805_879# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt hgu_delay out VDD sample_delay_offset in sample_code0[3] sample_code1[3] sample_code2[3]
++ sample_code3[3] sample_code0[0] sample_code0[1] sample_code0[2] sample_code1[2]
++ sample_code1[1] sample_code1[0] sample_code3[0] sample_code3[1] sample_code3[2]
++ sample_code2[0] sample_code2[1] sample_code2[2] VSS
+Xx1 x1/IN x2/IN sample_code1[3] sample_code1[1] sample_code1[2] sample_delay_offset
++ sample_code1[0] VSS VDD hgu_delay_no_code
+Xx2 x2/IN x3/IN sample_code2[3] sample_code2[1] sample_code2[2] sample_delay_offset
++ sample_code2[0] VSS VDD hgu_delay_no_code
+Xx3 x3/IN out sample_code3[3] sample_code3[1] sample_code3[2] sample_delay_offset
++ sample_code3[0] VSS VDD hgu_delay_no_code
+Xx4 in x1/IN sample_code0[3] sample_code0[1] sample_code0[2] sample_delay_offset sample_code0[0]
++ VSS VDD hgu_delay_no_code
+.ends
+
