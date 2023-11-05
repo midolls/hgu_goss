@@ -130,8 +130,8 @@ X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0.113 pd=1.04 as=0.169 ps=1.
 + D[4] D[5] D[6] D[7] check[0] check[1] check[2] check[3] check[4] check[5] check[6]
 + VDD_SW_b[1] VDD_SW_b[2] VDD_SW_b[3] VDD_SW_b[4] VDD_SW_b[5] VDD_SW_b[6] VDD_SW_b[7]
 + VSS_SW_b[1] VSS_SW_b[2] VSS_SW_b[3] VSS_SW_b[4] VSS_SW_b[5] VSS_SW_b[6] VSS_SW_b[7]
-+ D[1] VDD_SW[1] ready sample_clk VDD VSS
-Xx1 sample_clk VSS VDD x3/A VSS VDD sky130_fd_sc_hd__buf_1
++ D[1] VDD_SW[1] ready reset VDD VSS
+Xx1 reset VSS VDD x3/A VSS VDD sky130_fd_sc_hd__buf_1
 Xx3 x3/A VSS VDD x3/X VSS VDD sky130_fd_sc_hd__buf_4
 Xx2 x3/X VSS VDD x2/X VSS VDD sky130_fd_sc_hd__buf_16
 Xx5 x7/X D[7] x2/X VDD VSS VDD VSS_SW[7] VSS_SW_b[7] VSS VDD sky130_fd_sc_hd__dfbbn_1
