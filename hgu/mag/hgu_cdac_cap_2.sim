@@ -1,6 +1,6 @@
 | units: 500000 tech: sky130A format: MIT
 C x2.CBOT x2.CTOP 5.1
-C x1.CBOT x2.CTOP 5.1
-= x2.CTOP x1.CTOP
-= SUB x1.SUB
+C x2.CTOP x1.CBOT 5.1
 = SUB x2.SUB
+= SUB x1.SUB
+= x2.CTOP x1.CTOP

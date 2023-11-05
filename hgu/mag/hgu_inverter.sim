@@ -1,0 +1,8 @@
+| units: 500000 tech: sky130A format: MIT
+x IN VREF OUT VDD s=9744,452 d=9744,452 l=30 w=168 x=516 y=478 sky130_fd_pr__pfet_01v8
+x IN VSS OUT VSS s=4872,284 d=4872,284 l=30 w=84 x=516 y=262 sky130_fd_pr__nfet_01v8
+R OUT 893
+R VREF 638
+R IN 716
+R VDD 1869
+R VSS 1292

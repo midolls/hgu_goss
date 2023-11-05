@@ -1,0 +1,59 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+port "SUB" 1 3040 9208 3076 9242 pw
+port "SUB" 1 3646 8848 3682 8882 pw
+node "x1[14].CTOP" 33 3541.57 904 7776 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1322952 42924 1322952 42924 0 0 0 0
+equiv "x1[14].CTOP" "x1[12].CTOP"
+equiv "x1[14].CTOP" "x1[10].CTOP"
+equiv "x1[14].CTOP" "x1[8].CTOP"
+equiv "x1[14].CTOP" "x1[6].CTOP"
+equiv "x1[14].CTOP" "x1[4].CTOP"
+equiv "x1[14].CTOP" "x1[2].CTOP"
+equiv "x1[14].CTOP" "x1[0].CTOP"
+node "x1[15].CTOP" 0 4289.96 904 7908 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2924304 94452 2924304 94452 0 0 0 0
+equiv "x1[15].CTOP" "x1[14].CBOT"
+equiv "x1[15].CTOP" "x1[13].CTOP"
+equiv "x1[15].CTOP" "x1[12].CBOT"
+equiv "x1[15].CTOP" "x1[11].CTOP"
+equiv "x1[15].CTOP" "x1[10].CBOT"
+equiv "x1[15].CTOP" "x1[9].CTOP"
+equiv "x1[15].CTOP" "x1[8].CBOT"
+equiv "x1[15].CTOP" "x1[7].CTOP"
+equiv "x1[15].CTOP" "x1[6].CBOT"
+equiv "x1[15].CTOP" "x1[5].CTOP"
+equiv "x1[15].CTOP" "x1[4].CBOT"
+equiv "x1[15].CTOP" "x1[3].CTOP"
+equiv "x1[15].CTOP" "x1[2].CBOT"
+equiv "x1[15].CTOP" "x1[1].CTOP"
+equiv "x1[15].CTOP" "x1[0].CBOT"
+node "x1[15].CBOT" 0 4721.25 904 9068 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1935504 61492 1935504 61492 0 0 0 0
+equiv "x1[15].CBOT" "x1[13].CBOT"
+equiv "x1[15].CBOT" "x1[11].CBOT"
+equiv "x1[15].CBOT" "x1[9].CBOT"
+equiv "x1[15].CBOT" "x1[7].CBOT"
+equiv "x1[15].CBOT" "x1[5].CBOT"
+equiv "x1[15].CBOT" "x1[3].CBOT"
+equiv "x1[15].CBOT" "x1[1].CBOT"
+substrate "SUB" 0 0 3646 8848 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "SUB" "x1[15].SUB"
+equiv "SUB" "x1[14].SUB"
+equiv "SUB" "x1[13].SUB"
+equiv "SUB" "x1[12].SUB"
+equiv "SUB" "x1[11].SUB"
+equiv "SUB" "x1[10].SUB"
+equiv "SUB" "x1[9].SUB"
+equiv "SUB" "x1[8].SUB"
+equiv "SUB" "x1[7].SUB"
+equiv "SUB" "x1[6].SUB"
+equiv "SUB" "x1[5].SUB"
+equiv "SUB" "x1[4].SUB"
+equiv "SUB" "x1[3].SUB"
+equiv "SUB" "x1[2].SUB"
+equiv "SUB" "x1[1].SUB"
+equiv "SUB" "x1[0].SUB"
+cap "x1[15].CTOP" "x1[15].CBOT" 40394.5
+cap "x1[15].CTOP" "x1[14].CTOP" 40394.5
