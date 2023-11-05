@@ -66,7 +66,7 @@ lab=outn}
 N 620 -360 770 -360 {
 lab=outn}
 C {../xschem/hgu_comp_withc.sym} 430 -400 0 0 {name=x1}
-C {devices/vsource.sym} 100 -80 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 100 -80 0 0 {name=V1 value=1.62}
 C {devices/vsource.sym} 180 -80 0 0 {name=V2 value=0}
 C {devices/gnd.sym} 180 -40 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 100 -130 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -91,13 +91,13 @@ C {devices/lab_pin.sym} 520 -330 2 0 {name=p14 sig_type=std_logic lab=ready}
 C {devices/lab_pin.sym} 620 -420 2 0 {name=p11 sig_type=std_logic lab=outp}
 C {devices/lab_pin.sym} 620 -380 2 0 {name=p15 sig_type=std_logic lab=outn}
 C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ss
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .tran 1ns 100ns
-.temp 25
+.temp 100
 .control
     run
-     let svdd = 1.8
+     let svdd = 1.62
      let max = svdd*0.8
      let min = svdd*0.2
      let mid = svdd*0.5

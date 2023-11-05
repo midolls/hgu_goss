@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698286873
+timestamp 1698742797
 << nwell >>
 rect 415 744 437 787
 rect 497 745 517 788
@@ -77,12 +77,10 @@ timestamp 1697868789
 transform 1 0 531 0 1 264
 box -73 -28 73 108
 use sky130_fd_pr__pfet_01v8_MQX2PY  XM2
-timestamp 1698285902
+timestamp 1698734556
 transform 1 0 531 0 1 592
-box -159 -153 159 233
+box -152 -152 153 232
 << labels >>
-flabel poly 472 373 494 429 0 FreeSans 160 0 0 0 IN
-port 4 nsew
 flabel locali 566 388 586 424 0 FreeSans 160 0 0 0 OUT
 port 15 nsew
 flabel metal1 429 689 456 704 0 FreeSans 160 0 0 0 VREF
@@ -91,4 +89,6 @@ flabel metal1 422 749 457 774 0 FreeSans 160 0 0 0 VDD
 port 22 nsew
 flabel metal1 426 174 460 196 0 FreeSans 160 0 0 0 VSS
 port 24 nsew
+flabel metal1 470 385 504 419 0 FreeSans 160 0 0 0 IN
+port 26 nsew
 << end >>

@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698609480
+use inv_32_test  inv_32_test_1
+timestamp 1698609214
+transform 1 0 0 0 1 0
+box 0 0 3046 665
+use inv_32_test  inv_32_test_2
+timestamp 1698609214
+transform 1 0 2816 0 1 0
+box 0 0 3046 665
+<< end >>
