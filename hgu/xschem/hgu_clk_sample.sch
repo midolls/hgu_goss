@@ -299,13 +299,3 @@ C {devices/lab_pin.sym} 560 -230 0 0 {name=p16 sig_type=std_logic lab=CAP_CTRL_C
 C {devices/lab_pin.sym} 560 -210 0 0 {name=p17 sig_type=std_logic lab=CAP_CTRL_CODE3[0:3]}
 C {devices/ipin.sym} 260 -130 0 0 {name=p18 lab=sample_delay_offset}
 C {devices/lab_pin.sym} 560 -190 0 0 {name=p19 sig_type=std_logic lab=sample_delay_offset}
-C {devices/simulator_commands_shown.sym} 280 -760 0 0 {name=COMMANDS
-simulator=ngspice
-only_toplevel=false 
-value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
-.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
-.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
-"}
