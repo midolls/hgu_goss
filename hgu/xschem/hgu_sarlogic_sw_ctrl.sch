@@ -187,12 +187,6 @@ C {devices/ipin.sym} 850 -600 0 0 {name=p2 lab=check[0:6]}
 C {devices/ipin.sym} 850 -550 0 0 {name=p3 lab=reset}
 C {devices/lab_pin.sym} 300 -690 0 0 {name=p204 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 620 -690 2 0 {name=p205 sig_type=std_logic lab=resetb}
-C {devices/capa.sym} 620 -720 2 0 {name=C2[17:0]
-m=1
-value=5f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 620 -750 2 0 {name=p4 sig_type=std_logic lab=VSS}
 C {sky130_stdcells/buf_1.sym} 340 -690 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_4.sym} 420 -690 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_16.sym} 500 -690 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }

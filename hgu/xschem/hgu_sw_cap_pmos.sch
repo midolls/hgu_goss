@@ -10,9 +10,6 @@ N 280 -330 280 -310 {
 lab=VDD}
 N 280 -250 280 -230 {
 lab=#net1}
-N 280 -250 310 -250 {}
-N 310 -310 310 -250 {}
-N 280 -310 310 -310 {}
 C {devices/lab_pin.sym} 280 -200 0 0 {name=p32 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 280 -170 0 0 {name=p1 sig_type=std_logic lab=DELAY_SIGNAL}
 C {devices/lab_pin.sym} 280 -330 1 0 {name=p2 sig_type=std_logic lab=VDD}
