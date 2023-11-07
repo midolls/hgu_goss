@@ -1,0 +1,217 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698857758
+<< checkpaint >>
+rect 5993 2829 13993 2852
+rect 1282 2804 13993 2829
+rect 1282 2567 15665 2804
+rect 1282 2046 16417 2567
+rect 696 -978 16417 2046
+rect 11435 -1026 16417 -978
+rect 13107 -1074 16417 -1026
+<< error_s >>
+rect 298 981 333 1015
+rect 299 962 333 981
+rect 129 913 187 919
+rect 129 879 141 913
+rect 129 873 187 879
+rect 129 719 187 725
+rect 129 685 141 719
+rect 129 679 187 685
+rect 318 583 333 962
+rect 352 928 387 962
+rect 667 928 702 945
+rect 352 583 386 928
+rect 668 891 702 928
+rect 1218 891 1271 910
+rect 498 860 556 866
+rect 498 826 510 860
+rect 498 820 556 826
+rect 498 666 556 672
+rect 498 632 510 666
+rect 498 626 556 632
+rect 352 549 367 583
+rect 687 530 702 891
+rect 721 857 756 891
+rect 1200 874 1271 891
+rect 721 530 755 857
+rect 1218 840 1289 874
+rect 1569 840 1604 874
+rect 1012 789 1070 795
+rect 1012 755 1024 789
+rect 1012 749 1070 755
+rect 829 701 875 713
+rect 900 705 930 747
+rect 955 701 1001 713
+rect 1026 705 1056 747
+rect 1081 701 1127 713
+rect 829 667 835 701
+rect 955 667 961 701
+rect 1081 667 1087 701
+rect 829 655 875 667
+rect 900 621 930 663
+rect 955 655 1001 667
+rect 1026 621 1056 663
+rect 1081 655 1127 667
+rect 886 613 944 619
+rect 886 579 898 613
+rect 886 573 944 579
+rect 721 496 736 530
+rect 1218 477 1288 840
+rect 1570 821 1604 840
+rect 1400 772 1458 778
+rect 1400 738 1412 772
+rect 1400 732 1458 738
+rect 1400 560 1458 566
+rect 1400 526 1412 560
+rect 1400 520 1458 526
+rect 1218 441 1271 477
+rect 1589 424 1604 821
+rect 1623 787 1658 821
+rect 1623 424 1657 787
+rect 1769 719 1827 725
+rect 1769 685 1781 719
+rect 1769 679 1827 685
+rect 1769 507 1827 513
+rect 1769 473 1781 507
+rect 1769 467 1827 473
+rect 1623 390 1638 424
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+use sky130_fd_sc_hd__inv_1  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1697965495
+transform 1 0 12733 0 1 282
+box -38 -48 314 592
+use hgu_sw_cap  x2
+timestamp 1698849506
+transform 1 0 2174 0 1 -264
+box 368 546 1041 1833
+use hgu_sw_cap  x3[0]
+timestamp 1698849506
+transform 1 0 3520 0 1 -264
+box 368 546 1041 1833
+use hgu_sw_cap  x3[1]
+timestamp 1698849506
+transform 1 0 2847 0 1 -264
+box 368 546 1041 1833
+use hgu_sw_cap  x4[0]
+timestamp 1698849506
+transform 1 0 6212 0 1 -264
+box 368 546 1041 1833
+use hgu_sw_cap  x4[1]
+timestamp 1698849506
+transform 1 0 5539 0 1 -264
+box 368 546 1041 1833
+use hgu_sw_cap  x4[2]
+timestamp 1698849506
+transform 1 0 4866 0 1 -264
+box 368 546 1041 1833
+use hgu_sw_cap  x4[3]
+timestamp 1698849506
+transform 1 0 4193 0 1 -264
+box 368 546 1041 1833
+use sky130_fd_sc_hd__inv_1  x5
+timestamp 1697965495
+transform 1 0 14405 0 1 234
+box -38 -48 314 592
+use hgu_sw_cap_pmos  x5[0]
+timestamp 1698848600
+transform 1 0 11679 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x5[1]
+timestamp 1698848600
+transform 1 0 10994 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x5[2]
+timestamp 1698848600
+transform 1 0 10309 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x5[3]
+timestamp 1698848600
+transform 1 0 9624 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x5[4]
+timestamp 1698848600
+transform 1 0 8939 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x5[5]
+timestamp 1698848600
+transform 1 0 8254 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x5[6]
+timestamp 1698848600
+transform 1 0 7569 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x5[7]
+timestamp 1698848600
+transform 1 0 6884 0 1 -264
+box 369 546 1054 1856
+use hgu_sw_cap_pmos  x6
+timestamp 1698848600
+transform 1 0 13351 0 1 -312
+box 369 546 1054 1856
+use hgu_sw_cap  x7
+timestamp 1698849506
+transform 1 0 12679 0 1 -312
+box 368 546 1041 1833
+use hgu_pfet_hvt_stack_in_delay  x8
+timestamp 1698839620
+transform 1 0 14671 0 1 146
+box 48 40 268 947
+use hgu_nfet_hvt_stack_in_delay  x9
+timestamp 1698839504
+transform 1 0 14854 0 1 421
+box 85 -235 303 886
+use sky130_fd_pr__nfet_01v8_UPW3PC  XM1
+timestamp 1698770864
+transform 1 0 978 0 1 684
+box -293 -243 293 243
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM13
+timestamp 1698825334
+transform 1 0 158 0 1 799
+box -211 -252 211 252
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM15
+timestamp 1698825334
+transform 1 0 527 0 1 746
+box -211 -252 211 252
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM46
+timestamp 1698807554
+transform 1 0 1429 0 1 649
+box -211 -261 211 261
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM47
+timestamp 1698807554
+transform 1 0 1798 0 1 596
+box -211 -261 211 261
+use sky130_fd_pr__pfet_01v8_hvt_MASHPY  XM48
+timestamp 1698770864
+transform 1 0 2249 0 1 534
+box -293 -252 293 252
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 IN
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VDD
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 VSS
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 OUT
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 {code\[0\]}
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 {code\[1\]}
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 {code\[2\]}
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 {code\[3\]}
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 code_offset
+port 8 nsew
+<< end >>

@@ -161,7 +161,7 @@ X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 
 
 .subckt hgu_sarlogic_8bit_logic sel_bit[0] sel_bit[1] reset eob comparator_out D[7]
 + D[6] check[6] D[5] check[0] check[5] check[1] check[4] check[2] check[3] D[2] D[3]
-+ D[1] D[4] D[0] clk_sar VDD VSS
++ D[1] D[4] D[0] clk_sar VSS VDD
 Xx1 reset VSS VDD x3/A VSS VDD sky130_fd_sc_hd__buf_1
 Xx2 clk_sar VSS VDD x5/A VSS VDD sky130_fd_sc_hd__buf_1
 Xx3 x3/A VSS VDD x4/A VSS VDD sky130_fd_sc_hd__buf_4

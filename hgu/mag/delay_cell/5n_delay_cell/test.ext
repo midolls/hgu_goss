@@ -1,0 +1,33 @@
+timestamp 1699172603
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use hgu_sw_cap_pmos hgu_sw_cap_pmos_0 -1 0 2021 0 -1 1856
+use hgu_sw_cap_pmos hgu_sw_cap_pmos_1 1 0 -369 0 -1 1856
+node "m1_546_173#" 2 253.606 546 173 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24054 1178 0 0 0 0 0 0 0 0 0 0
+node "w_591_49#" 2494 8.064 591 49 nw 0 0 0 0 2688 232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_591_49#" "m1_546_173#" 0.853934
+cap "hgu_sw_cap_pmos_0/SW" "hgu_sw_cap_pmos_1/delay_signal" 1.57732
+cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_0/SW" 17.9176
+cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/VDD" 1.442
+cap "hgu_sw_cap_pmos_0/a_872_1723#" "hgu_sw_cap_pmos_1/delay_signal" 1.48849
+cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_0/a_872_1723#" 1.442
+cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_1/delay_signal" -0.106892
+cap "hgu_sw_cap_pmos_0/VDD" "hgu_sw_cap_pmos_0/SW" 18.5092
+cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/SW" 20.7177
+cap "hgu_sw_cap_pmos_0/delay_signal" "hgu_sw_cap_pmos_0/VDD" -0.106892
+cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/delay_signal" 1.48849
+cap "hgu_sw_cap_pmos_0/VDD" "hgu_sw_cap_pmos_0/a_872_1723#" -1.0509
+cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/a_872_1723#" 474.832
+cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_0/VDD" 68.2017
+cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_1/a_872_1723#" -1.29793
+cap "hgu_sw_cap_pmos_0/delay_signal" "hgu_sw_cap_pmos_0/SW" 1.56573
+cap "hgu_sw_cap_pmos_0/a_872_1723#" "hgu_sw_cap_pmos_0/SW" 19.8515
+merge "hgu_sw_cap_pmos_1/VSUBS" "hgu_sw_cap_pmos_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hgu_sw_cap_pmos_0/VSUBS" "VSUBS"
+merge "hgu_sw_cap_pmos_1/SW" "hgu_sw_cap_pmos_0/SW" -133.556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4431 -376 0 0 0 0 0 0 0 0 0 0
+merge "hgu_sw_cap_pmos_0/SW" "m1_546_173#"
+merge "hgu_sw_cap_pmos_1/VDD" "w_591_49#" -71.4835 0 0 0 0 -2688 -232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

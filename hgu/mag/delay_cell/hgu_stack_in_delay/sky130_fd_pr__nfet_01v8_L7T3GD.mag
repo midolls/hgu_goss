@@ -1,15 +1,30 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698498532
+timestamp 1698804095
 << nmos >>
 rect -15 -42 15 42
 << ndiff >>
 rect -73 -42 -15 42
-rect 15 -42 73 42
+rect 15 30 73 42
+rect 15 -30 27 30
+rect 61 -30 73 30
+rect 15 -42 73 -30
+<< ndiffc >>
+rect 27 -30 61 30
 << poly >>
-rect -15 42 15 68
+rect -15 42 15 70
 rect -15 -68 15 -42
+<< locali >>
+rect 27 30 61 46
+rect 27 -46 61 -30
+<< viali >>
+rect 27 -30 61 30
+<< metal1 >>
+rect 21 30 67 42
+rect 21 -30 27 30
+rect 61 -30 67 30
+rect 21 -42 67 -30
 << properties >>
 string FIXED_BBOX -158 -199 158 199
 string gencell sky130_fd_pr__nfet_01v8

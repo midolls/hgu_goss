@@ -1,0 +1,1244 @@
+scale 1000 1 500000
+rnode "code[3].t1" 0 0 9435 1872 0
+rnode "code[3].t0" 0 0 9435 2157 0
+rnode "code[3].n0" 0 0 9412 1994 0
+rnode "x1.A" 0 0 9372 1981 0
+rnode "code[3].n1" 0 0 9378 1994 0
+rnode "code[3]" 0 -0 9238 1979 0
+rnode "code[3].n2" 0 0 9368 1994 0
+rnode "code[3]" 0 0 9238 1979 0
+rnode "code[3].n3" 0 0 9367 1996 0
+rnode "code[3]" 0 -0 9238 1979 0
+resist "code[3].n3" "code[3].n2" 0.00284091
+resist "code[3].n2" "code[3]" 0.338542
+resist "code[3]" "code[3].n3" 0.366477
+resist "code[3].n3" "code[3]" 0.474265
+resist "code[3].n2" "code[3].n1" 1.73237
+resist "code[3].n1" "x1.A" 3.95225
+resist "code[3].n1" "code[3].n0" 8.50795
+resist "code[3].n0" "code[3].t1" 158.349
+resist "code[3].n0" "code[3].t0" 229.971
+rnode "code[1].t0" 0 0 14306 1519 0
+rnode "code[1].t1" 0 0 14182 1519 0
+rnode "code[1].n0" 0 0 14182 1422 0
+rnode "code[1]" 0 0 14153 268 0
+resist "code[1]" "code[1].n0" 2.48707
+resist "code[1].n0" "code[1].t1" 140.34
+resist "code[1].n0" "code[1].t0" 140.599
+rnode "code[0].t0" 0 0 15038 1519 0
+rnode "code[0]" 0 0 15009 267 0
+resist "code[0]" "code[0].t0" 142.83
+rnode "code_offset.n0" 0 0 9663 1992 0
+rnode "code_offset.t0" 0 0 9625 2157 0
+rnode "code_offset.t2" 0 0 9625 1872 0
+rnode "code_offset.n1" 0 0 9663 1976 0
+rnode "x5.A" 0 0 9654 1981 0
+rnode "code_offset.n2" 0 0 9648 1993 0
+rnode "code_offset.n3" 0 0 9665 1993 0
+rnode "code_offset.t1" 0 0 10900 1519 0
+rnode "code_offset.n4" 0 0 9864 1440 0
+rnode "code_offset" 0 0 9256 1393 0
+rnode "code_offset.n5" 0 0 9644 1416 0
+rnode "code_offset" 0 -0 9256 1393 0
+resist "code_offset.n3" "code_offset.n0" 0.533333
+resist "code_offset" "code_offset.n5" 0.915094
+resist "code_offset.n5" "code_offset" 1.03191
+resist "x5.A" "code_offset.n0" 2.4
+resist "code_offset.n5" "code_offset.n4" 2.8245
+resist "code_offset.n4" "code_offset.n3" 4.9008
+resist "code_offset.n2" "code_offset.n1" 4.91621
+resist "code_offset.n3" "code_offset.n2" 9.3
+resist "code_offset.n4" "code_offset.t1" 145.329
+resist "code_offset.n2" "x5.A" 153.6
+resist "code_offset.n1" "code_offset.t2" 153.664
+resist "code_offset.n2" "code_offset.t0" 230.015
+rnode "VSS.n0" 0 -1431.62 13089 335 0
+rnode "VSS.n1" 0 -1410.62 13009 335 0
+rnode "VSS.n2" 0 -1410.62 12803 335 0
+rnode "VSS.n3" 0 -385.528 12723 335 0
+rnode "VSS.n4" 0 209.518 12643 335 0
+rnode "VSS.n5" 0 -1575.62 12563 335 0
+rnode "VSS.n6" 0 -385.528 12483 335 0
+rnode "VSS.n7" 0 374.513 12403 335 0
+rnode "VSS.n8" 0 374.513 12197 335 0
+rnode "VSS.n9" 0 -385.528 12117 335 0
+rnode "VSS.n10" 0 -1575.62 12037 335 0
+rnode "VSS.n11" 0 209.518 11957 335 0
+rnode "VSS.n12" 0 -385.528 11877 335 0
+rnode "VSS.n13" 0 -1410.62 11797 335 0
+rnode "VSS.n14" 0 -1410.62 11591 335 0
+rnode "VSS.n15" 0 -1431.62 11511 335 0
+rnode "x4[3].x2.CTOP" 0 2273.88 11435 461 0
+rnode "x4[2].x2.CTOP" 0 2273.88 11927 461 0
+rnode "x4[1].x2.CTOP" 0 2273.88 12647 461 0
+rnode "x4[0].x2.CTOP" 0 2273.88 13139 461 0
+rnode "VSS.n16" 0 -1431.62 14427 335 0
+rnode "VSS.n17" 0 -1410.62 14347 335 0
+rnode "VSS.n18" 0 -1410.62 14141 335 0
+rnode "VSS.n19" 0 -1431.62 14061 335 0
+rnode "x3[1].x2.CTOP" 0 2273.88 13985 461 0
+rnode "x3[0].x2.CTOP" 0 2273.88 14477 461 0
+rnode "VSS.n20" 0 65.8957 15849 1723 0
+rnode "VSS.t5" 0 53.3808 15861 1723 0
+rnode "VSS.t4" 0 53.3808 15795 1723 0
+rnode "VSS.n21" 0 130.321 15828 1723 0
+rnode "VSS.n22" 0 388.081 15849 1723 0
+rnode "VSS.n23" 0 63.2061 15849 1723 0
+rnode "VSS.n24" 0 52.9956 15828 1723 0
+rnode "VSS.n25" 0 160.969 15801 1723 0
+rnode "VSS.n26" 0 87.3503 15828 1723 0
+rnode "VSS.n27" 0 164.646 15855 1723 0
+rnode "VSS.n28" 0 976.761 15798 1723 0
+rnode "VSS.n29" 0 869.903 15737 1288 0
+rnode "VSS.n30" 0 157.736 15710 1258 0
+rnode "VSS.n31" 0 87.3503 15737 1258 0
+rnode "VSS.t3" 0 95.7397 15673 1382 0
+rnode "VSS.n32" 0 1134.09 15737 1258 0
+rnode "VSS.n33" 0 159.719 15737 1258 0
+rnode "VSS.n34" 0 368.265 15737 1258 0
+rnode "VSS.n35" 0 8942.98 15737 1228 0
+rnode "x2.x2.CTOP" 0 2297.52 15209 461 0
+rnode "VSS.n36" 0 -566.738 15219 369 0
+rnode "VSS.n37" 0 -1278.6 14507 335 0
+rnode "VSS.n38" 0 404.6 14487 369 0
+rnode "VSS.n39" 0 210.288 14427 335 0
+rnode "VSS.n40" 0 429.588 14347 335 0
+rnode "VSS.n41" 0 429.588 14141 335 0
+rnode "VSS.n42" 0 210.288 14061 335 0
+rnode "VSS.n43" 0 404.6 14001 369 0
+rnode "VSS.n44" 0 -1553.21 13981 335 0
+rnode "VSS.n45" 0 -1553.21 13169 335 0
+rnode "VSS.n46" 0 404.6 13149 369 0
+rnode "VSS.n47" 0 210.288 13089 335 0
+rnode "VSS.n48" 0 429.588 13009 335 0
+rnode "VSS.n49" 0 429.588 12803 335 0
+rnode "VSS.n50" 0 210.288 12723 335 0
+rnode "VSS.n51" 0 226.464 12663 369 0
+rnode "VSS.n52" 0 150.206 12643 335 0
+rnode "VSS.n53" 0 240.329 12563 335 0
+rnode "VSS.n54" 0 -354.716 12483 335 0
+rnode "VSS.n55" 0 -1355.55 12403 335 0
+rnode "VSS.n56" 0 -1355.55 12197 335 0
+rnode "VSS.n57" 0 -354.716 12117 335 0
+rnode "VSS.n58" 0 240.329 12037 335 0
+rnode "VSS.n59" 0 150.206 11957 335 0
+rnode "VSS.n60" 0 226.464 11937 369 0
+rnode "VSS.n61" 0 210.288 11877 335 0
+rnode "VSS.n62" 0 429.588 11797 335 0
+rnode "VSS.n63" 0 429.588 11591 335 0
+rnode "VSS.n64" 0 210.288 11511 335 0
+rnode "VSS.n65" 0 404.6 11451 369 0
+rnode "VSS.n66" 0 -1278.6 11431 335 0
+rnode "VSS.n67" 0 204.42 9645 1760 0
+rnode "VSS.n68" 0 44.7884 9697 1760 0
+rnode "x5.VGND" 0 324.454 9697 1760 0
+rnode "VSS.t0" 0 252.182 9640 1872 0
+rnode "VSS.n69" 0 415.8 9650 1760 0
+rnode "VSS.n70" 0 78.5691 9622 1760 0
+rnode "VSS.n71" 0 221.842 9622 1760 0
+rnode "VSS.n72" 0 92.4342 9671 1760 0
+rnode "VSS.n73" 0 48.0658 9672 1760 0
+rnode "VSS.n74" 0 77.8691 9671 1760 0
+rnode "VSS.n75" 0 37.0507 9672 1760 0
+rnode "VSS.n76" 0 99.8289 9672 1730 0
+rnode "VSS.n77" 0 211.918 9699 1760 0
+rnode "VSS.n78" 0 493.352 9409 1760 0
+rnode "VSS.n79" 0 20.6181 9439 1760 0
+rnode "VSS.n80" 0 161.675 9436 1760 0
+rnode "VSS.n81" 0 52.6698 9428 1760 0
+rnode "VSS.n82" 0 69.5188 9402 1760 0
+rnode "VSS.n83" 0 170.079 9551 1760 0
+rnode "VSS.n84" 0 115.889 9530 1760 0
+rnode "VSS.n85" 0 40.6711 9530 1760 0
+rnode "VSS.n86" 0 47.0013 9551 1760 0
+rnode "VSS.n87" 0 31.3506 9530 1760 0
+rnode "VSS.n88" 0 21.0693 9559 1760 0
+rnode "VSS.n89" 0 203.806 9556 1760 0
+rnode "VSS.n90" 0 529.956 9672 1790 0
+rnode "VSS.n91" 0 0 9529 1760 0
+rnode "VSS.n92" 0 161.652 9502 1760 0
+rnode "VSS.n93" 0 96.4169 9529 1760 0
+rnode "VSS.n94" 0 49.8422 9508 1760 0
+rnode "VSS.n95" 0 31.3506 9529 1781 0
+rnode "VSS.n96" 0 40.6711 9529 1760 0
+rnode "VSS.n97" 0 83.1908 9508 1760 0
+rnode "x5.VGND" 0 116.467 9484 1712 0
+rnode "VSS.n98" 0 60.2363 9445 1760 0
+rnode "VSS.n99" 0 85.0395 9445 1760 0
+rnode "VSS.n100" 0 31.4276 9438 1760 0
+rnode "VSS.n101" 0 11.1306 9438 1760 0
+rnode "VSS.t1" 0 252.182 9420 1872 0
+rnode "VSS.n102" 0 411.842 9364 1760 0
+rnode "VSS.n103" 0 18.3328 9428 1760 0
+rnode "VSS.n104" 0 53.6118 9428 1760 0
+rnode "x1.VGND" 0 53.6118 9300 1712 0
+rnode "x1.VGND" 0 85.0395 9329 1743 0
+rnode "VSS.n105" 0 177.666 9346 1760 0
+rnode "VSS.n106" 0 116.467 9402 1760 0
+rnode "VSS.n107" 0 48.0658 9409 1781 0
+rnode "VSS.n108" 0 37.0507 9409 1787 0
+rnode "VSS.n109" 0 220.23 9382 1760 0
+rnode "VSS.n110" 0 99.8289 9409 1790 0
+rnode "VSS.n111" 0 0 9409 1790 0
+rnode "VSS.n112" 0 11849.5 9529 1730 0
+rnode "VSS" 0 331.223 9317 289 0
+rnode "VSS.n113" 0 12258.7 9317 329 0
+rnode "VSS.n114" 0 383.391 9964 333 0
+rnode "VSS.n115" 0 160.197 10021 333 0
+rnode "VSS.n116" 0 65.2104 10015 349 0
+rnode "VSS.t2" 0 47.2447 9965 369 0
+rnode "VSS.n117" 0 668.46 10015 349 0
+rnode "VSS.n118" 0 63.3699 10015 349 0
+rnode "VSS.n119" 0 55.3509 9994 333 0
+rnode "VSS.n120" 0 157.572 9967 333 0
+rnode "VSS.n121" 0 87.3503 9994 333 0
+rnode "VSS.n122" 0 97.0559 9994 333 0
+rnode "VSS.n123" 0 -53.7195 10024 333 0
+rnode "VSS.n124" 0 -2455.5 10719 369 0
+rnode "x7.x2.CTOP" 0 2297.52 10703 461 0
+resist "VSS.n24" "VSS.n23" 0.000621499
+resist "VSS.n96" "VSS.n85" 0.00130208
+resist "VSS.n73" "VSS.n72" 0.00130208
+resist "VSS.n111" "VSS.n78" 0.00159232
+resist "VSS.n33" "VSS.n31" 0.0016514
+resist "VSS.n75" "VSS.n74" 0.00168919
+resist "VSS.n95" "VSS.n87" 0.00168919
+resist "VSS.n91" "VSS.n78" 0.00192532
+resist "VSS.n112" "VSS.n111" 0.00268465
+resist "VSS.n91" "VSS.n90" 0.00335128
+resist "VSS.n113" "VSS" 0.00437209
+resist "VSS.n27" "VSS.n26" 0.00439326
+resist "VSS.n35" "VSS.n34" 0.00443396
+resist "VSS.n34" "VSS.n29" 0.00443396
+resist "VSS.n77" "VSS.n76" 0.00522581
+resist "VSS.n107" "VSS.n106" 0.00911458
+resist "VSS.n100" "VSS.n99" 0.00911458
+resist "VSS.n119" "VSS.n118" 0.0106615
+resist "VSS.n108" "VSS.n82" 0.0118243
+resist "VSS.n60" "VSS.n59" 0.0120513
+resist "VSS.n52" "VSS.n51" 0.0120513
+resist "VSS.n104" "VSS.n100" 0.0130208
+resist "VSS.n110" "VSS.n109" 0.0132188
+resist "VSS.n110" "VSS.n80" 0.0132188
+resist "VSS.n93" "VSS.n92" 0.0132188
+resist "VSS.n93" "VSS.n89" 0.0132188
+resist "VSS.n76" "VSS.n67" 0.0132188
+resist "VSS.n23" "VSS.n22" 0.0132243
+resist "VSS.n26" "VSS.n25" 0.0151071
+resist "VSS.n31" "VSS.n30" 0.0151071
+resist "VSS.n121" "VSS.n120" 0.0151071
+resist "VSS.n121" "VSS.n115" 0.0151071
+resist "VSS.n80" "VSS.n79" 0.0165933
+resist "VSS.n122" "VSS.n114" 0.0167857
+resist "VSS.n123" "VSS.n122" 0.0167857
+resist "VSS.n105" "x1.VGND" 0.0221354
+resist "VSS.n89" "VSS.n88" 0.0221661
+resist "VSS.n22" "VSS.n21" 0.023508
+resist "VSS.n107" "VSS.n104" 0.0247396
+resist "VSS.n97" "VSS.n96" 0.0273438
+resist "VSS.n85" "VSS.n83" 0.0273438
+resist "x5.VGND" "VSS.n97" 0.03125
+resist "VSS.n108" "VSS.n81" 0.0320946
+resist "VSS.n73" "x5.VGND" 0.0325521
+resist "VSS.n95" "VSS.n94" 0.035473
+resist "VSS.n87" "VSS.n86" 0.035473
+resist "VSS.n65" "VSS.n64" 0.0361538
+resist "VSS.n61" "VSS.n60" 0.0361538
+resist "VSS.n51" "VSS.n50" 0.0361538
+resist "VSS.n47" "VSS.n46" 0.0361538
+resist "VSS.n43" "VSS.n42" 0.0361538
+resist "VSS.n39" "VSS.n38" 0.0361538
+resist "x1.VGND" "x1.VGND" 0.0377604
+resist "VSS.n24" "VSS.n20" 0.0410156
+resist "VSS.n119" "VSS.n116" 0.0410156
+resist "VSS.n75" "VSS.n68" 0.0422297
+resist "VSS.n64" "VSS.n63" 0.0482051
+resist "VSS.n62" "VSS.n61" 0.0482051
+resist "VSS.n59" "VSS.n58" 0.0482051
+resist "VSS.n58" "VSS.n57" 0.0482051
+resist "VSS.n57" "VSS.n56" 0.0482051
+resist "VSS.n55" "VSS.n54" 0.0482051
+resist "VSS.n54" "VSS.n53" 0.0482051
+resist "VSS.n53" "VSS.n52" 0.0482051
+resist "VSS.n50" "VSS.n49" 0.0482051
+resist "VSS.n48" "VSS.n47" 0.0482051
+resist "VSS.n42" "VSS.n41" 0.0482051
+resist "VSS.n40" "VSS.n39" 0.0482051
+resist "VSS.n99" "x5.VGND" 0.0507812
+resist "VSS.n15" "VSS.n14" 0.0552941
+resist "VSS.n13" "VSS.n12" 0.0552941
+resist "VSS.n12" "VSS.n11" 0.0552941
+resist "VSS.n11" "VSS.n10" 0.0552941
+resist "VSS.n10" "VSS.n9" 0.0552941
+resist "VSS.n9" "VSS.n8" 0.0552941
+resist "VSS.n7" "VSS.n6" 0.0552941
+resist "VSS.n6" "VSS.n5" 0.0552941
+resist "VSS.n5" "VSS.n4" 0.0552941
+resist "VSS.n4" "VSS.n3" 0.0552941
+resist "VSS.n3" "VSS.n2" 0.0552941
+resist "VSS.n1" "VSS.n0" 0.0552941
+resist "VSS.n19" "VSS.n18" 0.0552941
+resist "VSS.n17" "VSS.n16" 0.0552941
+resist "VSS.n72" "VSS.n71" 0.0638021
+resist "VSS.n65" "x4[3].x2.CTOP" 0.0720667
+resist "VSS.n60" "x4[2].x2.CTOP" 0.0720667
+resist "VSS.n51" "x4[1].x2.CTOP" 0.0720667
+resist "VSS.n46" "x4[0].x2.CTOP" 0.0720667
+resist "VSS.n43" "x3[1].x2.CTOP" 0.0720667
+resist "VSS.n38" "x3[0].x2.CTOP" 0.0720667
+resist "VSS.n106" "VSS.n105" 0.0729167
+resist "x7.x2.CTOP" "VSS.n124" 0.0757337
+resist "VSS.n36" "x2.x2.CTOP" 0.0757337
+resist "VSS.n66" "VSS.n65" 0.0787506
+resist "VSS.n46" "VSS.n45" 0.0787506
+resist "VSS.n44" "VSS.n43" 0.0787506
+resist "VSS.n38" "VSS.n37" 0.0787506
+resist "VSS.n63" "VSS.n62" 0.124128
+resist "VSS.n56" "VSS.n55" 0.124128
+resist "VSS.n49" "VSS.n48" 0.124128
+resist "VSS.n41" "VSS.n40" 0.124128
+resist "VSS.n114" "VSS.n113" 0.1284
+resist "VSS.n14" "VSS.n13" 0.142382
+resist "VSS.n8" "VSS.n7" 0.142382
+resist "VSS.n2" "VSS.n1" 0.142382
+resist "VSS.n18" "VSS.n17" 0.142382
+resist "VSS.n113" "VSS.n112" 0.153133
+resist "VSS.n45" "VSS.n44" 0.349357
+resist "VSS.n29" "VSS.n28" 0.352259
+resist "VSS.n124" "VSS.n66" 0.35432
+resist "VSS.n37" "VSS.n36" 0.35432
+resist "VSS.n36" "VSS.n35" 0.397409
+resist "VSS.n124" "VSS.n123" 0.407278
+resist "VSS.n66" "VSS.n15" 0.499596
+resist "VSS.n44" "VSS.n19" 0.499596
+resist "VSS.n33" "VSS.n32" 0.684095
+resist "VSS.n28" "VSS.n27" 0.697882
+resist "VSS.n76" "VSS.n75" 0.8525
+resist "VSS.n122" "VSS.n121" 0.8525
+resist "VSS.n121" "VSS.n119" 0.8525
+resist "VSS.n26" "VSS.n24" 0.8525
+resist "VSS.n95" "VSS.n93" 0.8525
+resist "VSS.n110" "VSS.n108" 0.8525
+resist "VSS.n118" "VSS.n117" 1.0406
+resist "VSS.n78" "VSS.n77" 1.13451
+resist "VSS.n111" "VSS.n110" 1.13644
+resist "VSS.n93" "VSS.n91" 1.13655
+resist "VSS.n34" "VSS.n33" 1.13931
+resist "VSS.n75" "VSS.n73" 1.35557
+resist "VSS.n108" "VSS.n107" 1.35557
+resist "VSS.n96" "VSS.n95" 1.35557
+resist "VSS.n85" "VSS.n84" 3.03261
+resist "VSS.n69" "x5.VGND" 3.57607
+resist "VSS.n103" "VSS.n101" 3.76471
+resist "VSS.n104" "VSS.n103" 4.5
+resist "x5.VGND" "VSS.n68" 4.5
+resist "VSS.n71" "VSS.n70" 4.65
+resist "VSS.n103" "VSS.n102" 6.77647
+resist "VSS.n99" "VSS.n98" 9.3
+resist "VSS.n70" "VSS.n69" 10.5412
+resist "VSS.n117" "VSS.t2" 41.485
+resist "VSS.n32" "VSS.t3" 43.7542
+resist "VSS.n21" "VSS.t4" 77.3929
+resist "VSS.n21" "VSS.t5" 77.3929
+resist "VSS.n102" "VSS.t1" 111.924
+resist "VSS.n69" "VSS.t0" 111.925
+rnode "x4[3].x2.CBOT.n0" 0 1569.25 13016 1539 0
+rnode "x4[3].x2.CBOT.n1" 0 2031.84 12543 1461 0
+rnode "x4[3].x2.CBOT.n2" 0 2620.54 13089 1495 0
+rnode "x4[3].x2.CBOT.t1" 0 41.1787 12983 1519 0
+rnode "x4[3].x2.CBOT.n3" 0 136.095 12796 1539 0
+rnode "x4[3].x2.CBOT.t3" 0 41.1787 12829 1519 0
+rnode "x4[3].x2.CBOT.n4" 0 1681.18 11804 1539 0
+rnode "x4[3].x2.CBOT.t0" 0 41.1787 11771 1519 0
+rnode "x4[3].x2.CBOT.t2" 0 46.2307 11617 1519 0
+rnode "x4[1].x2.CBOT" 0 1672.99 12529 1051 0
+rnode "x4[3].x2.CBOT.n5" 0 3192.69 12057 1461 0
+rnode "x4[2].x2.CBOT" 0 1672.99 12045 1051 0
+rnode "x4[3].x2.CBOT" 0 3515.74 11317 1051 0
+rnode "x4[0].x2.CBOT" 0 2036.94 13257 1051 0
+resist "x4[3].x2.CBOT.n4" "x4[3].x2.CBOT.t2" 41.5887
+resist "x4[3].x2.CBOT.n0" "x4[3].x2.CBOT.n3" 0.135528
+resist "x4[3].x2.CBOT.n1" "x4[1].x2.CBOT" 0.321167
+resist "x4[3].x2.CBOT.n5" "x4[2].x2.CBOT" 0.321167
+resist "x4[3].x2.CBOT.n1" "x4[3].x2.CBOT.n5" 0.335912
+resist "x4[0].x2.CBOT" "x4[3].x2.CBOT.n2" 0.360138
+resist "x4[3].x2.CBOT.n2" "x4[3].x2.CBOT.n0" 0.363557
+resist "x4[3].x2.CBOT.n2" "x4[3].x2.CBOT.n1" 0.458778
+resist "x4[3].x2.CBOT.n3" "x4[3].x2.CBOT.n4" 0.669116
+resist "x4[3].x2.CBOT.n5" "x4[3].x2.CBOT" 0.818916
+resist "x4[3].x2.CBOT.n4" "x4[3].x2.CBOT.t0" 41.4532
+resist "x4[3].x2.CBOT.n3" "x4[3].x2.CBOT.t3" 41.4532
+resist "x4[3].x2.CBOT.n0" "x4[3].x2.CBOT.t1" 41.4532
+rnode "code[2].t1" 0 0 11632 1519 0
+rnode "code[2].t2" 0 0 12968 1519 0
+rnode "code[2].t0" 0 0 12844 1519 0
+rnode "code[2].n0" 0 0 12844 1422 0
+rnode "code[2].t3" 0 0 11756 1519 0
+rnode "code[2].n1" 0 0 11756 1422 0
+rnode "code[2]" 0 0 11727 268 0
+resist "code[2]" "code[2].n1" 2.48707
+resist "code[2].n1" "code[2].n0" 2.87772
+resist "code[2].n1" "code[2].t3" 140.34
+resist "code[2].n0" "code[2].t0" 140.34
+resist "code[2].n1" "code[2].t1" 140.599
+resist "code[2].n0" "code[2].t2" 140.677
+rnode "VDD.n0" 0 260.298 15828 1493 0
+rnode "VDD.t5" 0 102.595 15861 1520 0
+rnode "VDD.t4" 0 102.595 15795 1520 0
+rnode "VDD.n1" 0 251.52 15828 1520 0
+rnode "VDD.n2" 0 745.608 15849 1520 0
+rnode "VDD.n3" 0 121.479 15849 1520 0
+rnode "VDD.n4" 0 102.48 15828 1520 0
+rnode "VDD.n5" 0 124.548 15849 1520 0
+rnode "VDD.n6" 0 254.327 15858 1520 0
+rnode "VDD.n7" 0 265.149 15828 1547 0
+rnode "VDD.n8" 0 297.943 15828 1520 0
+rnode "VDD.n9" 0 1555.32 15858 1520 0
+rnode "VDD.n10" 0 1738.84 15740 1954 0
+rnode "VDD.n11" 0 309.376 15713 1984 0
+rnode "VDD.n12" 0 167.883 15740 1984 0
+rnode "VDD.t3" 0 145.816 15673 1861 0
+rnode "VDD.n13" 0 2110.44 15740 1984 0
+rnode "VDD.n14" 0 306.972 15740 1984 0
+rnode "VDD.n15" 0 707.792 15740 1984 0
+rnode "VDD.n16" 0 17343 15740 2014 0
+rnode "VDD.n17" 0 -39871.6 15239 2904 0
+rnode "x5[1].x1.CTOP" 0 4299.23 14717 2746 0
+rnode "x5[2].x1.CTOP" 0 4299.23 13997 2746 0
+rnode "x5[3].x1.CTOP" 0 4299.23 13505 2746 0
+rnode "x5[4].x1.CTOP" 0 4299.23 12785 2746 0
+rnode "x5[5].x1.CTOP" 0 4299.23 12293 2746 0
+rnode "x5[6].x1.CTOP" 0 4299.23 11573 2746 0
+rnode "x5[7].x1.CTOP" 0 4299.23 11081 2746 0
+rnode "x6.x1.CTOP" 0 4299.23 10349 2746 0
+rnode "VDD.n18" 0 191.867 9391 2306 0
+rnode "VDD.n19" 0 512.977 9522 2335 0
+rnode "VDD.n20" 0 408.346 9693 2306 0
+rnode "VDD.n21" 0 12.6082 9666 2333 0
+rnode "VDD.n22" 0 191.888 9522 2305 0
+rnode "VDD.n23" 0 513.243 9636 2306 0
+rnode "VDD.n24" 0 263.347 9492 2305 0
+rnode "VDD.n25" 0 404.151 9636 2306 0
+rnode "VDD.n26" 0 68.4709 9530 2304 0
+rnode "VDD.n27" 0 422.817 9622 2304 0
+rnode "VDD.n28" 0 92.3802 9522 2305 0
+rnode "VDD.n29" 0 305.83 9666 2333 0
+rnode "VDD.n30" 0 266.481 9666 2306 0
+rnode "x5.VPWR" 0 648.89 9697 2287 0
+rnode "VDD.t0" 0 811.198 9640 2157 0
+rnode "VDD.n31" 0 888.501 9650 2304 0
+rnode "VDD.n32" 0 151.006 9622 2304 0
+rnode "VDD.t1" 0 811.2 9420 2157 0
+rnode "VDD.n33" 0 887.681 9410 2304 0
+rnode "VDD.n34" 0 71.2098 9522 2305 0
+rnode "VDD.n35" 0 106.726 9495 2305 0
+rnode "VDD.n36" 0 103.942 9504 2304 0
+rnode "VDD.n37" 0 135.017 9504 2304 0
+rnode "x5.VPWR" 0 234.504 9484 2256 0
+rnode "VDD.n38" 0 358.431 9421 2306 0
+rnode "VDD.n39" 0 12.6082 9391 2306 0
+rnode "VDD.n40" 0 422.593 9364 2306 0
+rnode "VDD.n41" 0 305.789 9391 2306 0
+rnode "x1.VPWR" 0 103.039 9300 2256 0
+rnode "x1.VPWR" 0 163.442 9329 2287 0
+rnode "VDD.n42" 0 312.166 9346 2304 0
+rnode "VDD.n43" 0 326.884 9391 2306 0
+rnode "VDD.n44" 0 330.437 9438 2304 0
+rnode "VDD.n45" 0 151.006 9438 2304 0
+rnode "VDD.n46" 0 231.543 9530 2304 0
+rnode "VDD.n47" 0 88.8272 9530 2304 0
+rnode "VDD.n48" 0 326.884 9547 2304 0
+rnode "VDD.n49" 0 62.9824 9547 2304 0
+rnode "VDD.n50" 0 106.603 9549 2305 0
+rnode "VDD.n51" 0 309.118 9552 2305 0
+rnode "VDD.n52" 0 512.977 9522 2305 0
+rnode "VDD.n53" 0 0 9522 2305 0
+rnode "VDD.n54" 0 1214.02 9666 2276 0
+rnode "VDD.n55" 0 191.867 9666 2276 0
+rnode "VDD.n56" 0 51.2977 9666 2336 0
+rnode "VDD" 0 17889.6 9299 2338 0
+rnode "VDD.n57" 0 4362.92 9978 2911 0
+rnode "VDD.t2" 0 2033.16 10008 2911 0
+rnode "VDD.n58" 0 297.825 10038 2911 0
+rnode "VDD.n59" 0 -3006.68 10105 2904 0
+rnode "VDD.n60" 0 -681.748 10185 2904 0
+rnode "VDD.n61" 0 461.901 10265 2904 0
+rnode "VDD.n62" 0 288.688 10345 2904 0
+rnode "VDD.n63" 0 668.607 10365 2870 0
+rnode "VDD.n64" 0 -5273.61 10425 2904 0
+rnode "VDD.n65" 0 -7717.43 11077 2904 0
+rnode "VDD.n66" 0 848.685 11097 2870 0
+rnode "VDD.n67" 0 404.164 11157 2904 0
+rnode "VDD.n68" 0 825.648 11237 2904 0
+rnode "VDD.n69" 0 825.648 11443 2904 0
+rnode "VDD.n70" 0 404.164 11523 2904 0
+rnode "VDD.n71" 0 506.315 11583 2870 0
+rnode "VDD.n72" 0 288.688 11603 2904 0
+rnode "VDD.n73" 0 461.901 11683 2904 0
+rnode "VDD.n74" 0 -681.748 11763 2904 0
+rnode "VDD.n75" 0 -2605.3 11843 2904 0
+rnode "VDD.n76" 0 -2605.3 12049 2904 0
+rnode "VDD.n77" 0 -681.748 12129 2904 0
+rnode "VDD.n78" 0 461.901 12209 2904 0
+rnode "VDD.n79" 0 288.688 12289 2904 0
+rnode "VDD.n80" 0 506.315 12309 2870 0
+rnode "VDD.n81" 0 404.164 12369 2904 0
+rnode "VDD.n82" 0 825.648 12449 2904 0
+rnode "VDD.n83" 0 825.648 12655 2904 0
+rnode "VDD.n84" 0 404.164 12735 2904 0
+rnode "VDD.n85" 0 506.315 12795 2870 0
+rnode "VDD.n86" 0 288.688 12815 2904 0
+rnode "VDD.n87" 0 461.901 12895 2904 0
+rnode "VDD.n88" 0 -681.748 12975 2904 0
+rnode "VDD.n89" 0 -2605.3 13055 2904 0
+rnode "VDD.n90" 0 -2605.3 13261 2904 0
+rnode "VDD.n91" 0 -681.748 13341 2904 0
+rnode "VDD.n92" 0 461.901 13421 2904 0
+rnode "VDD.n93" 0 288.688 13501 2904 0
+rnode "VDD.n94" 0 506.315 13521 2870 0
+rnode "VDD.n95" 0 404.164 13581 2904 0
+rnode "VDD.n96" 0 825.648 13661 2904 0
+rnode "VDD.n97" 0 825.648 13867 2904 0
+rnode "VDD.n98" 0 404.164 13947 2904 0
+rnode "VDD.n99" 0 506.315 14007 2870 0
+rnode "VDD.n100" 0 288.688 14027 2904 0
+rnode "VDD.n101" 0 461.901 14107 2904 0
+rnode "VDD.n102" 0 -681.748 14187 2904 0
+rnode "VDD.n103" 0 -2605.3 14267 2904 0
+rnode "VDD.n104" 0 -2605.3 14473 2904 0
+rnode "VDD.n105" 0 -681.748 14553 2904 0
+rnode "VDD.n106" 0 461.901 14633 2904 0
+rnode "VDD.n107" 0 288.688 14713 2904 0
+rnode "VDD.n108" 0 506.315 14733 2870 0
+rnode "VDD.n109" 0 404.164 14793 2904 0
+rnode "VDD.n110" 0 825.648 14873 2904 0
+rnode "VDD.n111" 0 825.648 15079 2904 0
+rnode "VDD.n112" 0 404.164 15159 2904 0
+rnode "VDD.n113" 0 848.085 15219 2870 0
+rnode "x5[0].x1.CTOP" 0 4299.23 15209 2746 0
+resist "VDD.n52" "VDD.n23" 0.000101732
+resist "VDD.n56" "VDD.n19" 0.000101732
+resist "VDD" "VDD.n56" 0.000203463
+resist "VDD.n4" "VDD.n3" 0.000621499
+resist "VDD.n35" "VDD.n24" 0.00146875
+resist "VDD.n51" "VDD.n50" 0.00146875
+resist "VDD.n14" "VDD.n12" 0.0016514
+resist "VDD.n53" "VDD.n52" 0.00181585
+resist "VDD.n23" "VDD.n19" 0.00295022
+resist "VDD.n7" "VDD.n6" 0.00301641
+resist "VDD.n39" "VDD.n18" 0.00310776
+resist "VDD.n55" "VDD.n21" 0.00310776
+resist "VDD.n54" "VDD.n53" 0.00313233
+resist "VDD.n15" "VDD.n10" 0.00443396
+resist "VDD.n16" "VDD.n15" 0.00443396
+resist "VDD.n40" "VDD.n18" 0.00489363
+resist "VDD.n55" "VDD.n20" 0.00522581
+resist "VDD.n6" "VDD.n0" 0.0100714
+resist "VDD.n47" "VDD.n28" 0.0104167
+resist "VDD.n63" "VDD.n62" 0.0120513
+resist "VDD.n72" "VDD.n71" 0.0120513
+resist "VDD.n80" "VDD.n79" 0.0120513
+resist "VDD.n86" "VDD.n85" 0.0120513
+resist "VDD.n94" "VDD.n93" 0.0120513
+resist "VDD.n100" "VDD.n99" 0.0120513
+resist "VDD.n108" "VDD.n107" 0.0120513
+resist "VDD.n39" "VDD.n38" 0.0125393
+resist "VDD.n25" "VDD.n21" 0.0125393
+resist "VDD.n35" "VDD.n22" 0.0132188
+resist "VDD.n50" "VDD.n22" 0.0132188
+resist "VDD.n3" "VDD.n2" 0.0132243
+resist "VDD.n34" "VDD.n26" 0.0135135
+resist "VDD.n5" "VDD.n4" 0.0143621
+resist "VDD.n12" "VDD.n11" 0.0151071
+resist "VDD.n9" "VDD.n8" 0.0167857
+resist "VDD.t2" "VDD.n57" 0.016988
+resist "VDD.n58" "VDD.t2" 0.016988
+resist "VDD.n42" "x1.VPWR" 0.0221354
+resist "VDD.n48" "VDD.n47" 0.0221354
+resist "VDD.n2" "VDD.n1" 0.0229759
+resist "VDD.n37" "VDD.n28" 0.0234375
+resist "x5.VPWR" "VDD.n37" 0.0260417
+resist "VDD.n49" "VDD.n26" 0.0287162
+resist "VDD.n36" "VDD.n34" 0.0304054
+resist "VDD.n38" "VDD.n24" 0.0346948
+resist "VDD.n67" "VDD.n66" 0.0361538
+resist "VDD.n71" "VDD.n70" 0.0361538
+resist "VDD.n81" "VDD.n80" 0.0361538
+resist "VDD.n85" "VDD.n84" 0.0361538
+resist "VDD.n95" "VDD.n94" 0.0361538
+resist "VDD.n99" "VDD.n98" 0.0361538
+resist "VDD.n109" "VDD.n108" 0.0361538
+resist "VDD.n113" "VDD.n112" 0.0361538
+resist "x1.VPWR" "x1.VPWR" 0.0377604
+resist "VDD.n59" "VDD.n58" 0.0391739
+resist "x5.VPWR" "VDD.n30" 0.0403646
+resist "VDD.n51" "VDD.n25" 0.041125
+resist "VDD.n60" "VDD.n59" 0.0482051
+resist "VDD.n61" "VDD.n60" 0.0482051
+resist "VDD.n62" "VDD.n61" 0.0482051
+resist "VDD.n68" "VDD.n67" 0.0482051
+resist "VDD.n70" "VDD.n69" 0.0482051
+resist "VDD.n73" "VDD.n72" 0.0482051
+resist "VDD.n74" "VDD.n73" 0.0482051
+resist "VDD.n75" "VDD.n74" 0.0482051
+resist "VDD.n77" "VDD.n76" 0.0482051
+resist "VDD.n78" "VDD.n77" 0.0482051
+resist "VDD.n79" "VDD.n78" 0.0482051
+resist "VDD.n82" "VDD.n81" 0.0482051
+resist "VDD.n84" "VDD.n83" 0.0482051
+resist "VDD.n87" "VDD.n86" 0.0482051
+resist "VDD.n88" "VDD.n87" 0.0482051
+resist "VDD.n89" "VDD.n88" 0.0482051
+resist "VDD.n91" "VDD.n90" 0.0482051
+resist "VDD.n92" "VDD.n91" 0.0482051
+resist "VDD.n93" "VDD.n92" 0.0482051
+resist "VDD.n96" "VDD.n95" 0.0482051
+resist "VDD.n98" "VDD.n97" 0.0482051
+resist "VDD.n101" "VDD.n100" 0.0482051
+resist "VDD.n102" "VDD.n101" 0.0482051
+resist "VDD.n103" "VDD.n102" 0.0482051
+resist "VDD.n105" "VDD.n104" 0.0482051
+resist "VDD.n106" "VDD.n105" 0.0482051
+resist "VDD.n107" "VDD.n106" 0.0482051
+resist "VDD.n110" "VDD.n109" 0.0482051
+resist "VDD.n112" "VDD.n111" 0.0482051
+resist "VDD.n30" "VDD.n27" 0.0572917
+resist "VDD.n43" "VDD.n42" 0.0585938
+resist "VDD.n44" "x5.VPWR" 0.0598958
+resist "VDD.n64" "VDD.n63" 0.0604126
+resist "VDD.n44" "VDD.n43" 0.0611979
+resist "VDD.n66" "VDD.n65" 0.0787506
+resist "VDD.n113" "VDD.n17" 0.0789008
+resist "x5[0].x1.CTOP" "VDD.n113" 0.0971333
+resist "VDD.n108" "x5[1].x1.CTOP" 0.0971333
+resist "VDD.n99" "x5[2].x1.CTOP" 0.0971333
+resist "VDD.n94" "x5[3].x1.CTOP" 0.0971333
+resist "VDD.n85" "x5[4].x1.CTOP" 0.0971333
+resist "VDD.n80" "x5[5].x1.CTOP" 0.0971333
+resist "VDD.n71" "x5[6].x1.CTOP" 0.0971333
+resist "VDD.n66" "x5[7].x1.CTOP" 0.0971333
+resist "VDD.n63" "x6.x1.CTOP" 0.0971333
+resist "VDD.n48" "VDD.n27" 0.0976562
+resist "VDD.n69" "VDD.n68" 0.124128
+resist "VDD.n76" "VDD.n75" 0.124128
+resist "VDD.n83" "VDD.n82" 0.124128
+resist "VDD.n90" "VDD.n89" 0.124128
+resist "VDD.n97" "VDD.n96" 0.124128
+resist "VDD.n104" "VDD.n103" 0.124128
+resist "VDD.n111" "VDD.n110" 0.124128
+resist "VDD.n57" "VDD" 0.187647
+resist "VDD.n65" "VDD.n64" 0.299982
+resist "VDD.n17" "VDD.n16" 0.325842
+resist "VDD.n10" "VDD.n9" 0.356919
+resist "VDD.n29" "VDD.n21" 0.682213
+resist "VDD.n41" "VDD.n39" 0.682213
+resist "VDD.n14" "VDD.n13" 0.684095
+resist "VDD.n34" "VDD.n22" 0.8525
+resist "VDD.n8" "VDD.n7" 0.852791
+resist "VDD.n6" "VDD.n5" 1.12955
+resist "VDD.n40" "VDD.n23" 1.1344
+resist "VDD.n23" "VDD.n20" 1.13451
+resist "VDD.n53" "VDD.n22" 1.13663
+resist "VDD.n15" "VDD.n14" 1.13931
+resist "VDD.n34" "VDD.n28" 1.35557
+resist "VDD.n30" "VDD.n29" 1.93995
+resist "VDD.n43" "VDD.n41" 1.93995
+resist "VDD.n47" "VDD.n46" 3.03261
+resist "VDD.n55" "VDD.n54" 3.41
+resist "VDD.n25" "VDD.n23" 3.41
+resist "VDD.n56" "VDD.n55" 3.41
+resist "VDD.n22" "VDD.n19" 3.41
+resist "VDD.n56" "VDD.n18" 3.41
+resist "VDD.n38" "VDD.n23" 3.41
+resist "VDD.n54" "VDD.n18" 3.41
+resist "VDD.n52" "VDD.n24" 3.41
+resist "VDD.n52" "VDD.n51" 3.41
+resist "VDD.n50" "VDD.n49" 3.41338
+resist "VDD.n36" "VDD.n35" 3.4252
+resist "VDD.n41" "VDD.n40" 3.4649
+resist "VDD.n29" "VDD.n20" 3.46557
+resist "VDD.n37" "VDD.n36" 4.5
+resist "VDD.n47" "VDD.n26" 4.5
+resist "VDD.n49" "VDD.n48" 4.5
+resist "VDD.n32" "VDD.n27" 4.65
+resist "VDD.n45" "VDD.n44" 4.65
+resist "VDD.n45" "VDD.n33" 10.5412
+resist "VDD.n32" "VDD.n31" 10.5412
+resist "VDD.n42" "VDD.n33" 12.9324
+resist "VDD.n31" "x5.VPWR" 12.9545
+resist "VDD.n46" "VDD.n45" 34.6353
+resist "VDD.n46" "VDD.n32" 34.6353
+resist "VDD.n1" "VDD.t4" 47.1429
+resist "VDD.n1" "VDD.t5" 47.1429
+resist "VDD.n13" "VDD.t3" 70.3644
+resist "VDD.n31" "VDD.t0" 158.059
+resist "VDD.n33" "VDD.t1" 158.06
+rnode "OUT.t0" 0 0 15673 1723 0
+rnode "OUT.t1" 0 0 15673 1520 0
+rnode "OUT.n0" 0 0 15653 1633 0
+rnode "OUT.t3" 0 0 15780 1520 0
+rnode "OUT.t5" 0 0 15780 1723 0
+rnode "OUT.t4" 0 0 15876 1723 0
+rnode "OUT.t2" 0 0 15876 1520 0
+rnode "OUT.n1" 0 0 15876 1656 0
+rnode "OUT.n2" 0 0 15780 1617 0
+rnode "OUT" 0 0 15751 1594 0
+resist "OUT" "OUT.n0" 0.422414
+resist "OUT" "OUT.n2" 13.4926
+resist "OUT.n0" "OUT.t1" 41.7547
+resist "OUT.n2" "OUT.n1" 58.5722
+resist "OUT.n0" "OUT.t0" 68.3653
+resist "OUT.n1" "OUT.t2" 91.58
+resist "OUT.n2" "OUT.t3" 91.58
+resist "OUT.n1" "OUT.t4" 107.647
+resist "OUT.n2" "OUT.t5" 107.647
+rnode "x5[6].x1.CBOT" 0 2084.34 11691 2156 0
+rnode "x5[5].x1.CBOT" 0 2084.34 12175 2156 0
+rnode "x5[4].x1.CBOT" 0 2084.34 12903 2156 0
+rnode "x5[3].x1.CBOT" 0 2084.34 13387 2156 0
+rnode "x5[2].x1.CBOT" 0 2084.34 14115 2156 0
+rnode "x5[1].x1.CBOT" 0 2084.34 14599 2156 0
+rnode "x5[0].x1.CBOT" 0 2557.84 15327 2156 0
+rnode "x5[7].x1.CBOT.n0" 0 3535.03 15159 1744 0
+rnode "x5[7].x1.CBOT.n1" 0 -2036.25 15084 1732 0
+rnode "x5[7].x1.CBOT.n2" 0 44.8351 15079 1764 0
+rnode "x5[7].x1.CBOT.n3" 0 144.313 15052 1732 0
+rnode "x5[7].x1.CBOT.n4" 0 3011.95 14976 1778 0
+rnode "x5[7].x1.CBOT.n5" 0 144.313 14899 1732 0
+rnode "x5[7].x1.CBOT.n6" 0 44.8351 14873 1744 0
+rnode "x5[7].x1.CBOT.n7" 0 -1956.81 14867 1732 0
+rnode "x5[7].x1.CBOT.n8" 0 -266.974 14793 1744 0
+rnode "x5[7].x1.CBOT.n9" 0 224.175 14713 1744 0
+rnode "x5[7].x1.CBOT.n10" 0 140.11 14633 1744 0
+rnode "x5[7].x1.CBOT.n11" 0 579.394 14613 1778 0
+rnode "x5[7].x1.CBOT.n12" 0 196.153 14553 1744 0
+rnode "x5[7].x1.CBOT.n13" 0 256.4 14473 1744 0
+rnode "x5[7].x1.CBOT.n14" 0 3086.21 14370 1778 0
+rnode "x5[7].x1.CBOT.n15" 0 256.4 14267 1744 0
+rnode "x5[7].x1.CBOT.n16" 0 196.153 14187 1744 0
+rnode "x5[7].x1.CBOT.n17" 0 579.394 14127 1778 0
+rnode "x5[7].x1.CBOT.n18" 0 140.11 14107 1744 0
+rnode "x5[7].x1.CBOT.n19" 0 224.175 14027 1744 0
+rnode "x5[7].x1.CBOT.n20" 0 -293.159 13947 1744 0
+rnode "x5[7].x1.CBOT.n21" 0 -1929.23 13872 1732 0
+rnode "x5[7].x1.CBOT.n22" 0 44.8351 13867 1744 0
+rnode "x5[7].x1.CBOT.n23" 0 144.313 13840 1732 0
+rnode "x5[7].x1.CBOT.n24" 0 3011.95 13764 1778 0
+rnode "x5[7].x1.CBOT.n25" 0 144.313 13687 1732 0
+rnode "x5[7].x1.CBOT.n26" 0 44.8351 13661 1744 0
+rnode "x5[7].x1.CBOT.n27" 0 -1956.81 13655 1732 0
+rnode "x5[7].x1.CBOT.n28" 0 -266.974 13581 1744 0
+rnode "x5[7].x1.CBOT.n29" 0 224.175 13501 1744 0
+rnode "x5[7].x1.CBOT.n30" 0 140.11 13421 1744 0
+rnode "x5[7].x1.CBOT.n31" 0 579.394 13401 1778 0
+rnode "x5[7].x1.CBOT.n32" 0 196.153 13341 1744 0
+rnode "x5[7].x1.CBOT.n33" 0 256.4 13261 1744 0
+rnode "x5[7].x1.CBOT.n34" 0 3086.21 13158 1778 0
+rnode "x5[7].x1.CBOT.n35" 0 256.4 13055 1744 0
+rnode "x5[7].x1.CBOT.n36" 0 196.153 12975 1744 0
+rnode "x5[7].x1.CBOT.n37" 0 579.394 12915 1778 0
+rnode "x5[7].x1.CBOT.n38" 0 140.11 12895 1744 0
+rnode "x5[7].x1.CBOT.n39" 0 224.175 12815 1744 0
+rnode "x5[7].x1.CBOT.n40" 0 -293.159 12735 1744 0
+rnode "x5[7].x1.CBOT.n41" 0 -1929.23 12660 1732 0
+rnode "x5[7].x1.CBOT.n42" 0 44.8351 12655 1744 0
+rnode "x5[7].x1.CBOT.n43" 0 144.313 12628 1732 0
+rnode "x5[7].x1.CBOT.n44" 0 3011.95 12552 1778 0
+rnode "x5[7].x1.CBOT.n45" 0 144.313 12475 1732 0
+rnode "x5[7].x1.CBOT.n46" 0 44.8351 12449 1744 0
+rnode "x5[7].x1.CBOT.n47" 0 -1956.81 12443 1732 0
+rnode "x5[7].x1.CBOT.n48" 0 -266.974 12369 1744 0
+rnode "x5[7].x1.CBOT.n49" 0 224.175 12289 1744 0
+rnode "x5[7].x1.CBOT.n50" 0 140.11 12209 1744 0
+rnode "x5[7].x1.CBOT.n51" 0 579.394 12189 1778 0
+rnode "x5[7].x1.CBOT.n52" 0 196.153 12129 1744 0
+rnode "x5[7].x1.CBOT.n53" 0 256.4 12049 1744 0
+rnode "x5[7].x1.CBOT.n54" 0 3086.21 11946 1778 0
+rnode "x5[7].x1.CBOT.n55" 0 256.4 11843 1744 0
+rnode "x5[7].x1.CBOT.n56" 0 196.153 11763 1744 0
+rnode "x5[7].x1.CBOT.n57" 0 579.394 11703 1778 0
+rnode "x5[7].x1.CBOT.n58" 0 140.11 11683 1744 0
+rnode "x5[7].x1.CBOT.n59" 0 224.175 11603 1744 0
+rnode "x5[7].x1.CBOT.n60" 0 -293.159 11523 1744 0
+rnode "x5[7].x1.CBOT.n61" 0 -1929.23 11448 1732 0
+rnode "x5[7].x1.CBOT.n62" 0 44.8351 11443 1744 0
+rnode "x5[7].x1.CBOT.n63" 0 144.313 11416 1732 0
+rnode "x5[7].x1.CBOT.n64" 0 3011.95 11340 1778 0
+rnode "x5[7].x1.CBOT.n65" 0 144.313 11263 1732 0
+rnode "x5[7].x1.CBOT.n66" 0 44.8351 11237 1764 0
+rnode "x5[7].x1.CBOT.n67" 0 -2048.31 11231 1732 0
+rnode "x5[7].x1.CBOT.n68" 0 -606.398 15116 1732 0
+rnode "x5[7].x1.CBOT.t3" 0 50.252 15054 1720 0
+rnode "x5[7].x1.CBOT.n69" 0 379.061 15111 1720 0
+rnode "x5[7].x1.CBOT.n70" 0 67.431 15090 1700 0
+rnode "x5[7].x1.CBOT.n71" 0 79.4733 15084 1732 0
+rnode "x5[7].x1.CBOT.n72" 0 128.877 15090 1700 0
+rnode "x5[7].x1.CBOT.n73" 0 61.9779 15090 1700 0
+rnode "x5[7].x1.CBOT.n74" 0 21.3049 15084 1732 0
+rnode "x5[7].x1.CBOT.n75" 0 61.9779 15079 1764 0
+rnode "x5[7].x1.CBOT.n76" 0 163.074 15052 1732 0
+rnode "x5[7].x1.CBOT.n77" 0 3006.15 14976 1778 0
+rnode "x5[7].x1.CBOT.n78" 0 163.936 14899 1732 0
+rnode "x5[7].x1.CBOT.n79" 0 61.9779 14873 1744 0
+rnode "x5[7].x1.CBOT.n80" 0 21.4172 14867 1732 0
+rnode "x5[7].x1.CBOT.t1" 0 50.252 14898 1720 0
+rnode "x5[7].x1.CBOT.n81" 0 389.081 14890 1720 0
+rnode "x5[7].x1.CBOT.n82" 0 70.7008 14862 1700 0
+rnode "x5[7].x1.CBOT.n83" 0 68.2976 14841 1720 0
+rnode "x5[7].x1.CBOT.n84" 0 127.517 14862 1700 0
+rnode "x5[7].x1.CBOT.n85" 0 61.9779 14862 1700 0
+rnode "x5[7].x1.CBOT.n86" 0 129.163 14835 1732 0
+rnode "x5[7].x1.CBOT.n87" 0 -468.82 14793 1744 0
+rnode "x5[7].x1.CBOT.n88" 0 -1689.56 14713 1744 0
+rnode "x5[7].x1.CBOT.n89" 0 224.175 14633 1744 0
+rnode "x5[7].x1.CBOT.n90" 0 -413.735 14553 1744 0
+rnode "x5[7].x1.CBOT.n91" 0 -1657.33 14473 1744 0
+rnode "x5[7].x1.CBOT.n92" 0 3082.9 14370 1778 0
+rnode "x5[7].x1.CBOT.n93" 0 -1657.33 14267 1744 0
+rnode "x5[7].x1.CBOT.n94" 0 -413.735 14187 1744 0
+rnode "x5[7].x1.CBOT.n95" 0 224.175 14107 1744 0
+rnode "x5[7].x1.CBOT.n96" 0 -1689.56 14027 1744 0
+rnode "x5[7].x1.CBOT.n97" 0 -467.344 13947 1744 0
+rnode "x5[7].x1.CBOT.n98" 0 130.408 13904 1732 0
+rnode "x5[7].x1.CBOT.t2" 0 50.252 13842 1720 0
+rnode "x5[7].x1.CBOT.n99" 0 379.061 13899 1720 0
+rnode "x5[7].x1.CBOT.n100" 0 67.431 13878 1700 0
+rnode "x5[7].x1.CBOT.n101" 0 79.4733 13872 1732 0
+rnode "x5[7].x1.CBOT.n102" 0 128.877 13878 1700 0
+rnode "x5[7].x1.CBOT.n103" 0 61.9779 13878 1700 0
+rnode "x5[7].x1.CBOT.n104" 0 21.3049 13872 1732 0
+rnode "x5[7].x1.CBOT.n105" 0 61.9779 13867 1744 0
+rnode "x5[7].x1.CBOT.n106" 0 163.074 13840 1732 0
+rnode "x5[7].x1.CBOT.n107" 0 3006.15 13764 1778 0
+rnode "x5[7].x1.CBOT.n108" 0 163.936 13687 1732 0
+rnode "x5[7].x1.CBOT.n109" 0 61.9779 13661 1744 0
+rnode "x5[7].x1.CBOT.n110" 0 21.4172 13655 1732 0
+rnode "x5[7].x1.CBOT.t7" 0 50.252 13686 1720 0
+rnode "x5[7].x1.CBOT.n111" 0 389.081 13678 1720 0
+rnode "x5[7].x1.CBOT.n112" 0 70.7008 13650 1700 0
+rnode "x5[7].x1.CBOT.n113" 0 68.2976 13629 1720 0
+rnode "x5[7].x1.CBOT.n114" 0 127.517 13650 1700 0
+rnode "x5[7].x1.CBOT.n115" 0 61.9779 13650 1700 0
+rnode "x5[7].x1.CBOT.n116" 0 129.163 13623 1732 0
+rnode "x5[7].x1.CBOT.n117" 0 -468.82 13581 1744 0
+rnode "x5[7].x1.CBOT.n118" 0 -1689.56 13501 1744 0
+rnode "x5[7].x1.CBOT.n119" 0 224.175 13421 1744 0
+rnode "x5[7].x1.CBOT.n120" 0 -413.735 13341 1744 0
+rnode "x5[7].x1.CBOT.n121" 0 -1657.33 13261 1744 0
+rnode "x5[7].x1.CBOT.n122" 0 3082.9 13158 1778 0
+rnode "x5[7].x1.CBOT.n123" 0 -1657.33 13055 1744 0
+rnode "x5[7].x1.CBOT.n124" 0 -413.735 12975 1744 0
+rnode "x5[7].x1.CBOT.n125" 0 224.175 12895 1744 0
+rnode "x5[7].x1.CBOT.n126" 0 -1689.56 12815 1744 0
+rnode "x5[7].x1.CBOT.n127" 0 -467.344 12735 1744 0
+rnode "x5[7].x1.CBOT.n128" 0 130.408 12692 1732 0
+rnode "x5[7].x1.CBOT.t6" 0 50.252 12630 1720 0
+rnode "x5[7].x1.CBOT.n129" 0 379.061 12687 1720 0
+rnode "x5[7].x1.CBOT.n130" 0 67.431 12666 1700 0
+rnode "x5[7].x1.CBOT.n131" 0 79.4733 12660 1732 0
+rnode "x5[7].x1.CBOT.n132" 0 128.877 12666 1700 0
+rnode "x5[7].x1.CBOT.n133" 0 61.9779 12666 1700 0
+rnode "x5[7].x1.CBOT.n134" 0 21.3049 12660 1732 0
+rnode "x5[7].x1.CBOT.n135" 0 61.9779 12655 1744 0
+rnode "x5[7].x1.CBOT.n136" 0 163.074 12628 1732 0
+rnode "x5[7].x1.CBOT.n137" 0 3006.15 12552 1778 0
+rnode "x5[7].x1.CBOT.n138" 0 163.936 12475 1732 0
+rnode "x5[7].x1.CBOT.n139" 0 61.9779 12449 1744 0
+rnode "x5[7].x1.CBOT.n140" 0 21.4172 12443 1732 0
+rnode "x5[7].x1.CBOT.t5" 0 50.252 12474 1720 0
+rnode "x5[7].x1.CBOT.n141" 0 389.081 12466 1720 0
+rnode "x5[7].x1.CBOT.n142" 0 70.7008 12438 1700 0
+rnode "x5[7].x1.CBOT.n143" 0 68.2976 12417 1720 0
+rnode "x5[7].x1.CBOT.n144" 0 127.517 12438 1700 0
+rnode "x5[7].x1.CBOT.n145" 0 61.9779 12438 1700 0
+rnode "x5[7].x1.CBOT.n146" 0 129.163 12411 1732 0
+rnode "x5[7].x1.CBOT.n147" 0 -468.82 12369 1744 0
+rnode "x5[7].x1.CBOT.n148" 0 -1689.56 12289 1744 0
+rnode "x5[7].x1.CBOT.n149" 0 224.175 12209 1744 0
+rnode "x5[7].x1.CBOT.n150" 0 -413.735 12129 1744 0
+rnode "x5[7].x1.CBOT.n151" 0 -1657.33 12049 1744 0
+rnode "x5[7].x1.CBOT.n152" 0 3082.9 11946 1778 0
+rnode "x5[7].x1.CBOT.n153" 0 -1657.33 11843 1744 0
+rnode "x5[7].x1.CBOT.n154" 0 -413.735 11763 1744 0
+rnode "x5[7].x1.CBOT.n155" 0 224.175 11683 1744 0
+rnode "x5[7].x1.CBOT.n156" 0 -1689.56 11603 1744 0
+rnode "x5[7].x1.CBOT.n157" 0 -467.344 11523 1744 0
+rnode "x5[7].x1.CBOT.n158" 0 130.408 11480 1732 0
+rnode "x5[7].x1.CBOT.t4" 0 50.252 11418 1720 0
+rnode "x5[7].x1.CBOT.n159" 0 379.061 11475 1720 0
+rnode "x5[7].x1.CBOT.n160" 0 67.431 11454 1700 0
+rnode "x5[7].x1.CBOT.n161" 0 79.4733 11448 1732 0
+rnode "x5[7].x1.CBOT.n162" 0 128.877 11454 1700 0
+rnode "x5[7].x1.CBOT.n163" 0 61.9779 11454 1700 0
+rnode "x5[7].x1.CBOT.n164" 0 21.3049 11448 1732 0
+rnode "x5[7].x1.CBOT.n165" 0 61.9779 11443 1744 0
+rnode "x5[7].x1.CBOT.n166" 0 163.074 11416 1732 0
+rnode "x5[7].x1.CBOT.n167" 0 3006.15 11340 1778 0
+rnode "x5[7].x1.CBOT.n168" 0 163.936 11263 1732 0
+rnode "x5[7].x1.CBOT.n169" 0 61.9779 11237 1764 0
+rnode "x5[7].x1.CBOT.n170" 0 21.4132 11231 1732 0
+rnode "x5[7].x1.CBOT.t0" 0 50.252 11262 1720 0
+rnode "x5[7].x1.CBOT.n171" 0 418.678 11233 1720 0
+rnode "x5[7].x1.CBOT.n172" 0 70.7047 11226 1721 0
+rnode "x5[7].x1.CBOT.n173" 0 68.2976 11205 1720 0
+rnode "x5[7].x1.CBOT.n174" 0 97.9204 11226 1721 0
+rnode "x5[7].x1.CBOT.n175" 0 61.9779 11226 1721 0
+rnode "x5[7].x1.CBOT.n176" 0 -611.014 11199 1732 0
+rnode "x5[7].x1.CBOT.n177" 0 3547.18 11157 1744 0
+rnode "x5[7].x1.CBOT" 0 2558.25 10963 2156 0
+resist "x5[7].x1.CBOT.n133" "x5[7].x1.CBOT.n132" 3.97204e-05
+resist "x5[7].x1.CBOT.n175" "x5[7].x1.CBOT.n174" 3.97204e-05
+resist "x5[7].x1.CBOT.n163" "x5[7].x1.CBOT.n162" 3.97204e-05
+resist "x5[7].x1.CBOT.n145" "x5[7].x1.CBOT.n144" 3.97204e-05
+resist "x5[7].x1.CBOT.n103" "x5[7].x1.CBOT.n102" 3.97204e-05
+resist "x5[7].x1.CBOT.n85" "x5[7].x1.CBOT.n84" 3.97204e-05
+resist "x5[7].x1.CBOT.n73" "x5[7].x1.CBOT.n72" 3.97204e-05
+resist "x5[7].x1.CBOT.n115" "x5[7].x1.CBOT.n114" 3.97204e-05
+resist "x5[7].x1.CBOT.n132" "x5[7].x1.CBOT.n130" 0.000523299
+resist "x5[7].x1.CBOT.n162" "x5[7].x1.CBOT.n160" 0.000523299
+resist "x5[7].x1.CBOT.n72" "x5[7].x1.CBOT.n70" 0.000523299
+resist "x5[7].x1.CBOT.n102" "x5[7].x1.CBOT.n100" 0.000523299
+resist "x5[7].x1.CBOT.n144" "x5[7].x1.CBOT.n142" 0.00150689
+resist "x5[7].x1.CBOT.n84" "x5[7].x1.CBOT.n82" 0.00150689
+resist "x5[7].x1.CBOT.n114" "x5[7].x1.CBOT.n112" 0.00150689
+resist "x5[7].x1.CBOT.n174" "x5[7].x1.CBOT.n172" 0.00183747
+resist "x5[7].x1.CBOT.n142" "x5[7].x1.CBOT.n141" 0.0018396
+resist "x5[7].x1.CBOT.n82" "x5[7].x1.CBOT.n81" 0.0018396
+resist "x5[7].x1.CBOT.n112" "x5[7].x1.CBOT.n111" 0.0018396
+resist "x5[7].x1.CBOT.n172" "x5[7].x1.CBOT.n171" 0.00227942
+resist "x5[7].x1.CBOT.n135" "x5[7].x1.CBOT.n134" 0.0025
+resist "x5[7].x1.CBOT.n175" "x5[7].x1.CBOT.n170" 0.0025
+resist "x5[7].x1.CBOT.n165" "x5[7].x1.CBOT.n164" 0.0025
+resist "x5[7].x1.CBOT.n145" "x5[7].x1.CBOT.n140" 0.0025
+resist "x5[7].x1.CBOT.n105" "x5[7].x1.CBOT.n104" 0.0025
+resist "x5[7].x1.CBOT.n85" "x5[7].x1.CBOT.n80" 0.0025
+resist "x5[7].x1.CBOT.n75" "x5[7].x1.CBOT.n74" 0.0025
+resist "x5[7].x1.CBOT.n115" "x5[7].x1.CBOT.n110" 0.0025
+resist "x5[7].x1.CBOT.n134" "x5[7].x1.CBOT.n133" 0.003
+resist "x5[7].x1.CBOT.n170" "x5[7].x1.CBOT.n169" 0.003
+resist "x5[7].x1.CBOT.n164" "x5[7].x1.CBOT.n163" 0.003
+resist "x5[7].x1.CBOT.n140" "x5[7].x1.CBOT.n139" 0.003
+resist "x5[7].x1.CBOT.n104" "x5[7].x1.CBOT.n103" 0.003
+resist "x5[7].x1.CBOT.n80" "x5[7].x1.CBOT.n79" 0.003
+resist "x5[7].x1.CBOT.n74" "x5[7].x1.CBOT.n73" 0.003
+resist "x5[7].x1.CBOT.n110" "x5[7].x1.CBOT.n109" 0.003
+resist "x5[7].x1.CBOT.n160" "x5[7].x1.CBOT.n159" 0.00309614
+resist "x5[7].x1.CBOT.n70" "x5[7].x1.CBOT.n69" 0.00309614
+resist "x5[7].x1.CBOT.n100" "x5[7].x1.CBOT.n99" 0.00309614
+resist "x5[7].x1.CBOT.n130" "x5[7].x1.CBOT.n129" 0.00309614
+resist "x5[7].x1.CBOT.n62" "x5[7].x1.CBOT.n61" 0.00345588
+resist "x5[7].x1.CBOT.n42" "x5[7].x1.CBOT.n41" 0.00345588
+resist "x5[7].x1.CBOT.n22" "x5[7].x1.CBOT.n21" 0.00345588
+resist "x5[7].x1.CBOT.n2" "x5[7].x1.CBOT.n1" 0.00345588
+resist "x5[7].x1.CBOT.n67" "x5[7].x1.CBOT.n66" 0.00414706
+resist "x5[7].x1.CBOT.n47" "x5[7].x1.CBOT.n46" 0.00414706
+resist "x5[7].x1.CBOT.n27" "x5[7].x1.CBOT.n26" 0.00414706
+resist "x5[7].x1.CBOT.n7" "x5[7].x1.CBOT.n6" 0.00414706
+resist "x5[7].x1.CBOT.n132" "x5[7].x1.CBOT.n131" 0.0115385
+resist "x5[7].x1.CBOT.n162" "x5[7].x1.CBOT.n161" 0.0115385
+resist "x5[7].x1.CBOT.n72" "x5[7].x1.CBOT.n71" 0.0115385
+resist "x5[7].x1.CBOT.n102" "x5[7].x1.CBOT.n101" 0.0115385
+resist "x5[7].x1.CBOT.n133" "x5[7].x1.CBOT.n128" 0.013
+resist "x5[7].x1.CBOT.n169" "x5[7].x1.CBOT.n168" 0.013
+resist "x5[7].x1.CBOT.n163" "x5[7].x1.CBOT.n158" 0.013
+resist "x5[7].x1.CBOT.n139" "x5[7].x1.CBOT.n138" 0.013
+resist "x5[7].x1.CBOT.n103" "x5[7].x1.CBOT.n98" 0.013
+resist "x5[7].x1.CBOT.n79" "x5[7].x1.CBOT.n78" 0.013
+resist "x5[7].x1.CBOT.n73" "x5[7].x1.CBOT.n68" 0.013
+resist "x5[7].x1.CBOT.n109" "x5[7].x1.CBOT.n108" 0.013
+resist "x5[7].x1.CBOT.n136" "x5[7].x1.CBOT.n135" 0.0135
+resist "x5[7].x1.CBOT.n176" "x5[7].x1.CBOT.n175" 0.0135
+resist "x5[7].x1.CBOT.n166" "x5[7].x1.CBOT.n165" 0.0135
+resist "x5[7].x1.CBOT.n146" "x5[7].x1.CBOT.n145" 0.0135
+resist "x5[7].x1.CBOT.n106" "x5[7].x1.CBOT.n105" 0.0135
+resist "x5[7].x1.CBOT.n86" "x5[7].x1.CBOT.n85" 0.0135
+resist "x5[7].x1.CBOT.n76" "x5[7].x1.CBOT.n75" 0.0135
+resist "x5[7].x1.CBOT.n116" "x5[7].x1.CBOT.n115" 0.0135
+resist "x5[7].x1.CBOT.n58" "x5[7].x1.CBOT.n57" 0.0138235
+resist "x5[7].x1.CBOT.n51" "x5[7].x1.CBOT.n50" 0.0138235
+resist "x5[7].x1.CBOT.n38" "x5[7].x1.CBOT.n37" 0.0138235
+resist "x5[7].x1.CBOT.n31" "x5[7].x1.CBOT.n30" 0.0138235
+resist "x5[7].x1.CBOT.n18" "x5[7].x1.CBOT.n17" 0.0138235
+resist "x5[7].x1.CBOT.n11" "x5[7].x1.CBOT.n10" 0.0138235
+resist "x5[7].x1.CBOT.n66" "x5[7].x1.CBOT.n65" 0.0179706
+resist "x5[7].x1.CBOT.n46" "x5[7].x1.CBOT.n45" 0.0179706
+resist "x5[7].x1.CBOT.n26" "x5[7].x1.CBOT.n25" 0.0179706
+resist "x5[7].x1.CBOT.n6" "x5[7].x1.CBOT.n5" 0.0179706
+resist "x5[7].x1.CBOT.n63" "x5[7].x1.CBOT.n62" 0.0186618
+resist "x5[7].x1.CBOT.n43" "x5[7].x1.CBOT.n42" 0.0186618
+resist "x5[7].x1.CBOT.n23" "x5[7].x1.CBOT.n22" 0.0186618
+resist "x5[7].x1.CBOT.n3" "x5[7].x1.CBOT.n2" 0.0186618
+resist "x5[7].x1.CBOT.n147" "x5[7].x1.CBOT.n146" 0.0261618
+resist "x5[7].x1.CBOT.n87" "x5[7].x1.CBOT.n86" 0.0261618
+resist "x5[7].x1.CBOT.n117" "x5[7].x1.CBOT.n116" 0.0261618
+resist "x5[7].x1.CBOT.n128" "x5[7].x1.CBOT.n127" 0.0266618
+resist "x5[7].x1.CBOT.n158" "x5[7].x1.CBOT.n157" 0.0266618
+resist "x5[7].x1.CBOT.n98" "x5[7].x1.CBOT.n97" 0.0266618
+resist "x5[7].x1.CBOT.n144" "x5[7].x1.CBOT.n143" 0.0403846
+resist "x5[7].x1.CBOT.n174" "x5[7].x1.CBOT.n173" 0.0403846
+resist "x5[7].x1.CBOT.n84" "x5[7].x1.CBOT.n83" 0.0403846
+resist "x5[7].x1.CBOT.n114" "x5[7].x1.CBOT.n113" 0.0403846
+resist "x5[7].x1.CBOT.n57" "x5[7].x1.CBOT.n56" 0.0414706
+resist "x5[7].x1.CBOT.n52" "x5[7].x1.CBOT.n51" 0.0414706
+resist "x5[7].x1.CBOT.n37" "x5[7].x1.CBOT.n36" 0.0414706
+resist "x5[7].x1.CBOT.n32" "x5[7].x1.CBOT.n31" 0.0414706
+resist "x5[7].x1.CBOT.n17" "x5[7].x1.CBOT.n16" 0.0414706
+resist "x5[7].x1.CBOT.n12" "x5[7].x1.CBOT.n11" 0.0414706
+resist "x5[7].x1.CBOT.n48" "x5[7].x1.CBOT.n47" 0.0511471
+resist "x5[7].x1.CBOT.n28" "x5[7].x1.CBOT.n27" 0.0511471
+resist "x5[7].x1.CBOT.n8" "x5[7].x1.CBOT.n7" 0.0511471
+resist "x5[7].x1.CBOT.n61" "x5[7].x1.CBOT.n60" 0.0518382
+resist "x5[7].x1.CBOT.n41" "x5[7].x1.CBOT.n40" 0.0518382
+resist "x5[7].x1.CBOT.n21" "x5[7].x1.CBOT.n20" 0.0518382
+resist "x5[7].x1.CBOT.n167" "x5[7].x1.CBOT.n166" 0.0519559
+resist "x5[7].x1.CBOT.n137" "x5[7].x1.CBOT.n136" 0.0519559
+resist "x5[7].x1.CBOT.n107" "x5[7].x1.CBOT.n106" 0.0519559
+resist "x5[7].x1.CBOT.n77" "x5[7].x1.CBOT.n76" 0.0519559
+resist "x5[7].x1.CBOT.n168" "x5[7].x1.CBOT.n167" 0.0524559
+resist "x5[7].x1.CBOT.n138" "x5[7].x1.CBOT.n137" 0.0524559
+resist "x5[7].x1.CBOT.n78" "x5[7].x1.CBOT.n77" 0.0524559
+resist "x5[7].x1.CBOT.n108" "x5[7].x1.CBOT.n107" 0.0524559
+resist "x5[7].x1.CBOT.n64" "x5[7].x1.CBOT.n63" 0.0525294
+resist "x5[7].x1.CBOT.n44" "x5[7].x1.CBOT.n43" 0.0525294
+resist "x5[7].x1.CBOT.n24" "x5[7].x1.CBOT.n23" 0.0525294
+resist "x5[7].x1.CBOT.n4" "x5[7].x1.CBOT.n3" 0.0525294
+resist "x5[7].x1.CBOT.n65" "x5[7].x1.CBOT.n64" 0.0532206
+resist "x5[7].x1.CBOT.n45" "x5[7].x1.CBOT.n44" 0.0532206
+resist "x5[7].x1.CBOT.n25" "x5[7].x1.CBOT.n24" 0.0532206
+resist "x5[7].x1.CBOT.n5" "x5[7].x1.CBOT.n4" 0.0532206
+resist "x5[7].x1.CBOT.n127" "x5[7].x1.CBOT.n126" 0.0552941
+resist "x5[7].x1.CBOT.n126" "x5[7].x1.CBOT.n125" 0.0552941
+resist "x5[7].x1.CBOT.n125" "x5[7].x1.CBOT.n124" 0.0552941
+resist "x5[7].x1.CBOT.n124" "x5[7].x1.CBOT.n123" 0.0552941
+resist "x5[7].x1.CBOT.n121" "x5[7].x1.CBOT.n120" 0.0552941
+resist "x5[7].x1.CBOT.n120" "x5[7].x1.CBOT.n119" 0.0552941
+resist "x5[7].x1.CBOT.n119" "x5[7].x1.CBOT.n118" 0.0552941
+resist "x5[7].x1.CBOT.n118" "x5[7].x1.CBOT.n117" 0.0552941
+resist "x5[7].x1.CBOT.n60" "x5[7].x1.CBOT.n59" 0.0552941
+resist "x5[7].x1.CBOT.n59" "x5[7].x1.CBOT.n58" 0.0552941
+resist "x5[7].x1.CBOT.n56" "x5[7].x1.CBOT.n55" 0.0552941
+resist "x5[7].x1.CBOT.n53" "x5[7].x1.CBOT.n52" 0.0552941
+resist "x5[7].x1.CBOT.n50" "x5[7].x1.CBOT.n49" 0.0552941
+resist "x5[7].x1.CBOT.n49" "x5[7].x1.CBOT.n48" 0.0552941
+resist "x5[7].x1.CBOT.n40" "x5[7].x1.CBOT.n39" 0.0552941
+resist "x5[7].x1.CBOT.n39" "x5[7].x1.CBOT.n38" 0.0552941
+resist "x5[7].x1.CBOT.n36" "x5[7].x1.CBOT.n35" 0.0552941
+resist "x5[7].x1.CBOT.n33" "x5[7].x1.CBOT.n32" 0.0552941
+resist "x5[7].x1.CBOT.n30" "x5[7].x1.CBOT.n29" 0.0552941
+resist "x5[7].x1.CBOT.n29" "x5[7].x1.CBOT.n28" 0.0552941
+resist "x5[7].x1.CBOT.n20" "x5[7].x1.CBOT.n19" 0.0552941
+resist "x5[7].x1.CBOT.n19" "x5[7].x1.CBOT.n18" 0.0552941
+resist "x5[7].x1.CBOT.n16" "x5[7].x1.CBOT.n15" 0.0552941
+resist "x5[7].x1.CBOT.n13" "x5[7].x1.CBOT.n12" 0.0552941
+resist "x5[7].x1.CBOT.n10" "x5[7].x1.CBOT.n9" 0.0552941
+resist "x5[7].x1.CBOT.n9" "x5[7].x1.CBOT.n8" 0.0552941
+resist "x5[7].x1.CBOT.n157" "x5[7].x1.CBOT.n156" 0.0552941
+resist "x5[7].x1.CBOT.n156" "x5[7].x1.CBOT.n155" 0.0552941
+resist "x5[7].x1.CBOT.n155" "x5[7].x1.CBOT.n154" 0.0552941
+resist "x5[7].x1.CBOT.n154" "x5[7].x1.CBOT.n153" 0.0552941
+resist "x5[7].x1.CBOT.n151" "x5[7].x1.CBOT.n150" 0.0552941
+resist "x5[7].x1.CBOT.n150" "x5[7].x1.CBOT.n149" 0.0552941
+resist "x5[7].x1.CBOT.n149" "x5[7].x1.CBOT.n148" 0.0552941
+resist "x5[7].x1.CBOT.n148" "x5[7].x1.CBOT.n147" 0.0552941
+resist "x5[7].x1.CBOT.n97" "x5[7].x1.CBOT.n96" 0.0552941
+resist "x5[7].x1.CBOT.n96" "x5[7].x1.CBOT.n95" 0.0552941
+resist "x5[7].x1.CBOT.n95" "x5[7].x1.CBOT.n94" 0.0552941
+resist "x5[7].x1.CBOT.n94" "x5[7].x1.CBOT.n93" 0.0552941
+resist "x5[7].x1.CBOT.n91" "x5[7].x1.CBOT.n90" 0.0552941
+resist "x5[7].x1.CBOT.n90" "x5[7].x1.CBOT.n89" 0.0552941
+resist "x5[7].x1.CBOT.n89" "x5[7].x1.CBOT.n88" 0.0552941
+resist "x5[7].x1.CBOT.n88" "x5[7].x1.CBOT.n87" 0.0552941
+resist "x5[7].x1.CBOT.n123" "x5[7].x1.CBOT.n122" 0.0711912
+resist "x5[7].x1.CBOT.n122" "x5[7].x1.CBOT.n121" 0.0711912
+resist "x5[7].x1.CBOT.n55" "x5[7].x1.CBOT.n54" 0.0711912
+resist "x5[7].x1.CBOT.n54" "x5[7].x1.CBOT.n53" 0.0711912
+resist "x5[7].x1.CBOT.n35" "x5[7].x1.CBOT.n34" 0.0711912
+resist "x5[7].x1.CBOT.n34" "x5[7].x1.CBOT.n33" 0.0711912
+resist "x5[7].x1.CBOT.n15" "x5[7].x1.CBOT.n14" 0.0711912
+resist "x5[7].x1.CBOT.n14" "x5[7].x1.CBOT.n13" 0.0711912
+resist "x5[7].x1.CBOT.n153" "x5[7].x1.CBOT.n152" 0.0711912
+resist "x5[7].x1.CBOT.n152" "x5[7].x1.CBOT.n151" 0.0711912
+resist "x5[7].x1.CBOT.n93" "x5[7].x1.CBOT.n92" 0.0711912
+resist "x5[7].x1.CBOT.n92" "x5[7].x1.CBOT.n91" 0.0711912
+resist "x5[7].x1.CBOT.n177" "x5[7].x1.CBOT.n67" 0.132519
+resist "x5[7].x1.CBOT.n1" "x5[7].x1.CBOT.n0" 0.133234
+resist "x5[7].x1.CBOT.n57" "x5[6].x1.CBOT" 0.2961
+resist "x5[7].x1.CBOT.n51" "x5[5].x1.CBOT" 0.2961
+resist "x5[7].x1.CBOT.n37" "x5[4].x1.CBOT" 0.2961
+resist "x5[7].x1.CBOT.n31" "x5[3].x1.CBOT" 0.2961
+resist "x5[7].x1.CBOT.n17" "x5[2].x1.CBOT" 0.2961
+resist "x5[7].x1.CBOT.n11" "x5[1].x1.CBOT" 0.2961
+resist "x5[7].x1.CBOT.n0" "x5[0].x1.CBOT" 0.335071
+resist "x5[7].x1.CBOT" "x5[7].x1.CBOT.n177" 0.335098
+resist "x5[7].x1.CBOT.n177" "x5[7].x1.CBOT.n176" 0.347737
+resist "x5[7].x1.CBOT.n129" "x5[7].x1.CBOT.t6" 68.034
+resist "x5[7].x1.CBOT.n141" "x5[7].x1.CBOT.t5" 68.034
+resist "x5[7].x1.CBOT.n159" "x5[7].x1.CBOT.t4" 68.034
+resist "x5[7].x1.CBOT.n171" "x5[7].x1.CBOT.t0" 68.034
+resist "x5[7].x1.CBOT.n69" "x5[7].x1.CBOT.t3" 68.034
+resist "x5[7].x1.CBOT.n81" "x5[7].x1.CBOT.t1" 68.034
+resist "x5[7].x1.CBOT.n99" "x5[7].x1.CBOT.t2" 68.034
+resist "x5[7].x1.CBOT.n111" "x5[7].x1.CBOT.t7" 68.034
+rnode "x1.Y.n0" 0 191.741 9492 2160 0
+rnode "x1.Y.n1" 0 375.475 13827 1826 0
+rnode "x1.Y.n2" 0 375.475 12615 1826 0
+rnode "x1.Y.n3" 0 612.371 11403 1826 0
+rnode "x1.Y.t0" 0 35.9243 9450 1872 0
+rnode "x1.Y" 0 65.0791 9464 1981 0
+rnode "x1.Y" 0 9.45961 9464 2049 0
+rnode "x1.Y.t6" 0 13.0916 15039 1720 0
+rnode "x1.Y.t8" 0 12.9597 14913 1720 0
+rnode "x1.Y.n4" 0 247.39 14913 1826 0
+rnode "x1.Y.t7" 0 12.9597 13827 1720 0
+rnode "x1.Y.t2" 0 12.9597 13701 1720 0
+rnode "x1.Y.t3" 0 12.9597 12615 1720 0
+rnode "x1.Y.t4" 0 12.9597 12489 1720 0
+rnode "x1.Y.t5" 0 12.9597 11403 1720 0
+rnode "x1.Y.t9" 0 12.9597 11277 1720 0
+rnode "x1.Y.n5" 0 28.4512 9477 2228 0
+rnode "x1.Y.t1" 0 13.5477 9450 2157 0
+rnode "x1.Y.n6" 0 14.593 9492 2160 0
+rnode "x1.Y.n7" 0 11.7046 9477 2092 0
+rnode "x1.Y.n8" 0 16.4074 9487 2057 0
+rnode "x1.Y" 0 -1.42868 9464 2049 0
+resist "x1.Y" "x1.Y.n8" 1.55152
+resist "x1.Y.n6" "x1.Y.n5" 1.93327
+resist "x1.Y.n8" "x1.Y" 2.22609
+resist "x1.Y.n1" "x1.Y.n4" 3.29348
+resist "x1.Y.n2" "x1.Y.n1" 3.29348
+resist "x1.Y.n3" "x1.Y.n2" 3.29348
+resist "x1.Y.n7" "x1.Y.n0" 8.03876
+resist "x1.Y.n0" "x1.Y.n6" 9.12472
+resist "x1.Y.n8" "x1.Y.n7" 12.4084
+resist "x1.Y" "x1.Y" 18.9217
+resist "x1.Y.n6" "x1.Y.t1" 24.6562
+resist "x1.Y" "x1.Y.t0" 106.635
+resist "x1.Y.n0" "x1.Y.n3" 120.878
+resist "x1.Y.n3" "x1.Y.t9" 154.8
+resist "x1.Y.n3" "x1.Y.t5" 154.8
+resist "x1.Y.n2" "x1.Y.t4" 154.8
+resist "x1.Y.n2" "x1.Y.t3" 154.8
+resist "x1.Y.n1" "x1.Y.t2" 154.8
+resist "x1.Y.n1" "x1.Y.t7" 154.8
+resist "x1.Y.n4" "x1.Y.t8" 154.8
+resist "x1.Y.n4" "x1.Y.t6" 155.143
+rnode "IN.t15" 0 0 9924 2862 0
+rnode "IN.t3" 0 0 9924 2724 0
+rnode "IN.t7" 0 0 9924 2586 0
+rnode "IN.t11" 0 0 9924 2448 0
+rnode "IN.t0" 0 0 9924 2310 0
+rnode "IN.t10" 0 0 9924 2172 0
+rnode "IN.t6" 0 0 9950 369 0
+rnode "IN.t2" 0 0 9950 507 0
+rnode "IN.t14" 0 0 9950 645 0
+rnode "IN.t8" 0 0 9950 783 0
+rnode "IN.t20" 0 0 9950 921 0
+rnode "IN.t4" 0 0 9950 1059 0
+rnode "IN.t19" 0 0 9950 1197 0
+rnode "IN.t16" 0 0 9950 1335 0
+rnode "x9.input_stack" 0 -0 9863 1392 0
+rnode "IN.n0" 0 0 9947 1407 0
+rnode "IN.t9" 0 0 9878 369 0
+rnode "IN.t5" 0 0 9878 507 0
+rnode "IN.t18" 0 0 9878 645 0
+rnode "IN.t13" 0 0 9878 783 0
+rnode "IN.t1" 0 0 9878 921 0
+rnode "IN.t21" 0 0 9878 1059 0
+rnode "IN.t17" 0 0 9878 1197 0
+rnode "IN.t12" 0 0 9878 1335 0
+rnode "IN.n1" 0 0 9881 1384 0
+rnode "x9.input_stack" 0 0 9863 1392 0
+rnode "x9.input_stack" 0 -0 9863 1392 0
+rnode "IN.n2" 0 0 9881 1407 0
+rnode "IN.n3" 0 0 9887 1392 0
+rnode "IN.n4" 0 0 9914 1432 0
+rnode "IN.n5" 0 0 9914 1432 0
+rnode "x8.input_stack" 0 0 9907 2049 0
+rnode "IN" 0 0 9275 1596 0
+rnode "IN.n6" 0 0 9895 1619 0
+rnode "IN" 0 -0 9275 1596 0
+resist "x8.input_stack" "IN.n5" 0.00128676
+resist "IN.n6" "x8.input_stack" 0.00220588
+resist "IN" "IN.n6" 0.113971
+resist "IN.n6" "IN" 1.64894
+resist "IN.n3" "IN.n2" 3.96164
+resist "IN.n2" "x9.input_stack" 11.8849
+resist "IN.n5" "IN.n4" 13.4138
+resist "IN.n4" "IN.n3" 17.8274
+resist "IN.n4" "IN.n0" 21.3542
+resist "x9.input_stack" "IN.n1" 21.4222
+resist "IN.n3" "IN.n1" 32.1333
+resist "IN.n2" "x9.input_stack" 40.1667
+resist "IN.n0" "IN.t16" 74.6587
+resist "IN.n1" "IN.t12" 78.7267
+resist "IN.n0" "x9.input_stack" 89.9733
+resist "IN.n5" "IN.t10" 154.802
+resist "IN.t16" "IN.t19" 221.72
+resist "IN.t19" "IN.t4" 221.72
+resist "IN.t4" "IN.t20" 221.72
+resist "IN.t20" "IN.t8" 221.72
+resist "IN.t8" "IN.t14" 221.72
+resist "IN.t14" "IN.t2" 221.72
+resist "IN.t2" "IN.t6" 221.72
+resist "IN.t12" "IN.t17" 221.72
+resist "IN.t17" "IN.t21" 221.72
+resist "IN.t21" "IN.t1" 221.72
+resist "IN.t1" "IN.t13" 221.72
+resist "IN.t13" "IN.t18" 221.72
+resist "IN.t18" "IN.t5" 221.72
+resist "IN.t5" "IN.t9" 221.72
+resist "IN.t10" "IN.t0" 221.72
+resist "IN.t0" "IN.t11" 221.72
+resist "IN.t11" "IN.t7" 221.72
+resist "IN.t7" "IN.t3" 221.72
+resist "IN.t3" "IN.t15" 221.72
+device msubckt sky130_fd_pr__nfet_01v8 9863 1017 9864 1018  "x5.VNB" "IN.t21" 60 0 "a_9805_879#" 84 4872,284 "a_9893_1017#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 14167 1477 14168 1478  "x5.VNB" "code[1].t1" 60 0 "x3[1].x2.CBOT" 84 4872,284 "a_9939_2130#" 84 3948,178
+device msubckt sky130_fd_pr__nfet_01v8 9935 879 9936 880  "x5.VNB" "IN.t20" 60 0 "a_9893_879#" 84 1764,126 "a_9965_741#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 1155 9936 1156  "x5.VNB" "IN.t19" 60 0 "a_9893_1155#" 84 1764,126 "a_9965_1017#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 11741 1477 11742 1478  "x5.VNB" "code[2].t3" 60 0 "a_9939_2130#" 84 3948,178 "x4[3].x2.CBOT.t0" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 603 9864 604  "x5.VNB" "IN.t18" 60 0 "a_9805_603#" 84 4872,284 "a_9893_603#" 84 1764,126
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15765 1681 15766 1682  "x5.VPB" "OUT.t5" 60 0 "a_15703_1681#" 84 2604,146 "VSS.t4" 84 2772,150
+device msubckt sky130_fd_pr__pfet_01v8 11262 1678 11263 1679  "x5.VPB" "x1.Y.t9" 60 0 "x5[7].x1.CBOT.t0" 84 4872,284 "a_9939_2130#" 84 4032,180
+device msubckt sky130_fd_pr__nfet_01v8 9863 1155 9864 1156  "x5.VNB" "IN.t17" 60 0 "a_9805_1155#" 84 4872,284 "a_9893_1155#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 9420 1807 9421 1808  "x5.VNB" "code[3].t1" 60 0 "VSS.t1" 130 6760,364 "x1.Y.t0" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 9935 1293 9936 1294  "x5.VNB" "IN.t16" 60 0 "a_9893_1293#" 84 1764,126 "a_9939_2130#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 15673 1478 15674 1479  "x5.VNB" "a_9939_2130#" 60 0 "OUT.t1" 84 4872,284 "a_15703_1340#" 84 2604,146
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9909 2820 9910 2821  "x5.VPB" "IN.t15" 60 0 "a_9851_2682#" 84 4872,284 "VDD.t2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 603 9936 604  "x5.VNB" "IN.t14" 60 0 "a_9893_603#" 84 1764,126 "a_9965_465#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 14898 1678 14899 1679  "x5.VPB" "x1.Y.t8" 60 0 "x5[7].x1.CBOT.t1" 84 4872,284 "a_9939_2130#" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 13812 1678 13813 1679  "x5.VPB" "x1.Y.t7" 60 0 "a_9939_2130#" 84 4032,180 "x5[7].x1.CBOT.t2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 741 9864 742  "x5.VNB" "IN.t13" 60 0 "a_9805_603#" 84 4872,284 "a_9893_741#" 84 1764,126
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15861 1681 15862 1682  "x5.VPB" "OUT.t4" 60 0 "VSS.t5" 84 2772,150 "a_15703_1681#" 84 5208,292
+device msubckt sky130_fd_pr__pfet_01v8 15024 1678 15025 1679  "x5.VPB" "x1.Y.t6" 60 0 "a_9939_2130#" 84 4032,180 "x5[7].x1.CBOT.t3" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 1293 9864 1294  "x5.VNB" "IN.t12" 60 0 "a_9805_1155#" 84 4872,284 "a_9893_1293#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 9610 1807 9611 1808  "x5.VNB" "code_offset.t2" 60 0 "x5.Y" 130 6760,364 "VSS.t0" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9909 2406 9910 2407  "x5.VPB" "IN.t11" 60 0 "a_9851_2406#" 84 4872,284 "a_9939_2268#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9909 2130 9910 2131  "x5.VPB" "IN.t10" 60 0 "a_9851_2130#" 84 4872,284 "a_9939_2130#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 12953 1477 12954 1478  "x5.VNB" "code[2].t2" 60 0 "a_9939_2130#" 84 3948,178 "x4[3].x2.CBOT.t1" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 11617 1477 11618 1478  "x5.VNB" "code[2].t1" 60 0 "x4[3].x2.CBOT.t2" 84 4872,284 "a_9939_2130#" 84 3948,178
+device msubckt sky130_fd_pr__nfet_01v8 10885 1477 10886 1478  "x5.VNB" "code_offset.t1" 60 0 "x7.x2.CBOT" 84 4872,284 "a_9939_2130#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15673 1819 15674 1820  "x5.VPB" "a_9939_2130#" 60 0 "VDD.t3" 84 4872,284 "a_15703_1681#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9420 2057 9421 2058  "x5.VPB" "code[3].t0" 60 0 "VDD.t1" 200 10400,504 "x1.Y.t1" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 9863 327 9864 328  "x5.VNB" "IN.t9" 60 0 "a_9805_327#" 84 4872,284 "a_9893_327#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 9935 741 9936 742  "x5.VNB" "IN.t8" 60 0 "a_9893_741#" 84 1764,126 "a_9965_741#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 11388 1678 11389 1679  "x5.VPB" "x1.Y.t5" 60 0 "a_9939_2130#" 84 4032,180 "x5[7].x1.CBOT.t4" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 12474 1678 12475 1679  "x5.VPB" "x1.Y.t4" 60 0 "x5[7].x1.CBOT.t5" 84 4872,284 "a_9939_2130#" 84 4032,180
+device msubckt sky130_fd_pr__nfet_01v8 14291 1477 14292 1478  "x5.VNB" "code[1].t0" 60 0 "a_9939_2130#" 84 3948,178 "x3[1].x2.CBOT" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9909 2544 9910 2545  "x5.VPB" "IN.t7" 60 0 "a_9851_2406#" 84 4872,284 "a_9939_2544#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 327 9936 328  "x5.VNB" "IN.t6" 60 0 "a_9893_327#" 84 1764,126 "VSS.t2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 15023 1477 15024 1478  "x5.VNB" "code[0].t0" 60 0 "a_9939_2130#" 84 4956,286 "x2.x2.CBOT" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9610 2057 9611 2058  "x5.VPB" "code_offset.t0" 60 0 "x5.Y" 200 10400,504 "VDD.t0" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 9863 465 9864 466  "x5.VNB" "IN.t5" 60 0 "a_9805_327#" 84 4872,284 "a_9893_465#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 15765 1478 15766 1479  "x5.VNB" "OUT.t3" 60 0 "a_15703_1340#" 84 2604,146 "VDD.t4" 84 2772,150
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15673 1681 15674 1682  "x5.VPB" "a_9939_2130#" 60 0 "OUT.t0" 84 4872,284 "a_15703_1681#" 84 2604,146
+device msubckt sky130_fd_pr__nfet_01v8 15673 1340 15674 1341  "x5.VNB" "a_9939_2130#" 60 0 "VSS.t3" 84 4872,284 "a_15703_1340#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 1017 9936 1018  "x5.VNB" "IN.t4" 60 0 "a_9893_1017#" 84 1764,126 "a_9965_1017#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9909 2682 9910 2683  "x5.VPB" "IN.t3" 60 0 "a_9851_2682#" 84 4872,284 "a_9939_2544#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 465 9936 466  "x5.VNB" "IN.t2" 60 0 "a_9893_465#" 84 1764,126 "a_9965_465#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 879 9864 880  "x5.VNB" "IN.t1" 60 0 "a_9805_879#" 84 4872,284 "a_9893_879#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 12829 1477 12830 1478  "x5.VNB" "code[2].t0" 60 0 "x4[3].x2.CBOT.t3" 84 4872,284 "a_9939_2130#" 84 3948,178
+device msubckt sky130_fd_pr__nfet_01v8 15861 1478 15862 1479  "x5.VNB" "OUT.t2" 60 0 "VDD.t5" 84 2772,150 "a_15703_1340#" 84 5208,292
+device msubckt sky130_fd_pr__pfet_01v8 12600 1678 12601 1679  "x5.VPB" "x1.Y.t3" 60 0 "a_9939_2130#" 84 4032,180 "x5[7].x1.CBOT.t6" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 13686 1678 13687 1679  "x5.VPB" "x1.Y.t2" 60 0 "x5[7].x1.CBOT.t7" 84 4872,284 "a_9939_2130#" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9909 2268 9910 2269  "x5.VPB" "IN.t0" 60 0 "a_9851_2130#" 84 4872,284 "a_9939_2268#" 84 4872,284

@@ -1,20 +1,48 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698575955
+timestamp 1698849479
 << error_s >>
-rect 666 2102 724 2108
-rect 666 2068 678 2102
-rect 666 2062 724 2068
-rect 666 1908 724 1914
-rect 666 1874 678 1908
-rect 666 1868 724 1874
+rect 917 1685 975 1691
+rect 917 1651 929 1685
+rect 917 1645 975 1651
+<< ndiff >>
+rect 961 1723 1019 1807
+<< metal1 >>
+rect 857 1733 866 1797
+rect 930 1733 939 1797
+rect 857 1732 939 1733
+rect 929 1651 963 1685
+<< via1 >>
+rect 866 1733 930 1797
+<< metal2 >>
+rect 857 1733 866 1797
+rect 930 1733 939 1797
+rect 857 1732 939 1733
+<< via2 >>
+rect 866 1733 930 1797
+<< metal3 >>
+rect 857 1797 939 1803
+rect 857 1733 866 1797
+rect 930 1733 939 1797
+rect 857 1732 939 1733
+<< metal4 >>
+rect 368 546 1040 614
 use hgu_cdac_unit  x2
-timestamp 1698474146
+timestamp 1698848585
 transform 1 0 -317 0 1 -51
 box 686 598 1358 1826
 use sky130_fd_pr__nfet_01v8_L7T3GD  XM14
-timestamp 1698474146
-transform 1 0 695 0 1 1988
-box -211 -252 211 252
+timestamp 1698807871
+transform 1 0 946 0 1 1765
+box -73 -130 73 68
+<< labels >>
+flabel space 621 915 791 1085 0 FreeSans 320 0 0 0 SUB
+port 3 nsew
+flabel metal1 929 1651 963 1685 0 FreeSans 320 0 0 0 SW
+port 5 nsew
+flabel metal4 368 546 1040 614 0 FreeSans 320 0 0 0 CTOP
+port 6 nsew
+flabel ndiff 961 1723 1019 1807 0 FreeSans 320 0 0 0 delay_signal
+port 7 nsew
 << end >>

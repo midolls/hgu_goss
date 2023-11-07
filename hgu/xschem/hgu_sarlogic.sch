@@ -27,9 +27,9 @@ N 860 -480 1030 -480 {
 lab=sar_clk}
 N 1280 -530 1450 -530 {
 lab=EOB}
-C {../xschem/hgu_clk_async.sym} 710 -420 0 0 {name=x1}
-C {../xschem/hgu_clk_sample.sym} 330 -190 0 0 {name=x2}
-C {../xschem/hgu_sarlogic_8bit_logic.sym} 1300 -450 0 0 {name=x3 csize=0.001}
+C {../xschem/hgu_clk_async.sym} 710 -410 0 0 {name=x1}
+C {../xschem/hgu_clk_sample.sym} 330 -180 0 0 {name=x2}
+C {../xschem/hgu_sarlogic_8bit_logic_RC.sym} 1300 -450 0 0 {name=x3}
 C {devices/lab_pin.sym} 180 -230 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 180 -270 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -250 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -92,8 +92,12 @@ C {devices/lab_pin.sym} 1160 -180 0 0 {name=p38 sig_type=std_logic lab=sar_clk}
 C {devices/lab_pin.sym} 1150 -440 2 1 {name=p42 sig_type=std_logic lab=sample_clk_b}
 C {devices/ipin.sym} 230 40 0 0 {name=p22 lab=async_resetb_delay_cap_ctrl_code[0:3]}
 C {devices/ipin.sym} 230 60 0 0 {name=p25 lab=async_setb_delay_cap_ctrl_code[0:3]}
-C {devices/lab_pin.sym} 560 -380 0 0 {name=p34 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
-C {devices/lab_pin.sym} 560 -360 0 0 {name=p35 sig_type=std_logic lab=async_setb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} 560 -360 0 0 {name=p34 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} 560 -340 0 0 {name=p35 sig_type=std_logic lab=async_setb_delay_cap_ctrl_code[0:3]}
 C {devices/lab_pin.sym} 180 -150 0 0 {name=p43 sig_type=std_logic lab=sample_delay_cap_ctrl_code[4:7]}
 C {devices/lab_pin.sym} 180 -130 0 0 {name=p44 sig_type=std_logic lab=sample_delay_cap_ctrl_code[8:11]}
 C {devices/lab_pin.sym} 180 -110 0 0 {name=p45 sig_type=std_logic lab=sample_delay_cap_ctrl_code[12:15]}
+C {devices/ipin.sym} 230 100 0 0 {name=p46 lab=async_delay_offset}
+C {devices/lab_pin.sym} 560 -380 0 0 {name=p47 sig_type=std_logic lab=async_delay_offset}
+C {devices/ipin.sym} 230 120 0 0 {name=p48 lab=sample_delay_offset}
+C {devices/lab_pin.sym} 180 -90 0 0 {name=p49 sig_type=std_logic lab=sample_delay_offset}

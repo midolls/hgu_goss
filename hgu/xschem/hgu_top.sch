@@ -208,7 +208,7 @@ N 3030 -680 3950 -680 {
 lab=VSS}
 N 2150 -680 3030 -680 {
 lab=VSS}
-C {hgu_sarlogic.sym} 2610 -920 0 0 {name=x1}
+C {hgu_sarlogic.sym} 2610 -900 0 0 {name=x1}
 C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
@@ -288,7 +288,7 @@ C {devices/noconn.sym} 2980 -620 2 0 {name=l42}
 C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 10ps 350ns
+.tran 10ps 500ns
 
 .control
 	run
@@ -460,7 +460,7 @@ C {devices/noconn.sym} 3530 -740 2 0 {name=l83}
 C {devices/noconn.sym} 3640 -740 2 0 {name=l84}
 C {devices/noconn.sym} 3750 -620 2 0 {name=l85}
 C {devices/noconn.sym} 3860 -620 2 0 {name=l86}
-C {devices/simulator_commands_shown.sym} 2280 -1120 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 2280 -1170 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -468,6 +468,7 @@ value="
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
 "}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1240 0 0 {name=x10}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1330 0 0 {name=x11}
@@ -479,8 +480,13 @@ C {devices/noconn.sym} 2520 -1310 0 0 {name=l15}
 C {devices/noconn.sym} 2520 -1260 0 0 {name=l16}
 C {devices/noconn.sym} 2520 -1240 0 0 {name=l17}
 C {devices/noconn.sym} 2520 -1220 0 0 {name=l18}
-C {hgu_vgen_vref.sym} 1800 -560 0 0 {name=x5}
-C {devices/lab_pin.sym} 1870 -570 0 0 {name=p15 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1870 -670 0 0 {name=p78 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 1810 -620 0 0 {name=p79 sig_type=std_logic lab=EXT_CLK}
-C {devices/noconn.sym} 1940 -620 2 0 {name=l2}
+C {devices/lab_pin.sym} 2460 -820 0 0 {name=p25 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2460 -800 0 0 {name=p26 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1030 -1430 0 0 {name=p27 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1030 -1410 0 0 {name=p35 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1640 -1430 0 1 {name=p61 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1640 -1410 0 1 {name=p62 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1640 -370 0 1 {name=p64 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1640 -390 0 1 {name=p66 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1030 -370 0 0 {name=p68 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1030 -390 0 0 {name=p77 sig_type=std_logic lab=VSS}

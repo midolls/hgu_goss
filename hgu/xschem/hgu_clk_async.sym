@@ -6,32 +6,35 @@ template="name=x1"
 }
 
 T {@symname} -76.5 -6 0 0 0.3 0.3 {}
-T {@name} 135 -82 0 0 0.2 0.2 {}
-L 4 -130 -70 130 -70 {}
-L 4 -130 70 130 70 {}
-L 4 -130 -70 -130 70 {}
-L 4 130 -70 130 70 {}
-B 5 147.5 -62.5 152.5 -57.5 {name=ASYNC_CLK_SAR dir=out}
-L 4 130 -60 150 -60 {}
-T {ASYNC_CLK_SAR} 125 -64 0 1 0.2 0.2 {}
-B 5 -152.5 -62.5 -147.5 -57.5 {name=VDD dir=in}
-L 4 -150 -60 -130 -60 {}
-T {VDD} -125 -64 0 0 0.2 0.2 {}
-B 5 -152.5 -42.5 -147.5 -37.5 {name=VSS dir=in}
-L 4 -150 -40 -130 -40 {}
-T {VSS} -125 -44 0 0 0.2 0.2 {}
-B 5 -152.5 -22.5 -147.5 -17.5 {name=sample_clk dir=in}
-L 4 -150 -20 -130 -20 {}
-T {sample_clk} -125 -24 0 0 0.2 0.2 {}
-B 5 -152.5 -2.5 -147.5 2.5 {name=EOC dir=in}
-L 4 -150 0 -130 0 {}
-T {EOC} -125 -4 0 0 0.2 0.2 {}
-B 5 -152.5 17.5 -147.5 22.5 {name=READY dir=in}
-L 4 -150 20 -130 20 {}
-T {READY} -125 16 0 0 0.2 0.2 {}
-B 5 -152.5 37.5 -147.5 42.5 {name=async_resetb_delay_ctrl_code[0:3] dir=in}
-L 4 -150 40 -130 40 {}
-T {async_resetb_delay_ctrl_code[0:3]} -125 36 0 0 0.2 0.2 {}
-B 5 -152.5 57.5 -147.5 62.5 {name=async_setb_delay_ctrl_code[0:3] dir=in}
-L 4 -150 60 -130 60 {}
-T {async_setb_delay_ctrl_code[0:3]} -125 56 0 0 0.2 0.2 {}
+T {@name} 135 -92 0 0 0.2 0.2 {}
+L 4 -130 -80 130 -80 {}
+L 4 -130 80 130 80 {}
+L 4 -130 -80 -130 80 {}
+L 4 130 -80 130 80 {}
+B 5 147.5 -72.5 152.5 -67.5 {name=ASYNC_CLK_SAR dir=out}
+L 4 130 -70 150 -70 {}
+T {ASYNC_CLK_SAR} 125 -74 0 1 0.2 0.2 {}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=VDD dir=in}
+L 4 -150 -70 -130 -70 {}
+T {VDD} -125 -74 0 0 0.2 0.2 {}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=VSS dir=in}
+L 4 -150 -50 -130 -50 {}
+T {VSS} -125 -54 0 0 0.2 0.2 {}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=sample_clk dir=in}
+L 4 -150 -30 -130 -30 {}
+T {sample_clk} -125 -34 0 0 0.2 0.2 {}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=EOB dir=in}
+L 4 -150 -10 -130 -10 {}
+T {EOB} -125 -14 0 0 0.2 0.2 {}
+B 5 -152.5 7.5 -147.5 12.5 {name=READY dir=in}
+L 4 -150 10 -130 10 {}
+T {READY} -125 6 0 0 0.2 0.2 {}
+B 5 -152.5 27.5 -147.5 32.5 {name=delay_offset dir=in}
+L 4 -150 30 -130 30 {}
+T {delay_offset} -125 26 0 0 0.2 0.2 {}
+B 5 -152.5 47.5 -147.5 52.5 {name=async_resetb_delay_ctrl_code[0:3] dir=in}
+L 4 -150 50 -130 50 {}
+T {async_resetb_delay_ctrl_code[0:3]} -125 46 0 0 0.2 0.2 {}
+B 5 -152.5 67.5 -147.5 72.5 {name=async_setb_delay_ctrl_code[0:3] dir=in}
+L 4 -150 70 -130 70 {}
+T {async_setb_delay_ctrl_code[0:3]} -125 66 0 0 0.2 0.2 {}
