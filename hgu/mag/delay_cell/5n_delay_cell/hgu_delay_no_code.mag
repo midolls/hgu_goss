@@ -1,9 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699323028
-<< error_s >>
-rect 10027 1293 10041 1396
+timestamp 1699325447
 << nwell >>
 rect 9791 2389 15997 2986
 rect 9742 2388 15997 2389
@@ -864,74 +862,82 @@ rect 9372 365 15993 369
 rect 9372 301 9962 365
 rect 10026 301 15993 365
 rect 9372 291 15993 301
-use hgu_sw_cap_nmos  hgu_sw_cap_nmos_0
-timestamp 1699184270
-transform 1 0 10684 0 1 -246
-box 368 546 1040 1833
-use hgu_sw_cap_nmos  hgu_sw_cap_nmos_1
-timestamp 1699184270
-transform -1 0 12698 0 1 -246
-box 368 546 1040 1833
-use hgu_sw_cap_nmos  hgu_sw_cap_nmos_2
-timestamp 1699184270
-transform 1 0 11896 0 1 -246
-box 368 546 1040 1833
-use hgu_sw_cap_nmos  hgu_sw_cap_nmos_3
-timestamp 1699184270
-transform -1 0 13910 0 1 -246
-box 368 546 1040 1833
-use hgu_sw_cap_nmos  hgu_sw_cap_nmos_4
-timestamp 1699184270
-transform 1 0 13234 0 1 -246
-box 368 546 1040 1833
-use hgu_sw_cap_nmos  hgu_sw_cap_nmos_5
-timestamp 1699184270
-transform -1 0 15248 0 1 -246
-box 368 546 1040 1833
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_1
-timestamp 1699323028
-transform 1 0 10332 0 -1 3485
-box 369 500 1054 1856
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_2
-timestamp 1699323028
-transform -1 0 12348 0 -1 3485
-box 369 500 1054 1856
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_3
-timestamp 1699323028
-transform 1 0 11544 0 -1 3485
-box 369 500 1054 1856
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_4
-timestamp 1699323028
-transform -1 0 13560 0 -1 3485
-box 369 500 1054 1856
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_5
-timestamp 1699323028
-transform 1 0 12756 0 -1 3485
-box 369 500 1054 1856
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_6
-timestamp 1699323028
-transform -1 0 14772 0 -1 3485
-box 369 500 1054 1856
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_7
-timestamp 1699323028
-transform 1 0 13968 0 -1 3485
-box 369 500 1054 1856
-use hgu_sw_cap_pmos  hgu_sw_cap_pmos_8
-timestamp 1699323028
-transform -1 0 15984 0 -1 3485
-box 369 500 1054 1856
 use hgu_sw_cap_nmos  x2
-timestamp 1699184270
+timestamp 1699325447
 transform -1 0 15982 0 1 -246
 box 368 546 1040 1833
+use hgu_sw_cap_nmos  x3[0]
+timestamp 1699325447
+transform -1 0 15248 0 1 -246
+box 368 546 1040 1833
+use hgu_sw_cap_nmos  x3[1]
+timestamp 1699325447
+transform 1 0 13234 0 1 -246
+box 368 546 1040 1833
+use hgu_sw_cap_nmos  x4[0]
+timestamp 1699325447
+transform -1 0 13910 0 1 -246
+box 368 546 1040 1833
+use hgu_sw_cap_nmos  x4[1]
+timestamp 1699325447
+transform 1 0 11896 0 1 -246
+box 368 546 1040 1833
+use hgu_sw_cap_nmos  x4[2]
+timestamp 1699325447
+transform -1 0 12698 0 1 -246
+box 368 546 1040 1833
+use hgu_sw_cap_nmos  x4[3]
+timestamp 1699325447
+transform 1 0 10684 0 1 -246
+box 368 546 1040 1833
+use hgu_sw_cap_pmos  x5[0]
+timestamp 1699325447
+transform -1 0 15984 0 -1 3485
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  x5[1]
+timestamp 1699325447
+transform 1 0 13968 0 -1 3485
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  x5[2]
+timestamp 1699325447
+transform -1 0 14772 0 -1 3485
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  x5[3]
+timestamp 1699325447
+transform 1 0 12756 0 -1 3485
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  x5[4]
+timestamp 1699325447
+transform -1 0 13560 0 -1 3485
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  x5[5]
+timestamp 1699325447
+transform 1 0 11544 0 -1 3485
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  x5[6]
+timestamp 1699325447
+transform -1 0 12348 0 -1 3485
+box 369 500 1054 1856
+use hgu_sw_cap_pmos  x5[7]
+timestamp 1699325447
+transform 1 0 10332 0 -1 3485
+box 369 500 1054 1856
 use hgu_sw_cap_pmos  x6
-timestamp 1699323028
+timestamp 1699325447
 transform 1 0 9600 0 -1 3482
 box 369 500 1054 1856
 use hgu_sw_cap_nmos  x7
-timestamp 1699184270
+timestamp 1699325447
 transform 1 0 9952 0 1 -246
 box 368 546 1040 1833
+use hgu_pfet_hvt_stack_in_delay  x8
+timestamp 1699184006
+transform -1 0 10061 0 -1 2980
+box -98 40 268 947
+use hgu_nfet_hvt_stack_in_delay  x9
+timestamp 1699184006
+transform -1 0 10108 0 1 536
+box -90 -235 303 886
 use sky130_fd_sc_hd__inv_1  x10 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1697965495
 transform 1 0 9300 0 1 1760
@@ -947,19 +953,19 @@ box -125 -130 125 68
 use sky130_fd_pr__nfet_01v8_L7T3GD  XM13
 timestamp 1698825334
 transform 1 0 15688 0 1 1520
-box -211 -252 211 252
+box -73 -69 73 70
 use sky130_fd_pr__nfet_01v8_L7T3GD  XM15
 timestamp 1698825334
 transform 1 0 15688 0 1 1382
-box -211 -252 211 252
+box -73 -69 73 70
 use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM46
 timestamp 1698807554
 transform 1 0 15688 0 1 1723
-box -211 -261 211 261
+box -110 -80 109 88
 use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM47
 timestamp 1698807554
 transform 1 0 15688 0 1 1861
-box -211 -261 211 261
+box -110 -80 109 88
 use sky130_fd_pr__pfet_01v8_hvt_M433PY  XM48
 timestamp 1698807554
 transform 1 0 15828 0 1 1723

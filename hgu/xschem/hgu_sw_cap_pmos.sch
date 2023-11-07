@@ -9,10 +9,7 @@ T {5.11e-15 F} 360 -270 2 0 0.2 0.2 {}
 N 280 -330 280 -310 {
 lab=VDD}
 N 280 -250 280 -230 {
-lab=#net1}
-N 280 -310 310 -310 {}
-N 310 -310 310 -250 {}
-N 280 -250 310 -250 {}
+lab=floating}
 C {devices/lab_pin.sym} 280 -200 0 0 {name=p32 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 280 -170 0 0 {name=p1 sig_type=std_logic lab=DELAY_SIGNAL}
 C {devices/lab_pin.sym} 280 -330 1 0 {name=p2 sig_type=std_logic lab=VDD}
@@ -37,3 +34,4 @@ spiceprefix=X
 C {../xschem/hgu_vpp_cap.sym} 280 -280 0 0 {symname=hgu_cdac_unit
 name=x1}
 C {devices/lab_pin.sym} 260 -270 0 0 {name=p5 sig_type=std_logic lab=VDD}
+C {devices/iopin.sym} 280 -240 2 0 {name=p8 lab=floating}

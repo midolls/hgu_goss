@@ -49,16 +49,19 @@ Circuit 1: hgu_sw_cap_pmos                 |Circuit 2: hgu_sw_cap_pmos
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
 Number of devices: 1                       |Number of devices: 1                       
-Number of nets: 3                          |Number of nets: 3                          
+Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: hgu_sw_cap_pmos                 |Circuit 2: hgu_sw_cap_pmos                 
 -------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
 SW                                         |SW                                         
+floating                                   |floating                                   
 delay_signal                               |DELAY_SIGNAL                               
+VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes hgu_sw_cap_pmos and hgu_sw_cap_pmos are equivalent.
@@ -142,7 +145,7 @@ hgu_pfet_hvt_stack_in_delay (1)            |hgu_pfet_hvt_stack_in_delay (1)
 hgu_nfet_hvt_stack_in_delay (1)            |hgu_nfet_hvt_stack_in_delay (1)            
 sky130_fd_sc_hd__inv_1 (2)                 |sky130_fd_sc_hd__inv_1 (2)                 
 Number of devices: 23                      |Number of devices: 23                      
-Number of nets: 14                         |Number of nets: 14                         
+Number of nets: 20                         |Number of nets: 20                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
