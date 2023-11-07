@@ -43,78 +43,54 @@ Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_h
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
-Flattening unmatched subcell hgu_sw_cap in circuit hgu_delay_no_code (1)(8 instances)
-Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_delay_no_code (1)(9 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_delay_no_code (1)(2 instances)
-Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_delay_no_code (1)(1 instance)
-Flattening unmatched subcell hgu_nfet_hvt_stack_in_delay in circuit hgu_delay_no_code (1)(1 instance)
+Flattening unmatched subcell hgu_delay_no_code in circuit hgu_delay (1)(4 instances)
+Flattening unmatched subcell hgu_sw_cap in circuit hgu_delay (1)(32 instances)
+Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_delay (1)(36 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_delay (1)(8 instances)
+Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_delay (1)(4 instances)
+Flattening unmatched subcell hgu_nfet_hvt_stack_in_delay in circuit hgu_delay (1)(4 instances)
 
-Class hgu_delay_no_code (0):  Merged 13 parallel devices.
-Class hgu_delay_no_code (1):  Merged 11 parallel devices.
+Class hgu_delay_flat (0):  Merged 52 parallel devices.
+Class hgu_delay (1):  Merged 44 parallel devices.
 Subcircuit summary:
-Circuit 1: hgu_delay_no_code               |Circuit 2: hgu_delay_no_code               
+Circuit 1: hgu_delay_flat                  |Circuit 2: hgu_delay                       
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (9->2)             |sky130_fd_pr__pfet_01v8 (9->2)             
-sky130_fd_pr__nfet_01v8 (30->25)           |sky130_fd_pr__nfet_01v8 (29->25)           
-sky130_fd_pr__pfet_01v8_hvt (12->11)       |sky130_fd_pr__pfet_01v8_hvt (11)           
-Number of devices: 38                      |Number of devices: 38                      
-Number of nets: 34                         |Number of nets: 34                         
+sky130_fd_pr__pfet_01v8_hvt (48->44)       |sky130_fd_pr__pfet_01v8_hvt (44)           
+sky130_fd_pr__nfet_01v8 (120->100)         |sky130_fd_pr__nfet_01v8 (116->100)         
+sky130_fd_pr__pfet_01v8 (36->8)            |sky130_fd_pr__pfet_01v8 (36->8)            
+Number of devices: 152                     |Number of devices: 152                     
+Number of nets: 148                        |Number of nets: 148                        
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: hgu_delay_no_code               |Circuit 2: hgu_delay_no_code               
+Circuit 1: hgu_delay_flat                  |Circuit 2: hgu_delay                       
 -------------------------------------------|-------------------------------------------
-IN                                         |IN                                         
-x10.A                                      |code[3] **Mismatch**                       
-OUT                                        |OUT                                        
-VSS                                        |VSS                                        
-x2.SW                                      |code[0] **Mismatch**                       
-code[1]                                    |code[1]                                    
-code[2]                                    |code[2]                                    
-VDD                                        |VDD                                        
-x7.SW                                      |code_offset **Mismatch**                   
----------------------------------------------------------------------------------------
-Cell pin lists for hgu_delay_no_code and hgu_delay_no_code altered to match.
-Device classes hgu_delay_no_code and hgu_delay_no_code are equivalent.
-
-Subcircuit summary:
-Circuit 1: hgu_delay                       |Circuit 2: hgu_delay                       
--------------------------------------------|-------------------------------------------
-hgu_delay_no_code (4)                      |hgu_delay_no_code (4)                      
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 24                         |Number of nets: 24                         
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: hgu_delay                       |Circuit 2: hgu_delay                       
--------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
-VSS                                        |VSS                                        
-sample_delay_offset                        |sample_delay_offset                        
+out                                        |OUT                                        
 in                                         |IN                                         
 sample_code0[0]                            |SAMPLE_CODE0[0]                            
-sample_code0[1]                            |SAMPLE_CODE0[1]                            
 sample_code0[2]                            |SAMPLE_CODE0[2]                            
-sample_code0[3]                            |SAMPLE_CODE0[3]                            
-sample_code2[0]                            |SAMPLE_CODE2[0]                            
-sample_code1[0]                            |SAMPLE_CODE1[0]                            
-sample_code2[1]                            |SAMPLE_CODE2[1]                            
-sample_code1[1]                            |SAMPLE_CODE1[1]                            
-sample_code2[2]                            |SAMPLE_CODE2[2]                            
-sample_code1[2]                            |SAMPLE_CODE1[2]                            
-sample_code2[3]                            |SAMPLE_CODE2[3]                            
-sample_code1[3]                            |SAMPLE_CODE1[3]                            
-out                                        |OUT                                        
-sample_code3[0]                            |SAMPLE_CODE3[0]                            
+sample_code0[1]                            |SAMPLE_CODE0[1]                            
 sample_code3[1]                            |SAMPLE_CODE3[1]                            
+sample_code3[0]                            |SAMPLE_CODE3[0]                            
 sample_code3[2]                            |SAMPLE_CODE3[2]                            
+sample_code2[0]                            |SAMPLE_CODE2[0]                            
+sample_code2[2]                            |SAMPLE_CODE2[2]                            
+sample_code2[1]                            |SAMPLE_CODE2[1]                            
+sample_code1[0]                            |SAMPLE_CODE1[0]                            
+sample_code1[2]                            |SAMPLE_CODE1[2]                            
+sample_code1[1]                            |SAMPLE_CODE1[1]                            
+sample_code0[3]                            |SAMPLE_CODE0[3]                            
+sample_code1[3]                            |SAMPLE_CODE1[3]                            
+sample_code2[3]                            |SAMPLE_CODE2[3]                            
 sample_code3[3]                            |SAMPLE_CODE3[3]                            
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+sample_delay_offset                        |sample_delay_offset                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes hgu_delay and hgu_delay are equivalent.
+Device classes hgu_delay_flat and hgu_delay are equivalent.
 
 Final result: Circuits match uniquely.
 .

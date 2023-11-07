@@ -17,28 +17,28 @@ node "output_stack" 320 47.0852 91 838 m1 0 0 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0
 node "input_stack" 1460 318.957 141 897 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29406 1934 0 0 2244 200 2668 208 0 0 0 0 0 0 0 0 0 0
 node "vdd" 5059 769.749 97 88 nw 0 0 0 0 213288 2448 0 0 6972 334 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23505 874 3864 260 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "a_173_628#" "vdd" 12.0362
-cap "a_85_490#" "input_stack" 9.13818
-cap "vdd" "a_85_214#" 81.7623
-cap "vdd" "input_stack" 148.62
-cap "a_173_352#" "a_85_490#" 70.3566
-cap "a_173_628#" "input_stack" 16.881
-cap "a_173_76#" "vdd" 84.3571
-cap "output_stack" "a_85_490#" 31.6127
-cap "a_173_352#" "vdd" 12.229
-cap "a_85_214#" "input_stack" 8.42968
-cap "a_173_352#" "a_173_628#" 31.6127
 cap "a_173_76#" "a_85_214#" 70.3566
-cap "output_stack" "vdd" 4.80007
-cap "a_173_76#" "input_stack" 8.31335
-cap "output_stack" "a_173_628#" 70.1438
 cap "a_173_352#" "a_85_214#" 70.3566
-cap "a_173_352#" "input_stack" 8.65161
-cap "a_173_352#" "a_173_76#" 31.6127
-cap "output_stack" "input_stack" 11.2095
-cap "vdd" "a_85_490#" 12.5273
-cap "a_173_628#" "a_85_490#" 70.3566
+cap "output_stack" "a_173_628#" 70.1438
+cap "vdd" "input_stack" 148.62
+cap "a_85_490#" "input_stack" 9.13818
+cap "a_173_352#" "a_173_628#" 31.6127
+cap "a_85_490#" "vdd" 12.5273
+cap "a_85_214#" "input_stack" 8.42968
+cap "a_173_76#" "a_173_352#" 31.6127
+cap "input_stack" "a_173_628#" 16.881
+cap "a_85_214#" "vdd" 81.7623
 cap "a_85_490#" "a_85_214#" 31.6127
+cap "vdd" "a_173_628#" 12.0362
+cap "a_85_490#" "a_173_628#" 70.3566
+cap "input_stack" "output_stack" 11.2095
+cap "a_173_76#" "input_stack" 8.31335
+cap "a_173_352#" "input_stack" 8.65161
+cap "vdd" "output_stack" 4.80007
+cap "a_85_490#" "output_stack" 31.6127
+cap "a_173_76#" "vdd" 84.3571
+cap "a_173_352#" "vdd" 12.229
+cap "a_85_490#" "a_173_352#" 70.3566
 device msubckt sky130_fd_pr__pfet_01v8_hvt 143 76 144 77 l=30 w=84 "vdd" "input_stack" 60 0 "vdd" 84 4872,284 "a_173_76#" 84 4872,284
 device msubckt sky130_fd_pr__pfet_01v8_hvt 143 214 144 215 l=30 w=84 "vdd" "input_stack" 60 0 "a_85_214#" 84 4872,284 "a_173_76#" 84 4872,284
 device msubckt sky130_fd_pr__pfet_01v8_hvt 143 352 144 353 l=30 w=84 "vdd" "input_stack" 60 0 "a_85_214#" 84 4872,284 "a_173_352#" 84 4872,284
