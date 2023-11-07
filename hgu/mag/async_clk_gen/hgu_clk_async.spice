@@ -1,20 +1,5 @@
 * NGSPICE file created from hgu_clk_async.ext - technology: sky130A
 
-.subckt sky130_fd_sc_hd__mux2_1 A0 A1 S VGND VPWR X VNB VPB a_505_21#
-X0 VPWR a_505_21# a_535_374# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.0441 ps=0.63 w=0.42 l=0.15
-X1 a_505_21# S VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.118 pd=1.4 as=0.0693 ps=0.75 w=0.42 l=0.15
-X2 a_218_374# S VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0767 pd=0.785 as=0.158 ps=1.39 w=0.42 l=0.15
-X3 VGND a_505_21# a_439_47# VNB sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.11 as=0.0693 ps=0.75 w=0.42 l=0.15
-X4 a_76_199# A0 a_218_374# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.193 pd=1.34 as=0.0767 ps=0.785 w=0.42 l=0.15
-X5 a_505_21# S VGND VNB sky130_fd_pr__nfet_01v8 ad=0.109 pd=1.36 as=0.145 ps=1.11 w=0.42 l=0.15
-X6 a_439_47# A0 a_76_199# VNB sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0997 ps=0.895 w=0.42 l=0.15
-X7 a_535_374# A1 a_76_199# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0441 pd=0.63 as=0.193 ps=1.34 w=0.42 l=0.15
-X8 a_76_199# A1 a_218_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0997 pd=0.895 as=0.0693 ps=0.75 w=0.42 l=0.15
-X9 a_218_47# S VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.113 ps=1.04 w=0.42 l=0.15
-X10 VPWR a_76_199# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.158 pd=1.39 as=0.26 ps=2.52 w=1 l=0.15
-X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0.113 pd=1.04 as=0.169 ps=1.82 w=0.65 l=0.15
-.ends
-
 .subckt hgu_delay_no_code IN OUT x10.A code[1] code[2] x2.SW x7.SW VSS VDD
 X0 x9.output_stack x10.Y VDD VDD sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
 X1 x9.output_stack code[2] VSS VSS sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
@@ -69,6 +54,21 @@ X49 a_9965_741# IN a_9893_879# VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0
 X50 a_9893_1017# IN a_9805_879# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
 .ends
 
+.subckt sky130_fd_sc_hd__mux2_1 A0 A1 S VGND VPWR X VNB VPB
+X0 VPWR a_505_21# a_535_374# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.0441 ps=0.63 w=0.42 l=0.15
+X1 a_505_21# S VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.118 pd=1.4 as=0.0693 ps=0.75 w=0.42 l=0.15
+X2 a_218_374# S VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0767 pd=0.785 as=0.158 ps=1.39 w=0.42 l=0.15
+X3 VGND a_505_21# a_439_47# VNB sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.11 as=0.0693 ps=0.75 w=0.42 l=0.15
+X4 a_76_199# A0 a_218_374# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.193 pd=1.34 as=0.0767 ps=0.785 w=0.42 l=0.15
+X5 a_505_21# S VGND VNB sky130_fd_pr__nfet_01v8 ad=0.109 pd=1.36 as=0.145 ps=1.11 w=0.42 l=0.15
+X6 a_439_47# A0 a_76_199# VNB sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0997 ps=0.895 w=0.42 l=0.15
+X7 a_535_374# A1 a_76_199# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0441 pd=0.63 as=0.193 ps=1.34 w=0.42 l=0.15
+X8 a_76_199# A1 a_218_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0997 pd=0.895 as=0.0693 ps=0.75 w=0.42 l=0.15
+X9 a_218_47# S VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.113 ps=1.04 w=0.42 l=0.15
+X10 VPWR a_76_199# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.158 pd=1.39 as=0.26 ps=2.52 w=1 l=0.15
+X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0.113 pd=1.04 as=0.169 ps=1.82 w=0.65 l=0.15
+.ends
+
 .subckt sky130_fd_sc_hd__inv_1 A VGND VPWR Y VNB VPB
 X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
 X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
@@ -120,13 +120,13 @@ X39 a_1429_21# a_1255_47# a_1545_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0864 pd=0.
 .subckt hgu_clk_async sample_clk eob ready delay_offset async_clk_sar vss vdd async_resetb_delay_ctrl_code[2]
 + async_resetb_delay_ctrl_code[1] async_resetb_delay_ctrl_code[0] async_resetb_delay_ctrl_code[3]
 + async_setb_delay_ctrl_code[3] async_setb_delay_ctrl_code[0] async_setb_delay_ctrl_code[1]
-Xx3 x3/A0 vss sample_clk vss vdd x3/X vss vdd vss sky130_fd_sc_hd__mux2_1
 Xx2 ready x9/A async_setb_delay_ctrl_code[3] async_setb_delay_ctrl_code[1] async_setb_delay_ctrl_code[0]
 + async_setb_delay_ctrl_code[0] delay_offset vss vdd hgu_delay_no_code
+Xx3 x3/A0 vss sample_clk vss vdd x3/X vss vdd sky130_fd_sc_hd__mux2_1
 Xx4 async_clk_sar x10/A async_resetb_delay_ctrl_code[3] async_resetb_delay_ctrl_code[1]
 + async_resetb_delay_ctrl_code[2] async_resetb_delay_ctrl_code[0] delay_offset vss
 + vdd hgu_delay_no_code
-Xx8 x3/X vss eob vss vdd x8/X vss vdd vss sky130_fd_sc_hd__mux2_1
+Xx8 x3/X vss eob vss vdd x8/X vss vdd sky130_fd_sc_hd__mux2_1
 Xx9 x9/A vss vdd x9/Y vss vdd sky130_fd_sc_hd__inv_1
 Xx10 x10/A vss vdd x10/Y vss vdd sky130_fd_sc_hd__inv_1
 Xx27 sample_clk vdd x10/Y x9/Y vss vdd x3/A0 x27/Q_N vss vdd sky130_fd_sc_hd__dfbbp_1

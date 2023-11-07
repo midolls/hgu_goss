@@ -73,3 +73,13 @@ C {devices/lab_pin.sym} 580 -360 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 160 -550 0 0 {name=p14 lab=delay_offset}
 C {devices/lab_pin.sym} 230 -450 0 0 {name=p28 sig_type=std_logic lab=delay_offset}
 C {devices/lab_pin.sym} 230 -340 0 0 {name=p30 sig_type=std_logic lab=delay_offset}
+C {devices/simulator_commands_shown.sym} 270 -870 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false 
+value="
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
+"}

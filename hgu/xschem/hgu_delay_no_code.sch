@@ -5,6 +5,7 @@ K {}
 V {}
 S {}
 E {}
+T {W = 0.42} 1400 -720 0 0 0.4 0.4 {}
 N 300 -570 300 -460 {
 lab=IN}
 N 230 -670 340 -670 {
@@ -152,20 +153,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_nf.sym} 1440 -450 1 0 {name=M1
-L=0.15
-W=0.42
-nf=2 
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 1290 -570 0 0 {name=M46
 L=0.15
 W=0.42
@@ -194,20 +181,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt_nf.sym} 1440 -580 3 0 {name=M48
-L=0.15
-W=0.42
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 1150 -410 0 0 {name=x2 DELAY_CAP=5f m_num=1}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 1010 -410 0 0 {name=x3[1:0] DELAY_CAP=5f m_num=1}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 870 -410 0 0 {name=x4[3:0] DELAY_CAP=5f m_num=1}
@@ -225,3 +198,31 @@ C {devices/lab_pin.sym} 640 -410 0 0 {name=p6 sig_type=std_logic lab=code_offset
 C {devices/ipin.sym} 220 -190 0 0 {name=p10 lab=code_offset}
 C {/foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sym} 370 -580 0 0 {name=x8}
 C {/foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sym} 360 -450 0 0 {name=x9}
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1440 -580 3 0 {name=M48
+L=0.15
+W=0.84
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8.sym} 1440 -450 1 0 {name=M1
+L=0.15
+W=0.84
+nf=2 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}

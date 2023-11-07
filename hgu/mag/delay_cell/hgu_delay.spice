@@ -60,9 +60,9 @@ X50 a_9893_1017# IN a_9805_879# VSS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as
 + VSS sample_code0[2] sample_code0[1] sample_code0[0]
 Xx1 x1/IN x2/IN sample_code1[3] sample_code1[1] sample_code1[2] sample_code1[0] sample_delay_offset
 + VSS VDD hgu_delay_no_code
-Xx3 x3/IN out sample_code3[3] sample_code3[1] sample_code3[2] sample_code3[0] sample_delay_offset
-+ VSS VDD hgu_delay_no_code
 Xx2 x2/IN x3/IN sample_code2[3] sample_code2[1] sample_code2[2] sample_code2[0] sample_delay_offset
++ VSS VDD hgu_delay_no_code
+Xx3 x3/IN out sample_code3[3] sample_code3[1] sample_code3[2] sample_code3[0] sample_delay_offset
 + VSS VDD hgu_delay_no_code
 Xx4 in x1/IN sample_code0[3] sample_code0[1] sample_code0[2] sample_code0[0] sample_delay_offset
 + VSS VDD hgu_delay_no_code

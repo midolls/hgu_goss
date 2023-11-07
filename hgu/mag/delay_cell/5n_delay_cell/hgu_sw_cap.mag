@@ -1,0 +1,27 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699322316
+<< checkpaint >>
+rect -891 2311 2301 3035
+rect -1313 -713 2301 2311
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+use hgu_cdac_unit  x2
+timestamp 1698474146
+transform 1 0 -317 0 1 -51
+box 686 598 1358 1826
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM14
+timestamp 1698825334
+transform 1 0 158 0 1 799
+box -211 -252 211 252
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 SW
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VSS
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 DELAY_SIGNAL
+port 2 nsew
+<< end >>

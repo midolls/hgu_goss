@@ -229,8 +229,8 @@ C {devices/vdd.sym} 720 -980 0 0 {name=l26 lab=VDD}
 C {devices/lab_wire.sym} 1320 -1270 0 0 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1320 -530 2 1 {name=p3 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1350 -1270 0 0 {name=p7 sig_type=std_logic lab=VSS}
-C {devices/gnd.sym} 510 -980 2 0 {name=l23 lab=GND}
-C {devices/gnd.sym} 510 -820 0 0 {name=l5 lab=GND}
+C {devices/gnd.sym} 510 -820 0 0 {name=l23 lab=GND}
+C {devices/gnd.sym} 510 -980 2 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 2070 -920 2 0 {name=p2 sig_type=std_logic lab=COMP_RESULT}
 C {devices/lab_pin.sym} 1970 -830 2 0 {name=p33 sig_type=std_logic lab=READY}
 C {devices/lab_pin.sym} 1870 -790 2 0 {name=p34 sig_type=std_logic lab=sar_clk}
@@ -288,7 +288,7 @@ C {devices/noconn.sym} 2980 -620 2 0 {name=l42}
 C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 10ps 400ns
+.tran 10ps 250ns
 
 .control
 	run
@@ -390,8 +390,8 @@ C {devices/lab_wire.sym} 1490 -1300 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
 C {devices/gnd.sym} 1860 -430 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 1860 -460 0 0 {name=V1 value=0.9}
-C {devices/vsource.sym} 510 -850 0 1 {name=V2 value="PULSE(1.8 0.9 0 250n 250n 10p 500n)"}
-C {devices/vsource.sym} 510 -950 2 0 {name=V4 value="PULSE(0.9 1.8 0 250n 250n 10p 500n)"}
+C {devices/vsource.sym} 510 -950 2 1 {name=V2 value="PULSE(1.8 0.9 0 114n 114n 10p 228n)"}
+C {devices/vsource.sym} 510 -850 0 0 {name=V4 value="PULSE(0.9 1.8 0 114n 114n 10p 228n)"}
 C {devices/vdd.sym} 2210 -320 1 0 {name=l11 lab=async_resetb_delay_cap_ctrl_code[3]}
 C {devices/vdd.sym} 2320 -320 1 0 {name=l12 lab=async_resetb_delay_cap_ctrl_code[2]}
 C {devices/vdd.sym} 2430 -440 1 0 {name=l13 lab=async_resetb_delay_cap_ctrl_code[1]}

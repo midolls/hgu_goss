@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699322585
+timestamp 1699320260
 << checkpaint >>
 rect -944 2490 1998 2596
 rect -944 -766 2736 2490
@@ -53,7 +53,7 @@ rect 867 613 925 619
 rect 867 579 879 613
 rect 867 573 925 579
 rect 685 494 738 530
-use sky130_fd_pr__nfet_01v8_PTX3GD  XM1 test
+use sky130_fd_pr__nfet_01v8_PTX3GD  XM1
 timestamp 0
 transform 1 0 158 0 1 950
 box -211 -403 211 403
@@ -61,7 +61,7 @@ use sky130_fd_pr__nfet_01v8_PTX3GD  XM13
 timestamp 0
 transform 1 0 896 0 1 844
 box -211 -403 211 403
-use sky130_fd_pr__pfet_01v8_hvt_M47XPL  XM46 test
+use sky130_fd_pr__pfet_01v8_hvt_M47XPL  XM46
 timestamp 0
 transform 1 0 1265 0 1 809
 box -211 -421 211 421

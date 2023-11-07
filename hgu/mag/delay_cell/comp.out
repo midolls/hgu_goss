@@ -61,11 +61,7 @@ Number of devices: 38                      |Number of devices: 38
 Number of nets: 34                         |Number of nets: 34                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
-Netlists match uniquely with property errors.
-sky130_fd_pr__pfet_01v8_hvt:30 vs. sky130_fd_pr__pfet_01v8_hvt:M48:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8:4 vs. sky130_fd_pr__nfet_01v8:M1:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: hgu_delay_no_code               |Circuit 2: hgu_delay_no_code               
@@ -122,6 +118,3 @@ Device classes hgu_delay and hgu_delay are equivalent.
 
 Final result: Circuits match uniquely.
 .
-
-The following cells had property errors:
- hgu_delay_no_code

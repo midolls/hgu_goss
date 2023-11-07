@@ -65,8 +65,8 @@ X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 
 XXM47 m1_15709_1756# VDD VDD x9/output_stack sky130_fd_pr__pfet_01v8_hvt_M479BZ
 XXM46 m1_15709_1756# OUT VDD x9/output_stack sky130_fd_pr__pfet_01v8_hvt_M479BZ
 XXM13 m1_15709_1421# x9/output_stack OUT VSS sky130_fd_pr__nfet_01v8_L7T3GD
-XXM15 m1_15709_1421# x9/output_stack VSS VSS sky130_fd_pr__nfet_01v8_L7T3GD
 XXM48 m1_15709_1756# m1_15709_1756# VDD OUT OUT VSS sky130_fd_pr__pfet_01v8_hvt_M433PY
+XXM15 m1_15709_1421# x9/output_stack VSS VSS sky130_fd_pr__nfet_01v8_L7T3GD
 Xx2 code[0] x9/output_stack VSS hgu_sw_cap_nmos
 Xx6 x6/SW x9/output_stack VDD hgu_sw_cap_pmos
 Xx3[1] code[1] x9/output_stack VSS hgu_sw_cap_nmos

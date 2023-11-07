@@ -66,34 +66,6 @@ Y                                          |Y
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 are equivalent.
-
-Subcircuit summary:
-Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_hvt (6)            |sky130_fd_pr__pfet_01v8_hvt (6)            
-sky130_fd_pr__nfet_01v8 (6)                |sky130_fd_pr__nfet_01v8 (6)                
-Number of devices: 12                      |Number of devices: 12                      
-Number of nets: 14                         |Number of nets: 14                         
----------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
--------------------------------------------|-------------------------------------------
-VPB                                        |VPB                                        
-VNB                                        |VNB                                        
-A0                                         |A0                                         
-A1                                         |A1                                         
-X                                          |X                                          
-VPWR                                       |VPWR                                       
-S                                          |S                                          
-a_505_21#                                  |(no matching pin)                          
-VGND                                       |VGND                                       
-a_505_21#                                  |(no matching pin)                          
----------------------------------------------------------------------------------------
-Cell pin lists for sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 altered to match.
-Device classes sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 are equivalent.
-  Flattening non-matched subcircuits sky130_fd_sc_hd__mux2_1 sky130_fd_sc_hd__mux2_1
 Flattening unmatched subcell hgu_sw_cap in circuit hgu_delay_no_code (1)(8 instances)
 Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_delay_no_code (1)(9 instances)
 Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_delay_no_code (1)(1 instance)
@@ -114,11 +86,7 @@ Number of devices: 38                      |Number of devices: 38
 Number of nets: 34                         |Number of nets: 34                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
-Netlists match uniquely with property errors.
-sky130_fd_pr__pfet_01v8_hvt:30 vs. sky130_fd_pr__pfet_01v8_hvt:M48:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8:4 vs. sky130_fd_pr__nfet_01v8:M1:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: hgu_delay_no_code               |Circuit 2: hgu_delay_no_code               
@@ -135,6 +103,31 @@ x7.SW                                      |code_offset **Mismatch**
 ---------------------------------------------------------------------------------------
 Cell pin lists for hgu_delay_no_code and hgu_delay_no_code altered to match.
 Device classes hgu_delay_no_code and hgu_delay_no_code are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (6)            |sky130_fd_pr__pfet_01v8_hvt (6)            
+sky130_fd_pr__nfet_01v8 (6)                |sky130_fd_pr__nfet_01v8 (6)                
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+A0                                         |A0                                         
+A1                                         |A1                                         
+X                                          |X                                          
+VPWR                                       |VPWR                                       
+S                                          |S                                          
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 are equivalent.
 
 Subcircuit summary:
 Circuit 1: sky130_fd_sc_hd__dfbbp_1        |Circuit 2: sky130_fd_sc_hd__dfbbp_1        
@@ -166,59 +159,55 @@ Device classes sky130_fd_sc_hd__dfbbp_1 and sky130_fd_sc_hd__dfbbp_1 are equival
 Subcircuit summary:
 Circuit 1: hgu_clk_async                   |Circuit 2: hgu_clk_async                   
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_hvt (12)           |sky130_fd_pr__pfet_01v8_hvt (12)           
-sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
 hgu_delay_no_code (2)                      |hgu_delay_no_code (2)                      
+sky130_fd_sc_hd__mux2_1 (2)                |sky130_fd_sc_hd__mux2_1 (2)                
 sky130_fd_sc_hd__inv_1 (2)                 |sky130_fd_sc_hd__inv_1 (2)                 
 sky130_fd_sc_hd__dfbbp_1 (1)               |sky130_fd_sc_hd__dfbbp_1 (1)               
-(no matching element)                      |c (4)                                      
-Number of devices: 29 **Mismatch**         |Number of devices: 33 **Mismatch**         
-Number of nets: 32 **Mismatch**            |Number of nets: 34 **Mismatch**            
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 22                         |Number of nets: 22                         
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: hgu_clk_async                   |Circuit 2: hgu_clk_async                   
 
 ---------------------------------------------------------------------------------------
-Net: x3/A0                                 |Net: ASYNC_CLK_SAR                         
-  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
-  sky130_fd_sc_hd__dfbbp_1/Q = 1           |  hgu_delay_no_code/IN = 1                 
-                                           |                                           
-Net: async_resetb_delay_ctrl_code[0]       |Net: net4                                  
-  hgu_delay_no_code/x2.SW = 1              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
-                                           |  c/top = 1                                
-                                           |                                           
-Net: x3/X                                  |Net: net2                                  
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
-  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__dfbbp_1/Q = 1           
-  sky130_fd_pr__nfet_01v8/2 = 1            |  c/top = 1                                
-                                           |                                           
-Net: async_resetb_delay_ctrl_code[2]       |Net: READY                                 
-  hgu_delay_no_code/code[2] = 1            |  hgu_delay_no_code/IN = 1                 
-                                           |                                           
+Net: vdd                                   |Net: VDD                                   
+  hgu_delay_no_code/VDD = 2                |  hgu_delay_no_code/VDD = 2                
+  sky130_fd_sc_hd__mux2_1/VPWR = 2         |  sky130_fd_sc_hd__mux2_1/VPWR = 2         
+  sky130_fd_sc_hd__mux2_1/VPB = 2          |  sky130_fd_sc_hd__mux2_1/VPB = 2          
+  sky130_fd_sc_hd__inv_1/VPWR = 2          |  sky130_fd_sc_hd__inv_1/VPWR = 2          
+  sky130_fd_sc_hd__inv_1/VPB = 2           |  sky130_fd_sc_hd__inv_1/VPB = 2           
+  sky130_fd_sc_hd__dfbbp_1/D = 1           |  sky130_fd_sc_hd__dfbbp_1/D = 1           
+  sky130_fd_sc_hd__dfbbp_1/VPWR = 1        |  sky130_fd_sc_hd__dfbbp_1/VPWR = 1        
+  sky130_fd_sc_hd__dfbbp_1/VPB = 1         |  sky130_fd_sc_hd__dfbbp_1/VPB = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
 Net: vss                                   |Net: VSS                                   
-  sky130_fd_pr__pfet_01v8_hvt/2 = 4        |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  c/bottom = 4                             
-  sky130_fd_pr__nfet_01v8/(1|3) = 10       |  sky130_fd_pr__nfet_01v8/(1|3) = 8        
-  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_pr__nfet_01v8/4 = 12           |  sky130_fd_pr__nfet_01v8/4 = 12           
   hgu_delay_no_code/VSS = 2                |  hgu_delay_no_code/VSS = 2                
+  sky130_fd_sc_hd__mux2_1/A1 = 2           |  sky130_fd_sc_hd__mux2_1/A1 = 2           
+  sky130_fd_sc_hd__mux2_1/VGND = 2         |  sky130_fd_sc_hd__mux2_1/VGND = 2         
+  sky130_fd_sc_hd__mux2_1/VNB = 2          |  sky130_fd_sc_hd__mux2_1/VNB = 2          
   sky130_fd_sc_hd__inv_1/VGND = 2          |  sky130_fd_sc_hd__inv_1/VGND = 2          
   sky130_fd_sc_hd__inv_1/VNB = 2           |  sky130_fd_sc_hd__inv_1/VNB = 2           
   sky130_fd_sc_hd__dfbbp_1/VGND = 1        |  sky130_fd_sc_hd__dfbbp_1/VGND = 1        
   sky130_fd_sc_hd__dfbbp_1/VNB = 1         |  sky130_fd_sc_hd__dfbbp_1/VNB = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: delay_offset                          |Net: delay_offset                          
+  hgu_delay_no_code/x7.SW = 2              |  hgu_delay_no_code/code_offset = 2        
                                            |                                           
-Net: async_setb_delay_ctrl_code[0]         |(no matching net)                          
-  hgu_delay_no_code/code[2] = 1            |                                           
-  hgu_delay_no_code/x2.SW = 1              |                                           
+Net: x3/X                                  |Net: net3                                  
+  sky130_fd_sc_hd__mux2_1/X = 1            |  sky130_fd_sc_hd__inv_1/A = 1             
+  sky130_fd_sc_hd__mux2_1/A0 = 1           |  hgu_delay_no_code/OUT = 1                
                                            |                                           
-Net: x8/X                                  |(no matching net)                          
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+Net: async_setb_delay_ctrl_code[0]         |Net: ASYNC_CLK_SAR                         
+  hgu_delay_no_code/code[2] = 1            |  sky130_fd_sc_hd__mux2_1/X = 1            
+  hgu_delay_no_code/x2.SW = 1              |  hgu_delay_no_code/IN = 1                 
+                                           |                                           
+Net: x9/A                                  |Net: net4                                  
+  hgu_delay_no_code/OUT = 1                |  sky130_fd_sc_hd__mux2_1/X = 1            
+  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__mux2_1/A0 = 1           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -234,140 +223,96 @@ Net: x9/Y                                  |Net: net6
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: delay_offset                          |Net: delay_offset                          
-  hgu_delay_no_code/x7.SW = 2              |  hgu_delay_no_code/code_offset = 2        
+Net: x10/A                                 |Net: net1                                  
+  hgu_delay_no_code/OUT = 1                |  hgu_delay_no_code/OUT = 1                
+  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/A = 1             
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: x10/A                                 |(no matching net)                          
-  hgu_delay_no_code/OUT = 1                |                                           
-  sky130_fd_sc_hd__inv_1/A = 1             |                                           
+Net: x8/X                                  |Net: async_resetb_delay_ctrl_code[3]       
+  sky130_fd_sc_hd__mux2_1/X = 1            |  hgu_delay_no_code/code[3] = 1            
                                            |                                           
-Net: x9/A                                  |(no matching net)                          
-  hgu_delay_no_code/OUT = 1                |                                           
-  sky130_fd_sc_hd__inv_1/A = 1             |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: sky130_fd_sc_hd__mux2_1:8/a_505_21#   
-                                           |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
-                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+Net: ready                                 |Net: async_resetb_delay_ctrl_code[2]       
+  hgu_delay_no_code/IN = 1                 |  hgu_delay_no_code/code[2] = 1            
                                            |                                           
-(no matching net)                          |Net: sky130_fd_sc_hd__mux2_1:3/a_505_21#   
-                                           |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
-                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
+Net: async_setb_delay_ctrl_code[1]         |Net: async_resetb_delay_ctrl_code[1]       
+  hgu_delay_no_code/code[1] = 1            |  hgu_delay_no_code/code[1] = 1            
+                                           |                                           
+Net: async_setb_delay_ctrl_code[3]         |Net: async_resetb_delay_ctrl_code[0]       
+  hgu_delay_no_code/x10.A = 1              |  hgu_delay_no_code/code[0] = 1            
+                                           |                                           
 Net: eob                                   |Net: EOB                                   
-  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: sample_clk                            |Net: sample_clk                            
-  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_sc_hd__dfbbp_1/CLK = 1         |  sky130_fd_sc_hd__dfbbp_1/CLK = 1         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: net3                                  
-                                           |  sky130_fd_sc_hd__inv_1/A = 1             
-                                           |  hgu_delay_no_code/OUT = 1                
-                                           |  c/top = 1                                
-                                           |                                           
-(no matching net)                          |Net: net1                                  
-                                           |  sky130_fd_sc_hd__inv_1/A = 1             
-                                           |  hgu_delay_no_code/OUT = 1                
-                                           |  c/top = 1                                
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: sky130_fd_sc_hd__mux2_1:x8/a_76_199#  |Net: sky130_fd_sc_hd__mux2_1:8/a_76_199#   
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    
-  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
-                                           |                                           
-Net: sky130_fd_sc_hd__mux2_1:x3/a_76_199#  |Net: sky130_fd_sc_hd__mux2_1:3/a_76_199#   
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    
-  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vdd                                   |Net: VDD                                   
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    
-  sky130_fd_pr__pfet_01v8_hvt/4 = 12       |  sky130_fd_pr__pfet_01v8_hvt/4 = 12       
-  hgu_delay_no_code/VDD = 2                |  hgu_delay_no_code/VDD = 2                
-  sky130_fd_sc_hd__inv_1/VPWR = 2          |  sky130_fd_sc_hd__inv_1/VPWR = 2          
-  sky130_fd_sc_hd__inv_1/VPB = 2           |  sky130_fd_sc_hd__inv_1/VPB = 2           
-  sky130_fd_sc_hd__dfbbp_1/D = 1           |  sky130_fd_sc_hd__dfbbp_1/D = 1           
-  sky130_fd_sc_hd__dfbbp_1/VPWR = 1        |  sky130_fd_sc_hd__dfbbp_1/VPWR = 1        
-  sky130_fd_sc_hd__dfbbp_1/VPB = 1         |  sky130_fd_sc_hd__dfbbp_1/VPB = 1         
+  sky130_fd_sc_hd__mux2_1/S = 1            |  sky130_fd_sc_hd__mux2_1/S = 1            
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: hgu_clk_async                   |Circuit 2: hgu_clk_async                   
 
 ---------------------------------------------------------------------------------------
 Instance: sky130_fd_sc_hd__inv_1:x9        |Instance: sky130_fd_sc_hd__inv_1:9         
-  A = 2                                    |  A = 3                                    
-  VGND = 40                                |  VGND = 36                                
-  VPWR = 29                                |  VPWR = 29                                
+  A = 2                                    |  A = 2                                    
+  VGND = 14                                |  VGND = 14                                
+  VPWR = 13                                |  VPWR = 13                                
   Y = 2                                    |  Y = 2                                    
-  VNB = 40                                 |  VNB = 36                                 
-  VPB = 29                                 |  VPB = 29                                 
+  VNB = 14                                 |  VNB = 14                                 
+  VPB = 13                                 |  VPB = 13                                 
                                            |                                           
 Instance: sky130_fd_sc_hd__inv_1:x10       |Instance: sky130_fd_sc_hd__inv_1:10        
-  A = 2                                    |  A = 3                                    
-  VGND = 40                                |  VGND = 36                                
-  VPWR = 29                                |  VPWR = 29                                
+  A = 2                                    |  A = 2                                    
+  VGND = 14                                |  VGND = 14                                
+  VPWR = 13                                |  VPWR = 13                                
   Y = 2                                    |  Y = 2                                    
-  VNB = 40                                 |  VNB = 36                                 
-  VPB = 29                                 |  VPB = 29                                 
+  VNB = 14                                 |  VNB = 14                                 
+  VPB = 13                                 |  VPB = 13                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__mux2_1:x3/sky13 |Instance: sky130_fd_sc_hd__mux2_1:3/sky130 
-  (1,3) = (40,40)                          |  (1,3) = (36,4)                           
-  2 = 5                                    |  2 = 5                                    
-  4 = 40                                   |  4 = 36                                   
-                                           |                                           
-Instance: sky130_fd_sc_hd__mux2_1:x8/sky13 |Instance: sky130_fd_sc_hd__mux2_1:8/sky130 
-  (1,3) = (40,40)                          |  (1,3) = (36,4)                           
-  2 = 4                                    |  2 = 4                                    
-  4 = 40                                   |  4 = 36                                   
+Instance: sky130_fd_sc_hd__mux2_1:x8       |Instance: sky130_fd_sc_hd__mux2_1:8        
+  A0 = 2                                   |  A0 = 2                                   
+  A1 = 14                                  |  A1 = 14                                  
+  S = 1                                    |  S = 1                                    
+  VGND = 14                                |  VGND = 14                                
+  VPWR = 13                                |  VPWR = 13                                
+  X = 1                                    |  X = 2                                    
+  VNB = 14                                 |  VNB = 14                                 
+  VPB = 13                                 |  VPB = 13                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__mux2_1:x3/sky13 |Instance: sky130_fd_sc_hd__mux2_1:3/sky130 
-  (1,3) = (40,29)                          |  (1,3) = (29,4)                           
-  2 = 5                                    |  2 = 5                                    
-  4 = 29                                   |  4 = 29                                   
-                                           |                                           
-Instance: sky130_fd_sc_hd__mux2_1:x8/sky13 |Instance: sky130_fd_sc_hd__mux2_1:8/sky130 
-  (1,3) = (40,29)                          |  (1,3) = (29,4)                           
-  2 = 4                                    |  2 = 4                                    
-  4 = 29                                   |  4 = 29                                   
+Instance: hgu_delay_no_code:x2             |Instance: hgu_delay_no_code:4              
+  IN = 1                                   |  IN = 2                                   
+  OUT = 2                                  |  OUT = 2                                  
+  x10.A = 1                                |  code[3] = 1                              
+  code[1] = 1                              |  code[1] = 1                              
+  code[2] = 2                              |  code[2] = 1                              
+  x2.SW = 2                                |  code[0] = 1                              
+  x7.SW = 2                                |  code_offset = 2                          
+  VSS = 14                                 |  VSS = 14                                 
+  VDD = 13                                 |  VDD = 13                                 
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 
 Subcircuit pins:
 Circuit 1: hgu_clk_async                   |Circuit 2: hgu_clk_async                   
 -------------------------------------------|-------------------------------------------
-vss                                        |(no matching pin)                          
-async_resetb_delay_ctrl_code[2]            |READY **Mismatch**                         
-async_resetb_delay_ctrl_code[0]            |VSS **Mismatch**                           
-Cell pin lists are equivalent.
+vdd                                        |VDD                                        
+vss                                        |VSS                                        
+delay_offset                               |(no matching pin)                          
+async_setb_delay_ctrl_code[0]              |ASYNC_CLK_SAR **Mismatch**                 
+sample_clk                                 |sample_clk                                 
+eob                                        |async_resetb_delay_ctrl_code[2] **Mismatch 
+async_setb_delay_ctrl_code[1]              |async_resetb_delay_ctrl_code[1] **Mismatch 
+async_setb_delay_ctrl_code[3]              |async_resetb_delay_ctrl_code[0] **Mismatch 
+ready                                      |EOB **Mismatch**                           
+async_clk_sar                              |READY **Mismatch**                         
+async_resetb_delay_ctrl_code[0]            |async_setb_delay_ctrl_code[0] **Mismatch** 
+async_resetb_delay_ctrl_code[1]            |async_setb_delay_ctrl_code[1] **Mismatch** 
+async_resetb_delay_ctrl_code[2]            |async_setb_delay_ctrl_code[2] **Mismatch** 
+async_resetb_delay_ctrl_code[3]            |async_setb_delay_ctrl_code[3] **Mismatch** 
+(no matching pin)                          |async_resetb_delay_ctrl_code[3]            
+(no matching pin)                          |delay_offset                               
+delay_offset                               |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for hgu_clk_async and hgu_clk_async altered to match.
 Device classes hgu_clk_async and hgu_clk_async are equivalent.
 
-Final result: Netlists do not match.
-
-The following cells had property errors:
- hgu_delay_no_code
+Final result: Top level cell failed pin matching.

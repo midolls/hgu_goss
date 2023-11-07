@@ -9,12 +9,9 @@ N 230 -110 230 -90 {
 lab=VSS}
 N 230 -190 230 -170 {
 lab=VSS}
-N 230 -170 260 -170 {
-lab=VSS}
-N 260 -170 260 -110 {
-lab=VSS}
-N 230 -110 260 -110 {
-lab=VSS}
+N 230 -170 260 -170 {}
+N 260 -170 260 -110 {}
+N 230 -110 260 -110 {}
 C {devices/lab_pin.sym} 230 -220 2 0 {name=p32 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 210 -220 0 0 {name=M14
 L=0.15
