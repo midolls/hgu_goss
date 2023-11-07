@@ -20,9 +20,9 @@ lab=VSS}
 N 310 -230 330 -230 {
 lab=VSS}
 N 200 -420 310 -420 {
-lab=VDD}
+lab=VREF}
 N 310 -420 310 -400 {
-lab=VDD}
+lab=VREF}
 N 200 -210 310 -210 {
 lab=VSS}
 N 200 -310 270 -310 {
@@ -40,22 +40,9 @@ C {devices/ipin.sym} 200 -310 0 0 {name=p4 lab=IN}
 C {devices/ipin.sym} 200 -420 0 0 {name=p5 lab=VREF}
 C {devices/ipin.sym} 200 -210 0 0 {name=p6 lab=VSS}
 C {devices/opin.sym} 390 -310 0 0 {name=p1 lab=OUT}
-C {sky130_fd_pr/nfet_01v8.sym} 290 -260 0 0 {name=M1
-L=0.15
-W=0.42
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 290 -370 0 0 {name=M2
-L=0.15
+C {devices/ipin.sym} 200 -440 0 0 {name=p2 lab=VDD}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 290 -370 0 0 {name=M2
+L=0.35
 W=0.84
 nf=1
 mult=1
@@ -65,7 +52,20 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/ipin.sym} 200 -440 0 0 {name=p2 lab=VDD}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 290 -260 0 0 {name=M3
+L=0.35
+W=0.42
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}

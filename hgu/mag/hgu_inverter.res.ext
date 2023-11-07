@@ -1,5 +1,0 @@
-scale 1000 1 500000
-rnode "VSS" 0 0 426 174 0
-rnode "VDD" 0 0 422 749 0
-rnode "OUT" 0 0 566 388 0
-rnode "VREF" 0 0 429 689 0

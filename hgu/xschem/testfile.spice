@@ -1,0 +1,75 @@
+** sch_path: /foss/designs/hgu_goss/hgu/tb/untitled-2.sch
+**.subckt untitled-2
+x8 VDD net1 in GND VREF hgu_inverter
+x4 GND out VSS hgu_cdac_unit
+V8 net1 GND PULSE(0 0.9 10p 50p 50p 10n 23n)
+.save i(v8)
+V2 VSS GND 0
+.save i(v2)
+V3 VREF GND 0.9
+.save i(v3)
+V4 VDD GND 1.8
+.save i(v4)
+x1 VDD in out GND VREF hgu_inverter
+**** begin user architecture code
+
+
+
+.OPTIONS savecurrents
+.tran 1ns 10ns
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.control
+	run
+	let svdd = 0.9
+	let max = svdd*0.8
+	let min = svdd*0.2
+	let mid = svdd*0.5
+	meas tran rising_s1 find time when V(out)=min RISE=1 TD=0.1p
+        meas tran rising_e1 find time when V(out)=max RISE=1 TD=0.1p
+        let rising_time1 = rising_e1-rising_s1
+        meas tran falling_s1 find time when V(out)=max FALL=1 TD=0.1p
+        meas tran falling_e1 find time when V(out)=min FALL=1 TD=0.1p
+        let falling_time1 = falling_e1-falling_s1
+
+        print rising_time1 falling_time1
+	plot v(in) v(out)
+.endc
+.save all
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  ../xschem/hgu_inverter.sym # of pins=5
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_inverter.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_inverter.sch
+.subckt hgu_inverter VDD IN OUT VSS VREF
+*.ipin IN
+*.ipin VREF
+*.ipin VSS
+*.opin OUT
+*.ipin VDD
+XM2 OUT IN VREF VDD sky130_fd_pr__pfet_01v8_lvt L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUT IN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ../xschem/hgu_cdac_unit.sym # of pins=3
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sch
+.subckt hgu_cdac_unit PLUS MINUS SUB  csize=1
+*.iopin PLUS
+*.iopin MINUS
+*.iopin SUB
+x1 PLUS MINUS SUB hgu_cdac_unit
+.ends
+
+.GLOBAL GND
+.end
