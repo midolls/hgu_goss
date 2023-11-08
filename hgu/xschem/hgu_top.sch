@@ -208,7 +208,9 @@ N 3030 -680 3950 -680 {
 lab=VSS}
 N 2150 -680 3030 -680 {
 lab=VSS}
-C {hgu_sarlogic.sym} 2610 -900 0 0 {name=x1}
+N 2770 -380 3240 -380 {
+lab=VSS}
+C {hgu_sarlogic.sym} 2610 -890 0 0 {name=x1}
 C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
@@ -288,7 +290,7 @@ C {devices/noconn.sym} 2980 -620 2 0 {name=l42}
 C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 10ps 210ns
+.tran 10ps 250ns
 
 .control
 	run
@@ -490,3 +492,21 @@ C {devices/lab_pin.sym} 1640 -370 0 1 {name=p64 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1640 -390 0 1 {name=p66 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1030 -370 0 0 {name=p68 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1030 -390 0 0 {name=p77 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2460 -780 0 0 {name=p15 sig_type=std_logic lab=retimer_delay_cap_ctrl_code[0:3]}
+C {devices/vdd.sym} 2820 -320 1 0 {name=l2 lab=retimer_delay_cap_ctrl_code[3]}
+C {devices/vdd.sym} 2930 -320 1 0 {name=l27 lab=retimer_delay_cap_ctrl_code[2]}
+C {devices/vdd.sym} 3040 -440 1 0 {name=l28 lab=retimer_delay_cap_ctrl_code[1]}
+C {devices/vdd.sym} 3150 -440 1 0 {name=l35 lab=retimer_delay_cap_ctrl_code[0]}
+C {devices/vsource.sym} 3150 -410 0 0 {name=V5 value=1.8}
+C {devices/vsource.sym} 2820 -350 0 0 {name=V6 value=0}
+C {devices/vsource.sym} 2930 -350 0 0 {name=V7 value=0}
+C {devices/vsource.sym} 3040 -350 0 0 {name=V8 value=0}
+C {devices/lab_pin.sym} 2770 -380 0 0 {name=p78 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 3040 -410 0 0 {name=V15 value=1.8}
+C {devices/vsource.sym} 2930 -410 0 0 {name=V16 value=1.8}
+C {devices/vsource.sym} 2820 -410 0 0 {name=V17 value=1.8}
+C {devices/vsource.sym} 3150 -350 0 0 {name=V18 value=0}
+C {devices/noconn.sym} 2820 -440 2 0 {name=l58}
+C {devices/noconn.sym} 2930 -440 2 0 {name=l63}
+C {devices/noconn.sym} 3040 -320 2 0 {name=l64}
+C {devices/noconn.sym} 3150 -320 2 0 {name=l65}
