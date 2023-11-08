@@ -28,7 +28,7 @@ lab=sar_clk}
 N 1190 -530 1360 -530 {
 lab=EOB}
 N 1360 -480 1530 -480 {
-lab=D[0:7] bus=true}
+lab=sar_result_temp[0:7] bus=true}
 C {../xschem/hgu_clk_async.sym} 710 -410 0 0 {name=x1}
 C {../xschem/hgu_clk_sample.sym} 330 -180 0 0 {name=x2}
 C {../xschem/hgu_sarlogic_8bit_logic_RC.sym} 1210 -450 0 0 {name=x3}
@@ -84,7 +84,7 @@ C {devices/opin.sym} 1360 -320 0 0 {name=p55 lab=vdd_sw_b[1:7]}
 C {devices/opin.sym} 1360 -300 0 0 {name=p56 lab=vss_sw[1:7]}
 C {devices/opin.sym} 1360 -280 0 0 {name=p57 lab=vss_sw_b[1:7]}
 C {../xschem/hgu_sarlogic_sw_ctrl.sym} 1210 -290 0 0 {name=x4}
-C {devices/lab_pin.sym} 1060 -300 0 0 {name=p36 sig_type=std_logic lab=sar_result[1:7]}
+C {devices/lab_pin.sym} 1060 -300 0 0 {name=p36 sig_type=std_logic lab=sar_result_temp[1:7]}
 C {devices/lab_pin.sym} 1060 -280 0 0 {name=p37 sig_type=std_logic lab=check[0:6]}
 C {devices/lab_pin.sym} 1060 -240 0 0 {name=p39 sig_type=std_logic lab=sample_clk_b}
 C {devices/lab_pin.sym} 1060 -340 0 0 {name=p40 sig_type=std_logic lab=VDD}
@@ -110,4 +110,4 @@ C {devices/lab_pin.sym} 1530 -420 0 0 {name=p52 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1530 -460 0 0 {name=p53 sig_type=std_logic lab=EOB}
 C {devices/ipin.sym} 230 170 0 0 {name=p58 lab=retimer_delay_code[0:3]}
 C {devices/lab_pin.sym} 1530 -440 0 0 {name=p59 sig_type=std_logic lab=retimer_delay_code[0:3]}
-C {devices/lab_wire.sym} 1440 -480 0 0 {name=p60 sig_type=std_logic lab=D[0:7]}
+C {devices/lab_pin.sym} 1430 -480 1 0 {name=p60 sig_type=std_logic lab=sar_result_temp[0:7]}
