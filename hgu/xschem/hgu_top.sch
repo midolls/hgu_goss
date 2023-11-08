@@ -290,7 +290,11 @@ C {devices/noconn.sym} 2980 -620 2 0 {name=l42}
 C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 .OPTIONS savecurrents
+<<<<<<< HEAD
 .tran 10ps 250ns
+=======
+.tran 10ps 500ns
+>>>>>>> 44053179fce1b15a659ce5ddf31ed98717972888
 
 .control
 	run

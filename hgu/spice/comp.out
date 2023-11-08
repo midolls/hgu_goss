@@ -1,0 +1,40 @@
+
+Cell hgu_cdac_8bit_array (0) disconnected node: SUB
+Cell hgu_cdac_8bit_array (0) disconnected node: tah<1:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: tah<3:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: tah<7:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: tah<31:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: tah<63:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: tah<15:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: tah<0>
+Cell hgu_cdac_8bit_array (0) disconnected node: drv<1:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: drv<0>
+Cell hgu_cdac_8bit_array (0) disconnected node: drv<3:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: drv<7:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: drv<15:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: drv<63:0>
+Cell hgu_cdac_8bit_array (0) disconnected node: drv<31:0>
+
+Subcircuit pins:
+Circuit 1: hgu_cdac_8bit_array             |Circuit 2: hgu_cdac_8bit_array             
+-------------------------------------------|-------------------------------------------
+tah<0>                                     |tah<0>                                     
+drv<1:0>                                   |drv<1:0>                                   
+drv<0>                                     |drv<0>                                     
+drv<3:0>                                   |drv<3:0>                                   
+drv<7:0>                                   |drv<7:0>                                   
+drv<15:0>                                  |drv<15:0>                                  
+drv<63:0>                                  |drv<63:0>                                  
+drv<31:0>                                  |drv<31:0>                                  
+SUB                                        |(no matching pin)                          
+tah<1:0>                                   |(no matching pin)                          
+tah<3:0>                                   |(no matching pin)                          
+tah<7:0>                                   |(no matching pin)                          
+tah<31:0>                                  |(no matching pin)                          
+tah<63:0>                                  |(no matching pin)                          
+tah<15:0>                                  |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes hgu_cdac_8bit_array and hgu_cdac_8bit_array are equivalent.
+
+Final result: Verify:  cell hgu_cdac_8bit_array.sch.spice has no elements and/or nodes.  Not checked.

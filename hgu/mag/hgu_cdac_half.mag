@@ -1,4 +1,123 @@
 magic
 tech sky130A
-timestamp 1698655397
+magscale 1 2
+timestamp 1699340295
+<< error_s >>
+rect 10486 5464 10565 5488
+rect 10437 5448 10450 5460
+rect 10471 5448 10565 5464
+rect 10437 5444 10444 5448
+rect 10443 5402 10444 5444
+rect 10471 5444 10532 5448
+rect 10471 5430 10511 5444
+rect 784 4858 980 5300
+rect 783 4207 980 4858
+rect 1104 4847 1427 5130
+rect 1103 4758 1427 4847
+rect 1103 4527 1425 4758
+rect 1464 4438 1747 5300
+rect 1464 4207 1745 4438
+<< psubdiff >>
+rect 10471 5430 10511 5434
+<< poly >>
+rect -238 5379 -167 5395
+rect -238 5345 -222 5379
+rect -188 5345 -167 5379
+rect -238 5329 -167 5345
+<< polycont >>
+rect -222 5345 -188 5379
+<< locali >>
+rect 10471 5430 10511 5434
+rect -238 5345 -222 5379
+rect -188 5345 -172 5379
+<< viali >>
+rect -222 5345 -188 5379
+<< metal1 >>
+rect 10471 5430 10511 5434
+rect -238 5379 -172 5389
+rect -238 5345 -222 5379
+rect -188 5345 -172 5379
+rect 247 5371 311 5377
+rect 247 5362 253 5371
+rect -238 5335 -172 5345
+rect 157 5328 253 5362
+rect 247 5319 253 5328
+rect 305 5319 311 5371
+rect 247 5313 311 5319
+<< via1 >>
+rect 253 5319 305 5371
+<< metal2 >>
+rect 242 5373 316 5377
+rect 242 5317 251 5373
+rect 307 5317 316 5373
+rect 242 5313 316 5317
+<< via2 >>
+rect 251 5371 307 5373
+rect 251 5319 253 5371
+rect 253 5319 305 5371
+rect 305 5319 307 5371
+rect 251 5317 307 5319
+<< metal3 >>
+rect 228 5373 328 5388
+rect 228 5317 251 5373
+rect 307 5317 328 5373
+rect 228 5289 328 5317
+<< metal4 >>
+rect 246 5094 312 5377
+<< via4 >>
+rect 1146 4565 1383 4801
+<< metal5 >>
+rect 1104 4801 1427 5130
+rect 1104 4565 1146 4801
+rect 1383 4758 1427 4801
+rect 1383 4565 1425 4758
+rect 1104 4538 1425 4565
+rect 1103 4527 1425 4538
+use hgu_cdac_8bit_array  hgu_cdac_8bit_array_0
+timestamp 1699247158
+transform 1 0 4202 0 -1 -4800
+box -4274 -7612 35404 -4800
+use hgu_cdac_8bit_array  hgu_cdac_8bit_array_1
+timestamp 1699247158
+transform 1 0 4202 0 -1 -2312
+box -4274 -7612 35404 -4800
+use hgu_cdac_unit  hgu_cdac_unit_0
+timestamp 1699173900
+transform 1 0 -758 0 -1 2044
+box 686 598 1358 1826
+use hgu_cdac_unit  hgu_cdac_unit_1
+timestamp 1699173900
+transform 1 0 -758 0 -1 4532
+box 686 598 1358 1826
+use hgu_inverter  hgu_inverter_0
+timestamp 1699289458
+transform 1 0 -435 0 1 4948
+box 379 160 684 824
+use inv_2_test  inv_2_test_0
+timestamp 1699289458
+transform 1 0 250 0 1 2996
+box 432 2360 824 3024
+use inv_4_test  inv_4_test_0
+timestamp 1699291329
+transform 1 0 1841 0 1 4026
+box -335 1324 233 1988
+use inv_8_test  inv_8_test_0
+timestamp 1699291329
+transform 1 0 2333 0 1 2960
+box 368 2320 1288 2984
+use inv_16_test  inv_16_test_0
+timestamp 1699291329
+transform 1 0 5346 0 1 5346
+box -57 -40 1567 624
+use inv_32_test  inv_32_test_0
+timestamp 1699291329
+transform 1 0 11390 0 1 7748
+box -1071 -2402 1961 -1738
+use inv_64_test  inv_64_test_0
+timestamp 1699291329
+transform 1 0 21194 0 1 7709
+box -1071 -2402 4777 -1738
+<< labels >>
+flabel metal1 -222 5345 -188 5379 0 FreeSans 160 0 0 0 IN
+port 26 nsew
 << end >>
