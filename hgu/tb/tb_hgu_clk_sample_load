@@ -175,7 +175,7 @@ C {devices/gnd.sym} -720 -10 0 0 {name=l16 lab=GND}
 C {devices/vsource.sym} -760 90 0 0 {name=V6 value=0.9
 }
 C {devices/gnd.sym} -760 120 0 0 {name=l17 lab=GND}
-C {../xschem/hgu_clk_sample.sym} -560 -600 0 0 {name=x3}
+C {../xschem/hgu_clk_sample.sym} -560 -590 0 0 {name=x3}
 C {devices/gnd.sym} -710 -660 1 0 {name=l21 lab=GND}
 C {devices/vdd.sym} -710 -680 3 0 {name=l22 lab=VDD}
 C {devices/gnd.sym} -710 -600 1 0 {name=l24 lab=GND}
@@ -229,3 +229,4 @@ C {sky130_stdcells/dfbbp_1.sym} 80 -770 0 0 {name=x20 VGND=VSS VNB=VSS VPB=VDD V
 C {devices/vsource.sym} -1170 -290 0 0 {name=V12 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
 C {devices/gnd.sym} -1170 -260 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} -1170 -320 0 0 {name=p14 sig_type=std_logic lab=EXT_CLK}
+C {devices/vdd.sym} -710 -500 3 0 {name=l6 lab=VDD}
