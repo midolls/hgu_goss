@@ -15,8 +15,6 @@ N 330 -310 330 -150 {
 lab=sw<2>}
 N 510 -130 640 -130 {
 lab=VSS}
-N 510 -210 640 -210 {
-lab=VDD}
 C {sky130_stdcells/buf_1.sym} 210 -350 1 0 {name=x9 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_4.sym} 210 -270 1 0 {name=x10 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_16.sym} 210 -190 1 0 {name=x11 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
@@ -41,3 +39,6 @@ C {sky130_stdcells/buf_1.sym} 330 -350 1 0 {name=x6 VGND=VSS VNB=VSS VPB=VDD VPW
 C {sky130_stdcells/buf_1.sym} 640 -170 3 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_1.sym} 590 -170 3 0 {name=x8 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_1.sym} 540 -170 3 0 {name=x12 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/noconn.sym} 540 -210 2 0 {name=l3}
+C {devices/noconn.sym} 590 -210 2 0 {name=l1}
+C {devices/noconn.sym} 640 -210 2 0 {name=l2}

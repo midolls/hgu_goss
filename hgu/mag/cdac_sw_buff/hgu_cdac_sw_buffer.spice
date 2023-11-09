@@ -75,11 +75,11 @@ Xx2 x4/X VSS VDD sw<4> VSS VDD sky130_fd_sc_hd__buf_4
 Xx4 sar_val<5> VSS VDD x4/X VSS VDD sky130_fd_sc_hd__buf_1
 Xx5 sar_val<3> VSS VDD sw<2> VSS VDD sky130_fd_sc_hd__buf_1
 Xx6 sar_val<4> VSS VDD sw<3> VSS VDD sky130_fd_sc_hd__buf_1
-Xx7 VSS VSS VDD VDD VSS VDD sky130_fd_sc_hd__buf_1
-Xx8 VSS VSS VDD VDD VSS VDD sky130_fd_sc_hd__buf_1
+Xx7 VSS VSS VDD x7/X VSS VDD sky130_fd_sc_hd__buf_1
+Xx8 VSS VSS VDD x8/X VSS VDD sky130_fd_sc_hd__buf_1
 Xx9 sar_val<7> VSS VDD x9/X VSS VDD sky130_fd_sc_hd__buf_1
 Xx10 x9/X VSS VDD x11/A VSS VDD sky130_fd_sc_hd__buf_4
 Xx11 x11/A VSS VDD sw<6> VSS VDD sky130_fd_sc_hd__buf_16
-Xx12 VSS VSS VDD VDD VSS VDD sky130_fd_sc_hd__buf_1
+Xx12 VSS VSS VDD x12/X VSS VDD sky130_fd_sc_hd__buf_1
 .ends
 
