@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699184270
+timestamp 1699326276
 << nwell >>
 rect 9791 2389 15997 2986
 rect 9742 2388 15997 2389
@@ -863,71 +863,71 @@ rect 9372 301 9962 365
 rect 10026 301 15993 365
 rect 9372 291 15993 301
 use hgu_sw_cap_nmos  x2
-timestamp 1699184270
+timestamp 1699326276
 transform -1 0 15982 0 1 -246
 box 368 546 1040 1833
 use hgu_sw_cap_nmos  x3[0]
-timestamp 1699184270
+timestamp 1699326276
 transform -1 0 15248 0 1 -246
 box 368 546 1040 1833
 use hgu_sw_cap_nmos  x3[1]
-timestamp 1699184270
+timestamp 1699326276
 transform 1 0 13234 0 1 -246
 box 368 546 1040 1833
 use hgu_sw_cap_nmos  x4[0]
-timestamp 1699184270
+timestamp 1699326276
 transform -1 0 13910 0 1 -246
 box 368 546 1040 1833
 use hgu_sw_cap_nmos  x4[1]
-timestamp 1699184270
+timestamp 1699326276
 transform 1 0 11896 0 1 -246
 box 368 546 1040 1833
 use hgu_sw_cap_nmos  x4[2]
-timestamp 1699184270
+timestamp 1699326276
 transform -1 0 12698 0 1 -246
 box 368 546 1040 1833
 use hgu_sw_cap_nmos  x4[3]
-timestamp 1699184270
+timestamp 1699326276
 transform 1 0 10684 0 1 -246
 box 368 546 1040 1833
 use hgu_sw_cap_pmos  x5[0]
-timestamp 1699184270
+timestamp 1699325447
 transform -1 0 15984 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x5[1]
-timestamp 1699184270
+timestamp 1699325447
 transform 1 0 13968 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x5[2]
-timestamp 1699184270
+timestamp 1699325447
 transform -1 0 14772 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x5[3]
-timestamp 1699184270
+timestamp 1699325447
 transform 1 0 12756 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x5[4]
-timestamp 1699184270
+timestamp 1699325447
 transform -1 0 13560 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x5[5]
-timestamp 1699184270
+timestamp 1699325447
 transform 1 0 11544 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x5[6]
-timestamp 1699184270
+timestamp 1699325447
 transform -1 0 12348 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x5[7]
-timestamp 1699184270
+timestamp 1699325447
 transform 1 0 10332 0 -1 3485
 box 369 500 1054 1856
 use hgu_sw_cap_pmos  x6
-timestamp 1699184270
+timestamp 1699325447
 transform 1 0 9600 0 -1 3482
 box 369 500 1054 1856
 use hgu_sw_cap_nmos  x7
-timestamp 1699184270
+timestamp 1699326276
 transform 1 0 9952 0 1 -246
 box 368 546 1040 1833
 use hgu_pfet_hvt_stack_in_delay  x8

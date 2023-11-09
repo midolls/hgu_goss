@@ -49,16 +49,19 @@ Circuit 1: hgu_sw_cap_pmos                 |Circuit 2: hgu_sw_cap_pmos
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
 Number of devices: 1                       |Number of devices: 1                       
-Number of nets: 3                          |Number of nets: 3                          
+Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: hgu_sw_cap_pmos                 |Circuit 2: hgu_sw_cap_pmos                 
 -------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
 SW                                         |SW                                         
+floating                                   |floating                                   
 delay_signal                               |DELAY_SIGNAL                               
+VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes hgu_sw_cap_pmos and hgu_sw_cap_pmos are equivalent.
@@ -142,15 +145,11 @@ hgu_pfet_hvt_stack_in_delay (1)            |hgu_pfet_hvt_stack_in_delay (1)
 hgu_nfet_hvt_stack_in_delay (1)            |hgu_nfet_hvt_stack_in_delay (1)            
 sky130_fd_sc_hd__inv_1 (2)                 |sky130_fd_sc_hd__inv_1 (2)                 
 Number of devices: 23                      |Number of devices: 23                      
-Number of nets: 14                         |Number of nets: 14                         
+Number of nets: 20                         |Number of nets: 20                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match with 1 symmetry with property errors.
-sky130_fd_pr__nfet_01v8_MVW3GX:XM1/sky130_fd_pr__nfet_01v8:0 vs. sky130_fd_pr__nfet_01v8:M1:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8_hvt_M433PY:XM48/sky130_fd_pr__pfet_01v8_hvt:0 vs. sky130_fd_pr__pfet_01v8_hvt:M48:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
+Netlists match with 1 symmetry.
 
 Subcircuit pins:
 Circuit 1: hgu_delay_no_code               |Circuit 2: hgu_delay_no_code               
@@ -169,7 +168,4 @@ Cell pin lists are equivalent.
 Device classes hgu_delay_no_code and hgu_delay_no_code are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- hgu_delay_no_code
+.

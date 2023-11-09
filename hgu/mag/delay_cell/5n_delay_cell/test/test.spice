@@ -1,0 +1,29 @@
+* NGSPICE file created from test.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_MVW3GX a_n227_n216#
+X0 a_63_n42# a_15_64# a_n33_n42# a_n227_n216# sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X1 a_n33_n42# a_n81_n130# a_n125_n42# a_n227_n216# sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_hvt_M433PY
+X0 a_n33_n42# a_n81_n139# a_n125_n42# w_n263_n261# sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X1 a_63_n42# a_15_73# a_n33_n42# w_n263_n261# sky130_fd_pr__pfet_01v8_hvt ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_hvt_MQKFPY
+X0 a_63_n84# a_15_115# a_n33_n84# w_n263_n303# sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.3 as=0.139 ps=1.17 w=0.84 l=0.15
+X1 a_n33_n84# a_n81_n181# a_n125_n84# w_n263_n303# sky130_fd_pr__pfet_01v8_hvt ad=0.139 pd=1.17 as=0.26 ps=2.3 w=0.84 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_9TX3WS a_n227_n258#
+X0 a_n33_n84# a_n81_n172# a_n125_n84# a_n227_n258# sky130_fd_pr__nfet_01v8 ad=0.139 pd=1.17 as=0.26 ps=2.3 w=0.84 l=0.15
+X1 a_63_n84# a_15_106# a_n33_n84# a_n227_n258# sky130_fd_pr__nfet_01v8 ad=0.26 pd=2.3 as=0.139 ps=1.17 w=0.84 l=0.15
+.ends
+
+.subckt test
+XXM13 VSUBS sky130_fd_pr__nfet_01v8_MVW3GX
+XXM46 sky130_fd_pr__pfet_01v8_hvt_M433PY
+XXM48 sky130_fd_pr__pfet_01v8_hvt_MQKFPY
+XXM1 VSUBS sky130_fd_pr__nfet_01v8_9TX3WS
+.ends
+

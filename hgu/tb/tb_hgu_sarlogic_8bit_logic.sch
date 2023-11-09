@@ -5,6 +5,8 @@ K {}
 V {}
 S {}
 E {}
+N 990 -100 1460 -100 {
+lab=VSS}
 C {devices/vdd.sym} 250 -120 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} 250 -60 0 0 {name=l8 lab=GND}
 C {devices/vsource.sym} 250 -90 0 0 {name=V4 value=1.8}
@@ -35,16 +37,10 @@ C {devices/lab_pin.sym} 90 -280 0 0 {name=p4 sig_type=std_logic lab=comp}
 C {devices/vsource.sym} 90 -340 0 0 {name=V3 value="PULSE(0 1.8 0 5p 5p 5n 10n)"}
 C {devices/gnd.sym} 90 -310 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 90 -370 0 0 {name=p1 sig_type=std_logic lab=clk}
-C {devices/vsource.sym} 90 -430 0 0 {name=V12 value="PULSE(0 1.8 0 5p 5p 10n 100n)"}
+C {devices/vsource.sym} 90 -430 0 0 {name=V12 value="PULSE(1.8 0 0 5p 5p 10n 100n)"}
 C {devices/gnd.sym} 90 -400 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 90 -460 0 0 {name=p7 sig_type=std_logic lab=reset}
 C {../xschem/hgu_sarlogic_8bit_logic.sym} 590 -310 0 0 {name=x3 csize=0.001}
-C {devices/capa.sym} 770 -360 3 0 {name=C1
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 800 -360 3 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 740 -360 1 0 {name=p3 sig_type=std_logic lab=EOB}
 C {devices/lab_pin.sym} 740 -340 2 0 {name=p9 sig_type=std_logic lab=D[0:7]}
 C {devices/vdd.sym} 440 -280 3 0 {name=l3 lab=VDD}
@@ -55,8 +51,6 @@ C {devices/vdd.sym} 440 -260 3 0 {name=l13 lab=VSS}
 C {devices/lab_pin.sym} 440 -360 0 0 {name=p13 sig_type=std_logic lab=sel_bit[0:1]}
 C {devices/code.sym} 50 -160 0 0 {name=spice1 only_toplevel=false value="
 
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 
 *.tran 10ps 310ns
@@ -83,3 +77,38 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 740 -260 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 740 -320 2 0 {name=p2 sig_type=std_logic lab=tempD[0:7]}
+C {/foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym} 1350 -310 0 0 {name=x1}
+C {devices/vdd.sym} 1040 -40 1 0 {name=l11 lab=async_resetb_delay_cap_ctrl_code[3]}
+C {devices/vdd.sym} 1150 -40 1 0 {name=l10 lab=async_resetb_delay_cap_ctrl_code[2]}
+C {devices/vdd.sym} 1260 -160 1 0 {name=l14 lab=async_resetb_delay_cap_ctrl_code[1]}
+C {devices/vdd.sym} 1370 -160 1 0 {name=l25 lab=async_resetb_delay_cap_ctrl_code[0]}
+C {devices/vsource.sym} 1370 -130 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 1040 -70 0 0 {name=V13 value=0}
+C {devices/vsource.sym} 1150 -70 0 0 {name=V14 value=0}
+C {devices/vsource.sym} 1260 -70 0 0 {name=V15 value=0}
+C {devices/lab_pin.sym} 990 -100 0 0 {name=p5 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 1260 -130 0 0 {name=V16 value=1.8}
+C {devices/vsource.sym} 1150 -130 0 0 {name=V17 value=1.8}
+C {devices/vsource.sym} 1040 -130 0 0 {name=V18 value=1.8}
+C {devices/vsource.sym} 1370 -70 0 0 {name=V19 value=0}
+C {devices/noconn.sym} 1040 -160 2 0 {name=l26}
+C {devices/noconn.sym} 1150 -160 2 0 {name=l27}
+C {devices/noconn.sym} 1260 -40 2 0 {name=l28}
+C {devices/noconn.sym} 1370 -40 2 0 {name=l29}
+C {devices/lab_pin.sym} 1200 -280 0 0 {name=p6 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {devices/vdd.sym} 1200 -260 3 0 {name=l30 lab=VDD}
+C {devices/lab_pin.sym} 1200 -300 2 1 {name=p8 sig_type=std_logic lab=EOB}
+C {devices/lab_pin.sym} 1200 -320 0 0 {name=p14 sig_type=std_logic lab=D[0:7]}
+C {devices/vdd.sym} 1200 -360 3 0 {name=l31 lab=VDD}
+C {devices/vdd.sym} 1200 -340 3 0 {name=l32 lab=VSS}
+C {devices/lab_pin.sym} 1500 -360 2 0 {name=p16 sig_type=std_logic lab=result[0:7]}
+C {devices/simulator_commands_shown.sym} 350 -610 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false 
+value="
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
+"}

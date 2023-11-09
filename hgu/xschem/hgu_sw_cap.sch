@@ -8,7 +8,11 @@ E {}
 N 230 -110 230 -90 {
 lab=VSS}
 N 230 -190 230 -170 {
+<<<<<<< HEAD
+lab=floating}
+=======
 lab=#net1}
+>>>>>>> 44053179fce1b15a659ce5ddf31ed98717972888
 C {devices/lab_pin.sym} 230 -220 2 0 {name=p32 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 210 -220 0 0 {name=M14
 L=0.15
@@ -33,3 +37,4 @@ C {devices/iopin.sym} 130 -90 2 0 {name=p7 lab=DELAY_SIGNAL}
 C {devices/lab_pin.sym} 210 -130 3 0 {name=p5 sig_type=std_logic lab=VSS}
 C {../xschem/hgu_vpp_cap.sym} 230 -140 0 0 {symname=hgu_cdac_unit
 name=x2}
+C {devices/iopin.sym} 230 -180 2 0 {name=p8 lab=floating}

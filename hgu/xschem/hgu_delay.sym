@@ -1,40 +1,43 @@
-v {xschem version=3.4.0 file_version=1.2}
+v {xschem version=3.4.0 file_version=1.2
+}
 G {}
 K {type=subcircuit
-format="@name @pinlist @symname DELAY_CAP=@DELAY_CAP"
-template="name=x1 DELAY_CAP=DELAY_CAP"
+format="@name @pinlist @symname"
+template="name=x1"
 }
-
-T {@symname} -58.5 -6 0 0 0.3 0.3 {}
-T {@name} 135 -92 0 0 0.2 0.2 {}
+V {}
+S {}
+E {}
 L 4 -130 -80 130 -80 {}
 L 4 -130 80 130 80 {}
 L 4 -130 -80 -130 80 {}
 L 4 130 -80 130 80 {}
-B 5 147.5 -72.5 152.5 -67.5 {name=OUT dir=out}
 L 4 130 -70 150 -70 {}
-T {OUT} 125 -74 0 1 0.2 0.2 {}
-B 5 -152.5 -72.5 -147.5 -67.5 {name=IN dir=in}
 L 4 -150 -70 -130 -70 {}
-T {IN} -125 -74 0 0 0.2 0.2 {}
-B 5 -152.5 -52.5 -147.5 -47.5 {name=VDD dir=in}
 L 4 -150 -50 -130 -50 {}
-T {VDD} -125 -54 0 0 0.2 0.2 {}
-B 5 -152.5 -32.5 -147.5 -27.5 {name=VSS dir=in}
 L 4 -150 -30 -130 -30 {}
-T {VSS} -125 -34 0 0 0.2 0.2 {}
-B 5 -152.5 -12.5 -147.5 -7.5 {name=SAMPLE_CODE0[0:3] dir=in}
 L 4 -150 -10 -130 -10 {}
-T {SAMPLE_CODE0[0:3]} -125 -14 0 0 0.2 0.2 {}
-B 5 -152.5 7.5 -147.5 12.5 {name=SAMPLE_CODE1[0:3] dir=in}
 L 4 -150 10 -130 10 {}
-T {SAMPLE_CODE1[0:3]} -125 6 0 0 0.2 0.2 {}
-B 5 -152.5 27.5 -147.5 32.5 {name=SAMPLE_CODE2[0:3] dir=in}
 L 4 -150 30 -130 30 {}
-T {SAMPLE_CODE2[0:3]} -125 26 0 0 0.2 0.2 {}
-B 5 -152.5 47.5 -147.5 52.5 {name=SAMPLE_CODE3[0:3] dir=in}
 L 4 -150 50 -130 50 {}
-T {SAMPLE_CODE3[0:3]} -125 46 0 0 0.2 0.2 {}
-B 5 -152.5 67.5 -147.5 72.5 {name=sample_delay_offset dir=in}
 L 4 -150 70 -130 70 {}
+B 5 147.5 -72.5 152.5 -67.5 {name=OUT dir=out}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=IN dir=in}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=VDD dir=in}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=VSS dir=in}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=SAMPLE_CODE0[0:3] dir=in}
+B 5 -152.5 7.5 -147.5 12.5 {name=SAMPLE_CODE1[0:3] dir=in}
+B 5 -152.5 27.5 -147.5 32.5 {name=SAMPLE_CODE2[0:3] dir=in}
+B 5 -152.5 47.5 -147.5 52.5 {name=SAMPLE_CODE3[0:3] dir=in}
+B 5 -152.5 67.5 -147.5 72.5 {name=sample_delay_offset dir=in}
+T {@symname} -58.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -92 0 0 0.2 0.2 {}
+T {OUT} 125 -74 0 1 0.2 0.2 {}
+T {IN} -125 -74 0 0 0.2 0.2 {}
+T {VDD} -125 -54 0 0 0.2 0.2 {}
+T {VSS} -125 -34 0 0 0.2 0.2 {}
+T {SAMPLE_CODE0[0:3]} -125 -14 0 0 0.2 0.2 {}
+T {SAMPLE_CODE1[0:3]} -125 6 0 0 0.2 0.2 {}
+T {SAMPLE_CODE2[0:3]} -125 26 0 0 0.2 0.2 {}
+T {SAMPLE_CODE3[0:3]} -125 46 0 0 0.2 0.2 {}
 T {sample_delay_offset} -125 66 0 0 0.2 0.2 {}

@@ -5,6 +5,7 @@ K {}
 V {}
 S {}
 E {}
+T {W = 0.42} 1400 -720 0 0 0.4 0.4 {}
 N 300 -570 300 -460 {
 lab=IN}
 N 230 -670 340 -670 {
@@ -115,9 +116,13 @@ N 780 -730 780 -610 {
 lab=#net5}
 N 730 -730 780 -730 {
 lab=#net5}
-N 640 -730 640 -410 {
+N 630 -730 630 -410 {
 lab=code_offset}
 N 640 -730 650 -730 {
+lab=code_offset}
+N 630 -730 640 -730 {
+lab=code_offset}
+N 630 -410 640 -410 {
 lab=code_offset}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {devices/ipin.sym} 230 -510 0 0 {name=p4 lab=IN}
@@ -152,20 +157,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_nf.sym} 1440 -450 1 0 {name=M1
-L=0.15
-W=0.42
-nf=2 
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 1290 -570 0 0 {name=M46
 L=0.15
 W=0.42
@@ -194,20 +185,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt_nf.sym} 1440 -580 3 0 {name=M48
-L=0.15
-W=0.42
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 1150 -410 0 0 {name=x2 DELAY_CAP=5f m_num=1}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 1010 -410 0 0 {name=x3[1:0] DELAY_CAP=5f m_num=1}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 870 -410 0 0 {name=x4[3:0] DELAY_CAP=5f m_num=1}
@@ -221,7 +198,41 @@ C {sky130_stdcells/inv_1.sym} 900 -740 0 0 {name=x10 VGND=VSS VNB=VSS VPB=VDD VP
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym} 710 -410 0 0 {name=x7 DELAY_CAP=5f m_num=1}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sym} 710 -610 2 0 {name=x6 DELAY_CAP=5f m_num=1}
 C {sky130_stdcells/inv_1.sym} 690 -730 0 0 {name=x11 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 640 -410 0 0 {name=p6 sig_type=std_logic lab=code_offset}
+C {devices/lab_pin.sym} 630 -410 0 0 {name=p6 sig_type=std_logic lab=code_offset}
 C {devices/ipin.sym} 220 -190 0 0 {name=p10 lab=code_offset}
 C {/foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sym} 370 -580 0 0 {name=x8}
 C {/foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sym} 360 -450 0 0 {name=x9}
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1440 -580 3 0 {name=M48
+L=0.15
+W=0.84
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8.sym} 1440 -450 1 0 {name=M1
+L=0.15
+W=0.84
+nf=2 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/noconn.sym} 640 -600 0 0 {name=l2}
+C {devices/noconn.sym} 800 -600 0 0 {name=l3}
+C {devices/noconn.sym} 780 -420 2 0 {name=l4}
+C {devices/noconn.sym} 940 -420 2 0 {name=l5}
+C {devices/noconn.sym} 1080 -420 2 0 {name=l6}
+C {devices/noconn.sym} 1220 -420 2 0 {name=l7}

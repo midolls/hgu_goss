@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699184270
+timestamp 1699325447
 << error_p >>
 rect 916 1676 974 1682
 rect 916 1642 928 1676
@@ -414,4 +414,6 @@ flabel pdiff 960 1723 1018 1807 0 FreeSans 320 0 0 0 delay_signal
 port 2 nsew
 flabel metal4 372 546 473 615 0 FreeSans 320 0 0 0 VDD
 port 6 nsew
+flabel via3 473 1709 537 1773 0 FreeSans 320 0 0 0 floating
+port 9 nsew
 << end >>
