@@ -77,25 +77,41 @@ C {devices/lab_pin.sym} 520 -330 2 0 {name=p14 sig_type=std_logic lab=ready}
 C {devices/lab_pin.sym} 620 -420 2 0 {name=p11 sig_type=std_logic lab=outp}
 C {devices/lab_pin.sym} 620 -380 2 0 {name=p15 sig_type=std_logic lab=outn}
 C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
-
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt_mm
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.tran 0.1ns 100ns
+.tran 1ns 100ns
 .temp 25
-.control    
-    repeat 1
+.control
+    run
+     let svdd = 1.8
+     let max = svdd*0.8
+     let min = svdd*0.2
+     let mid = svdd*0.5
 
-    tran 0.1ns 100ns
-    write test_mc_model.raw
-    set appendwrite
-    print V(outp)
-    reset
+   meas tran rising_s_d find time when V(clk)=mid RISE=1 TD=30n
+   meas tran rising_e_d find time when V(outp)=mid RISE=1 TD=1000p
+   let rising_delay = rising_e_d-rising_s_d
 
-    end
-    plot all.v(outp)
+   meas tran falling_s_d find time when V(clk)=mid RISE=1 TD=50n
+   meas tran falling_e_d find time when V(outp)=mid FALL=1 TD=50n
+   let falling_delay = falling_e_d-falling_s_d
+
+   meas tran rising_s find time when V(outp)=min RISE=1 TD=30n
+      meas tran rising_e find time when V(outp)=max RISE=1 TD=30n
+      let rising_time = rising_e-rising_s
+
+      meas tran falling_s find time when V(outp)=max FALL=1 TD=50n
+     meas tran falling_e find time when V(outp)=min FALL=1 TD=50n
+      let falling_time = falling_e-falling_s
+
+	meas tran I_avg AVG tran1.I(VDD) FROM=20n TO=100n
+
+    print rising_time falling_time rising_delay falling_delay 
+    plot V(clk) V(inn) V(inp) V(ready) V(outp)+2 V(outn)+2
+    plot V(outp) V(outn)
+    print I_avg
 .endc
-.save all
 .save all
 "}
 C {sky130_stdcells/dfbbp_1.sym} 860 -460 0 0 {name=x2[7:0] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
