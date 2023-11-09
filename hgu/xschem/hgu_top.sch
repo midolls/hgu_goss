@@ -350,8 +350,8 @@ C {devices/lab_pin.sym} 1150 -1520 1 0 {name=p52 sig_type=std_logic lab=result2_
 C {devices/lab_pin.sym} 1180 -1520 1 0 {name=p53 sig_type=std_logic lab=result2_sw[3]}
 C {devices/lab_pin.sym} 1210 -1520 1 0 {name=p54 sig_type=std_logic lab=result2_sw[2]}
 C {devices/lab_pin.sym} 1240 -1520 1 0 {name=p55 sig_type=std_logic lab=result2_sw[1]}
-C {hgu_cdac_sw_buffer.sym} 1150 -1420 0 0 {name=x6}
-C {hgu_cdac_sw_buffer.sym} 1520 -1420 0 1 {name=x7}
+C {hgu_cdac_sw_buffer_RC.sym} 1150 -1420 0 0 {name=x6}
+C {hgu_cdac_sw_buffer_RC.sym} 1520 -1420 0 1 {name=x7}
 C {devices/lab_wire.sym} 1060 -1300 0 0 {name=p56 sig_type=std_logic lab=sw6
 }
 C {devices/lab_wire.sym} 1090 -1300 0 0 {name=p57 sig_type=std_logic lab=sw5
@@ -376,8 +376,8 @@ C {devices/lab_pin.sym} 1150 -280 3 0 {name=p95 sig_type=std_logic lab=result2_s
 C {devices/lab_pin.sym} 1180 -280 3 0 {name=p96 sig_type=std_logic lab=result2_sw_b[3]}
 C {devices/lab_pin.sym} 1210 -280 3 0 {name=p97 sig_type=std_logic lab=result2_sw_b[2]}
 C {devices/lab_pin.sym} 1240 -280 3 0 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
-C {hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
-C {hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
+C {hgu_cdac_sw_buffer_RC.sym} 1150 -380 2 1 {name=x8}
+C {hgu_cdac_sw_buffer_RC.sym} 1520 -380 2 0 {name=x9}
 C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1380 -530 2 1 {name=p17 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1610 -1300 0 1 {name=p19 sig_type=std_logic lab=swd6
@@ -462,7 +462,7 @@ C {devices/noconn.sym} 3530 -740 2 0 {name=l83}
 C {devices/noconn.sym} 3640 -740 2 0 {name=l84}
 C {devices/noconn.sym} 3750 -620 2 0 {name=l85}
 C {devices/noconn.sym} 3860 -620 2 0 {name=l86}
-C {devices/simulator_commands_shown.sym} 2280 -1170 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 1790 -1310 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -471,6 +471,12 @@ value="
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
+
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_retimer_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_sw_ctrl_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_async_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_sample_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_sw_buffer_flat_RC.spice
 "}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1240 0 0 {name=x10}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1330 0 0 {name=x11}

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699537245
+timestamp 1699538697
 << nwell >>
 rect 12283 10064 18880 10661
 rect 12234 10063 18880 10064
@@ -19060,12 +19060,11 @@ rect 16386 5065 18195 5067
 rect 12771 5040 18195 5065
 << labels >>
 flabel metal4 11864 7966 12240 9403 0 FreeSans 320 0 0 0 VSS
-port 5 nsew
+port 31 nsew
 flabel metal4 11836 10013 12254 10623 0 FreeSans 320 0 0 0 VDD
 port 2 nsew
 flabel metal1 11767 9271 11864 9318 0 FreeSans 320 0 0 0 eob
 port 4 nsew
-flabel metal1 12030 9069 12142 9117 0 FreeSans 320 0 0 0 delay_offset
 flabel metal1 13338 7918 14277 7946 0 FreeSans 320 0 0 0 delay_code[2]
 port 6 nsew
 flabel metal1 13338 7862 16703 7890 0 FreeSans 320 0 0 0 delay_code[1]
@@ -19075,6 +19074,7 @@ port 8 nsew
 flabel metal1 11730 9654 11784 9688 0 FreeSans 320 0 0 0 delay_code[3]
 port 9 nsew
 flabel metal1 13297 7232 13342 7280 0 FreeSans 320 0 0 0 sar_logic[0]
+port 29 nsew
 flabel metal1 13289 7438 13334 7486 0 FreeSans 320 0 0 0 sar_logic[1]
 port 10 nsew
 flabel metal1 13307 6591 13352 6639 0 FreeSans 320 0 0 0 sar_logic[2]
@@ -19099,12 +19099,14 @@ flabel metal1 18205 5176 18250 5224 0 FreeSans 320 0 0 0 sar_retimer[7]
 port 23 nsew
 flabel metal1 18209 5520 18254 5568 0 FreeSans 320 0 0 0 sar_retimer[6]
 port 25 nsew
-flabel metal1 13285 5376 13330 5424 0 FreeSans 320 0 0 0 sar_retimer[6]
-port 26 nsew
-flabel metal1 13282 5177 13327 5225 0 FreeSans 320 0 0 0 sar_retimer[7]
-port 27 nsew
 flabel metal1 13310 6457 13355 6505 0 FreeSans 320 0 0 0 sar_logic[3]
 port 28 nsew
+flabel metal1 13285 5376 13330 5424 0 FreeSans 320 0 0 0 sar_logic[6]
+port 26 nsew
+flabel metal1 13282 5177 13327 5225 0 FreeSans 320 0 0 0 sar_logic[7]
+port 27 nsew
+flabel metal1 12030 9069 12142 9117 0 FreeSans 320 0 0 0 delay_offset
+port 32 nsew
 flabel locali 15233 7299 15308 7345 0 FreeSans 400 0 0 0 x1[0].RESET_B
 flabel locali 13400 7547 13434 7581 3 FreeSans 400 0 0 0 x1[0].VGND
 flabel locali 13400 7309 13434 7343 0 FreeSans 400 0 0 0 x1[0].CLK
