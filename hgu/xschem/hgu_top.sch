@@ -292,7 +292,6 @@ C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 .OPTIONS savecurrents
 .tran 10ps 250ns
 
-
 .control
 	run
 	plot V(sample_clk) V(vip) V(vin) V(vip)-V(vin)+0.9 V(tah_vp) V(tah_vn) V(tah_vp)-V(tah_vn) V(vip)-V(vin)
