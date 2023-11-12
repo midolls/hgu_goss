@@ -33,36 +33,43 @@ Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UJB66J in circuit hgu_tah (
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UJKTUG in circuit hgu_tah (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5AY3TR in circuit hgu_tah (0)(2 instances)
 
-Cell hgu_tah (0) disconnected node: hgu_tah
-Class hgu_tah (0):  Merged 16 parallel devices.
-Cell hgu_tah (0) disconnected node: hgu_tah
+Class hgu_tah (0):  Merged 12 parallel devices.
 Subcircuit summary:
 Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (12->4)            |sky130_fd_pr__nfet_01v8 (4)                
-sky130_fd_pr__pfet_01v8 (12->4)            |sky130_fd_pr__pfet_01v8 (4)                
-Number of devices: 8                       |Number of devices: 8                       
+sky130_fd_pr__nfet_01v8 (12->6)            |sky130_fd_pr__nfet_01v8 (4) **Mismatch**   
+sky130_fd_pr__pfet_01v8 (12->6)            |sky130_fd_pr__pfet_01v8 (4) **Mismatch**   
+Number of devices: 12 **Mismatch**         |Number of devices: 8 **Mismatch**          
 Number of nets: 8                          |Number of nets: 8                          
 ---------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Resolving symmetries by pin name.
-Netlists match uniquely with port errors.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
+
+---------------------------------------------------------------------------------------
+Net: sw                                    |Net: sw                                    
+  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/4 = 6            |  sky130_fd_pr__pfet_01v8/4 = 4            
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  sky130_fd_pr__nfet_01v8/4 = 6            |  sky130_fd_pr__nfet_01v8/4 = 4            
+                                           |                                           
+Net: sw_n                                  |Net: sw_n                                  
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+---------------------------------------------------------------------------------------
+Netlists do not match.
 
 Subcircuit pins:
 Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
 -------------------------------------------|-------------------------------------------
-tah_vp                                     |tah_vp                                     
-tah_vn                                     |tah_vn                                     
 sw                                         |sw                                         
-VDD                                        |VDD                                        
-VSS                                        |VSS                                        
+VSS                                        |VDD **Mismatch**                           
+VDD                                        |VSS **Mismatch**                           
 sw_n                                       |sw_n                                       
-vip                                        |vip                                        
-vin                                        |vin                                        
-hgu_tah                                    |(no matching pin)                          
----------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes hgu_tah and hgu_tah are equivalent.
 
-Final result: Circuits match uniquely.
-.
+Final result: Netlists do not match.
