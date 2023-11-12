@@ -1,0 +1,84 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_8bit_logic.sch
+.subckt hgu_sarlogic_8bit_logic a_clk_sar a_VDD a_VSS a_comparator_out a_reset a_EOB a_D_0_ a_D_1_ a_D_2_ a_D_3_ a_D_4_ a_D_5_ a_D_6_ a_D_7_ a_check_0_ a_check_1_ a_check_2_ a_check_3_ a_check_4_ a_check_5_ a_check_6_ a_sel_bit_0_ a_sel_bit_1_
+*.PININFO clk_sar:I VDD:I VSS:I comparator_out:I reset:I EOB:O D_0:7_:O check_0:6_:O sel_bit_0:1_:I
+A20 EOB clk_sar_buff ~resetb ~VDD net1 net4 ddflop
+A27 net1 clk_sar_buff ~VDD ~resetb check_6_ net5 ddflop
+A30 check_6_ clk_sar_buff ~VDD ~resetb check_5_ net6 ddflop
+A33 check_5_ clk_sar_buff ~VDD ~resetb check_4_ net7 ddflop
+A36 check_4_ clk_sar_buff ~VDD ~resetb check_3_ net8 ddflop
+A39 check_3_ clk_sar_buff ~VDD ~resetb check_2_ net9 ddflop
+A42 check_2_ clk_sar_buff ~VDD ~resetb check_1_ net10 ddflop
+A45 check_1_ clk_sar_buff ~VDD ~resetb check_0_ net11 ddflop
+A48 check_0_ clk_sar_buff ~VDD ~resetb net3 net12 ddflop
+A51 comparator_out D_6_ ~net4 ~resetb D_7_ net13 ddflop
+A54 comparator_out D_5_ ~net5 ~resetb D_6_ net14 ddflop
+A57 comparator_out D_4_ ~net6 ~resetb D_5_ net15 ddflop
+A60 comparator_out D_3_ ~net7 ~resetb D_4_ net16 ddflop
+A63 comparator_out D_2_ ~net8 ~resetb D_3_ net17 ddflop
+A66 comparator_out D_1_ ~net9 ~resetb D_2_ net18 ddflop
+A69 comparator_out D_0_ ~net10 ~resetb D_1_ net19 ddflop
+A72 comparator_out net2 ~net11 ~resetb D_0_ net20 ddflop
+A75 VSS VSS ~net21 ~resetb net2 net22 ddflop
+A77 [EOB] net21 d_lut_sky130_fd_sc_hd__inv_1
+A78 [check_2_ check_1_ check_0_ net3 sel_bit_0_ sel_bit_1_] EOB d_lut_sky130_fd_sc_hd__mux4_4
+A1 [reset] net23 d_lut_sky130_fd_sc_hd__buf_1
+A2 [clk_sar] net24 d_lut_sky130_fd_sc_hd__buf_1
+A3 [net23] net25 d_lut_sky130_fd_sc_hd__buf_4
+A4 [net25] resetb d_lut_sky130_fd_sc_hd__buf_16
+A5 [net24] clk_sar_buff d_lut_sky130_fd_sc_hd__buf_2
+
+.model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=10n fall_delay=10n)
+.model toana_1v8 dac_bridge(out_high=1.8 out_low=0)
+
+.model ddflop d_dff(ic=0 rise_delay=1n fall_delay=1n)
+.model dlatch d_dlatch(ic=0 rise_delay=1n fall_delay=1n)
+.model dzero d_pulldown(load=1p)
+.model done d_pullup(load=1p)
+
+AA2D1 [a_clk_sar] [clk_sar] todig_1v8
+AA2D2 [a_VDD] [VDD] todig_1v8
+AA2D3 [a_VSS] [VSS] todig_1v8
+AA2D4 [a_comparator_out] [comparator_out] todig_1v8
+AA2D5 [a_reset] [reset] todig_1v8
+AD2A1 [EOB] [a_EOB] toana_1v8
+AD2A2 [D_0_] [a_D_0_] toana_1v8
+AD2A3 [D_1_] [a_D_1_] toana_1v8
+AD2A4 [D_2_] [a_D_2_] toana_1v8
+AD2A5 [D_3_] [a_D_3_] toana_1v8
+AD2A6 [D_4_] [a_D_4_] toana_1v8
+AD2A7 [D_5_] [a_D_5_] toana_1v8
+AD2A8 [D_6_] [a_D_6_] toana_1v8
+AD2A9 [D_7_] [a_D_7_] toana_1v8
+AA2D6 [a_check_0_] [check_0_] todig_1v8
+AA2D7 [a_check_1_] [check_1_] todig_1v8
+AA2D8 [a_check_2_] [check_2_] todig_1v8
+AA2D9 [a_check_3_] [check_3_] todig_1v8
+AA2D10 [a_check_4_] [check_4_] todig_1v8
+AA2D11 [a_check_5_] [check_5_] todig_1v8
+AA2D12 [a_check_6_] [check_6_] todig_1v8
+AA2D13 [a_sel_bit_0_] [sel_bit_0_] todig_1v8
+AA2D14 [a_sel_bit_1_] [sel_bit_1_] todig_1v8
+
+.ends
+
+* sky130_fd_sc_hd__dfbbp_1 IQ
+* sky130_fd_sc_hd__inv_1 (!A)
+.model d_lut_sky130_fd_sc_hd__inv_1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "10")
+* sky130_fd_sc_hd__mux4_4 (A0&!S0&!S1) | (A1&S0&!S1) | (A2&!S0&S1) | (A3&S0&S1)
+.model d_lut_sky130_fd_sc_hd__mux4_4 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "0101010101010101001100110011001100001111000011110000000011111111")
+* sky130_fd_sc_hd__buf_1 (A)
+.model d_lut_sky130_fd_sc_hd__buf_1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "01")
+* sky130_fd_sc_hd__buf_4 (A)
+.model d_lut_sky130_fd_sc_hd__buf_4 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "01")
+* sky130_fd_sc_hd__buf_16 (A)
+.model d_lut_sky130_fd_sc_hd__buf_16 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "01")
+* sky130_fd_sc_hd__buf_2 (A)
+.model d_lut_sky130_fd_sc_hd__buf_2 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "01")
+.end

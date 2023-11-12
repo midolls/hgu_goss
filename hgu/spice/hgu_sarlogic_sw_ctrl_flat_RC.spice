@@ -1,6 +1,6 @@
 * NGSPICE file created from hgu_sarlogic_sw_ctrl_flat.ext - technology: sky130A
 
-.subckt hgu_sarlogic_sw_ctrl_flat VSS_SW[1] VSS_SW[2] VSS_SW[3] VSS_SW[4] VSS_SW[5]
+.subckt hgu_sarlogic_sw_ctrl_RC VSS_SW[1] VSS_SW[2] VSS_SW[3] VSS_SW[4] VSS_SW[5]
 + VSS_SW[6] VSS_SW[7] VDD_SW[2] VDD_SW[3] VDD_SW[4] VDD_SW[5] VDD_SW[6] VDD_SW[7]
 + D[4] D[6] D[7] check[0] check[1] check[2] check[3] check[4] check[6] VDD_SW_b[1]
 + VDD_SW_b[2] VDD_SW_b[3] VDD_SW_b[4] VDD_SW_b[5] VDD_SW_b[6] VDD_SW_b[7] VSS_SW_b[1]

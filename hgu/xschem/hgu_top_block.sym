@@ -1,0 +1,53 @@
+v {xschem version=3.4.0 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -76.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -142 0 0 0.2 0.2 {}
+L 4 -130 -130 130 -130 {}
+L 4 -130 130 130 130 {}
+L 4 -130 -130 -130 130 {}
+L 4 130 -130 130 130 {}
+B 5 -152.5 -122.5 -147.5 -117.5 {name=VDD dir=in}
+L 4 -150 -120 -130 -120 {}
+T {VDD} -125 -124 0 0 0.2 0.2 {}
+B 5 147.5 -122.5 152.5 -117.5 {name=result[0:7] dir=out}
+L 4 130 -120 150 -120 {}
+T {result[0:7]} 125 -124 0 1 0.2 0.2 {}
+B 5 -152.5 -102.5 -147.5 -97.5 {name=VSS dir=in}
+L 4 -150 -100 -130 -100 {}
+T {VSS} -125 -104 0 0 0.2 0.2 {}
+B 5 -152.5 -82.5 -147.5 -77.5 {name=vip dir=in}
+L 4 -150 -80 -130 -80 {}
+T {vip} -125 -84 0 0 0.2 0.2 {}
+B 5 -152.5 -62.5 -147.5 -57.5 {name=vin dir=in}
+L 4 -150 -60 -130 -60 {}
+T {vin} -125 -64 0 0 0.2 0.2 {}
+B 5 -152.5 -42.5 -147.5 -37.5 {name=EXT_CLK dir=in}
+L 4 -150 -40 -130 -40 {}
+T {EXT_CLK} -125 -44 0 0 0.2 0.2 {}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=sel_bit[0:1] dir=in}
+L 4 -150 -20 -130 -20 {}
+T {sel_bit[0:1]} -125 -24 0 0 0.2 0.2 {}
+B 5 -152.5 -2.5 -147.5 2.5 {name=sample_delay_cap_ctrl_code[0:15] dir=in}
+L 4 -150 0 -130 0 {}
+T {sample_delay_cap_ctrl_code[0:15]} -125 -4 0 0 0.2 0.2 {}
+B 5 -152.5 17.5 -147.5 22.5 {name=async_resetb_delay_cap_ctrl_code[0:3] dir=in}
+L 4 -150 20 -130 20 {}
+T {async_resetb_delay_cap_ctrl_code[0:3]} -125 16 0 0 0.2 0.2 {}
+B 5 -152.5 37.5 -147.5 42.5 {name=async_setb_delay_cap_ctrl_code[0:3] dir=in}
+L 4 -150 40 -130 40 {}
+T {async_setb_delay_cap_ctrl_code[0:3]} -125 36 0 0 0.2 0.2 {}
+B 5 -152.5 57.5 -147.5 62.5 {name=retimer_delay_code[0:3] dir=in}
+L 4 -150 60 -130 60 {}
+T {retimer_delay_code[0:3]} -125 56 0 0 0.2 0.2 {}
+B 5 -152.5 77.5 -147.5 82.5 {name=async_delay_offset dir=in}
+L 4 -150 80 -130 80 {}
+T {async_delay_offset} -125 76 0 0 0.2 0.2 {}
+B 5 -152.5 97.5 -147.5 102.5 {name=sample_delay_offset dir=in}
+L 4 -150 100 -130 100 {}
+T {sample_delay_offset} -125 96 0 0 0.2 0.2 {}
+B 5 -152.5 117.5 -147.5 122.5 {name=retimer_delay_offset dir=in}
+L 4 -150 120 -130 120 {}
+T {retimer_delay_offset} -125 116 0 0 0.2 0.2 {}

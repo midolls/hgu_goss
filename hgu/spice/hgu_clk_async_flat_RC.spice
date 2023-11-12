@@ -1,6 +1,6 @@
 * NGSPICE file created from hgu_clk_async_flat.ext - technology: sky130A
 
-.subckt hgu_clk_async_flat sample_clk eob ready delay_offset async_clk_sar async_resetb_delay_ctrl_code[2]
+.subckt hgu_clk_async_RC sample_clk eob ready delay_offset async_clk_sar async_resetb_delay_ctrl_code[2]
 + async_resetb_delay_ctrl_code[1] async_setb_delay_ctrl_code[3] async_setb_delay_ctrl_code[1]
 + async_setb_delay_ctrl_code[2] async_resetb_delay_ctrl_code[0] async_resetb_delay_ctrl_code[3]
 + async_setb_delay_ctrl_code[0] vss vdd

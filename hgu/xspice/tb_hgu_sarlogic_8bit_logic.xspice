@@ -1,0 +1,74 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+** sch_path: /foss/designs/hgu_goss/hgu/tb/tb_hgu_sarlogic_8bit_logic.sch
+**.subckt tb_hgu_sarlogic_8bit_logic
+**** begin user architecture code
+*.tran 10ps 310ns
+**** end user architecture code
+**.ends
+* expanding   symbol:  ../xschem/hgu_sarlogic_8bit_logic.sym # of pins=9
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_8bit_logic.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_8bit_logic.sch
+*.ipin clk_sar
+*.ipin VDD
+*.ipin VSS
+*.ipin comparator_out
+*.ipin reset
+*.opin EOB
+*.opin D_0_,D_1_,D_2_,D_3_,D_4_,D_5_,D_6_,D_7_
+*.opin check_0_,check_1_,check_2_,check_3_,check_4_,check_5_,check_6_
+*.ipin sel_bit_0_,sel_bit_1_
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym # of pins=7
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sch
+*.ipin
+*+ sar_logic_0_,sar_logic_1_,sar_logic_2_,sar_logic_3_,sar_logic_4_,sar_logic_5_,sar_logic_6_,sar_logic_7_
+*.opin
+*+ sar_retimer_0_,sar_retimer_1_,sar_retimer_2_,sar_retimer_3_,sar_retimer_4_,sar_retimer_5_,sar_retimer_6_,sar_retimer_7_
+*.ipin eob
+*.ipin VDD
+*.ipin VSS
+*.ipin delay_code_0_,delay_code_1_,delay_code_2_,delay_code_3_
+*.ipin delay_offset
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sym # of pins=6
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sch
+*.ipin IN
+*.ipin VDD
+*.ipin VSS
+*.opin OUT
+*.ipin code_0_,code_1_,code_2_,code_3_
+*.ipin code_offset
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sch
+*.ipin SW
+*.ipin VSS
+*.iopin DELAY_SIGNAL
+*.iopin floating
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sch
+*.ipin SW
+*.ipin VDD
+*.iopin DELAY_SIGNAL
+*.iopin floating
+* expanding   symbol:
+*+  /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sym # of pins=3
+** sym_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sym
+** sch_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sch
+*.ipin VDD
+*.ipin input_stack
+*.iopin output_stack
+* expanding   symbol:
+*+  /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sym # of pins=3
+** sym_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sym
+** sch_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sch
+*.ipin VSS
+*.ipin input_stack
+*.iopin output_stack
+
+.end

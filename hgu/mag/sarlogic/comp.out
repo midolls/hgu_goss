@@ -102,31 +102,6 @@ A                                          |A
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__buf_16 and sky130_fd_sc_hd__buf_16 are equivalent.
 
-Class sky130_fd_sc_hd__buf_2 (0):  Merged 2 parallel devices.
-Class sky130_fd_sc_hd__buf_2 (1):  Merged 2 parallel devices.
-Subcircuit summary:
-Circuit 1: sky130_fd_sc_hd__buf_2          |Circuit 2: sky130_fd_sc_hd__buf_2          
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_hvt (3->2)         |sky130_fd_pr__pfet_01v8_hvt (3->2)         
-sky130_fd_pr__nfet_01v8 (3->2)             |sky130_fd_pr__nfet_01v8 (3->2)             
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 7                          |Number of nets: 7                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_sc_hd__buf_2          |Circuit 2: sky130_fd_sc_hd__buf_2          
--------------------------------------------|-------------------------------------------
-X                                          |X                                          
-VGND                                       |VGND                                       
-VNB                                        |VNB                                        
-A                                          |A                                          
-VPWR                                       |VPWR                                       
-VPB                                        |VPB                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_sc_hd__buf_2 and sky130_fd_sc_hd__buf_2 are equivalent.
-
 Subcircuit summary:
 Circuit 1: sky130_fd_sc_hd__dfbbp_1        |Circuit 2: sky130_fd_sc_hd__dfbbp_1        
 -------------------------------------------|-------------------------------------------
@@ -210,15 +185,14 @@ Device classes sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 are equivalent.
 Subcircuit summary:
 Circuit 1: hgu_sarlogic_8bit_logic         |Circuit 2: hgu_sarlogic_8bit_logic         
 -------------------------------------------|-------------------------------------------
-sky130_fd_sc_hd__buf_1 (2)                 |sky130_fd_sc_hd__buf_1 (2)                 
-sky130_fd_sc_hd__buf_4 (1)                 |sky130_fd_sc_hd__buf_4 (1)                 
+sky130_fd_sc_hd__buf_1 (3)                 |sky130_fd_sc_hd__buf_1 (3)                 
+sky130_fd_sc_hd__buf_4 (3)                 |sky130_fd_sc_hd__buf_4 (3)                 
 sky130_fd_sc_hd__buf_16 (1)                |sky130_fd_sc_hd__buf_16 (1)                
-sky130_fd_sc_hd__buf_2 (1)                 |sky130_fd_sc_hd__buf_2 (1)                 
 sky130_fd_sc_hd__dfbbp_1 (18)              |sky130_fd_sc_hd__dfbbp_1 (18)              
 sky130_fd_sc_hd__mux4_4 (1)                |sky130_fd_sc_hd__mux4_4 (1)                
 sky130_fd_sc_hd__inv_1 (1)                 |sky130_fd_sc_hd__inv_1 (1)                 
-Number of devices: 25                      |Number of devices: 25                      
-Number of nets: 50                         |Number of nets: 50                         
+Number of devices: 27                      |Number of devices: 27                      
+Number of nets: 52                         |Number of nets: 52                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
@@ -229,7 +203,6 @@ eob                                        |EOB
 check[2]                                   |check[2]                                   
 check[1]                                   |check[1]                                   
 check[0]                                   |check[0]                                   
-comparator_out                             |comparator_out                             
 check[4]                                   |check[4]                                   
 check[5]                                   |check[5]                                   
 check[6]                                   |check[6]                                   
@@ -246,6 +219,7 @@ VSS                                        |VSS
 D[7]                                       |D[7]                                       
 sel_bit[0]                                 |sel_bit[0]                                 
 sel_bit[1]                                 |sel_bit[1]                                 
+comparator_out                             |comparator_out                             
 clk_sar                                    |clk_sar                                    
 reset                                      |reset                                      
 ---------------------------------------------------------------------------------------
