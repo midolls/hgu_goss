@@ -1,0 +1,49 @@
+* NGSPICE file created from hgu_tah.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_YCY3T5 a_63_n275# a_n159_n301# a_33_n301# li_233_n427#
++ a_n63_n301# a_129_n301# a_n323_n427# a_n221_n275# a_n129_n275#
+X0 a_n221_n275# a_129_n301# a_63_n275# a_n323_n427# sky130_fd_pr__nfet_01v8 ad=0.853 pd=6.12 as=0.454 ps=3.08 w=2.75 l=0.15
+X1 a_63_n275# a_33_n301# a_n221_n275# a_n323_n427# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=0.454 ps=3.08 w=2.75 l=0.15
+X2 a_n129_n275# a_n159_n301# a_n221_n275# a_n323_n427# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=0.853 ps=6.12 w=2.75 l=0.15
+X3 a_n221_n275# a_n63_n301# a_n129_n275# a_n323_n427# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=0.454 ps=3.08 w=2.75 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_UJB66J a_n125_n550# a_33_n576# a_63_n550# w_n399_n741#
++ a_n63_n576#
+X0 a_n33_n550# a_n63_n576# a_n125_n550# w_n399_n741# sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=1.69 ps=11.7 w=5.5 l=0.15
+X1 a_63_n550# a_33_n576# a_n33_n550# w_n399_n741# sky130_fd_pr__pfet_01v8 ad=1.71 pd=11.6 as=0.908 ps=5.83 w=5.5 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_UJKTUG a_129_n576# a_159_n550# a_n159_n576# a_33_n576#
++ a_n221_n550# a_n129_n550# a_n63_n576# w_n359_n787#
+X0 a_n33_n550# a_n63_n576# a_n129_n550# w_n359_n787# sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
+X1 a_159_n550# a_129_n576# a_n129_n550# w_n359_n787# sky130_fd_pr__pfet_01v8 ad=1.71 pd=11.6 as=0.908 ps=5.83 w=5.5 l=0.15
+X2 a_n129_n550# a_33_n576# a_n33_n550# w_n359_n787# sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
+X3 a_n129_n550# a_n159_n576# a_n221_n550# w_n359_n787# sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=1.71 ps=11.6 w=5.5 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_5AY3TR a_33_n301# a_n33_n275# a_n63_n301# a_n125_n275#
++ a_n145_448#
+X0 a_n33_n275# a_33_n301# a_n33_n275# a_n145_448# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=1.76 ps=12.3 w=2.75 l=0.15
+X1 a_n33_n275# a_n63_n301# a_n125_n275# a_n145_448# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=0.853 ps=6.12 w=2.75 l=0.15
+.ends
+
+.subckt hgu_tah vip sw_n sw tah_vp tah_vn vin VDD
+Xsky130_fd_pr__nfet_01v8_YCY3T5_0 vin sw sw sky130_fd_pr__pfet_01v8_UJKTUG_1/VSUBS
++ sw sw sky130_fd_pr__pfet_01v8_UJKTUG_1/VSUBS tah_vn vin sky130_fd_pr__nfet_01v8_YCY3T5
+Xsky130_fd_pr__nfet_01v8_YCY3T5_1 vip sw sw sky130_fd_pr__pfet_01v8_UJKTUG_1/VSUBS
++ sw sw sky130_fd_pr__pfet_01v8_UJKTUG_1/VSUBS tah_vp vip sky130_fd_pr__nfet_01v8_YCY3T5
+Xsky130_fd_pr__pfet_01v8_UJB66J_0 sky130_fd_pr__pfet_01v8_UJKTUG_1/a_159_n550# sw
++ tah_vn VDD sw sky130_fd_pr__pfet_01v8_UJB66J
+Xsky130_fd_pr__pfet_01v8_UJB66J_1 sky130_fd_pr__pfet_01v8_UJKTUG_0/a_159_n550# sw
++ tah_vp VDD sw sky130_fd_pr__pfet_01v8_UJB66J
+Xsky130_fd_pr__pfet_01v8_UJKTUG_0 sw_n sky130_fd_pr__pfet_01v8_UJKTUG_0/a_159_n550#
++ sw_n sw_n tah_vp vip sw_n VDD sky130_fd_pr__pfet_01v8_UJKTUG
+Xsky130_fd_pr__pfet_01v8_UJKTUG_1 sw_n sky130_fd_pr__pfet_01v8_UJKTUG_1/a_159_n550#
++ sw_n sw_n tah_vn vin sw_n VDD sky130_fd_pr__pfet_01v8_UJKTUG
+Xsky130_fd_pr__nfet_01v8_5AY3TR_0 sw_n tah_vp sw_n tah_vp sky130_fd_pr__pfet_01v8_UJKTUG_1/VSUBS
++ sky130_fd_pr__nfet_01v8_5AY3TR
+Xsky130_fd_pr__nfet_01v8_5AY3TR_1 sw_n tah_vn sw_n tah_vn sky130_fd_pr__pfet_01v8_UJKTUG_1/VSUBS
++ sky130_fd_pr__nfet_01v8_5AY3TR
+.ends
+
