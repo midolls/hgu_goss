@@ -1,0 +1,102 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Flattening unmatched subcell sky130_fd_sc_hd__dfbbp_1 in circuit hgu_sarlogic_retimer (1)(8 instances)
+Flattening unmatched subcell hgu_delay_no_code in circuit hgu_sarlogic_retimer (1)(1 instance)
+Flattening unmatched subcell hgu_sw_cap in circuit hgu_sarlogic_retimer (1)(8 instances)
+Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_sarlogic_retimer (1)(9 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_sarlogic_retimer (1)(2 instances)
+Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_sarlogic_retimer (1)(1 instance)
+Flattening unmatched subcell hgu_nfet_hvt_stack_in_delay in circuit hgu_sarlogic_retimer (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_2 in circuit hgu_sarlogic_retimer (1)(1 instance)
+
+Class hgu_sarlogic_retimer_flat (0):  Merged 15 parallel devices.
+Class hgu_sarlogic_retimer (1):  Merged 13 parallel devices.
+Subcircuit summary:
+Circuit 1: hgu_sarlogic_retimer_flat       |Circuit 2: hgu_sarlogic_retimer            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (193->187)         |sky130_fd_pr__nfet_01v8 (192->187)         
+sky130_fd_pr__pfet_01v8_hvt (175->173)     |sky130_fd_pr__pfet_01v8_hvt (174->173)     
+sky130_fd_pr__pfet_01v8 (9->2)             |sky130_fd_pr__pfet_01v8 (9->2)             
+Number of devices: 362                     |Number of devices: 362                     
+Number of nets: 218                        |Number of nets: 218                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: hgu_sarlogic_retimer_flat       |Circuit 2: hgu_sarlogic_retimer            
+-------------------------------------------|-------------------------------------------
+delay_code[0]                              |delay_code[0]                              
+delay_code[2]                              |delay_code[2]                              
+delay_code[1]                              |delay_code[1]                              
+eob                                        |eob                                        
+VDD                                        |VDD                                        
+sar_logic[0]                               |sar_logic[0]                               
+sar_logic[1]                               |sar_logic[1]                               
+sar_logic[4]                               |sar_logic[4]                               
+sar_logic[5]                               |sar_logic[5]                               
+sar_logic[7]                               |sar_logic[7]                               
+sar_logic[2]                               |sar_logic[2]                               
+sar_logic[3]                               |sar_logic[3]                               
+sar_logic[6]                               |sar_logic[6]                               
+sar_retimer[4]                             |sar_retimer[4]                             
+sar_retimer[5]                             |sar_retimer[5]                             
+sar_retimer[6]                             |sar_retimer[6]                             
+sar_retimer[7]                             |sar_retimer[7]                             
+sar_retimer[0]                             |sar_retimer[0]                             
+sar_retimer[1]                             |sar_retimer[1]                             
+sar_retimer[2]                             |sar_retimer[2]                             
+sar_retimer[3]                             |sar_retimer[3]                             
+delay_code[3]                              |delay_code[3]                              
+VSS                                        |VSS                                        
+delay_offset                               |delay_offset                               
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes hgu_sarlogic_retimer_flat and hgu_sarlogic_retimer are equivalent.
+
+Final result: Circuits match uniquely.
+.

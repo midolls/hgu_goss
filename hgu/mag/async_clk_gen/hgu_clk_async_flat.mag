@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699343303
+timestamp 1699539464
 << nwell >>
 rect -6309 2165 -103 2382
 rect -6309 1804 -48 2165
@@ -16325,118 +16325,70 @@ flabel metal1 -6255 -593 -1889 -565 0 FreeSans 320 0 0 0 async_setb_delay_ctrl_c
 port 16 nsew
 flabel metal1 -6256 -649 -4315 -621 0 FreeSans 320 0 0 0 async_setb_delay_ctrl_code[2]
 port 18 nsew
-flabel metal1 -6825 -2029 -6157 -1982 0 FreeSans 320 0 0 0 x2.IN
-flabel metal1 -349 -2026 -167 -1980 0 FreeSans 320 0 0 0 x2.OUT
-flabel metal1 -6862 -2399 -6724 -2365 0 FreeSans 320 0 0 0 x2.code[3]
-flabel metal1 -1947 -1831 -1889 -654 0 FreeSans 320 0 0 0 x2.code[1]
-flabel metal1 -4373 -1831 -4315 -654 0 FreeSans 320 0 0 0 x2.code[2]
-flabel metal4 -6756 -3334 -6338 -2724 0 FreeSans 320 0 0 0 x2.VDD
-flabel metal4 -6728 -2114 -6352 -677 0 FreeSans 320 0 0 0 x2.VSS
-flabel metal2 -6398 -1826 -5962 -1780 0 FreeSans 320 0 0 0 x2.code_offset
-flabel metal1 -1091 -1834 -1032 -653 0 FreeSans 320 0 0 0 x2.code[0]
-flabel metal1 -6214 -2469 -6180 -2435 0 FreeSans 320 0 0 0 x2.x8.input_stack
-flabel nwell -6170 -3278 -6136 -3218 0 FreeSans 320 0 0 0 x2.x8.vdd
-flabel metal1 -6176 -2528 -6130 -2516 0 FreeSans 320 0 0 0 x2.x8.output_stack
-flabel poly -6237 -1808 -6135 -1778 0 FreeSans 320 0 0 0 x2.x9.input_stack
-flabel metal1 -6123 -785 -6089 -725 0 FreeSans 320 0 0 0 x2.x9.vss
-flabel metal1 -6129 -1763 -6083 -1751 0 FreeSans 320 0 0 0 x2.x9.output_stack
-flabel locali -6636 -2469 -6602 -2435 0 FreeSans 340 0 0 0 x2.x10.Y
-flabel locali -6636 -2401 -6602 -2367 0 FreeSans 340 0 0 0 x2.x10.Y
-flabel locali -6728 -2401 -6694 -2367 0 FreeSans 340 0 0 0 x2.x10.A
-flabel metal1 -6771 -2163 -6737 -2129 0 FreeSans 200 0 0 0 x2.x10.VGND
-flabel metal1 -6771 -2707 -6737 -2673 0 FreeSans 200 0 0 0 x2.x10.VPWR
-rlabel comment -6800 -2146 -6800 -2146 2 x2.x10.inv_1
-rlabel metal1 -6800 -2194 -6524 -2098 5 x2.x10.VGND
-rlabel metal1 -6800 -2738 -6524 -2642 5 x2.x10.VPWR
-flabel pwell -6771 -2163 -6737 -2129 0 FreeSans 200 0 0 0 x2.x10.VNB
-flabel nwell -6771 -2707 -6737 -2673 0 FreeSans 200 0 0 0 x2.x10.VPB
-flabel locali -6538 -2469 -6504 -2435 0 FreeSans 340 0 0 0 x2.x11.Y
-flabel locali -6538 -2401 -6504 -2367 0 FreeSans 340 0 0 0 x2.x11.Y
-flabel locali -6446 -2401 -6412 -2367 0 FreeSans 340 0 0 0 x2.x11.A
-flabel metal1 -6403 -2163 -6369 -2129 0 FreeSans 200 0 0 0 x2.x11.VGND
-flabel metal1 -6403 -2707 -6369 -2673 0 FreeSans 200 0 0 0 x2.x11.VPWR
-rlabel comment -6340 -2146 -6340 -2146 8 x2.x11.inv_1
-rlabel metal1 -6616 -2194 -6340 -2098 5 x2.x11.VGND
-rlabel metal1 -6616 -2738 -6340 -2642 5 x2.x11.VPWR
-flabel pwell -6403 -2163 -6369 -2129 0 FreeSans 200 0 0 0 x2.x11.VNB
-flabel nwell -6403 -2707 -6369 -2673 0 FreeSans 200 0 0 0 x2.x11.VPB
-flabel metal1 -5572 -2226 -5538 -2192 0 FreeSans 320 0 0 0 x2.x6.SW
-flabel nwell -6128 -3322 -5458 -3254 0 FreeSans 320 0 0 0 x2.x6.VDD
-flabel pdiff -5540 -2145 -5482 -2061 0 FreeSans 320 0 0 0 x2.x6.delay_signal
-flabel metal4 -6128 -3322 -6027 -3253 0 FreeSans 320 0 0 0 x2.x6.VDD
-flabel via3 -6027 -2159 -5963 -2095 0 FreeSans 320 0 0 0 x2.x6.floating
-flabel viali -5219 -1825 -5185 -1791 0 FreeSans 320 0 0 0 x2.x7.SW
-flabel ndiff -5187 -1947 -5129 -1863 0 FreeSans 320 0 0 0 x2.x7.delay_signal
-flabel metal4 -5780 -754 -5108 -686 0 FreeSans 320 0 0 0 x2.x7.VSS
-flabel via3 -5676 -1914 -5612 -1850 0 FreeSans 320 0 0 0 x2.x7.floating
-flabel viali -4487 -1825 -4453 -1791 0 FreeSans 320 0 0 0 x2.x4[3].SW
-flabel ndiff -4455 -1947 -4397 -1863 0 FreeSans 320 0 0 0 x2.x4[3].delay_signal
-flabel metal4 -5048 -754 -4376 -686 0 FreeSans 320 0 0 0 x2.x4[3].VSS
-flabel via3 -4944 -1914 -4880 -1850 0 FreeSans 320 0 0 0 x2.x4[3].floating
-flabel metal1 -4714 -2229 -4680 -2195 0 FreeSans 320 0 0 0 x2.x5[6].SW
-flabel nwell -4794 -3325 -4124 -3257 0 FreeSans 320 0 0 0 x2.x5[6].VDD
-flabel pdiff -4770 -2148 -4712 -2064 0 FreeSans 320 0 0 0 x2.x5[6].delay_signal
-flabel metal4 -4225 -3325 -4124 -3256 0 FreeSans 320 0 0 0 x2.x5[6].VDD
-flabel via3 -4289 -2162 -4225 -2098 0 FreeSans 320 0 0 0 x2.x5[6].floating
-flabel metal1 -4840 -2229 -4806 -2195 0 FreeSans 320 0 0 0 x2.x5[7].SW
-flabel nwell -5396 -3325 -4726 -3257 0 FreeSans 320 0 0 0 x2.x5[7].VDD
-flabel pdiff -4808 -2148 -4750 -2064 0 FreeSans 320 0 0 0 x2.x5[7].delay_signal
-flabel metal4 -5396 -3325 -5295 -3256 0 FreeSans 320 0 0 0 x2.x5[7].VDD
-flabel via3 -5295 -2162 -5231 -2098 0 FreeSans 320 0 0 0 x2.x5[7].floating
-flabel viali -4365 -1825 -4331 -1791 0 FreeSans 320 0 0 0 x2.x4[2].SW
-flabel ndiff -4421 -1947 -4363 -1863 0 FreeSans 320 0 0 0 x2.x4[2].delay_signal
-flabel metal4 -4442 -754 -3770 -686 0 FreeSans 320 0 0 0 x2.x4[2].VSS
-flabel via3 -3938 -1914 -3874 -1850 0 FreeSans 320 0 0 0 x2.x4[2].floating
-flabel metal1 -3628 -2229 -3594 -2195 0 FreeSans 320 0 0 0 x2.x5[5].SW
-flabel nwell -4184 -3325 -3514 -3257 0 FreeSans 320 0 0 0 x2.x5[5].VDD
-flabel pdiff -3596 -2148 -3538 -2064 0 FreeSans 320 0 0 0 x2.x5[5].delay_signal
-flabel metal4 -4184 -3325 -4083 -3256 0 FreeSans 320 0 0 0 x2.x5[5].VDD
-flabel via3 -4083 -2162 -4019 -2098 0 FreeSans 320 0 0 0 x2.x5[5].floating
-flabel viali -3275 -1825 -3241 -1791 0 FreeSans 320 0 0 0 x2.x4[1].SW
-flabel ndiff -3243 -1947 -3185 -1863 0 FreeSans 320 0 0 0 x2.x4[1].delay_signal
-flabel metal4 -3836 -754 -3164 -686 0 FreeSans 320 0 0 0 x2.x4[1].VSS
-flabel via3 -3732 -1914 -3668 -1850 0 FreeSans 320 0 0 0 x2.x4[1].floating
-flabel metal1 -3502 -2229 -3468 -2195 0 FreeSans 320 0 0 0 x2.x5[4].SW
-flabel nwell -3582 -3325 -2912 -3257 0 FreeSans 320 0 0 0 x2.x5[4].VDD
-flabel pdiff -3558 -2148 -3500 -2064 0 FreeSans 320 0 0 0 x2.x5[4].delay_signal
-flabel metal4 -3013 -3325 -2912 -3256 0 FreeSans 320 0 0 0 x2.x5[4].VDD
-flabel via3 -3077 -2162 -3013 -2098 0 FreeSans 320 0 0 0 x2.x5[4].floating
-flabel viali -3153 -1825 -3119 -1791 0 FreeSans 320 0 0 0 x2.x4[0].SW
-flabel ndiff -3209 -1947 -3151 -1863 0 FreeSans 320 0 0 0 x2.x4[0].delay_signal
-flabel metal4 -3230 -754 -2558 -686 0 FreeSans 320 0 0 0 x2.x4[0].VSS
-flabel via3 -2726 -1914 -2662 -1850 0 FreeSans 320 0 0 0 x2.x4[0].floating
-flabel metal1 -2416 -2229 -2382 -2195 0 FreeSans 320 0 0 0 x2.x5[3].SW
-flabel nwell -2972 -3325 -2302 -3257 0 FreeSans 320 0 0 0 x2.x5[3].VDD
-flabel pdiff -2384 -2148 -2326 -2064 0 FreeSans 320 0 0 0 x2.x5[3].delay_signal
-flabel metal4 -2972 -3325 -2871 -3256 0 FreeSans 320 0 0 0 x2.x5[3].VDD
-flabel via3 -2871 -2162 -2807 -2098 0 FreeSans 320 0 0 0 x2.x5[3].floating
-flabel viali -1937 -1825 -1903 -1791 0 FreeSans 320 0 0 0 x2.x3[1].SW
-flabel ndiff -1905 -1947 -1847 -1863 0 FreeSans 320 0 0 0 x2.x3[1].delay_signal
-flabel metal4 -2498 -754 -1826 -686 0 FreeSans 320 0 0 0 x2.x3[1].VSS
-flabel via3 -2394 -1914 -2330 -1850 0 FreeSans 320 0 0 0 x2.x3[1].floating
-flabel metal1 -2290 -2229 -2256 -2195 0 FreeSans 320 0 0 0 x2.x5[2].SW
-flabel nwell -2370 -3325 -1700 -3257 0 FreeSans 320 0 0 0 x2.x5[2].VDD
-flabel pdiff -2346 -2148 -2288 -2064 0 FreeSans 320 0 0 0 x2.x5[2].delay_signal
-flabel metal4 -1801 -3325 -1700 -3256 0 FreeSans 320 0 0 0 x2.x5[2].VDD
-flabel via3 -1865 -2162 -1801 -2098 0 FreeSans 320 0 0 0 x2.x5[2].floating
-flabel viali -1815 -1825 -1781 -1791 0 FreeSans 320 0 0 0 x2.x3[0].SW
-flabel ndiff -1871 -1947 -1813 -1863 0 FreeSans 320 0 0 0 x2.x3[0].delay_signal
-flabel metal4 -1892 -754 -1220 -686 0 FreeSans 320 0 0 0 x2.x3[0].VSS
-flabel via3 -1388 -1914 -1324 -1850 0 FreeSans 320 0 0 0 x2.x3[0].floating
-flabel metal1 -1204 -2229 -1170 -2195 0 FreeSans 320 0 0 0 x2.x5[1].SW
-flabel nwell -1760 -3325 -1090 -3257 0 FreeSans 320 0 0 0 x2.x5[1].VDD
-flabel pdiff -1172 -2148 -1114 -2064 0 FreeSans 320 0 0 0 x2.x5[1].delay_signal
-flabel metal4 -1760 -3325 -1659 -3256 0 FreeSans 320 0 0 0 x2.x5[1].VDD
-flabel via3 -1659 -2162 -1595 -2098 0 FreeSans 320 0 0 0 x2.x5[1].floating
-flabel viali -1081 -1825 -1047 -1791 0 FreeSans 320 0 0 0 x2.x2.SW
-flabel ndiff -1137 -1947 -1079 -1863 0 FreeSans 320 0 0 0 x2.x2.delay_signal
-flabel metal4 -1158 -754 -486 -686 0 FreeSans 320 0 0 0 x2.x2.VSS
-flabel via3 -654 -1914 -590 -1850 0 FreeSans 320 0 0 0 x2.x2.floating
-flabel metal1 -1078 -2229 -1044 -2195 0 FreeSans 320 0 0 0 x2.x5[0].SW
-flabel nwell -1158 -3325 -488 -3257 0 FreeSans 320 0 0 0 x2.x5[0].VDD
-flabel pdiff -1134 -2148 -1076 -2064 0 FreeSans 320 0 0 0 x2.x5[0].delay_signal
-flabel metal4 -589 -3325 -488 -3256 0 FreeSans 320 0 0 0 x2.x5[0].VDD
-flabel via3 -653 -2162 -589 -2098 0 FreeSans 320 0 0 0 x2.x5[0].floating
+flabel locali 585 996 660 1042 0 FreeSans 400 0 0 0 x27.RESET_B
+flabel locali 2459 760 2493 794 7 FreeSans 400 0 0 0 x27.VGND
+flabel locali 2459 998 2493 1032 0 FreeSans 400 0 0 0 x27.CLK
+flabel locali 2459 1066 2493 1100 0 FreeSans 400 0 0 0 x27.CLK
+flabel locali 1723 930 1757 964 0 FreeSans 400 0 0 0 x27.SET_B
+flabel locali 161 862 195 896 0 FreeSans 400 0 0 0 x27.Q
+flabel locali 161 1134 195 1168 0 FreeSans 400 0 0 0 x27.Q
+flabel locali 161 1202 195 1236 0 FreeSans 400 0 0 0 x27.Q
+flabel locali 2459 1304 2493 1338 7 FreeSans 400 0 0 0 x27.VPWR
+flabel locali 2091 998 2125 1032 0 FreeSans 200 0 0 0 x27.D
+flabel locali 2091 1066 2125 1100 0 FreeSans 200 0 0 0 x27.D
+flabel locali 441 1202 475 1236 0 FreeSans 400 0 0 0 x27.Q_N
+flabel locali 441 1134 475 1168 0 FreeSans 400 0 0 0 x27.Q_N
+flabel locali 441 862 475 896 0 FreeSans 400 0 0 0 x27.Q_N
+flabel metal1 2459 760 2493 794 0 FreeSans 200 0 0 0 x27.VGND
+flabel metal1 2459 1304 2493 1338 0 FreeSans 200 0 0 0 x27.VPWR
+flabel nwell 2459 1304 2493 1338 7 FreeSans 400 0 0 0 x27.VPB
+flabel nwell 2476 1321 2476 1321 0 FreeSans 200 0 0 0 x27.VPB
+flabel pwell 2459 760 2493 794 7 FreeSans 400 0 0 0 x27.VNB
+flabel pwell 2476 777 2476 777 0 FreeSans 200 0 0 0 x27.VNB
+rlabel comment 2523 777 2523 777 6 x27.dfbbp_1
+rlabel locali 956 924 1031 990 1 x27.SET_B
+rlabel metal1 975 961 1033 970 1 x27.SET_B
+rlabel metal1 975 924 1033 933 1 x27.SET_B
+rlabel metal1 1711 961 1769 970 1 x27.SET_B
+rlabel metal1 975 933 1769 961 1 x27.SET_B
+rlabel metal1 1711 924 1769 933 1 x27.SET_B
+rlabel metal1 131 729 2523 825 1 x27.VGND
+rlabel metal1 131 1273 2523 1369 1 x27.VPWR
+flabel locali 39 1066 73 1100 0 FreeSans 340 0 0 0 x10.Y
+flabel locali 39 998 73 1032 0 FreeSans 340 0 0 0 x10.Y
+flabel locali -53 998 -19 1032 0 FreeSans 340 0 0 0 x10.A
+flabel metal1 -96 760 -62 794 0 FreeSans 200 0 0 0 x10.VGND
+flabel metal1 -96 1304 -62 1338 0 FreeSans 200 0 0 0 x10.VPWR
+rlabel comment -125 777 -125 777 4 x10.inv_1
+rlabel metal1 -125 729 151 825 1 x10.VGND
+rlabel metal1 -125 1273 151 1369 1 x10.VPWR
+flabel pwell -96 760 -62 794 0 FreeSans 200 0 0 0 x10.VNB
+flabel nwell -96 1304 -62 1338 0 FreeSans 200 0 0 0 x10.VPB
+flabel locali 39 -2092 73 -2058 0 FreeSans 340 0 0 0 x9.Y
+flabel locali 39 -2024 73 -1990 0 FreeSans 340 0 0 0 x9.Y
+flabel locali -53 -2024 -19 -1990 0 FreeSans 340 0 0 0 x9.A
+flabel metal1 -96 -1786 -62 -1752 0 FreeSans 200 0 0 0 x9.VGND
+flabel metal1 -96 -2330 -62 -2296 0 FreeSans 200 0 0 0 x9.VPWR
+rlabel comment -125 -1769 -125 -1769 2 x9.inv_1
+rlabel metal1 -125 -1817 151 -1721 5 x9.VGND
+rlabel metal1 -125 -2361 151 -2265 5 x9.VPWR
+flabel pwell -96 -1786 -62 -1752 0 FreeSans 200 0 0 0 x9.VNB
+flabel nwell -96 -2330 -62 -2296 0 FreeSans 200 0 0 0 x9.VPB
+flabel metal1 898 2023 932 2057 0 FreeSans 200 0 0 0 x8.VGND
+flabel metal1 898 1479 932 1513 0 FreeSans 200 0 0 0 x8.VPWR
+flabel locali 1542 1717 1576 1751 0 FreeSans 250 0 0 0 x8.S
+flabel locali 1450 1717 1484 1751 0 FreeSans 250 0 0 0 x8.S
+flabel locali 1358 1853 1392 1887 0 FreeSans 250 0 0 0 x8.A1
+flabel locali 1358 1785 1392 1819 0 FreeSans 250 0 0 0 x8.A1
+flabel locali 1266 1785 1300 1819 0 FreeSans 250 0 0 0 x8.A0
+flabel locali 898 1921 932 1955 0 FreeSans 250 0 0 0 x8.X
+flabel locali 898 1649 932 1683 0 FreeSans 250 0 0 0 x8.X
+flabel locali 898 1581 932 1615 0 FreeSans 250 0 0 0 x8.X
+flabel nwell 942 1479 976 1513 0 FreeSans 250 0 0 0 x8.VPB
+flabel pwell 952 2023 986 2057 0 FreeSans 250 0 0 0 x8.VNB
+rlabel comment 868 2040 868 2040 2 x8.mux2_1
+rlabel metal1 868 1992 1696 2088 5 x8.VGND
+rlabel metal1 868 1448 1696 1544 5 x8.VPWR
 flabel metal1 -6825 992 -6157 1039 0 FreeSans 320 0 0 0 x4.IN
 flabel metal1 -349 990 -167 1036 0 FreeSans 320 0 0 0 x4.OUT
 flabel metal1 -6862 1375 -6724 1409 0 FreeSans 320 0 0 0 x4.code[3]
@@ -16549,70 +16501,6 @@ flabel nwell -1158 2267 -488 2335 0 FreeSans 320 0 0 0 x4.x5[0].VDD
 flabel pdiff -1134 1074 -1076 1158 0 FreeSans 320 0 0 0 x4.x5[0].delay_signal
 flabel metal4 -589 2266 -488 2335 0 FreeSans 320 0 0 0 x4.x5[0].VDD
 flabel via3 -653 1108 -589 1172 0 FreeSans 320 0 0 0 x4.x5[0].floating
-flabel locali 585 996 660 1042 0 FreeSans 400 0 0 0 x27.RESET_B
-flabel locali 2459 760 2493 794 7 FreeSans 400 0 0 0 x27.VGND
-flabel locali 2459 998 2493 1032 0 FreeSans 400 0 0 0 x27.CLK
-flabel locali 2459 1066 2493 1100 0 FreeSans 400 0 0 0 x27.CLK
-flabel locali 1723 930 1757 964 0 FreeSans 400 0 0 0 x27.SET_B
-flabel locali 161 862 195 896 0 FreeSans 400 0 0 0 x27.Q
-flabel locali 161 1134 195 1168 0 FreeSans 400 0 0 0 x27.Q
-flabel locali 161 1202 195 1236 0 FreeSans 400 0 0 0 x27.Q
-flabel locali 2459 1304 2493 1338 7 FreeSans 400 0 0 0 x27.VPWR
-flabel locali 2091 998 2125 1032 0 FreeSans 200 0 0 0 x27.D
-flabel locali 2091 1066 2125 1100 0 FreeSans 200 0 0 0 x27.D
-flabel locali 441 1202 475 1236 0 FreeSans 400 0 0 0 x27.Q_N
-flabel locali 441 1134 475 1168 0 FreeSans 400 0 0 0 x27.Q_N
-flabel locali 441 862 475 896 0 FreeSans 400 0 0 0 x27.Q_N
-flabel metal1 2459 760 2493 794 0 FreeSans 200 0 0 0 x27.VGND
-flabel metal1 2459 1304 2493 1338 0 FreeSans 200 0 0 0 x27.VPWR
-flabel nwell 2459 1304 2493 1338 7 FreeSans 400 0 0 0 x27.VPB
-flabel nwell 2476 1321 2476 1321 0 FreeSans 200 0 0 0 x27.VPB
-flabel pwell 2459 760 2493 794 7 FreeSans 400 0 0 0 x27.VNB
-flabel pwell 2476 777 2476 777 0 FreeSans 200 0 0 0 x27.VNB
-rlabel comment 2523 777 2523 777 6 x27.dfbbp_1
-rlabel locali 956 924 1031 990 1 x27.SET_B
-rlabel metal1 975 961 1033 970 1 x27.SET_B
-rlabel metal1 975 924 1033 933 1 x27.SET_B
-rlabel metal1 1711 961 1769 970 1 x27.SET_B
-rlabel metal1 975 933 1769 961 1 x27.SET_B
-rlabel metal1 1711 924 1769 933 1 x27.SET_B
-rlabel metal1 131 729 2523 825 1 x27.VGND
-rlabel metal1 131 1273 2523 1369 1 x27.VPWR
-flabel locali 39 1066 73 1100 0 FreeSans 340 0 0 0 x10.Y
-flabel locali 39 998 73 1032 0 FreeSans 340 0 0 0 x10.Y
-flabel locali -53 998 -19 1032 0 FreeSans 340 0 0 0 x10.A
-flabel metal1 -96 760 -62 794 0 FreeSans 200 0 0 0 x10.VGND
-flabel metal1 -96 1304 -62 1338 0 FreeSans 200 0 0 0 x10.VPWR
-rlabel comment -125 777 -125 777 4 x10.inv_1
-rlabel metal1 -125 729 151 825 1 x10.VGND
-rlabel metal1 -125 1273 151 1369 1 x10.VPWR
-flabel pwell -96 760 -62 794 0 FreeSans 200 0 0 0 x10.VNB
-flabel nwell -96 1304 -62 1338 0 FreeSans 200 0 0 0 x10.VPB
-flabel locali 39 -2092 73 -2058 0 FreeSans 340 0 0 0 x9.Y
-flabel locali 39 -2024 73 -1990 0 FreeSans 340 0 0 0 x9.Y
-flabel locali -53 -2024 -19 -1990 0 FreeSans 340 0 0 0 x9.A
-flabel metal1 -96 -1786 -62 -1752 0 FreeSans 200 0 0 0 x9.VGND
-flabel metal1 -96 -2330 -62 -2296 0 FreeSans 200 0 0 0 x9.VPWR
-rlabel comment -125 -1769 -125 -1769 2 x9.inv_1
-rlabel metal1 -125 -1817 151 -1721 5 x9.VGND
-rlabel metal1 -125 -2361 151 -2265 5 x9.VPWR
-flabel pwell -96 -1786 -62 -1752 0 FreeSans 200 0 0 0 x9.VNB
-flabel nwell -96 -2330 -62 -2296 0 FreeSans 200 0 0 0 x9.VPB
-flabel metal1 898 2023 932 2057 0 FreeSans 200 0 0 0 x8.VGND
-flabel metal1 898 1479 932 1513 0 FreeSans 200 0 0 0 x8.VPWR
-flabel locali 1542 1717 1576 1751 0 FreeSans 250 0 0 0 x8.S
-flabel locali 1450 1717 1484 1751 0 FreeSans 250 0 0 0 x8.S
-flabel locali 1358 1853 1392 1887 0 FreeSans 250 0 0 0 x8.A1
-flabel locali 1358 1785 1392 1819 0 FreeSans 250 0 0 0 x8.A1
-flabel locali 1266 1785 1300 1819 0 FreeSans 250 0 0 0 x8.A0
-flabel locali 898 1921 932 1955 0 FreeSans 250 0 0 0 x8.X
-flabel locali 898 1649 932 1683 0 FreeSans 250 0 0 0 x8.X
-flabel locali 898 1581 932 1615 0 FreeSans 250 0 0 0 x8.X
-flabel nwell 942 1479 976 1513 0 FreeSans 250 0 0 0 x8.VPB
-flabel pwell 952 2023 986 2057 0 FreeSans 250 0 0 0 x8.VNB
-rlabel comment 868 2040 868 2040 2 x8.mux2_1
-rlabel metal1 868 1992 1696 2088 5 x8.VGND
-rlabel metal1 868 1448 1696 1544 5 x8.VPWR
 flabel metal1 1725 2023 1759 2057 0 FreeSans 200 0 0 0 x3.VGND
 flabel metal1 1725 1479 1759 1513 0 FreeSans 200 0 0 0 x3.VPWR
 flabel locali 2369 1717 2403 1751 0 FreeSans 250 0 0 0 x3.S
@@ -16628,4 +16516,116 @@ flabel pwell 1779 2023 1813 2057 0 FreeSans 250 0 0 0 x3.VNB
 rlabel comment 1695 2040 1695 2040 2 x3.mux2_1
 rlabel metal1 1695 1992 2523 2088 5 x3.VGND
 rlabel metal1 1695 1448 2523 1544 5 x3.VPWR
+flabel metal1 -6825 -2029 -6157 -1982 0 FreeSans 320 0 0 0 x2.IN
+flabel metal1 -349 -2026 -167 -1980 0 FreeSans 320 0 0 0 x2.OUT
+flabel metal1 -6862 -2399 -6724 -2365 0 FreeSans 320 0 0 0 x2.code[3]
+flabel metal1 -1947 -1831 -1889 -654 0 FreeSans 320 0 0 0 x2.code[1]
+flabel metal1 -4373 -1831 -4315 -654 0 FreeSans 320 0 0 0 x2.code[2]
+flabel metal4 -6756 -3334 -6338 -2724 0 FreeSans 320 0 0 0 x2.VDD
+flabel metal4 -6728 -2114 -6352 -677 0 FreeSans 320 0 0 0 x2.VSS
+flabel metal2 -6398 -1826 -5962 -1780 0 FreeSans 320 0 0 0 x2.code_offset
+flabel metal1 -1091 -1834 -1032 -653 0 FreeSans 320 0 0 0 x2.code[0]
+flabel metal1 -6214 -2469 -6180 -2435 0 FreeSans 320 0 0 0 x2.x8.input_stack
+flabel nwell -6170 -3278 -6136 -3218 0 FreeSans 320 0 0 0 x2.x8.vdd
+flabel metal1 -6176 -2528 -6130 -2516 0 FreeSans 320 0 0 0 x2.x8.output_stack
+flabel poly -6237 -1808 -6135 -1778 0 FreeSans 320 0 0 0 x2.x9.input_stack
+flabel metal1 -6123 -785 -6089 -725 0 FreeSans 320 0 0 0 x2.x9.vss
+flabel metal1 -6129 -1763 -6083 -1751 0 FreeSans 320 0 0 0 x2.x9.output_stack
+flabel locali -6636 -2469 -6602 -2435 0 FreeSans 340 0 0 0 x2.x10.Y
+flabel locali -6636 -2401 -6602 -2367 0 FreeSans 340 0 0 0 x2.x10.Y
+flabel locali -6728 -2401 -6694 -2367 0 FreeSans 340 0 0 0 x2.x10.A
+flabel metal1 -6771 -2163 -6737 -2129 0 FreeSans 200 0 0 0 x2.x10.VGND
+flabel metal1 -6771 -2707 -6737 -2673 0 FreeSans 200 0 0 0 x2.x10.VPWR
+rlabel comment -6800 -2146 -6800 -2146 2 x2.x10.inv_1
+rlabel metal1 -6800 -2194 -6524 -2098 5 x2.x10.VGND
+rlabel metal1 -6800 -2738 -6524 -2642 5 x2.x10.VPWR
+flabel pwell -6771 -2163 -6737 -2129 0 FreeSans 200 0 0 0 x2.x10.VNB
+flabel nwell -6771 -2707 -6737 -2673 0 FreeSans 200 0 0 0 x2.x10.VPB
+flabel locali -6538 -2469 -6504 -2435 0 FreeSans 340 0 0 0 x2.x11.Y
+flabel locali -6538 -2401 -6504 -2367 0 FreeSans 340 0 0 0 x2.x11.Y
+flabel locali -6446 -2401 -6412 -2367 0 FreeSans 340 0 0 0 x2.x11.A
+flabel metal1 -6403 -2163 -6369 -2129 0 FreeSans 200 0 0 0 x2.x11.VGND
+flabel metal1 -6403 -2707 -6369 -2673 0 FreeSans 200 0 0 0 x2.x11.VPWR
+rlabel comment -6340 -2146 -6340 -2146 8 x2.x11.inv_1
+rlabel metal1 -6616 -2194 -6340 -2098 5 x2.x11.VGND
+rlabel metal1 -6616 -2738 -6340 -2642 5 x2.x11.VPWR
+flabel pwell -6403 -2163 -6369 -2129 0 FreeSans 200 0 0 0 x2.x11.VNB
+flabel nwell -6403 -2707 -6369 -2673 0 FreeSans 200 0 0 0 x2.x11.VPB
+flabel metal1 -5572 -2226 -5538 -2192 0 FreeSans 320 0 0 0 x2.x6.SW
+flabel nwell -6128 -3322 -5458 -3254 0 FreeSans 320 0 0 0 x2.x6.VDD
+flabel pdiff -5540 -2145 -5482 -2061 0 FreeSans 320 0 0 0 x2.x6.delay_signal
+flabel metal4 -6128 -3322 -6027 -3253 0 FreeSans 320 0 0 0 x2.x6.VDD
+flabel via3 -6027 -2159 -5963 -2095 0 FreeSans 320 0 0 0 x2.x6.floating
+flabel viali -5219 -1825 -5185 -1791 0 FreeSans 320 0 0 0 x2.x7.SW
+flabel ndiff -5187 -1947 -5129 -1863 0 FreeSans 320 0 0 0 x2.x7.delay_signal
+flabel metal4 -5780 -754 -5108 -686 0 FreeSans 320 0 0 0 x2.x7.VSS
+flabel via3 -5676 -1914 -5612 -1850 0 FreeSans 320 0 0 0 x2.x7.floating
+flabel viali -4487 -1825 -4453 -1791 0 FreeSans 320 0 0 0 x2.x4[3].SW
+flabel ndiff -4455 -1947 -4397 -1863 0 FreeSans 320 0 0 0 x2.x4[3].delay_signal
+flabel metal4 -5048 -754 -4376 -686 0 FreeSans 320 0 0 0 x2.x4[3].VSS
+flabel via3 -4944 -1914 -4880 -1850 0 FreeSans 320 0 0 0 x2.x4[3].floating
+flabel metal1 -4714 -2229 -4680 -2195 0 FreeSans 320 0 0 0 x2.x5[6].SW
+flabel nwell -4794 -3325 -4124 -3257 0 FreeSans 320 0 0 0 x2.x5[6].VDD
+flabel pdiff -4770 -2148 -4712 -2064 0 FreeSans 320 0 0 0 x2.x5[6].delay_signal
+flabel metal4 -4225 -3325 -4124 -3256 0 FreeSans 320 0 0 0 x2.x5[6].VDD
+flabel via3 -4289 -2162 -4225 -2098 0 FreeSans 320 0 0 0 x2.x5[6].floating
+flabel metal1 -4840 -2229 -4806 -2195 0 FreeSans 320 0 0 0 x2.x5[7].SW
+flabel nwell -5396 -3325 -4726 -3257 0 FreeSans 320 0 0 0 x2.x5[7].VDD
+flabel pdiff -4808 -2148 -4750 -2064 0 FreeSans 320 0 0 0 x2.x5[7].delay_signal
+flabel metal4 -5396 -3325 -5295 -3256 0 FreeSans 320 0 0 0 x2.x5[7].VDD
+flabel via3 -5295 -2162 -5231 -2098 0 FreeSans 320 0 0 0 x2.x5[7].floating
+flabel viali -4365 -1825 -4331 -1791 0 FreeSans 320 0 0 0 x2.x4[2].SW
+flabel ndiff -4421 -1947 -4363 -1863 0 FreeSans 320 0 0 0 x2.x4[2].delay_signal
+flabel metal4 -4442 -754 -3770 -686 0 FreeSans 320 0 0 0 x2.x4[2].VSS
+flabel via3 -3938 -1914 -3874 -1850 0 FreeSans 320 0 0 0 x2.x4[2].floating
+flabel metal1 -3628 -2229 -3594 -2195 0 FreeSans 320 0 0 0 x2.x5[5].SW
+flabel nwell -4184 -3325 -3514 -3257 0 FreeSans 320 0 0 0 x2.x5[5].VDD
+flabel pdiff -3596 -2148 -3538 -2064 0 FreeSans 320 0 0 0 x2.x5[5].delay_signal
+flabel metal4 -4184 -3325 -4083 -3256 0 FreeSans 320 0 0 0 x2.x5[5].VDD
+flabel via3 -4083 -2162 -4019 -2098 0 FreeSans 320 0 0 0 x2.x5[5].floating
+flabel viali -3275 -1825 -3241 -1791 0 FreeSans 320 0 0 0 x2.x4[1].SW
+flabel ndiff -3243 -1947 -3185 -1863 0 FreeSans 320 0 0 0 x2.x4[1].delay_signal
+flabel metal4 -3836 -754 -3164 -686 0 FreeSans 320 0 0 0 x2.x4[1].VSS
+flabel via3 -3732 -1914 -3668 -1850 0 FreeSans 320 0 0 0 x2.x4[1].floating
+flabel metal1 -3502 -2229 -3468 -2195 0 FreeSans 320 0 0 0 x2.x5[4].SW
+flabel nwell -3582 -3325 -2912 -3257 0 FreeSans 320 0 0 0 x2.x5[4].VDD
+flabel pdiff -3558 -2148 -3500 -2064 0 FreeSans 320 0 0 0 x2.x5[4].delay_signal
+flabel metal4 -3013 -3325 -2912 -3256 0 FreeSans 320 0 0 0 x2.x5[4].VDD
+flabel via3 -3077 -2162 -3013 -2098 0 FreeSans 320 0 0 0 x2.x5[4].floating
+flabel viali -3153 -1825 -3119 -1791 0 FreeSans 320 0 0 0 x2.x4[0].SW
+flabel ndiff -3209 -1947 -3151 -1863 0 FreeSans 320 0 0 0 x2.x4[0].delay_signal
+flabel metal4 -3230 -754 -2558 -686 0 FreeSans 320 0 0 0 x2.x4[0].VSS
+flabel via3 -2726 -1914 -2662 -1850 0 FreeSans 320 0 0 0 x2.x4[0].floating
+flabel metal1 -2416 -2229 -2382 -2195 0 FreeSans 320 0 0 0 x2.x5[3].SW
+flabel nwell -2972 -3325 -2302 -3257 0 FreeSans 320 0 0 0 x2.x5[3].VDD
+flabel pdiff -2384 -2148 -2326 -2064 0 FreeSans 320 0 0 0 x2.x5[3].delay_signal
+flabel metal4 -2972 -3325 -2871 -3256 0 FreeSans 320 0 0 0 x2.x5[3].VDD
+flabel via3 -2871 -2162 -2807 -2098 0 FreeSans 320 0 0 0 x2.x5[3].floating
+flabel viali -1937 -1825 -1903 -1791 0 FreeSans 320 0 0 0 x2.x3[1].SW
+flabel ndiff -1905 -1947 -1847 -1863 0 FreeSans 320 0 0 0 x2.x3[1].delay_signal
+flabel metal4 -2498 -754 -1826 -686 0 FreeSans 320 0 0 0 x2.x3[1].VSS
+flabel via3 -2394 -1914 -2330 -1850 0 FreeSans 320 0 0 0 x2.x3[1].floating
+flabel metal1 -2290 -2229 -2256 -2195 0 FreeSans 320 0 0 0 x2.x5[2].SW
+flabel nwell -2370 -3325 -1700 -3257 0 FreeSans 320 0 0 0 x2.x5[2].VDD
+flabel pdiff -2346 -2148 -2288 -2064 0 FreeSans 320 0 0 0 x2.x5[2].delay_signal
+flabel metal4 -1801 -3325 -1700 -3256 0 FreeSans 320 0 0 0 x2.x5[2].VDD
+flabel via3 -1865 -2162 -1801 -2098 0 FreeSans 320 0 0 0 x2.x5[2].floating
+flabel viali -1815 -1825 -1781 -1791 0 FreeSans 320 0 0 0 x2.x3[0].SW
+flabel ndiff -1871 -1947 -1813 -1863 0 FreeSans 320 0 0 0 x2.x3[0].delay_signal
+flabel metal4 -1892 -754 -1220 -686 0 FreeSans 320 0 0 0 x2.x3[0].VSS
+flabel via3 -1388 -1914 -1324 -1850 0 FreeSans 320 0 0 0 x2.x3[0].floating
+flabel metal1 -1204 -2229 -1170 -2195 0 FreeSans 320 0 0 0 x2.x5[1].SW
+flabel nwell -1760 -3325 -1090 -3257 0 FreeSans 320 0 0 0 x2.x5[1].VDD
+flabel pdiff -1172 -2148 -1114 -2064 0 FreeSans 320 0 0 0 x2.x5[1].delay_signal
+flabel metal4 -1760 -3325 -1659 -3256 0 FreeSans 320 0 0 0 x2.x5[1].VDD
+flabel via3 -1659 -2162 -1595 -2098 0 FreeSans 320 0 0 0 x2.x5[1].floating
+flabel viali -1081 -1825 -1047 -1791 0 FreeSans 320 0 0 0 x2.x2.SW
+flabel ndiff -1137 -1947 -1079 -1863 0 FreeSans 320 0 0 0 x2.x2.delay_signal
+flabel metal4 -1158 -754 -486 -686 0 FreeSans 320 0 0 0 x2.x2.VSS
+flabel via3 -654 -1914 -590 -1850 0 FreeSans 320 0 0 0 x2.x2.floating
+flabel metal1 -1078 -2229 -1044 -2195 0 FreeSans 320 0 0 0 x2.x5[0].SW
+flabel nwell -1158 -3325 -488 -3257 0 FreeSans 320 0 0 0 x2.x5[0].VDD
+flabel pdiff -1134 -2148 -1076 -2064 0 FreeSans 320 0 0 0 x2.x5[0].delay_signal
+flabel metal4 -589 -3325 -488 -3256 0 FreeSans 320 0 0 0 x2.x5[0].VDD
+flabel via3 -653 -2162 -589 -2098 0 FreeSans 320 0 0 0 x2.x5[0].floating
 << end >>

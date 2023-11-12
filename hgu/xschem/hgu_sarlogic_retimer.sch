@@ -5,13 +5,15 @@ K {}
 V {}
 S {}
 E {}
+N 950 -440 970 -440 {
+lab=#net1}
 C {sky130_stdcells/dfbbp_1.sym} 790 -260 0 0 {name=x1[0:7] VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/ipin.sym} 480 -240 0 0 {name=p31 lab=sar_logic[0:7]}
 C {devices/opin.sym} 510 -170 0 0 {name=p57 lab=sar_retimer[0:7]}
-C {devices/noconn.sym} 880 -270 0 1 {name=l8}
+C {devices/noconn.sym} 880 -270 0 1 {name=l8[0:7]}
 C {devices/ipin.sym} 480 -220 0 0 {name=p1 lab=eob}
 C {devices/lab_pin.sym} 650 -420 2 1 {name=p8 sig_type=std_logic lab=eob}
-C {devices/lab_pin.sym} 950 -440 2 0 {name=p2 sig_type=std_logic lab=eob_delay}
+C {devices/lab_pin.sym} 1050 -440 2 0 {name=p2 sig_type=std_logic lab=eob_delay}
 C {devices/ipin.sym} 480 -290 0 0 {name=p3 lab=VDD}
 C {devices/ipin.sym} 480 -270 0 0 {name=p4 lab=VSS}
 C {devices/lab_pin.sym} 650 -440 2 1 {name=p5 sig_type=std_logic lab=VDD}
@@ -26,3 +28,4 @@ C {devices/lab_pin.sym} 700 -270 0 0 {name=p13 sig_type=std_logic lab=sar_logic[
 C {devices/lab_pin.sym} 880 -290 2 0 {name=p14 sig_type=std_logic lab=sar_retimer[0:7]}
 C {devices/lab_pin.sym} 700 -250 2 1 {name=p15 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 700 -230 2 1 {name=p16 sig_type=std_logic lab=VDD}
+C {sky130_stdcells/buf_2.sym} 1010 -440 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }

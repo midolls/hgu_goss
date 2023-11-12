@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699343210
+timestamp 1699539464
 << nwell >>
 rect -667 1804 -48 2165
 rect -667 1777 -47 1804
@@ -1169,7 +1169,7 @@ timestamp 1697965495
 transform 1 0 -125 0 1 777
 box -38 -48 314 592
 use sky130_fd_sc_hd__dfbbp_1  x27 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1697358018
+timestamp 1699530450
 transform -1 0 2523 0 1 777
 box -38 -48 2430 592
 << labels >>

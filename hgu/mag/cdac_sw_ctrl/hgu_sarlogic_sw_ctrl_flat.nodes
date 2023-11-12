@@ -32,9 +32,12 @@ x21.dfbbn_1 4784 -108 comment
 x19.dfbbn_1 2392 580 comment
 x5.dfbbn_1 2392 -108 comment
 sky130_fd_sc_hd__dfbbn_1_0.dfbbn_1 0 580 comment
-buf_4 14168 -108 comment
-buf_16 14720 -108 comment
-buf_1 13892 -108 comment
+buf_4 14536 580 comment
+buf_16 15088 580 comment
+buf_1 14260 580 comment
+m1_95_1942# 95 1942 m1
+m1_95_2154# 95 2154 m1
+m1_723_3377# 723 3377 m1
 a_16097_n62# 16097 -61 ndif
 a_15721_n62# 15721 -61 ndif
 a_15495_n62# 15495 -61 ndif
@@ -455,5 +458,5 @@ a_305_2457# 305 2457 ndif
 x3.A 199 2457 ndif
 a_29_2457# 29 2457 ndif
 reset -125 2722 m1
-VDD -651 -51 m1
-VSS 17002 -189 m1
+VDD 8673 2721 m4
+VSS 12406 -74 m4
