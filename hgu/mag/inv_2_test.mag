@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699346041
+timestamp 1699782319
 << poly >>
 rect 599 2591 657 2661
 use hgu_inverter  x1
