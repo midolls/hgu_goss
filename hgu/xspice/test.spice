@@ -1,0 +1,353 @@
+** sch_path: /foss/designs/hgu_goss/hgu/tb/tb_hgu_sarlogic_8bit_logic.sch
+**.subckt tb_hgu_sarlogic_8bit_logic
+V4 VDD GND 1.8
+.save i(v4)
+V5 VSS GND 0
+.save i(v5)
+V8 VPWR GND 1.8
+.save i(v8)
+V9 VNB GND 0
+.save i(v9)
+V10 VPB GND 1.8
+.save i(v10)
+V11 VGND GND 0
+.save i(v11)
+V6 sel_bit[1] GND 0
+.save i(v6)
+V7 sel_bit[0] GND 0
+.save i(v7)
+V2 comp GND PULSE(0 1.8 100n 5p 5p 17n 31n)
+.save i(v2)
+V3 clk GND PULSE(0 1.8 0 5p 5p 5n 10n)
+.save i(v3)
+V12 reset GND PULSE(1.8 0 0 5p 5p 10n 100n)
+.save i(v12)
+x3 clk VDD VSS comp reset EOB D[0] D[1] D[2] D[3] D[4] D[5] D[6] D[7] tempD[0] tempD[1] tempD[2] tempD[3] tempD[4] tempD[5] tempD[6] sel_bit[0] sel_bit[1]  hgu_sarlogic_8bit_logic
+C2 tempD[0] GND 10f m=1
+x1 VDD VSS D[0] D[1] D[2] D[3] D[4] D[5] D[6] D[7] EOB async_resetb_delay_cap_ctrl_code[0]
++ async_resetb_delay_cap_ctrl_code[1] async_resetb_delay_cap_ctrl_code[2] async_resetb_delay_cap_ctrl_code[3] VDD result[0] result[1]
++ result[2] result[3] result[4] result[5] result[6] result[7] hgu_sarlogic_retimer
+V1 async_resetb_delay_cap_ctrl_code[0] VSS 1.8
+.save i(v1)
+V13 VSS async_resetb_delay_cap_ctrl_code[3] 0
+.save i(v13)
+V14 VSS async_resetb_delay_cap_ctrl_code[2] 0
+.save i(v14)
+V15 VSS net1 0
+.save i(v15)
+V16 async_resetb_delay_cap_ctrl_code[1] VSS 1.8
+.save i(v16)
+V17 net2 VSS 1.8
+.save i(v17)
+V18 net3 VSS 1.8
+.save i(v18)
+V19 VSS net4 0
+.save i(v19)
+**** begin user architecture code
+
+
+
+
+
+*.tran 10ps 310ns
+.tran 10ps 300ns
+
+.control
+	option temp = 25
+	let vdd_act = 1.8
+
+	alter V1 vdd_act
+
+	run
+	plot V("tempD[0]") V("tempD[1]")+2 V("tempD[2]")+4 V("tempD[3]")+6 V("tempD[4]")+8 V("tempD[5]")+10
++ V("tempD[6]")+12 V("tempD[7]")+14 V(clk)-4 V(EOB)-2
+	plot V(comp) V(clk)+2 V(EOB)+4 V("D[0]")+6 V("D[1]")+8 V("D[2]")+10 V("D[3]")+12  V("D[4]")+14
++ V("D[5]")+16 V("D[6]")+18 V("D[7]")+20 V(reset)-2
+
+ .endc
+.save all
+
+
+
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
+.include ./hgu_sarlogic_8bit_logic.xspice
+
+
+
+**** end user architecture code
+**.ends
+
+.subckt hgu_sarlogic_8bit_logic a_clk_sar a_VDD a_VSS a_comparator_out a_reset a_EOB a_D_0_ a_D_1_ a_D_2_ a_D_3_ a_D_4_ a_D_5_ a_D_6_ a_D_7_ a_check_0_ a_check_1_ a_check_2_ a_check_3_ a_check_4_ a_check_5_ a_check_6_ a_sel_bit_0_ a_sel_bit_1_
+*.PININFO clk_sar:I VDD:I VSS:I comparator_out:I reset:I EOB:O D_0:7_:O check_0:6_:O sel_bit_0:1_:I
+A20 EOB clk_sar_buff ~resetb ~VDD net1 net4 ddflop
+A27 net1 clk_sar_buff ~VDD ~resetb check_6_ net5 ddflop
+A30 check_6_ clk_sar_buff ~VDD ~resetb check_5_ net6 ddflop
+A33 check_5_ clk_sar_buff ~VDD ~resetb check_4_ net7 ddflop
+A36 check_4_ clk_sar_buff ~VDD ~resetb check_3_ net8 ddflop
+A39 check_3_ clk_sar_buff ~VDD ~resetb check_2_ net9 ddflop
+A42 check_2_ clk_sar_buff ~VDD ~resetb check_1_ net10 ddflop
+A45 check_1_ clk_sar_buff ~VDD ~resetb check_0_ net11 ddflop
+A48 check_0_ clk_sar_buff ~VDD ~resetb net3 net12 ddflop
+A51 comparator_out D_6_ ~net4 ~resetb D_7_ net13 ddflop
+A54 comparator_out D_5_ ~net5 ~resetb D_6_ net14 ddflop
+A57 comparator_out D_4_ ~net6 ~resetb D_5_ net15 ddflop
+A60 comparator_out D_3_ ~net7 ~resetb D_4_ net16 ddflop
+A63 comparator_out D_2_ ~net8 ~resetb D_3_ net17 ddflop
+A66 comparator_out D_1_ ~net9 ~resetb D_2_ net18 ddflop
+A69 comparator_out D_0_ ~net10 ~resetb D_1_ net19 ddflop
+A72 comparator_out net2 ~net11 ~resetb D_0_ net20 ddflop
+A75 VSS VSS ~net21 ~resetb net2 net22 ddflop
+A77 [EOB] net21 d_lut_sky130_fd_sc_hd__inv_1
+A78 [check_2_ check_1_ check_0_ net3 sel_bit_0_ sel_bit_1_] EOB d_lut_sky130_fd_sc_hd__mux4_4
+A1 [reset] net23 d_lut_sky130_fd_sc_hd__buf_1
+A2 [clk_sar] net24 d_lut_sky130_fd_sc_hd__buf_1
+A3 [net23] net25 d_lut_sky130_fd_sc_hd__buf_4
+A4 [net25] resetb d_lut_sky130_fd_sc_hd__buf_16
+A5 [net24] clk_sar_buff d_lut_sky130_fd_sc_hd__buf_2
+
+AA2D1 [a_clk_sar] [clk_sar] todig_1v8
+AA2D2 [a_VDD] [VDD] todig_1v8
+AA2D3 [a_VSS] [VSS] todig_1v8
+AA2D4 [a_comparator_out] [comparator_out] todig_1v8
+AA2D5 [a_reset] [reset] todig_1v8
+AD2A1 [EOB] [a_EOB] toana_1v8
+AD2A2 [D_0_] [a_D_0_] toana_1v8
+AD2A3 [D_1_] [a_D_1_] toana_1v8
+AD2A4 [D_2_] [a_D_2_] toana_1v8
+AD2A5 [D_3_] [a_D_3_] toana_1v8
+AD2A6 [D_4_] [a_D_4_] toana_1v8
+AD2A7 [D_5_] [a_D_5_] toana_1v8
+AD2A8 [D_6_] [a_D_6_] toana_1v8
+AD2A9 [D_7_] [a_D_7_] toana_1v8
+AA2D6 [a_check_0_] [check_0_] todig_1v8
+AA2D7 [a_check_1_] [check_1_] todig_1v8
+AA2D8 [a_check_2_] [check_2_] todig_1v8
+AA2D9 [a_check_3_] [check_3_] todig_1v8
+AA2D10 [a_check_4_] [check_4_] todig_1v8
+AA2D11 [a_check_5_] [check_5_] todig_1v8
+AA2D12 [a_check_6_] [check_6_] todig_1v8
+AA2D13 [a_sel_bit_0_] [sel_bit_0_] todig_1v8
+AA2D14 [a_sel_bit_1_] [sel_bit_1_] todig_1v8
+
+.ends
+
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym # of pins=7
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sch
+.subckt hgu_sarlogic_retimer VDD VSS sar_logic[0] sar_logic[1] sar_logic[2] sar_logic[3]
++ sar_logic[4] sar_logic[5] sar_logic[6] sar_logic[7] eob delay_code[0] delay_code[1] delay_code[2] delay_code[3]
++ delay_offset sar_retimer[0] sar_retimer[1] sar_retimer[2] sar_retimer[3] sar_retimer[4] sar_retimer[5]
++ sar_retimer[6] sar_retimer[7]
+*.ipin
+*+ sar_logic[0],sar_logic[1],sar_logic[2],sar_logic[3],sar_logic[4],sar_logic[5],sar_logic[6],sar_logic[7]
+*.opin
+*+ sar_retimer[0],sar_retimer[1],sar_retimer[2],sar_retimer[3],sar_retimer[4],sar_retimer[5],sar_retimer[6],sar_retimer[7]
+*.ipin eob
+*.ipin VDD
+*.ipin VSS
+*.ipin delay_code[0],delay_code[1],delay_code[2],delay_code[3]
+*.ipin delay_offset
+x1[0] eob_delay sar_logic[0] VDD VDD VSS VSS VDD VDD sar_retimer[0] net1 sky130_fd_sc_hd__dfbbp_1
+x1[1] eob_delay sar_logic[1] VDD VDD VSS VSS VDD VDD sar_retimer[1] net1 sky130_fd_sc_hd__dfbbp_1
+x1[2] eob_delay sar_logic[2] VDD VDD VSS VSS VDD VDD sar_retimer[2] net1 sky130_fd_sc_hd__dfbbp_1
+x1[3] eob_delay sar_logic[3] VDD VDD VSS VSS VDD VDD sar_retimer[3] net1 sky130_fd_sc_hd__dfbbp_1
+x1[4] eob_delay sar_logic[4] VDD VDD VSS VSS VDD VDD sar_retimer[4] net1 sky130_fd_sc_hd__dfbbp_1
+x1[5] eob_delay sar_logic[5] VDD VDD VSS VSS VDD VDD sar_retimer[5] net1 sky130_fd_sc_hd__dfbbp_1
+x1[6] eob_delay sar_logic[6] VDD VDD VSS VSS VDD VDD sar_retimer[6] net1 sky130_fd_sc_hd__dfbbp_1
+x1[7] eob_delay sar_logic[7] VDD VDD VSS VSS VDD VDD sar_retimer[7] net1 sky130_fd_sc_hd__dfbbp_1
+x2 VDD eob eob_delay VSS delay_code[0] delay_code[1] delay_code[2] delay_code[3] delay_offset
++ hgu_delay_no_code
+.ends
+
+
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sym # of pins=6
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sch
+.subckt hgu_delay_no_code VDD IN OUT VSS code[0] code[1] code[2] code[3] code_offset
+*.ipin IN
+*.ipin VDD
+*.ipin VSS
+*.opin OUT
+*.ipin code[0],code[1],code[2],code[3]
+*.ipin code_offset
+XM13 OUT net1 net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM15 net3 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM46 OUT net1 net2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM47 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x2 code[0] VSS net1 net6 hgu_sw_cap
+x3[1] code[1] VSS net1 net7 hgu_sw_cap
+x3[0] code[1] VSS net1 net7 hgu_sw_cap
+x4[3] code[2] VSS net1 net8 hgu_sw_cap
+x4[2] code[2] VSS net1 net8 hgu_sw_cap
+x4[1] code[2] VSS net1 net8 hgu_sw_cap
+x4[0] code[2] VSS net1 net8 hgu_sw_cap
+x5[7] net4 net1 VDD net9 hgu_sw_cap_pmos
+x5[6] net4 net1 VDD net9 hgu_sw_cap_pmos
+x5[5] net4 net1 VDD net9 hgu_sw_cap_pmos
+x5[4] net4 net1 VDD net9 hgu_sw_cap_pmos
+x5[3] net4 net1 VDD net9 hgu_sw_cap_pmos
+x5[2] net4 net1 VDD net9 hgu_sw_cap_pmos
+x5[1] net4 net1 VDD net9 hgu_sw_cap_pmos
+x5[0] net4 net1 VDD net9 hgu_sw_cap_pmos
+x10 code[3] VSS VSS VDD VDD net4 sky130_fd_sc_hd__inv_1
+x7 code_offset VSS net1 net10 hgu_sw_cap
+x6 net5 net1 VDD net11 hgu_sw_cap_pmos
+x11 code_offset VSS VSS VDD VDD net5 sky130_fd_sc_hd__inv_1
+x8 VDD IN net1 hgu_pfet_hvt_stack_in_delay
+x9 IN net1 VSS hgu_nfet_hvt_stack_in_delay
+XM48 VSS OUT net2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.84 nf=2 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 VDD OUT net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sch
+.subckt hgu_sw_cap SW VSS DELAY_SIGNAL floating
+*.ipin SW
+*.ipin VSS
+*.iopin DELAY_SIGNAL
+*.iopin floating
+XM14 DELAY_SIGNAL SW floating VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x2 floating VSS VSS hgu_cdac_unit
+.ends
+
+
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap_pmos.sch
+.subckt hgu_sw_cap_pmos SW DELAY_SIGNAL VDD floating
+*.ipin SW
+*.ipin VDD
+*.iopin DELAY_SIGNAL
+*.iopin floating
+XM16 floating SW DELAY_SIGNAL VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x1 VDD floating VDD hgu_cdac_unit
+.ends
+
+
+* expanding   symbol:
+*+  /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sym # of pins=3
+** sym_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sym
+** sch_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_pfet_hvt_stack_in_delay.sch
+.subckt hgu_pfet_hvt_stack_in_delay VDD input_stack output_stack
+*.ipin VDD
+*.ipin input_stack
+*.iopin output_stack
+XM1 output_stack input_stack net1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 input_stack net2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 input_stack net3 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net3 input_stack net4 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net4 input_stack net5 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net5 input_stack VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sym # of pins=3
+** sym_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sym
+** sch_path:
+*+ /foss/designs/hgu_goss/hgu/xschem/../../../hgu_goss/hgu/xschem/hgu_nfet_hvt_stack_in_delay.sch
+.subckt hgu_nfet_hvt_stack_in_delay input_stack output_stack VSS
+*.ipin VSS
+*.ipin input_stack
+*.iopin output_stack
+XM1 output_stack input_stack net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 input_stack net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 input_stack net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net3 input_stack net4 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net4 input_stack net5 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net5 input_stack net6 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net6 input_stack net7 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net7 input_stack net8 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net8 input_stack net9 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM10 net9 input_stack net10 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM11 net10 input_stack net11 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 net11 input_stack net12 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM13 net12 input_stack net13 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM14 net13 input_stack net14 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM15 net14 input_stack net15 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM16 net15 input_stack VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.GLOBAL VSS
+.GLOBAL VGND
+.GLOBAL VNB
+.GLOBAL VPB
+.GLOBAL VPWR
+.GLOBAL async_resetb_delay_cap_ctrl_code[3]
+.GLOBAL async_resetb_delay_cap_ctrl_code[2]
+.GLOBAL async_resetb_delay_cap_ctrl_code[1]
+.GLOBAL async_resetb_delay_cap_ctrl_code[0]
+.end

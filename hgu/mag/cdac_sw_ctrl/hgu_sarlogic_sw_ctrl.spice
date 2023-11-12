@@ -7,6 +7,19 @@ X2 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.205 pd=2.1 as=0.115 ps=1
 X3 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0754 pd=0.81 as=0.135 ps=1.56 w=0.52 l=0.15
 .ends
 
+.subckt sky130_fd_sc_hd__buf_4 A VGND VPWR X VNB VPB
+X0 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X1 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X3 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X4 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X5 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X6 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X7 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X8 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X9 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+.ends
+
 .subckt sky130_fd_sc_hd__buf_16 A VGND VPWR X VNB VPB
 X0 VGND A a_109_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
 X1 X a_109_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
@@ -52,19 +65,6 @@ X40 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 p
 X41 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
 X42 a_109_47# A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
 X43 VGND a_109_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
-.ends
-
-.subckt sky130_fd_sc_hd__buf_4 A VGND VPWR X VNB VPB
-X0 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
-X1 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
-X2 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
-X3 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
-X4 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
-X5 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
-X6 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
-X7 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
-X8 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
-X9 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
 .ends
 
 .subckt sky130_fd_sc_hd__dfbbn_1 CLK_N D RESET_B SET_B VGND VPWR Q Q_N VNB VPB
@@ -130,10 +130,10 @@ X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0.113 pd=1.04 as=0.169 ps=1.
 + D[4] D[5] D[6] D[7] check[0] check[1] check[2] check[3] check[4] check[5] check[6]
 + VDD_SW_b[1] VDD_SW_b[2] VDD_SW_b[3] VDD_SW_b[4] VDD_SW_b[5] VDD_SW_b[6] VDD_SW_b[7]
 + VSS_SW_b[1] VSS_SW_b[2] VSS_SW_b[3] VSS_SW_b[4] VSS_SW_b[5] VSS_SW_b[6] VSS_SW_b[7]
-+ D[1] VDD_SW[1] ready reset VDD VSS
++ D[1] VDD_SW[1] ready reset VSS VDD
 Xx1 reset VSS VDD x3/A VSS VDD sky130_fd_sc_hd__buf_1
-Xx2 x3/X VSS VDD x2/X VSS VDD sky130_fd_sc_hd__buf_16
 Xx3 x3/A VSS VDD x3/X VSS VDD sky130_fd_sc_hd__buf_4
+Xx2 x3/X VSS VDD x2/X VSS VDD sky130_fd_sc_hd__buf_16
 Xx5 x7/X D[7] x2/X VDD VSS VDD VSS_SW[7] VSS_SW_b[7] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx6 VSS x9/A1 check[6] VSS VDD x6/X VSS VDD sky130_fd_sc_hd__mux2_1
 Xx7 VSS x9/A1 check[6] VSS VDD x7/X VSS VDD sky130_fd_sc_hd__mux2_1
@@ -143,26 +143,26 @@ Xx30 x30/A VSS VDD x9/A1 VSS VDD sky130_fd_sc_hd__buf_16
 Xx20 VSS x9/A1 check[0] VSS VDD x20/X VSS VDD sky130_fd_sc_hd__mux2_1
 Xx31 x16/X D[2] VDD x2/X VSS VDD VDD_SW[2] VDD_SW_b[2] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx10 VSS x9/A1 check[4] VSS VDD x10/X VSS VDD sky130_fd_sc_hd__mux2_1
-Xx21 x9/X D[6] x2/X VDD VSS VDD VSS_SW[6] VSS_SW_b[6] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx32 x17/X D[2] x2/X VDD VSS VDD VSS_SW[2] VSS_SW_b[2] VSS VDD sky130_fd_sc_hd__dfbbn_1
-Xx11 VSS x9/A1 check[4] VSS VDD x11/X VSS VDD sky130_fd_sc_hd__mux2_1
+Xx21 x9/X D[6] x2/X VDD VSS VDD VSS_SW[6] VSS_SW_b[6] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx22 ready VSS VDD x27/A VSS VDD sky130_fd_sc_hd__buf_1
+Xx11 VSS x9/A1 check[4] VSS VDD x11/X VSS VDD sky130_fd_sc_hd__mux2_1
 Xx12 VSS x9/A1 check[3] VSS VDD x12/X VSS VDD sky130_fd_sc_hd__mux2_1
-Xx23 x10/X D[5] VDD x2/X VSS VDD VDD_SW[5] VDD_SW_b[5] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx34 x18/X D[1] VDD x2/X VSS VDD VDD_SW[1] VDD_SW_b[1] VSS VDD sky130_fd_sc_hd__dfbbn_1
+Xx23 x10/X D[5] VDD x2/X VSS VDD VDD_SW[5] VDD_SW_b[5] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx13 VSS x9/A1 check[3] VSS VDD x13/X VSS VDD sky130_fd_sc_hd__mux2_1
-Xx24 x11/X D[5] x2/X VDD VSS VDD VSS_SW[5] VSS_SW_b[5] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx35 x20/X D[1] x2/X VDD VSS VDD VSS_SW[1] VSS_SW_b[1] VSS VDD sky130_fd_sc_hd__dfbbn_1
-Xx14 VSS x9/A1 check[2] VSS VDD x14/X VSS VDD sky130_fd_sc_hd__mux2_1
+Xx24 x11/X D[5] x2/X VDD VSS VDD VSS_SW[5] VSS_SW_b[5] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx15 VSS x9/A1 check[2] VSS VDD x15/X VSS VDD sky130_fd_sc_hd__mux2_1
-Xx25 x12/X D[4] VDD x2/X VSS VDD VDD_SW[4] VDD_SW_b[4] VSS VDD sky130_fd_sc_hd__dfbbn_1
+Xx14 VSS x9/A1 check[2] VSS VDD x14/X VSS VDD sky130_fd_sc_hd__mux2_1
 Xx26 x13/X D[4] x2/X VDD VSS VDD VSS_SW[4] VSS_SW_b[4] VSS VDD sky130_fd_sc_hd__dfbbn_1
-Xx16 VSS x9/A1 check[1] VSS VDD x16/X VSS VDD sky130_fd_sc_hd__mux2_1
+Xx25 x12/X D[4] VDD x2/X VSS VDD VDD_SW[4] VDD_SW_b[4] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx27 x27/A VSS VDD x30/A VSS VDD sky130_fd_sc_hd__buf_4
-Xsky130_fd_sc_hd__dfbbn_1_0 x6/X D[7] VDD x2/X VSS VDD VDD_SW[7] VDD_SW_b[7] VSS VDD
-+ sky130_fd_sc_hd__dfbbn_1
+Xx16 VSS x9/A1 check[1] VSS VDD x16/X VSS VDD sky130_fd_sc_hd__mux2_1
 Xx17 VSS x9/A1 check[1] VSS VDD x17/X VSS VDD sky130_fd_sc_hd__mux2_1
 Xx28 x14/X D[3] VDD x2/X VSS VDD VDD_SW[3] VDD_SW_b[3] VSS VDD sky130_fd_sc_hd__dfbbn_1
+Xsky130_fd_sc_hd__dfbbn_1_0 x6/X D[7] VDD x2/X VSS VDD VDD_SW[7] VDD_SW_b[7] VSS VDD
++ sky130_fd_sc_hd__dfbbn_1
 Xx18 VSS x9/A1 check[0] VSS VDD x18/X VSS VDD sky130_fd_sc_hd__mux2_1
 Xx29 x15/X D[3] x2/X VDD VSS VDD VSS_SW[3] VSS_SW_b[3] VSS VDD sky130_fd_sc_hd__dfbbn_1
 Xx19 x8/X D[6] VDD x2/X VSS VDD VDD_SW[6] VDD_SW_b[6] VSS VDD sky130_fd_sc_hd__dfbbn_1

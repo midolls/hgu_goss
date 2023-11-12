@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699539695
+timestamp 1699632744
 << nwell >>
 rect -36 2671 2892 3031
 rect 4348 2671 7276 3031
@@ -23353,19 +23353,16 @@ rect 16589 -126 16623 -116
 rect 16681 -116 16715 -92
 rect 16681 -126 16715 -116
 << metal1 >>
-rect 723 3435 775 3441
-rect 723 3377 775 3383
-rect -126 2990 16861 3002
-rect -144 2980 16861 2990
-rect -144 2978 1265 2980
-rect -144 2976 255 2978
-rect -144 2971 53 2976
+rect -126 2980 15690 3002
+rect -126 2978 1265 2980
+rect -126 2976 255 2978
+rect -126 2971 53 2976
 rect 105 2971 255 2976
-rect -144 2937 31 2971
+rect -126 2937 31 2971
 rect 105 2937 123 2971
 rect 157 2937 215 2971
 rect 249 2937 255 2971
-rect -144 2924 53 2937
+rect -126 2924 53 2937
 rect 105 2926 255 2937
 rect 307 2976 864 2978
 rect 307 2971 466 2976
@@ -23397,11 +23394,11 @@ rect 1512 2971 1661 2977
 rect 1713 2977 2152 2979
 rect 1713 2971 1878 2977
 rect 1930 2971 2152 2977
-rect 2204 2976 16861 2980
+rect 2204 2976 15690 2980
 rect 2204 2973 2652 2976
 rect 2204 2971 2429 2973
 rect 2481 2971 2652 2973
-rect 2704 2975 16861 2976
+rect 2704 2975 15690 2976
 rect 2704 2971 2884 2975
 rect 1317 2937 1319 2971
 rect 1353 2937 1411 2971
@@ -23431,7 +23428,7 @@ rect 1930 2928 2152 2937
 rect 2204 2928 2429 2937
 rect 1930 2925 2429 2928
 rect 708 2924 2429 2925
-rect -144 2921 2429 2924
+rect -126 2921 2429 2924
 rect 2481 2924 2652 2937
 rect 2704 2924 2884 2937
 rect 2481 2923 2884 2924
@@ -23447,9 +23444,9 @@ rect 5299 2972 5701 2973
 rect 5299 2971 5493 2972
 rect 5545 2971 5701 2972
 rect 5753 2971 5903 2974
-rect 5955 2974 16861 2975
+rect 5955 2974 15690 2975
 rect 5955 2971 6096 2974
-rect 6148 2973 16861 2974
+rect 6148 2973 15690 2974
 rect 6148 2971 6468 2973
 rect 6520 2971 7220 2973
 rect 2936 2937 4415 2971
@@ -23479,7 +23476,7 @@ rect 6520 2937 6531 2971
 rect 6565 2937 6623 2971
 rect 2936 2923 4520 2937
 rect 2481 2921 4520 2923
-rect -144 2920 4520 2921
+rect -126 2920 4520 2921
 rect 4572 2921 4828 2937
 rect 4880 2922 5028 2937
 rect 5080 2922 5247 2937
@@ -23494,7 +23491,7 @@ rect 6148 2922 6468 2937
 rect 5545 2921 6468 2922
 rect 6520 2921 6657 2937
 rect 5545 2920 6657 2921
-rect -144 2919 6657 2920
+rect -126 2919 6657 2920
 rect 6709 2937 6715 2971
 rect 6749 2937 6807 2971
 rect 6841 2937 6899 2971
@@ -23504,10 +23501,9 @@ rect 7117 2937 7175 2971
 rect 7209 2937 7220 2971
 rect 6709 2919 6947 2937
 rect 6999 2921 7220 2937
-rect 7272 2921 16861 2973
-rect 6999 2919 16861 2921
-rect -144 2906 16861 2919
-rect -144 2904 -120 2906
+rect 7272 2921 15690 2973
+rect 6999 2919 15690 2921
+rect -126 2906 15690 2919
 rect -126 2722 -34 2756
 rect -68 2681 -34 2722
 rect 27 2681 85 2687
@@ -26815,7 +26811,6 @@ rect -126 -150 16876 -140
 rect -126 -153 16861 -150
 rect -126 -157 16816 -153
 << via1 >>
-rect 723 3383 775 3435
 rect 53 2971 105 2976
 rect 53 2937 65 2971
 rect 65 2937 105 2971
@@ -28278,8 +28273,6 @@ rect 16151 -137 16203 -126
 rect 16497 -133 16549 -126
 rect 16696 -136 16748 -126
 << metal2 >>
-rect 721 3437 777 3446
-rect 721 3372 777 3381
 rect 51 2978 107 2987
 rect 51 2913 107 2922
 rect 17 1834 73 1843
@@ -29282,11 +29275,6 @@ rect 16495 -144 16551 -135
 rect 16694 -82 16750 -73
 rect 16694 -147 16750 -138
 << via2 >>
-rect 721 3435 777 3437
-rect 721 3383 723 3435
-rect 723 3383 775 3435
-rect 775 3383 777 3435
-rect 721 3381 777 3383
 rect 51 2976 107 2978
 rect 51 2924 53 2976
 rect 53 2924 105 2976
@@ -30603,10 +30591,6 @@ rect 16696 -136 16748 -84
 rect 16748 -136 16750 -84
 rect 16694 -138 16750 -136
 << metal3 >>
-rect 686 3441 815 3452
-rect 686 3377 717 3441
-rect 781 3377 815 3441
-rect 686 3366 815 3377
 rect 16 2982 145 2993
 rect 16 2918 47 2982
 rect 111 2918 145 2982
@@ -31660,11 +31644,6 @@ rect 16659 -142 16690 -78
 rect 16754 -142 16788 -78
 rect 16659 -153 16788 -142
 << via3 >>
-rect 717 3437 781 3441
-rect 717 3381 721 3437
-rect 721 3381 777 3437
-rect 777 3381 781 3437
-rect 717 3377 781 3381
 rect 47 2978 111 2982
 rect 47 2922 51 2978
 rect 51 2922 107 2978
@@ -32981,11 +32960,8 @@ rect 16694 -138 16750 -82
 rect 16750 -138 16754 -82
 rect 16690 -142 16754 -138
 << metal4 >>
-rect 686 3441 815 3452
-rect 686 3377 717 3441
-rect 781 3377 815 3441
-rect 686 3366 815 3377
-rect -144 2986 16604 3041
+rect -144 3018 7278 3041
+rect -144 2986 15690 3018
 rect -144 2984 1259 2986
 rect -144 2982 249 2984
 rect -144 2918 47 2982
@@ -33007,14 +32983,14 @@ rect 1719 2983 2146 2985
 rect 1719 2921 1872 2983
 rect 1518 2919 1872 2921
 rect 1936 2922 2146 2983
-rect 2210 2982 16604 2986
+rect 2210 2982 15690 2986
 rect 2210 2979 2646 2982
 rect 2210 2922 2423 2979
 rect 1936 2919 2423 2922
 rect 714 2918 2423 2919
 rect -144 2915 2423 2918
 rect 2487 2918 2646 2979
-rect 2710 2981 16604 2982
+rect 2710 2981 15690 2982
 rect 2710 2918 2878 2981
 rect 2487 2917 2878 2918
 rect 2942 2980 5897 2981
@@ -33033,10 +33009,10 @@ rect 5305 2915 5487 2978
 rect 4578 2914 5487 2915
 rect 5551 2916 5695 2978
 rect 5759 2917 5897 2980
-rect 5961 2980 16604 2981
+rect 5961 2980 15690 2981
 rect 5961 2917 6090 2980
 rect 5759 2916 6090 2917
-rect 6154 2979 16604 2980
+rect 6154 2979 15690 2980
 rect 6154 2916 6462 2979
 rect 5551 2915 6462 2916
 rect 6526 2977 7214 2979
@@ -33045,9 +33021,9 @@ rect 5551 2914 6651 2915
 rect -144 2913 6651 2914
 rect 6715 2913 6941 2977
 rect 7005 2915 7214 2977
-rect 7278 2915 16604 2979
-rect 7005 2913 16604 2915
-rect -144 2721 16604 2913
+rect 7278 2915 15690 2979
+rect 7005 2913 15690 2915
+rect -144 2721 15690 2913
 rect -144 1838 1030 2721
 rect -144 1774 13 1838
 rect 77 1836 1030 1838
@@ -33687,8 +33663,6 @@ flabel metal2 6747 1454 6789 3300 0 FreeSans 320 0 0 0 D[5]
 port 20 nsew
 flabel metal2 4356 1453 4398 3300 0 FreeSans 320 0 0 0 D[6]
 port 21 nsew
-flabel metal2 15914 1603 15956 3300 0 FreeSans 320 0 0 0 check[0]
-port 23 nsew
 flabel metal2 13519 1602 13561 3300 0 FreeSans 320 0 0 0 check[1]
 port 24 nsew
 flabel metal2 11130 1602 11172 3300 0 FreeSans 320 0 0 0 check[2]
@@ -33699,8 +33673,6 @@ flabel metal2 6344 1602 6386 3300 0 FreeSans 320 0 0 0 check[4]
 port 27 nsew
 flabel metal2 3954 1602 3996 3300 0 FreeSans 320 0 0 0 check[5]
 port 28 nsew
-flabel metal2 16317 1454 16359 3300 0 FreeSans 320 0 0 0 D[1]
-port 46 nsew
 flabel metal2 16682 1062 16724 3300 0 FreeSans 320 0 0 0 VDD_SW[1]
 port 49 nsew
 flabel metal2 1562 1603 1604 3300 0 FreeSans 320 0 0 0 check[6]
@@ -33788,387 +33760,14 @@ flabel metal1 -126 2722 -34 2756 0 FreeSans 320 0 0 0 reset
 port 52 nsew
 flabel metal2 6829 -322 6871 914 0 FreeSans 320 0 0 0 VDD_SW_b[5]
 port 34 nsew
-flabel metal4 8673 2721 16604 3041 0 FreeSans 1600 0 0 0 VDD
-port 58 nsew
 flabel metal4 12406 -75 16876 114 0 FreeSans 1600 0 0 0 VSS
 port 59 nsew
-flabel locali 1869 801 1903 835 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.RESET_B
-flabel locali 29 563 63 597 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VGND
-flabel locali 29 801 63 835 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.CLK_N
-flabel locali 29 869 63 903 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.CLK_N
-flabel locali 765 733 799 767 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.SET_B
-flabel locali 2329 665 2363 699 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q
-flabel locali 2329 937 2363 971 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q
-flabel locali 2329 1005 2363 1039 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q
-flabel locali 29 1107 63 1141 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPWR
-flabel locali 397 801 431 835 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.D
-flabel locali 397 869 431 903 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.D
-flabel locali 2053 1005 2087 1039 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q_N
-flabel locali 2053 937 2087 971 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q_N
-flabel locali 2053 665 2087 699 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q_N
-flabel metal1 29 563 63 597 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VGND
-flabel metal1 29 1107 63 1141 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPWR
-flabel nwell 29 1107 63 1141 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPB
-flabel nwell 46 1124 46 1124 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPB
-flabel pwell 29 563 63 597 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VNB
-flabel pwell 46 580 46 580 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VNB
-rlabel comment 0 580 0 580 4 sky130_fd_sc_hd__dfbbn_1_0.dfbbn_1
-rlabel locali 1456 727 1565 793 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
-rlabel metal1 1503 764 1561 773 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
-rlabel metal1 1503 727 1561 736 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
-rlabel metal1 753 764 811 773 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
-rlabel metal1 753 736 1561 764 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
-rlabel metal1 753 727 811 736 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
-rlabel metal1 0 532 2392 628 1 sky130_fd_sc_hd__dfbbn_1_0.VGND
-rlabel metal1 0 1076 2392 1172 1 sky130_fd_sc_hd__dfbbn_1_0.VPWR
-flabel locali 489 112 523 146 0 FreeSans 400 0 0 0 x5.RESET_B
-flabel locali 2329 -126 2363 -92 7 FreeSans 400 0 0 0 x5.VGND
-flabel locali 2329 112 2363 146 0 FreeSans 400 0 0 0 x5.CLK_N
-flabel locali 2329 180 2363 214 0 FreeSans 400 0 0 0 x5.CLK_N
-flabel locali 1593 44 1627 78 0 FreeSans 400 0 0 0 x5.SET_B
-flabel locali 29 -24 63 10 0 FreeSans 400 0 0 0 x5.Q
-flabel locali 29 248 63 282 0 FreeSans 400 0 0 0 x5.Q
-flabel locali 29 316 63 350 0 FreeSans 400 0 0 0 x5.Q
-flabel locali 2329 418 2363 452 7 FreeSans 400 0 0 0 x5.VPWR
-flabel locali 1961 112 1995 146 0 FreeSans 200 0 0 0 x5.D
-flabel locali 1961 180 1995 214 0 FreeSans 200 0 0 0 x5.D
-flabel locali 305 316 339 350 0 FreeSans 400 0 0 0 x5.Q_N
-flabel locali 305 248 339 282 0 FreeSans 400 0 0 0 x5.Q_N
-flabel locali 305 -24 339 10 0 FreeSans 400 0 0 0 x5.Q_N
-flabel metal1 2329 -126 2363 -92 0 FreeSans 200 0 0 0 x5.VGND
-flabel metal1 2329 418 2363 452 0 FreeSans 200 0 0 0 x5.VPWR
-flabel nwell 2329 418 2363 452 7 FreeSans 400 0 0 0 x5.VPB
-flabel nwell 2346 435 2346 435 0 FreeSans 200 0 0 0 x5.VPB
-flabel pwell 2329 -126 2363 -92 7 FreeSans 400 0 0 0 x5.VNB
-flabel pwell 2346 -109 2346 -109 0 FreeSans 200 0 0 0 x5.VNB
-rlabel comment 2392 -109 2392 -109 6 x5.dfbbn_1
-rlabel locali 827 38 936 104 1 x5.SET_B
-rlabel metal1 831 75 889 84 1 x5.SET_B
-rlabel metal1 831 38 889 47 1 x5.SET_B
-rlabel metal1 1581 75 1639 84 1 x5.SET_B
-rlabel metal1 831 47 1639 75 1 x5.SET_B
-rlabel metal1 1581 38 1639 47 1 x5.SET_B
-rlabel metal1 0 -157 2392 -61 1 x5.VGND
-rlabel metal1 0 387 2392 483 1 x5.VPWR
-flabel locali 4261 801 4295 835 0 FreeSans 400 0 0 0 x19.RESET_B
-flabel locali 2421 563 2455 597 3 FreeSans 400 0 0 0 x19.VGND
-flabel locali 2421 801 2455 835 0 FreeSans 400 0 0 0 x19.CLK_N
-flabel locali 2421 869 2455 903 0 FreeSans 400 0 0 0 x19.CLK_N
-flabel locali 3157 733 3191 767 0 FreeSans 400 0 0 0 x19.SET_B
-flabel locali 4721 665 4755 699 0 FreeSans 400 0 0 0 x19.Q
-flabel locali 4721 937 4755 971 0 FreeSans 400 0 0 0 x19.Q
-flabel locali 4721 1005 4755 1039 0 FreeSans 400 0 0 0 x19.Q
-flabel locali 2421 1107 2455 1141 3 FreeSans 400 0 0 0 x19.VPWR
-flabel locali 2789 801 2823 835 0 FreeSans 200 0 0 0 x19.D
-flabel locali 2789 869 2823 903 0 FreeSans 200 0 0 0 x19.D
-flabel locali 4445 1005 4479 1039 0 FreeSans 400 0 0 0 x19.Q_N
-flabel locali 4445 937 4479 971 0 FreeSans 400 0 0 0 x19.Q_N
-flabel locali 4445 665 4479 699 0 FreeSans 400 0 0 0 x19.Q_N
-flabel metal1 2421 563 2455 597 0 FreeSans 200 0 0 0 x19.VGND
-flabel metal1 2421 1107 2455 1141 0 FreeSans 200 0 0 0 x19.VPWR
-flabel nwell 2421 1107 2455 1141 3 FreeSans 400 0 0 0 x19.VPB
-flabel nwell 2438 1124 2438 1124 0 FreeSans 200 0 0 0 x19.VPB
-flabel pwell 2421 563 2455 597 3 FreeSans 400 0 0 0 x19.VNB
-flabel pwell 2438 580 2438 580 0 FreeSans 200 0 0 0 x19.VNB
-rlabel comment 2392 580 2392 580 4 x19.dfbbn_1
-rlabel locali 3848 727 3957 793 1 x19.SET_B
-rlabel metal1 3895 764 3953 773 1 x19.SET_B
-rlabel metal1 3895 727 3953 736 1 x19.SET_B
-rlabel metal1 3145 764 3203 773 1 x19.SET_B
-rlabel metal1 3145 736 3953 764 1 x19.SET_B
-rlabel metal1 3145 727 3203 736 1 x19.SET_B
-rlabel metal1 2392 532 4784 628 1 x19.VGND
-rlabel metal1 2392 1076 4784 1172 1 x19.VPWR
-flabel locali 2881 112 2915 146 0 FreeSans 400 0 0 0 x21.RESET_B
-flabel locali 4721 -126 4755 -92 7 FreeSans 400 0 0 0 x21.VGND
-flabel locali 4721 112 4755 146 0 FreeSans 400 0 0 0 x21.CLK_N
-flabel locali 4721 180 4755 214 0 FreeSans 400 0 0 0 x21.CLK_N
-flabel locali 3985 44 4019 78 0 FreeSans 400 0 0 0 x21.SET_B
-flabel locali 2421 -24 2455 10 0 FreeSans 400 0 0 0 x21.Q
-flabel locali 2421 248 2455 282 0 FreeSans 400 0 0 0 x21.Q
-flabel locali 2421 316 2455 350 0 FreeSans 400 0 0 0 x21.Q
-flabel locali 4721 418 4755 452 7 FreeSans 400 0 0 0 x21.VPWR
-flabel locali 4353 112 4387 146 0 FreeSans 200 0 0 0 x21.D
-flabel locali 4353 180 4387 214 0 FreeSans 200 0 0 0 x21.D
-flabel locali 2697 316 2731 350 0 FreeSans 400 0 0 0 x21.Q_N
-flabel locali 2697 248 2731 282 0 FreeSans 400 0 0 0 x21.Q_N
-flabel locali 2697 -24 2731 10 0 FreeSans 400 0 0 0 x21.Q_N
-flabel metal1 4721 -126 4755 -92 0 FreeSans 200 0 0 0 x21.VGND
-flabel metal1 4721 418 4755 452 0 FreeSans 200 0 0 0 x21.VPWR
-flabel nwell 4721 418 4755 452 7 FreeSans 400 0 0 0 x21.VPB
-flabel nwell 4738 435 4738 435 0 FreeSans 200 0 0 0 x21.VPB
-flabel pwell 4721 -126 4755 -92 7 FreeSans 400 0 0 0 x21.VNB
-flabel pwell 4738 -109 4738 -109 0 FreeSans 200 0 0 0 x21.VNB
-rlabel comment 4784 -109 4784 -109 6 x21.dfbbn_1
-rlabel locali 3219 38 3328 104 1 x21.SET_B
-rlabel metal1 3223 75 3281 84 1 x21.SET_B
-rlabel metal1 3223 38 3281 47 1 x21.SET_B
-rlabel metal1 3973 75 4031 84 1 x21.SET_B
-rlabel metal1 3223 47 4031 75 1 x21.SET_B
-rlabel metal1 3973 38 4031 47 1 x21.SET_B
-rlabel metal1 2392 -157 4784 -61 1 x21.VGND
-rlabel metal1 2392 387 4784 483 1 x21.VPWR
-flabel locali 6653 801 6687 835 0 FreeSans 400 0 0 0 x23.RESET_B
-flabel locali 4813 563 4847 597 3 FreeSans 400 0 0 0 x23.VGND
-flabel locali 4813 801 4847 835 0 FreeSans 400 0 0 0 x23.CLK_N
-flabel locali 4813 869 4847 903 0 FreeSans 400 0 0 0 x23.CLK_N
-flabel locali 5549 733 5583 767 0 FreeSans 400 0 0 0 x23.SET_B
-flabel locali 7113 665 7147 699 0 FreeSans 400 0 0 0 x23.Q
-flabel locali 7113 937 7147 971 0 FreeSans 400 0 0 0 x23.Q
-flabel locali 7113 1005 7147 1039 0 FreeSans 400 0 0 0 x23.Q
-flabel locali 4813 1107 4847 1141 3 FreeSans 400 0 0 0 x23.VPWR
-flabel locali 5181 801 5215 835 0 FreeSans 200 0 0 0 x23.D
-flabel locali 5181 869 5215 903 0 FreeSans 200 0 0 0 x23.D
-flabel locali 6837 1005 6871 1039 0 FreeSans 400 0 0 0 x23.Q_N
-flabel locali 6837 937 6871 971 0 FreeSans 400 0 0 0 x23.Q_N
-flabel locali 6837 665 6871 699 0 FreeSans 400 0 0 0 x23.Q_N
-flabel metal1 4813 563 4847 597 0 FreeSans 200 0 0 0 x23.VGND
-flabel metal1 4813 1107 4847 1141 0 FreeSans 200 0 0 0 x23.VPWR
-flabel nwell 4813 1107 4847 1141 3 FreeSans 400 0 0 0 x23.VPB
-flabel nwell 4830 1124 4830 1124 0 FreeSans 200 0 0 0 x23.VPB
-flabel pwell 4813 563 4847 597 3 FreeSans 400 0 0 0 x23.VNB
-flabel pwell 4830 580 4830 580 0 FreeSans 200 0 0 0 x23.VNB
-rlabel comment 4784 580 4784 580 4 x23.dfbbn_1
-rlabel locali 6240 727 6349 793 1 x23.SET_B
-rlabel metal1 6287 764 6345 773 1 x23.SET_B
-rlabel metal1 6287 727 6345 736 1 x23.SET_B
-rlabel metal1 5537 764 5595 773 1 x23.SET_B
-rlabel metal1 5537 736 6345 764 1 x23.SET_B
-rlabel metal1 5537 727 5595 736 1 x23.SET_B
-rlabel metal1 4784 532 7176 628 1 x23.VGND
-rlabel metal1 4784 1076 7176 1172 1 x23.VPWR
-flabel locali 5273 112 5307 146 0 FreeSans 400 0 0 0 x24.RESET_B
-flabel locali 7113 -126 7147 -92 7 FreeSans 400 0 0 0 x24.VGND
-flabel locali 7113 112 7147 146 0 FreeSans 400 0 0 0 x24.CLK_N
-flabel locali 7113 180 7147 214 0 FreeSans 400 0 0 0 x24.CLK_N
-flabel locali 6377 44 6411 78 0 FreeSans 400 0 0 0 x24.SET_B
-flabel locali 4813 -24 4847 10 0 FreeSans 400 0 0 0 x24.Q
-flabel locali 4813 248 4847 282 0 FreeSans 400 0 0 0 x24.Q
-flabel locali 4813 316 4847 350 0 FreeSans 400 0 0 0 x24.Q
-flabel locali 7113 418 7147 452 7 FreeSans 400 0 0 0 x24.VPWR
-flabel locali 6745 112 6779 146 0 FreeSans 200 0 0 0 x24.D
-flabel locali 6745 180 6779 214 0 FreeSans 200 0 0 0 x24.D
-flabel locali 5089 316 5123 350 0 FreeSans 400 0 0 0 x24.Q_N
-flabel locali 5089 248 5123 282 0 FreeSans 400 0 0 0 x24.Q_N
-flabel locali 5089 -24 5123 10 0 FreeSans 400 0 0 0 x24.Q_N
-flabel metal1 7113 -126 7147 -92 0 FreeSans 200 0 0 0 x24.VGND
-flabel metal1 7113 418 7147 452 0 FreeSans 200 0 0 0 x24.VPWR
-flabel nwell 7113 418 7147 452 7 FreeSans 400 0 0 0 x24.VPB
-flabel nwell 7130 435 7130 435 0 FreeSans 200 0 0 0 x24.VPB
-flabel pwell 7113 -126 7147 -92 7 FreeSans 400 0 0 0 x24.VNB
-flabel pwell 7130 -109 7130 -109 0 FreeSans 200 0 0 0 x24.VNB
-rlabel comment 7176 -109 7176 -109 6 x24.dfbbn_1
-rlabel locali 5611 38 5720 104 1 x24.SET_B
-rlabel metal1 5615 75 5673 84 1 x24.SET_B
-rlabel metal1 5615 38 5673 47 1 x24.SET_B
-rlabel metal1 6365 75 6423 84 1 x24.SET_B
-rlabel metal1 5615 47 6423 75 1 x24.SET_B
-rlabel metal1 6365 38 6423 47 1 x24.SET_B
-rlabel metal1 4784 -157 7176 -61 1 x24.VGND
-rlabel metal1 4784 387 7176 483 1 x24.VPWR
-flabel locali 9045 801 9079 835 0 FreeSans 400 0 0 0 x25.RESET_B
-flabel locali 7205 563 7239 597 3 FreeSans 400 0 0 0 x25.VGND
-flabel locali 7205 801 7239 835 0 FreeSans 400 0 0 0 x25.CLK_N
-flabel locali 7205 869 7239 903 0 FreeSans 400 0 0 0 x25.CLK_N
-flabel locali 7941 733 7975 767 0 FreeSans 400 0 0 0 x25.SET_B
-flabel locali 9505 665 9539 699 0 FreeSans 400 0 0 0 x25.Q
-flabel locali 9505 937 9539 971 0 FreeSans 400 0 0 0 x25.Q
-flabel locali 9505 1005 9539 1039 0 FreeSans 400 0 0 0 x25.Q
-flabel locali 7205 1107 7239 1141 3 FreeSans 400 0 0 0 x25.VPWR
-flabel locali 7573 801 7607 835 0 FreeSans 200 0 0 0 x25.D
-flabel locali 7573 869 7607 903 0 FreeSans 200 0 0 0 x25.D
-flabel locali 9229 1005 9263 1039 0 FreeSans 400 0 0 0 x25.Q_N
-flabel locali 9229 937 9263 971 0 FreeSans 400 0 0 0 x25.Q_N
-flabel locali 9229 665 9263 699 0 FreeSans 400 0 0 0 x25.Q_N
-flabel metal1 7205 563 7239 597 0 FreeSans 200 0 0 0 x25.VGND
-flabel metal1 7205 1107 7239 1141 0 FreeSans 200 0 0 0 x25.VPWR
-flabel nwell 7205 1107 7239 1141 3 FreeSans 400 0 0 0 x25.VPB
-flabel nwell 7222 1124 7222 1124 0 FreeSans 200 0 0 0 x25.VPB
-flabel pwell 7205 563 7239 597 3 FreeSans 400 0 0 0 x25.VNB
-flabel pwell 7222 580 7222 580 0 FreeSans 200 0 0 0 x25.VNB
-rlabel comment 7176 580 7176 580 4 x25.dfbbn_1
-rlabel locali 8632 727 8741 793 1 x25.SET_B
-rlabel metal1 8679 764 8737 773 1 x25.SET_B
-rlabel metal1 8679 727 8737 736 1 x25.SET_B
-rlabel metal1 7929 764 7987 773 1 x25.SET_B
-rlabel metal1 7929 736 8737 764 1 x25.SET_B
-rlabel metal1 7929 727 7987 736 1 x25.SET_B
-rlabel metal1 7176 532 9568 628 1 x25.VGND
-rlabel metal1 7176 1076 9568 1172 1 x25.VPWR
-flabel locali 7665 112 7699 146 0 FreeSans 400 0 0 0 x26.RESET_B
-flabel locali 9505 -126 9539 -92 7 FreeSans 400 0 0 0 x26.VGND
-flabel locali 9505 112 9539 146 0 FreeSans 400 0 0 0 x26.CLK_N
-flabel locali 9505 180 9539 214 0 FreeSans 400 0 0 0 x26.CLK_N
-flabel locali 8769 44 8803 78 0 FreeSans 400 0 0 0 x26.SET_B
-flabel locali 7205 -24 7239 10 0 FreeSans 400 0 0 0 x26.Q
-flabel locali 7205 248 7239 282 0 FreeSans 400 0 0 0 x26.Q
-flabel locali 7205 316 7239 350 0 FreeSans 400 0 0 0 x26.Q
-flabel locali 9505 418 9539 452 7 FreeSans 400 0 0 0 x26.VPWR
-flabel locali 9137 112 9171 146 0 FreeSans 200 0 0 0 x26.D
-flabel locali 9137 180 9171 214 0 FreeSans 200 0 0 0 x26.D
-flabel locali 7481 316 7515 350 0 FreeSans 400 0 0 0 x26.Q_N
-flabel locali 7481 248 7515 282 0 FreeSans 400 0 0 0 x26.Q_N
-flabel locali 7481 -24 7515 10 0 FreeSans 400 0 0 0 x26.Q_N
-flabel metal1 9505 -126 9539 -92 0 FreeSans 200 0 0 0 x26.VGND
-flabel metal1 9505 418 9539 452 0 FreeSans 200 0 0 0 x26.VPWR
-flabel nwell 9505 418 9539 452 7 FreeSans 400 0 0 0 x26.VPB
-flabel nwell 9522 435 9522 435 0 FreeSans 200 0 0 0 x26.VPB
-flabel pwell 9505 -126 9539 -92 7 FreeSans 400 0 0 0 x26.VNB
-flabel pwell 9522 -109 9522 -109 0 FreeSans 200 0 0 0 x26.VNB
-rlabel comment 9568 -109 9568 -109 6 x26.dfbbn_1
-rlabel locali 8003 38 8112 104 1 x26.SET_B
-rlabel metal1 8007 75 8065 84 1 x26.SET_B
-rlabel metal1 8007 38 8065 47 1 x26.SET_B
-rlabel metal1 8757 75 8815 84 1 x26.SET_B
-rlabel metal1 8007 47 8815 75 1 x26.SET_B
-rlabel metal1 8757 38 8815 47 1 x26.SET_B
-rlabel metal1 7176 -157 9568 -61 1 x26.VGND
-rlabel metal1 7176 387 9568 483 1 x26.VPWR
-flabel locali 11437 801 11471 835 0 FreeSans 400 0 0 0 x28.RESET_B
-flabel locali 9597 563 9631 597 3 FreeSans 400 0 0 0 x28.VGND
-flabel locali 9597 801 9631 835 0 FreeSans 400 0 0 0 x28.CLK_N
-flabel locali 9597 869 9631 903 0 FreeSans 400 0 0 0 x28.CLK_N
-flabel locali 10333 733 10367 767 0 FreeSans 400 0 0 0 x28.SET_B
-flabel locali 11897 665 11931 699 0 FreeSans 400 0 0 0 x28.Q
-flabel locali 11897 937 11931 971 0 FreeSans 400 0 0 0 x28.Q
-flabel locali 11897 1005 11931 1039 0 FreeSans 400 0 0 0 x28.Q
-flabel locali 9597 1107 9631 1141 3 FreeSans 400 0 0 0 x28.VPWR
-flabel locali 9965 801 9999 835 0 FreeSans 200 0 0 0 x28.D
-flabel locali 9965 869 9999 903 0 FreeSans 200 0 0 0 x28.D
-flabel locali 11621 1005 11655 1039 0 FreeSans 400 0 0 0 x28.Q_N
-flabel locali 11621 937 11655 971 0 FreeSans 400 0 0 0 x28.Q_N
-flabel locali 11621 665 11655 699 0 FreeSans 400 0 0 0 x28.Q_N
-flabel metal1 9597 563 9631 597 0 FreeSans 200 0 0 0 x28.VGND
-flabel metal1 9597 1107 9631 1141 0 FreeSans 200 0 0 0 x28.VPWR
-flabel nwell 9597 1107 9631 1141 3 FreeSans 400 0 0 0 x28.VPB
-flabel nwell 9614 1124 9614 1124 0 FreeSans 200 0 0 0 x28.VPB
-flabel pwell 9597 563 9631 597 3 FreeSans 400 0 0 0 x28.VNB
-flabel pwell 9614 580 9614 580 0 FreeSans 200 0 0 0 x28.VNB
-rlabel comment 9568 580 9568 580 4 x28.dfbbn_1
-rlabel locali 11024 727 11133 793 1 x28.SET_B
-rlabel metal1 11071 764 11129 773 1 x28.SET_B
-rlabel metal1 11071 727 11129 736 1 x28.SET_B
-rlabel metal1 10321 764 10379 773 1 x28.SET_B
-rlabel metal1 10321 736 11129 764 1 x28.SET_B
-rlabel metal1 10321 727 10379 736 1 x28.SET_B
-rlabel metal1 9568 532 11960 628 1 x28.VGND
-rlabel metal1 9568 1076 11960 1172 1 x28.VPWR
-flabel locali 10057 112 10091 146 0 FreeSans 400 0 0 0 x29.RESET_B
-flabel locali 11897 -126 11931 -92 7 FreeSans 400 0 0 0 x29.VGND
-flabel locali 11897 112 11931 146 0 FreeSans 400 0 0 0 x29.CLK_N
-flabel locali 11897 180 11931 214 0 FreeSans 400 0 0 0 x29.CLK_N
-flabel locali 11161 44 11195 78 0 FreeSans 400 0 0 0 x29.SET_B
-flabel locali 9597 -24 9631 10 0 FreeSans 400 0 0 0 x29.Q
-flabel locali 9597 248 9631 282 0 FreeSans 400 0 0 0 x29.Q
-flabel locali 9597 316 9631 350 0 FreeSans 400 0 0 0 x29.Q
-flabel locali 11897 418 11931 452 7 FreeSans 400 0 0 0 x29.VPWR
-flabel locali 11529 112 11563 146 0 FreeSans 200 0 0 0 x29.D
-flabel locali 11529 180 11563 214 0 FreeSans 200 0 0 0 x29.D
-flabel locali 9873 316 9907 350 0 FreeSans 400 0 0 0 x29.Q_N
-flabel locali 9873 248 9907 282 0 FreeSans 400 0 0 0 x29.Q_N
-flabel locali 9873 -24 9907 10 0 FreeSans 400 0 0 0 x29.Q_N
-flabel metal1 11897 -126 11931 -92 0 FreeSans 200 0 0 0 x29.VGND
-flabel metal1 11897 418 11931 452 0 FreeSans 200 0 0 0 x29.VPWR
-flabel nwell 11897 418 11931 452 7 FreeSans 400 0 0 0 x29.VPB
-flabel nwell 11914 435 11914 435 0 FreeSans 200 0 0 0 x29.VPB
-flabel pwell 11897 -126 11931 -92 7 FreeSans 400 0 0 0 x29.VNB
-flabel pwell 11914 -109 11914 -109 0 FreeSans 200 0 0 0 x29.VNB
-rlabel comment 11960 -109 11960 -109 6 x29.dfbbn_1
-rlabel locali 10395 38 10504 104 1 x29.SET_B
-rlabel metal1 10399 75 10457 84 1 x29.SET_B
-rlabel metal1 10399 38 10457 47 1 x29.SET_B
-rlabel metal1 11149 75 11207 84 1 x29.SET_B
-rlabel metal1 10399 47 11207 75 1 x29.SET_B
-rlabel metal1 11149 38 11207 47 1 x29.SET_B
-rlabel metal1 9568 -157 11960 -61 1 x29.VGND
-rlabel metal1 9568 387 11960 483 1 x29.VPWR
-flabel locali 13829 801 13863 835 0 FreeSans 400 0 0 0 x31.RESET_B
-flabel locali 11989 563 12023 597 3 FreeSans 400 0 0 0 x31.VGND
-flabel locali 11989 801 12023 835 0 FreeSans 400 0 0 0 x31.CLK_N
-flabel locali 11989 869 12023 903 0 FreeSans 400 0 0 0 x31.CLK_N
-flabel locali 12725 733 12759 767 0 FreeSans 400 0 0 0 x31.SET_B
-flabel locali 14289 665 14323 699 0 FreeSans 400 0 0 0 x31.Q
-flabel locali 14289 937 14323 971 0 FreeSans 400 0 0 0 x31.Q
-flabel locali 14289 1005 14323 1039 0 FreeSans 400 0 0 0 x31.Q
-flabel locali 11989 1107 12023 1141 3 FreeSans 400 0 0 0 x31.VPWR
-flabel locali 12357 801 12391 835 0 FreeSans 200 0 0 0 x31.D
-flabel locali 12357 869 12391 903 0 FreeSans 200 0 0 0 x31.D
-flabel locali 14013 1005 14047 1039 0 FreeSans 400 0 0 0 x31.Q_N
-flabel locali 14013 937 14047 971 0 FreeSans 400 0 0 0 x31.Q_N
-flabel locali 14013 665 14047 699 0 FreeSans 400 0 0 0 x31.Q_N
-flabel metal1 11989 563 12023 597 0 FreeSans 200 0 0 0 x31.VGND
-flabel metal1 11989 1107 12023 1141 0 FreeSans 200 0 0 0 x31.VPWR
-flabel nwell 11989 1107 12023 1141 3 FreeSans 400 0 0 0 x31.VPB
-flabel nwell 12006 1124 12006 1124 0 FreeSans 200 0 0 0 x31.VPB
-flabel pwell 11989 563 12023 597 3 FreeSans 400 0 0 0 x31.VNB
-flabel pwell 12006 580 12006 580 0 FreeSans 200 0 0 0 x31.VNB
-rlabel comment 11960 580 11960 580 4 x31.dfbbn_1
-rlabel locali 13416 727 13525 793 1 x31.SET_B
-rlabel metal1 13463 764 13521 773 1 x31.SET_B
-rlabel metal1 13463 727 13521 736 1 x31.SET_B
-rlabel metal1 12713 764 12771 773 1 x31.SET_B
-rlabel metal1 12713 736 13521 764 1 x31.SET_B
-rlabel metal1 12713 727 12771 736 1 x31.SET_B
-rlabel metal1 11960 532 14352 628 1 x31.VGND
-rlabel metal1 11960 1076 14352 1172 1 x31.VPWR
-flabel locali 12449 112 12483 146 0 FreeSans 400 0 0 0 x32.RESET_B
-flabel locali 14289 -126 14323 -92 7 FreeSans 400 0 0 0 x32.VGND
-flabel locali 14289 112 14323 146 0 FreeSans 400 0 0 0 x32.CLK_N
-flabel locali 14289 180 14323 214 0 FreeSans 400 0 0 0 x32.CLK_N
-flabel locali 13553 44 13587 78 0 FreeSans 400 0 0 0 x32.SET_B
-flabel locali 11989 -24 12023 10 0 FreeSans 400 0 0 0 x32.Q
-flabel locali 11989 248 12023 282 0 FreeSans 400 0 0 0 x32.Q
-flabel locali 11989 316 12023 350 0 FreeSans 400 0 0 0 x32.Q
-flabel locali 14289 418 14323 452 7 FreeSans 400 0 0 0 x32.VPWR
-flabel locali 13921 112 13955 146 0 FreeSans 200 0 0 0 x32.D
-flabel locali 13921 180 13955 214 0 FreeSans 200 0 0 0 x32.D
-flabel locali 12265 316 12299 350 0 FreeSans 400 0 0 0 x32.Q_N
-flabel locali 12265 248 12299 282 0 FreeSans 400 0 0 0 x32.Q_N
-flabel locali 12265 -24 12299 10 0 FreeSans 400 0 0 0 x32.Q_N
-flabel metal1 14289 -126 14323 -92 0 FreeSans 200 0 0 0 x32.VGND
-flabel metal1 14289 418 14323 452 0 FreeSans 200 0 0 0 x32.VPWR
-flabel nwell 14289 418 14323 452 7 FreeSans 400 0 0 0 x32.VPB
-flabel nwell 14306 435 14306 435 0 FreeSans 200 0 0 0 x32.VPB
-flabel pwell 14289 -126 14323 -92 7 FreeSans 400 0 0 0 x32.VNB
-flabel pwell 14306 -109 14306 -109 0 FreeSans 200 0 0 0 x32.VNB
-rlabel comment 14352 -109 14352 -109 6 x32.dfbbn_1
-rlabel locali 12787 38 12896 104 1 x32.SET_B
-rlabel metal1 12791 75 12849 84 1 x32.SET_B
-rlabel metal1 12791 38 12849 47 1 x32.SET_B
-rlabel metal1 13541 75 13599 84 1 x32.SET_B
-rlabel metal1 12791 47 13599 75 1 x32.SET_B
-rlabel metal1 13541 38 13599 47 1 x32.SET_B
-rlabel metal1 11960 -157 14352 -61 1 x32.VGND
-rlabel metal1 11960 387 14352 483 1 x32.VPWR
-flabel locali 16221 801 16255 835 0 FreeSans 400 0 0 0 x34.RESET_B
-flabel locali 14381 563 14415 597 3 FreeSans 400 0 0 0 x34.VGND
-flabel locali 14381 801 14415 835 0 FreeSans 400 0 0 0 x34.CLK_N
-flabel locali 14381 869 14415 903 0 FreeSans 400 0 0 0 x34.CLK_N
-flabel locali 15117 733 15151 767 0 FreeSans 400 0 0 0 x34.SET_B
-flabel locali 16681 665 16715 699 0 FreeSans 400 0 0 0 x34.Q
-flabel locali 16681 937 16715 971 0 FreeSans 400 0 0 0 x34.Q
-flabel locali 16681 1005 16715 1039 0 FreeSans 400 0 0 0 x34.Q
-flabel locali 14381 1107 14415 1141 3 FreeSans 400 0 0 0 x34.VPWR
-flabel locali 14749 801 14783 835 0 FreeSans 200 0 0 0 x34.D
-flabel locali 14749 869 14783 903 0 FreeSans 200 0 0 0 x34.D
-flabel locali 16405 1005 16439 1039 0 FreeSans 400 0 0 0 x34.Q_N
-flabel locali 16405 937 16439 971 0 FreeSans 400 0 0 0 x34.Q_N
-flabel locali 16405 665 16439 699 0 FreeSans 400 0 0 0 x34.Q_N
-flabel metal1 14381 563 14415 597 0 FreeSans 200 0 0 0 x34.VGND
-flabel metal1 14381 1107 14415 1141 0 FreeSans 200 0 0 0 x34.VPWR
-flabel nwell 14381 1107 14415 1141 3 FreeSans 400 0 0 0 x34.VPB
-flabel nwell 14398 1124 14398 1124 0 FreeSans 200 0 0 0 x34.VPB
-flabel pwell 14381 563 14415 597 3 FreeSans 400 0 0 0 x34.VNB
-flabel pwell 14398 580 14398 580 0 FreeSans 200 0 0 0 x34.VNB
-rlabel comment 14352 580 14352 580 4 x34.dfbbn_1
-rlabel locali 15808 727 15917 793 1 x34.SET_B
-rlabel metal1 15855 764 15913 773 1 x34.SET_B
-rlabel metal1 15855 727 15913 736 1 x34.SET_B
-rlabel metal1 15105 764 15163 773 1 x34.SET_B
-rlabel metal1 15105 736 15913 764 1 x34.SET_B
-rlabel metal1 15105 727 15163 736 1 x34.SET_B
-rlabel metal1 14352 532 16744 628 1 x34.VGND
-rlabel metal1 14352 1076 16744 1172 1 x34.VPWR
+flabel metal2 15914 1603 15956 3300 0 FreeSans 320 0 0 0 check[0]
+port 23 nsew
+flabel metal2 16317 1454 16359 3300 0 FreeSans 320 0 0 0 D[1]
+port 46 nsew
+flabel metal4 7278 2721 15690 3018 0 FreeSans 1600 0 0 0 VDD
+port 61 nsew
 flabel locali 14841 112 14875 146 0 FreeSans 400 0 0 0 x35.RESET_B
 flabel locali 16681 -126 16715 -92 7 FreeSans 400 0 0 0 x35.VGND
 flabel locali 16681 112 16715 146 0 FreeSans 400 0 0 0 x35.CLK_N
@@ -34198,201 +33797,333 @@ rlabel metal1 15183 47 15991 75 1 x35.SET_B
 rlabel metal1 15933 38 15991 47 1 x35.SET_B
 rlabel metal1 14352 -157 16744 -61 1 x35.VGND
 rlabel metal1 14352 387 16744 483 1 x35.VPWR
-flabel metal1 30 1251 64 1285 0 FreeSans 200 0 0 0 x6.VGND
-flabel metal1 30 1795 64 1829 0 FreeSans 200 0 0 0 x6.VPWR
-flabel locali 674 1557 708 1591 0 FreeSans 250 0 0 0 x6.S
-flabel locali 582 1557 616 1591 0 FreeSans 250 0 0 0 x6.S
-flabel locali 490 1421 524 1455 0 FreeSans 250 0 0 0 x6.A1
-flabel locali 490 1489 524 1523 0 FreeSans 250 0 0 0 x6.A1
-flabel locali 398 1489 432 1523 0 FreeSans 250 0 0 0 x6.A0
-flabel locali 30 1353 64 1387 0 FreeSans 250 0 0 0 x6.X
-flabel locali 30 1625 64 1659 0 FreeSans 250 0 0 0 x6.X
-flabel locali 30 1693 64 1727 0 FreeSans 250 0 0 0 x6.X
-flabel nwell 74 1795 108 1829 0 FreeSans 250 0 0 0 x6.VPB
-flabel pwell 84 1251 118 1285 0 FreeSans 250 0 0 0 x6.VNB
-rlabel comment 0 1268 0 1268 4 x6.mux2_1
-rlabel metal1 0 1220 828 1316 1 x6.VGND
-rlabel metal1 0 1764 828 1860 1 x6.VPWR
-flabel metal1 2198 1251 2232 1285 0 FreeSans 200 0 0 0 x7.VGND
-flabel metal1 2198 1795 2232 1829 0 FreeSans 200 0 0 0 x7.VPWR
-flabel locali 1554 1557 1588 1591 0 FreeSans 250 0 0 0 x7.S
-flabel locali 1646 1557 1680 1591 0 FreeSans 250 0 0 0 x7.S
-flabel locali 1738 1421 1772 1455 0 FreeSans 250 0 0 0 x7.A1
-flabel locali 1738 1489 1772 1523 0 FreeSans 250 0 0 0 x7.A1
-flabel locali 1830 1489 1864 1523 0 FreeSans 250 0 0 0 x7.A0
-flabel locali 2198 1353 2232 1387 0 FreeSans 250 0 0 0 x7.X
-flabel locali 2198 1625 2232 1659 0 FreeSans 250 0 0 0 x7.X
-flabel locali 2198 1693 2232 1727 0 FreeSans 250 0 0 0 x7.X
-flabel nwell 2154 1795 2188 1829 0 FreeSans 250 0 0 0 x7.VPB
-flabel pwell 2144 1251 2178 1285 0 FreeSans 250 0 0 0 x7.VNB
-rlabel comment 2262 1268 2262 1268 6 x7.mux2_1
-rlabel metal1 1434 1220 2262 1316 1 x7.VGND
-rlabel metal1 1434 1764 2262 1860 1 x7.VPWR
-flabel metal1 2422 1251 2456 1285 0 FreeSans 200 0 0 0 x8.VGND
-flabel metal1 2422 1795 2456 1829 0 FreeSans 200 0 0 0 x8.VPWR
-flabel locali 3066 1557 3100 1591 0 FreeSans 250 0 0 0 x8.S
-flabel locali 2974 1557 3008 1591 0 FreeSans 250 0 0 0 x8.S
-flabel locali 2882 1421 2916 1455 0 FreeSans 250 0 0 0 x8.A1
-flabel locali 2882 1489 2916 1523 0 FreeSans 250 0 0 0 x8.A1
-flabel locali 2790 1489 2824 1523 0 FreeSans 250 0 0 0 x8.A0
-flabel locali 2422 1353 2456 1387 0 FreeSans 250 0 0 0 x8.X
-flabel locali 2422 1625 2456 1659 0 FreeSans 250 0 0 0 x8.X
-flabel locali 2422 1693 2456 1727 0 FreeSans 250 0 0 0 x8.X
-flabel nwell 2466 1795 2500 1829 0 FreeSans 250 0 0 0 x8.VPB
-flabel pwell 2476 1251 2510 1285 0 FreeSans 250 0 0 0 x8.VNB
-rlabel comment 2392 1268 2392 1268 4 x8.mux2_1
-rlabel metal1 2392 1220 3220 1316 1 x8.VGND
-rlabel metal1 2392 1764 3220 1860 1 x8.VPWR
-flabel metal1 4590 1251 4624 1285 0 FreeSans 200 0 0 0 x9.VGND
-flabel metal1 4590 1795 4624 1829 0 FreeSans 200 0 0 0 x9.VPWR
-flabel locali 3946 1557 3980 1591 0 FreeSans 250 0 0 0 x9.S
-flabel locali 4038 1557 4072 1591 0 FreeSans 250 0 0 0 x9.S
-flabel locali 4130 1421 4164 1455 0 FreeSans 250 0 0 0 x9.A1
-flabel locali 4130 1489 4164 1523 0 FreeSans 250 0 0 0 x9.A1
-flabel locali 4222 1489 4256 1523 0 FreeSans 250 0 0 0 x9.A0
-flabel locali 4590 1353 4624 1387 0 FreeSans 250 0 0 0 x9.X
-flabel locali 4590 1625 4624 1659 0 FreeSans 250 0 0 0 x9.X
-flabel locali 4590 1693 4624 1727 0 FreeSans 250 0 0 0 x9.X
-flabel nwell 4546 1795 4580 1829 0 FreeSans 250 0 0 0 x9.VPB
-flabel pwell 4536 1251 4570 1285 0 FreeSans 250 0 0 0 x9.VNB
-rlabel comment 4654 1268 4654 1268 6 x9.mux2_1
-rlabel metal1 3826 1220 4654 1316 1 x9.VGND
-rlabel metal1 3826 1764 4654 1860 1 x9.VPWR
-flabel metal1 4814 1251 4848 1285 0 FreeSans 200 0 0 0 x10.VGND
-flabel metal1 4814 1795 4848 1829 0 FreeSans 200 0 0 0 x10.VPWR
-flabel locali 5458 1557 5492 1591 0 FreeSans 250 0 0 0 x10.S
-flabel locali 5366 1557 5400 1591 0 FreeSans 250 0 0 0 x10.S
-flabel locali 5274 1421 5308 1455 0 FreeSans 250 0 0 0 x10.A1
-flabel locali 5274 1489 5308 1523 0 FreeSans 250 0 0 0 x10.A1
-flabel locali 5182 1489 5216 1523 0 FreeSans 250 0 0 0 x10.A0
-flabel locali 4814 1353 4848 1387 0 FreeSans 250 0 0 0 x10.X
-flabel locali 4814 1625 4848 1659 0 FreeSans 250 0 0 0 x10.X
-flabel locali 4814 1693 4848 1727 0 FreeSans 250 0 0 0 x10.X
-flabel nwell 4858 1795 4892 1829 0 FreeSans 250 0 0 0 x10.VPB
-flabel pwell 4868 1251 4902 1285 0 FreeSans 250 0 0 0 x10.VNB
-rlabel comment 4784 1268 4784 1268 4 x10.mux2_1
-rlabel metal1 4784 1220 5612 1316 1 x10.VGND
-rlabel metal1 4784 1764 5612 1860 1 x10.VPWR
-flabel metal1 6980 1251 7014 1285 0 FreeSans 200 0 0 0 x11.VGND
-flabel metal1 6980 1795 7014 1829 0 FreeSans 200 0 0 0 x11.VPWR
-flabel locali 6336 1557 6370 1591 0 FreeSans 250 0 0 0 x11.S
-flabel locali 6428 1557 6462 1591 0 FreeSans 250 0 0 0 x11.S
-flabel locali 6520 1421 6554 1455 0 FreeSans 250 0 0 0 x11.A1
-flabel locali 6520 1489 6554 1523 0 FreeSans 250 0 0 0 x11.A1
-flabel locali 6612 1489 6646 1523 0 FreeSans 250 0 0 0 x11.A0
-flabel locali 6980 1353 7014 1387 0 FreeSans 250 0 0 0 x11.X
-flabel locali 6980 1625 7014 1659 0 FreeSans 250 0 0 0 x11.X
-flabel locali 6980 1693 7014 1727 0 FreeSans 250 0 0 0 x11.X
-flabel nwell 6936 1795 6970 1829 0 FreeSans 250 0 0 0 x11.VPB
-flabel pwell 6926 1251 6960 1285 0 FreeSans 250 0 0 0 x11.VNB
-rlabel comment 7044 1268 7044 1268 6 x11.mux2_1
-rlabel metal1 6216 1220 7044 1316 1 x11.VGND
-rlabel metal1 6216 1764 7044 1860 1 x11.VPWR
-flabel metal1 7206 1251 7240 1285 0 FreeSans 200 0 0 0 x12.VGND
-flabel metal1 7206 1795 7240 1829 0 FreeSans 200 0 0 0 x12.VPWR
-flabel locali 7850 1557 7884 1591 0 FreeSans 250 0 0 0 x12.S
-flabel locali 7758 1557 7792 1591 0 FreeSans 250 0 0 0 x12.S
-flabel locali 7666 1421 7700 1455 0 FreeSans 250 0 0 0 x12.A1
-flabel locali 7666 1489 7700 1523 0 FreeSans 250 0 0 0 x12.A1
-flabel locali 7574 1489 7608 1523 0 FreeSans 250 0 0 0 x12.A0
-flabel locali 7206 1353 7240 1387 0 FreeSans 250 0 0 0 x12.X
-flabel locali 7206 1625 7240 1659 0 FreeSans 250 0 0 0 x12.X
-flabel locali 7206 1693 7240 1727 0 FreeSans 250 0 0 0 x12.X
-flabel nwell 7250 1795 7284 1829 0 FreeSans 250 0 0 0 x12.VPB
-flabel pwell 7260 1251 7294 1285 0 FreeSans 250 0 0 0 x12.VNB
-rlabel comment 7176 1268 7176 1268 4 x12.mux2_1
-rlabel metal1 7176 1220 8004 1316 1 x12.VGND
-rlabel metal1 7176 1764 8004 1860 1 x12.VPWR
-flabel metal1 9374 1251 9408 1285 0 FreeSans 200 0 0 0 x13.VGND
-flabel metal1 9374 1795 9408 1829 0 FreeSans 200 0 0 0 x13.VPWR
-flabel locali 8730 1557 8764 1591 0 FreeSans 250 0 0 0 x13.S
-flabel locali 8822 1557 8856 1591 0 FreeSans 250 0 0 0 x13.S
-flabel locali 8914 1421 8948 1455 0 FreeSans 250 0 0 0 x13.A1
-flabel locali 8914 1489 8948 1523 0 FreeSans 250 0 0 0 x13.A1
-flabel locali 9006 1489 9040 1523 0 FreeSans 250 0 0 0 x13.A0
-flabel locali 9374 1353 9408 1387 0 FreeSans 250 0 0 0 x13.X
-flabel locali 9374 1625 9408 1659 0 FreeSans 250 0 0 0 x13.X
-flabel locali 9374 1693 9408 1727 0 FreeSans 250 0 0 0 x13.X
-flabel nwell 9330 1795 9364 1829 0 FreeSans 250 0 0 0 x13.VPB
-flabel pwell 9320 1251 9354 1285 0 FreeSans 250 0 0 0 x13.VNB
-rlabel comment 9438 1268 9438 1268 6 x13.mux2_1
-rlabel metal1 8610 1220 9438 1316 1 x13.VGND
-rlabel metal1 8610 1764 9438 1860 1 x13.VPWR
-flabel metal1 9598 1251 9632 1285 0 FreeSans 200 0 0 0 x14.VGND
-flabel metal1 9598 1795 9632 1829 0 FreeSans 200 0 0 0 x14.VPWR
-flabel locali 10242 1557 10276 1591 0 FreeSans 250 0 0 0 x14.S
-flabel locali 10150 1557 10184 1591 0 FreeSans 250 0 0 0 x14.S
-flabel locali 10058 1421 10092 1455 0 FreeSans 250 0 0 0 x14.A1
-flabel locali 10058 1489 10092 1523 0 FreeSans 250 0 0 0 x14.A1
-flabel locali 9966 1489 10000 1523 0 FreeSans 250 0 0 0 x14.A0
-flabel locali 9598 1353 9632 1387 0 FreeSans 250 0 0 0 x14.X
-flabel locali 9598 1625 9632 1659 0 FreeSans 250 0 0 0 x14.X
-flabel locali 9598 1693 9632 1727 0 FreeSans 250 0 0 0 x14.X
-flabel nwell 9642 1795 9676 1829 0 FreeSans 250 0 0 0 x14.VPB
-flabel pwell 9652 1251 9686 1285 0 FreeSans 250 0 0 0 x14.VNB
-rlabel comment 9568 1268 9568 1268 4 x14.mux2_1
-rlabel metal1 9568 1220 10396 1316 1 x14.VGND
-rlabel metal1 9568 1764 10396 1860 1 x14.VPWR
-flabel metal1 11766 1251 11800 1285 0 FreeSans 200 0 0 0 x15.VGND
-flabel metal1 11766 1795 11800 1829 0 FreeSans 200 0 0 0 x15.VPWR
-flabel locali 11122 1557 11156 1591 0 FreeSans 250 0 0 0 x15.S
-flabel locali 11214 1557 11248 1591 0 FreeSans 250 0 0 0 x15.S
-flabel locali 11306 1421 11340 1455 0 FreeSans 250 0 0 0 x15.A1
-flabel locali 11306 1489 11340 1523 0 FreeSans 250 0 0 0 x15.A1
-flabel locali 11398 1489 11432 1523 0 FreeSans 250 0 0 0 x15.A0
-flabel locali 11766 1353 11800 1387 0 FreeSans 250 0 0 0 x15.X
-flabel locali 11766 1625 11800 1659 0 FreeSans 250 0 0 0 x15.X
-flabel locali 11766 1693 11800 1727 0 FreeSans 250 0 0 0 x15.X
-flabel nwell 11722 1795 11756 1829 0 FreeSans 250 0 0 0 x15.VPB
-flabel pwell 11712 1251 11746 1285 0 FreeSans 250 0 0 0 x15.VNB
-rlabel comment 11830 1268 11830 1268 6 x15.mux2_1
-rlabel metal1 11002 1220 11830 1316 1 x15.VGND
-rlabel metal1 11002 1764 11830 1860 1 x15.VPWR
-flabel metal1 11990 1251 12024 1285 0 FreeSans 200 0 0 0 x16.VGND
-flabel metal1 11990 1795 12024 1829 0 FreeSans 200 0 0 0 x16.VPWR
-flabel locali 12634 1557 12668 1591 0 FreeSans 250 0 0 0 x16.S
-flabel locali 12542 1557 12576 1591 0 FreeSans 250 0 0 0 x16.S
-flabel locali 12450 1421 12484 1455 0 FreeSans 250 0 0 0 x16.A1
-flabel locali 12450 1489 12484 1523 0 FreeSans 250 0 0 0 x16.A1
-flabel locali 12358 1489 12392 1523 0 FreeSans 250 0 0 0 x16.A0
-flabel locali 11990 1353 12024 1387 0 FreeSans 250 0 0 0 x16.X
-flabel locali 11990 1625 12024 1659 0 FreeSans 250 0 0 0 x16.X
-flabel locali 11990 1693 12024 1727 0 FreeSans 250 0 0 0 x16.X
-flabel nwell 12034 1795 12068 1829 0 FreeSans 250 0 0 0 x16.VPB
-flabel pwell 12044 1251 12078 1285 0 FreeSans 250 0 0 0 x16.VNB
-rlabel comment 11960 1268 11960 1268 4 x16.mux2_1
-rlabel metal1 11960 1220 12788 1316 1 x16.VGND
-rlabel metal1 11960 1764 12788 1860 1 x16.VPWR
-flabel metal1 14156 1251 14190 1285 0 FreeSans 200 0 0 0 x17.VGND
-flabel metal1 14156 1795 14190 1829 0 FreeSans 200 0 0 0 x17.VPWR
-flabel locali 13512 1557 13546 1591 0 FreeSans 250 0 0 0 x17.S
-flabel locali 13604 1557 13638 1591 0 FreeSans 250 0 0 0 x17.S
-flabel locali 13696 1421 13730 1455 0 FreeSans 250 0 0 0 x17.A1
-flabel locali 13696 1489 13730 1523 0 FreeSans 250 0 0 0 x17.A1
-flabel locali 13788 1489 13822 1523 0 FreeSans 250 0 0 0 x17.A0
-flabel locali 14156 1353 14190 1387 0 FreeSans 250 0 0 0 x17.X
-flabel locali 14156 1625 14190 1659 0 FreeSans 250 0 0 0 x17.X
-flabel locali 14156 1693 14190 1727 0 FreeSans 250 0 0 0 x17.X
-flabel nwell 14112 1795 14146 1829 0 FreeSans 250 0 0 0 x17.VPB
-flabel pwell 14102 1251 14136 1285 0 FreeSans 250 0 0 0 x17.VNB
-rlabel comment 14220 1268 14220 1268 6 x17.mux2_1
-rlabel metal1 13392 1220 14220 1316 1 x17.VGND
-rlabel metal1 13392 1764 14220 1860 1 x17.VPWR
-flabel metal1 14382 1251 14416 1285 0 FreeSans 200 0 0 0 x18.VGND
-flabel metal1 14382 1795 14416 1829 0 FreeSans 200 0 0 0 x18.VPWR
-flabel locali 15026 1557 15060 1591 0 FreeSans 250 0 0 0 x18.S
-flabel locali 14934 1557 14968 1591 0 FreeSans 250 0 0 0 x18.S
-flabel locali 14842 1421 14876 1455 0 FreeSans 250 0 0 0 x18.A1
-flabel locali 14842 1489 14876 1523 0 FreeSans 250 0 0 0 x18.A1
-flabel locali 14750 1489 14784 1523 0 FreeSans 250 0 0 0 x18.A0
-flabel locali 14382 1353 14416 1387 0 FreeSans 250 0 0 0 x18.X
-flabel locali 14382 1625 14416 1659 0 FreeSans 250 0 0 0 x18.X
-flabel locali 14382 1693 14416 1727 0 FreeSans 250 0 0 0 x18.X
-flabel nwell 14426 1795 14460 1829 0 FreeSans 250 0 0 0 x18.VPB
-flabel pwell 14436 1251 14470 1285 0 FreeSans 250 0 0 0 x18.VNB
-rlabel comment 14352 1268 14352 1268 4 x18.mux2_1
-rlabel metal1 14352 1220 15180 1316 1 x18.VGND
-rlabel metal1 14352 1764 15180 1860 1 x18.VPWR
+flabel locali 16221 801 16255 835 0 FreeSans 400 0 0 0 x34.RESET_B
+flabel locali 14381 563 14415 597 3 FreeSans 400 0 0 0 x34.VGND
+flabel locali 14381 801 14415 835 0 FreeSans 400 0 0 0 x34.CLK_N
+flabel locali 14381 869 14415 903 0 FreeSans 400 0 0 0 x34.CLK_N
+flabel locali 15117 733 15151 767 0 FreeSans 400 0 0 0 x34.SET_B
+flabel locali 16681 665 16715 699 0 FreeSans 400 0 0 0 x34.Q
+flabel locali 16681 937 16715 971 0 FreeSans 400 0 0 0 x34.Q
+flabel locali 16681 1005 16715 1039 0 FreeSans 400 0 0 0 x34.Q
+flabel locali 14381 1107 14415 1141 3 FreeSans 400 0 0 0 x34.VPWR
+flabel locali 14749 801 14783 835 0 FreeSans 200 0 0 0 x34.D
+flabel locali 14749 869 14783 903 0 FreeSans 200 0 0 0 x34.D
+flabel locali 16405 1005 16439 1039 0 FreeSans 400 0 0 0 x34.Q_N
+flabel locali 16405 937 16439 971 0 FreeSans 400 0 0 0 x34.Q_N
+flabel locali 16405 665 16439 699 0 FreeSans 400 0 0 0 x34.Q_N
+flabel metal1 14381 563 14415 597 0 FreeSans 200 0 0 0 x34.VGND
+flabel metal1 14381 1107 14415 1141 0 FreeSans 200 0 0 0 x34.VPWR
+flabel nwell 14381 1107 14415 1141 3 FreeSans 400 0 0 0 x34.VPB
+flabel nwell 14398 1124 14398 1124 0 FreeSans 200 0 0 0 x34.VPB
+flabel pwell 14381 563 14415 597 3 FreeSans 400 0 0 0 x34.VNB
+flabel pwell 14398 580 14398 580 0 FreeSans 200 0 0 0 x34.VNB
+rlabel comment 14352 580 14352 580 4 x34.dfbbn_1
+rlabel locali 15808 727 15917 793 1 x34.SET_B
+rlabel metal1 15855 764 15913 773 1 x34.SET_B
+rlabel metal1 15855 727 15913 736 1 x34.SET_B
+rlabel metal1 15105 764 15163 773 1 x34.SET_B
+rlabel metal1 15105 736 15913 764 1 x34.SET_B
+rlabel metal1 15105 727 15163 736 1 x34.SET_B
+rlabel metal1 14352 532 16744 628 1 x34.VGND
+rlabel metal1 14352 1076 16744 1172 1 x34.VPWR
+flabel locali 12449 112 12483 146 0 FreeSans 400 0 0 0 x32.RESET_B
+flabel locali 14289 -126 14323 -92 7 FreeSans 400 0 0 0 x32.VGND
+flabel locali 14289 112 14323 146 0 FreeSans 400 0 0 0 x32.CLK_N
+flabel locali 14289 180 14323 214 0 FreeSans 400 0 0 0 x32.CLK_N
+flabel locali 13553 44 13587 78 0 FreeSans 400 0 0 0 x32.SET_B
+flabel locali 11989 -24 12023 10 0 FreeSans 400 0 0 0 x32.Q
+flabel locali 11989 248 12023 282 0 FreeSans 400 0 0 0 x32.Q
+flabel locali 11989 316 12023 350 0 FreeSans 400 0 0 0 x32.Q
+flabel locali 14289 418 14323 452 7 FreeSans 400 0 0 0 x32.VPWR
+flabel locali 13921 112 13955 146 0 FreeSans 200 0 0 0 x32.D
+flabel locali 13921 180 13955 214 0 FreeSans 200 0 0 0 x32.D
+flabel locali 12265 316 12299 350 0 FreeSans 400 0 0 0 x32.Q_N
+flabel locali 12265 248 12299 282 0 FreeSans 400 0 0 0 x32.Q_N
+flabel locali 12265 -24 12299 10 0 FreeSans 400 0 0 0 x32.Q_N
+flabel metal1 14289 -126 14323 -92 0 FreeSans 200 0 0 0 x32.VGND
+flabel metal1 14289 418 14323 452 0 FreeSans 200 0 0 0 x32.VPWR
+flabel nwell 14289 418 14323 452 7 FreeSans 400 0 0 0 x32.VPB
+flabel nwell 14306 435 14306 435 0 FreeSans 200 0 0 0 x32.VPB
+flabel pwell 14289 -126 14323 -92 7 FreeSans 400 0 0 0 x32.VNB
+flabel pwell 14306 -109 14306 -109 0 FreeSans 200 0 0 0 x32.VNB
+rlabel comment 14352 -109 14352 -109 6 x32.dfbbn_1
+rlabel locali 12787 38 12896 104 1 x32.SET_B
+rlabel metal1 12791 75 12849 84 1 x32.SET_B
+rlabel metal1 12791 38 12849 47 1 x32.SET_B
+rlabel metal1 13541 75 13599 84 1 x32.SET_B
+rlabel metal1 12791 47 13599 75 1 x32.SET_B
+rlabel metal1 13541 38 13599 47 1 x32.SET_B
+rlabel metal1 11960 -157 14352 -61 1 x32.VGND
+rlabel metal1 11960 387 14352 483 1 x32.VPWR
+flabel locali 13829 801 13863 835 0 FreeSans 400 0 0 0 x31.RESET_B
+flabel locali 11989 563 12023 597 3 FreeSans 400 0 0 0 x31.VGND
+flabel locali 11989 801 12023 835 0 FreeSans 400 0 0 0 x31.CLK_N
+flabel locali 11989 869 12023 903 0 FreeSans 400 0 0 0 x31.CLK_N
+flabel locali 12725 733 12759 767 0 FreeSans 400 0 0 0 x31.SET_B
+flabel locali 14289 665 14323 699 0 FreeSans 400 0 0 0 x31.Q
+flabel locali 14289 937 14323 971 0 FreeSans 400 0 0 0 x31.Q
+flabel locali 14289 1005 14323 1039 0 FreeSans 400 0 0 0 x31.Q
+flabel locali 11989 1107 12023 1141 3 FreeSans 400 0 0 0 x31.VPWR
+flabel locali 12357 801 12391 835 0 FreeSans 200 0 0 0 x31.D
+flabel locali 12357 869 12391 903 0 FreeSans 200 0 0 0 x31.D
+flabel locali 14013 1005 14047 1039 0 FreeSans 400 0 0 0 x31.Q_N
+flabel locali 14013 937 14047 971 0 FreeSans 400 0 0 0 x31.Q_N
+flabel locali 14013 665 14047 699 0 FreeSans 400 0 0 0 x31.Q_N
+flabel metal1 11989 563 12023 597 0 FreeSans 200 0 0 0 x31.VGND
+flabel metal1 11989 1107 12023 1141 0 FreeSans 200 0 0 0 x31.VPWR
+flabel nwell 11989 1107 12023 1141 3 FreeSans 400 0 0 0 x31.VPB
+flabel nwell 12006 1124 12006 1124 0 FreeSans 200 0 0 0 x31.VPB
+flabel pwell 11989 563 12023 597 3 FreeSans 400 0 0 0 x31.VNB
+flabel pwell 12006 580 12006 580 0 FreeSans 200 0 0 0 x31.VNB
+rlabel comment 11960 580 11960 580 4 x31.dfbbn_1
+rlabel locali 13416 727 13525 793 1 x31.SET_B
+rlabel metal1 13463 764 13521 773 1 x31.SET_B
+rlabel metal1 13463 727 13521 736 1 x31.SET_B
+rlabel metal1 12713 764 12771 773 1 x31.SET_B
+rlabel metal1 12713 736 13521 764 1 x31.SET_B
+rlabel metal1 12713 727 12771 736 1 x31.SET_B
+rlabel metal1 11960 532 14352 628 1 x31.VGND
+rlabel metal1 11960 1076 14352 1172 1 x31.VPWR
+flabel locali 5612 2631 5646 2665 0 FreeSans 200 0 0 0 x30.A
+flabel locali 5520 2631 5554 2665 0 FreeSans 200 0 0 0 x30.A
+flabel locali 7175 2631 7209 2665 0 FreeSans 200 0 0 0 x30.X
+flabel locali 7175 2699 7209 2733 0 FreeSans 200 0 0 0 x30.X
+flabel pwell 5244 2393 5278 2427 0 FreeSans 200 0 0 0 x30.VNB
+flabel nwell 5244 2937 5278 2971 0 FreeSans 200 0 0 0 x30.VPB
+flabel metal1 5244 2393 5278 2427 0 FreeSans 200 0 0 0 x30.VGND
+flabel metal1 5244 2937 5278 2971 0 FreeSans 200 0 0 0 x30.VPWR
+rlabel comment 5214 2410 5214 2410 4 x30.buf_16
+rlabel metal1 5214 2362 7238 2458 1 x30.VGND
+rlabel metal1 5214 2906 7238 3002 1 x30.VPWR
+flabel locali 10057 112 10091 146 0 FreeSans 400 0 0 0 x29.RESET_B
+flabel locali 11897 -126 11931 -92 7 FreeSans 400 0 0 0 x29.VGND
+flabel locali 11897 112 11931 146 0 FreeSans 400 0 0 0 x29.CLK_N
+flabel locali 11897 180 11931 214 0 FreeSans 400 0 0 0 x29.CLK_N
+flabel locali 11161 44 11195 78 0 FreeSans 400 0 0 0 x29.SET_B
+flabel locali 9597 -24 9631 10 0 FreeSans 400 0 0 0 x29.Q
+flabel locali 9597 248 9631 282 0 FreeSans 400 0 0 0 x29.Q
+flabel locali 9597 316 9631 350 0 FreeSans 400 0 0 0 x29.Q
+flabel locali 11897 418 11931 452 7 FreeSans 400 0 0 0 x29.VPWR
+flabel locali 11529 112 11563 146 0 FreeSans 200 0 0 0 x29.D
+flabel locali 11529 180 11563 214 0 FreeSans 200 0 0 0 x29.D
+flabel locali 9873 316 9907 350 0 FreeSans 400 0 0 0 x29.Q_N
+flabel locali 9873 248 9907 282 0 FreeSans 400 0 0 0 x29.Q_N
+flabel locali 9873 -24 9907 10 0 FreeSans 400 0 0 0 x29.Q_N
+flabel metal1 11897 -126 11931 -92 0 FreeSans 200 0 0 0 x29.VGND
+flabel metal1 11897 418 11931 452 0 FreeSans 200 0 0 0 x29.VPWR
+flabel nwell 11897 418 11931 452 7 FreeSans 400 0 0 0 x29.VPB
+flabel nwell 11914 435 11914 435 0 FreeSans 200 0 0 0 x29.VPB
+flabel pwell 11897 -126 11931 -92 7 FreeSans 400 0 0 0 x29.VNB
+flabel pwell 11914 -109 11914 -109 0 FreeSans 200 0 0 0 x29.VNB
+rlabel comment 11960 -109 11960 -109 6 x29.dfbbn_1
+rlabel locali 10395 38 10504 104 1 x29.SET_B
+rlabel metal1 10399 75 10457 84 1 x29.SET_B
+rlabel metal1 10399 38 10457 47 1 x29.SET_B
+rlabel metal1 11149 75 11207 84 1 x29.SET_B
+rlabel metal1 10399 47 11207 75 1 x29.SET_B
+rlabel metal1 11149 38 11207 47 1 x29.SET_B
+rlabel metal1 9568 -157 11960 -61 1 x29.VGND
+rlabel metal1 9568 387 11960 483 1 x29.VPWR
+flabel locali 11437 801 11471 835 0 FreeSans 400 0 0 0 x28.RESET_B
+flabel locali 9597 563 9631 597 3 FreeSans 400 0 0 0 x28.VGND
+flabel locali 9597 801 9631 835 0 FreeSans 400 0 0 0 x28.CLK_N
+flabel locali 9597 869 9631 903 0 FreeSans 400 0 0 0 x28.CLK_N
+flabel locali 10333 733 10367 767 0 FreeSans 400 0 0 0 x28.SET_B
+flabel locali 11897 665 11931 699 0 FreeSans 400 0 0 0 x28.Q
+flabel locali 11897 937 11931 971 0 FreeSans 400 0 0 0 x28.Q
+flabel locali 11897 1005 11931 1039 0 FreeSans 400 0 0 0 x28.Q
+flabel locali 9597 1107 9631 1141 3 FreeSans 400 0 0 0 x28.VPWR
+flabel locali 9965 801 9999 835 0 FreeSans 200 0 0 0 x28.D
+flabel locali 9965 869 9999 903 0 FreeSans 200 0 0 0 x28.D
+flabel locali 11621 1005 11655 1039 0 FreeSans 400 0 0 0 x28.Q_N
+flabel locali 11621 937 11655 971 0 FreeSans 400 0 0 0 x28.Q_N
+flabel locali 11621 665 11655 699 0 FreeSans 400 0 0 0 x28.Q_N
+flabel metal1 9597 563 9631 597 0 FreeSans 200 0 0 0 x28.VGND
+flabel metal1 9597 1107 9631 1141 0 FreeSans 200 0 0 0 x28.VPWR
+flabel nwell 9597 1107 9631 1141 3 FreeSans 400 0 0 0 x28.VPB
+flabel nwell 9614 1124 9614 1124 0 FreeSans 200 0 0 0 x28.VPB
+flabel pwell 9597 563 9631 597 3 FreeSans 400 0 0 0 x28.VNB
+flabel pwell 9614 580 9614 580 0 FreeSans 200 0 0 0 x28.VNB
+rlabel comment 9568 580 9568 580 4 x28.dfbbn_1
+rlabel locali 11024 727 11133 793 1 x28.SET_B
+rlabel metal1 11071 764 11129 773 1 x28.SET_B
+rlabel metal1 11071 727 11129 736 1 x28.SET_B
+rlabel metal1 10321 764 10379 773 1 x28.SET_B
+rlabel metal1 10321 736 11129 764 1 x28.SET_B
+rlabel metal1 10321 727 10379 736 1 x28.SET_B
+rlabel metal1 9568 532 11960 628 1 x28.VGND
+rlabel metal1 9568 1076 11960 1172 1 x28.VPWR
+flabel metal1 4692 2937 4726 2971 0 FreeSans 200 0 0 0 x27.VPWR
+flabel metal1 4692 2393 4726 2427 0 FreeSans 200 0 0 0 x27.VGND
+flabel locali 4968 2631 5002 2665 0 FreeSans 200 0 0 0 x27.X
+flabel locali 4968 2699 5002 2733 0 FreeSans 200 0 0 0 x27.X
+flabel locali 4968 2563 5002 2597 0 FreeSans 200 0 0 0 x27.X
+flabel locali 4692 2937 4726 2971 0 FreeSans 200 0 0 0 x27.VPWR
+flabel locali 4692 2393 4726 2427 0 FreeSans 200 0 0 0 x27.VGND
+flabel locali 4692 2631 4726 2665 0 FreeSans 200 0 0 0 x27.A
+flabel nwell 4692 2937 4726 2971 0 FreeSans 200 0 0 0 x27.VPB
+flabel pwell 4692 2393 4726 2427 0 FreeSans 200 0 0 0 x27.VNB
+rlabel comment 4662 2410 4662 2410 4 x27.buf_4
+rlabel metal1 4662 2362 5214 2458 1 x27.VGND
+rlabel metal1 4662 2906 5214 3002 1 x27.VPWR
+flabel locali 7665 112 7699 146 0 FreeSans 400 0 0 0 x26.RESET_B
+flabel locali 9505 -126 9539 -92 7 FreeSans 400 0 0 0 x26.VGND
+flabel locali 9505 112 9539 146 0 FreeSans 400 0 0 0 x26.CLK_N
+flabel locali 9505 180 9539 214 0 FreeSans 400 0 0 0 x26.CLK_N
+flabel locali 8769 44 8803 78 0 FreeSans 400 0 0 0 x26.SET_B
+flabel locali 7205 -24 7239 10 0 FreeSans 400 0 0 0 x26.Q
+flabel locali 7205 248 7239 282 0 FreeSans 400 0 0 0 x26.Q
+flabel locali 7205 316 7239 350 0 FreeSans 400 0 0 0 x26.Q
+flabel locali 9505 418 9539 452 7 FreeSans 400 0 0 0 x26.VPWR
+flabel locali 9137 112 9171 146 0 FreeSans 200 0 0 0 x26.D
+flabel locali 9137 180 9171 214 0 FreeSans 200 0 0 0 x26.D
+flabel locali 7481 316 7515 350 0 FreeSans 400 0 0 0 x26.Q_N
+flabel locali 7481 248 7515 282 0 FreeSans 400 0 0 0 x26.Q_N
+flabel locali 7481 -24 7515 10 0 FreeSans 400 0 0 0 x26.Q_N
+flabel metal1 9505 -126 9539 -92 0 FreeSans 200 0 0 0 x26.VGND
+flabel metal1 9505 418 9539 452 0 FreeSans 200 0 0 0 x26.VPWR
+flabel nwell 9505 418 9539 452 7 FreeSans 400 0 0 0 x26.VPB
+flabel nwell 9522 435 9522 435 0 FreeSans 200 0 0 0 x26.VPB
+flabel pwell 9505 -126 9539 -92 7 FreeSans 400 0 0 0 x26.VNB
+flabel pwell 9522 -109 9522 -109 0 FreeSans 200 0 0 0 x26.VNB
+rlabel comment 9568 -109 9568 -109 6 x26.dfbbn_1
+rlabel locali 8003 38 8112 104 1 x26.SET_B
+rlabel metal1 8007 75 8065 84 1 x26.SET_B
+rlabel metal1 8007 38 8065 47 1 x26.SET_B
+rlabel metal1 8757 75 8815 84 1 x26.SET_B
+rlabel metal1 8007 47 8815 75 1 x26.SET_B
+rlabel metal1 8757 38 8815 47 1 x26.SET_B
+rlabel metal1 7176 -157 9568 -61 1 x26.VGND
+rlabel metal1 7176 387 9568 483 1 x26.VPWR
+flabel locali 9045 801 9079 835 0 FreeSans 400 0 0 0 x25.RESET_B
+flabel locali 7205 563 7239 597 3 FreeSans 400 0 0 0 x25.VGND
+flabel locali 7205 801 7239 835 0 FreeSans 400 0 0 0 x25.CLK_N
+flabel locali 7205 869 7239 903 0 FreeSans 400 0 0 0 x25.CLK_N
+flabel locali 7941 733 7975 767 0 FreeSans 400 0 0 0 x25.SET_B
+flabel locali 9505 665 9539 699 0 FreeSans 400 0 0 0 x25.Q
+flabel locali 9505 937 9539 971 0 FreeSans 400 0 0 0 x25.Q
+flabel locali 9505 1005 9539 1039 0 FreeSans 400 0 0 0 x25.Q
+flabel locali 7205 1107 7239 1141 3 FreeSans 400 0 0 0 x25.VPWR
+flabel locali 7573 801 7607 835 0 FreeSans 200 0 0 0 x25.D
+flabel locali 7573 869 7607 903 0 FreeSans 200 0 0 0 x25.D
+flabel locali 9229 1005 9263 1039 0 FreeSans 400 0 0 0 x25.Q_N
+flabel locali 9229 937 9263 971 0 FreeSans 400 0 0 0 x25.Q_N
+flabel locali 9229 665 9263 699 0 FreeSans 400 0 0 0 x25.Q_N
+flabel metal1 7205 563 7239 597 0 FreeSans 200 0 0 0 x25.VGND
+flabel metal1 7205 1107 7239 1141 0 FreeSans 200 0 0 0 x25.VPWR
+flabel nwell 7205 1107 7239 1141 3 FreeSans 400 0 0 0 x25.VPB
+flabel nwell 7222 1124 7222 1124 0 FreeSans 200 0 0 0 x25.VPB
+flabel pwell 7205 563 7239 597 3 FreeSans 400 0 0 0 x25.VNB
+flabel pwell 7222 580 7222 580 0 FreeSans 200 0 0 0 x25.VNB
+rlabel comment 7176 580 7176 580 4 x25.dfbbn_1
+rlabel locali 8632 727 8741 793 1 x25.SET_B
+rlabel metal1 8679 764 8737 773 1 x25.SET_B
+rlabel metal1 8679 727 8737 736 1 x25.SET_B
+rlabel metal1 7929 764 7987 773 1 x25.SET_B
+rlabel metal1 7929 736 8737 764 1 x25.SET_B
+rlabel metal1 7929 727 7987 736 1 x25.SET_B
+rlabel metal1 7176 532 9568 628 1 x25.VGND
+rlabel metal1 7176 1076 9568 1172 1 x25.VPWR
+flabel locali 5273 112 5307 146 0 FreeSans 400 0 0 0 x24.RESET_B
+flabel locali 7113 -126 7147 -92 7 FreeSans 400 0 0 0 x24.VGND
+flabel locali 7113 112 7147 146 0 FreeSans 400 0 0 0 x24.CLK_N
+flabel locali 7113 180 7147 214 0 FreeSans 400 0 0 0 x24.CLK_N
+flabel locali 6377 44 6411 78 0 FreeSans 400 0 0 0 x24.SET_B
+flabel locali 4813 -24 4847 10 0 FreeSans 400 0 0 0 x24.Q
+flabel locali 4813 248 4847 282 0 FreeSans 400 0 0 0 x24.Q
+flabel locali 4813 316 4847 350 0 FreeSans 400 0 0 0 x24.Q
+flabel locali 7113 418 7147 452 7 FreeSans 400 0 0 0 x24.VPWR
+flabel locali 6745 112 6779 146 0 FreeSans 200 0 0 0 x24.D
+flabel locali 6745 180 6779 214 0 FreeSans 200 0 0 0 x24.D
+flabel locali 5089 316 5123 350 0 FreeSans 400 0 0 0 x24.Q_N
+flabel locali 5089 248 5123 282 0 FreeSans 400 0 0 0 x24.Q_N
+flabel locali 5089 -24 5123 10 0 FreeSans 400 0 0 0 x24.Q_N
+flabel metal1 7113 -126 7147 -92 0 FreeSans 200 0 0 0 x24.VGND
+flabel metal1 7113 418 7147 452 0 FreeSans 200 0 0 0 x24.VPWR
+flabel nwell 7113 418 7147 452 7 FreeSans 400 0 0 0 x24.VPB
+flabel nwell 7130 435 7130 435 0 FreeSans 200 0 0 0 x24.VPB
+flabel pwell 7113 -126 7147 -92 7 FreeSans 400 0 0 0 x24.VNB
+flabel pwell 7130 -109 7130 -109 0 FreeSans 200 0 0 0 x24.VNB
+rlabel comment 7176 -109 7176 -109 6 x24.dfbbn_1
+rlabel locali 5611 38 5720 104 1 x24.SET_B
+rlabel metal1 5615 75 5673 84 1 x24.SET_B
+rlabel metal1 5615 38 5673 47 1 x24.SET_B
+rlabel metal1 6365 75 6423 84 1 x24.SET_B
+rlabel metal1 5615 47 6423 75 1 x24.SET_B
+rlabel metal1 6365 38 6423 47 1 x24.SET_B
+rlabel metal1 4784 -157 7176 -61 1 x24.VGND
+rlabel metal1 4784 387 7176 483 1 x24.VPWR
+flabel locali 6653 801 6687 835 0 FreeSans 400 0 0 0 x23.RESET_B
+flabel locali 4813 563 4847 597 3 FreeSans 400 0 0 0 x23.VGND
+flabel locali 4813 801 4847 835 0 FreeSans 400 0 0 0 x23.CLK_N
+flabel locali 4813 869 4847 903 0 FreeSans 400 0 0 0 x23.CLK_N
+flabel locali 5549 733 5583 767 0 FreeSans 400 0 0 0 x23.SET_B
+flabel locali 7113 665 7147 699 0 FreeSans 400 0 0 0 x23.Q
+flabel locali 7113 937 7147 971 0 FreeSans 400 0 0 0 x23.Q
+flabel locali 7113 1005 7147 1039 0 FreeSans 400 0 0 0 x23.Q
+flabel locali 4813 1107 4847 1141 3 FreeSans 400 0 0 0 x23.VPWR
+flabel locali 5181 801 5215 835 0 FreeSans 200 0 0 0 x23.D
+flabel locali 5181 869 5215 903 0 FreeSans 200 0 0 0 x23.D
+flabel locali 6837 1005 6871 1039 0 FreeSans 400 0 0 0 x23.Q_N
+flabel locali 6837 937 6871 971 0 FreeSans 400 0 0 0 x23.Q_N
+flabel locali 6837 665 6871 699 0 FreeSans 400 0 0 0 x23.Q_N
+flabel metal1 4813 563 4847 597 0 FreeSans 200 0 0 0 x23.VGND
+flabel metal1 4813 1107 4847 1141 0 FreeSans 200 0 0 0 x23.VPWR
+flabel nwell 4813 1107 4847 1141 3 FreeSans 400 0 0 0 x23.VPB
+flabel nwell 4830 1124 4830 1124 0 FreeSans 200 0 0 0 x23.VPB
+flabel pwell 4813 563 4847 597 3 FreeSans 400 0 0 0 x23.VNB
+flabel pwell 4830 580 4830 580 0 FreeSans 200 0 0 0 x23.VNB
+rlabel comment 4784 580 4784 580 4 x23.dfbbn_1
+rlabel locali 6240 727 6349 793 1 x23.SET_B
+rlabel metal1 6287 764 6345 773 1 x23.SET_B
+rlabel metal1 6287 727 6345 736 1 x23.SET_B
+rlabel metal1 5537 764 5595 773 1 x23.SET_B
+rlabel metal1 5537 736 6345 764 1 x23.SET_B
+rlabel metal1 5537 727 5595 736 1 x23.SET_B
+rlabel metal1 4784 532 7176 628 1 x23.VGND
+rlabel metal1 4784 1076 7176 1172 1 x23.VPWR
+flabel metal1 4417 2393 4451 2427 0 FreeSans 200 0 0 0 x22.VGND
+flabel metal1 4415 2937 4449 2971 0 FreeSans 200 0 0 0 x22.VPWR
+flabel locali 4415 2937 4449 2971 0 FreeSans 200 0 0 0 x22.VPWR
+flabel locali 4417 2393 4451 2427 0 FreeSans 200 0 0 0 x22.VGND
+flabel locali 4597 2495 4631 2529 0 FreeSans 200 0 0 0 x22.X
+flabel locali 4597 2767 4631 2801 0 FreeSans 200 0 0 0 x22.X
+flabel locali 4597 2835 4631 2869 0 FreeSans 200 0 0 0 x22.X
+flabel locali 4415 2631 4449 2665 0 FreeSans 200 0 0 0 x22.A
+flabel nwell 4415 2937 4449 2971 0 FreeSans 200 0 0 0 x22.VPB
+flabel pwell 4417 2393 4451 2427 0 FreeSans 200 0 0 0 x22.VNB
+rlabel comment 4386 2410 4386 2410 4 x22.buf_1
+rlabel metal1 4386 2362 4662 2458 1 x22.VGND
+rlabel metal1 4386 2906 4662 3002 1 x22.VPWR
+flabel locali 2881 112 2915 146 0 FreeSans 400 0 0 0 x21.RESET_B
+flabel locali 4721 -126 4755 -92 7 FreeSans 400 0 0 0 x21.VGND
+flabel locali 4721 112 4755 146 0 FreeSans 400 0 0 0 x21.CLK_N
+flabel locali 4721 180 4755 214 0 FreeSans 400 0 0 0 x21.CLK_N
+flabel locali 3985 44 4019 78 0 FreeSans 400 0 0 0 x21.SET_B
+flabel locali 2421 -24 2455 10 0 FreeSans 400 0 0 0 x21.Q
+flabel locali 2421 248 2455 282 0 FreeSans 400 0 0 0 x21.Q
+flabel locali 2421 316 2455 350 0 FreeSans 400 0 0 0 x21.Q
+flabel locali 4721 418 4755 452 7 FreeSans 400 0 0 0 x21.VPWR
+flabel locali 4353 112 4387 146 0 FreeSans 200 0 0 0 x21.D
+flabel locali 4353 180 4387 214 0 FreeSans 200 0 0 0 x21.D
+flabel locali 2697 316 2731 350 0 FreeSans 400 0 0 0 x21.Q_N
+flabel locali 2697 248 2731 282 0 FreeSans 400 0 0 0 x21.Q_N
+flabel locali 2697 -24 2731 10 0 FreeSans 400 0 0 0 x21.Q_N
+flabel metal1 4721 -126 4755 -92 0 FreeSans 200 0 0 0 x21.VGND
+flabel metal1 4721 418 4755 452 0 FreeSans 200 0 0 0 x21.VPWR
+flabel nwell 4721 418 4755 452 7 FreeSans 400 0 0 0 x21.VPB
+flabel nwell 4738 435 4738 435 0 FreeSans 200 0 0 0 x21.VPB
+flabel pwell 4721 -126 4755 -92 7 FreeSans 400 0 0 0 x21.VNB
+flabel pwell 4738 -109 4738 -109 0 FreeSans 200 0 0 0 x21.VNB
+rlabel comment 4784 -109 4784 -109 6 x21.dfbbn_1
+rlabel locali 3219 38 3328 104 1 x21.SET_B
+rlabel metal1 3223 75 3281 84 1 x21.SET_B
+rlabel metal1 3223 38 3281 47 1 x21.SET_B
+rlabel metal1 3973 75 4031 84 1 x21.SET_B
+rlabel metal1 3223 47 4031 75 1 x21.SET_B
+rlabel metal1 3973 38 4031 47 1 x21.SET_B
+rlabel metal1 2392 -157 4784 -61 1 x21.VGND
+rlabel metal1 2392 387 4784 483 1 x21.VPWR
 flabel metal1 16550 1251 16584 1285 0 FreeSans 200 0 0 0 x20.VGND
 flabel metal1 16550 1795 16584 1829 0 FreeSans 200 0 0 0 x20.VPWR
 flabel locali 15906 1557 15940 1591 0 FreeSans 250 0 0 0 x20.S
@@ -34408,30 +34139,259 @@ flabel pwell 16496 1251 16530 1285 0 FreeSans 250 0 0 0 x20.VNB
 rlabel comment 16614 1268 16614 1268 6 x20.mux2_1
 rlabel metal1 15786 1220 16614 1316 1 x20.VGND
 rlabel metal1 15786 1764 16614 1860 1 x20.VPWR
-flabel metal1 33 2393 67 2427 0 FreeSans 200 0 0 0 x1.VGND
-flabel metal1 31 2937 65 2971 0 FreeSans 200 0 0 0 x1.VPWR
-flabel locali 31 2937 65 2971 0 FreeSans 200 0 0 0 x1.VPWR
-flabel locali 33 2393 67 2427 0 FreeSans 200 0 0 0 x1.VGND
-flabel locali 213 2495 247 2529 0 FreeSans 200 0 0 0 x1.X
-flabel locali 213 2767 247 2801 0 FreeSans 200 0 0 0 x1.X
-flabel locali 213 2835 247 2869 0 FreeSans 200 0 0 0 x1.X
-flabel locali 31 2631 65 2665 0 FreeSans 200 0 0 0 x1.A
-flabel nwell 31 2937 65 2971 0 FreeSans 200 0 0 0 x1.VPB
-flabel pwell 33 2393 67 2427 0 FreeSans 200 0 0 0 x1.VNB
-rlabel comment 2 2410 2 2410 4 x1.buf_1
-rlabel metal1 2 2362 278 2458 1 x1.VGND
-rlabel metal1 2 2906 278 3002 1 x1.VPWR
-flabel locali 1228 2631 1262 2665 0 FreeSans 200 0 0 0 x2.A
-flabel locali 1136 2631 1170 2665 0 FreeSans 200 0 0 0 x2.A
-flabel locali 2791 2631 2825 2665 0 FreeSans 200 0 0 0 x2.X
-flabel locali 2791 2699 2825 2733 0 FreeSans 200 0 0 0 x2.X
-flabel pwell 860 2393 894 2427 0 FreeSans 200 0 0 0 x2.VNB
-flabel nwell 860 2937 894 2971 0 FreeSans 200 0 0 0 x2.VPB
-flabel metal1 860 2393 894 2427 0 FreeSans 200 0 0 0 x2.VGND
-flabel metal1 860 2937 894 2971 0 FreeSans 200 0 0 0 x2.VPWR
-rlabel comment 830 2410 830 2410 4 x2.buf_16
-rlabel metal1 830 2362 2854 2458 1 x2.VGND
-rlabel metal1 830 2906 2854 3002 1 x2.VPWR
+flabel locali 4261 801 4295 835 0 FreeSans 400 0 0 0 x19.RESET_B
+flabel locali 2421 563 2455 597 3 FreeSans 400 0 0 0 x19.VGND
+flabel locali 2421 801 2455 835 0 FreeSans 400 0 0 0 x19.CLK_N
+flabel locali 2421 869 2455 903 0 FreeSans 400 0 0 0 x19.CLK_N
+flabel locali 3157 733 3191 767 0 FreeSans 400 0 0 0 x19.SET_B
+flabel locali 4721 665 4755 699 0 FreeSans 400 0 0 0 x19.Q
+flabel locali 4721 937 4755 971 0 FreeSans 400 0 0 0 x19.Q
+flabel locali 4721 1005 4755 1039 0 FreeSans 400 0 0 0 x19.Q
+flabel locali 2421 1107 2455 1141 3 FreeSans 400 0 0 0 x19.VPWR
+flabel locali 2789 801 2823 835 0 FreeSans 200 0 0 0 x19.D
+flabel locali 2789 869 2823 903 0 FreeSans 200 0 0 0 x19.D
+flabel locali 4445 1005 4479 1039 0 FreeSans 400 0 0 0 x19.Q_N
+flabel locali 4445 937 4479 971 0 FreeSans 400 0 0 0 x19.Q_N
+flabel locali 4445 665 4479 699 0 FreeSans 400 0 0 0 x19.Q_N
+flabel metal1 2421 563 2455 597 0 FreeSans 200 0 0 0 x19.VGND
+flabel metal1 2421 1107 2455 1141 0 FreeSans 200 0 0 0 x19.VPWR
+flabel nwell 2421 1107 2455 1141 3 FreeSans 400 0 0 0 x19.VPB
+flabel nwell 2438 1124 2438 1124 0 FreeSans 200 0 0 0 x19.VPB
+flabel pwell 2421 563 2455 597 3 FreeSans 400 0 0 0 x19.VNB
+flabel pwell 2438 580 2438 580 0 FreeSans 200 0 0 0 x19.VNB
+rlabel comment 2392 580 2392 580 4 x19.dfbbn_1
+rlabel locali 3848 727 3957 793 1 x19.SET_B
+rlabel metal1 3895 764 3953 773 1 x19.SET_B
+rlabel metal1 3895 727 3953 736 1 x19.SET_B
+rlabel metal1 3145 764 3203 773 1 x19.SET_B
+rlabel metal1 3145 736 3953 764 1 x19.SET_B
+rlabel metal1 3145 727 3203 736 1 x19.SET_B
+rlabel metal1 2392 532 4784 628 1 x19.VGND
+rlabel metal1 2392 1076 4784 1172 1 x19.VPWR
+flabel metal1 14382 1251 14416 1285 0 FreeSans 200 0 0 0 x18.VGND
+flabel metal1 14382 1795 14416 1829 0 FreeSans 200 0 0 0 x18.VPWR
+flabel locali 15026 1557 15060 1591 0 FreeSans 250 0 0 0 x18.S
+flabel locali 14934 1557 14968 1591 0 FreeSans 250 0 0 0 x18.S
+flabel locali 14842 1421 14876 1455 0 FreeSans 250 0 0 0 x18.A1
+flabel locali 14842 1489 14876 1523 0 FreeSans 250 0 0 0 x18.A1
+flabel locali 14750 1489 14784 1523 0 FreeSans 250 0 0 0 x18.A0
+flabel locali 14382 1353 14416 1387 0 FreeSans 250 0 0 0 x18.X
+flabel locali 14382 1625 14416 1659 0 FreeSans 250 0 0 0 x18.X
+flabel locali 14382 1693 14416 1727 0 FreeSans 250 0 0 0 x18.X
+flabel nwell 14426 1795 14460 1829 0 FreeSans 250 0 0 0 x18.VPB
+flabel pwell 14436 1251 14470 1285 0 FreeSans 250 0 0 0 x18.VNB
+rlabel comment 14352 1268 14352 1268 4 x18.mux2_1
+rlabel metal1 14352 1220 15180 1316 1 x18.VGND
+rlabel metal1 14352 1764 15180 1860 1 x18.VPWR
+flabel metal1 14156 1251 14190 1285 0 FreeSans 200 0 0 0 x17.VGND
+flabel metal1 14156 1795 14190 1829 0 FreeSans 200 0 0 0 x17.VPWR
+flabel locali 13512 1557 13546 1591 0 FreeSans 250 0 0 0 x17.S
+flabel locali 13604 1557 13638 1591 0 FreeSans 250 0 0 0 x17.S
+flabel locali 13696 1421 13730 1455 0 FreeSans 250 0 0 0 x17.A1
+flabel locali 13696 1489 13730 1523 0 FreeSans 250 0 0 0 x17.A1
+flabel locali 13788 1489 13822 1523 0 FreeSans 250 0 0 0 x17.A0
+flabel locali 14156 1353 14190 1387 0 FreeSans 250 0 0 0 x17.X
+flabel locali 14156 1625 14190 1659 0 FreeSans 250 0 0 0 x17.X
+flabel locali 14156 1693 14190 1727 0 FreeSans 250 0 0 0 x17.X
+flabel nwell 14112 1795 14146 1829 0 FreeSans 250 0 0 0 x17.VPB
+flabel pwell 14102 1251 14136 1285 0 FreeSans 250 0 0 0 x17.VNB
+rlabel comment 14220 1268 14220 1268 6 x17.mux2_1
+rlabel metal1 13392 1220 14220 1316 1 x17.VGND
+rlabel metal1 13392 1764 14220 1860 1 x17.VPWR
+flabel metal1 11990 1251 12024 1285 0 FreeSans 200 0 0 0 x16.VGND
+flabel metal1 11990 1795 12024 1829 0 FreeSans 200 0 0 0 x16.VPWR
+flabel locali 12634 1557 12668 1591 0 FreeSans 250 0 0 0 x16.S
+flabel locali 12542 1557 12576 1591 0 FreeSans 250 0 0 0 x16.S
+flabel locali 12450 1421 12484 1455 0 FreeSans 250 0 0 0 x16.A1
+flabel locali 12450 1489 12484 1523 0 FreeSans 250 0 0 0 x16.A1
+flabel locali 12358 1489 12392 1523 0 FreeSans 250 0 0 0 x16.A0
+flabel locali 11990 1353 12024 1387 0 FreeSans 250 0 0 0 x16.X
+flabel locali 11990 1625 12024 1659 0 FreeSans 250 0 0 0 x16.X
+flabel locali 11990 1693 12024 1727 0 FreeSans 250 0 0 0 x16.X
+flabel nwell 12034 1795 12068 1829 0 FreeSans 250 0 0 0 x16.VPB
+flabel pwell 12044 1251 12078 1285 0 FreeSans 250 0 0 0 x16.VNB
+rlabel comment 11960 1268 11960 1268 4 x16.mux2_1
+rlabel metal1 11960 1220 12788 1316 1 x16.VGND
+rlabel metal1 11960 1764 12788 1860 1 x16.VPWR
+flabel metal1 11766 1251 11800 1285 0 FreeSans 200 0 0 0 x15.VGND
+flabel metal1 11766 1795 11800 1829 0 FreeSans 200 0 0 0 x15.VPWR
+flabel locali 11122 1557 11156 1591 0 FreeSans 250 0 0 0 x15.S
+flabel locali 11214 1557 11248 1591 0 FreeSans 250 0 0 0 x15.S
+flabel locali 11306 1421 11340 1455 0 FreeSans 250 0 0 0 x15.A1
+flabel locali 11306 1489 11340 1523 0 FreeSans 250 0 0 0 x15.A1
+flabel locali 11398 1489 11432 1523 0 FreeSans 250 0 0 0 x15.A0
+flabel locali 11766 1353 11800 1387 0 FreeSans 250 0 0 0 x15.X
+flabel locali 11766 1625 11800 1659 0 FreeSans 250 0 0 0 x15.X
+flabel locali 11766 1693 11800 1727 0 FreeSans 250 0 0 0 x15.X
+flabel nwell 11722 1795 11756 1829 0 FreeSans 250 0 0 0 x15.VPB
+flabel pwell 11712 1251 11746 1285 0 FreeSans 250 0 0 0 x15.VNB
+rlabel comment 11830 1268 11830 1268 6 x15.mux2_1
+rlabel metal1 11002 1220 11830 1316 1 x15.VGND
+rlabel metal1 11002 1764 11830 1860 1 x15.VPWR
+flabel metal1 9598 1251 9632 1285 0 FreeSans 200 0 0 0 x14.VGND
+flabel metal1 9598 1795 9632 1829 0 FreeSans 200 0 0 0 x14.VPWR
+flabel locali 10242 1557 10276 1591 0 FreeSans 250 0 0 0 x14.S
+flabel locali 10150 1557 10184 1591 0 FreeSans 250 0 0 0 x14.S
+flabel locali 10058 1421 10092 1455 0 FreeSans 250 0 0 0 x14.A1
+flabel locali 10058 1489 10092 1523 0 FreeSans 250 0 0 0 x14.A1
+flabel locali 9966 1489 10000 1523 0 FreeSans 250 0 0 0 x14.A0
+flabel locali 9598 1353 9632 1387 0 FreeSans 250 0 0 0 x14.X
+flabel locali 9598 1625 9632 1659 0 FreeSans 250 0 0 0 x14.X
+flabel locali 9598 1693 9632 1727 0 FreeSans 250 0 0 0 x14.X
+flabel nwell 9642 1795 9676 1829 0 FreeSans 250 0 0 0 x14.VPB
+flabel pwell 9652 1251 9686 1285 0 FreeSans 250 0 0 0 x14.VNB
+rlabel comment 9568 1268 9568 1268 4 x14.mux2_1
+rlabel metal1 9568 1220 10396 1316 1 x14.VGND
+rlabel metal1 9568 1764 10396 1860 1 x14.VPWR
+flabel metal1 9374 1251 9408 1285 0 FreeSans 200 0 0 0 x13.VGND
+flabel metal1 9374 1795 9408 1829 0 FreeSans 200 0 0 0 x13.VPWR
+flabel locali 8730 1557 8764 1591 0 FreeSans 250 0 0 0 x13.S
+flabel locali 8822 1557 8856 1591 0 FreeSans 250 0 0 0 x13.S
+flabel locali 8914 1421 8948 1455 0 FreeSans 250 0 0 0 x13.A1
+flabel locali 8914 1489 8948 1523 0 FreeSans 250 0 0 0 x13.A1
+flabel locali 9006 1489 9040 1523 0 FreeSans 250 0 0 0 x13.A0
+flabel locali 9374 1353 9408 1387 0 FreeSans 250 0 0 0 x13.X
+flabel locali 9374 1625 9408 1659 0 FreeSans 250 0 0 0 x13.X
+flabel locali 9374 1693 9408 1727 0 FreeSans 250 0 0 0 x13.X
+flabel nwell 9330 1795 9364 1829 0 FreeSans 250 0 0 0 x13.VPB
+flabel pwell 9320 1251 9354 1285 0 FreeSans 250 0 0 0 x13.VNB
+rlabel comment 9438 1268 9438 1268 6 x13.mux2_1
+rlabel metal1 8610 1220 9438 1316 1 x13.VGND
+rlabel metal1 8610 1764 9438 1860 1 x13.VPWR
+flabel metal1 7206 1251 7240 1285 0 FreeSans 200 0 0 0 x12.VGND
+flabel metal1 7206 1795 7240 1829 0 FreeSans 200 0 0 0 x12.VPWR
+flabel locali 7850 1557 7884 1591 0 FreeSans 250 0 0 0 x12.S
+flabel locali 7758 1557 7792 1591 0 FreeSans 250 0 0 0 x12.S
+flabel locali 7666 1421 7700 1455 0 FreeSans 250 0 0 0 x12.A1
+flabel locali 7666 1489 7700 1523 0 FreeSans 250 0 0 0 x12.A1
+flabel locali 7574 1489 7608 1523 0 FreeSans 250 0 0 0 x12.A0
+flabel locali 7206 1353 7240 1387 0 FreeSans 250 0 0 0 x12.X
+flabel locali 7206 1625 7240 1659 0 FreeSans 250 0 0 0 x12.X
+flabel locali 7206 1693 7240 1727 0 FreeSans 250 0 0 0 x12.X
+flabel nwell 7250 1795 7284 1829 0 FreeSans 250 0 0 0 x12.VPB
+flabel pwell 7260 1251 7294 1285 0 FreeSans 250 0 0 0 x12.VNB
+rlabel comment 7176 1268 7176 1268 4 x12.mux2_1
+rlabel metal1 7176 1220 8004 1316 1 x12.VGND
+rlabel metal1 7176 1764 8004 1860 1 x12.VPWR
+flabel metal1 6980 1251 7014 1285 0 FreeSans 200 0 0 0 x11.VGND
+flabel metal1 6980 1795 7014 1829 0 FreeSans 200 0 0 0 x11.VPWR
+flabel locali 6336 1557 6370 1591 0 FreeSans 250 0 0 0 x11.S
+flabel locali 6428 1557 6462 1591 0 FreeSans 250 0 0 0 x11.S
+flabel locali 6520 1421 6554 1455 0 FreeSans 250 0 0 0 x11.A1
+flabel locali 6520 1489 6554 1523 0 FreeSans 250 0 0 0 x11.A1
+flabel locali 6612 1489 6646 1523 0 FreeSans 250 0 0 0 x11.A0
+flabel locali 6980 1353 7014 1387 0 FreeSans 250 0 0 0 x11.X
+flabel locali 6980 1625 7014 1659 0 FreeSans 250 0 0 0 x11.X
+flabel locali 6980 1693 7014 1727 0 FreeSans 250 0 0 0 x11.X
+flabel nwell 6936 1795 6970 1829 0 FreeSans 250 0 0 0 x11.VPB
+flabel pwell 6926 1251 6960 1285 0 FreeSans 250 0 0 0 x11.VNB
+rlabel comment 7044 1268 7044 1268 6 x11.mux2_1
+rlabel metal1 6216 1220 7044 1316 1 x11.VGND
+rlabel metal1 6216 1764 7044 1860 1 x11.VPWR
+flabel metal1 4814 1251 4848 1285 0 FreeSans 200 0 0 0 x10.VGND
+flabel metal1 4814 1795 4848 1829 0 FreeSans 200 0 0 0 x10.VPWR
+flabel locali 5458 1557 5492 1591 0 FreeSans 250 0 0 0 x10.S
+flabel locali 5366 1557 5400 1591 0 FreeSans 250 0 0 0 x10.S
+flabel locali 5274 1421 5308 1455 0 FreeSans 250 0 0 0 x10.A1
+flabel locali 5274 1489 5308 1523 0 FreeSans 250 0 0 0 x10.A1
+flabel locali 5182 1489 5216 1523 0 FreeSans 250 0 0 0 x10.A0
+flabel locali 4814 1353 4848 1387 0 FreeSans 250 0 0 0 x10.X
+flabel locali 4814 1625 4848 1659 0 FreeSans 250 0 0 0 x10.X
+flabel locali 4814 1693 4848 1727 0 FreeSans 250 0 0 0 x10.X
+flabel nwell 4858 1795 4892 1829 0 FreeSans 250 0 0 0 x10.VPB
+flabel pwell 4868 1251 4902 1285 0 FreeSans 250 0 0 0 x10.VNB
+rlabel comment 4784 1268 4784 1268 4 x10.mux2_1
+rlabel metal1 4784 1220 5612 1316 1 x10.VGND
+rlabel metal1 4784 1764 5612 1860 1 x10.VPWR
+flabel metal1 4590 1251 4624 1285 0 FreeSans 200 0 0 0 x9.VGND
+flabel metal1 4590 1795 4624 1829 0 FreeSans 200 0 0 0 x9.VPWR
+flabel locali 3946 1557 3980 1591 0 FreeSans 250 0 0 0 x9.S
+flabel locali 4038 1557 4072 1591 0 FreeSans 250 0 0 0 x9.S
+flabel locali 4130 1421 4164 1455 0 FreeSans 250 0 0 0 x9.A1
+flabel locali 4130 1489 4164 1523 0 FreeSans 250 0 0 0 x9.A1
+flabel locali 4222 1489 4256 1523 0 FreeSans 250 0 0 0 x9.A0
+flabel locali 4590 1353 4624 1387 0 FreeSans 250 0 0 0 x9.X
+flabel locali 4590 1625 4624 1659 0 FreeSans 250 0 0 0 x9.X
+flabel locali 4590 1693 4624 1727 0 FreeSans 250 0 0 0 x9.X
+flabel nwell 4546 1795 4580 1829 0 FreeSans 250 0 0 0 x9.VPB
+flabel pwell 4536 1251 4570 1285 0 FreeSans 250 0 0 0 x9.VNB
+rlabel comment 4654 1268 4654 1268 6 x9.mux2_1
+rlabel metal1 3826 1220 4654 1316 1 x9.VGND
+rlabel metal1 3826 1764 4654 1860 1 x9.VPWR
+flabel metal1 2422 1251 2456 1285 0 FreeSans 200 0 0 0 x8.VGND
+flabel metal1 2422 1795 2456 1829 0 FreeSans 200 0 0 0 x8.VPWR
+flabel locali 3066 1557 3100 1591 0 FreeSans 250 0 0 0 x8.S
+flabel locali 2974 1557 3008 1591 0 FreeSans 250 0 0 0 x8.S
+flabel locali 2882 1421 2916 1455 0 FreeSans 250 0 0 0 x8.A1
+flabel locali 2882 1489 2916 1523 0 FreeSans 250 0 0 0 x8.A1
+flabel locali 2790 1489 2824 1523 0 FreeSans 250 0 0 0 x8.A0
+flabel locali 2422 1353 2456 1387 0 FreeSans 250 0 0 0 x8.X
+flabel locali 2422 1625 2456 1659 0 FreeSans 250 0 0 0 x8.X
+flabel locali 2422 1693 2456 1727 0 FreeSans 250 0 0 0 x8.X
+flabel nwell 2466 1795 2500 1829 0 FreeSans 250 0 0 0 x8.VPB
+flabel pwell 2476 1251 2510 1285 0 FreeSans 250 0 0 0 x8.VNB
+rlabel comment 2392 1268 2392 1268 4 x8.mux2_1
+rlabel metal1 2392 1220 3220 1316 1 x8.VGND
+rlabel metal1 2392 1764 3220 1860 1 x8.VPWR
+flabel metal1 2198 1251 2232 1285 0 FreeSans 200 0 0 0 x7.VGND
+flabel metal1 2198 1795 2232 1829 0 FreeSans 200 0 0 0 x7.VPWR
+flabel locali 1554 1557 1588 1591 0 FreeSans 250 0 0 0 x7.S
+flabel locali 1646 1557 1680 1591 0 FreeSans 250 0 0 0 x7.S
+flabel locali 1738 1421 1772 1455 0 FreeSans 250 0 0 0 x7.A1
+flabel locali 1738 1489 1772 1523 0 FreeSans 250 0 0 0 x7.A1
+flabel locali 1830 1489 1864 1523 0 FreeSans 250 0 0 0 x7.A0
+flabel locali 2198 1353 2232 1387 0 FreeSans 250 0 0 0 x7.X
+flabel locali 2198 1625 2232 1659 0 FreeSans 250 0 0 0 x7.X
+flabel locali 2198 1693 2232 1727 0 FreeSans 250 0 0 0 x7.X
+flabel nwell 2154 1795 2188 1829 0 FreeSans 250 0 0 0 x7.VPB
+flabel pwell 2144 1251 2178 1285 0 FreeSans 250 0 0 0 x7.VNB
+rlabel comment 2262 1268 2262 1268 6 x7.mux2_1
+rlabel metal1 1434 1220 2262 1316 1 x7.VGND
+rlabel metal1 1434 1764 2262 1860 1 x7.VPWR
+flabel metal1 30 1251 64 1285 0 FreeSans 200 0 0 0 x6.VGND
+flabel metal1 30 1795 64 1829 0 FreeSans 200 0 0 0 x6.VPWR
+flabel locali 674 1557 708 1591 0 FreeSans 250 0 0 0 x6.S
+flabel locali 582 1557 616 1591 0 FreeSans 250 0 0 0 x6.S
+flabel locali 490 1421 524 1455 0 FreeSans 250 0 0 0 x6.A1
+flabel locali 490 1489 524 1523 0 FreeSans 250 0 0 0 x6.A1
+flabel locali 398 1489 432 1523 0 FreeSans 250 0 0 0 x6.A0
+flabel locali 30 1353 64 1387 0 FreeSans 250 0 0 0 x6.X
+flabel locali 30 1625 64 1659 0 FreeSans 250 0 0 0 x6.X
+flabel locali 30 1693 64 1727 0 FreeSans 250 0 0 0 x6.X
+flabel nwell 74 1795 108 1829 0 FreeSans 250 0 0 0 x6.VPB
+flabel pwell 84 1251 118 1285 0 FreeSans 250 0 0 0 x6.VNB
+rlabel comment 0 1268 0 1268 4 x6.mux2_1
+rlabel metal1 0 1220 828 1316 1 x6.VGND
+rlabel metal1 0 1764 828 1860 1 x6.VPWR
+flabel locali 489 112 523 146 0 FreeSans 400 0 0 0 x5.RESET_B
+flabel locali 2329 -126 2363 -92 7 FreeSans 400 0 0 0 x5.VGND
+flabel locali 2329 112 2363 146 0 FreeSans 400 0 0 0 x5.CLK_N
+flabel locali 2329 180 2363 214 0 FreeSans 400 0 0 0 x5.CLK_N
+flabel locali 1593 44 1627 78 0 FreeSans 400 0 0 0 x5.SET_B
+flabel locali 29 -24 63 10 0 FreeSans 400 0 0 0 x5.Q
+flabel locali 29 248 63 282 0 FreeSans 400 0 0 0 x5.Q
+flabel locali 29 316 63 350 0 FreeSans 400 0 0 0 x5.Q
+flabel locali 2329 418 2363 452 7 FreeSans 400 0 0 0 x5.VPWR
+flabel locali 1961 112 1995 146 0 FreeSans 200 0 0 0 x5.D
+flabel locali 1961 180 1995 214 0 FreeSans 200 0 0 0 x5.D
+flabel locali 305 316 339 350 0 FreeSans 400 0 0 0 x5.Q_N
+flabel locali 305 248 339 282 0 FreeSans 400 0 0 0 x5.Q_N
+flabel locali 305 -24 339 10 0 FreeSans 400 0 0 0 x5.Q_N
+flabel metal1 2329 -126 2363 -92 0 FreeSans 200 0 0 0 x5.VGND
+flabel metal1 2329 418 2363 452 0 FreeSans 200 0 0 0 x5.VPWR
+flabel nwell 2329 418 2363 452 7 FreeSans 400 0 0 0 x5.VPB
+flabel nwell 2346 435 2346 435 0 FreeSans 200 0 0 0 x5.VPB
+flabel pwell 2329 -126 2363 -92 7 FreeSans 400 0 0 0 x5.VNB
+flabel pwell 2346 -109 2346 -109 0 FreeSans 200 0 0 0 x5.VNB
+rlabel comment 2392 -109 2392 -109 6 x5.dfbbn_1
+rlabel locali 827 38 936 104 1 x5.SET_B
+rlabel metal1 831 75 889 84 1 x5.SET_B
+rlabel metal1 831 38 889 47 1 x5.SET_B
+rlabel metal1 1581 75 1639 84 1 x5.SET_B
+rlabel metal1 831 47 1639 75 1 x5.SET_B
+rlabel metal1 1581 38 1639 47 1 x5.SET_B
+rlabel metal1 0 -157 2392 -61 1 x5.VGND
+rlabel metal1 0 387 2392 483 1 x5.VPWR
 flabel metal1 308 2937 342 2971 0 FreeSans 200 0 0 0 x3.VPWR
 flabel metal1 308 2393 342 2427 0 FreeSans 200 0 0 0 x3.VGND
 flabel locali 584 2631 618 2665 0 FreeSans 200 0 0 0 x3.X
@@ -34445,41 +34405,57 @@ flabel pwell 308 2393 342 2427 0 FreeSans 200 0 0 0 x3.VNB
 rlabel comment 278 2410 278 2410 4 x3.buf_4
 rlabel metal1 278 2362 830 2458 1 x3.VGND
 rlabel metal1 278 2906 830 3002 1 x3.VPWR
-flabel metal1 4417 2393 4451 2427 0 FreeSans 200 0 0 0 x22.VGND
-flabel metal1 4415 2937 4449 2971 0 FreeSans 200 0 0 0 x22.VPWR
-flabel locali 4415 2937 4449 2971 0 FreeSans 200 0 0 0 x22.VPWR
-flabel locali 4417 2393 4451 2427 0 FreeSans 200 0 0 0 x22.VGND
-flabel locali 4597 2495 4631 2529 0 FreeSans 200 0 0 0 x22.X
-flabel locali 4597 2767 4631 2801 0 FreeSans 200 0 0 0 x22.X
-flabel locali 4597 2835 4631 2869 0 FreeSans 200 0 0 0 x22.X
-flabel locali 4415 2631 4449 2665 0 FreeSans 200 0 0 0 x22.A
-flabel nwell 4415 2937 4449 2971 0 FreeSans 200 0 0 0 x22.VPB
-flabel pwell 4417 2393 4451 2427 0 FreeSans 200 0 0 0 x22.VNB
-rlabel comment 4386 2410 4386 2410 4 x22.buf_1
-rlabel metal1 4386 2362 4662 2458 1 x22.VGND
-rlabel metal1 4386 2906 4662 3002 1 x22.VPWR
-flabel metal1 4692 2937 4726 2971 0 FreeSans 200 0 0 0 x27.VPWR
-flabel metal1 4692 2393 4726 2427 0 FreeSans 200 0 0 0 x27.VGND
-flabel locali 4968 2631 5002 2665 0 FreeSans 200 0 0 0 x27.X
-flabel locali 4968 2699 5002 2733 0 FreeSans 200 0 0 0 x27.X
-flabel locali 4968 2563 5002 2597 0 FreeSans 200 0 0 0 x27.X
-flabel locali 4692 2937 4726 2971 0 FreeSans 200 0 0 0 x27.VPWR
-flabel locali 4692 2393 4726 2427 0 FreeSans 200 0 0 0 x27.VGND
-flabel locali 4692 2631 4726 2665 0 FreeSans 200 0 0 0 x27.A
-flabel nwell 4692 2937 4726 2971 0 FreeSans 200 0 0 0 x27.VPB
-flabel pwell 4692 2393 4726 2427 0 FreeSans 200 0 0 0 x27.VNB
-rlabel comment 4662 2410 4662 2410 4 x27.buf_4
-rlabel metal1 4662 2362 5214 2458 1 x27.VGND
-rlabel metal1 4662 2906 5214 3002 1 x27.VPWR
-flabel locali 5612 2631 5646 2665 0 FreeSans 200 0 0 0 x30.A
-flabel locali 5520 2631 5554 2665 0 FreeSans 200 0 0 0 x30.A
-flabel locali 7175 2631 7209 2665 0 FreeSans 200 0 0 0 x30.X
-flabel locali 7175 2699 7209 2733 0 FreeSans 200 0 0 0 x30.X
-flabel pwell 5244 2393 5278 2427 0 FreeSans 200 0 0 0 x30.VNB
-flabel nwell 5244 2937 5278 2971 0 FreeSans 200 0 0 0 x30.VPB
-flabel metal1 5244 2393 5278 2427 0 FreeSans 200 0 0 0 x30.VGND
-flabel metal1 5244 2937 5278 2971 0 FreeSans 200 0 0 0 x30.VPWR
-rlabel comment 5214 2410 5214 2410 4 x30.buf_16
-rlabel metal1 5214 2362 7238 2458 1 x30.VGND
-rlabel metal1 5214 2906 7238 3002 1 x30.VPWR
+flabel locali 1228 2631 1262 2665 0 FreeSans 200 0 0 0 x2.A
+flabel locali 1136 2631 1170 2665 0 FreeSans 200 0 0 0 x2.A
+flabel locali 2791 2631 2825 2665 0 FreeSans 200 0 0 0 x2.X
+flabel locali 2791 2699 2825 2733 0 FreeSans 200 0 0 0 x2.X
+flabel pwell 860 2393 894 2427 0 FreeSans 200 0 0 0 x2.VNB
+flabel nwell 860 2937 894 2971 0 FreeSans 200 0 0 0 x2.VPB
+flabel metal1 860 2393 894 2427 0 FreeSans 200 0 0 0 x2.VGND
+flabel metal1 860 2937 894 2971 0 FreeSans 200 0 0 0 x2.VPWR
+rlabel comment 830 2410 830 2410 4 x2.buf_16
+rlabel metal1 830 2362 2854 2458 1 x2.VGND
+rlabel metal1 830 2906 2854 3002 1 x2.VPWR
+flabel metal1 33 2393 67 2427 0 FreeSans 200 0 0 0 x1.VGND
+flabel metal1 31 2937 65 2971 0 FreeSans 200 0 0 0 x1.VPWR
+flabel locali 31 2937 65 2971 0 FreeSans 200 0 0 0 x1.VPWR
+flabel locali 33 2393 67 2427 0 FreeSans 200 0 0 0 x1.VGND
+flabel locali 213 2495 247 2529 0 FreeSans 200 0 0 0 x1.X
+flabel locali 213 2767 247 2801 0 FreeSans 200 0 0 0 x1.X
+flabel locali 213 2835 247 2869 0 FreeSans 200 0 0 0 x1.X
+flabel locali 31 2631 65 2665 0 FreeSans 200 0 0 0 x1.A
+flabel nwell 31 2937 65 2971 0 FreeSans 200 0 0 0 x1.VPB
+flabel pwell 33 2393 67 2427 0 FreeSans 200 0 0 0 x1.VNB
+rlabel comment 2 2410 2 2410 4 x1.buf_1
+rlabel metal1 2 2362 278 2458 1 x1.VGND
+rlabel metal1 2 2906 278 3002 1 x1.VPWR
+flabel locali 1869 801 1903 835 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.RESET_B
+flabel locali 29 563 63 597 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VGND
+flabel locali 29 801 63 835 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.CLK_N
+flabel locali 29 869 63 903 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.CLK_N
+flabel locali 765 733 799 767 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.SET_B
+flabel locali 2329 665 2363 699 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q
+flabel locali 2329 937 2363 971 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q
+flabel locali 2329 1005 2363 1039 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q
+flabel locali 29 1107 63 1141 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPWR
+flabel locali 397 801 431 835 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.D
+flabel locali 397 869 431 903 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.D
+flabel locali 2053 1005 2087 1039 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q_N
+flabel locali 2053 937 2087 971 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q_N
+flabel locali 2053 665 2087 699 0 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.Q_N
+flabel metal1 29 563 63 597 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VGND
+flabel metal1 29 1107 63 1141 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPWR
+flabel nwell 29 1107 63 1141 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPB
+flabel nwell 46 1124 46 1124 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VPB
+flabel pwell 29 563 63 597 3 FreeSans 400 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VNB
+flabel pwell 46 580 46 580 0 FreeSans 200 0 0 0 sky130_fd_sc_hd__dfbbn_1_0.VNB
+rlabel comment 0 580 0 580 4 sky130_fd_sc_hd__dfbbn_1_0.dfbbn_1
+rlabel locali 1456 727 1565 793 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
+rlabel metal1 1503 764 1561 773 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
+rlabel metal1 1503 727 1561 736 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
+rlabel metal1 753 764 811 773 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
+rlabel metal1 753 736 1561 764 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
+rlabel metal1 753 727 811 736 1 sky130_fd_sc_hd__dfbbn_1_0.SET_B
+rlabel metal1 0 532 2392 628 1 sky130_fd_sc_hd__dfbbn_1_0.VGND
+rlabel metal1 0 1076 2392 1172 1 sky130_fd_sc_hd__dfbbn_1_0.VPWR
 << end >>
