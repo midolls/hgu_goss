@@ -312,6 +312,16 @@ C {devices/lab_pin.sym} 2460 -820 0 0 {name=p25 sig_type=std_logic lab=async_del
 C {devices/lab_pin.sym} 2460 -800 0 0 {name=p26 sig_type=std_logic lab=sample_delay_offset}
 C {devices/lab_pin.sym} 2460 -780 0 0 {name=p101 sig_type=std_logic lab=retimer_delay_offset}
 C {devices/ipin.sym} 690 -320 0 0 {name=p102 lab=retimer_delay_offset}
-C {devices/lab_wire.sym} 1970 -450 0 0 {name=p103 sig_type=std_logic lab=VREF}
-C {devices/gnd.sym} 1970 -390 0 0 {name=l1 lab=GND}
-C {devices/vsource.sym} 1970 -420 0 0 {name=V1 value=0.9}
+C {devices/lab_wire.sym} 2080 -460 2 0 {name=p9 sig_type=std_logic lab=VREF}
+C {/foss/designs/hgu_goss/hgu/xschem/hgu_vgen_vref.sym} 1940 -400 0 0 {name=x5}
+C {devices/lab_pin.sym} 1950 -460 2 1 {name=p70 sig_type=std_logic lab=EXT_CLK}
+C {devices/lab_pin.sym} 2010 -510 0 0 {name=p73 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 2010 -410 0 0 {name=p75 sig_type=std_logic lab=VSS}
+C {devices/simulator_commands_shown.sym} 1930 -1430 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false 
+value="
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+"}

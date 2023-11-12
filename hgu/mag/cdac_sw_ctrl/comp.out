@@ -52,7 +52,7 @@ VPB                                        |VPB
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__buf_1 and sky130_fd_sc_hd__buf_1 are equivalent.
 
-Class sky130_fd_sc_hd__buf_4 (2):  Merged 6 parallel devices.
+Class sky130_fd_sc_hd__buf_4 (0):  Merged 6 parallel devices.
 Class sky130_fd_sc_hd__buf_4 (1):  Merged 6 parallel devices.
 Subcircuit summary:
 Circuit 1: sky130_fd_sc_hd__buf_4          |Circuit 2: sky130_fd_sc_hd__buf_4          
@@ -77,7 +77,7 @@ A                                          |A
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__buf_4 and sky130_fd_sc_hd__buf_4 are equivalent.
 
-Class sky130_fd_sc_hd__buf_16 (2):  Merged 40 parallel devices.
+Class sky130_fd_sc_hd__buf_16 (0):  Merged 40 parallel devices.
 Class sky130_fd_sc_hd__buf_16 (1):  Merged 40 parallel devices.
 Subcircuit summary:
 Circuit 1: sky130_fd_sc_hd__buf_16         |Circuit 2: sky130_fd_sc_hd__buf_16         
@@ -154,20 +154,16 @@ VGND                                       |VGND
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 are equivalent.
 
-Flattening instances of sky130_fd_sc_hd__buf_1 in cell hgu_sarlogic_sw_ctrl (2) makes a better match
-Flattening instances of sky130_fd_sc_hd__buf_4 in cell hgu_sarlogic_sw_ctrl (2) makes a better match
-Flattening instances of sky130_fd_sc_hd__buf_16 in cell hgu_sarlogic_sw_ctrl (2) makes a better match
-Flattening instances of sky130_fd_sc_hd__mux2_1 in cell hgu_sarlogic_sw_ctrl (2) makes a better match
-Flattening instances of sky130_fd_sc_hd__dfbbn_1 in cell hgu_sarlogic_sw_ctrl (2) makes a better match
-Making another compare attempt.
-
 Subcircuit summary:
 Circuit 1: hgu_sarlogic_sw_ctrl            |Circuit 2: hgu_sarlogic_sw_ctrl            
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_hvt (422->376)     |sky130_fd_pr__pfet_01v8_hvt (422->376)     
-sky130_fd_pr__nfet_01v8 (422->376)         |sky130_fd_pr__nfet_01v8 (422->376)         
-Number of devices: 752                     |Number of devices: 752                     
-Number of nets: 422                        |Number of nets: 422                        
+sky130_fd_sc_hd__buf_1 (2)                 |sky130_fd_sc_hd__buf_1 (2)                 
+sky130_fd_sc_hd__buf_4 (2)                 |sky130_fd_sc_hd__buf_4 (2)                 
+sky130_fd_sc_hd__buf_16 (2)                |sky130_fd_sc_hd__buf_16 (2)                
+sky130_fd_sc_hd__dfbbn_1 (14)              |sky130_fd_sc_hd__dfbbn_1 (14)              
+sky130_fd_sc_hd__mux2_1 (14)               |sky130_fd_sc_hd__mux2_1 (14)               
+Number of devices: 34                      |Number of devices: 34                      
+Number of nets: 66                         |Number of nets: 66                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
@@ -176,13 +172,6 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: hgu_sarlogic_sw_ctrl            |Circuit 2: hgu_sarlogic_sw_ctrl            
 -------------------------------------------|-------------------------------------------
-check[6]                                   |check[6]                                   
-check[5]                                   |check[5]                                   
-check[4]                                   |check[4]                                   
-check[3]                                   |check[3]                                   
-check[2]                                   |check[2]                                   
-check[1]                                   |check[1]                                   
-check[0]                                   |check[0]                                   
 D[7]                                       |D[7]                                       
 D[6]                                       |D[6]                                       
 D[5]                                       |D[5]                                       
@@ -190,6 +179,13 @@ D[4]                                       |D[4]
 D[3]                                       |D[3]                                       
 D[2]                                       |D[2]                                       
 D[1]                                       |D[1]                                       
+check[6]                                   |check[6]                                   
+check[5]                                   |check[5]                                   
+check[4]                                   |check[4]                                   
+check[3]                                   |check[3]                                   
+check[2]                                   |check[2]                                   
+check[1]                                   |check[1]                                   
+check[0]                                   |check[0]                                   
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 VDD_SW[7]                                  |vdd_sw[7]                                  
@@ -199,13 +195,6 @@ VDD_SW[4]                                  |vdd_sw[4]
 VDD_SW[3]                                  |vdd_sw[3]                                  
 VDD_SW[2]                                  |vdd_sw[2]                                  
 VDD_SW[1]                                  |vdd_sw[1]                                  
-VSS_SW[7]                                  |vss_sw[7]                                  
-VSS_SW[6]                                  |vss_sw[6]                                  
-VSS_SW[5]                                  |vss_sw[5]                                  
-VSS_SW[4]                                  |vss_sw[4]                                  
-VSS_SW[3]                                  |vss_sw[3]                                  
-VSS_SW[2]                                  |vss_sw[2]                                  
-VSS_SW[1]                                  |vss_sw[1]                                  
 VDD_SW_b[7]                                |vdd_sw_b[7]                                
 VDD_SW_b[6]                                |vdd_sw_b[6]                                
 VDD_SW_b[5]                                |vdd_sw_b[5]                                
@@ -213,6 +202,13 @@ VDD_SW_b[4]                                |vdd_sw_b[4]
 VDD_SW_b[3]                                |vdd_sw_b[3]                                
 VDD_SW_b[2]                                |vdd_sw_b[2]                                
 VDD_SW_b[1]                                |vdd_sw_b[1]                                
+VSS_SW[7]                                  |vss_sw[7]                                  
+VSS_SW[6]                                  |vss_sw[6]                                  
+VSS_SW[5]                                  |vss_sw[5]                                  
+VSS_SW[4]                                  |vss_sw[4]                                  
+VSS_SW[3]                                  |vss_sw[3]                                  
+VSS_SW[2]                                  |vss_sw[2]                                  
+VSS_SW[1]                                  |vss_sw[1]                                  
 VSS_SW_b[7]                                |vss_sw_b[7]                                
 VSS_SW_b[6]                                |vss_sw_b[6]                                
 VSS_SW_b[5]                                |vss_sw_b[5]                                
