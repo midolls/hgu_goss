@@ -50,12 +50,3 @@ T {sw<4>} -26 55 1 1 0.2 0.2 {}
 T {sw<6>} -86 55 1 1 0.2 0.2 {}
 T {VDD} -95 -6 2 1 0.2 0.2 {}
 T {VSS} -95 14 2 1 0.2 0.2 {}
-C {devices/simulator_commands_shown.sym} 2280 -1120 0 0 {name=COMMANDS
-simulator=ngspice
-only_toplevel=false 
-value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
-.include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
-"}

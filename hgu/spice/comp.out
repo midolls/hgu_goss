@@ -1,40 +1,68 @@
 
-Cell hgu_cdac_8bit_array (0) disconnected node: SUB
-Cell hgu_cdac_8bit_array (0) disconnected node: tah<1:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: tah<3:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: tah<7:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: tah<31:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: tah<63:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: tah<15:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: tah<0>
-Cell hgu_cdac_8bit_array (0) disconnected node: drv<1:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: drv<0>
-Cell hgu_cdac_8bit_array (0) disconnected node: drv<3:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: drv<7:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: drv<15:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: drv<63:0>
-Cell hgu_cdac_8bit_array (0) disconnected node: drv<31:0>
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: hgu_cdac_8bit_array             |Circuit 2: hgu_cdac_8bit_array             
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
 -------------------------------------------|-------------------------------------------
-tah<0>                                     |tah<0>                                     
-drv<1:0>                                   |drv<1:0>                                   
-drv<0>                                     |drv<0>                                     
-drv<3:0>                                   |drv<3:0>                                   
-drv<7:0>                                   |drv<7:0>                                   
-drv<15:0>                                  |drv<15:0>                                  
-drv<63:0>                                  |drv<63:0>                                  
-drv<31:0>                                  |drv<31:0>                                  
-SUB                                        |(no matching pin)                          
-tah<1:0>                                   |(no matching pin)                          
-tah<3:0>                                   |(no matching pin)                          
-tah<7:0>                                   |(no matching pin)                          
-tah<31:0>                                  |(no matching pin)                          
-tah<63:0>                                  |(no matching pin)                          
-tah<15:0>                                  |(no matching pin)                          
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes hgu_cdac_8bit_array and hgu_cdac_8bit_array are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
-Final result: Verify:  cell hgu_cdac_8bit_array.sch.spice has no elements and/or nodes.  Not checked.
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_YCY3T5 in circuit hgu_tah (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UJB66J in circuit hgu_tah (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UJKTUG in circuit hgu_tah (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5AY3TR in circuit hgu_tah (0)(2 instances)
+
+Cell hgu_tah (0) disconnected node: hgu_tah
+Class hgu_tah (0):  Merged 16 parallel devices.
+Cell hgu_tah (0) disconnected node: hgu_tah
+Subcircuit summary:
+Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (12->4)            |sky130_fd_pr__nfet_01v8 (4)                
+sky130_fd_pr__pfet_01v8 (12->4)            |sky130_fd_pr__pfet_01v8 (4)                
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
+-------------------------------------------|-------------------------------------------
+tah_vp                                     |tah_vp                                     
+tah_vn                                     |tah_vn                                     
+sw                                         |sw                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+sw_n                                       |sw_n                                       
+vip                                        |vip                                        
+vin                                        |vin                                        
+hgu_tah                                    |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes hgu_tah and hgu_tah are equivalent.
+
+Final result: Circuits match uniquely.
+.

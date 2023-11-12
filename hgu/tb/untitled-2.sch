@@ -9,7 +9,7 @@ N -330 -100 -210 -100 {
 lab=#net1}
 N 10 -100 120 -100 {
 lab=out}
-C {../xschem/hgu_inverter.sym} -170 -100 0 0 {name=x8[1:0]
+C {../xschem/hgu_inverter.sym} -170 -100 0 0 {name=x8
 }
 C {../xschem/hgu_cdac_unit.sym} 120 -50 2 0 {name=x4 csize=1}
 C {devices/lab_pin.sym} 170 -100 1 0 {name=p36 sig_type=std_logic lab=VSS}
@@ -57,7 +57,9 @@ C {devices/code.sym} -570 40 0 0 {name=spice1 only_toplevel=false value="
 .save all
 
 "}
-C {../xschem/hgu_inverter.sym} -60 -100 0 0 {name=x1[1:0]}
+C {../xschem/hgu_inverter.sym} -60 -100 0 0 {name=x1
+
+}
 C {devices/gnd.sym} -60 -60 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -70 -140 1 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -50 -130 1 0 {name=p2 sig_type=std_logic lab=VREF}

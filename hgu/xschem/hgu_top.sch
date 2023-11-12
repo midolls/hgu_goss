@@ -210,7 +210,7 @@ N 2150 -680 3030 -680 {
 lab=VSS}
 N 2770 -380 3240 -380 {
 lab=VSS}
-C {hgu_sarlogic.sym} 2610 -890 0 0 {name=x1}
+C {hgu_sarlogic.sym} 2610 -880 0 0 {name=x1}
 C {hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
@@ -231,8 +231,8 @@ C {devices/vdd.sym} 720 -980 0 0 {name=l26 lab=VDD}
 C {devices/lab_wire.sym} 1320 -1270 0 0 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1320 -530 2 1 {name=p3 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1350 -1270 0 0 {name=p7 sig_type=std_logic lab=VSS}
-C {devices/gnd.sym} 430 -980 2 0 {name=l23 lab=GND}
-C {devices/gnd.sym} 430 -820 0 0 {name=l5 lab=GND}
+C {devices/gnd.sym} 270 -980 2 0 {name=l23 lab=GND}
+C {devices/gnd.sym} 270 -820 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 2070 -920 2 0 {name=p2 sig_type=std_logic lab=COMP_RESULT}
 C {devices/lab_pin.sym} 1970 -830 2 0 {name=p33 sig_type=std_logic lab=READY}
 C {devices/lab_pin.sym} 1870 -790 2 0 {name=p34 sig_type=std_logic lab=sar_clk}
@@ -291,7 +291,10 @@ C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 .OPTIONS savecurrents
 .tran 10ps 250ns
+<<<<<<< HEAD
 
+=======
+>>>>>>> e3b9e53a2335e0dc1f792d5ad29e8f842f45fcf2
 
 .control
 	run
@@ -351,8 +354,8 @@ C {devices/lab_pin.sym} 1150 -1520 1 0 {name=p52 sig_type=std_logic lab=result2_
 C {devices/lab_pin.sym} 1180 -1520 1 0 {name=p53 sig_type=std_logic lab=result2_sw[3]}
 C {devices/lab_pin.sym} 1210 -1520 1 0 {name=p54 sig_type=std_logic lab=result2_sw[2]}
 C {devices/lab_pin.sym} 1240 -1520 1 0 {name=p55 sig_type=std_logic lab=result2_sw[1]}
-C {hgu_cdac_sw_buffer.sym} 1150 -1420 0 0 {name=x6}
-C {hgu_cdac_sw_buffer.sym} 1520 -1420 0 1 {name=x7}
+C {hgu_cdac_sw_buffer_RC.sym} 1150 -1420 0 0 {name=x6}
+C {hgu_cdac_sw_buffer_RC.sym} 1520 -1420 0 1 {name=x7}
 C {devices/lab_wire.sym} 1060 -1300 0 0 {name=p56 sig_type=std_logic lab=sw6
 }
 C {devices/lab_wire.sym} 1090 -1300 0 0 {name=p57 sig_type=std_logic lab=sw5
@@ -377,8 +380,8 @@ C {devices/lab_pin.sym} 1150 -280 3 0 {name=p95 sig_type=std_logic lab=result2_s
 C {devices/lab_pin.sym} 1180 -280 3 0 {name=p96 sig_type=std_logic lab=result2_sw_b[3]}
 C {devices/lab_pin.sym} 1210 -280 3 0 {name=p97 sig_type=std_logic lab=result2_sw_b[2]}
 C {devices/lab_pin.sym} 1240 -280 3 0 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
-C {hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
-C {hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
+C {hgu_cdac_sw_buffer_RC.sym} 1150 -380 2 1 {name=x8}
+C {hgu_cdac_sw_buffer_RC.sym} 1520 -380 2 0 {name=x9}
 C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1380 -530 2 1 {name=p17 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1610 -1300 0 1 {name=p19 sig_type=std_logic lab=swd6
@@ -393,8 +396,8 @@ C {devices/lab_wire.sym} 1490 -1300 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
 C {devices/gnd.sym} 1860 -430 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 1860 -460 0 0 {name=V1 value=0.9}
-C {devices/vsource.sym} 430 -850 0 1 {name=V2 value="PULSE(1.8 0.9 0 114n 114n 10p 228n)"}
-C {devices/vsource.sym} 430 -950 2 0 {name=V4 value="PULSE(0.9 1.8 0 114n 114n 10p 228n)"}
+C {devices/vsource.sym} 270 -850 0 1 {name=V2 value="PULSE(1.8 0.9 0 114n 114n 10p 228n)"}
+C {devices/vsource.sym} 270 -950 2 0 {name=V4 value="PULSE(0.9 1.8 0 114n 114n 10p 228n)"}
 C {devices/vdd.sym} 2210 -320 1 0 {name=l11 lab=async_resetb_delay_cap_ctrl_code[3]}
 C {devices/vdd.sym} 2320 -320 1 0 {name=l12 lab=async_resetb_delay_cap_ctrl_code[2]}
 C {devices/vdd.sym} 2430 -440 1 0 {name=l13 lab=async_resetb_delay_cap_ctrl_code[1]}
@@ -463,7 +466,7 @@ C {devices/noconn.sym} 3530 -740 2 0 {name=l83}
 C {devices/noconn.sym} 3640 -740 2 0 {name=l84}
 C {devices/noconn.sym} 3750 -620 2 0 {name=l85}
 C {devices/noconn.sym} 3860 -620 2 0 {name=l86}
-C {devices/simulator_commands_shown.sym} 2280 -1170 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 1790 -1310 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -472,6 +475,12 @@ value="
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
+
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_retimer_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_sw_ctrl_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_async_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_sample_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_sw_buffer_flat_RC.spice
 "}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1240 0 0 {name=x10}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 2670 -1330 0 0 {name=x11}
@@ -511,7 +520,16 @@ C {devices/noconn.sym} 2820 -440 2 0 {name=l58}
 C {devices/noconn.sym} 2930 -440 2 0 {name=l63}
 C {devices/noconn.sym} 3040 -320 2 0 {name=l64}
 C {devices/noconn.sym} 3150 -320 2 0 {name=l65}
-C {devices/gnd.sym} 510 -980 2 0 {name=l66 lab=GND}
-C {devices/gnd.sym} 510 -820 0 0 {name=l87 lab=GND}
-C {devices/vsource.sym} 510 -850 0 1 {name=V21 value=1.125}
-C {devices/vsource.sym} 510 -950 2 0 {name=V22 value=1.575}
+C {devices/gnd.sym} 350 -980 2 0 {name=l66 lab=GND}
+C {devices/gnd.sym} 350 -820 0 0 {name=l87 lab=GND}
+C {devices/vsource.sym} 350 -850 0 1 {name=V21 value=1.125}
+C {devices/vsource.sym} 350 -950 2 0 {name=V22 value=1.575}
+C {devices/gnd.sym} 430 -980 2 0 {name=l88 lab=GND}
+C {devices/gnd.sym} 430 -820 0 0 {name=l89 lab=GND}
+C {devices/vsource.sym} 430 -850 0 1 {name=V23 value=0.675}
+C {devices/vsource.sym} 430 -950 2 0 {name=V24 value=1.125}
+C {devices/gnd.sym} 510 -980 2 0 {name=l90 lab=GND}
+C {devices/gnd.sym} 510 -820 0 0 {name=l91 lab=GND}
+C {devices/vsource.sym} 510 -850 0 1 {name=V31 value=0.9}
+C {devices/vsource.sym} 510 -950 2 0 {name=V32 value=0.9}
+C {devices/lab_pin.sym} 2460 -760 0 0 {name=p79 sig_type=std_logic lab=VDD}

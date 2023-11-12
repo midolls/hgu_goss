@@ -31,7 +31,7 @@ N 1360 -480 1530 -480 {
 lab=sar_result_temp[0:7] bus=true}
 C {../xschem/hgu_clk_async.sym} 710 -410 0 0 {name=x1}
 C {../xschem/hgu_clk_sample.sym} 330 -180 0 0 {name=x2}
-C {../xschem/hgu_sarlogic_8bit_logic_RC.sym} 1210 -450 0 0 {name=x3}
+C {../xschem/hgu_sarlogic_8bit_logic.sym} 1210 -450 0 0 {name=x3}
 C {devices/lab_pin.sym} 180 -230 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 180 -270 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -250 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -57,24 +57,6 @@ C {devices/opin.sym} 270 -480 0 0 {name=p23 lab=sar_result[0:7]}
 C {devices/opin.sym} 270 -440 0 0 {name=p26 lab=sample_clk}
 C {devices/ipin.sym} 190 -430 0 0 {name=p118 lab=sel_bit[0:1]}
 C {devices/lab_pin.sym} 1060 -500 0 0 {name=p120 sig_type=std_logic lab=sel_bit[0:1]}
-C {devices/capa.sym} 560 -250 3 0 {name=C1
-m=1
-value=5f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 590 -250 2 0 {name=p27 sig_type=std_logic lab=VSS}
-C {devices/capa.sym} 950 -510 2 0 {name=C2
-m=1
-value=5f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 950 -540 2 0 {name=p28 sig_type=std_logic lab=VSS}
-C {devices/capa.sym} 720 -560 2 0 {name=C3
-m=1
-value=5f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 720 -590 2 0 {name=p29 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 180 -170 0 0 {name=p30 sig_type=std_logic lab=sample_delay_cap_ctrl_code[0:3]}
 C {devices/ipin.sym} 230 -10 0 0 {name=p31 lab=sample_delay_cap_ctrl_code[0:15]}
 C {devices/opin.sym} 270 -420 0 0 {name=p32 lab=sample_clk_b}
@@ -106,8 +88,9 @@ C {/foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym} 1680 -470 0 0 {na
 C {devices/lab_pin.sym} 1830 -520 2 0 {name=p50 sig_type=std_logic lab=sar_result[0:7]}
 C {devices/lab_pin.sym} 1530 -520 0 0 {name=p24 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1530 -500 0 0 {name=p51 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1530 -420 0 0 {name=p52 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1530 -420 0 0 {name=p52 sig_type=std_logic lab=retimer_eob_delay_offset}
 C {devices/lab_pin.sym} 1530 -460 0 0 {name=p53 sig_type=std_logic lab=EOB}
 C {devices/ipin.sym} 230 170 0 0 {name=p58 lab=retimer_delay_code[0:3]}
 C {devices/lab_pin.sym} 1530 -440 0 0 {name=p59 sig_type=std_logic lab=retimer_delay_code[0:3]}
 C {devices/lab_pin.sym} 1430 -480 1 0 {name=p60 sig_type=std_logic lab=sar_result_temp[0:7]}
+C {devices/ipin.sym} 230 140 0 0 {name=p61 lab=retimer_eob_delay_offset}

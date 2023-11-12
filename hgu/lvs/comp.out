@@ -29,45 +29,162 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
-Subcircuit summary:
-Circuit 1: hgu_inverter                    |Circuit 2: hgu_inverter                    
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
-sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
-(no matching element)                      |r (2)                                      
-Number of devices: 2 **Mismatch**          |Number of devices: 4 **Mismatch**          
-Number of nets: 5 **Mismatch**             |Number of nets: 7 **Mismatch**             
----------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: hgu_inverter                    |Circuit 2: hgu_inverter                    
-
----------------------------------------------------------------------------------------
-Net: IN                                    |Net: IN                                    
-  sky130_fd_pr__nfet_01v8/2 = 1            |  r/(end_a|end_b) = 2                      
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-                                           |                                           
-(no matching net)                          |Net: IN.t1                                 
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  r/(end_a|end_b) = 1                      
-                                           |                                           
-(no matching net)                          |Net: IN.t0                                 
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |  r/(end_a|end_b) = 1                      
----------------------------------------------------------------------------------------
-Netlists do not match.
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: hgu_inverter                    |Circuit 2: hgu_inverter                    
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
 -------------------------------------------|-------------------------------------------
-IN                                         |(no matching pin)                          
-VSS                                        |VSS                                        
-OUT                                        |OUT                                        
-VREF                                       |VREF                                       
-VDD                                        |VDD                                        
-(no matching pin)                          |IN                                         
-IN                                         |(no matching pin)                          
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for hgu_inverter and hgu_inverter altered to match.
-Device classes hgu_inverter and hgu_inverter are equivalent.
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Flattening unmatched subcell hgu_clk_async in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__mux2_1 in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfbbp_1 in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell hgu_delay_no_code in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell hgu_sw_cap in circuit hgu_sarlogic (1)(16 instances)
+Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_sarlogic (1)(18 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_sarlogic (1)(4 instances)
+Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell hgu_nfet_hvt_stack_in_delay in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell hgu_clk_sample in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell hgu_clk_div in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__dfbbp_1 in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_sarlogic (1)(3 instances)
+Flattening unmatched subcell hgu_delay in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell hgu_delay_no_code in circuit hgu_sarlogic (1)(4 instances)
+Flattening unmatched subcell hgu_sw_cap in circuit hgu_sarlogic (1)(32 instances)
+Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_sarlogic (1)(36 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_sarlogic (1)(8 instances)
+Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_sarlogic (1)(4 instances)
+Flattening unmatched subcell hgu_nfet_hvt_stack_in_delay in circuit hgu_sarlogic (1)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell hgu_sarlogic_8bit_logic in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__dfbbp_1 in circuit hgu_sarlogic (1)(18 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__mux4_4 in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit hgu_sarlogic (1)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_4 in circuit hgu_sarlogic (1)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_16 in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell hgu_sarlogic_sw_ctrl in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__dfbbn_1 in circuit hgu_sarlogic (1)(14 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__mux2_1 in circuit hgu_sarlogic (1)(14 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_4 in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_16 in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell hgu_sarlogic_retimer in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__dfbbp_1 in circuit hgu_sarlogic (1)(8 instances)
+Flattening unmatched subcell hgu_delay_no_code in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell hgu_sw_cap in circuit hgu_sarlogic (1)(8 instances)
+Flattening unmatched subcell hgu_sw_cap_pmos in circuit hgu_sarlogic (1)(9 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit hgu_sarlogic (1)(2 instances)
+Flattening unmatched subcell hgu_pfet_hvt_stack_in_delay in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell hgu_nfet_hvt_stack_in_delay in circuit hgu_sarlogic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_2 in circuit hgu_sarlogic (1)(1 instance)
 
-Final result: Top level cell failed pin matching.
+Class hgu_sarlogic_flat (0):  Merged 257 parallel devices.
+Class hgu_sarlogic (1):  Merged 235 parallel devices.
+Subcircuit summary:
+Circuit 1: hgu_sarlogic_flat               |Circuit 2: hgu_sarlogic                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1148->1062)   |sky130_fd_pr__pfet_01v8_hvt (1141->1062)   
+sky130_fd_pr__nfet_01v8 (1284->1166)       |sky130_fd_pr__nfet_01v8 (1273->1166)       
+sky130_fd_pr__pfet_01v8 (73->20)           |sky130_fd_pr__pfet_01v8 (69->20)           
+Number of devices: 2248                    |Number of devices: 2248                    
+Number of nets: 1312                       |Number of nets: 1312                       
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: hgu_sarlogic_flat               |Circuit 2: hgu_sarlogic                    
+-------------------------------------------|-------------------------------------------
+sar_clk                                    |sar_clk                                    
+ready                                      |READY                                      
+async_setb_delay_cap_ctrl_code[0]          |async_setb_delay_cap_ctrl_code[0]          
+async_setb_delay_cap_ctrl_code[1]          |async_setb_delay_cap_ctrl_code[1]          
+async_setb_delay_cap_ctrl_code[2]          |async_setb_delay_cap_ctrl_code[2]          
+sample_delay_cap_ctrl_code[12]             |sample_delay_cap_ctrl_code[12]             
+sample_delay_cap_ctrl_code[13]             |sample_delay_cap_ctrl_code[13]             
+sample_delay_cap_ctrl_code[14]             |sample_delay_cap_ctrl_code[14]             
+sample_delay_cap_ctrl_code[0]              |sample_delay_cap_ctrl_code[0]              
+sample_delay_cap_ctrl_code[1]              |sample_delay_cap_ctrl_code[1]              
+sample_delay_cap_ctrl_code[2]              |sample_delay_cap_ctrl_code[2]              
+sample_delay_cap_ctrl_code[4]              |sample_delay_cap_ctrl_code[4]              
+sample_delay_cap_ctrl_code[5]              |sample_delay_cap_ctrl_code[5]              
+sample_delay_cap_ctrl_code[6]              |sample_delay_cap_ctrl_code[6]              
+sample_delay_cap_ctrl_code[8]              |sample_delay_cap_ctrl_code[8]              
+sample_delay_cap_ctrl_code[9]              |sample_delay_cap_ctrl_code[9]              
+sample_delay_cap_ctrl_code[10]             |sample_delay_cap_ctrl_code[10]             
+retimer_delay_code[0]                      |retimer_delay_code[0]                      
+retimer_delay_code[1]                      |retimer_delay_code[1]                      
+retimer_delay_code[2]                      |retimer_delay_code[2]                      
+async_resetb_delay_cap_ctrl_code[0]        |async_resetb_delay_cap_ctrl_code[0]        
+async_resetb_delay_cap_ctrl_code[1]        |async_resetb_delay_cap_ctrl_code[1]        
+async_resetb_delay_cap_ctrl_code[2]        |async_resetb_delay_cap_ctrl_code[2]        
+sample_delay_offset                        |sample_delay_offset                        
+retimer_eob_delay_offset                   |retimer_eob_delay_offset                   
+async_delay_offset                         |async_delay_offset                         
+sample_clk_b                               |sample_clk_b                               
+sel_bit[0]                                 |sel_bit[0]                                 
+sel_bit[1]                                 |sel_bit[1]                                 
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+sample_clk                                 |sample_clk                                 
+ext_clk                                    |EXT_CLK                                    
+comp_result                                |COMP_RESULT                                
+async_resetb_delay_cap_ctrl_code[3]        |async_resetb_delay_cap_ctrl_code[3]        
+async_setb_delay_cap_ctrl_code[3]          |async_setb_delay_cap_ctrl_code[3]          
+sample_delay_cap_ctrl_code[3]              |sample_delay_cap_ctrl_code[3]              
+sample_delay_cap_ctrl_code[7]              |sample_delay_cap_ctrl_code[7]              
+sample_delay_cap_ctrl_code[11]             |sample_delay_cap_ctrl_code[11]             
+sample_delay_cap_ctrl_code[15]             |sample_delay_cap_ctrl_code[15]             
+retimer_delay_code[3]                      |retimer_delay_code[3]                      
+vdd_sw[7]                                  |vdd_sw[7]                                  
+vdd_sw[5]                                  |vdd_sw[5]                                  
+vdd_sw[4]                                  |vdd_sw[4]                                  
+vdd_sw[6]                                  |vdd_sw[6]                                  
+vdd_sw[1]                                  |vdd_sw[1]                                  
+vdd_sw[2]                                  |vdd_sw[2]                                  
+vdd_sw[3]                                  |vdd_sw[3]                                  
+sar_result[0]                              |sar_result[0]                              
+sar_result[7]                              |sar_result[7]                              
+sar_result[1]                              |sar_result[1]                              
+sar_result[4]                              |sar_result[4]                              
+sar_result[5]                              |sar_result[5]                              
+sar_result[2]                              |sar_result[2]                              
+sar_result[3]                              |sar_result[3]                              
+sar_result[6]                              |sar_result[6]                              
+vss_sw[1]                                  |vss_sw[1]                                  
+vss_sw[2]                                  |vss_sw[2]                                  
+vss_sw[3]                                  |vss_sw[3]                                  
+vss_sw[5]                                  |vss_sw[5]                                  
+vss_sw[4]                                  |vss_sw[4]                                  
+vss_sw[6]                                  |vss_sw[6]                                  
+vss_sw[7]                                  |vss_sw[7]                                  
+vss_sw_b[1]                                |vss_sw_b[1]                                
+vss_sw_b[2]                                |vss_sw_b[2]                                
+vss_sw_b[3]                                |vss_sw_b[3]                                
+vss_sw_b[6]                                |vss_sw_b[6]                                
+vss_sw_b[4]                                |vss_sw_b[4]                                
+vss_sw_b[5]                                |vss_sw_b[5]                                
+vss_sw_b[7]                                |vss_sw_b[7]                                
+vdd_sw_b[3]                                |vdd_sw_b[3]                                
+vdd_sw_b[2]                                |vdd_sw_b[2]                                
+vdd_sw_b[1]                                |vdd_sw_b[1]                                
+vdd_sw_b[4]                                |vdd_sw_b[4]                                
+vdd_sw_b[5]                                |vdd_sw_b[5]                                
+vdd_sw_b[6]                                |vdd_sw_b[6]                                
+vdd_sw_b[7]                                |vdd_sw_b[7]                                
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes hgu_sarlogic_flat and hgu_sarlogic are equivalent.
+
+Final result: Circuits match uniquely.
+.

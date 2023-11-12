@@ -843,8 +843,14 @@ x a_5271_n62# VDD a_6231_220# VDD s=8988,275 d=4536,222 l=30 w=168 x=6201 y=220 
 x check[4] VDD a_5289_1289# VDD s=2772,150 d=4704,280 l=30 w=84 x=5457 y=1642 sky130_fd_pr__pfet_01v8_hvt
 x a_939_2457# VDD x2.X VDD s=5400,254 d=5400,254 l=30 w=200 x=1749 y=2707 sky130_fd_pr__pfet_01v8_hvt
 x check[4] VSS a_5289_1289# VSS s=5796,222 d=4368,272 l=30 w=84 x=5457 y=1315 sky130_fd_pr__nfet_01v8
-C x9.A1 VDD 4.5
-C x2.X VDD 7.4
+C VDD x9.A1 5.8
+C m1_95_1942# x9.A1 6.5
+C x2.X m1_95_2154# 6.3
+C m1_95_1942# VDD 6.2
+C x2.X VDD 9.8
+C x9.A1 m1_95_2154# 6.1
+R m1_95_1942# 62
+R m1_95_2154# 62
 R a_16097_n62# 186
 R a_15721_n62# 1014
 R a_15495_n62# 331
@@ -1321,7 +1327,7 @@ R a_4149_1642# 1667
 R a_2468_1467# 1667
 R a_1757_1642# 1667
 R a_76_1467# 1667
-C x9.A10 22.6
+C x9.A10 10.8
 R x9.A1 29887
 = x9.A1 x20.A1
 = x9.A1 x18.A1
@@ -1337,7 +1343,7 @@ R x9.A1 29887
 = x9.A1 x8.A1
 = x9.A1 x7.A1
 = x9.A1 x6.A1
-C x2.X0 22.8
+C x2.X0 18.3
 R x2.X 34060
 = x2.X x35.RESET_B
 = x2.X x34.SET_B
@@ -1361,10 +1367,10 @@ R a_4689_2457# 4340
 R x27.A 1814
 = x27.A x22.X
 R a_4413_2457# 1873
-C ready0 2.3
+C ready0 2.4
 R ready 845
 = ready x22.A
-C a_939_2457#0 2.0
+C a_939_2457#0 2.1
 R a_939_2457# 17681
 R x3.X 7917
 = x3.X x2.A
@@ -1374,8 +1380,8 @@ R x3.A 1816
 R a_29_2457# 1873
 R reset 828
 = reset x1.A
-C VDD0 112.7
-R VDD 554948
+C VDD0 139.1
+R VDD 555039
 = VDD x30.VPWR
 = VDD x27.VPWR
 = VDD x27.VPB
@@ -1458,7 +1464,7 @@ R VDD 554948
 = VDD sky130_fd_sc_hd__dfbbn_1_0.VPB
 = VDD sky130_fd_sc_hd__dfbbn_1_0.RESET_B
 = VDD x9.VPB
-R VSS 440897
+R VSS 440944
 = VSS x30.VGND
 = VSS x27.VGND
 = VSS x27.VNB

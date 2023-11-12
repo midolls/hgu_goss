@@ -109,11 +109,11 @@ sky130_fd_sc_hd__buf_4 (3)                 |sky130_fd_sc_hd__buf_4 (3)
 sky130_fd_sc_hd__buf_1 (8)                 |sky130_fd_sc_hd__buf_1 (8)                 
 sky130_fd_sc_hd__buf_16 (1)                |sky130_fd_sc_hd__buf_16 (1)                
 Number of devices: 12                      |Number of devices: 12                      
-Number of nets: 16                         |Number of nets: 16                         
+Number of nets: 19                         |Number of nets: 19                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match with 1 symmetry.
+Netlists match with 2 symmetries.
 
 Subcircuit pins:
 Circuit 1: hgu_cdac_sw_buffer              |Circuit 2: hgu_cdac_sw_buffer              
@@ -128,8 +128,8 @@ sar_val<4>                                 |sar_val<4>
 sar_val<3>                                 |sar_val<3>                                 
 sw<3>                                      |sw<3>                                      
 sw<2>                                      |sw<2>                                      
-VSS                                        |VSS                                        
 VDD                                        |VDD                                        
+VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes hgu_cdac_sw_buffer and hgu_cdac_sw_buffer are equivalent.
