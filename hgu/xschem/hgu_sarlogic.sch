@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -29,9 +29,9 @@ N 1190 -530 1360 -530 {
 lab=EOB}
 N 1360 -480 1530 -480 {
 lab=sar_result_temp[0:7] bus=true}
-C {../xschem/hgu_clk_async.sym} 710 -410 0 0 {name=x1}
-C {../xschem/hgu_clk_sample.sym} 330 -180 0 0 {name=x2}
-C {../xschem/hgu_sarlogic_8bit_logic.sym} 1210 -450 0 0 {name=x3}
+C {../xschem/hgu_clk_async_RC.sym} 710 -410 0 0 {name=x1}
+C {../xschem/hgu_clk_sample_RC.sym} 330 -180 0 0 {name=x2}
+C {../xschem/hgu_sarlogic_8bit_logic_RC.sym} 1210 -450 0 0 {name=x3}
 C {devices/lab_pin.sym} 180 -230 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 180 -270 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -250 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -65,7 +65,7 @@ C {devices/opin.sym} 1360 -340 0 0 {name=p54 lab=vdd_sw[1:7]}
 C {devices/opin.sym} 1360 -320 0 0 {name=p55 lab=vdd_sw_b[1:7]}
 C {devices/opin.sym} 1360 -300 0 0 {name=p56 lab=vss_sw[1:7]}
 C {devices/opin.sym} 1360 -280 0 0 {name=p57 lab=vss_sw_b[1:7]}
-C {../xschem/hgu_sarlogic_sw_ctrl.sym} 1210 -290 0 0 {name=x4}
+C {../xschem/hgu_sarlogic_sw_ctrl_RC.sym} 1210 -290 0 0 {name=x4}
 C {devices/lab_pin.sym} 1060 -300 0 0 {name=p36 sig_type=std_logic lab=sar_result_temp[1:7]}
 C {devices/lab_pin.sym} 1060 -280 0 0 {name=p37 sig_type=std_logic lab=check[0:6]}
 C {devices/lab_pin.sym} 1060 -240 0 0 {name=p39 sig_type=std_logic lab=sample_clk_b}
@@ -84,7 +84,7 @@ C {devices/ipin.sym} 230 100 0 0 {name=p46 lab=async_delay_offset}
 C {devices/lab_pin.sym} 560 -380 0 0 {name=p47 sig_type=std_logic lab=async_delay_offset}
 C {devices/ipin.sym} 230 120 0 0 {name=p48 lab=sample_delay_offset}
 C {devices/lab_pin.sym} 180 -90 0 0 {name=p49 sig_type=std_logic lab=sample_delay_offset}
-C {/foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym} 1680 -470 0 0 {name=x5}
+C {/foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer_RC.sym} 1680 -470 0 0 {name=x5}
 C {devices/lab_pin.sym} 1830 -520 2 0 {name=p50 sig_type=std_logic lab=sar_result[0:7]}
 C {devices/lab_pin.sym} 1530 -520 0 0 {name=p24 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1530 -500 0 0 {name=p51 sig_type=std_logic lab=VSS}
