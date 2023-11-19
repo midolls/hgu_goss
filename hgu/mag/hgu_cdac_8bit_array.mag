@@ -1,53 +1,53 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699813282
+timestamp 1699890160
 << pwell >>
 rect 13234 -5934 13266 -5884
 << metal4 >>
-rect -3091 -6228 -3037 -6194
-rect -2174 -6232 -2123 -6190
-rect -179 -6235 -128 -6194
+rect -3236 -6228 -3182 -6194
+rect -2319 -6232 -2268 -6190
+rect -180 -6235 -129 -6194
 rect 2975 -6232 3026 -6191
 rect 7950 -6231 8005 -6192
 rect 31713 -6232 31764 -6191
-rect -4262 -6470 -4213 -6418
-rect -4142 -6576 -4100 -6542
+rect -4407 -6470 -4358 -6418
+rect -4287 -6576 -4245 -6542
 << via4 >>
-rect -3770 -5086 -3533 -4850
-rect -2340 -5086 -2103 -4850
-rect -900 -5086 -663 -4850
+rect -3915 -5086 -3678 -4850
+rect -2485 -5086 -2248 -4850
+rect -901 -5086 -664 -4850
 rect 1192 -5086 1429 -4850
 rect 6166 -5086 6403 -4850
 rect 35096 -5086 35332 -4850
-rect -3770 -7574 -3533 -7338
-rect -2340 -7574 -2103 -7338
-rect -900 -7574 -663 -7338
+rect -3915 -7574 -3678 -7338
+rect -2485 -7574 -2248 -7338
+rect -901 -7574 -664 -7338
 rect 1192 -7574 1429 -7338
 rect 6166 -7574 6403 -7338
 rect 35096 -7574 35332 -7338
 << metal5 >>
-rect -3812 -4850 -3492 -4811
-rect -3812 -5086 -3770 -4850
-rect -3533 -5086 -3492 -4850
-rect -3812 -7338 -3492 -5086
-rect -3812 -7574 -3770 -7338
-rect -3533 -7574 -3492 -7338
-rect -3812 -7612 -3492 -7574
-rect -2382 -4850 -2062 -4811
-rect -2382 -5086 -2340 -4850
-rect -2103 -5086 -2062 -4850
-rect -2382 -7338 -2062 -5086
-rect -2382 -7574 -2340 -7338
-rect -2103 -7574 -2062 -7338
-rect -2382 -7612 -2062 -7574
-rect -942 -4850 -622 -4811
-rect -942 -5086 -900 -4850
-rect -663 -5086 -622 -4850
-rect -942 -7338 -622 -5086
-rect -942 -7574 -900 -7338
-rect -663 -7574 -622 -7338
-rect -942 -7612 -622 -7574
+rect -3957 -4850 -3637 -4811
+rect -3957 -5086 -3915 -4850
+rect -3678 -5086 -3637 -4850
+rect -3957 -7338 -3637 -5086
+rect -3957 -7574 -3915 -7338
+rect -3678 -7574 -3637 -7338
+rect -3957 -7612 -3637 -7574
+rect -2527 -4850 -2207 -4811
+rect -2527 -5086 -2485 -4850
+rect -2248 -5086 -2207 -4850
+rect -2527 -7338 -2207 -5086
+rect -2527 -7574 -2485 -7338
+rect -2248 -7574 -2207 -7338
+rect -2527 -7612 -2207 -7574
+rect -943 -4850 -623 -4811
+rect -943 -5086 -901 -4850
+rect -664 -5086 -623 -4850
+rect -943 -7338 -623 -5086
+rect -943 -7574 -901 -7338
+rect -664 -7574 -623 -7338
+rect -943 -7612 -623 -7574
 rect 1150 -4850 1470 -4811
 rect 1150 -5086 1192 -4850
 rect 1429 -5086 1470 -4850
@@ -71,38 +71,36 @@ rect 35054 -7574 35096 -7338
 rect 35332 -7574 35374 -7338
 rect 35054 -7612 35374 -7574
 use hgu_cdac_cap_2  hgu_cdac_cap_2_0
-timestamp 1699180127
-transform 1 0 -3688 0 1 -8070
+timestamp 1699890160
+transform 1 0 -3833 0 1 -8070
 box -14 664 658 3052
 use hgu_cdac_cap_4  hgu_cdac_cap_4_0
-timestamp 1699180127
-transform 1 0 -3476 0 1 -10204
+timestamp 1699890160
+transform 1 0 -3621 0 1 -10204
 box 686 2798 1964 5186
 use hgu_cdac_cap_8  hgu_cdac_cap_8_0
-timestamp 1699180127
-transform 1 0 -2086 0 1 -10204
+timestamp 1699890160
+transform 1 0 -2087 0 1 -10204
 box 686 2798 3176 5186
 use hgu_cdac_cap_16  hgu_cdac_cap_16_0
-timestamp 1699180127
+timestamp 1699890160
 transform 1 0 -448 0 1 -6878
 box 1598 -528 6512 1860
 use hgu_cdac_cap_32  hgu_cdac_cap_32_0
-timestamp 1699180127
+timestamp 1699890160
 transform 1 0 -9052 0 1 -4360
 box 15176 -3046 24938 -658
 use hgu_cdac_cap_64  hgu_cdac_cap_64_0
-timestamp 1699180127
+timestamp 1699890160
 transform 1 0 2164 0 1 -9210
 box 13782 1804 33240 4192
 use hgu_cdac_unit  x1
-timestamp 1699173900
-transform -1 0 -3158 0 -1 -5580
+timestamp 1699890160
+transform -1 0 -3303 0 -1 -5580
 box 686 598 1358 1826
 << labels >>
 flabel pwell 13234 -5934 13266 -5884 0 FreeSans 160 0 0 0 SUB
 port 1 nsew
-flabel metal4 -179 -6235 -128 -6194 0 FreeSans 320 0 0 0 drv<7:0>
-port 29 nsew
 flabel metal4 2975 -6232 3026 -6191 0 FreeSans 320 0 0 0 drv<15:0>
 port 31 nsew
 flabel metal4 31713 -6232 31764 -6191 0 FreeSans 320 0 0 0 drv<63:0>
@@ -115,18 +113,20 @@ flabel via4 6194 -5007 6368 -4907 0 FreeSans 320 0 0 0 tah<31:0>
 port 13 nsew
 flabel via4 35130 -5012 35304 -4912 0 FreeSans 320 0 0 0 tah<63:0>
 port 15 nsew
-flabel via4 -866 -5013 -692 -4913 0 FreeSans 320 0 0 0 tah<7:0>
+flabel metal4 -180 -6235 -129 -6194 0 FreeSans 320 0 0 0 drv<7:0>
+port 29 nsew
+flabel via4 -867 -5013 -693 -4913 0 FreeSans 320 0 0 0 tah<7:0>
 port 9 nsew
-flabel via4 -2312 -5017 -2138 -4917 0 FreeSans 320 0 0 0 tah<3:0>
-port 7 nsew
-flabel metal4 -2174 -6232 -2123 -6190 0 FreeSans 320 0 0 0 drv<3:0>
-port 25 nsew
-flabel metal4 -4142 -6576 -4100 -6542 0 FreeSans 320 0 0 0 drv<0>
-port 23 nsew
-flabel metal4 -4262 -6470 -4213 -6418 0 FreeSans 320 0 0 0 tah<0>
-port 19 nsew
-flabel metal4 -3091 -6228 -3037 -6194 0 FreeSans 320 0 0 0 drv<1:0>
-port 21 nsew
-flabel via4 -3770 -5086 -3533 -4850 0 FreeSans 320 0 0 0 tah<1:0>
+flabel via4 -3915 -5086 -3678 -4850 0 FreeSans 320 0 0 0 tah<1:0>
 port 5 nsew
+flabel metal4 -3236 -6228 -3182 -6194 0 FreeSans 320 0 0 0 drv<1:0>
+port 21 nsew
+flabel metal4 -4407 -6470 -4358 -6418 0 FreeSans 320 0 0 0 tah<0>
+port 19 nsew
+flabel metal4 -4287 -6576 -4245 -6542 0 FreeSans 320 0 0 0 drv<0>
+port 23 nsew
+flabel metal4 -2319 -6232 -2268 -6190 0 FreeSans 320 0 0 0 drv<3:0>
+port 25 nsew
+flabel via4 -2457 -5017 -2283 -4917 0 FreeSans 320 0 0 0 tah<3:0>
+port 7 nsew
 << end >>

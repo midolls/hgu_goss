@@ -16,9 +16,9 @@ lab=sw3 bus=true}
 N 360 -620 360 -580 {
 lab=sw2 bus=true}
 N 420 -620 420 -580 {
-lab=#net1 bus=true}
+lab=sw1 bus=true}
 N 470 -620 470 -580 {
-lab=#net2 }
+lab=sw0 }
 N 1240 -620 1240 -580 {
 lab=swd6 bus=true}
 N 1180 -620 1180 -580 {
@@ -30,9 +30,9 @@ lab=swd3 bus=true}
 N 1000 -620 1000 -580 {
 lab=swd2 bus=true}
 N 940 -620 940 -580 {
-lab=#net3 bus=true}
+lab=swd1 bus=true}
 N 890 -620 890 -580 {
-lab=#net4}
+lab=swd0}
 N 120 -810 120 -760 {
 lab=d<6> bus=true
 }
@@ -172,3 +172,11 @@ C {devices/lab_wire.sym} 1000 -600 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
 C {devices/lab_pin.sym} 60 -500 0 0 {name=p45 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1300 -500 2 0 {name=p46 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 420 -590 0 0 {name=p47 sig_type=std_logic lab=sw1
+}
+C {devices/lab_wire.sym} 470 -590 0 0 {name=p48 sig_type=std_logic lab=sw0
+}
+C {devices/lab_wire.sym} 940 -600 0 0 {name=p49 sig_type=std_logic lab=swd1
+}
+C {devices/lab_wire.sym} 890 -600 0 0 {name=p50 sig_type=std_logic lab=swd0
+}
