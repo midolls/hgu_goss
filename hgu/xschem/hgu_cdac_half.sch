@@ -62,12 +62,6 @@ N 940 -810 940 -760 {
 lab=db<1> bus=true}
 N 890 -810 890 -760 {
 lab=db<0>}
-N 610 -580 610 -540 {
-lab=VSS}
-N 610 -580 750 -580 {
-lab=VSS}
-N 750 -580 750 -540 {
-lab=VSS}
 N 120 -440 120 -390 {
 lab=t<6> bus=true}
 N 180 -440 180 -390 {
@@ -96,18 +90,18 @@ N 940 -440 940 -390 {
 lab=tb<1> bus=true}
 N 890 -440 890 -390 {
 lab=tb<0>}
-N 660 -580 660 -540 {
-lab=VSS}
-N 750 -580 800 -580 {
-lab=VSS}
-N 800 -580 800 -540 {
-lab=VSS}
+N 470 -400 510 -400 {
+lab=t<0>}
+N 510 -440 510 -400 {
+lab=t<0>}
+N 850 -440 850 -400 {
+lab=tb<0>}
+N 850 -400 890 -400 {
+lab=tb<0>}
 C {../xschem/hgu_cdac_8bit_array.sym} 370 -420 0 0 {name=x1}
 C {../xschem/hgu_cdac_drv.sym} 750 -690 0 0 {name=x2}
 C {../xschem/hgu_cdac_8bit_array.sym} 990 -420 0 1 {name=x3}
 C {../xschem/hgu_cdac_drv.sym} 610 -690 0 1 {name=x4}
-C {../xschem/hgu_cdac_unit.sym} 610 -490 2 0 {name=x9 csize=1}
-C {../xschem/hgu_cdac_unit.sym} 750 -490 2 0 {name=x10 csize=1}
 C {devices/iopin.sym} 120 -810 3 0 {name=p2 lab=d<6>}
 C {devices/iopin.sym} 180 -810 3 0 {name=p3 lab=d<5>}
 C {devices/iopin.sym} 240 -810 3 0 {name=p4 lab=d<4>
@@ -144,9 +138,6 @@ C {devices/iopin.sym} 1060 -390 1 0 {name=p31 lab=tb<3>}
 C {devices/iopin.sym} 1000 -390 1 0 {name=p32 lab=tb<2>}
 C {devices/iopin.sym} 940 -390 1 0 {name=p33 lab=tb<1>}
 C {devices/iopin.sym} 890 -390 1 0 {name=p34 lab=tb<0>}
-C {devices/lab_pin.sym} 680 -580 1 0 {name=p35 sig_type=std_logic lab=VSS}
-C {devices/iopin.sym} 610 -440 3 1 {name=p36 lab=tu}
-C {devices/iopin.sym} 750 -440 3 1 {name=p37 lab=tub}
 C {devices/ipin.sym} -80 -760 0 0 {name=p38 lab=VDD}
 C {devices/lab_pin.sym} 530 -760 1 0 {name=p39 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 830 -760 1 0 {name=p40 sig_type=std_logic lab=VDD}
