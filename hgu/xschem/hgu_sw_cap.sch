@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -7,12 +7,7 @@ S {}
 E {}
 N 230 -110 230 -90 {
 lab=VSS}
-N 230 -190 230 -170 {
-<<<<<<< HEAD
-lab=floating}
-=======
-lab=#net1}
->>>>>>> 44053179fce1b15a659ce5ddf31ed98717972888
+N 230 -190 230 -170 {lab=floating}
 C {devices/lab_pin.sym} 230 -220 2 0 {name=p32 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 210 -220 0 0 {name=M14
 L=0.15

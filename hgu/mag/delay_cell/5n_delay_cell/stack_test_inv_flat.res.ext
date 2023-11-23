@@ -1,0 +1,197 @@
+scale 1000 1 500000
+rnode "output.t0" 0 0 190 1034 0
+rnode "hgu_nfet_hvt_stack_in_delay_0.output_stack" 0 0 196 1064 0
+rnode "output.n0" 0 0 219 1034 0
+rnode "output" 0 0 594 1136 0
+rnode "output.n1" 0 0 528 1193 0
+rnode "output.t1" 0 0 172 1349 0
+rnode "output.n2" 0 0 201 1349 0
+rnode "hgu_pfet_hvt_stack_in_delay_0.output_stack" 0 0 178 1307 0
+resist "output.n0" "hgu_nfet_hvt_stack_in_delay_0.output_stack" 0.0276442
+resist "hgu_pfet_hvt_stack_in_delay_0.output_stack" "output.n2" 0.0296392
+resist "output.n1" "output" 0.251134
+resist "output.n1" "output.n0" 1.3384
+resist "output.n2" "output.n1" 1.40872
+resist "output.n0" "output.t0" 41.453
+resist "output.n2" "output.t1" 68.0369
+rnode "vdd.t5" 0 0 172 2039 0
+rnode "vdd" 0 0 158 2140 0
+rnode "vdd.n0" 0 0 201 2039 0
+rnode "vdd.n1" 0 0 269 2006 0
+rnode "vdd.n2" 0 0 356 2083 0
+rnode "vdd.t4" 0 0 157 2039 0
+rnode "vdd.n3" 0 0 326 1751 0
+rnode "vdd.n4" 0 0 326 1751 0
+rnode "vdd.t6" 0 0 157 1763 0
+rnode "vdd.n5" 0 0 -12 1781 0
+rnode "vdd.n6" 0 0 328 1605 0
+rnode "vdd.n7" 0 0 328 1605 0
+rnode "vdd.t3" 0 0 157 1625 0
+rnode "vdd.n8" 0 0 -16 1635 0
+rnode "vdd.t1" 0 0 157 1487 0
+rnode "vdd.t0" 0 0 157 1349 0
+rnode "vdd.n9" 0 0 328 1453 0
+rnode "vdd.n10" 0 0 -16 1635 0
+rnode "vdd.n11" 0 0 -12 1781 0
+rnode "vdd.n12" 0 0 -12 1965 0
+rnode "vdd.n13" 0 0 326 1897 0
+rnode "vdd.n14" 0 0 326 1897 0
+rnode "vdd.t2" 0 0 157 1901 0
+rnode "vdd.n15" 0 0 -12 1965 0
+rnode "hgu_pfet_hvt_stack_in_delay_0.vdd" 0 0 184 2009 0
+resist "vdd.n0" "vdd" 0.390689
+resist "vdd.t2" "vdd.n14" 7.50988
+resist "vdd.n14" "vdd.n13" 8.40909
+resist "vdd.n4" "vdd.n3" 8.40909
+resist "vdd.n7" "vdd.n6" 8.40909
+resist "vdd.n10" "vdd.n8" 8.40909
+resist "vdd.n11" "vdd.n5" 8.40909
+resist "vdd.n15" "vdd.n12" 8.40909
+resist "vdd.n1" "vdd.n0" 12.6145
+resist "vdd.n2" "vdd.n1" 14.8431
+resist "vdd.n8" "vdd.t3" 18.7747
+resist "vdd.t4" "vdd.n2" 19.5131
+resist "vdd.t6" "vdd.n4" 22.5296
+resist "vdd.n11" "vdd.n10" 28.3104
+resist "vdd.n5" "vdd.t6" 33.7945
+resist "vdd.t3" "vdd.n7" 37.5494
+resist "vdd.n12" "vdd.n11" 38.5542
+resist "vdd.n10" "vdd.n9" 45.7282
+resist "hgu_pfet_hvt_stack_in_delay_0.vdd" "vdd.t4" 56.3241
+resist "vdd.n9" "vdd.t1" 63.834
+resist "vdd.n0" "vdd.t5" 68.0282
+resist "hgu_pfet_hvt_stack_in_delay_0.vdd" "vdd.n15" 82.6087
+resist "vdd.n15" "vdd.t2" 120.158
+resist "vdd.n9" "vdd.t0" 195.257
+rnode "vss.n0" 0 0 381 29 0
+rnode "vss.n1" 0 0 367 205 0
+rnode "vss.n2" 0 0 369 707 0
+rnode "vss.n3" 0 0 371 -127 0
+rnode "vss.n4" 0 0 377 859 0
+rnode "vss.n5" 0 0 377 859 0
+rnode "vss.n6" 0 0 393 365 0
+rnode "vss.n7" 0 0 367 205 0
+rnode "vss.t0" 0 0 175 1034 0
+rnode "vss.t2" 0 0 103 1034 0
+rnode "vss.n8" 0 0 159 -121 0
+rnode "vss.n9" 0 0 -67 -121 0
+rnode "vss.n10" 0 0 -81 373 0
+rnode "vss.n11" 0 0 -83 219 0
+rnode "vss.n12" 0 0 -81 373 0
+rnode "vss.n13" 0 0 -83 219 0
+rnode "vss.n14" 0 0 -85 43 0
+rnode "vss.n15" 0 0 -85 43 0
+rnode "vss.n16" 0 0 -67 -121 0
+rnode "vss.n17" 0 0 159 -121 0
+rnode "vss.n18" 0 0 322 -110 0
+rnode "vss.n19" 0 0 381 29 0
+rnode "vss.n20" 0 0 324 92 0
+rnode "vss.t1" 0 0 190 68 0
+rnode "vss.n21" 0 0 219 68 0
+rnode "vss" 0 0 182 -60 0
+rnode "hgu_nfet_hvt_stack_in_delay_0.vss" 0 0 202 38 0
+resist "hgu_nfet_hvt_stack_in_delay_0.vss" "vss.n21" 0.0902541
+resist "hgu_nfet_hvt_stack_in_delay_0.vss" "vss" 0.206654
+resist "vss.n20" "vss.n19" 3.28496
+resist "vss.n14" "vss.n13" 6.00683
+resist "vss.n13" "vss.n12" 6.00683
+resist "vss.n2" "vss.n1" 6.00683
+resist "vss.n3" "vss.n2" 6.00683
+resist "vss.n4" "vss.n0" 12.0137
+resist "vss.n4" "vss.n3" 18.0205
+resist "vss.n19" "vss.n18" 18.1454
+resist "vss.n20" "vss.n7" 19.3206
+resist "vss.n21" "vss.n20" 19.4783
+resist "vss.n16" "vss.n15" 22.9016
+resist "vss.n7" "vss.n6" 27.7515
+resist "vss.n18" "vss.n17" 38.517
+resist "vss.n21" "vss.t1" 41.4443
+resist "vss.n8" "vss.t0" 48.0546
+resist "vss.n17" "vss.n16" 49.0557
+resist "vss.n11" "vss.n10" 128.561
+resist "vss.n15" "vss.n11" 146.993
+resist "vss.n8" "vss.t2" 168.191
+resist "vss.n6" "vss.n5" 236.269
+resist "vss.n5" "vss.n4" 278.874
+resist "vss.n17" "vss.n8" 585
+resist "vss.n16" "vss.n9" 585
+resist "vss.n15" "vss.n14" 585
+rnode "input.t7" 0 0 157 2039 0
+rnode "input.t12" 0 0 157 1901 0
+rnode "input.t1" 0 0 157 1763 0
+rnode "input.t11" 0 0 157 1625 0
+rnode "input.t16" 0 0 157 1487 0
+rnode "input.t21" 0 0 157 1349 0
+rnode "input.t10" 0 0 103 68 0
+rnode "input.t19" 0 0 103 206 0
+rnode "input.t8" 0 0 103 344 0
+rnode "input.t3" 0 0 103 482 0
+rnode "input.t15" 0 0 103 620 0
+rnode "input.t5" 0 0 103 758 0
+rnode "input.t0" 0 0 103 896 0
+rnode "input.t17" 0 0 103 1034 0
+rnode "hgu_nfet_hvt_stack_in_delay_0.input_stack" 0 0 88 1091 0
+rnode "input.n0" 0 0 103 1091 0
+rnode "input.t20" 0 0 175 68 0
+rnode "input.t6" 0 0 175 206 0
+rnode "input.t18" 0 0 175 344 0
+rnode "input.t13" 0 0 175 482 0
+rnode "input.t2" 0 0 175 620 0
+rnode "input.t14" 0 0 175 758 0
+rnode "input.t9" 0 0 175 896 0
+rnode "input.t4" 0 0 175 1034 0
+rnode "hgu_nfet_hvt_stack_in_delay_0.input_stack" 0 0 175 1091 0
+rnode "input.n1" 0 0 124 1106 0
+rnode "input.n2" 0 0 157 1243 0
+rnode "input" 0 0 -62 1104 0
+rnode "hgu_pfet_hvt_stack_in_delay_0.input_stack" 0 0 140 1226 0
+resist "hgu_pfet_hvt_stack_in_delay_0.input_stack" "input" 0.617928
+resist "input.n1" "hgu_nfet_hvt_stack_in_delay_0.input_stack" 10.9545
+resist "hgu_pfet_hvt_stack_in_delay_0.input_stack" "input.n2" 13.4442
+resist "input.n0" "hgu_nfet_hvt_stack_in_delay_0.input_stack" 24.1
+resist "input.n1" "input.n0" 33.74
+resist "hgu_nfet_hvt_stack_in_delay_0.input_stack" "input.t4" 91.58
+resist "input.n0" "input.t17" 91.58
+resist "input.n2" "input.n1" 100.052
+resist "input.n2" "input.t21" 141.387
+resist "input.t4" "input.t9" 221.72
+resist "input.t9" "input.t14" 221.72
+resist "input.t14" "input.t2" 221.72
+resist "input.t2" "input.t13" 221.72
+resist "input.t13" "input.t18" 221.72
+resist "input.t18" "input.t6" 221.72
+resist "input.t6" "input.t20" 221.72
+resist "input.t21" "input.t16" 221.72
+resist "input.t16" "input.t11" 221.72
+resist "input.t11" "input.t1" 221.72
+resist "input.t1" "input.t12" 221.72
+resist "input.t12" "input.t7" 221.72
+resist "input.t17" "input.t0" 221.72
+resist "input.t0" "input.t5" 221.72
+resist "input.t5" "input.t15" 221.72
+resist "input.t15" "input.t3" 221.72
+resist "input.t3" "input.t8" 221.72
+resist "input.t8" "input.t19" 221.72
+resist "input.t19" "input.t10" 221.72
+device msubckt sky130_fd_pr__pfet_01v8_hvt 142 1307 143 1308  "vdd.t0" "input.t21" 60 0 "a_84_1307#" 84 4872,284 "output.t1" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 160 26 161 27  "vss.t0" "input.t20" 60 0 "a_118_26#" 84 1764,126 "vss.t1" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 164 89 165  "vss.t2" "input.t19" 60 0 "a_30_26#" 84 4872,284 "a_118_164#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 160 302 161 303  "vss.t0" "input.t18" 60 0 "a_118_302#" 84 1764,126 "a_190_164#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 992 89 993  "vss.t2" "input.t17" 60 0 "a_30_854#" 84 4872,284 "a_118_992#" 84 1764,126
+device msubckt sky130_fd_pr__pfet_01v8_hvt 142 1445 143 1446  "vdd.t1" "input.t16" 60 0 "a_84_1307#" 84 4872,284 "a_172_1445#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 578 89 579  "vss.t2" "input.t15" 60 0 "a_30_578#" 84 4872,284 "a_118_578#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 160 716 161 717  "vss.t0" "input.t14" 60 0 "a_118_716#" 84 1764,126 "a_190_716#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 160 440 161 441  "vss.t0" "input.t13" 60 0 "a_118_440#" 84 1764,126 "a_190_440#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 142 1859 143 1860  "vdd.t2" "input.t12" 60 0 "a_84_1859#" 84 4872,284 "a_172_1721#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 142 1583 143 1584  "vdd.t3" "input.t11" 60 0 "a_84_1583#" 84 4872,284 "a_172_1445#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 26 89 27  "vss.t2" "input.t10" 60 0 "a_30_26#" 84 4872,284 "a_118_26#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 160 854 161 855  "vss.t0" "input.t9" 60 0 "a_118_854#" 84 1764,126 "a_190_716#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 302 89 303  "vss.t2" "input.t8" 60 0 "a_30_302#" 84 4872,284 "a_118_302#" 84 1764,126
+device msubckt sky130_fd_pr__pfet_01v8_hvt 142 1997 143 1998  "vdd.t4" "input.t7" 60 0 "a_84_1859#" 84 4872,284 "vdd.t5" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 160 164 161 165  "vss.t0" "input.t6" 60 0 "a_118_164#" 84 1764,126 "a_190_164#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 716 89 717  "vss.t2" "input.t5" 60 0 "a_30_578#" 84 4872,284 "a_118_716#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 160 992 161 993  "vss.t0" "input.t4" 60 0 "a_118_992#" 84 1764,126 "output.t0" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 440 89 441  "vss.t2" "input.t3" 60 0 "a_30_302#" 84 4872,284 "a_118_440#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 160 578 161 579  "vss.t0" "input.t2" 60 0 "a_118_578#" 84 1764,126 "a_190_440#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 142 1721 143 1722  "vdd.t6" "input.t1" 60 0 "a_84_1583#" 84 4872,284 "a_172_1721#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 88 854 89 855  "vss.t2" "input.t0" 60 0 "a_30_854#" 84 4872,284 "a_118_854#" 84 1764,126

@@ -1,56 +1,34 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
 V {}
 S {}
 E {}
-N 250 -110 270 -110 {
-lab=VDD}
-N 250 -170 270 -170 {
-lab=VDD}
-N 270 -200 270 -170 {
-lab=VDD}
-N 270 -170 270 -110 {
-lab=VDD}
-N 210 -170 210 -110 {
-lab=input_stack}
-N 270 -230 270 -200 {
-lab=VDD}
-N 270 -300 270 -270 {
-lab=VDD}
-N 210 -230 210 -170 {
-lab=input_stack}
-N 250 -230 270 -230 {
-lab=VDD}
-N 270 -340 270 -300 {
-lab=VDD}
 N 160 -110 210 -110 {
 lab=input_stack}
 N 250 -80 250 -50 {
 lab=output_stack}
-N 270 -270 270 -230 {
-lab=VDD}
-N 250 -290 270 -290 {
-lab=VDD}
-N 210 -290 210 -230 {
-lab=input_stack}
-N 210 -350 210 -290 {
-lab=input_stack}
-N 250 -350 270 -350 {
-lab=VDD}
-N 270 -350 270 -340 {
-lab=VDD}
 N 250 -440 270 -440 {
 lab=VDD}
 N 270 -470 270 -410 {
 lab=VDD}
-N 210 -410 210 -350 {
-lab=input_stack}
 N 250 -410 270 -410 {
 lab=VDD}
-N 270 -410 270 -350 {
+N 250 -110 270 -110 {
 lab=VDD}
+N 250 -170 270 -170 {
+lab=VDD}
+N 250 -230 270 -230 {
+lab=VDD}
+N 250 -290 270 -290 {
+lab=VDD}
+N 250 -350 270 -350 {
+lab=VDD}
+N 270 -410 270 -110 {
+lab=VDD}
+N 210 -410 210 -110 {
+lab=input_stack}
 C {devices/ipin.sym} 270 -470 1 0 {name=p2 lab=VDD}
 C {devices/ipin.sym} 160 -110 0 0 {name=p1 lab=input_stack}
 C {devices/iopin.sym} 250 -50 0 0 {name=p7 lab=output_stack}
