@@ -1,0 +1,144 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+Flattening unmatched subcell hgu_cdac_8bit_array in circuit hgu_cdac_half (0)(2 instances)
+Flattening unmatched subcell hgu_cdac_drv in circuit hgu_cdac_half (0)(2 instances)
+Flattening unmatched subcell hgu_inverter in circuit hgu_cdac_half (0)(254 instances)
+
+Cell hgu_cdac_half (0) disconnected node: t<6>
+Cell hgu_cdac_half (0) disconnected node: t<5>
+Cell hgu_cdac_half (0) disconnected node: t<4>
+Cell hgu_cdac_half (0) disconnected node: t<3>
+Cell hgu_cdac_half (0) disconnected node: t<2>
+Cell hgu_cdac_half (0) disconnected node: t<1>
+Cell hgu_cdac_half (0) disconnected node: t<0>
+Cell hgu_cdac_half (0) disconnected node: tb<6>
+Cell hgu_cdac_half (0) disconnected node: tb<5>
+Cell hgu_cdac_half (0) disconnected node: tb<4>
+Cell hgu_cdac_half (0) disconnected node: tb<3>
+Cell hgu_cdac_half (0) disconnected node: tb<2>
+Cell hgu_cdac_half (0) disconnected node: tb<1>
+Cell hgu_cdac_half (0) disconnected node: tb<0>
+Cell hgu_cdac_half_flat (1) disconnected node: t<6>
+Cell hgu_cdac_half_flat (1) disconnected node: t<5>
+Cell hgu_cdac_half_flat (1) disconnected node: t<4>
+Cell hgu_cdac_half_flat (1) disconnected node: t<3>
+Cell hgu_cdac_half_flat (1) disconnected node: t<2>
+Cell hgu_cdac_half_flat (1) disconnected node: t<1>
+Cell hgu_cdac_half_flat (1) disconnected node: t<0>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<6>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<5>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<4>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<3>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<2>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<1>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<0>
+Class hgu_cdac_half (0):  Merged 480 parallel devices.
+Class hgu_cdac_half_flat (1):  Merged 480 parallel devices.
+Cell hgu_cdac_half (0) disconnected node: t<6>
+Cell hgu_cdac_half (0) disconnected node: t<5>
+Cell hgu_cdac_half (0) disconnected node: t<4>
+Cell hgu_cdac_half (0) disconnected node: t<3>
+Cell hgu_cdac_half (0) disconnected node: t<2>
+Cell hgu_cdac_half (0) disconnected node: t<1>
+Cell hgu_cdac_half (0) disconnected node: t<0>
+Cell hgu_cdac_half (0) disconnected node: tb<6>
+Cell hgu_cdac_half (0) disconnected node: tb<5>
+Cell hgu_cdac_half (0) disconnected node: tb<4>
+Cell hgu_cdac_half (0) disconnected node: tb<3>
+Cell hgu_cdac_half (0) disconnected node: tb<2>
+Cell hgu_cdac_half (0) disconnected node: tb<1>
+Cell hgu_cdac_half (0) disconnected node: tb<0>
+Cell hgu_cdac_half_flat (1) disconnected node: t<6>
+Cell hgu_cdac_half_flat (1) disconnected node: t<5>
+Cell hgu_cdac_half_flat (1) disconnected node: t<4>
+Cell hgu_cdac_half_flat (1) disconnected node: t<3>
+Cell hgu_cdac_half_flat (1) disconnected node: t<2>
+Cell hgu_cdac_half_flat (1) disconnected node: t<1>
+Cell hgu_cdac_half_flat (1) disconnected node: t<0>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<6>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<5>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<4>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<3>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<2>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<1>
+Cell hgu_cdac_half_flat (1) disconnected node: tb<0>
+Subcircuit summary:
+Circuit 1: hgu_cdac_half                   |Circuit 2: hgu_cdac_half_flat              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (254->14)      |sky130_fd_pr__pfet_01v8_lvt (254->14)      
+sky130_fd_pr__nfet_01v8_lvt (254->14)      |sky130_fd_pr__nfet_01v8_lvt (254->14)      
+Number of devices: 28                      |Number of devices: 28                      
+Number of nets: 31                         |Number of nets: 31                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: hgu_cdac_half                   |Circuit 2: hgu_cdac_half_flat              
+-------------------------------------------|-------------------------------------------
+VREF                                       |VREF                                       
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+d<3>                                       |d<3>                                       
+db<3>                                      |db<3>                                      
+d<5>                                       |d<5>                                       
+db<5>                                      |db<5>                                      
+db<6>                                      |db<6>                                      
+d<6>                                       |d<6>                                       
+db<4>                                      |db<4>                                      
+d<4>                                       |d<4>                                       
+d<1>                                       |d<1>                                       
+db<1>                                      |db<1>                                      
+db<2>                                      |db<2>                                      
+d<2>                                       |d<2>                                       
+db<0>                                      |db<0>                                      
+d<0>                                       |d<0>                                       
+t<6>                                       |t<6>                                       
+t<5>                                       |t<5>                                       
+t<4>                                       |t<4>                                       
+t<3>                                       |t<3>                                       
+t<2>                                       |t<2>                                       
+t<1>                                       |t<1>                                       
+t<0>                                       |t<0>                                       
+tb<6>                                      |tb<6>                                      
+tb<5>                                      |tb<5>                                      
+tb<4>                                      |tb<4>                                      
+tb<3>                                      |tb<3>                                      
+tb<2>                                      |tb<2>                                      
+tb<1>                                      |tb<1>                                      
+tb<0>                                      |tb<0>                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes hgu_cdac_half and hgu_cdac_half_flat are equivalent.
+
+Final result: Circuits match uniquely.
+.

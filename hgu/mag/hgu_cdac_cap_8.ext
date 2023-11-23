@@ -1,0 +1,60 @@
+timestamp 1699890160
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use hgu_cdac_unit x1[7] -1 0 3862 0 -1 5784
+use hgu_cdac_unit x1[6] 1 0 1818 0 1 2200
+use hgu_cdac_unit x1[5] -1 0 3256 0 -1 5784
+use hgu_cdac_unit x1[4] 1 0 1212 0 1 2200
+use hgu_cdac_unit x1[3] -1 0 2650 0 -1 5784
+use hgu_cdac_unit x1[2] 1 0 606 0 1 2200
+use hgu_cdac_unit x1[1] -1 0 2044 0 -1 5784
+use hgu_cdac_unit x1[0] 1 0 0 0 1 2200
+port "CTOP" 8 1672 3362 1712 3446 m4
+port "CBOT" 3 2272 4214 2318 4306 m4
+port "CTOP" 5 1544 4192 1590 4284 m4
+port "SUB" 1 2092 4038 2136 4138 ppd
+node "CTOP" 0 46.1905 1672 3362 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3360 248 0 0 0 0
+node "CBOT" 0 42.9314 2272 4214 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4232 276 0 0 0 0
+node "CTOP" 0 42.9314 1544 4192 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4232 276 0 0 0 0
+substrate "SUB" 0 0 2092 4038 ppd 0 0 0 0 0 0 0 0 0 0 4400 288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "CBOT" "CTOP" 8.26633
+cap "x1[7]/SUB" "x1[7]/CTOP" 0.365386
+cap "x1[7]/CBOT" "x1[6]/CTOP" -132.809
+cap "x1[7]/CBOT" "x1[7]/CTOP" -1.7053e-13
+cap "x1[7]/CBOT" "x1[7]/SUB" 0.796431
+cap "x1[7]/CTOP" "x1[7]/SUB" 0.221353
+cap "x1[7]/CBOT" "x1[7]/CTOP" 3.41061e-13
+cap "x1[7]/CBOT" "x1[7]/SUB" 2.11715
+cap "x1[6]/CTOP" "x1[7]/CBOT" -66.4045
+cap "x1[7]/CBOT" "x1[7]/CTOP" -136.942
+cap "x1[7]/SUB" "x1[7]/CBOT" 2.22045e-16
+cap "x1[7]/SUB" "x1[7]/CBOT" 2.22045e-16
+cap "x1[7]/CTOP" "x1[7]/CBOT" -70.5376
+cap "x1[7]/SUB" "x1[7]/CTOP" 0.532133
+merge "x1[0]/CTOP" "x1[1]/CTOP" -810.443 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26928 -1608 -34520 -2132 0 0 0 0
+merge "x1[1]/CTOP" "x1[2]/CTOP"
+merge "x1[2]/CTOP" "x1[4]/CTOP"
+merge "x1[4]/CTOP" "x1[6]/CTOP"
+merge "x1[6]/CTOP" "x1[3]/CTOP"
+merge "x1[3]/CTOP" "CTOP"
+merge "CTOP" "x1[5]/CTOP"
+merge "x1[5]/CTOP" "x1[7]/CTOP"
+merge "x1[0]/SUB" "x1[1]/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[1]/SUB" "x1[2]/SUB"
+merge "x1[2]/SUB" "x1[3]/SUB"
+merge "x1[3]/SUB" "x1[4]/SUB"
+merge "x1[4]/SUB" "x1[5]/SUB"
+merge "x1[5]/SUB" "x1[6]/SUB"
+merge "x1[6]/SUB" "x1[7]/SUB"
+merge "x1[7]/SUB" "SUB"
+merge "x1[0]/CBOT" "x1[1]/CBOT" -7495.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -603336 -19060 -607568 -19336 0 0 0 0
+merge "x1[1]/CBOT" "x1[2]/CBOT"
+merge "x1[2]/CBOT" "x1[3]/CBOT"
+merge "x1[3]/CBOT" "x1[4]/CBOT"
+merge "x1[4]/CBOT" "x1[5]/CBOT"
+merge "x1[5]/CBOT" "CBOT"
+merge "CBOT" "x1[6]/CBOT"
+merge "x1[6]/CBOT" "x1[7]/CBOT"

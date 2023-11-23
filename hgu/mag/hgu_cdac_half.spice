@@ -1,0 +1,132 @@
+* NGSPICE file created from hgu_cdac_half.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_EZRHP7 a_n93_n84# a_n35_n111# w_n164_n122# a_35_n84#
+X0 a_35_n84# a_n35_n111# a_n93_n84# w_n164_n122# sky130_fd_pr__pfet_01v8_lvt ad=0.244 pd=2.26 as=0.244 ps=2.26 w=0.84 l=0.35
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_K7QELY a_35_n42# a_n35_n68# a_n93_n42# VSUBS
+X0 a_35_n42# a_n35_n68# a_n93_n42# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.35
+.ends
+
+.subckt hgu_inverter VREF VDD VSS m1_558_334# a_476_372#
+Xsky130_fd_pr__pfet_01v8_lvt_EZRHP7_0 VREF a_476_372# VDD m1_558_334# sky130_fd_pr__pfet_01v8_lvt_EZRHP7
+Xsky130_fd_pr__nfet_01v8_lvt_K7QELY_0 m1_558_334# a_476_372# VSS VSS sky130_fd_pr__nfet_01v8_lvt_K7QELY
+.ends
+
+.subckt inv_2_test x2/m1_558_334# a_599_2591# x2/VREF x2/VDD VSUBS
+Xx1 x2/VREF x2/VDD VSUBS x2/m1_558_334# a_599_2591# hgu_inverter
+Xx2 x2/VREF x2/VDD VSUBS x2/m1_558_334# a_599_2591# hgu_inverter
+.ends
+
+.subckt inv_4_test inv_2_test_1/x2/VDD m1_n202_1539# inv_2_test_1/x2/VREF VSUBS a_n120_1555#
+Xinv_2_test_0 m1_n202_1539# a_n120_1555# inv_2_test_1/x2/VREF inv_2_test_1/x2/VDD
++ VSUBS inv_2_test
+Xinv_2_test_1 m1_n202_1539# a_n120_1555# inv_2_test_1/x2/VREF inv_2_test_1/x2/VDD
++ VSUBS inv_2_test
+.ends
+
+.subckt inv_8_test m1_597_2535# inv_4_test_1/inv_2_test_1/x2/VREF a_679_2551# inv_4_test_1/inv_2_test_1/x2/VDD
++ VSUBS
+Xinv_4_test_0 inv_4_test_1/inv_2_test_1/x2/VDD m1_597_2535# inv_4_test_1/inv_2_test_1/x2/VREF
++ VSUBS a_679_2551# inv_4_test
+Xinv_4_test_1 inv_4_test_1/inv_2_test_1/x2/VDD m1_597_2535# inv_4_test_1/inv_2_test_1/x2/VREF
++ VSUBS a_679_2551# inv_4_test
+.ends
+
+.subckt inv_16_test m1_364_175# inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF
++ VSUBS a_446_191#
+Xinv_8_test_0 m1_364_175# inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF a_446_191#
++ inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD VSUBS inv_8_test
+Xinv_8_test_1 m1_364_175# inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF a_446_191#
++ inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD VSUBS inv_8_test
+.ends
+
+.subckt inv_32_test m1_n266_n2187# a_n184_n2171# inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF
++ inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD VSUBS
+Xinv_16_test_0 m1_n266_n2187# inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD
++ inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF VSUBS a_n184_n2171#
++ inv_16_test
+Xinv_16_test_1 m1_n266_n2187# inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD
++ inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF VSUBS a_n184_n2171#
++ inv_16_test
+.ends
+
+.subckt inv_64_test inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF
++ inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD a_584_n2171#
++ m1_502_n2187# VSUBS
+Xinv_32_test_1 m1_502_n2187# a_584_n2171# inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF
++ inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD VSUBS
++ inv_32_test
+Xinv_32_test_2 m1_502_n2187# a_584_n2171# inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF
++ inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD VSUBS
++ inv_32_test
+.ends
+
+.subckt hgu_cdac_cap_32 SUB CBOT CTOP
+.ends
+
+.subckt hgu_cdac_cap_4 CBOT CTOP SUB
+.ends
+
+.subckt hgu_cdac_cap_16 SUB CBOT CTOP
+.ends
+
+.subckt hgu_cdac_cap_2 SUB CTOP CBOT
+.ends
+
+.subckt hgu_cdac_cap_8 SUB CTOP CBOT
+.ends
+
+.subckt hgu_cdac_cap_64 SUB CTOP CBOT
+.ends
+
+.subckt hgu_cdac_8bit_array SUB tah<1:0> tah<7:0> tah<31:0> tah<0> drv<3:0> drv<7:0>
++ tah<63:0> drv<63:0> drv<1:0> drv<0> drv<31:0> tah<3:0> drv<15:0> tah<15:0>
+Xhgu_cdac_cap_32_0 SUB drv<31:0> tah<31:0> hgu_cdac_cap_32
+Xhgu_cdac_cap_4_0 drv<3:0> tah<3:0> SUB hgu_cdac_cap_4
+Xhgu_cdac_cap_16_0 SUB drv<15:0> tah<15:0> hgu_cdac_cap_16
+Xhgu_cdac_cap_2_0 SUB tah<1:0> drv<1:0> hgu_cdac_cap_2
+Xhgu_cdac_cap_8_0 SUB tah<7:0> drv<7:0> hgu_cdac_cap_8
+Xhgu_cdac_cap_64_0 SUB tah<63:0> drv<63:0> hgu_cdac_cap_64
+.ends
+
+.subckt hgu_cdac_half tu d<3> d<2> d<1> d<0> d<4> d<5> d<6> db<0> db<1> db<2> db<3>
++ db<4> db<5> tb<0> db<6> tb<1> tb<2> tb<3> tb<4> tb<5> tb<6>
+Xinv_16_test_1 hgu_cdac_8bit_array_3/drv<15:0> hgu_inverter_1/VDD hgu_inverter_1/VREF
++ inv_8_test_1/VSUBS d<4> inv_16_test
+Xinv_16_test_0 hgu_cdac_8bit_array_2/drv<15:0> hgu_inverter_1/VDD hgu_inverter_1/VREF
++ inv_8_test_1/VSUBS db<4> inv_16_test
+Xhgu_inverter_0 hgu_inverter_1/VREF hgu_inverter_1/VDD inv_8_test_1/VSUBS hgu_cdac_8bit_array_2/drv<0>
++ db<0> hgu_inverter
+Xhgu_inverter_1 hgu_inverter_1/VREF hgu_inverter_1/VDD inv_8_test_1/VSUBS hgu_cdac_8bit_array_3/drv<0>
++ d<0> hgu_inverter
+Xinv_64_test_0 hgu_inverter_1/VREF hgu_inverter_1/VDD db<6> hgu_cdac_8bit_array_2/drv<63:0>
++ inv_8_test_1/VSUBS inv_64_test
+Xinv_64_test_1 hgu_inverter_1/VREF hgu_inverter_1/VDD d<6> hgu_cdac_8bit_array_3/drv<63:0>
++ inv_8_test_1/VSUBS inv_64_test
+Xinv_2_test_0 hgu_cdac_8bit_array_2/drv<1:0> db<1> hgu_inverter_1/VREF hgu_inverter_1/VDD
++ inv_8_test_1/VSUBS inv_2_test
+Xinv_2_test_1 hgu_cdac_8bit_array_3/drv<1:0> d<1> hgu_inverter_1/VREF hgu_inverter_1/VDD
++ inv_8_test_1/VSUBS inv_2_test
+Xinv_8_test_0 hgu_cdac_8bit_array_2/drv<7:0> hgu_inverter_1/VREF db<3> hgu_inverter_1/VDD
++ inv_8_test_1/VSUBS inv_8_test
+Xinv_8_test_1 hgu_cdac_8bit_array_3/drv<7:0> hgu_inverter_1/VREF d<3> hgu_inverter_1/VDD
++ inv_8_test_1/VSUBS inv_8_test
+Xhgu_cdac_8bit_array_2 inv_8_test_1/VSUBS tb<1> tb<3> tb<5> tb<0> hgu_cdac_8bit_array_2/drv<3:0>
++ hgu_cdac_8bit_array_2/drv<7:0> tb<6> hgu_cdac_8bit_array_2/drv<63:0> hgu_cdac_8bit_array_2/drv<1:0>
++ hgu_cdac_8bit_array_2/drv<0> hgu_cdac_8bit_array_2/drv<31:0> tb<2> hgu_cdac_8bit_array_2/drv<15:0>
++ tb<4> hgu_cdac_8bit_array
+Xhgu_cdac_8bit_array_3 inv_8_test_1/VSUBS tb<1> tb<3> tb<5> tu hgu_cdac_8bit_array_3/drv<3:0>
++ hgu_cdac_8bit_array_3/drv<7:0> tb<6> hgu_cdac_8bit_array_3/drv<63:0> hgu_cdac_8bit_array_3/drv<1:0>
++ hgu_cdac_8bit_array_3/drv<0> hgu_cdac_8bit_array_3/drv<31:0> tb<2> hgu_cdac_8bit_array_3/drv<15:0>
++ tb<4> hgu_cdac_8bit_array
+Xinv_32_test_0 hgu_cdac_8bit_array_3/drv<31:0> d<5> hgu_inverter_1/VREF hgu_inverter_1/VDD
++ inv_8_test_1/VSUBS inv_32_test
+Xinv_4_test_1 hgu_inverter_1/VDD hgu_cdac_8bit_array_2/drv<3:0> hgu_inverter_1/VREF
++ inv_8_test_1/VSUBS db<2> inv_4_test
+Xinv_4_test_2 hgu_inverter_1/VDD hgu_cdac_8bit_array_3/drv<3:0> hgu_inverter_1/VREF
++ inv_8_test_1/VSUBS d<2> inv_4_test
+Xinv_32_test_1 hgu_cdac_8bit_array_2/drv<31:0> db<5> hgu_inverter_1/VREF hgu_inverter_1/VDD
++ inv_8_test_1/VSUBS inv_32_test
+.ends
+

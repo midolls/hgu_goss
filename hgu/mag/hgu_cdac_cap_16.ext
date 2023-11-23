@@ -1,0 +1,100 @@
+timestamp 1699890160
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use hgu_cdac_unit x1[0] 1 0 912 0 1 -1126
+use hgu_cdac_unit x1[1] -1 0 2956 0 -1 2458
+use hgu_cdac_unit x1[2] 1 0 1518 0 1 -1126
+use hgu_cdac_unit x1[3] -1 0 3562 0 -1 2458
+use hgu_cdac_unit x1[4] 1 0 2124 0 1 -1126
+use hgu_cdac_unit x1[5] -1 0 4168 0 -1 2458
+use hgu_cdac_unit x1[6] 1 0 2730 0 1 -1126
+use hgu_cdac_unit x1[7] -1 0 4774 0 -1 2458
+use hgu_cdac_unit x1[8] 1 0 3336 0 1 -1126
+use hgu_cdac_unit x1[9] -1 0 5380 0 -1 2458
+use hgu_cdac_unit x1[10] 1 0 3942 0 1 -1126
+use hgu_cdac_unit x1[11] -1 0 5986 0 -1 2458
+use hgu_cdac_unit x1[12] 1 0 4548 0 1 -1126
+use hgu_cdac_unit x1[13] -1 0 6592 0 -1 2458
+use hgu_cdac_unit x1[14] 1 0 5154 0 1 -1126
+use hgu_cdac_unit x1[15] -1 0 7198 0 -1 2458
+port "CTOP" 8 3792 426 3836 508 m4
+port "CBOT" 2 4402 770 4438 850 m4
+port "CTOP" 4 3678 800 3714 880 m4
+port "SUB" 10 4096 526 4140 608 ppd
+node "CTOP" 0 46.9763 3792 426 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3608 252 0 0 0 0
+node "CBOT" 0 37.0501 4402 770 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2880 232 0 0 0 0
+node "CTOP" 0 37.0501 3678 800 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2880 232 0 0 0 0
+substrate "SUB" 0 0 4096 526 ppd 0 0 0 0 0 0 0 0 0 0 3608 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "CTOP" "CBOT" 5.86035
+cap "x1[0]/CBOT" "x1[0]/SUB" -4.44089e-16
+cap "x1[0]/CBOT" "x1[0]/CTOP" -132.809
+cap "x1[0]/CBOT" "x1[1]/CTOP" -2.27374e-13
+cap "x1[0]/SUB" "x1[0]/CTOP" 0.632416
+cap "x1[0]/SUB" "x1[0]/CBOT" 2.6851
+cap "x1[0]/CBOT" "x1[1]/CTOP" -2.93017
+cap "x1[0]/CTOP" "x1[0]/CBOT" -132.809
+cap "x1[4]/SUB" "x1[2]/CBOT" -4.44089e-16
+cap "x1[2]/CBOT" "x1[5]/CTOP" -2.93017
+cap "x1[4]/CTOP" "x1[2]/CBOT" -131.626
+cap "x1[8]/CBOT" "x1[8]/SUB" -4.44089e-16
+cap "x1[8]/CBOT" "x1[9]/CTOP" -2.84217e-14
+cap "x1[8]/CTOP" "x1[8]/CBOT" -67.5875
+cap "x1[1]/CTOP" "x1[0]/CBOT" -132.809
+cap "x1[0]/CBOT" "x1[0]/SUB" 2.22045e-16
+cap "x1[0]/CBOT" "x1[1]/CTOP" -132.809
+cap "x1[0]/CBOT" "x1[0]/SUB" 2.22045e-16
+cap "x1[1]/CTOP" "x1[0]/SUB" -4.44089e-16
+cap "x1[2]/CBOT" "x1[5]/CTOP" -131.626
+cap "x1[2]/CBOT" "x1[4]/SUB" 2.22045e-16
+cap "x1[8]/CBOT" "x1[9]/CTOP" -67.5875
+merge "x1[15]/CTOP" "x1[14]/CTOP" -1765.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -62832 -3752 -69320 -4236 0 0 0 0
+merge "x1[14]/CTOP" "x1[13]/CTOP"
+merge "x1[13]/CTOP" "x1[12]/CTOP"
+merge "x1[12]/CTOP" "x1[11]/CTOP"
+merge "x1[11]/CTOP" "x1[10]/CTOP"
+merge "x1[10]/CTOP" "x1[9]/CTOP"
+merge "x1[9]/CTOP" "x1[8]/CTOP"
+merge "x1[8]/CTOP" "x1[7]/CTOP"
+merge "x1[7]/CTOP" "x1[5]/CTOP"
+merge "x1[5]/CTOP" "x1[3]/CTOP"
+merge "x1[3]/CTOP" "x1[1]/CTOP"
+merge "x1[1]/CTOP" "x1[6]/CTOP"
+merge "x1[6]/CTOP" "CTOP"
+merge "CTOP" "x1[4]/CTOP"
+merge "x1[4]/CTOP" "x1[2]/CTOP"
+merge "x1[2]/CTOP" "x1[0]/CTOP"
+merge "x1[15]/SUB" "x1[14]/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[14]/SUB" "x1[13]/SUB"
+merge "x1[13]/SUB" "x1[12]/SUB"
+merge "x1[12]/SUB" "x1[11]/SUB"
+merge "x1[11]/SUB" "x1[10]/SUB"
+merge "x1[10]/SUB" "x1[9]/SUB"
+merge "x1[9]/SUB" "x1[8]/SUB"
+merge "x1[8]/SUB" "x1[7]/SUB"
+merge "x1[7]/SUB" "x1[6]/SUB"
+merge "x1[6]/SUB" "x1[5]/SUB"
+merge "x1[5]/SUB" "x1[4]/SUB"
+merge "x1[4]/SUB" "x1[3]/SUB"
+merge "x1[3]/SUB" "x1[2]/SUB"
+merge "x1[2]/SUB" "x1[1]/SUB"
+merge "x1[1]/SUB" "x1[0]/SUB"
+merge "x1[0]/SUB" "SUB"
+merge "x1[15]/CBOT" "x1[14]/CBOT" -16636.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1346856 -42500 -1349736 -42732 0 0 0 0
+merge "x1[14]/CBOT" "x1[13]/CBOT"
+merge "x1[13]/CBOT" "x1[12]/CBOT"
+merge "x1[12]/CBOT" "x1[11]/CBOT"
+merge "x1[11]/CBOT" "x1[10]/CBOT"
+merge "x1[10]/CBOT" "x1[9]/CBOT"
+merge "x1[9]/CBOT" "CBOT"
+merge "CBOT" "x1[8]/CBOT"
+merge "x1[8]/CBOT" "x1[7]/CBOT"
+merge "x1[7]/CBOT" "x1[6]/CBOT"
+merge "x1[6]/CBOT" "x1[5]/CBOT"
+merge "x1[5]/CBOT" "x1[4]/CBOT"
+merge "x1[4]/CBOT" "x1[3]/CBOT"
+merge "x1[3]/CBOT" "x1[2]/CBOT"
+merge "x1[2]/CBOT" "x1[1]/CBOT"
+merge "x1[1]/CBOT" "x1[0]/CBOT"

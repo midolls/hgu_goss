@@ -16,9 +16,9 @@ lab=sw3 bus=true}
 N 360 -620 360 -580 {
 lab=sw2 bus=true}
 N 420 -620 420 -580 {
-lab=#net1 bus=true}
+lab=sw1 bus=true}
 N 470 -620 470 -580 {
-lab=#net2 }
+lab=sw0 }
 N 1240 -620 1240 -580 {
 lab=swd6 bus=true}
 N 1180 -620 1180 -580 {
@@ -30,9 +30,9 @@ lab=swd3 bus=true}
 N 1000 -620 1000 -580 {
 lab=swd2 bus=true}
 N 940 -620 940 -580 {
-lab=#net3 bus=true}
+lab=swd1 bus=true}
 N 890 -620 890 -580 {
-lab=#net4}
+lab=swd0}
 N 120 -810 120 -760 {
 lab=d<6> bus=true
 }
@@ -62,12 +62,6 @@ N 940 -810 940 -760 {
 lab=db<1> bus=true}
 N 890 -810 890 -760 {
 lab=db<0>}
-N 610 -580 610 -540 {
-lab=VSS}
-N 610 -580 750 -580 {
-lab=VSS}
-N 750 -580 750 -540 {
-lab=VSS}
 N 120 -440 120 -390 {
 lab=t<6> bus=true}
 N 180 -440 180 -390 {
@@ -96,18 +90,18 @@ N 940 -440 940 -390 {
 lab=tb<1> bus=true}
 N 890 -440 890 -390 {
 lab=tb<0>}
-N 660 -580 660 -540 {
-lab=VSS}
-N 750 -580 800 -580 {
-lab=VSS}
-N 800 -580 800 -540 {
-lab=VSS}
+N 470 -400 510 -400 {
+lab=t<0>}
+N 510 -440 510 -400 {
+lab=t<0>}
+N 850 -440 850 -400 {
+lab=tb<0>}
+N 850 -400 890 -400 {
+lab=tb<0>}
 C {../xschem/hgu_cdac_8bit_array.sym} 370 -420 0 0 {name=x1}
 C {../xschem/hgu_cdac_drv.sym} 750 -690 0 0 {name=x2}
 C {../xschem/hgu_cdac_8bit_array.sym} 990 -420 0 1 {name=x3}
 C {../xschem/hgu_cdac_drv.sym} 610 -690 0 1 {name=x4}
-C {../xschem/hgu_cdac_unit.sym} 610 -490 2 0 {name=x9 csize=1}
-C {../xschem/hgu_cdac_unit.sym} 750 -490 2 0 {name=x10 csize=1}
 C {devices/iopin.sym} 120 -810 3 0 {name=p2 lab=d<6>}
 C {devices/iopin.sym} 180 -810 3 0 {name=p3 lab=d<5>}
 C {devices/iopin.sym} 240 -810 3 0 {name=p4 lab=d<4>
@@ -144,9 +138,6 @@ C {devices/iopin.sym} 1060 -390 1 0 {name=p31 lab=tb<3>}
 C {devices/iopin.sym} 1000 -390 1 0 {name=p32 lab=tb<2>}
 C {devices/iopin.sym} 940 -390 1 0 {name=p33 lab=tb<1>}
 C {devices/iopin.sym} 890 -390 1 0 {name=p34 lab=tb<0>}
-C {devices/lab_pin.sym} 680 -580 1 0 {name=p35 sig_type=std_logic lab=VSS}
-C {devices/iopin.sym} 610 -440 3 1 {name=p36 lab=tu}
-C {devices/iopin.sym} 750 -440 3 1 {name=p37 lab=tub}
 C {devices/ipin.sym} -80 -760 0 0 {name=p38 lab=VDD}
 C {devices/lab_pin.sym} 530 -760 1 0 {name=p39 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 830 -760 1 0 {name=p40 sig_type=std_logic lab=VDD}
@@ -172,3 +163,11 @@ C {devices/lab_wire.sym} 1000 -600 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
 C {devices/lab_pin.sym} 60 -500 0 0 {name=p45 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1300 -500 2 0 {name=p46 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 420 -590 0 0 {name=p47 sig_type=std_logic lab=sw1
+}
+C {devices/lab_wire.sym} 470 -590 0 0 {name=p48 sig_type=std_logic lab=sw0
+}
+C {devices/lab_wire.sym} 940 -600 0 0 {name=p49 sig_type=std_logic lab=swd1
+}
+C {devices/lab_wire.sym} 890 -600 0 0 {name=p50 sig_type=std_logic lab=swd0
+}

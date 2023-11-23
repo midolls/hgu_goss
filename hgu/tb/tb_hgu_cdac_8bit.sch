@@ -193,9 +193,9 @@ N 360 70 360 80 {
 lab=#net6}
 N 390 70 390 80 {
 lab=#net7}
-N 420 70 420 80 {
+N 420 110 420 120 {
 lab=#net8}
-N 450 70 450 90 {
+N 450 110 450 130 {
 lab=upb1}
 N 480 70 480 100 {
 lab=upb0}
@@ -245,13 +245,30 @@ N 450 -110 450 70 {
 lab=upb1}
 N 480 -110 480 70 {
 lab=upb0}
-N 330 -1200 330 -1180 {}
-N 360 -1230 360 -1180 {}
-N 390 -1260 390 -1180 {}
-N 420 -1290 420 -1180 {}
-N 450 -1320 450 -1190 {}
-N 480 -1350 480 -1200 {}
-C {../xschem/hgu_cdac_half.sym} -250 -540 0 0 {name=x1}
+N 330 -1200 330 -1180 {
+lab=#net1}
+N 360 -1230 360 -1180 {
+lab=#net2}
+N 390 -1260 390 -1180 {
+lab=#net3}
+N 420 -1290 420 -1180 {
+lab=#net4}
+N 450 -1320 450 -1190 {
+lab=up1}
+N 480 -1350 480 -1200 {
+lab=up0}
+N 360 80 360 100 {
+lab=#net6}
+N 390 80 390 110 {
+lab=#net7}
+N 420 70 420 110 {
+lab=#net8}
+N 450 70 450 110 {
+lab=upb1}
+N 480 100 480 140 {
+lab=upb0}
+C {../xschem/hgu_cdac_half.sym} -250 -540 0 0 {name=x1
+symname=hgu_cdac_half_flat}
 C {../xschem/hgu_cdac_half.sym} -250 -560 2 1 {name=x2}
 C {devices/vsource.sym} 300 -1200 2 0 {name=V1 value="PULSE(0 1.8 42.5n 1p 1p 157.5n 200n)"
 }
@@ -276,7 +293,8 @@ C {devices/code.sym} -165 -910 0 0 {name=s1 only_toplevel=false value="
 .OPTIONS savecurrents
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/lvs/hgu_cdac_half.mag.spice
 
 .control
 	run
@@ -353,18 +371,18 @@ C {devices/gnd.sym} 670 -1230 2 0 {name=l11 lab=GND}
 C {devices/vsource.sym} 300 100 0 1 {name=V22 value="PULSE(1.8 0 42.5n 1p 1p 157.5n 200n)"
 }
 C {devices/vsource.sym} 330 110 0 1 {name=V23 value="PULSE(1.8 0 65n 1p 1p 135n 200n)"}
-C {devices/vsource.sym} 360 110 0 1 {name=V24 value="PULSE(1.8 0 87.5n 1p 1p 112.5n 200n)"}
-C {devices/vsource.sym} 390 110 0 1 {name=V25 value="PULSE(1.8 0 110n 1p 1p 90n 200n)"}
-C {devices/vsource.sym} 420 110 0 1 {name=V26 value="PULSE(1.8 0 132.5n 1p 1p 67.5n 200n)"}
-C {devices/vsource.sym} 450 120 0 1 {name=V27 value="PULSE(1.8 0 155n 1p 1p 45n 200n)"}
-C {devices/vsource.sym} 480 130 0 1 {name=V28 value="PULSE(1.8 0 177.5n 1p 1p 22.5n 200n)"}
+C {devices/vsource.sym} 360 130 0 1 {name=V24 value="PULSE(1.8 0 87.5n 1p 1p 112.5n 200n)"}
+C {devices/vsource.sym} 390 140 0 1 {name=V25 value="PULSE(1.8 0 110n 1p 1p 90n 200n)"}
+C {devices/vsource.sym} 420 150 0 1 {name=V26 value="PULSE(1.8 0 132.5n 1p 1p 67.5n 200n)"}
+C {devices/vsource.sym} 450 160 0 1 {name=V27 value="PULSE(1.8 0 155n 1p 1p 45n 200n)"}
+C {devices/vsource.sym} 480 170 0 1 {name=V28 value="PULSE(1.8 0 177.5n 1p 1p 22.5n 200n)"}
 C {devices/lab_pin.sym} 300 130 2 1 {name=p18 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 330 140 2 1 {name=p19 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 360 140 2 1 {name=p20 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 390 140 2 1 {name=p21 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 420 140 2 1 {name=p22 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 450 150 2 1 {name=p23 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 480 160 2 1 {name=p24 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 360 160 2 1 {name=p20 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 390 170 2 1 {name=p21 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 420 180 2 1 {name=p22 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 450 190 2 1 {name=p23 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 480 200 2 1 {name=p24 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 850 150 0 1 {name=V29 value=0}
 C {devices/vsource.sym} 820 140 0 1 {name=V30 value=0}
 C {devices/vsource.sym} 790 130 0 1 {name=V31 value=0}
@@ -432,3 +450,11 @@ C {devices/vsource.sym} -480 -670 0 0 {name=V56 value=1.8}
 C {devices/vdd.sym} -580 -700 0 0 {name=l53 lab=VPWR}
 C {devices/gnd.sym} -430 -640 0 0 {name=l54 lab=GND}
 C {devices/vsource.sym} -430 -670 0 0 {name=V57 value=0}
+C {devices/lab_wire.sym} 270 -1060 0 0 {name=p34 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 270 -1080 0 0 {name=p39 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 880 -1080 0 0 {name=p40 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 880 -1060 0 0 {name=p41 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 270 -20 0 0 {name=p42 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 270 -40 0 0 {name=p43 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 880 -40 2 1 {name=p44 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 880 -20 2 1 {name=p45 sig_type=std_logic lab=VDD}

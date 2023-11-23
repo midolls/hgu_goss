@@ -1,17 +1,17 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699347111
+timestamp 1699782319
 << poly >>
 rect -184 -2171 -126 -2101
 << metal1 >>
 rect -266 -2187 -44 -2158
 use inv_16_test  inv_16_test_0
-timestamp 1699346477
+timestamp 1699782319
 transform 1 0 394 0 1 -2362
 box -649 -40 1599 624
 use inv_16_test  inv_16_test_1
-timestamp 1699346477
+timestamp 1699782319
 transform 1 0 -1654 0 1 -2362
 box -649 -40 1599 624
 << end >>
