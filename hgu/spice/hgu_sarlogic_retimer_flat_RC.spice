@@ -1,9 +1,9 @@
 * NGSPICE file created from hgu_sarlogic_retimer_flat.ext - technology: sky130A
 
-.subckt hgu_sarlogic_retimer_RC eob delay_code[2] delay_code[1] delay_code[3] sar_logic[1]
-+ sar_logic[2] sar_logic[5] sar_logic[4] sar_retimer[1] sar_retimer[0] sar_retimer[3]
-+ sar_retimer[2] sar_retimer[5] sar_retimer[4] sar_retimer[7] sar_retimer[6] sar_logic[6]
-+ sar_logic[7] sar_logic[3] sar_logic[0] delay_offset delay_code[0] VSS VDD
+.subckt hgu_sarlogic_retimer_RC VDD VSS sar_logic[0] sar_logic[1] sar_logic[2] sar_logic[3] sar_logic[4] sar_logic[5] sar_logic[6] sar_logic[7]
++ eob delay_code[0] delay_code[1] delay_code[2] delay_code[3] delay_offset
++ sar_retimer[0] sar_retimer[1] sar_retimer[2] sar_retimer[3] sar_retimer[4] sar_retimer[5] sar_retimer[6] sar_retimer[7]
+
 X0 a_14018_6401# a_13844_6793# a_14158_6427# VSS.t31 sky130_fd_pr__nfet_01v8 ad=0.0864 pd=0.91 as=0.101 ps=0.99 w=0.64 l=0.15
 X1 sar_retimer[3].t0 a_17898_6427# VDD.t131 VDD.t130 sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.149 ps=1.33 w=1 l=0.15
 X2 a_16654_5787# a_16236_5787# a_16410_5761# VDD.t29 sky130_fd_pr__pfet_01v8_hvt ad=0.113 pd=1.11 as=0.147 ps=1.23 w=0.84 l=0.15

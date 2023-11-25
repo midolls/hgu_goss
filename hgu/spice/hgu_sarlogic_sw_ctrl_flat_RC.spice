@@ -1,11 +1,11 @@
 * NGSPICE file created from hgu_sarlogic_sw_ctrl_flat.ext - technology: sky130A
 
-.subckt hgu_sarlogic_sw_ctrl_RC VSS_SW[1] VSS_SW[2] VSS_SW[3] VSS_SW[4] VSS_SW[5]
-+ VSS_SW[6] VSS_SW[7] VDD_SW[2] VDD_SW[3] VDD_SW[4] VDD_SW[5] VDD_SW[6] VDD_SW[7]
-+ D[4] D[6] D[7] check[0] check[1] check[2] check[3] check[4] check[6] VDD_SW_b[1]
-+ VDD_SW_b[2] VDD_SW_b[3] VDD_SW_b[4] VDD_SW_b[5] VDD_SW_b[6] VDD_SW_b[7] VSS_SW_b[1]
-+ VSS_SW_b[2] VSS_SW_b[3] VSS_SW_b[4] VSS_SW_b[5] VSS_SW_b[6] VSS_SW_b[7] D[1] VDD_SW[1]
-+ ready reset D[2] check[5] D[3] D[5] VSS VDD
+.subckt hgu_sarlogic_sw_ctrl_RC VDD VSS VDD_SW[1] VDD_SW[2] VDD_SW[3] VDD_SW[4] VDD_SW[5] VDD_SW[6] VDD_SW[7]
++ VDD_SW_b[1] VDD_SW_b[2] VDD_SW_b[3] VDD_SW_b[4] VDD_SW_b[5] VDD_SW_b[6] VDD_SW_b[7]
++ D[1] D[2] D[3] D[4] D[5] D[6] D[7] VSS_SW[1] VSS_SW[2] VSS_SW[3] VSS_SW[4] VSS_SW[5] 
++ VSS_SW[6] VSS_SW[7] check[0] check[1] check[2] check[3] check[4] check[5] check[6] VSS_SW_b[1]
++ VSS_SW_b[2] VSS_SW_b[3] VSS_SW_b[4] VSS_SW_b[5] VSS_SW_b[6] VSS_SW_b[7] ready reset  
+
 X0 a_3420_212# x9.X VSS.t210 VSS.t209 sky130_fd_pr__nfet_01v8 ad=0.109 pd=1.36 as=0.0567 ps=0.69 w=0.42 l=0.15
 X1 VSS.t20 VDD.t753 a_10509_601# VSS.t19 sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.109 ps=1.36 w=0.42 l=0.15
 X2 a_11539_1642# VSS.t718 a_11325_1642# VDD.t56 sky130_fd_pr__pfet_01v8_hvt ad=0.0767 pd=0.785 as=0.193 ps=1.34 w=0.42 l=0.15

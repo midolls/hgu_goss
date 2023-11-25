@@ -1,0 +1,4 @@
+output 790 786 m1
+input 692 904 m1
+vdd 660 1382 li
+vss 668 674 li

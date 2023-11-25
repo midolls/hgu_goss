@@ -1,10 +1,11 @@
 * NGSPICE file created from hgu_clk_sample_flat.ext - technology: sky130A
 
-.subckt hgu_clk_sample_RC set reset sample_delay_offset CAP_CTRL_CODE0[2] CAP_CTRL_CODE0[1]
-+ CAP_CTRL_CODE1[2] CAP_CTRL_CODE1[1] CAP_CTRL_CODE1[0] CAP_CTRL_CODE2[2] CAP_CTRL_CODE2[1]
-+ CAP_CTRL_CODE3[2] CAP_CTRL_CODE3[1] CAP_CTRL_CODE3[0] CAP_CTRL_CODE1[3] CAP_CTRL_CODE3[3]
-+ sample_clk_b sample_clk clk CAP_CTRL_CODE2[3] CAP_CTRL_CODE0[0] CAP_CTRL_CODE0[3]
-+ CAP_CTRL_CODE2[0] vdd vss
+.subckt hgu_clk_sample_RC sample_clk_b vdd vss clk reset set sample_clk CAP_CTRL_CODE0[0] 
++ CAP_CTRL_CODE0[1] CAP_CTRL_CODE0[2] CAP_CTRL_CODE0[3] CAP_CTRL_CODE1[0] CAP_CTRL_CODE1[1] 
++ CAP_CTRL_CODE1[2] CAP_CTRL_CODE1[3] CAP_CTRL_CODE2[0] CAP_CTRL_CODE2[1] CAP_CTRL_CODE2[2]
++ CAP_CTRL_CODE2[3] CAP_CTRL_CODE3[0] CAP_CTRL_CODE3[1] CAP_CTRL_CODE3[2] CAP_CTRL_CODE3[3] 
++ sample_delay_offset 
+
 X0 a_11371_5456# x2.x1.IN a_11283_5456# vss.t99 sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
 X1 vss.t25 a_3106_6090# a_3041_6494# vss.t24 sky130_fd_pr__nfet_01v8 ad=0.0588 pd=0.7 as=0.066 ps=0.745 w=0.42 l=0.15
 X2 x2.x4.x2.floating CAP_CTRL_CODE0[0].t0 x2.x4.x9.output_stack vss.t68 sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.124 ps=1.43 w=0.42 l=0.15

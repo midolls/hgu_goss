@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -81,8 +81,6 @@ N 120 -410 120 -350 {
 lab=input_stack}
 N 120 -470 120 -410 {
 lab=input_stack}
-N 120 -350 120 -230 {
-lab=input_stack}
 N 160 -230 180 -230 {
 lab=VSS}
 N 160 -290 180 -290 {
@@ -93,14 +91,12 @@ N 160 -170 180 -170 {
 lab=VSS}
 N 160 -110 180 -110 {
 lab=VSS}
-N 120 -170 120 -110 {
-lab=input_stack}
-N 120 -230 120 -170 {
-lab=input_stack}
 N 160 100 180 100 {
 lab=VSS}
 N 160 -80 180 -80 {
 lab=VSS}
+N 120 -350 120 -110 {
+lab=input_stack}
 C {devices/ipin.sym} 160 100 0 0 {name=p2 lab=VSS}
 C {devices/ipin.sym} 120 -1070 0 0 {name=p1 lab=input_stack}
 C {devices/iopin.sym} 160 -1040 0 0 {name=p7 lab=output_stack}
