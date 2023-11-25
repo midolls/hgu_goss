@@ -268,7 +268,7 @@ lab=upb1}
 N 480 100 480 140 {
 lab=upb0}
 C {../xschem/hgu_cdac_half.sym} -250 -540 0 0 {name=x1
-symname=hgu_cdac_half_flat}
+symname=hgu_cdac_half}
 C {../xschem/hgu_cdac_half.sym} -250 -560 2 1 {name=x2}
 C {devices/vsource.sym} 300 -1200 2 0 {name=V1 value="PULSE(0 1.8 42.5n 1p 1p 157.5n 200n)"
 }
@@ -294,7 +294,8 @@ C {devices/code.sym} -165 -910 0 0 {name=s1 only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
-.include /foss/designs/hgu_goss/hgu/lvs/hgu_cdac_half.mag.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_half_flat.spice
+
 
 .control
 	run

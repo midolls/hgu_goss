@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699345134
+timestamp 1700938176
 << psubdiff >>
 rect 384 204 638 208
 rect 384 166 428 204
@@ -54,7 +54,7 @@ rect 466 166 556 204
 rect 594 166 638 204
 rect 384 160 638 166
 use sky130_fd_pr__nfet_01v8_lvt_K7QELY  sky130_fd_pr__nfet_01v8_lvt_K7QELY_0
-timestamp 1699343576
+timestamp 1700938176
 transform 1 0 511 0 1 304
 box -93 -68 93 68
 use sky130_fd_pr__pfet_01v8_lvt_EZRHP7  sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0
