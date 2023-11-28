@@ -242,8 +242,8 @@ C {devices/lab_pin.sym} 1150 -1520 1 0 {name=p52 sig_type=std_logic lab=result2_
 C {devices/lab_pin.sym} 1180 -1520 1 0 {name=p53 sig_type=std_logic lab=result2_sw[3]}
 C {devices/lab_pin.sym} 1210 -1520 1 0 {name=p54 sig_type=std_logic lab=result2_sw[2]}
 C {devices/lab_pin.sym} 1240 -1520 1 0 {name=p55 sig_type=std_logic lab=result2_sw[1]}
-C {hgu_cdac_sw_buffer_RC.sym} 1150 -1420 0 0 {name=x6}
-C {hgu_cdac_sw_buffer_RC.sym} 1520 -1420 0 1 {name=x7}
+C {hgu_cdac_sw_buffer.sym} 1150 -1420 0 0 {name=x6}
+C {hgu_cdac_sw_buffer.sym} 1520 -1420 0 1 {name=x7}
 C {devices/lab_wire.sym} 1060 -1300 0 0 {name=p56 sig_type=std_logic lab=sw6
 }
 C {devices/lab_wire.sym} 1090 -1300 0 0 {name=p57 sig_type=std_logic lab=sw5
@@ -268,8 +268,8 @@ C {devices/lab_pin.sym} 1150 -280 3 0 {name=p95 sig_type=std_logic lab=result2_s
 C {devices/lab_pin.sym} 1180 -280 3 0 {name=p96 sig_type=std_logic lab=result2_sw_b[3]}
 C {devices/lab_pin.sym} 1210 -280 3 0 {name=p97 sig_type=std_logic lab=result2_sw_b[2]}
 C {devices/lab_pin.sym} 1240 -280 3 0 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
-C {hgu_cdac_sw_buffer_RC.sym} 1150 -380 2 1 {name=x8}
-C {hgu_cdac_sw_buffer_RC.sym} 1520 -380 2 0 {name=x9}
+C {hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
+C {hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
 C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1380 -530 2 1 {name=p17 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1610 -1300 0 1 {name=p19 sig_type=std_logic lab=swd6
@@ -312,16 +312,8 @@ C {devices/lab_pin.sym} 2460 -820 0 0 {name=p25 sig_type=std_logic lab=async_del
 C {devices/lab_pin.sym} 2460 -800 0 0 {name=p26 sig_type=std_logic lab=sample_delay_offset}
 C {devices/lab_pin.sym} 2460 -780 0 0 {name=p101 sig_type=std_logic lab=retimer_delay_offset}
 C {devices/ipin.sym} 690 -320 0 0 {name=p102 lab=retimer_delay_offset}
-C {devices/lab_wire.sym} 2080 -460 2 0 {name=p9 sig_type=std_logic lab=VREF}
-C {/foss/designs/hgu_goss/hgu/xschem/hgu_vgen_vref.sym} 1940 -400 0 0 {name=x5}
-C {devices/lab_pin.sym} 1950 -460 2 1 {name=p70 sig_type=std_logic lab=EXT_CLK}
-C {devices/lab_pin.sym} 2010 -510 0 0 {name=p73 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 2010 -410 0 0 {name=p75 sig_type=std_logic lab=VSS}
-C {devices/simulator_commands_shown.sym} 1930 -1430 0 0 {name=COMMANDS
-simulator=ngspice
-only_toplevel=false 
-value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
-"}
+C {devices/lab_wire.sym} 2100 -260 2 0 {name=p103 sig_type=std_logic lab=VREF}
+C {/foss/designs/hgu_goss/hgu/xschem/hgu_vgen_vref.sym} 1960 -200 0 0 {name=x10}
+C {devices/lab_pin.sym} 1970 -260 2 1 {name=p104 sig_type=std_logic lab=EXT_CLK}
+C {devices/lab_pin.sym} 2030 -310 0 0 {name=p105 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 2030 -210 0 0 {name=p106 sig_type=std_logic lab=VSS}

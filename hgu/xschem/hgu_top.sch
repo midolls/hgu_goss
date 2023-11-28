@@ -290,11 +290,7 @@ C {devices/noconn.sym} 2980 -620 2 0 {name=l42}
 C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 10ps 250ns
-<<<<<<< HEAD
-
-=======
->>>>>>> e3b9e53a2335e0dc1f792d5ad29e8f842f45fcf2
+.tran 10ps 100ns
 
 .control
 	run
@@ -323,7 +319,7 @@ C {devices/vsource.sym} 670 -560 0 0 {name=V56 value=1.8}
 C {devices/vdd.sym} 570 -590 0 0 {name=l53 lab=VPWR}
 C {devices/gnd.sym} 720 -530 0 0 {name=l54 lab=GND}
 C {devices/vsource.sym} 720 -560 0 0 {name=V57 value=0}
-C {devices/vsource.sym} 800 -560 0 0 {name=V60 value="PULSE(0 1.8 50p 10p 10p 50n 100n)"}
+C {devices/vsource.sym} 800 -560 0 0 {name=V60 value="PULSE(1.8 0 50p 10p 10p 50n 100n)"}
 C {devices/gnd.sym} 800 -530 0 0 {name=l57 lab=GND}
 C {devices/lab_pin.sym} 800 -590 2 0 {name=p75 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_wire.sym} 1860 -490 0 0 {name=p9 sig_type=std_logic lab=VREF}
