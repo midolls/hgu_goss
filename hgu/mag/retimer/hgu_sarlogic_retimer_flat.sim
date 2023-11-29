@@ -376,10 +376,10 @@ x a_17017_7445# a_17191_7041# a_17425_7067# VDD s=4914,234 d=3528,210 l=30 w=168
 x a_13397_5793# VSS a_13563_5793# VSS s=2268,138 d=4368,272 l=30 w=84 x=13533 y=6153 sky130_fd_pr__nfet_01v8
 x sar_logic[7] VSS a_16143_5147# VSS s=4368,272 d=2640,149 l=30 w=84 x=16113 y=5147 sky130_fd_pr__nfet_01v8
 x x3.X a_15789_5147# VSS VSS s=4368,272 d=2268,138 l=30 w=84 x=15841 y=5147 sky130_fd_pr__nfet_01v8
+C x2.x10.Y VDD 2.7
 C VDD x2.x5[7].floating 44.0
-C VDD x3.X 2.4
-C VDD x2.x10.Y 2.7
-C VDD x2.x6.floating 5.7
+C x3.X VDD 2.4
+C x2.x6.floating VDD 5.7
 R a_17126_5147# 188
 R a_17307_5147# 1001
 R sar_retimer[7] 1180
