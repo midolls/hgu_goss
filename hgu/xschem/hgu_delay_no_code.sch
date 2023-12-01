@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -15,7 +15,7 @@ lab=IN}
 N 1310 -540 1310 -490 {
 lab=OUT}
 N 1270 -570 1270 -460 {
-lab=#net1}
+lab=Uc}
 N 1310 -570 1330 -570 {
 lab=VDD}
 N 1310 -460 1330 -460 {
@@ -35,9 +35,9 @@ lab=VSS}
 N 1330 -630 1330 -570 {
 lab=VDD}
 N 1310 -600 1410 -600 {
-lab=#net2}
+lab=#net1}
 N 1310 -430 1410 -430 {
-lab=#net3}
+lab=#net2}
 N 1470 -430 1480 -430 {
 lab=VDD}
 N 1480 -490 1480 -430 {
@@ -61,47 +61,43 @@ lab=OUT}
 N 1440 -510 1540 -510 {
 lab=OUT}
 N 1270 -630 1270 -570 {
-lab=#net1}
+lab=Uc}
 N 1270 -460 1270 -400 {
-lab=#net1}
+lab=Uc}
 N 1440 -430 1440 -350 {
 lab=VSS}
 N 1440 -670 1440 -600 {
 lab=VDD}
 N 870 -510 870 -470 {
-lab=#net1}
+lab=Uc}
 N 1010 -510 1010 -470 {
-lab=#net1}
+lab=Uc}
 N 1150 -510 1150 -470 {
-lab=#net1}
+lab=Uc}
 N 1240 -510 1270 -510 {
-lab=#net1}
+lab=Uc}
 N 460 -590 460 -510 {
-lab=#net1}
+lab=Uc}
 N 460 -510 460 -460 {
-lab=#net1}
+lab=Uc}
 N 340 -670 1510 -670 {
 lab=VDD}
 N 1310 -670 1310 -660 {
 lab=VDD}
 N 1330 -670 1330 -660 {
 lab=VDD}
-N 300 -670 300 -590 {
-lab=VDD}
 N 230 -350 1510 -350 {
-lab=VSS}
-N 300 -440 300 -350 {
 lab=VSS}
 N 1310 -370 1310 -350 {
 lab=VSS}
 N 1330 -370 1330 -350 {
 lab=VSS}
 N 460 -510 1240 -510 {
-lab=#net1}
+lab=Uc}
 N 870 -550 870 -510 {
-lab=#net1}
+lab=Uc}
 N 940 -740 940 -610 {
-lab=#net4}
+lab=#net3}
 N 800 -410 800 -280 {
 lab=code[2]}
 N 940 -410 940 -280 {
@@ -109,13 +105,13 @@ lab=code[1]}
 N 1080 -410 1080 -280 {
 lab=code[0]}
 N 710 -550 710 -510 {
-lab=#net1}
+lab=Uc}
 N 710 -510 710 -470 {
-lab=#net1}
+lab=Uc}
 N 780 -730 780 -610 {
-lab=#net5}
+lab=#net4}
 N 730 -730 780 -730 {
-lab=#net5}
+lab=#net4}
 N 630 -730 630 -410 {
 lab=code_offset}
 N 640 -730 650 -730 {
@@ -124,7 +120,23 @@ N 630 -730 640 -730 {
 lab=code_offset}
 N 630 -410 640 -410 {
 lab=code_offset}
-C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
+N 300 -440 300 -350 {
+lab=VSS}
+N 300 -670 300 -590 {
+lab=VDD}
+N 1220 -450 1220 -420 {
+lab=#net5}
+N 1080 -450 1080 -420 {
+lab=#net6}
+N 940 -450 940 -420 {
+lab=#net7}
+N 780 -450 780 -420 {
+lab=#net8}
+N 800 -600 800 -570 {
+lab=#net9}
+N 640 -600 640 -570 {
+lab=#net10}
+C {devices/title.sym} 160 -60 0 0 {name=l1 author="sample_clk_gen"}
 C {devices/ipin.sym} 230 -510 0 0 {name=p4 lab=IN}
 C {devices/ipin.sym} 230 -670 0 0 {name=p1 lab=VDD}
 C {devices/ipin.sym} 230 -350 0 0 {name=p2 lab=VSS}
@@ -230,9 +242,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/noconn.sym} 640 -600 0 0 {name=l2}
-C {devices/noconn.sym} 800 -600 0 0 {name=l3}
-C {devices/noconn.sym} 780 -420 2 0 {name=l4}
-C {devices/noconn.sym} 940 -420 2 0 {name=l5}
-C {devices/noconn.sym} 1080 -420 2 0 {name=l6}
-C {devices/noconn.sym} 1220 -420 2 0 {name=l7}
+C {devices/noconn.sym} 1220 -450 2 0 {name=l7}
+C {devices/lab_pin.sym} 1060 -510 1 0 {name=p11 sig_type=std_logic lab=Uc}
+C {devices/noconn.sym} 1080 -450 2 0 {name=l4[1:0]}
+C {devices/noconn.sym} 940 -450 2 0 {name=l5[3:0]}
+C {devices/noconn.sym} 780 -450 2 0 {name=l6}
+C {devices/noconn.sym} 800 -570 0 0 {name=l2[7:0]}
+C {devices/noconn.sym} 640 -570 0 0 {name=l3}

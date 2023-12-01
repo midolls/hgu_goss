@@ -1,160 +1,180 @@
 | units: 500000 tech: sky130A format: MIT
-x IN a_9851_2130# a_9939_2268# x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=9909 y=2268 sky130_fd_pr__pfet_01v8_hvt
-x x1.Y x5[7].x1.CBOT a_9939_2130# x5.VPB s=4872,284 d=4032,180 l=30 w=84 x=13686 y=1678 sky130_fd_pr__pfet_01v8
-x x1.Y a_9939_2130# x5[7].x1.CBOT x5.VPB s=4032,180 d=4872,284 l=30 w=84 x=12600 y=1678 sky130_fd_pr__pfet_01v8
-x OUT VDD a_15703_1340# x5.VNB s=2772,150 d=5208,292 l=30 w=84 x=15861 y=1478 sky130_fd_pr__nfet_01v8
-x code[2] x4[3].x2.CBOT a_9939_2130# x5.VNB s=4872,284 d=3948,178 l=30 w=84 x=12829 y=1477 sky130_fd_pr__nfet_01v8
-x IN a_9805_879# a_9893_879# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=879 sky130_fd_pr__nfet_01v8
-x IN a_9893_465# a_9965_465# x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=465 sky130_fd_pr__nfet_01v8
-x IN a_9851_2682# a_9939_2544# x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=9909 y=2682 sky130_fd_pr__pfet_01v8_hvt
-x IN a_9893_1017# a_9965_1017# x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1017 sky130_fd_pr__nfet_01v8
-x a_9939_2130# VSS a_15703_1340# x5.VNB s=4872,284 d=4872,284 l=30 w=84 x=15673 y=1340 sky130_fd_pr__nfet_01v8
-x a_9939_2130# OUT a_15703_1681# x5.VPB s=4872,284 d=2604,146 l=30 w=84 x=15673 y=1681 sky130_fd_pr__pfet_01v8_hvt
-x OUT a_15703_1340# VDD x5.VNB s=2604,146 d=2772,150 l=30 w=84 x=15765 y=1478 sky130_fd_pr__nfet_01v8
-x IN a_9805_327# a_9893_465# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=465 sky130_fd_pr__nfet_01v8
-x code_offset x5.Y VDD x5.VPB s=10400,504 d=10400,504 l=30 w=200 x=9610 y=2057 sky130_fd_pr__pfet_01v8_hvt
-x code[0] a_9939_2130# x2.x2.CBOT x5.VNB s=4956,286 d=4872,284 l=30 w=84 x=15023 y=1477 sky130_fd_pr__nfet_01v8
-x IN a_9893_327# VSS x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=327 sky130_fd_pr__nfet_01v8
-x IN a_9851_2406# a_9939_2544# x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=9909 y=2544 sky130_fd_pr__pfet_01v8_hvt
-x code[1] a_9939_2130# x3[1].x2.CBOT x5.VNB s=3948,178 d=4872,284 l=30 w=84 x=14291 y=1477 sky130_fd_pr__nfet_01v8
-x x1.Y x5[7].x1.CBOT a_9939_2130# x5.VPB s=4872,284 d=4032,180 l=30 w=84 x=12474 y=1678 sky130_fd_pr__pfet_01v8
-x x1.Y a_9939_2130# x5[7].x1.CBOT x5.VPB s=4032,180 d=4872,284 l=30 w=84 x=11388 y=1678 sky130_fd_pr__pfet_01v8
-x IN a_9893_741# a_9965_741# x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=741 sky130_fd_pr__nfet_01v8
-x IN a_9805_327# a_9893_327# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=327 sky130_fd_pr__nfet_01v8
-x code[3] VDD x1.Y x5.VPB s=10400,504 d=10400,504 l=30 w=200 x=9420 y=2057 sky130_fd_pr__pfet_01v8_hvt
-x a_9939_2130# VDD a_15703_1681# x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=15673 y=1819 sky130_fd_pr__pfet_01v8_hvt
-x code_offset x7.x2.CBOT a_9939_2130# x5.VNB s=4872,284 d=4872,284 l=30 w=84 x=10885 y=1477 sky130_fd_pr__nfet_01v8
-x code[2] x4[3].x2.CBOT a_9939_2130# x5.VNB s=4872,284 d=3948,178 l=30 w=84 x=11617 y=1477 sky130_fd_pr__nfet_01v8
-x code[2] a_9939_2130# x4[3].x2.CBOT x5.VNB s=3948,178 d=4872,284 l=30 w=84 x=12953 y=1477 sky130_fd_pr__nfet_01v8
-x IN a_9851_2130# a_9939_2130# x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=9909 y=2130 sky130_fd_pr__pfet_01v8_hvt
-x x5.Y x6.x1.CBOT a_9939_2130# x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=10530 y=1678 sky130_fd_pr__pfet_01v8
-x IN a_9851_2406# a_9939_2268# x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=9909 y=2406 sky130_fd_pr__pfet_01v8_hvt
-x code_offset x5.Y VSS x5.VNB s=6760,364 d=6760,364 l=30 w=130 x=9610 y=1807 sky130_fd_pr__nfet_01v8
-x IN a_9805_1155# a_9893_1293# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1293 sky130_fd_pr__nfet_01v8
-x x1.Y a_9939_2130# x5[7].x1.CBOT x5.VPB s=4032,180 d=4872,284 l=30 w=84 x=15024 y=1678 sky130_fd_pr__pfet_01v8
-x OUT VSS a_15703_1681# x5.VPB s=2772,150 d=5208,292 l=30 w=84 x=15861 y=1681 sky130_fd_pr__pfet_01v8_hvt
-x IN a_9805_603# a_9893_741# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=741 sky130_fd_pr__nfet_01v8
-x x1.Y a_9939_2130# x5[7].x1.CBOT x5.VPB s=4032,180 d=4872,284 l=30 w=84 x=13812 y=1678 sky130_fd_pr__pfet_01v8
-x x1.Y x5[7].x1.CBOT a_9939_2130# x5.VPB s=4872,284 d=4032,180 l=30 w=84 x=14898 y=1678 sky130_fd_pr__pfet_01v8
-x IN a_9893_603# a_9965_465# x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=603 sky130_fd_pr__nfet_01v8
-x IN a_9851_2682# VDD x5.VPB s=4872,284 d=4872,284 l=30 w=84 x=9909 y=2820 sky130_fd_pr__pfet_01v8_hvt
-x a_9939_2130# OUT a_15703_1340# x5.VNB s=4872,284 d=2604,146 l=30 w=84 x=15673 y=1478 sky130_fd_pr__nfet_01v8
-x IN a_9893_1293# a_9939_2130# x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1293 sky130_fd_pr__nfet_01v8
-x code[3] VSS x1.Y x5.VNB s=6760,364 d=6760,364 l=30 w=130 x=9420 y=1807 sky130_fd_pr__nfet_01v8
-x IN a_9805_1155# a_9893_1155# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1155 sky130_fd_pr__nfet_01v8
-x x1.Y x5[7].x1.CBOT a_9939_2130# x5.VPB s=4872,284 d=4032,180 l=30 w=84 x=11262 y=1678 sky130_fd_pr__pfet_01v8
-x OUT a_15703_1681# VSS x5.VPB s=2604,146 d=2772,150 l=30 w=84 x=15765 y=1681 sky130_fd_pr__pfet_01v8_hvt
-x IN a_9805_603# a_9893_603# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=603 sky130_fd_pr__nfet_01v8
-x code[2] a_9939_2130# x4[3].x2.CBOT x5.VNB s=3948,178 d=4872,284 l=30 w=84 x=11741 y=1477 sky130_fd_pr__nfet_01v8
-x IN a_9893_1155# a_9965_1017# x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1155 sky130_fd_pr__nfet_01v8
-x IN a_9893_879# a_9965_741# x5.VNB s=1764,126 d=4872,284 l=30 w=84 x=9935 y=879 sky130_fd_pr__nfet_01v8
-x code[1] x3[1].x2.CBOT a_9939_2130# x5.VNB s=4872,284 d=3948,178 l=30 w=84 x=14167 y=1477 sky130_fd_pr__nfet_01v8
-x IN a_9805_879# a_9893_1017# x5.VNB s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1017 sky130_fd_pr__nfet_01v8
-C x2.x2.CBOT VSS 5.9
-C x3[1].x2.CBOT VSS 10.2
-C x7.x2.CBOT VSS 5.3
-C x4[3].x2.CBOT VSS 20.3
-C x5[7].x1.CBOT VDD 41.1
-C x6.x1.CBOT VDD 5.3
-C x5[7].x1.CBOT x5.VPB 2.3
-C x1.Y x5.VPB 2.1
-C VDD x5.VPB 2.2
-R code[0] 327
-R code[1] 798
-R code[2] 1726
+x x10.Y x5[7].floating Uc VDD s=4872,284 d=4032,180 l=30 w=84 x=13686 y=1678 sky130_fd_pr__pfet_01v8
+x code[2] x4[3].floating Uc VSS s=4872,284 d=3864,176 l=30 w=84 x=11615 y=1477 sky130_fd_pr__nfet_01v8
+x x10.Y Uc x5[7].floating VDD s=4032,180 d=4872,284 l=30 w=84 x=12600 y=1678 sky130_fd_pr__pfet_01v8
+x code_offset x7.floating Uc VSS s=4872,284 d=4872,284 l=30 w=84 x=10883 y=1477 sky130_fd_pr__nfet_01v8
+x OUT VDD a_15703_1340# VSS s=2772,150 d=5208,292 l=30 w=84 x=15861 y=1478 sky130_fd_pr__nfet_01v8
+x code[1] Uc x3[1].floating VSS s=3864,176 d=4872,284 l=30 w=84 x=14287 y=1477 sky130_fd_pr__nfet_01v8
+x IN nstack_lab5 a_9893_879# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=879 sky130_fd_pr__nfet_01v8
+x IN a_9893_465# nstack_lab2 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=465 sky130_fd_pr__nfet_01v8
+x IN pstack_lab5 pstack_lab4 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2268 sky130_fd_pr__pfet_01v8_hvt
+x IN a_9893_1017# nstack_lab6 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1017 sky130_fd_pr__nfet_01v8
+x IN pstack_lab1 pstack_lab2 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2682 sky130_fd_pr__pfet_01v8_hvt
+x Uc VSS a_15703_1340# VSS s=4872,284 d=4872,284 l=30 w=84 x=15673 y=1340 sky130_fd_pr__nfet_01v8
+x Uc OUT a_15703_1681# VDD s=4872,284 d=2604,146 l=30 w=84 x=15673 y=1681 sky130_fd_pr__pfet_01v8_hvt
+x code[2] Uc x4[3].floating VSS s=3864,176 d=4872,284 l=30 w=84 x=12949 y=1477 sky130_fd_pr__nfet_01v8
+x OUT a_15703_1340# VDD VSS s=2604,146 d=2772,150 l=30 w=84 x=15765 y=1478 sky130_fd_pr__nfet_01v8
+x IN nstack_lab1 a_9893_465# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=465 sky130_fd_pr__nfet_01v8
+x code_offset x6.SW VDD VDD s=10400,504 d=10400,504 l=30 w=200 x=9610 y=2057 sky130_fd_pr__pfet_01v8_hvt
+x IN a_9893_327# VSS VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=327 sky130_fd_pr__nfet_01v8
+x x10.Y x5[7].floating Uc VDD s=4872,284 d=4032,180 l=30 w=84 x=12474 y=1678 sky130_fd_pr__pfet_01v8
+x x10.Y Uc x5[7].floating VDD s=4032,180 d=4872,284 l=30 w=84 x=11388 y=1678 sky130_fd_pr__pfet_01v8
+x IN pstack_lab3 pstack_lab2 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2544 sky130_fd_pr__pfet_01v8_hvt
+x code[1] x3[1].floating Uc VSS s=4872,284 d=3864,176 l=30 w=84 x=14165 y=1477 sky130_fd_pr__nfet_01v8
+x IN a_9893_741# nstack_lab4 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=741 sky130_fd_pr__nfet_01v8
+x IN nstack_lab1 a_9893_327# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=327 sky130_fd_pr__nfet_01v8
+x code[3] VDD x10.Y VDD s=10400,504 d=10400,504 l=30 w=200 x=9420 y=2057 sky130_fd_pr__pfet_01v8_hvt
+x Uc VDD a_15703_1681# VDD s=4872,284 d=4872,284 l=30 w=84 x=15673 y=1819 sky130_fd_pr__pfet_01v8_hvt
+x x6.SW x6.floating Uc VDD s=4872,284 d=4872,284 l=30 w=84 x=10530 y=1675 sky130_fd_pr__pfet_01v8
+x code_offset x6.SW VSS VSS s=6760,364 d=6760,364 l=30 w=130 x=9610 y=1807 sky130_fd_pr__nfet_01v8
+x IN nstack_lab7 a_9893_1293# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1293 sky130_fd_pr__nfet_01v8
+x x10.Y Uc x5[7].floating VDD s=4032,180 d=4872,284 l=30 w=84 x=15024 y=1678 sky130_fd_pr__pfet_01v8
+x OUT VSS a_15703_1681# VDD s=2772,150 d=5208,292 l=30 w=84 x=15861 y=1681 sky130_fd_pr__pfet_01v8_hvt
+x IN nstack_lab3 a_9893_741# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=741 sky130_fd_pr__nfet_01v8
+x IN pstack_lab5 Uc VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2130 sky130_fd_pr__pfet_01v8_hvt
+x x10.Y Uc x5[7].floating VDD s=4032,180 d=4872,284 l=30 w=84 x=13812 y=1678 sky130_fd_pr__pfet_01v8
+x x10.Y x5[7].floating Uc VDD s=4872,284 d=4032,180 l=30 w=84 x=14898 y=1678 sky130_fd_pr__pfet_01v8
+x code[2] x4[3].floating Uc VSS s=4872,284 d=3864,176 l=30 w=84 x=12827 y=1477 sky130_fd_pr__nfet_01v8
+x IN a_9893_603# nstack_lab2 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=603 sky130_fd_pr__nfet_01v8
+x IN pstack_lab3 pstack_lab4 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2406 sky130_fd_pr__pfet_01v8_hvt
+x code[2] Uc x4[3].floating VSS s=3864,176 d=4872,284 l=30 w=84 x=11737 y=1477 sky130_fd_pr__nfet_01v8
+x Uc OUT a_15703_1340# VSS s=4872,284 d=2604,146 l=30 w=84 x=15673 y=1478 sky130_fd_pr__nfet_01v8
+x IN a_9893_1293# Uc VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1293 sky130_fd_pr__nfet_01v8
+x code[3] VSS x10.Y VSS s=6760,364 d=6760,364 l=30 w=130 x=9420 y=1807 sky130_fd_pr__nfet_01v8
+x IN nstack_lab7 a_9893_1155# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1155 sky130_fd_pr__nfet_01v8
+x IN pstack_lab1 VDD VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2820 sky130_fd_pr__pfet_01v8_hvt
+x x10.Y x5[7].floating Uc VDD s=4872,284 d=4032,180 l=30 w=84 x=11262 y=1678 sky130_fd_pr__pfet_01v8
+x OUT a_15703_1681# VSS VDD s=2604,146 d=2772,150 l=30 w=84 x=15765 y=1681 sky130_fd_pr__pfet_01v8_hvt
+x code[0] Uc x2.floating VSS s=4956,286 d=4872,284 l=30 w=84 x=15021 y=1477 sky130_fd_pr__nfet_01v8
+x IN nstack_lab3 a_9893_603# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=603 sky130_fd_pr__nfet_01v8
+x IN a_9893_1155# nstack_lab6 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1155 sky130_fd_pr__nfet_01v8
+x IN a_9893_879# nstack_lab4 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=879 sky130_fd_pr__nfet_01v8
+x IN nstack_lab5 a_9893_1017# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1017 sky130_fd_pr__nfet_01v8
+C x10.Y VDD 2.7
+C x6.floating VDD 5.8
+C x5[7].floating VDD 43.9
 R OUT 1525
 R a_9893_327# 240
 R a_9893_465# 240
-R a_9805_327# 837
-R a_9965_465# 837
+R nstack_lab1 837
+R nstack_lab2 837
 R a_9893_603# 240
 R a_9893_741# 240
-R a_9805_603# 837
-R a_9965_741# 837
+R nstack_lab3 837
+R nstack_lab4 837
 R a_9893_879# 240
 R a_9893_1017# 240
-R a_9805_879# 837
-R a_9965_1017# 837
+R nstack_lab5 837
+R nstack_lab6 837
 R a_9893_1155# 240
 R a_9893_1293# 240
-R a_9805_1155# 837
+R nstack_lab7 837
 R a_15703_1340# 1397
-R x2.x2.CBOT 216
-R x3[1].x2.CBOT 851
-= x3[1].x2.CBOT x3[0].x2.CBOT
-R x4[3].x2.CBOT 1999
-= x4[3].x2.CBOT x4[0].x2.CBOT
-= x4[3].x2.CBOT x4[1].x2.CBOT
-= x4[3].x2.CBOT x4[2].x2.CBOT
-R x7.x2.CBOT 216
-R x5[7].x1.CBOT 6670
-= x5[7].x1.CBOT x5[0].x1.CBOT
-= x5[7].x1.CBOT x5[1].x1.CBOT
-= x5[7].x1.CBOT x5[2].x1.CBOT
-= x5[7].x1.CBOT x5[3].x1.CBOT
-= x5[7].x1.CBOT x5[4].x1.CBOT
-= x5[7].x1.CBOT x5[5].x1.CBOT
-= x5[7].x1.CBOT x5[6].x1.CBOT
-R x6.x1.CBOT 327
+C x2.floating0 6.4
+R x2.floating 216
+C x3[1].floating0 10.9
+R x3[1].floating 851
+= x3[1].floating x3[0].floating
+C x4[3].floating0 21.7
+R x4[3].floating 1999
+= x4[3].floating x4[0].floating
+= x4[3].floating x4[1].floating
+= x4[3].floating x4[2].floating
+C x7.floating0 5.9
+R x7.floating 216
+R code[0] 327
+= code[0] x2.SW
+R code[1] 798
+= code[1] x3[0].SW
+= code[1] x3[1].SW
+R code[2] 1726
+= code[2] x4[0].SW
+= code[2] x4[1].SW
+= code[2] x4[2].SW
+= code[2] x4[3].SW
+R x5[7].floating 6670
+= x5[7].floating x5[0].floating
+= x5[7].floating x5[1].floating
+= x5[7].floating x5[2].floating
+= x5[7].floating x5[3].floating
+= x5[7].floating x5[4].floating
+= x5[7].floating x5[5].floating
+= x5[7].floating x5[6].floating
+R x6.floating 327
 R a_15703_1681# 2184
-C VSS0 5.5
-R VSS 2638
-= VSS x1.VGND
-= VSS x2.x2.CTOP
-= VSS x3[0].x2.CTOP
-= VSS x3[1].x2.CTOP
-= VSS x4[0].x2.CTOP
-= VSS x4[1].x2.CTOP
-= VSS x4[2].x2.CTOP
-= VSS x4[3].x2.CTOP
-= VSS x7.x2.CTOP
-= VSS x5.VGND
-R a_9939_2130# 8746
-R x5.Y 1695
-R x1.Y 4999
-R code_offset 1283
-= code_offset x5.A
+R Uc 8748
+= Uc x5[0].delay_signal
+= Uc x5[1].delay_signal
+= Uc x3[0].delay_signal
+= Uc x5[2].delay_signal
+= Uc x3[1].delay_signal
+= Uc x5[3].delay_signal
+= Uc x4[0].delay_signal
+= Uc x5[4].delay_signal
+= Uc x4[1].delay_signal
+= Uc x5[5].delay_signal
+= Uc x4[2].delay_signal
+= Uc x5[7].delay_signal
+= Uc x5[6].delay_signal
+= Uc x4[3].delay_signal
+= Uc x2.delay_signal
+= Uc x6.delay_signal
+= Uc x7.delay_signal
+= Uc x8.output_stack
+= Uc x9.output_stack
+R x6.SW 1695
+= x6.SW x11.Y
+R x10.Y 5012
+= x10.Y x5[0].SW
+= x10.Y x5[1].SW
+= x10.Y x5[2].SW
+= x10.Y x5[3].SW
+= x10.Y x5[4].SW
+= x10.Y x5[5].SW
+= x10.Y x5[6].SW
+= x10.Y x5[7].SW
+R code_offset 1282
+= code_offset x11.A
+= code_offset x7.SW
 R code[3] 807
-= code[3] x1.A
-R a_9851_2130# 1308
-R a_9939_2268# 1308
-R a_9851_2406# 1308
-R a_9939_2544# 1308
-C VDD0 3.5
-R VDD 4278
-= VDD x5[0].x1.CTOP
-= VDD x5[1].x1.CTOP
-= VDD x5[2].x1.CTOP
-= VDD x5[3].x1.CTOP
-= VDD x5[4].x1.CTOP
-= VDD x5[5].x1.CTOP
-= VDD x5[6].x1.CTOP
-= VDD x5[7].x1.CTOP
-= VDD x6.x1.CTOP
-= VDD x1.VPWR
-= VDD x5.VPWR
-R a_9851_2682# 1308
+= code[3] x10.A
+R pstack_lab5 1308
+R pstack_lab4 1308
+R pstack_lab3 1308
+R pstack_lab2 1308
+R pstack_lab1 1308
 R IN 5278
 = IN x8.input_stack
 = IN x9.input_stack
-C x5.VPB0 25.4
-R x5.VPB 5569
-= x5.VPB x5[0].x1.SUB
-= x5.VPB x5[1].x1.SUB
-= x5.VPB x5[2].x1.SUB
-= x5.VPB x5[3].x1.SUB
-= x5.VPB x5[4].x1.SUB
-= x5.VPB x5[5].x1.SUB
-= x5.VPB x5[6].x1.SUB
-= x5.VPB x5[7].x1.SUB
-= x5.VPB x6.x1.SUB
-= x5.VPB x1.VPB
-= x5.VNB x1.VNB
-= x5.VNB x2.x2.SUB
-= x5.VNB x3[0].x2.SUB
-= x5.VNB x3[1].x2.SUB
-= x5.VNB x4[0].x2.SUB
-= x5.VNB x4[1].x2.SUB
-= x5.VNB x4[2].x2.SUB
-= x5.VNB x4[3].x2.SUB
-= x5.VNB x7.x2.SUB
+C VDD0 32.7
+R VDD 27217
+= VDD x5[0].VDD
+= VDD x5[1].VDD
+= VDD x5[2].VDD
+= VDD x5[3].VDD
+= VDD x5[4].VDD
+= VDD x5[5].VDD
+= VDD x5[6].VDD
+= VDD x5[7].VDD
+= VDD x11.VPWR
+= VDD x11.VPB
+= VDD x10.VPWR
+= VDD x10.VPB
+= VDD x6.VDD
+= VDD pfet_floating
+= VDD x8.vdd
+R VSS 17993
+= VSS x3[0].VSS
+= VSS x3[1].VSS
+= VSS x4[0].VSS
+= VSS x4[1].VSS
+= VSS x4[2].VSS
+= VSS x4[3].VSS
+= VSS x2.VSS
+= VSS x11.VGND
+= VSS x11.VNB
+= VSS x10.VGND
+= VSS x10.VNB
+= VSS x7.VSS
+= VSS pstack_sub
+= VSS x9.vss

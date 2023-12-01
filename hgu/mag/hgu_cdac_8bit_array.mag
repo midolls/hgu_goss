@@ -1,12 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699890160
+timestamp 1700813856
 << pwell >>
 rect 13234 -5934 13266 -5884
 << metal4 >>
 rect -3236 -6228 -3182 -6194
-rect -2319 -6232 -2268 -6190
 rect -180 -6235 -129 -6194
 rect 2975 -6232 3026 -6191
 rect 7950 -6231 8005 -6192
@@ -71,31 +70,31 @@ rect 35054 -7574 35096 -7338
 rect 35332 -7574 35374 -7338
 rect 35054 -7612 35374 -7574
 use hgu_cdac_cap_2  hgu_cdac_cap_2_0
-timestamp 1699890160
+timestamp 1700813856
 transform 1 0 -3833 0 1 -8070
 box -14 664 658 3052
 use hgu_cdac_cap_4  hgu_cdac_cap_4_0
-timestamp 1699890160
+timestamp 1700813856
 transform 1 0 -3621 0 1 -10204
 box 686 2798 1964 5186
 use hgu_cdac_cap_8  hgu_cdac_cap_8_0
-timestamp 1699890160
+timestamp 1700813856
 transform 1 0 -2087 0 1 -10204
 box 686 2798 3176 5186
 use hgu_cdac_cap_16  hgu_cdac_cap_16_0
-timestamp 1699890160
+timestamp 1700813856
 transform 1 0 -448 0 1 -6878
 box 1598 -528 6512 1860
 use hgu_cdac_cap_32  hgu_cdac_cap_32_0
-timestamp 1699890160
+timestamp 1700813856
 transform 1 0 -9052 0 1 -4360
 box 15176 -3046 24938 -658
 use hgu_cdac_cap_64  hgu_cdac_cap_64_0
-timestamp 1699890160
+timestamp 1700813856
 transform 1 0 2164 0 1 -9210
 box 13782 1804 33240 4192
 use hgu_cdac_unit  x1
-timestamp 1699890160
+timestamp 1700813856
 transform -1 0 -3303 0 -1 -5580
 box 686 598 1358 1826
 << labels >>
@@ -125,8 +124,6 @@ flabel metal4 -4407 -6470 -4358 -6418 0 FreeSans 320 0 0 0 tah<0>
 port 19 nsew
 flabel metal4 -4287 -6576 -4245 -6542 0 FreeSans 320 0 0 0 drv<0>
 port 23 nsew
-flabel metal4 -2319 -6232 -2268 -6190 0 FreeSans 320 0 0 0 drv<3:0>
-port 25 nsew
 flabel via4 -2457 -5017 -2283 -4917 0 FreeSans 320 0 0 0 tah<3:0>
 port 7 nsew
 << end >>

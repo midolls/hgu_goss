@@ -27,6 +27,7 @@ Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_h
 4                                          |4                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
+<<<<<<< HEAD
 Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
 
 Subcircuit summary:
@@ -179,6 +180,7 @@ Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
+<<<<<<< HEAD
 Circuit 1: adc_noise_decoup_cell1          |Circuit 2: adc_noise_decoup_cell1          
 -------------------------------------------|-------------------------------------------
 nmoscap_bot                                |nmoscap_bot                                

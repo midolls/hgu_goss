@@ -1,4 +1,4 @@
-timestamp 1699326276
+timestamp 1700551017
 version 8.3
 tech sky130A
 style ngspice()
@@ -42,555 +42,556 @@ port "IN" 1 9275 1596 9943 1643 m1
 port "VDD" 17 9344 2338 9762 2948 m4
 node "code[0]" 3 457.267 15009 267 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69679 2480 0 0 0 0 0 0 0 0 0 0
 node "code[1]" 3 497.706 14153 268 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73970 2718 0 0 0 0 0 0 0 0 0 0
-node "code[2]" 6 901.847 11727 268 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129722 5142 0 0 0 0 0 0 0 0 0 0
+node "code[2]" 6 901.41 11727 268 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129722 5142 0 0 0 0 0 0 0 0 0 0
 node "m1_15709_1421#" 1 74.3812 15709 1421 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9708 656 0 0 0 0 0 0 0 0 0 0
 node "OUT" 1 51.3963 15751 1594 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14364 876 0 0 0 0 0 0 0 0 0 0
 node "m1_15709_1756#" 1 18.2254 15709 1756 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9938 666 0 0 0 0 0 0 0 0 0 0
-node "VSS" 10 4185.24 9372 291 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48080 2246 26640 1608 67484 2196 1393505 19358 0 0 0 0
-node "code_offset" 26 665.816 9702 1394 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1537 160 49689 2386 62966 2812 0 0 0 0 0 0 0 0
-node "code[3]" 13 82.7703 9238 1979 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 7018 464 0 0 0 0 0 0 0 0 0 0
-node "li_9566_2089#" 191 171.844 9566 2089 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17228 1074 40901 2266 0 0 0 0 0 0 0 0 0 0
-node "li_9453_2146#" 224 430.432 9453 2146 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19248 1186 253707 11534 0 0 0 0 0 0 0 0 0 0
+node "VSS" 10 4221.78 9372 291 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48080 2246 26640 1608 67484 2196 1393505 19358 0 0 0 0
+node "code_offset" 26 674.458 9702 1394 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1537 160 49689 2386 62966 2812 0 0 0 0 0 0 0 0
+node "code[3]" 13 82.7139 9238 1979 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 7018 464 0 0 0 0 0 0 0 0 0 0
+node "li_9566_2089#" 191 162.134 9566 2089 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17228 1074 40901 2266 0 0 0 0 0 0 0 0 0 0
+node "li_9453_2146#" 224 420.65 9453 2146 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19248 1186 253707 11534 0 0 0 0 0 0 0 0 0 0
 node "li_9938_2868#" 37 25.6446 9938 2868 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4600 310 0 0 0 0 0 0 0 0 0 0 0 0
-node "IN" 165 393.11 9275 1596 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5898 350 0 0 2244 200 62240 2716 0 0 0 0 0 0 0 0 0 0
+node "IN" 165 404.649 9275 1596 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5898 350 0 0 2244 200 62240 2716 0 0 0 0 0 0 0 0 0 0
 node "a_15765_1577#" 77 101.853 15765 1577 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9954 410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_10572_1690#" 6610 1901.81 10572 1690 pdc 0 0 0 0 0 0 0 0 21528 1324 21528 1324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11607 464 0 0 33524 2720 332530 15580 0 0 0 0 0 0 0 0 0 0
+node "Uc" 6610 1902.03 10572 1690 pdc 0 0 0 0 0 0 0 0 21528 1324 21528 1324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11607 464 0 0 33524 2720 332530 15580 0 0 0 0 0 0 0 0 0 0
 node "a_9453_2146#" 230 0 9453 2146 pdif 0 0 0 0 0 0 0 0 0 0 2688 208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_9453_2146#" 1108 8.064 9453 2146 nw 0 0 0 0 2688 208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "VDD" 9584 27572.9 9344 2338 m4 0 0 0 0 8077475 16106 0 0 53620 2632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43912 2336 83865 3984 50320 2988 122361 4342 1111297 17754 0 0 0 0
-substrate "a_9370_1712#" 0 0 9370 1712 ppd 0 0 0 0 0 0 0 0 0 0 13032 796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8560 676 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_15709_1421#" "VSS" 34.8782
-cap "m1_15709_1756#" "a_10572_1690#" 0.363067
-cap "VDD" "a_15765_1577#" 33.0538
-cap "OUT" "m1_15709_1756#" 31.9722
-cap "code[3]" "VDD" 16.682
-cap "VDD" "code_offset" 92.9131
-cap "VDD" "a_10572_1690#" 601.834
-cap "VDD" "a_9453_2146#" -3.76473e-17
-cap "a_15765_1577#" "a_10572_1690#" 20.148
-cap "VDD" "OUT" 83.2942
-cap "OUT" "a_15765_1577#" 12.0521
-cap "m1_15709_1756#" "VSS" 66.4302
-cap "code[3]" "code_offset" 12.8849
-cap "a_10572_1690#" "code_offset" 254.567
-cap "code[2]" "code[1]" 1.67828
-cap "OUT" "a_10572_1690#" 42.3369
-cap "VDD" "VSS" 724.315
-cap "code[0]" "code[1]" 61.4795
-cap "a_15765_1577#" "VSS" 7.26403
-cap "VDD" "li_9566_2089#" 135.8
-cap "li_9453_2146#" "m1_15709_1756#" 1.20984
-cap "code[3]" "VSS" 11.0273
-cap "VSS" "code_offset" 159.492
-cap "VSS" "a_10572_1690#" 51.0154
-cap "li_9566_2089#" "code_offset" 122.55
-cap "OUT" "VSS" 71.5811
-cap "li_9566_2089#" "a_10572_1690#" 166.094
-cap "li_9453_2146#" "VDD" 1378.3
-cap "li_9938_2868#" "VDD" 59.8703
-cap "li_9453_2146#" "code[3]" 0.0202315
-cap "li_9453_2146#" "code_offset" 23.728
-cap "m1_15709_1421#" "code[0]" 1.71925
-cap "li_9453_2146#" "a_10572_1690#" 1061.7
-cap "li_9453_2146#" "a_9453_2146#" 3.71616
-cap "VDD" "IN" 48.5798
-cap "VDD" "code[1]" 0.538293
+node "VDD" 10569 27690.3 9344 2338 m4 0 0 0 0 8078197 16144 0 0 105760 4078 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105760 4078 83865 3984 50320 2988 122361 4342 1111297 17754 0 0 0 0
+equiv "VDD" "pfet_floating"
+substrate "pstack_sub" 0 0 9370 1712 ppd 0 0 0 0 0 0 0 0 0 0 91264 2548 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92480 2580 0 0 0 0 0 0 0 0 0 0 0 0
 cap "li_9938_2868#" "code_offset" 0.00710893
-cap "li_9566_2089#" "VSS" 13.4957
-cap "li_9938_2868#" "a_10572_1690#" 0.204893
-cap "code[3]" "IN" 11.7641
-cap "IN" "code_offset" 223.023
-cap "IN" "a_10572_1690#" 343.738
-cap "code[1]" "a_10572_1690#" 56.3321
-cap "li_9453_2146#" "VSS" 20.3385
-cap "li_9453_2146#" "li_9566_2089#" 579.509
-cap "m1_15709_1421#" "m1_15709_1756#" 1.84985
-cap "code[2]" "VDD" 2.51746
-cap "IN" "VSS" 155.916
-cap "VDD" "code[0]" 0.348055
+cap "Uc" "OUT" 42.3369
 cap "code[1]" "VSS" 21.325
-cap "m1_15709_1421#" "VDD" 63.7217
-cap "IN" "li_9566_2089#" 98.8937
-cap "m1_15709_1421#" "a_15765_1577#" 0.918475
+cap "VDD" "IN" 49.418
+cap "a_15765_1577#" "VDD" 33.0538
+cap "VSS" "VDD" 724.758
+cap "li_9566_2089#" "VDD" 143.381
+cap "VDD" "m1_15709_1421#" 63.7217
+cap "m1_15709_1756#" "li_9453_2146#" 1.20984
+cap "Uc" "IN" 343.738
+cap "a_9453_2146#" "li_9453_2146#" 3.71616
 cap "code[2]" "code_offset" 3.17282
-cap "code[2]" "a_10572_1690#" 336.183
-cap "li_9938_2868#" "li_9453_2146#" 3.30236
-cap "code[0]" "a_10572_1690#" 14.8835
-cap "m1_15709_1421#" "a_10572_1690#" 0.193904
-cap "li_9453_2146#" "IN" 66.8203
-cap "m1_15709_1421#" "OUT" 33.0329
-cap "li_9938_2868#" "IN" 0.0152529
-cap "VDD" "m1_15709_1756#" 92.7311
-cap "code[2]" "VSS" 25.4142
+cap "code_offset" "li_9453_2146#" 23.728
+cap "code[3]" "VDD" 16.7541
+cap "a_15765_1577#" "Uc" 20.148
+cap "Uc" "VSS" 51.0154
+cap "a_15765_1577#" "OUT" 12.0521
+cap "Uc" "li_9566_2089#" 166.094
+cap "VSS" "OUT" 71.5811
+cap "Uc" "m1_15709_1421#" 0.193904
+cap "OUT" "m1_15709_1421#" 33.0329
+cap "VSS" "IN" 155.916
+cap "li_9566_2089#" "IN" 98.8937
+cap "m1_15709_1756#" "VDD" 92.7311
+cap "a_9453_2146#" "VDD" -3.76473e-17
+cap "a_15765_1577#" "VSS" 7.26403
+cap "code[3]" "IN" 11.7641
+cap "code_offset" "VDD" 92.5275
+cap "a_15765_1577#" "m1_15709_1421#" 0.918475
+cap "VSS" "li_9566_2089#" 13.4591
+cap "VSS" "m1_15709_1421#" 34.8782
+cap "li_9938_2868#" "li_9453_2146#" 2.64189
+cap "m1_15709_1756#" "Uc" 0.363067
+cap "code[3]" "VSS" 11.0273
+cap "m1_15709_1756#" "OUT" 31.9722
+cap "Uc" "code_offset" 254.567
+cap "code_offset" "IN" 223.023
 cap "m1_15709_1756#" "a_15765_1577#" 0.865477
+cap "m1_15709_1756#" "VSS" 66.4302
+cap "m1_15709_1756#" "m1_15709_1421#" 1.84985
+cap "li_9938_2868#" "VDD" 60.6147
+cap "VSS" "code_offset" 159.49
+cap "code_offset" "li_9566_2089#" 122.55
+cap "code[3]" "code_offset" 12.8849
+cap "li_9938_2868#" "Uc" 0.204893
+cap "code[1]" "code[2]" 1.67828
+cap "code[1]" "code[0]" 61.4795
+cap "code[2]" "VDD" 2.51746
+cap "li_9453_2146#" "VDD" 1404.71
+cap "code[0]" "VDD" 0.348055
+cap "li_9938_2868#" "IN" 0.0152529
+cap "code[2]" "Uc" 336.183
+cap "Uc" "li_9453_2146#" 1061.7
+cap "code[0]" "Uc" 14.8835
+cap "code[1]" "VDD" 0.538293
+cap "li_9453_2146#" "IN" 66.8075
+cap "code[1]" "Uc" 56.3321
+cap "code[2]" "VSS" 25.4142
+cap "VSS" "li_9453_2146#" 20.1746
+cap "li_9453_2146#" "li_9566_2089#" 579.509
 cap "code[0]" "VSS" 43.7674
-cap "x4[3]/floating" "x11/A" 0.429496
-cap "x7/floating" "x9/a_245_67#" 4.09158
-cap "x11/A" "x8/output_stack" 6.83004
-cap "x8/input_stack" "x9/a_245_343#" 0.185354
-cap "x11/A" "x6/floating" 5.7307
-cap "x9/vss" "x9/a_245_67#" 10.9189
-cap "x9/a_173_n71#" "x7/floating" 0.852074
-cap "x8/vdd" "x7/floating" 1.89916
-cap "x7/floating" "x11/A" 66.6389
-cap "x9/a_173_n71#" "x9/vss" 0.9211
-cap "x9/vss" "x8/vdd" -2.77196
-cap "x8/a_173_76#" "x11/A" 0.00496319
-cap "x11/A" "x9/a_245_n209#" 0.298296
-cap "x8/input_stack" "x8/a_173_628#" 0.310425
-cap "x9/vss" "x11/A" 14.7661
-cap "x11/Y" "x9/a_245_619#" 0.81003
-cap "x4[3]/floating" "x9/a_245_619#" 0.116889
-cap "x8/a_85_490#" "x8/input_stack" 0.0690308
-cap "x8/input_stack" "x9/a_245_67#" 0.0965294
-cap "x11/A" "x9/a_173_205#" 0.353665
-cap "x9/a_245_619#" "x8/output_stack" 0.0775339
-cap "x7/floating" "x9/a_173_619#" 0.852074
-cap "x4[3]/floating" "x9/a_85_205#" 0.828649
-cap "x8/a_85_214#" "x11/A" 0.189849
-cap "x7/floating" "x9/a_173_67#" 0.852074
-cap "x9/a_85_205#" "x8/output_stack" 0.150221
-cap "x9/a_173_n209#" "x9/a_245_n209#" -0.0622626
-cap "x7/floating" "x9/a_173_757#" 0.852074
-cap "x11/A" "x9/a_85_n71#" 0.397924
-cap "x9/a_173_n209#" "x9/vss" 1.99938
-cap "x11/Y" "x8/output_stack" -3.82135
-cap "x8/input_stack" "x8/vdd" -2.99879
-cap "x9/a_173_n71#" "x8/input_stack" 0.179953
-cap "x4[3]/floating" "x8/output_stack" 0.578592
-cap "x9/vss" "x9/a_173_619#" 0.66855
-cap "x9/a_173_481#" "x11/A" 0.622027
-cap "x8/input_stack" "x8/a_173_352#" 0.0122243
-cap "x11/A" "x9/a_173_343#" 0.469888
-cap "x9/vss" "x9/a_173_67#" 0.865197
-cap "x9/vss" "x9/a_173_757#" 0.632073
-cap "x7/floating" "x9/a_245_619#" 4.09158
-cap "x8/input_stack" "x11/A" 10.6936
-cap "x11/A" "x10/Y" 0.0240963
-cap "x6/floating" "x8/output_stack" 31.0996
-cap "x7/floating" "x9/a_85_205#" 9.59031
-cap "x7/floating" "x11/Y" 0.77369
-cap "x9/vss" "x9/a_245_619#" 9.937
-cap "x9/a_245_343#" "x11/A" 1.39868
-cap "x7/floating" "x8/output_stack" 30.252
-cap "x9/vss" "x9/a_85_205#" 9.97579
-cap "x9/a_173_n209#" "x8/input_stack" 0.133615
-cap "x4[3]/SW" "x11/A" -0.0100129
-cap "x4[3]/floating" "x9/a_245_n209#" 0.0716814
-cap "x9/vss" "x11/Y" 0.905525
-cap "x7/floating" "x6/floating" 100.16
-cap "x9/vss" "x4[3]/floating" 0.500809
-cap "x9/a_85_481#" "x11/A" 2.97353
-cap "x8/input_stack" "x9/a_173_619#" 1.29601
-cap "x9/vss" "x8/output_stack" -2.00322
-cap "x8/input_stack" "x9/a_173_757#" 1.95981
-cap "x8/input_stack" "x9/a_173_67#" 0.242175
-cap "x9/vss" "x6/floating" 15.2336
-cap "x8/a_173_628#" "x11/A" 0.0117866
-cap "x4[3]/floating" "x9/a_85_n71#" 0.747457
-cap "x8/input_stack" "x9/a_245_619#" 8.23661
-cap "x10/Y" "x9/a_245_619#" 0.0207993
-cap "x7/floating" "x9/a_245_n209#" 2.184
-cap "x9/a_85_n71#" "x8/output_stack" 0.0697704
-cap "x9/vss" "x7/floating" 168.939
+cap "code[0]" "m1_15709_1421#" 1.71925
+cap "Uc" "VDD" 628.688
+cap "OUT" "VDD" 83.2942
+cap "code[3]" "li_9453_2146#" 0.0202315
+cap "x10/Y" "x9/vss" -0.824047
+cap "x9/vss" "x9/a_85_205#" 72.649
 cap "x11/A" "x9/a_245_67#" 0.556525
-cap "x8/a_85_490#" "x11/A" 0.308429
-cap "x8/input_stack" "x11/Y" -5.89072
-cap "x10/Y" "x11/Y" 0.193732
-cap "x8/input_stack" "x4[3]/floating" 0.664929
-cap "x7/floating" "x9/a_173_205#" 0.852074
-cap "x9/vss" "x9/a_245_n209#" 20.0455
-cap "x8/input_stack" "x8/output_stack" 0.698919
-cap "x10/Y" "x8/output_stack" 0.0495379
-cap "x9/a_173_n71#" "x11/A" 0.209969
-cap "x8/vdd" "x11/A" -0.325055
-cap "x4[3]/floating" "x9/a_245_343#" 0.116889
-cap "x7/floating" "x9/a_85_n71#" 9.24709
-cap "x8/a_173_352#" "x11/A" 0.00737348
+cap "x11/A" "x9/a_85_n71#" 0.397924
+cap "x11/A" "x4[3]/floating" 0.429496
+cap "x9/a_245_n209#" "x7/floating" 2.184
+cap "x9/a_245_619#" "x9/vss" 11.4101
+cap "x11/A" "x4[3]/SW" -0.0100129
 cap "x9/vss" "x9/a_173_205#" 0.808738
-cap "x8/input_stack" "x10/A" -4.45718
-cap "x9/a_173_481#" "x7/floating" 0.852074
-cap "x7/floating" "x9/a_173_343#" 0.852074
-cap "x4[3]/floating" "x9/a_85_481#" 0.828649
-cap "x9/vss" "x9/a_85_n71#" 16.9308
-cap "x8/input_stack" "x7/floating" 23.9197
-cap "x4[3]/SW" "x8/output_stack" -0.019792
-cap "x8/a_173_76#" "x8/input_stack" 0.00781786
-cap "x9/a_85_481#" "x8/output_stack" 0.353511
-cap "x9/vss" "x9/a_173_481#" 0.710211
-cap "x9/vss" "x9/a_173_343#" 0.756996
-cap "x7/floating" "x9/a_245_343#" 4.09158
-cap "x8/input_stack" "x9/a_245_n209#" -0.758978
-cap "x9/a_173_n209#" "x11/A" 0.160111
-cap "x9/vss" "x8/input_stack" 76.3245
-cap "x9/vss" "x10/Y" -0.806702
-cap "x11/A" "x9/a_173_619#" 0.79005
-cap "x8/input_stack" "x9/a_173_205#" 0.340418
-cap "x11/A" "x9/a_173_67#" 0.269853
-cap "x9/a_173_757#" "x11/A" 0.907721
-cap "x7/floating" "x9/a_85_481#" 9.59031
-cap "x4[3]/floating" "x9/a_245_67#" 0.116889
-cap "x8/input_stack" "x8/a_85_214#" 0.0414203
-cap "x9/vss" "x9/a_245_343#" 10.3546
-cap "x8/vdd" "x9/a_245_619#" 0.947786
-cap "x9/vss" "x4[3]/SW" 0.0430639
-cap "x9/vss" "x9/a_85_481#" 7.77912
-cap "x8/vdd" "x11/Y" 0.0898675
-cap "x11/A" "x9/a_245_619#" 16.5093
-cap "x8/input_stack" "x9/a_173_481#" 0.79321
-cap "x8/input_stack" "x9/a_173_343#" 0.504618
-cap "x11/A" "x9/a_85_205#" 0.833518
-cap "x8/vdd" "x8/output_stack" 3.93699
-cap "x11/A" "x11/Y" 0.238934
-cap "x8/input_stack" "x10/Y" -1.69853
-cap "x8/input_stack" "x11/A" 1.03786
-cap "x8/input_stack" "x8/output_stack" -0.0145193
-cap "x4[3]/floating" "x8/vdd" 21.1482
-cap "x4[3]/floating" "x4[3]/SW" 218.674
-cap "x8/output_stack" "x11/A" -7.64395
-cap "x4[3]/SW" "x5[6]/floating" 1.19148
-cap "x11/A" "x10/Y" 0.328313
-cap "x6/floating" "x7/floating" 0.916443
-cap "x8/output_stack" "x10/Y" -9.79292
-cap "x9/vss" "x8/vdd" -6.33641
-cap "x4[3]/floating" "x7/floating" 1181.8
-cap "x9/vss" "x4[3]/SW" 182.94
-cap "x7/floating" "x5[6]/floating" 91.3159
-cap "x9/vss" "x7/floating" -4.93328
-cap "x8/vdd" "x4[3]/SW" 16.9977
-cap "x6/floating" "x8/output_stack" 0.126521
-cap "x4[3]/floating" "x11/A" 3.5937
-cap "x4[3]/floating" "x8/output_stack" 299.327
-cap "x8/vdd" "x7/floating" 21.3546
-cap "x7/floating" "x4[3]/SW" 5.59945
-cap "x11/A" "x5[6]/floating" 0.964443
-cap "x4[3]/floating" "x10/Y" 2.27346
-cap "x8/output_stack" "x5[6]/floating" 61.6686
-cap "x11/A" "x9/vss" 16.4819
+cap "x11/A" "x6/floating" 5.7307
 cap "x11/Y" "x10/Y" 0.193732
-cap "x8/output_stack" "x9/vss" 11.9728
-cap "x10/Y" "x9/vss" -0.664173
-cap "x11/A" "x8/vdd" 7.84278
-cap "x8/output_stack" "x8/vdd" 3.42064
-cap "x11/A" "x4[3]/SW" 4.22778
-cap "x8/output_stack" "x4[3]/SW" -9.10171
+cap "x8/input_stack" "x8/a_85_214#" 0.0414203
+cap "x8/output_stack" "x9/a_85_205#" 0.150221
+cap "x8/input_stack" "x9/a_173_n71#" 0.179953
+cap "x8/output_stack" "x10/Y" 0.0495379
+cap "x11/A" "x9/a_173_481#" 0.622027
+cap "x9/vss" "x9/a_173_343#" 0.756996
+cap "x9/a_173_67#" "x8/input_stack" 0.242175
+cap "x9/a_173_757#" "x9/vss" 0.632073
+cap "x11/Y" "x9/a_245_619#" 0.81003
+cap "x11/A" "x8/input_stack" 10.6936
+cap "x8/a_173_628#" "x8/input_stack" 0.310425
+cap "x4[3]/floating" "x9/a_245_343#" 0.116889
+cap "x8/output_stack" "x9/a_245_619#" 0.0775339
+cap "x11/A" "x8/a_173_352#" 0.00737348
+cap "x8/a_85_490#" "x11/A" 0.308429
+cap "x11/A" "x8/vdd" -0.322029
+cap "x9/a_85_n71#" "x9/vss" 49.5116
+cap "x9/vss" "x9/a_245_67#" 12.224
+cap "x9/a_245_343#" "x8/input_stack" 0.185354
+cap "x4[3]/floating" "x9/vss" 3.47747
+cap "x4[3]/SW" "x9/vss" 0.0430639
+cap "x6/floating" "x9/vss" 16.0415
+cap "x7/floating" "x9/a_173_n71#" 0.852074
+cap "x9/a_173_67#" "x7/floating" 0.852074
+cap "x11/A" "x9/a_245_n209#" 0.298296
+cap "x9/a_173_481#" "x9/vss" 0.710211
+cap "x8/input_stack" "x9/vss" 86.3481
+cap "x11/A" "x7/floating" 66.6389
+cap "x8/output_stack" "x9/a_85_n71#" 0.0697704
+cap "x8/output_stack" "x4[3]/floating" 0.537996
+cap "x8/output_stack" "x4[3]/SW" -0.019792
+cap "x8/output_stack" "x6/floating" 31.0996
+cap "x8/vdd" "x9/vss" -3.09271
+cap "x11/A" "x8/a_173_76#" 0.00496319
+cap "x11/Y" "x8/input_stack" -5.89072
+cap "x4[3]/floating" "x9/a_85_481#" 0.666265
+cap "x9/a_245_343#" "x7/floating" 4.09158
+cap "x8/output_stack" "x8/input_stack" 0.698919
+cap "x9/a_173_619#" "x8/input_stack" 1.29601
+cap "x11/Y" "x8/vdd" 0.0898675
+cap "x8/output_stack" "x8/vdd" 3.94042
+cap "x9/a_245_n209#" "x9/vss" 20.0455
+cap "x11/A" "x8/a_85_214#" 0.189849
+cap "x7/floating" "x9/vss" 212.38
+cap "x11/A" "x9/a_173_n71#" 0.209969
+cap "x11/A" "x9/a_173_67#" 0.269853
+cap "x11/A" "x8/a_173_628#" 0.0117866
+cap "x11/Y" "x7/floating" 0.77369
+cap "x8/output_stack" "x7/floating" 30.0804
+cap "x9/a_173_619#" "x7/floating" 0.852074
+cap "x11/A" "x9/a_245_343#" 1.39868
+cap "x10/A" "x8/input_stack" -4.45718
+cap "x7/floating" "x9/a_85_481#" 8.90387
+cap "x9/vss" "x9/a_173_n71#" 0.9211
+cap "x9/a_173_67#" "x9/vss" 0.865197
+cap "x9/a_245_619#" "x10/Y" 0.0207993
+cap "x11/A" "x9/vss" 14.5819
+cap "x11/A" "x11/Y" 0.238934
+cap "x8/output_stack" "x11/A" 6.83004
+cap "x9/a_245_343#" "x9/vss" 11.7684
+cap "x9/a_173_619#" "x11/A" 0.79005
+cap "x11/A" "x9/a_85_481#" 2.97353
+cap "x4[3]/floating" "x9/a_85_205#" 0.666265
+cap "x8/input_stack" "x9/a_173_n209#" 0.133615
+cap "x4[3]/floating" "x9/a_245_619#" 0.116889
+cap "x11/Y" "x9/vss" 0.409059
+cap "x10/Y" "x8/input_stack" -1.69853
+cap "x8/output_stack" "x9/vss" 3.67929
+cap "x9/a_173_619#" "x9/vss" 0.66855
+cap "x9/a_245_619#" "x8/input_stack" 8.23661
+cap "x8/input_stack" "x9/a_173_205#" 0.340418
+cap "x8/output_stack" "x11/Y" -3.82135
+cap "x9/vss" "x9/a_85_481#" 78.9154
+cap "x9/a_245_n209#" "x9/a_173_n209#" -0.0622626
+cap "x8/vdd" "x9/a_245_619#" 0.947786
+cap "x8/input_stack" "x9/a_173_343#" 0.504618
+cap "x4[3]/floating" "x9/a_85_n71#" 0.666265
+cap "x8/input_stack" "x9/a_173_757#" 1.95981
+cap "x4[3]/floating" "x9/a_245_67#" 0.116889
+cap "x7/floating" "x9/a_85_205#" 8.90387
+cap "x8/output_stack" "x9/a_85_481#" 0.353511
+cap "x4[3]/floating" "x8/input_stack" 0.664929
+cap "x8/input_stack" "x9/a_245_67#" 0.0965294
+cap "x9/a_245_619#" "x7/floating" 4.09158
+cap "x7/floating" "x9/a_173_205#" 0.852074
+cap "x7/floating" "x9/a_173_343#" 0.852074
+cap "x9/a_173_757#" "x7/floating" 0.852074
+cap "x9/a_173_481#" "x8/input_stack" 0.79321
+cap "x11/A" "x9/a_173_n209#" 0.160111
+cap "x8/a_173_352#" "x8/input_stack" 0.0122243
+cap "x8/a_85_490#" "x8/input_stack" 0.0690308
+cap "x8/vdd" "x8/input_stack" -2.99879
+cap "x9/a_245_n209#" "x4[3]/floating" 0.0716814
+cap "x9/a_85_n71#" "x7/floating" 8.90387
+cap "x7/floating" "x9/a_245_67#" 4.09158
+cap "x11/A" "x9/a_85_205#" 0.833518
+cap "x11/A" "x10/Y" 0.0240963
+cap "x6/floating" "x7/floating" 100.16
+cap "x9/a_173_481#" "x7/floating" 0.852074
+cap "x9/a_245_n209#" "x8/input_stack" -0.758978
+cap "x11/A" "x9/a_245_619#" 16.5093
+cap "x11/A" "x9/a_173_205#" 0.353665
+cap "x8/input_stack" "x7/floating" 23.9197
+cap "x9/vss" "x9/a_173_n209#" 1.99938
+cap "x8/vdd" "x7/floating" 1.89916
+cap "x11/A" "x9/a_173_343#" 0.469888
+cap "x11/A" "x9/a_173_757#" 0.907721
+cap "x8/input_stack" "x8/a_173_76#" 0.00781786
 cap "x10/Y" "x4[3]/SW" 0.663864
-cap "x10/Y" "x8/vdd" 0.149599
-cap "x8/input_stack" "x7/floating" 0.154662
-cap "x4[3]/floating" "x5[6]/floating" 310.082
-cap "x11/A" "x7/floating" 65.9407
-cap "x6/floating" "x9/vss" 0.0123335
-cap "x8/output_stack" "x7/floating" 148.837
-cap "x10/Y" "x7/floating" 3.45184
-cap "x4[3]/floating" "x9/vss" -74.0965
-cap "x9/vss" "x5[6]/floating" 6.10466
-cap "x6/delay_signal" "x7/VSS" 12.3496
-cap "x6/delay_signal" "x6/VDD" 2.35903
-cap "x4[3]/floating" "x3[1]/floating" 7.26918
-cap "x6/delay_signal" "x5[6]/floating" 62.6806
-cap "x5[6]/SW" "x4[3]/SW" 0.985911
-cap "x7/VSS" "x6/VDD" -5.81476
-cap "x5[6]/floating" "x7/VSS" 4.47599
-cap "x5[6]/SW" "x4[3]/floating" 2.27346
-cap "x6/delay_signal" "x4[3]/SW" -10.4578
-cap "x4[3]/SW" "x6/VDD" 16.9977
-cap "x4[3]/SW" "x7/VSS" 40.5059
-cap "x6/delay_signal" "x3[1]/SW" 0.0159828
-cap "x6/delay_signal" "x4[3]/floating" 301.241
-cap "x5[6]/floating" "x4[3]/SW" 1.19148
-cap "x6/delay_signal" "x3[1]/floating" 0.00153528
-cap "x4[3]/floating" "x7/VSS" -144.26
-cap "x4[3]/floating" "x6/VDD" 23.0171
-cap "x4[3]/floating" "x5[6]/floating" 435.181
-cap "x5[6]/SW" "x6/delay_signal" -9.79857
-cap "x3[1]/SW" "x4[3]/SW" 1.15515
-cap "x4[3]/floating" "x4[3]/SW" 150.599
-cap "x5[6]/SW" "x6/VDD" 0.114659
-cap "x5[6]/SW" "x7/VSS" -0.516527
-cap "x3[1]/floating" "x4[3]/SW" 1.14957
-cap "x2/floating" "x4[2]/VSS" 0.439252
-cap "x5[5]/delay_signal" "x4[2]/VSS" 26.408
-cap "x2/floating" "x3[1]/floating" 3.94354
-cap "x5[5]/SW" "x5[6]/VDD" 0.114659
-cap "x5[6]/floating" "x4[2]/floating" 31.4259
-cap "x5[5]/delay_signal" "x3[1]/floating" 313.516
-cap "x4[2]/floating" "x3[1]/SW" 9.29347
-cap "x5[6]/VDD" "x3[1]/SW" 16.6645
-cap "x4[1]/SW" "x3[1]/SW" 1.17967
-cap "x5[6]/VDD" "x4[2]/VSS" -6.09594
-cap "x4[2]/floating" "x3[1]/floating" 1178.68
-cap "x5[6]/VDD" "x3[1]/floating" 23.6697
-cap "x5[5]/SW" "x3[1]/SW" 0.663864
-cap "x5[6]/floating" "x3[1]/SW" 0.985821
-cap "x2/SW" "x3[1]/SW" 0.209494
-cap "x5[5]/SW" "x4[2]/VSS" -1.2298
-cap "x5[6]/floating" "x4[2]/VSS" 5.10691
-cap "x4[2]/VSS" "x3[1]/SW" 156.601
-cap "x5[5]/delay_signal" "x4[2]/floating" 10.0948
-cap "x5[5]/delay_signal" "x5[6]/VDD" 1.56787
-cap "x5[5]/delay_signal" "x4[1]/SW" 0.0158843
-cap "x2/SW" "x4[2]/VSS" 6.53127
-cap "x5[5]/SW" "x3[1]/floating" 2.27346
-cap "x5[6]/floating" "x3[1]/floating" 385.301
-cap "x3[1]/floating" "x3[1]/SW" 144.087
-cap "x2/SW" "x3[1]/floating" 0.331055
-cap "x4[2]/VSS" "x3[1]/floating" -68.4429
-cap "x5[5]/SW" "x5[5]/delay_signal" -11.3478
-cap "x5[6]/VDD" "x4[2]/floating" 0.469466
-cap "x2/floating" "x3[1]/SW" 2.69926
-cap "x5[5]/delay_signal" "x5[6]/floating" 66.9467
-cap "x5[5]/delay_signal" "x3[1]/SW" 2.98965
-cap "x2/SW" "x3[1]/floating" 32.2478
-cap "x4[0]/VSS" "x5[3]/VDD" -2.94901
-cap "XM1/a_n125_n42#" "XM1/a_n81_n130#" 25.5452
-cap "x5[3]/SW" "XM1/a_n81_n130#" 0.0502601
-cap "XM46/a_15_n42#" "x5[3]/VDD" 0.61798
-cap "x5[3]/floating" "x3[1]/floating" 14.245
-cap "x4[0]/VSS" "XM46/a_15_n42#" 2.30968
-cap "x2/floating" "x5[3]/VDD" 31.9283
-cap "x2/SW" "x5[3]/floating" 0.566531
-cap "x5[3]/VDD" "x3[1]/SW" 0.0190928
-cap "x4[0]/VSS" "x2/floating" 749.149
-cap "x2/SW" "XM1/a_n81_n130#" 0.0853277
-cap "x4[0]/VSS" "x3[1]/SW" -2.30298
-cap "x5[3]/delay_signal" "XM1/a_n125_n42#" 2.23727
-cap "x5[3]/delay_signal" "x5[3]/SW" -1.38917
-cap "x5[3]/delay_signal" "x3[1]/floating" 14.3386
-cap "x2/SW" "x5[3]/delay_signal" 6.98378
-cap "x5[3]/delay_signal" "x5[3]/floating" 62.8145
-cap "x5[3]/delay_signal" "XM1/a_n81_n130#" 43.0107
-cap "XM1/a_n125_n42#" "x5[3]/VDD" 40.062
-cap "x5[3]/SW" "x5[3]/VDD" 0.14078
-cap "x3[1]/floating" "x5[3]/VDD" 0.389517
-cap "x4[0]/VSS" "XM1/a_n125_n42#" 29.6272
-cap "XM46/a_15_n42#" "XM1/a_n125_n42#" 6.97637
-cap "x4[0]/VSS" "x5[3]/SW" -0.196692
-cap "XM1/a_n125_n42#" "x2/floating" 10.4149
-cap "x2/SW" "x5[3]/VDD" 3.0694
-cap "x5[3]/SW" "x2/floating" 1.22857
-cap "XM1/a_n125_n42#" "x3[1]/SW" 0.0339514
-cap "x4[0]/VSS" "x3[1]/floating" 0.770889
-cap "x2/floating" "x3[1]/floating" 1162.92
-cap "x2/SW" "x4[0]/VSS" 134.544
-cap "x2/SW" "x2/floating" 123.546
-cap "XM1/a_n81_n130#" "x5[3]/VDD" 1.56796
-cap "x4[0]/VSS" "x5[3]/floating" 2.93826
-cap "x2/SW" "x3[1]/SW" 0.26023
-cap "x2/floating" "x5[3]/floating" 220.53
-cap "XM46/a_15_n42#" "XM1/a_n81_n130#" 8.96178
-cap "x4[0]/VSS" "XM1/a_n81_n130#" 30.7884
-cap "x2/SW" "x4[0]/floating" 0.00228297
-cap "x2/floating" "XM1/a_n81_n130#" 19.1316
-cap "XM1/a_n81_n130#" "x3[1]/SW" 0.000547447
-cap "x5[3]/delay_signal" "x5[3]/VDD" 5.26424
-cap "x4[0]/VSS" "x5[3]/delay_signal" 23.7019
-cap "x5[3]/delay_signal" "x2/floating" 186.319
-cap "x5[3]/delay_signal" "x3[1]/SW" 0.0606602
-cap "XM1/a_n125_n42#" "x3[1]/floating" 0.309396
-cap "x2/SW" "XM1/a_n125_n42#" -0.0266744
-cap "x2/SW" "x5[3]/SW" 9.77935
-cap "x11/A" "x8/a_173_628#" 2.7217
-cap "x11/A" "x5[6]/floating" 1.4574
-cap "x10/Y" "x9/vss" 13.4537
-cap "x11/A" "x8/input_stack" 4.56915
-cap "x8/output_stack" "x9/a_85_n71#" 0.0107555
-cap "x11/Y" "x9/vss" 50.3098
-cap "x9/vss" "x6/floating" 76.0076
-cap "x8/vdd" "x8/a_173_76#" 24.2389
-cap "x10/Y" "x8/a_173_628#" 39.0091
-cap "x10/Y" "x5[6]/floating" 0.940223
-cap "x10/Y" "x8/input_stack" 31.5345
-cap "x11/Y" "x8/a_173_628#" 7.07007
-cap "x6/floating" "x8/a_173_628#" 9.95913
-cap "x10/Y" "x11/A" 16.0909
-cap "x5[6]/floating" "x6/floating" 6.38557
-cap "x11/Y" "x5[6]/floating" 1.10441
-cap "x8/input_stack" "x6/floating" 29.8706
-cap "x11/Y" "x8/input_stack" -0.22393
-cap "x8/a_85_490#" "x5[6]/floating" 1.69321
-cap "x8/vdd" "x9/vss" -60.9055
-cap "x10/Y" "x9/a_245_343#" 0.0665474
-cap "x9/a_85_205#" "x6/floating" 1.66702
-cap "x11/A" "x6/floating" 56.6822
-cap "x11/Y" "x11/A" 19.6445
-cap "x9/a_85_205#" "x11/Y" 0.128416
-cap "x8/a_85_490#" "x11/A" 0.056049
-cap "x10/A" "x9/vss" 27.4792
-cap "x11/Y" "x9/a_245_343#" 0.0810504
-cap "x8/a_173_352#" "x5[6]/floating" 0.276178
-cap "x8/output_stack" "x9/vss" -2.12304
-cap "x8/vdd" "x8/a_173_628#" 90.7407
-cap "x8/a_173_352#" "x11/A" 0.63072
-cap "x8/vdd" "x5[6]/floating" 1.94993
-cap "x10/Y" "x6/floating" 78.9964
-cap "x10/Y" "x11/Y" 205.558
-cap "x8/vdd" "x8/input_stack" 128.304
-cap "x10/Y" "x8/a_85_490#" 0.419625
-cap "x8/vdd" "x9/a_173_757#" 0.128668
-cap "x10/A" "x8/a_173_628#" 0.268565
-cap "x8/output_stack" "x8/a_173_628#" 0.100711
-cap "x8/vdd" "x11/A" 17.0542
-cap "x11/Y" "x6/floating" 96.2879
-cap "x8/output_stack" "x5[6]/floating" 11.568
-cap "x10/A" "x8/input_stack" -3.84883
-cap "x8/a_85_214#" "x5[6]/floating" 1.54065
-cap "x8/output_stack" "x8/input_stack" 9.23271
-cap "x11/Y" "x7/floating" 0.198448
-cap "x7/floating" "x6/floating" 100.426
-cap "x8/a_85_490#" "x6/floating" 19.4496
-cap "x10/A" "x11/A" 16.4467
-cap "x10/Y" "x8/a_173_352#" 0.235079
-cap "x9/a_85_481#" "x6/floating" 2.77871
-cap "x8/output_stack" "x11/A" 0.149515
-cap "x11/Y" "x9/a_85_481#" 0.243549
-cap "x9/a_85_205#" "x8/output_stack" 0.0241109
-cap "x10/Y" "x8/vdd" 116.728
-cap "x9/a_245_67#" "x10/Y" 0.0406604
-cap "x8/a_173_352#" "x6/floating" 9.95913
-cap "x11/Y" "x8/a_173_352#" 0.0997931
-cap "x10/A" "x10/Y" 4.30094
-cap "x8/vdd" "x6/floating" 204.352
-cap "x8/vdd" "x11/Y" 23.3689
-cap "x10/Y" "x8/output_stack" -6.78903
-cap "x8/a_85_214#" "x10/Y" 0.148662
-cap "x9/a_245_67#" "x11/Y" 0.0473818
-cap "x8/vdd" "x7/floating" 0.585272
-cap "x10/Y" "x9/a_245_619#" 0.148428
-cap "x8/vdd" "x8/a_85_490#" 60.6518
-cap "x5[6]/floating" "x8/a_173_76#" 0.21407
-cap "x10/A" "x6/floating" 5.19351
-cap "x10/A" "x11/Y" 4.66277
-cap "x8/output_stack" "x11/Y" -0.0642426
-cap "x8/a_85_214#" "x6/floating" 19.0834
-cap "x8/output_stack" "x6/floating" 191.718
-cap "x11/Y" "x9/a_245_619#" 0.977249
-cap "x11/A" "x8/a_173_76#" 0.323156
-cap "x10/Y" "x9/a_245_n209#" 0.02202
-cap "x8/output_stack" "x7/floating" 0.227967
-cap "x8/output_stack" "x8/a_85_490#" 0.353511
-cap "x8/vdd" "x8/a_173_352#" 19.0643
-cap "x8/output_stack" "x9/a_85_481#" 0.0381667
-cap "x9/a_85_n71#" "x6/floating" 1.0898
-cap "x11/Y" "x9/a_245_n209#" 0.031012
-cap "x11/Y" "x9/a_85_n71#" 0.0790112
-cap "x5[6]/floating" "x9/vss" 0.221444
-cap "x8/input_stack" "x9/vss" 56.6323
-cap "x10/Y" "x8/a_173_76#" 0.102077
-cap "x10/A" "x8/vdd" 27.5319
-cap "x11/A" "x9/vss" 41.0414
-cap "x8/a_85_214#" "x8/vdd" 46.1899
-cap "x8/vdd" "x8/output_stack" -13.6865
-cap "x8/vdd" "x9/a_245_619#" 0.198388
-cap "x11/Y" "x8/a_173_76#" 0.0510655
-cap "x8/a_173_76#" "x6/floating" 5.78093
-cap "x5[6]/floating" "x8/a_173_628#" 0.276178
-cap "x8/input_stack" "x8/a_173_628#" 0.286778
-cap "x8/input_stack" "x5[6]/floating" 1.26706
-cap "x8/a_85_214#" "x8/output_stack" 0.150221
-cap "x10/Y" "x8/input_stack" 0.00186724
-cap "x11/Y" "x10/Y" 2.09845
-cap "x4[3]/floating" "x5[6]/floating" 310.613
-cap "x8/vdd" "x11/A" 0.236209
-cap "x4[3]/SW" "x5[6]/floating" 1.21124
-cap "x9/vss" "x5[6]/floating" 4.90377
-cap "x6/floating" "x10/Y" 9.08361
-cap "x5[6]/floating" "x10/Y" 234.335
-cap "x8/vdd" "x6/floating" 15.5834
-cap "x7/floating" "x8/vdd" 4.33959
-cap "x8/output_stack" "x6/floating" 0.119801
-cap "x8/vdd" "x5[6]/floating" -255.765
-cap "x4[3]/floating" "x10/Y" 1.10856
-cap "x9/vss" "x10/Y" 1.60448
-cap "x8/output_stack" "x5[6]/floating" 228.06
-cap "x4[3]/floating" "x8/vdd" 5.26906
-cap "x11/A" "x5[6]/floating" 0.660846
-cap "x8/vdd" "x4[3]/SW" 0.591944
-cap "x9/vss" "x8/vdd" 0.211385
-cap "x4[3]/floating" "x8/output_stack" 0.276242
-cap "x5[6]/floating" "x8/input_stack" 0.00142799
-cap "x11/Y" "x5[6]/floating" 0.276372
-cap "x8/output_stack" "x9/vss" 1.43865
-cap "x8/vdd" "x10/Y" 41.849
+cap "x10/Y" "x4[3]/floating" 2.27346
+cap "x9/vss" "x4[3]/SW" 182.94
+cap "x9/vss" "x4[3]/floating" -74.0965
+cap "x5[6]/floating" "x8/output_stack" 61.6686
+cap "x8/vdd" "x8/output_stack" 3.42064
+cap "x7/floating" "x8/output_stack" 148.837
+cap "x10/Y" "x11/Y" 0.193732
+cap "x10/Y" "x9/vss" -0.664173
+cap "x8/output_stack" "x6/floating" 0.126521
+cap "x11/A" "x8/output_stack" -7.64395
+cap "x7/floating" "x8/vdd" 21.3546
+cap "x5[6]/floating" "x7/floating" 91.3159
 cap "x7/floating" "x6/floating" 0.916443
-cap "x6/floating" "x5[6]/floating" 1172.79
-cap "x8/output_stack" "x10/Y" -8.64264
-cap "x7/floating" "x5[6]/floating" 90.8943
-cap "x11/A" "x10/Y" 0.00464269
-cap "x8/output_stack" "x8/vdd" -24.9301
-cap "x5[6]/SW" "x5[6]/floating" 231.398
-cap "x4[3]/floating" "x5[6]/floating" 435.51
-cap "x6/delay_signal" "x7/VSS" 1.4361
-cap "x7/VSS" "x6/VDD" 0.36258
-cap "x6/delay_signal" "x6/VDD" -27.1301
-cap "x6/VDD" "x4[3]/SW" 0.142161
-cap "x7/VSS" "x5[6]/SW" 1.60139
-cap "x6/delay_signal" "x4[3]/SW" -2.77556e-17
-cap "x6/delay_signal" "x5[6]/SW" -8.64986
-cap "x6/VDD" "x5[6]/SW" 52.0384
-cap "x5[6]/SW" "x4[3]/SW" 0.357268
-cap "x7/VSS" "x5[6]/floating" 2.9262
-cap "x6/delay_signal" "x4[3]/floating" 0.223191
-cap "x6/VDD" "x4[3]/floating" 6.26521
-cap "x6/VDD" "x5[6]/floating" -270.241
-cap "x6/delay_signal" "x5[6]/floating" 222.673
-cap "x5[6]/floating" "x4[3]/SW" 2.00384
-cap "x5[6]/SW" "x4[3]/floating" 1.0255
-cap "x3[1]/SW" "x5[6]/floating" 1.21124
-cap "x3[1]/floating" "x5[5]/delay_signal" 1.48668
-cap "x5[6]/VDD" "x5[5]/delay_signal" -27.1448
-cap "x3[1]/floating" "x5[5]/SW" 0.75046
-cap "x5[6]/VDD" "x5[5]/SW" 45.6297
-cap "x4[2]/VSS" "x5[6]/VDD" 0.222594
-cap "x5[5]/SW" "x5[5]/delay_signal" -10.1984
-cap "x4[2]/floating" "x5[6]/VDD" 0.346193
-cap "x4[2]/VSS" "x5[5]/delay_signal" 0.0688515
-cap "x3[1]/floating" "x5[6]/floating" 386.001
-cap "x5[6]/VDD" "x3[1]/SW" 0.892742
-cap "x5[6]/VDD" "x5[6]/floating" -264.905
-cap "x4[2]/VSS" "x5[5]/SW" 0.944826
-cap "x5[6]/floating" "x5[5]/delay_signal" 226.612
-cap "x5[5]/SW" "x5[6]/floating" 239.424
-cap "x4[2]/VSS" "x5[6]/floating" 5.00102
+cap "x7/floating" "x11/A" 65.9407
+cap "x11/A" "x8/vdd" 7.84278
+cap "x5[6]/floating" "x11/A" 0.964443
+cap "x8/input_stack" "x8/output_stack" -0.0145193
+cap "x4[3]/floating" "x8/output_stack" 299.327
+cap "x4[3]/SW" "x8/output_stack" -9.10171
+cap "x8/input_stack" "x7/floating" 0.154662
+cap "x4[3]/SW" "x7/floating" 5.59945
+cap "x4[3]/SW" "x8/vdd" 16.9977
+cap "x8/input_stack" "x11/A" 1.03786
+cap "x10/Y" "x8/output_stack" -9.79292
+cap "x7/floating" "x4[3]/floating" 1181.8
+cap "x5[6]/floating" "x4[3]/floating" 310.082
+cap "x4[3]/floating" "x8/vdd" 21.1482
+cap "x5[6]/floating" "x4[3]/SW" 1.19148
+cap "x4[3]/SW" "x11/A" 4.22778
+cap "x9/vss" "x8/output_stack" 11.9728
+cap "x4[3]/floating" "x11/A" 3.5937
+cap "x10/Y" "x7/floating" 3.45184
+cap "x10/Y" "x8/vdd" 0.149599
+cap "x5[6]/floating" "x9/vss" 6.10466
+cap "x9/vss" "x8/vdd" -6.33641
+cap "x9/vss" "x7/floating" -4.93328
+cap "x10/Y" "x11/A" 0.328313
+cap "x9/vss" "x6/floating" 0.0123335
+cap "x9/vss" "x11/A" 16.4819
+cap "x4[3]/SW" "x4[3]/floating" 218.674
+cap "x6/delay_signal" "x7/VSS" 12.3496
+cap "x4[3]/floating" "x5[6]/floating" 435.181
+cap "x5[6]/SW" "x7/VSS" -0.516527
+cap "x6/delay_signal" "x3[1]/floating" 0.00153528
+cap "x6/VDD" "x7/VSS" -5.81476
+cap "x6/delay_signal" "x5[6]/SW" -9.79857
+cap "x4[3]/SW" "x7/VSS" 40.5059
+cap "x6/delay_signal" "x6/VDD" 2.35903
+cap "x4[3]/SW" "x3[1]/floating" 1.14957
+cap "x6/VDD" "x5[6]/SW" 0.114659
+cap "x6/delay_signal" "x4[3]/SW" -10.4578
+cap "x4[3]/SW" "x5[6]/SW" 0.985911
+cap "x6/delay_signal" "x3[1]/SW" 0.0159828
+cap "x4[3]/floating" "x7/VSS" -144.26
+cap "x4[3]/SW" "x6/VDD" 16.9977
+cap "x4[3]/floating" "x3[1]/floating" 7.26918
+cap "x6/delay_signal" "x4[3]/floating" 301.241
+cap "x4[3]/floating" "x5[6]/SW" 2.27346
+cap "x3[1]/SW" "x4[3]/SW" 1.15515
+cap "x4[3]/floating" "x6/VDD" 23.0171
+cap "x4[3]/floating" "x4[3]/SW" 150.599
+cap "x5[6]/floating" "x7/VSS" 4.47599
+cap "x6/delay_signal" "x5[6]/floating" 62.6806
+cap "x5[6]/floating" "x4[3]/SW" 1.19148
+cap "x2/SW" "x3[1]/floating" 0.331055
+cap "x3[1]/SW" "x5[6]/VDD" 16.6645
+cap "x3[1]/floating" "x2/floating" 3.94354
+cap "x5[5]/delay_signal" "x3[1]/floating" 313.516
+cap "x4[2]/VSS" "x3[1]/SW" 156.601
+cap "x3[1]/SW" "x5[5]/SW" 0.663864
+cap "x4[1]/SW" "x5[5]/delay_signal" 0.0158843
+cap "x3[1]/floating" "x5[6]/VDD" 23.6697
+cap "x4[2]/floating" "x3[1]/SW" 9.29347
+cap "x3[1]/floating" "x5[5]/SW" 2.27346
+cap "x5[5]/delay_signal" "x5[6]/floating" 66.9467
+cap "x4[2]/VSS" "x3[1]/floating" -68.4429
+cap "x4[2]/floating" "x3[1]/floating" 1178.68
+cap "x5[5]/delay_signal" "x5[6]/VDD" 1.56787
+cap "x3[1]/floating" "x3[1]/SW" 144.087
+cap "x4[2]/VSS" "x5[6]/floating" 5.10691
+cap "x4[2]/VSS" "x2/SW" 6.53127
+cap "x4[2]/VSS" "x2/floating" 0.439252
 cap "x4[2]/floating" "x5[6]/floating" 31.4259
-cap "x3[1]/floating" "x5[6]/VDD" 5.97068
-cap "x5[3]/floating" "XM46/a_15_n42#" 13.2415
-cap "x2/SW" "x5[3]/floating" 0.62713
-cap "x5[3]/VDD" "XM1/a_n125_n42#" 2.36818
-cap "x5[3]/SW" "x5[3]/floating" 37.9889
-cap "XM1/a_n81_n130#" "x4[0]/VSS" 12.9775
-cap "x2/floating" "x5[3]/delay_signal" 0.626929
-cap "x5[3]/VDD" "x5[3]/floating" 698.963
-cap "XM1/a_n81_n130#" "x5[3]/delay_signal" 14.6344
-cap "x4[0]/VSS" "XM46/a_15_n42#" 37.2175
-cap "x5[3]/VDD" "x3[1]/floating" 0.0351878
-cap "x5[3]/SW" "x4[0]/VSS" 0.324084
-cap "x5[3]/SW" "x5[3]/delay_signal" 1.47527
-cap "x5[3]/delay_signal" "XM46/a_15_n42#" 2.01862
-cap "XM1/a_n125_n42#" "x4[0]/VSS" 0.747454
+cap "x4[2]/VSS" "x5[5]/delay_signal" 26.408
+cap "x4[1]/SW" "x3[1]/SW" 1.17967
+cap "x5[5]/delay_signal" "x5[5]/SW" -11.3478
+cap "x5[5]/delay_signal" "x4[2]/floating" 10.0948
+cap "x4[2]/VSS" "x5[6]/VDD" -6.09594
+cap "x5[6]/floating" "x3[1]/SW" 0.985821
+cap "x5[6]/VDD" "x5[5]/SW" 0.114659
+cap "x2/SW" "x3[1]/SW" 0.209494
+cap "x4[2]/floating" "x5[6]/VDD" 0.469466
+cap "x3[1]/SW" "x2/floating" 2.69926
+cap "x4[2]/VSS" "x5[5]/SW" -1.2298
+cap "x5[5]/delay_signal" "x3[1]/SW" 2.98965
+cap "x3[1]/floating" "x5[6]/floating" 385.301
+cap "XM15/a_15_n42#" "x3[1]/floating" 0.309396
+cap "x5[3]/floating" "x4[0]/VSS" 2.93826
+cap "x4[0]/VSS" "x2/SW" 134.544
+cap "x5[2]/VDD" "x4[0]/VSS" -2.94901
+cap "x5[3]/delay_signal" "x2/SW" 6.98378
+cap "x5[3]/floating" "x5[3]/delay_signal" 62.8145
+cap "x5[2]/VDD" "x5[3]/delay_signal" 5.26424
+cap "x5[3]/SW" "x2/SW" 9.77935
+cap "x2/floating" "x3[1]/floating" 1162.92
+cap "XM15/a_15_n42#" "x2/floating" 10.4149
+cap "x4[0]/VSS" "XM48/a_33_n68#" 30.7884
+cap "x5[3]/SW" "x5[2]/VDD" 0.14078
+cap "x5[3]/delay_signal" "XM48/a_33_n68#" 43.0107
+cap "x5[3]/floating" "x2/SW" 0.566531
+cap "x3[1]/SW" "x4[0]/VSS" -2.30298
+cap "XM15/a_15_n42#" "XM48/a_63_n42#" 6.97637
+cap "x5[2]/VDD" "x2/SW" 3.0694
+cap "x5[3]/SW" "XM48/a_33_n68#" 0.0502601
+cap "x3[1]/SW" "x5[3]/delay_signal" 0.0606602
+cap "x4[0]/floating" "x2/SW" 0.00228297
+cap "XM48/a_33_n68#" "x2/SW" 0.0853277
+cap "x5[2]/VDD" "XM48/a_33_n68#" 1.56796
+cap "x3[1]/floating" "x4[0]/VSS" 0.770889
+cap "XM15/a_15_n42#" "x4[0]/VSS" 29.6272
+cap "x3[1]/SW" "x2/SW" 0.26023
+cap "x5[2]/VDD" "x3[1]/SW" 0.0190928
+cap "x3[1]/floating" "x5[3]/delay_signal" 14.3386
+cap "XM15/a_15_n42#" "x5[3]/delay_signal" 2.23727
+cap "x3[1]/SW" "XM48/a_33_n68#" 0.000547447
+cap "x2/floating" "x4[0]/VSS" 749.149
+cap "x2/floating" "x5[3]/delay_signal" 186.319
+cap "x5[3]/floating" "x3[1]/floating" 14.245
+cap "XM15/a_15_n42#" "x2/SW" -0.0266744
+cap "x3[1]/floating" "x2/SW" 32.2478
+cap "XM48/a_63_n42#" "x4[0]/VSS" 2.30968
+cap "x5[2]/VDD" "x3[1]/floating" 0.389517
+cap "XM15/a_15_n42#" "x5[2]/VDD" 40.062
+cap "x5[3]/SW" "x2/floating" 1.22857
+cap "x5[3]/floating" "x2/floating" 220.53
+cap "XM15/a_15_n42#" "XM48/a_33_n68#" 25.5452
+cap "x2/floating" "x2/SW" 123.546
+cap "x5[2]/VDD" "x2/floating" 31.9283
+cap "XM15/a_15_n42#" "x3[1]/SW" 0.0339514
+cap "XM48/a_63_n42#" "x5[2]/VDD" 0.61798
+cap "x2/floating" "XM48/a_33_n68#" 19.1316
+cap "x5[3]/delay_signal" "x4[0]/VSS" 23.7019
+cap "x5[3]/SW" "x4[0]/VSS" -0.196692
+cap "XM48/a_63_n42#" "XM48/a_33_n68#" 8.96178
+cap "x5[3]/SW" "x5[3]/delay_signal" -1.38917
+cap "x8/output_stack" "x8/a_85_490#" 0.353511
+cap "x11/Y" "x8/a_173_628#" 7.07007
+cap "x10/A" "x8/vdd" 27.7646
+cap "x9/a_245_619#" "x10/Y" 0.148428
+cap "x8/input_stack" "x9/vss" 54.8177
+cap "x8/input_stack" "x6/floating" 29.2609
+cap "x10/Y" "x9/vss" 11.1362
+cap "x10/Y" "x9/a_245_n209#" 0.02202
+cap "x8/input_stack" "x8/a_173_628#" 0.286778
+cap "x8/a_173_76#" "x6/floating" 5.78093
+cap "x10/Y" "x6/floating" 77.9515
+cap "x9/vss" "x5[6]/floating" 0.221444
+cap "x10/Y" "x8/a_173_628#" 39.0091
+cap "x10/A" "x9/vss" 27.2644
+cap "x6/floating" "x5[6]/floating" 6.38557
+cap "x10/A" "x6/floating" 5.19351
+cap "x8/output_stack" "x7/floating" 0.227967
+cap "x8/a_173_628#" "x5[6]/floating" 0.276178
+cap "x8/a_85_214#" "x8/vdd" 75.6953
+cap "x10/A" "x8/a_173_628#" 0.268565
+cap "x8/vdd" "x8/a_85_490#" 114.506
+cap "x8/output_stack" "x8/vdd" 6.24967
+cap "x8/a_85_214#" "x6/floating" 18.6985
+cap "x8/a_85_490#" "x6/floating" 18.706
+cap "x8/vdd" "x7/floating" 0.585272
+cap "x8/output_stack" "x9/vss" -2.23625
+cap "x8/output_stack" "x6/floating" 191.344
+cap "x8/output_stack" "x8/a_173_628#" 0.100711
+cap "x8/vdd" "x8/a_173_352#" 20.1791
+cap "x9/a_85_205#" "x11/Y" 0.128416
+cap "x11/Y" "x9/a_85_481#" 0.243549
+cap "x6/floating" "x7/floating" 100.426
+cap "x9/a_245_619#" "x8/vdd" 0.198388
+cap "x8/vdd" "x9/vss" -65.8427
+cap "x6/floating" "x8/a_173_352#" 9.95913
+cap "x8/vdd" "x6/floating" 231.257
+cap "x8/vdd" "x8/a_173_628#" 93.7372
+cap "x9/vss" "x6/floating" 90.1982
+cap "x8/a_173_628#" "x6/floating" 9.95913
+cap "x11/Y" "x9/a_85_n71#" 0.0790112
+cap "x9/a_85_205#" "x8/output_stack" 0.0241109
+cap "x11/A" "x11/Y" 19.6445
+cap "x8/output_stack" "x9/a_85_481#" 0.0381667
+cap "x8/vdd" "x9/a_173_757#" 0.128668
+cap "x11/A" "x8/input_stack" 4.56915
+cap "x11/A" "x8/a_173_76#" 0.323156
+cap "x11/A" "x10/Y" 16.0909
+cap "x11/A" "x5[6]/floating" 1.4574
+cap "x11/A" "x10/A" 16.4467
+cap "x8/input_stack" "x11/Y" -0.22393
+cap "x8/a_173_76#" "x11/Y" 0.0510655
+cap "x10/Y" "x11/Y" 205.558
+cap "x11/Y" "x5[6]/floating" 1.10441
+cap "x10/Y" "x8/input_stack" 31.5473
+cap "x10/A" "x11/Y" 4.66277
+cap "x10/Y" "x8/a_173_76#" 0.102077
+cap "x9/a_85_205#" "x6/floating" 1.66702
+cap "x6/floating" "x9/a_85_481#" 2.77871
+cap "x8/input_stack" "x5[6]/floating" 1.13336
+cap "x11/A" "x8/a_85_490#" 0.056049
+cap "x8/output_stack" "x9/a_85_n71#" 0.0107555
+cap "x8/input_stack" "x10/A" -3.84883
+cap "x8/a_173_76#" "x5[6]/floating" 0.21407
+cap "x10/Y" "x5[6]/floating" 0.940223
+cap "x10/Y" "x10/A" 4.30094
+cap "x11/A" "x8/output_stack" 0.149515
+cap "x10/Y" "x8/a_85_214#" 0.148662
+cap "x10/Y" "x8/a_85_490#" 0.419625
+cap "x8/output_stack" "x11/Y" -0.0642426
+cap "x11/A" "x8/a_173_352#" 0.63072
+cap "x8/a_85_214#" "x5[6]/floating" 1.37824
+cap "x8/a_85_490#" "x5[6]/floating" 1.37824
+cap "x11/A" "x8/vdd" 17.0216
+cap "x11/Y" "x7/floating" 0.198448
+cap "x11/Y" "x9/a_245_67#" 0.0473818
+cap "x8/input_stack" "x8/output_stack" 9.23271
+cap "x6/floating" "x9/a_85_n71#" 1.0898
+cap "x10/Y" "x8/output_stack" -6.78903
+cap "x10/Y" "x9/a_245_67#" 0.0406604
+cap "x8/output_stack" "x5[6]/floating" 11.4105
+cap "x11/A" "x9/vss" 40.1862
+cap "x11/Y" "x8/a_173_352#" 0.0997931
+cap "x11/Y" "x8/vdd" 15.9398
+cap "x11/A" "x6/floating" 56.6715
+cap "x11/A" "x8/a_173_628#" 2.7217
+cap "x9/a_245_343#" "x11/Y" 0.0810504
+cap "x8/input_stack" "x8/vdd" 140.26
+cap "x10/Y" "x8/a_173_352#" 0.235079
+cap "x9/a_245_619#" "x11/Y" 0.977249
+cap "x8/a_173_76#" "x8/vdd" 24.2389
+cap "x10/Y" "x8/vdd" 105.582
+cap "x11/Y" "x9/vss" 47.7013
+cap "x11/Y" "x9/a_245_n209#" 0.031012
+cap "x8/a_173_352#" "x5[6]/floating" 0.276178
+cap "x10/Y" "x9/a_245_343#" 0.0665474
+cap "x11/Y" "x6/floating" 96.2879
+cap "x8/vdd" "x5[6]/floating" 6.0051
+cap "x8/a_85_214#" "x8/output_stack" 0.150221
+cap "x8/vdd" "x5[6]/floating" -255.765
+cap "x8/vdd" "x4[3]/floating" 5.26906
+cap "x10/Y" "x8/output_stack" -8.64264
+cap "x8/input_stack" "x5[6]/floating" 0.00142799
+cap "x9/vss" "x10/Y" 1.60448
+cap "x9/vss" "x8/output_stack" 1.43865
+cap "x10/Y" "x6/floating" 9.08361
+cap "x11/Y" "x10/Y" 2.09845
+cap "x8/output_stack" "x6/floating" 0.119801
+cap "x5[6]/floating" "x4[3]/SW" 1.21124
+cap "x8/vdd" "x4[3]/SW" 0.591944
+cap "x10/Y" "x11/A" 0.00464269
+cap "x7/floating" "x6/floating" 0.916443
+cap "x10/Y" "x5[6]/floating" 234.335
+cap "x5[6]/floating" "x8/output_stack" 228.06
+cap "x4[3]/floating" "x10/Y" 1.10856
+cap "x4[3]/floating" "x8/output_stack" 0.276242
+cap "x9/vss" "x5[6]/floating" 4.90377
+cap "x8/vdd" "x10/Y" 41.849
+cap "x11/Y" "x5[6]/floating" 0.276372
+cap "x5[6]/floating" "x6/floating" 1172.79
+cap "x8/vdd" "x8/output_stack" -24.9301
+cap "x8/vdd" "x9/vss" 0.211385
+cap "x8/vdd" "x6/floating" 15.5834
+cap "x5[6]/floating" "x7/floating" 90.8943
+cap "x8/input_stack" "x10/Y" 0.00186724
+cap "x5[6]/floating" "x11/A" 0.660846
+cap "x8/vdd" "x7/floating" 4.33959
+cap "x8/vdd" "x11/A" 0.236209
+cap "x4[3]/floating" "x5[6]/floating" 310.613
+cap "x7/VSS" "x5[6]/floating" 2.9262
+cap "x6/VDD" "x7/VSS" 0.36258
+cap "x6/delay_signal" "x5[6]/SW" -8.64986
+cap "x6/delay_signal" "x4[3]/SW" -2.77556e-17
+cap "x4[3]/floating" "x6/delay_signal" 0.223191
+cap "x5[6]/SW" "x5[6]/floating" 231.398
+cap "x4[3]/SW" "x5[6]/floating" 2.00384
+cap "x4[3]/floating" "x5[6]/floating" 435.51
+cap "x6/VDD" "x5[6]/SW" 52.0384
+cap "x6/VDD" "x4[3]/SW" 0.142161
+cap "x4[3]/floating" "x6/VDD" 6.26521
+cap "x6/delay_signal" "x5[6]/floating" 222.673
+cap "x6/VDD" "x6/delay_signal" -27.1301
+cap "x7/VSS" "x5[6]/SW" 1.60139
+cap "x6/VDD" "x5[6]/floating" -270.241
+cap "x5[6]/SW" "x4[3]/SW" 0.357268
+cap "x4[3]/floating" "x5[6]/SW" 1.0255
+cap "x6/delay_signal" "x7/VSS" 1.4361
+cap "x5[6]/VDD" "x5[5]/delay_signal" -27.1448
+cap "x5[6]/VDD" "x4[2]/floating" 0.346193
+cap "x5[6]/floating" "x3[1]/SW" 1.21124
+cap "x5[6]/floating" "x3[1]/floating" 386.001
+cap "x5[5]/SW" "x3[1]/floating" 0.75046
+cap "x5[6]/floating" "x5[5]/SW" 239.424
+cap "x5[6]/floating" "x4[2]/VSS" 5.00102
+cap "x4[2]/VSS" "x5[5]/SW" 0.944826
+cap "x3[1]/floating" "x5[5]/delay_signal" 1.48668
+cap "x5[6]/floating" "x5[5]/delay_signal" 226.612
+cap "x5[5]/SW" "x5[5]/delay_signal" -10.1984
+cap "x5[6]/VDD" "x3[1]/SW" 0.892742
+cap "x5[6]/floating" "x4[2]/floating" 31.4259
+cap "x4[2]/VSS" "x5[5]/delay_signal" 0.0688515
+cap "x5[6]/VDD" "x3[1]/floating" 5.97068
+cap "x5[6]/VDD" "x5[6]/floating" -264.905
+cap "x5[6]/VDD" "x5[5]/SW" 45.6297
+cap "x5[6]/VDD" "x4[2]/VSS" 0.222594
 cap "x5[3]/floating" "x3[1]/floating" 14.5782
-cap "x5[3]/VDD" "x4[0]/VSS" -33.4566
-cap "XM1/a_n81_n130#" "XM46/a_15_n42#" 14.464
-cap "x5[3]/SW" "XM1/a_n81_n130#" 0.0631077
-cap "x5[3]/SW" "x2/floating" 0.792556
-cap "x5[3]/VDD" "x5[3]/delay_signal" 10.1725
-cap "x4[0]/VSS" "x5[3]/floating" 63.7857
-cap "x2/floating" "x5[3]/VDD" 1.51678
-cap "x5[3]/SW" "XM46/a_15_n42#" 0.0620599
-cap "x5[3]/delay_signal" "x5[3]/floating" 203.599
-cap "x5[3]/VDD" "XM1/a_n81_n130#" 52.4327
+cap "x5[3]/delay_signal" "x5[2]/VDD" 10.1725
+cap "XM48/a_33_n68#" "x5[3]/SW" 0.0631077
 cap "x5[3]/SW" "x2/SW" 2.66817
-cap "x2/floating" "x5[3]/floating" 220.577
-cap "XM1/a_n125_n42#" "XM46/a_15_n42#" 6.97637
-cap "XM1/a_n81_n130#" "x5[3]/floating" 19.9442
-cap "x2/SW" "x5[3]/VDD" -0.208496
-cap "x5[3]/VDD" "XM46/a_15_n42#" 30.3345
-cap "x5[3]/SW" "x5[3]/VDD" -28.0412
+cap "x4[0]/VSS" "x5[2]/VDD" -33.4566
+cap "x5[2]/VDD" "XM48/a_63_n42#" 30.3345
+cap "x5[3]/floating" "x5[3]/SW" 37.9889
+cap "x5[3]/floating" "x2/SW" 0.62713
+cap "XM48/a_33_n68#" "x5[3]/floating" 19.9442
 cap "x5[3]/delay_signal" "x4[0]/VSS" -2.0819
+cap "x5[3]/delay_signal" "XM48/a_63_n42#" 2.01862
+cap "x4[0]/VSS" "XM48/a_63_n42#" 37.2175
+cap "x5[2]/VDD" "XM15/a_15_n42#" 2.36818
+cap "x3[1]/floating" "x5[2]/VDD" 0.0351878
+cap "x2/floating" "x5[3]/SW" 0.792556
+cap "x2/floating" "x5[3]/floating" 220.577
+cap "x5[3]/SW" "x5[2]/VDD" -28.0412
+cap "x5[2]/VDD" "x2/SW" -0.208496
+cap "XM48/a_33_n68#" "x5[2]/VDD" 52.4327
+cap "x4[0]/VSS" "XM15/a_15_n42#" 0.747454
+cap "XM15/a_15_n42#" "XM48/a_63_n42#" 6.97637
+cap "x5[3]/floating" "x5[2]/VDD" 698.963
+cap "x5[3]/delay_signal" "x5[3]/SW" 1.47527
+cap "x5[3]/delay_signal" "XM48/a_33_n68#" 14.6344
+cap "x4[0]/VSS" "x5[3]/SW" 0.324084
+cap "x5[3]/SW" "XM48/a_63_n42#" 0.0620599
+cap "XM48/a_33_n68#" "x4[0]/VSS" 12.9775
+cap "XM48/a_33_n68#" "XM48/a_63_n42#" 14.464
+cap "x5[3]/delay_signal" "x5[3]/floating" 203.599
+cap "x5[3]/floating" "XM48/a_63_n42#" 13.2415
+cap "x5[3]/floating" "x4[0]/VSS" 63.7857
+cap "x2/floating" "x5[2]/VDD" 1.51678
+cap "x5[3]/delay_signal" "x2/floating" 0.626929
 merge "XM15/a_15_n42#" "XM13/a_15_n42#" -192.473 0 0 0 0 0 0 0 0 -4872 -284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3128 -252 -4232 -552 0 0 0 0 0 0 0 0 0 0
 merge "XM13/a_15_n42#" "XM1/a_63_n42#"
 merge "XM1/a_63_n42#" "XM1/a_n125_n42#"
 merge "XM1/a_n125_n42#" "m1_15709_1421#"
-merge "XM48/w_n161_n79#" "XM47/a_n73_n42#" -29360.9 0 0 0 0 -8168576 -43948 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -42379 -3170 -63832 -3906 -33847 -2084 -38046 -2210 -415879 -13350 0 0 0 0
+merge "XM48/w_n161_n79#" "XM47/a_n73_n42#" -29532.8 0 0 0 0 -8169298 -43986 0 0 -243 -168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45408 -3746 -63832 -3906 -33847 -2084 -38046 -2210 -415879 -13350 0 0 0 0
 merge "XM47/a_n73_n42#" "XM47/w_n110_n80#"
 merge "XM47/w_n110_n80#" "XM46/w_n110_n80#"
 merge "XM46/w_n110_n80#" "XM1/a_n33_n42#"
@@ -611,9 +612,9 @@ merge "x10/VPB" "w_9453_2146#"
 merge "w_9453_2146#" "x8/vdd"
 merge "x8/vdd" "li_9938_2868#"
 merge "li_9938_2868#" "VDD"
-merge "x6/SW" "x11/Y" -229.186 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -2545 -204 0 0 0 0 0 0 0 0 0 0
+merge "x6/SW" "x11/Y" -216.676 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -2545 -204 0 0 0 0 0 0 0 0 0 0
 merge "x11/Y" "li_9566_2089#"
-merge "XM47/a_n15_n73#" "XM46/a_n15_n73#" -808.678 0 0 0 0 0 0 0 0 -27492 -1970 -28248 -2156 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -660 -284 0 0 0 0 -1800 -436 0 0 0 0 0 0 0 0 0 0
+merge "XM47/a_n15_n73#" "XM46/a_n15_n73#" -823.707 0 0 0 0 0 0 0 0 -27492 -1970 -28248 -2156 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -660 -284 0 0 0 0 -1800 -436 0 0 0 0 0 0 0 0 0 0
 merge "XM46/a_n15_n73#" "XM15/a_n15_n69#"
 merge "XM15/a_n15_n69#" "XM13/a_n15_n69#"
 merge "XM13/a_n15_n69#" "x5[0]/delay_signal"
@@ -635,7 +636,7 @@ merge "x4[3]/delay_signal" "x7/delay_signal"
 merge "x7/delay_signal" "x6/delay_signal"
 merge "x6/delay_signal" "x9/output_stack"
 merge "x9/output_stack" "x8/output_stack"
-merge "x8/output_stack" "a_10572_1690#"
+merge "x8/output_stack" "Uc"
 merge "XM48/a_33_n68#" "XM48/a_n81_n139#" -468.408 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8274 -662 0 0 -2244 -200 -5560 -544 0 0 0 0 0 0 0 0 0 0
 merge "XM48/a_n81_n139#" "XM46/a_n73_n42#"
 merge "XM46/a_n73_n42#" "XM13/a_n73_n42#"
@@ -643,23 +644,7 @@ merge "XM13/a_n73_n42#" "XM1/a_33_n68#"
 merge "XM1/a_33_n68#" "OUT"
 merge "OUT" "XM1/a_n81_n130#"
 merge "XM1/a_n81_n130#" "a_15765_1577#"
-merge "XM48/a_63_n42#" "XM48/a_n125_n42#" -192.582 0 0 0 0 0 0 0 0 0 0 -4872 -284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3128 -252 -4462 -562 0 0 0 0 0 0 0 0 0 0
-merge "XM48/a_n125_n42#" "XM47/a_15_n42#"
-merge "XM47/a_15_n42#" "XM46/a_15_n42#"
-merge "XM46/a_15_n42#" "m1_15709_1756#"
-merge "x5[0]/floating" "x5[1]/floating" -9352.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -506352 -16268 -506352 -16268 0 0 0 0
-merge "x5[1]/floating" "x5[2]/floating"
-merge "x5[2]/floating" "x5[3]/floating"
-merge "x5[3]/floating" "x5[4]/floating"
-merge "x5[4]/floating" "x5[5]/floating"
-merge "x5[5]/floating" "x5[7]/floating"
-merge "x5[7]/floating" "x5[6]/floating"
-merge "x4[0]/floating" "x4[1]/floating" -4877.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -217008 -6972 -217008 -6972 0 0 0 0
-merge "x4[1]/floating" "x4[2]/floating"
-merge "x4[2]/floating" "x4[3]/floating"
-merge "x9/input_stack" "x8/input_stack" -295.583 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3060 -264 0 0 0 0 -1702 -166 0 0 0 0 0 0 0 0 0 0
-merge "x8/input_stack" "IN"
-merge "XM48/VSUBS" "XM48/a_n33_n42#" -4408.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5308 -754 -31072 -1862 0 0 -17952 -1072 -371208 -11864 0 0 0 0
+merge "XM48/VSUBS" "XM48/a_n33_n42#" -4599.69 0 0 0 0 0 0 0 0 0 0 0 -208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6154 -1226 -31072 -1862 0 0 -17952 -1072 -371208 -11864 0 0 0 0
 merge "XM48/a_n33_n42#" "XM47/VSUBS"
 merge "XM47/VSUBS" "XM46/VSUBS"
 merge "XM46/VSUBS" "XM15/VSUBS"
@@ -690,9 +675,25 @@ merge "x10/VNB" "x10/VGND"
 merge "x10/VGND" "x9/vss"
 merge "x9/vss" "VSS"
 merge "VSS" "x8/VSUBS"
-merge "x8/VSUBS" "a_9370_1712#"
-merge "x10/A" "code[3]" -61.1886 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x5[0]/SW" "x5[1]/SW" -834.665 0 0 0 0 0 0 0 0 0 0 -2688 -208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2756 -212 -21344 -1664 0 0 0 0 0 0 0 0 0 0
+merge "x8/VSUBS" "pstack_sub"
+merge "XM48/a_63_n42#" "XM48/a_n125_n42#" -192.582 0 0 0 0 0 0 0 0 0 0 -4872 -284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3128 -252 -4462 -562 0 0 0 0 0 0 0 0 0 0
+merge "XM48/a_n125_n42#" "XM47/a_15_n42#"
+merge "XM47/a_15_n42#" "XM46/a_15_n42#"
+merge "XM46/a_15_n42#" "m1_15709_1756#"
+merge "x5[0]/floating" "x5[1]/floating" -9352.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -506352 -16268 -506352 -16268 0 0 0 0
+merge "x5[1]/floating" "x5[2]/floating"
+merge "x5[2]/floating" "x5[3]/floating"
+merge "x5[3]/floating" "x5[4]/floating"
+merge "x5[4]/floating" "x5[5]/floating"
+merge "x5[5]/floating" "x5[7]/floating"
+merge "x5[7]/floating" "x5[6]/floating"
+merge "x4[0]/floating" "x4[1]/floating" -4877.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -217008 -6972 -217008 -6972 0 0 0 0
+merge "x4[1]/floating" "x4[2]/floating"
+merge "x4[2]/floating" "x4[3]/floating"
+merge "x9/input_stack" "x8/input_stack" -296.212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3060 -264 0 0 0 0 -1702 -166 0 0 0 0 0 0 0 0 0 0
+merge "x8/input_stack" "IN"
+merge "x10/A" "code[3]" -60.8934 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x5[0]/SW" "x5[1]/SW" -822.327 0 0 0 0 0 0 0 0 0 0 -2688 -208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2756 -212 -21344 -1664 0 0 0 0 0 0 0 0 0 0
 merge "x5[1]/SW" "x5[2]/SW"
 merge "x5[2]/SW" "x5[3]/SW"
 merge "x5[3]/SW" "x5[4]/SW"
@@ -706,7 +707,7 @@ merge "x4[0]/SW" "x4[1]/SW" -371.337 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x4[1]/SW" "x4[2]/SW"
 merge "x4[2]/SW" "x4[3]/SW"
 merge "x4[3]/SW" "code[2]"
-merge "x7/SW" "x11/A" -200.424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1537 -160 -2198 -200 0 0 0 0 0 0 0 0 0 0
+merge "x7/SW" "x11/A" -200.302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1537 -160 -2198 -200 0 0 0 0 0 0 0 0 0 0
 merge "x11/A" "code_offset"
 merge "x3[0]/SW" "x3[1]/SW" -175.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5244 -412 0 0 0 0 0 0 0 0 0 0
 merge "x3[1]/SW" "code[1]"

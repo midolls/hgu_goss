@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -55,7 +55,7 @@ C {devices/gnd.sym} 210 -140 0 0 {name=l8 lab=GND}
 C {devices/gnd.sym} 200 -500 1 0 {name=l9 lab=GND}
 C {devices/vdd.sym} 200 -520 3 0 {name=l10 lab=VDD}
 C {devices/vsource.sym} 210 -170 0 0 {name=V4 value=1.8}
-C {../xschem/hgu_clk_sample.sym} 350 -430 0 0 {name=x1}
+C {../xschem/hgu_clk_sample_RC.sym} 350 -430 0 0 {name=x1}
 C {devices/gnd.sym} 200 -440 1 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 200 -460 1 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 200 -480 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
@@ -107,11 +107,13 @@ C {devices/vdd.sym} 200 -340 3 0 {name=l35 lab=VDD}
 C {devices/lab_pin.sym} 200 -400 0 0 {name=p3 sig_type=std_logic lab=cap_ctrl_code[0:3]}
 C {devices/lab_pin.sym} 200 -380 0 0 {name=p5 sig_type=std_logic lab=cap_ctrl_code[0:3]}
 C {devices/lab_pin.sym} 200 -360 0 0 {name=p6 sig_type=std_logic lab=cap_ctrl_code[0:3]}
-C {devices/simulator_commands_shown.sym} 110 -980 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 110 -960 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_delay_no_code_flat.spice
+*.include /foss/designs/hgu_goss/hgu/spice/hgu_delay_no_code_flat_no_cap.spice
 "}

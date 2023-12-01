@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -8,12 +8,7 @@ E {}
 T {5.11e-15 F} 360 -270 2 0 0.2 0.2 {}
 N 280 -330 280 -310 {
 lab=VDD}
-N 280 -250 280 -230 {
-<<<<<<< HEAD
-lab=floating}
-=======
-lab=#net1}
->>>>>>> 44053179fce1b15a659ce5ddf31ed98717972888
+N 280 -250 280 -230 {lab=floating}
 C {devices/lab_pin.sym} 280 -200 0 0 {name=p32 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 280 -170 0 0 {name=p1 sig_type=std_logic lab=DELAY_SIGNAL}
 C {devices/lab_pin.sym} 280 -330 1 0 {name=p2 sig_type=std_logic lab=VDD}

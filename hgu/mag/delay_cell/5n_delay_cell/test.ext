@@ -1,33 +1,21 @@
-timestamp 1699172603
+timestamp 1700648830
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use hgu_sw_cap_pmos hgu_sw_cap_pmos_0 -1 0 2021 0 -1 1856
-use hgu_sw_cap_pmos hgu_sw_cap_pmos_1 1 0 -369 0 -1 1856
-node "m1_546_173#" 2 253.606 546 173 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24054 1178 0 0 0 0 0 0 0 0 0 0
-node "w_591_49#" 2494 8.064 591 49 nw 0 0 0 0 2688 232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "w_591_49#" "m1_546_173#" 0.853934
-cap "hgu_sw_cap_pmos_0/SW" "hgu_sw_cap_pmos_1/delay_signal" 1.57732
-cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_0/SW" 17.9176
-cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/VDD" 1.442
-cap "hgu_sw_cap_pmos_0/a_872_1723#" "hgu_sw_cap_pmos_1/delay_signal" 1.48849
-cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_0/a_872_1723#" 1.442
-cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_1/delay_signal" -0.106892
-cap "hgu_sw_cap_pmos_0/VDD" "hgu_sw_cap_pmos_0/SW" 18.5092
-cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/SW" 20.7177
-cap "hgu_sw_cap_pmos_0/delay_signal" "hgu_sw_cap_pmos_0/VDD" -0.106892
-cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/delay_signal" 1.48849
-cap "hgu_sw_cap_pmos_0/VDD" "hgu_sw_cap_pmos_0/a_872_1723#" -1.0509
-cap "hgu_sw_cap_pmos_1/a_872_1723#" "hgu_sw_cap_pmos_0/a_872_1723#" 474.832
-cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_0/VDD" 68.2017
-cap "hgu_sw_cap_pmos_1/VDD" "hgu_sw_cap_pmos_1/a_872_1723#" -1.29793
-cap "hgu_sw_cap_pmos_0/delay_signal" "hgu_sw_cap_pmos_0/SW" 1.56573
-cap "hgu_sw_cap_pmos_0/a_872_1723#" "hgu_sw_cap_pmos_0/SW" 19.8515
-merge "hgu_sw_cap_pmos_1/VSUBS" "hgu_sw_cap_pmos_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "hgu_sw_cap_pmos_0/VSUBS" "VSUBS"
-merge "hgu_sw_cap_pmos_1/SW" "hgu_sw_cap_pmos_0/SW" -133.556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4431 -376 0 0 0 0 0 0 0 0 0 0
-merge "hgu_sw_cap_pmos_0/SW" "m1_546_173#"
-merge "hgu_sw_cap_pmos_1/VDD" "w_591_49#" -71.4835 0 0 0 0 -2688 -232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "output" 12 790 786 828 1372 m1
+port "input" 10 692 904 762 1232 m1
+port "vdd" 13 660 1382 696 1533 li
+port "vss" 15 668 674 702 792 li
+node "output" 564 300.565 790 786 m1 0 0 0 0 0 0 0 0 4872 284 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 29898 1458 0 0 0 0 0 0 0 0 0 0
+node "input" 816 345.303 692 904 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17022 1082 0 0 4488 400 24990 866 0 0 0 0 0 0 0 0 0 0
+node "vdd" 6984 1065.22 660 1382 li 0 0 0 0 220284 1888 0 0 49776 2928 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59272 3402 3864 260 0 0 0 0 0 0 0 0 0 0
+substrate "vss" 0 0 668 674 li 0 0 0 0 0 0 0 0 4872 284 48552 2856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59472 3376 3864 260 0 0 0 0 0 0 0 0 0 0
+cap "vdd" "output" 165.721
+cap "output" "input" 238.085
+cap "vdd" "input" 192.019
+device msubckt sky130_fd_pr__nfet_01v8 714 780 715 781 l=30 w=84 "vss" "input" 60 0 "vss" 84 4872,284 "output" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 707 1300 708 1301 l=30 w=84 "vdd" "input" 60 0 "vdd" 84 4872,284 "output" 84 4872,284

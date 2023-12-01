@@ -1,0 +1,101 @@
+* NGSPICE file created from stack_test_inv_flat.ext - technology: sky130A
+
+.subckt stack_test_inv_flat vdd output input vss
+X0 a_118_854# input a_30_854# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X1 a_172_1721# input a_84_1583# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X2 a_190_440# input a_118_578# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X3 a_118_440# input a_30_302# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X4 output input a_118_992# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X5 a_118_716# input a_30_578# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X6 a_190_164# input a_118_164# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X7 vdd input a_84_1859# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X8 a_118_302# input a_30_302# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X9 a_190_716# input a_118_854# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X10 a_118_26# input a_30_26# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X11 a_172_1445# input a_84_1583# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X12 a_172_1721# input a_84_1859# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X13 a_190_440# input a_118_440# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X14 a_190_716# input a_118_716# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X15 a_118_578# input a_30_578# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X16 a_172_1445# input a_84_1307# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X17 a_118_992# input a_30_854# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X18 a_190_164# input a_118_302# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X19 a_118_164# input a_30_26# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X20 vss input a_118_26# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X21 output input a_84_1307# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+C0 a_118_716# input 0.00142f
+C1 output a_190_716# 0.0323f
+C2 output a_190_440# 3.02e-19
+C3 a_190_164# a_190_440# 0.0316f
+C4 a_118_164# input 2.82e-19
+C5 a_118_854# input 0.00254f
+C6 vdd a_190_716# 4.6e-20
+C7 vdd a_190_440# 3.03e-20
+C8 a_190_716# input 0.0173f
+C9 a_190_440# input 0.0173f
+C10 a_118_302# a_30_302# 0.00227f
+C11 vdd a_84_1859# 0.191f
+C12 a_190_164# output 1.58e-19
+C13 a_118_26# input 2.15e-19
+C14 a_84_1859# input 0.0112f
+C15 a_118_440# input 5.55e-19
+C16 vdd output 0.0901f
+C17 a_172_1721# a_84_1583# 0.0704f
+C18 output input 0.0528f
+C19 a_190_164# input 0.0173f
+C20 a_172_1445# a_84_1307# 0.0704f
+C21 vdd input 0.238f
+C22 a_118_992# output 0.00227f
+C23 a_172_1445# a_84_1583# 0.0704f
+C24 a_118_992# input 0.00413f
+C25 a_118_302# a_190_164# 0.00227f
+C26 a_118_302# input 3.86e-19
+C27 a_30_578# a_30_854# 0.0316f
+C28 a_172_1445# a_172_1721# 0.0316f
+C29 output a_84_1307# 0.0704f
+C30 vdd a_84_1307# 0.111f
+C31 a_118_578# a_30_578# 0.00227f
+C32 a_84_1307# input 0.0356f
+C33 a_30_302# a_30_578# 0.0316f
+C34 a_118_854# a_30_854# 0.00227f
+C35 a_84_1859# a_84_1583# 0.0316f
+C36 a_190_716# a_30_854# 0.0388f
+C37 a_30_302# a_30_26# 0.0316f
+C38 a_118_716# a_30_578# 0.00227f
+C39 vdd a_84_1583# 0.111f
+C40 a_84_1583# input 0.0117f
+C41 a_190_716# a_30_578# 0.0388f
+C42 a_190_440# a_118_578# 0.00227f
+C43 a_190_440# a_30_578# 0.0388f
+C44 a_118_164# a_30_26# 0.00227f
+C45 a_84_1859# a_172_1721# 0.0704f
+C46 a_30_302# a_190_440# 0.0388f
+C47 output a_172_1721# 2.38e-19
+C48 output a_30_854# 0.0388f
+C49 a_190_716# a_118_716# 0.00227f
+C50 vdd a_172_1721# 0.142f
+C51 vdd a_30_854# 0.00414f
+C52 a_190_716# a_118_854# 0.00227f
+C53 a_172_1721# input 0.0112f
+C54 input a_30_854# 0.0397f
+C55 a_30_302# a_118_440# 0.00227f
+C56 a_190_440# a_190_716# 0.0316f
+C57 a_118_26# a_30_26# 0.00227f
+C58 a_30_302# a_190_164# 0.0388f
+C59 vdd a_30_578# 6.51e-20
+C60 output a_172_1445# 0.0322f
+C61 a_118_992# a_30_854# 0.00227f
+C62 a_30_302# vdd 1.06e-20
+C63 a_118_578# input 8.52e-19
+C64 a_30_578# input 0.0176f
+C65 a_190_164# a_30_26# 0.0388f
+C66 a_30_302# input 0.0175f
+C67 vdd a_172_1445# 0.106f
+C68 vdd a_30_26# 6.23e-21
+C69 a_172_1445# input 0.0119f
+C70 a_84_1307# a_84_1583# 0.0316f
+C71 a_118_164# a_190_164# 0.00227f
+C72 input a_30_26# 0.0174f
+C73 a_118_440# a_190_440# 0.00227f
+.ends
+

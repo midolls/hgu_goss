@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699766282
+timestamp 1701237741
 << nwell >>
 rect 11513 8777 11713 8794
 rect 11513 8765 11968 8777
@@ -820,8 +820,6 @@ flabel metal2 13013 -1908 13055 -651 0 FreeSans 320 0 0 0 vdd_sw_b[6]
 port 82 nsew
 flabel metal2 10621 -1908 10663 -652 0 FreeSans 320 0 0 0 vdd_sw_b[7]
 port 83 nsew
-flabel space 10504 -1881 10546 -625 0 FreeSans 320 0 0 0 vdd_sw_b[7]
-port 84 nsew
 flabel metal1 13484 10382 13510 10408 0 FreeSans 320 0 0 0 sample_delay_cap_ctrl_code[9]
 port 88 nsew
 flabel metal1 13486 10326 13512 10352 0 FreeSans 320 0 0 0 sample_delay_cap_ctrl_code[8]

@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -231,8 +231,8 @@ C {devices/vdd.sym} 720 -980 0 0 {name=l26 lab=VDD}
 C {devices/lab_wire.sym} 1320 -1270 0 0 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1320 -530 2 1 {name=p3 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 1350 -1270 0 0 {name=p7 sig_type=std_logic lab=VSS}
-C {devices/gnd.sym} 270 -980 2 0 {name=l23 lab=GND}
-C {devices/gnd.sym} 270 -820 0 0 {name=l5 lab=GND}
+C {devices/gnd.sym} 510 -980 2 0 {name=l23 lab=GND}
+C {devices/gnd.sym} 510 -820 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 2070 -920 2 0 {name=p2 sig_type=std_logic lab=COMP_RESULT}
 C {devices/lab_pin.sym} 1970 -830 2 0 {name=p33 sig_type=std_logic lab=READY}
 C {devices/lab_pin.sym} 1870 -790 2 0 {name=p34 sig_type=std_logic lab=sar_clk}
@@ -290,7 +290,7 @@ C {devices/noconn.sym} 2980 -620 2 0 {name=l42}
 C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 50ps 250ns
+.tran 10ps 102.4us
 
 .control
 	run
@@ -298,7 +298,7 @@ C {devices/code.sym} 240 -620 0 0 {name=spice1 only_toplevel=false value="
 
 	
 .endc
-.save all
+.save sample_clk vip vin tah_vp tah_vn \\"result[0]\\" \\"result[1]\\" \\"result[2]\\" \\"result[3]\\" \\"result[4]\\" \\"result[5]\\" \\"result[6]\\" \\"result[7]\\"
 
 "}
 C {devices/vdd.sym} 420 -590 0 0 {name=l43 lab=VDD}
@@ -350,8 +350,8 @@ C {devices/lab_pin.sym} 1150 -1520 1 0 {name=p52 sig_type=std_logic lab=result2_
 C {devices/lab_pin.sym} 1180 -1520 1 0 {name=p53 sig_type=std_logic lab=result2_sw[3]}
 C {devices/lab_pin.sym} 1210 -1520 1 0 {name=p54 sig_type=std_logic lab=result2_sw[2]}
 C {devices/lab_pin.sym} 1240 -1520 1 0 {name=p55 sig_type=std_logic lab=result2_sw[1]}
-C {hgu_cdac_sw_buffer_RC.sym} 1150 -1420 0 0 {name=x6}
-C {hgu_cdac_sw_buffer_RC.sym} 1520 -1420 0 1 {name=x7}
+C {hgu_cdac_sw_buffer.sym} 1150 -1420 0 0 {name=x6}
+C {hgu_cdac_sw_buffer.sym} 1520 -1420 0 1 {name=x7}
 C {devices/lab_wire.sym} 1060 -1300 0 0 {name=p56 sig_type=std_logic lab=sw6
 }
 C {devices/lab_wire.sym} 1090 -1300 0 0 {name=p57 sig_type=std_logic lab=sw5
@@ -376,8 +376,8 @@ C {devices/lab_pin.sym} 1150 -280 3 0 {name=p95 sig_type=std_logic lab=result2_s
 C {devices/lab_pin.sym} 1180 -280 3 0 {name=p96 sig_type=std_logic lab=result2_sw_b[3]}
 C {devices/lab_pin.sym} 1210 -280 3 0 {name=p97 sig_type=std_logic lab=result2_sw_b[2]}
 C {devices/lab_pin.sym} 1240 -280 3 0 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
-C {hgu_cdac_sw_buffer_RC.sym} 1150 -380 2 1 {name=x8}
-C {hgu_cdac_sw_buffer_RC.sym} 1520 -380 2 0 {name=x9}
+C {hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
+C {hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
 C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1380 -530 2 1 {name=p17 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1610 -1300 0 1 {name=p19 sig_type=std_logic lab=swd6
@@ -392,8 +392,8 @@ C {devices/lab_wire.sym} 1490 -1300 0 1 {name=p63 sig_type=std_logic lab=swd2
 }
 C {devices/gnd.sym} 1860 -430 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 1860 -460 0 0 {name=V1 value=0.9}
-C {devices/vsource.sym} 270 -850 0 1 {name=V2 value="PULSE(1.8 0.9 0 114n 114n 10p 228n)"}
-C {devices/vsource.sym} 270 -950 2 0 {name=V4 value="PULSE(0.9 1.8 0 114n 114n 10p 228n)"}
+C {devices/vsource.sym} 510 -850 0 1 {name=V2 value="PULSE(1.8 0.9 0 51.2u 51.2u 10p 102.4u)"}
+C {devices/vsource.sym} 510 -950 2 0 {name=V4 value="PULSE(0.9 1.8 0 51.2u 51.2u 10p 102.4u)"}
 C {devices/vdd.sym} 2210 -320 1 0 {name=l11 lab=async_resetb_delay_cap_ctrl_code[3]}
 C {devices/vdd.sym} 2320 -320 1 0 {name=l12 lab=async_resetb_delay_cap_ctrl_code[2]}
 C {devices/vdd.sym} 2430 -440 1 0 {name=l13 lab=async_resetb_delay_cap_ctrl_code[1]}
@@ -524,8 +524,8 @@ C {devices/gnd.sym} 430 -980 2 0 {name=l88 lab=GND}
 C {devices/gnd.sym} 430 -820 0 0 {name=l89 lab=GND}
 C {devices/vsource.sym} 430 -850 0 1 {name=V23 value=0.675}
 C {devices/vsource.sym} 430 -950 2 0 {name=V24 value=1.125}
-C {devices/gnd.sym} 510 -980 2 0 {name=l90 lab=GND}
-C {devices/gnd.sym} 510 -820 0 0 {name=l91 lab=GND}
-C {devices/vsource.sym} 510 -850 0 1 {name=V31 value=0.9}
-C {devices/vsource.sym} 510 -950 2 0 {name=V32 value=0.9}
+C {devices/gnd.sym} 140 -980 2 0 {name=l90 lab=GND}
+C {devices/gnd.sym} 140 -820 0 0 {name=l91 lab=GND}
+C {devices/vsource.sym} 140 -850 0 1 {name=V31 value=0.9}
+C {devices/vsource.sym} 140 -950 2 0 {name=V32 value=0.9}
 C {devices/lab_pin.sym} 2460 -760 0 0 {name=p79 sig_type=std_logic lab=VDD}

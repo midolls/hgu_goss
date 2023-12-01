@@ -14,10 +14,10 @@ node "floating" 327 1232 473 1709 v3 0 0 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0 0 0 
 node "SW" 343 95.7071 928 1642 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8646 550 0 0 2244 200 2668 208 0 0 0 0 0 0 0 0 0 0
 node "VDD" 3313 3482.3 372 546 m4 0 0 0 0 874102 4084 0 0 36584 1212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44220 1472 44220 1472 44220 1472 169296 5600 170033 5604 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VDD" "delay_signal" 0.359676
-cap "VDD" "floating" 5504.43
-cap "floating" "delay_signal" 5.98943
-cap "VDD" "SW" 118.002
 cap "SW" "delay_signal" 1.34093
+cap "floating" "VDD" 5504.43
 cap "SW" "floating" 33.4677
+cap "floating" "delay_signal" 5.98943
+cap "SW" "VDD" 118.002
+cap "delay_signal" "VDD" 0.359676
 device msubckt sky130_fd_pr__pfet_01v8 930 1723 931 1724 l=30 w=84 "VDD" "SW" 60 0 "floating" 84 4872,284 "delay_signal" 84 4872,284

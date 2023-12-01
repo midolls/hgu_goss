@@ -169,16 +169,16 @@ x x10.A a_n397_1077# vss vdd s=2604,146 d=2772,150 l=30 w=84 x=-334 y=1077 sky13
 x async_setb_delay_ctrl_code[2] x2.x4[3].floating x2.x9.output_stack vss s=4872,284 d=3864,176 l=30 w=84 x=-4484 y=-1946 sky130_fd_pr__nfet_01v8
 x async_setb_delay_ctrl_code[1] x2.x9.output_stack x2.x3[1].floating vss s=3864,176 d=4872,284 l=30 w=84 x=-1812 y=-1946 sky130_fd_pr__nfet_01v8
 x ready a_n6207_n1487# a_n6135_n1625# vss s=1764,126 d=4872,284 l=30 w=84 x=-6164 y=-1486 sky130_fd_pr__nfet_01v8
-C x4.x10.Y vdd 2.7
+C x4.x5[7].floating vdd 44.0
+C vdd x2.x6.floating 5.9
+C vdd x2.x10.Y 2.7
+C async_setb_delay_ctrl_code[0] async_resetb_delay_ctrl_code[0] 2.9
+C vdd x4.x10.Y 2.7
+C vdd x2.x5[7].floating 44.0
+C vdd x4.x6.floating 5.8
+C async_resetb_delay_ctrl_code[0] async_resetb_delay_ctrl_code[1] 2.5
 C async_clk_sar vdd 3.2
 C async_setb_delay_ctrl_code[0] async_setb_delay_ctrl_code[1] 2.5
-C x2.x6.floating vdd 5.9
-C async_setb_delay_ctrl_code[0] async_resetb_delay_ctrl_code[0] 2.9
-C x4.x6.floating vdd 5.8
-C x2.x5[7].floating vdd 44.0
-C x2.x10.Y vdd 2.7
-C x4.x5[7].floating vdd 44.0
-C async_resetb_delay_ctrl_code[1] async_resetb_delay_ctrl_code[0] 2.5
 R a_n6270_n3290# 1308
 R a_n6182_n3152# 1308
 R a_n6270_n3014# 1308
@@ -472,7 +472,7 @@ R vdd 79559
 = vdd x27.VPB
 = vdd x9.VPB
 = vdd x27.D
-R vss 67584
+R vss 67585
 = vss x2.x3[0].VSS
 = vss x2.x3[1].VSS
 = vss x2.x4[0].VSS
