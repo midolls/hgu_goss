@@ -1,8 +1,6 @@
 * NGSPICE file created from hgu_sarlogic_8bit_logic_flat.ext - technology: sky130A
 
-.subckt hgu_sarlogic_8bit_logic_flat sel_bit[0] sel_bit[1] reset eob comparator_out
-+ D[7] D[6] check[6] D[5] check[0] check[5] check[1] check[4] check[2] check[3] D[2]
-+ D[3] D[1] D[4] D[0] clk_sar VSS VDD
+.subckt hgu_sarlogic_8bit_logic_RC sel_bit[0] sel_bit[1] eob clk_sar D[0] D[1] D[2] D[3] D[4] D[5] D[6] D[7] comparator_out check[0] check[1] check[2] check[3] check[4] check[5] check[6] reset VDD VSS
 X0 VDD.t730 a_10680_2340# D[3].t1 VDD.t729 sky130_fd_pr__pfet_01v8_hvt ad=0.149 pd=1.33 as=0.26 ps=2.52 w=1 l=0.15
 X1 VDD.t198 a_8289_4086# check[1].t0 VDD.t197 sky130_fd_pr__pfet_01v8_hvt ad=0.149 pd=1.33 as=0.26 ps=2.52 w=1 l=0.15
 X2 VDD.t340 D[0].t2 a_8236_3239# VDD.t339 sky130_fd_pr__pfet_01v8_hvt ad=0.0864 pd=0.91 as=0.166 ps=1.8 w=0.64 l=0.15

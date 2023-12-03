@@ -5,8 +5,7 @@ K {}
 V {}
 S {}
 E {}
-N 470 -620 600 -620 {
-lab=result[0:7]}
+N 470 -620 600 -620 {lab=result[0:7]}
 N 1050 -620 1520 -620 {
 lab=VSS}
 N 1050 -320 1520 -320 {
@@ -17,10 +16,8 @@ N 1040 -920 1920 -920 {
 lab=VSS}
 N 1660 -620 2130 -620 {
 lab=VSS}
-N 60 -580 170 -580 {
-lab=#net1}
-N 60 -560 170 -560 {
-lab=#net2}
+N 60 -580 170 -580 {lab=vip}
+N 60 -560 170 -560 {lab=vin}
 C {/foss/designs/hgu_goss/hgu/xschem/hgu_top_block.sym} 320 -500 0 0 {name=x1}
 C {devices/lab_pin.sym} 470 -620 2 0 {name=p67 sig_type=std_logic lab=result[0:7]}
 C {devices/capa.sym} 630 -620 3 0 {name=C2
@@ -42,7 +39,7 @@ value="
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_retimer_flat_RC.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_sw_ctrl_flat_RC.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_clk_async_flat_RC.spice
-.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_sample_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_sample_flat.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_sw_buffer_flat_RC.spice
 "}
 C {devices/vdd.sym} 1100 -860 1 0 {name=l4 lab=cap_ctrl_code[15]}
@@ -170,16 +167,16 @@ C {devices/noconn.sym} 2040 -560 2 0 {name=l65}
 C {devices/code.sym} 190 -270 0 0 {name=spice2 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 10ps 250ns
+.tran 100ps 500ns
 
 .control
 	run
-	plot V(sample_clk) V(vip) V(vin) V(vip)-V(vin)+0.9 V(tah_vp) V(tah_vn) V(tah_vp)-V(tah_vn) V(vip)-V(vin)
+	plot V(x1.sample_clk) V(vip) V(vin) V(vip)-V(vin)+0.9 V(x1.tah_vp) V(x1.tah_vn) V(x1.tah_vp)-V(x1.tah_vn) V(vip)-V(vin) \\"result[0]\\"+2 \\"result[1]\\"+4 \\"result[2]\\"+6 \\"result[3]\\"+8 \\"result[4]\\"+10 \\"result[5]\\"+12 \\"result[6]\\"+14 \\"result[7]\\"+16
 
 	
 .endc
-.save sample_clk vip vin tah_vp tah_vn \\"result[0]\\" \\"result[1]\\" \\"result[2]\\" \\"result[3]\\" \\"result[4]\\" \\"result[5]\\" \\"result[6]\\" \\"result[7]\\"
-
+.save x1.sample_clk vip vin x1.tah_vp x1.tah_vn \\"result[0]\\" \\"result[1]\\" \\"result[2]\\" \\"result[3]\\" \\"result[4]\\" \\"result[5]\\" \\"result[6]\\" \\"result[7]\\" \\"x1.x1.sar_result_temp[0]\\" \\"x1.x1.sar_result_temp[1]\\" \\"x1.x1.sar_result_temp[2]\\" \\"x1.x1.sar_result_temp[3]\\" \\"x1.x1.sar_result_temp[4]\\" \\"x1.x1.sar_result_temp[5]\\" \\"x1.x1.sar_result_temp[6]\\" \\"x1.x1.sar_result_temp[7]\\"
+*.save all
 "}
 C {devices/vdd.sym} 370 -240 0 0 {name=l92 lab=VDD}
 C {devices/gnd.sym} 370 -180 0 0 {name=l93 lab=GND}
@@ -189,11 +186,11 @@ C {devices/gnd.sym} 420 -180 0 0 {name=l95 lab=GND}
 C {devices/vsource.sym} 420 -210 0 0 {name=V34 value=0}
 C {devices/lab_pin.sym} 170 -620 0 0 {name=p68 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 170 -600 0 0 {name=p77 sig_type=std_logic lab=VSS}
-C {devices/gnd.sym} 60 -640 2 0 {name=l90 lab=GND}
-C {devices/gnd.sym} 60 -500 0 0 {name=l91 lab=GND}
-C {devices/vsource.sym} 60 -530 0 1 {name=V31 value=0.9}
-C {devices/vsource.sym} 60 -610 2 0 {name=V32 value=0.9}
-C {devices/vsource.sym} 480 -210 0 0 {name=V60 value="PULSE(0 1.8 50p 10p 10p 50n 100n)"}
+C {devices/gnd.sym} 60 -320 2 0 {name=l90 lab=GND}
+C {devices/gnd.sym} 60 -180 0 0 {name=l91 lab=GND}
+C {devices/vsource.sym} 60 -210 0 1 {name=V31 value=0.9}
+C {devices/vsource.sym} 60 -290 2 0 {name=V32 value=0.9}
+C {devices/vsource.sym} 480 -210 0 0 {name=V60 value="PULSE(0 1.8 50p 100p 100p 50n 100n)"}
 C {devices/gnd.sym} 480 -180 0 0 {name=l57 lab=GND}
 C {devices/lab_pin.sym} 480 -240 2 0 {name=p75 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 170 -540 2 1 {name=p1 sig_type=std_logic lab=EXT_CLK}
@@ -205,3 +202,13 @@ C {devices/lab_pin.sym} 170 -380 0 0 {name=p79 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 170 -480 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
 C {devices/lab_pin.sym} 170 -460 0 0 {name=p13 sig_type=std_logic lab=async_setb_delay_cap_ctrl_code[0:3]}
 C {devices/lab_pin.sym} 170 -500 0 0 {name=p72 sig_type=std_logic lab=cap_ctrl_code[0:15]}
+C {devices/lab_wire.sym} 100 -580 0 0 {name=p29 sig_type=std_logic lab=vip
+
+}
+C {devices/lab_wire.sym} 100 -560 0 0 {name=p32 sig_type=std_logic lab=vin
+
+}
+C {devices/gnd.sym} 60 -640 2 0 {name=l23 lab=GND}
+C {devices/gnd.sym} 60 -500 0 0 {name=l5 lab=GND}
+C {devices/vsource.sym} 60 -530 0 1 {name=V2 value="PULSE(1.8 0.9 0 51.2u 51.2u 10p 102.4u)"}
+C {devices/vsource.sym} 60 -610 2 0 {name=V4 value="PULSE(0.9 1.8 0 51.2u 51.2u 10p 102.4u)"}

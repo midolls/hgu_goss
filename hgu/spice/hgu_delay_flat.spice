@@ -1,6 +1,6 @@
 * NGSPICE file created from hgu_delay_flat.ext - technology: sky130A
 
-.subckt hgu_delay_flat out sample_delay_offset in sample_code2[3] sample_code3[3]
+.subckt hgu_delay_flat_RC out sample_delay_offset in sample_code2[3] sample_code3[3]
 + sample_code1[1] sample_code1[0] sample_code3[0] sample_code3[1] sample_code3[2]
 + sample_code2[1] sample_code2[2] sample_code1[2] sample_code0[2] sample_code0[1]
 + sample_code0[0] sample_code0[3] sample_code1[3] sample_code2[0] VSS VDD

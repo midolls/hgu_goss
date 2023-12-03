@@ -1,9 +1,9 @@
 * NGSPICE file created from hgu_clk_async_flat.ext - technology: sky130A
 
-.subckt hgu_clk_async_flat sample_clk eob ready delay_offset async_clk_sar async_resetb_delay_ctrl_code[2]
-+ async_resetb_delay_ctrl_code[1] async_setb_delay_ctrl_code[3] async_setb_delay_ctrl_code[1]
-+ async_setb_delay_ctrl_code[2] async_resetb_delay_ctrl_code[0] async_resetb_delay_ctrl_code[3]
-+ async_setb_delay_ctrl_code[0] vss vdd
+.subckt hgu_clk_async_RC async_clk_sar vdd vss sample_clk eob ready delay_offset     
++ async_resetb_delay_ctrl_code[0] async_resetb_delay_ctrl_code[1] async_resetb_delay_ctrl_code[2] async_resetb_delay_ctrl_code[3]
++ async_setb_delay_ctrl_code[0] async_setb_delay_ctrl_code[1] async_setb_delay_ctrl_code[2] async_setb_delay_ctrl_code[3]
+
 X0 x4.x5[7].floating.t7 x4.x10.Y.t2 x4.x9.output_stack vdd.t62 sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
 X1 x2.x9.output_stack async_setb_delay_ctrl_code[2].t0 x2.x4[3].floating vss.t42 sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
 X2 x4.x3[1].floating async_resetb_delay_ctrl_code[1].t0 x4.x9.output_stack vss.t2 sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15

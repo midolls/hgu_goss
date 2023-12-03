@@ -28,13 +28,13 @@ lab=GND bus=true}
 N 890 -70 1350 -70 {
 lab=GND}
 N 200 -410 230 -410 {
-lab=#net1 bus=true}
+lab=async_resetb_delay_cap_ctrl_code[0:3] bus=true}
 N 1080 -420 1100 -420 {
-lab=#net2 bus=true}
+lab=#net1 bus=true}
 N 200 -390 230 -390 {
-lab=#net3}
+lab=GND}
 N 1080 -400 1100 -400 {
-lab=#net4}
+lab=#net2}
 C {devices/lab_pin.sym} 530 -470 2 0 {name=p8 sig_type=std_logic lab=Vout}
 C {devices/code.sym} 80 -330 0 0 {name=spice1 only_toplevel=false value="
 
@@ -89,7 +89,7 @@ C {devices/vdd.sym} 260 -320 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} 260 -260 0 0 {name=l8 lab=GND}
 C {devices/vsource.sym} 260 -290 0 0 {name=V1 value=1.8}
 C {devices/lab_pin.sym} 150 -450 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
-C {devices/vsource.sym} 420 -240 0 0 {name=V12 value="PULSE(0 1.8 1n 5p 5p 40n 80n)"}
+C {devices/vsource.sym} 420 -240 0 0 {name=V12 value="PULSE(0 1.8 1n 500p 500p 40n 80n)"}
 C {devices/gnd.sym} 420 -210 0 0 {name=l25 lab=GND}
 C {devices/lab_pin.sym} 420 -270 0 0 {name=p3 sig_type=std_logic lab=EXT_CLK}
 C {../xschem/hgu_delay_no_code_RC.sym} 380 -440 0 0 {name=x1}
@@ -109,7 +109,7 @@ C {devices/noconn.sym} 720 -130 2 1 {name=l20}
 C {devices/noconn.sym} 610 -130 2 1 {name=l21}
 C {devices/noconn.sym} 500 -130 2 1 {name=l22}
 C {devices/noconn.sym} 390 -130 2 1 {name=l24}
-C {devices/lab_pin.sym} 60 -410 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} 200 -410 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
 C {../xschem/hgu_delay.sym} 400 -640 0 0 {name=x2 DELAY_CAP=8f}
 C {devices/lab_pin.sym} 550 -710 2 0 {name=p2 sig_type=std_logic lab=Vout_20n}
 C {devices/gnd.sym} 250 -670 1 0 {name=l3 lab=GND}
@@ -122,9 +122,8 @@ m=1
 value=10f
 footprint=1206
 device="ceramic capacitor"}
-C {sky130_stdcells/inv_1.sym} 650 -470 0 0 {name=x9 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/gnd.sym} 690 -410 0 0 {name=l15 lab=GND}
-C {devices/capa.sym} 690 -440 0 0 {name=C4
+C {devices/gnd.sym} 610 -410 0 0 {name=l15 lab=GND}
+C {devices/capa.sym} 610 -440 0 0 {name=C4
 m=1
 value=10f
 footprint=1206
@@ -149,7 +148,7 @@ value="
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_delay_no_code_flat.spice
-*.include /foss/designs/hgu_goss/hgu/spice/hgu_delay_no_code_flat_no_cap.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_delay_flat.spice
 "}
 C {devices/gnd.sym} 810 -70 0 0 {name=l23 lab=GND}
 C {devices/vdd.sym} 250 -570 3 0 {name=l26 lab=VDD}
@@ -196,11 +195,9 @@ C {devices/noconn.sym} 1040 -10 2 1 {name=l40}
 C {devices/noconn.sym} 930 -10 2 1 {name=l41}
 C {devices/gnd.sym} 1350 -70 0 0 {name=l42 lab=GND}
 C {devices/lab_pin.sym} 1120 -340 0 0 {name=p9 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code2[0:3]}
-C {devices/vsource.sym} 90 -410 1 0 {name=V1[0:3] value=0}
 C {devices/vdd.sym} 940 -420 3 0 {name=l1 lab=VDD}
 C {devices/vsource.sym} 970 -420 3 0 {name=V2[0:3] value=0}
 C {sky130_stdcells/buf_1.sym} 1040 -420 0 0 {name=x3[0:3] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/buf_1.sym} 160 -410 0 0 {name=x1[0:3] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/gnd.sym} 40 -70 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 40 -100 0 0 {name=V2 value=1.8}
 C {devices/gnd.sym} 120 -70 0 0 {name=l5 lab=GND}
@@ -217,8 +214,6 @@ C {devices/lab_pin.sym} 230 -470 0 0 {name=p16 sig_type=std_logic lab=layout_vdd
 C {devices/lab_pin.sym} 230 -430 0 0 {name=p17 sig_type=std_logic lab=layout_vss}
 C {devices/lab_pin.sym} 1100 -480 0 0 {name=p18 sig_type=std_logic lab=sch_vdd}
 C {devices/lab_pin.sym} 1100 -440 0 0 {name=p19 sig_type=std_logic lab=sch_vss}
-C {devices/vsource.sym} 90 -390 1 0 {name=V23 value=0}
-C {sky130_stdcells/buf_1.sym} 160 -390 0 0 {name=x6 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/vsource.sym} 970 -400 3 0 {name=V4[0:3] value=0}
 C {sky130_stdcells/buf_1.sym} 1040 -400 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/gnd.sym} 60 -390 0 0 {name=l9 lab=GND}
+C {devices/gnd.sym} 200 -390 0 0 {name=l9 lab=GND}
