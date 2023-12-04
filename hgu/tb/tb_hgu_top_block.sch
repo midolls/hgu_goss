@@ -41,6 +41,8 @@ value="
 .include /foss/designs/hgu_goss/hgu/spice/hgu_clk_async_flat_RC.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_clk_sample_flat.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_sw_buffer_flat_RC.spice
+
+.include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_flat_RC.spice
 "}
 C {devices/vdd.sym} 1100 -860 1 0 {name=l4 lab=cap_ctrl_code[15]}
 C {devices/vdd.sym} 1210 -860 1 0 {name=l6 lab=cap_ctrl_code[14]}
@@ -167,7 +169,7 @@ C {devices/noconn.sym} 2040 -560 2 0 {name=l65}
 C {devices/code.sym} 190 -270 0 0 {name=spice2 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 100ps 500ns
+.tran 60ps 300ns
 
 .control
 	run
@@ -176,6 +178,13 @@ C {devices/code.sym} 190 -270 0 0 {name=spice2 only_toplevel=false value="
 	
 .endc
 .save x1.sample_clk vip vin x1.tah_vp x1.tah_vn \\"result[0]\\" \\"result[1]\\" \\"result[2]\\" \\"result[3]\\" \\"result[4]\\" \\"result[5]\\" \\"result[6]\\" \\"result[7]\\" \\"x1.x1.sar_result_temp[0]\\" \\"x1.x1.sar_result_temp[1]\\" \\"x1.x1.sar_result_temp[2]\\" \\"x1.x1.sar_result_temp[3]\\" \\"x1.x1.sar_result_temp[4]\\" \\"x1.x1.sar_result_temp[5]\\" \\"x1.x1.sar_result_temp[6]\\" \\"x1.x1.sar_result_temp[7]\\"
+.save \\"x1.result_sw[1]\\" \\"x1.result_sw[2]\\" \\"x1.result_sw[3]\\" \\"x1.result_sw[4]\\" \\"x1.result_sw[5]\\" \\"x1.result_sw[6]\\" \\"x1.result_sw[7]\\" 
+.save \\"x1.result2_sw[1]\\" \\"x1.result2_sw[2]\\" \\"x1.result2_sw[3]\\" \\"x1.result2_sw[4]\\" \\"x1.result2_sw[5]\\" \\"x1.result2_sw[6]\\" \\"x1.result2_sw[7]\\" 
+.save \\"x1.result_sw_b[1]\\" \\"x1.result_sw_b[2]\\" \\"x1.result_sw_b[3]\\" \\"x1.result_sw_b[4]\\" \\"x1.result_sw_b[5]\\" \\"x1.result_sw_b[6]\\" \\"x1.result_sw_b[7]\\" 
+.save \\"x1.result2_sw_b[1]\\" \\"x1.result2_sw_b[2]\\" \\"x1.result2_sw_b[3]\\" \\"x1.result2_sw_b[4]\\" \\"x1.result2_sw_b[5]\\" \\"x1.result2_sw_b[6]\\" \\"x1.result2_sw_b[7]\\" 
+.save x1.comp_result
+.save vdd
+.save v33
 *.save all
 "}
 C {devices/vdd.sym} 370 -240 0 0 {name=l92 lab=VDD}
@@ -195,10 +204,10 @@ C {devices/gnd.sym} 480 -180 0 0 {name=l57 lab=GND}
 C {devices/lab_pin.sym} 480 -240 2 0 {name=p75 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 170 -540 2 1 {name=p1 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 170 -520 0 0 {name=p71 sig_type=std_logic lab=sel_bit[0:1]}
-C {devices/lab_pin.sym} 170 -420 0 0 {name=p25 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 170 -400 0 0 {name=p26 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 170 -420 0 0 {name=p25 sig_type=std_logic lab=VSS_offset}
+C {devices/lab_pin.sym} 170 -400 0 0 {name=p26 sig_type=std_logic lab=VSS_offset}
 C {devices/lab_pin.sym} 170 -440 0 0 {name=p15 sig_type=std_logic lab=retimer_delay_cap_ctrl_code[0:3]}
-C {devices/lab_pin.sym} 170 -380 0 0 {name=p79 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 170 -380 0 0 {name=p79 sig_type=std_logic lab=VDD_offset}
 C {devices/lab_pin.sym} 170 -480 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
 C {devices/lab_pin.sym} 170 -460 0 0 {name=p13 sig_type=std_logic lab=async_setb_delay_cap_ctrl_code[0:3]}
 C {devices/lab_pin.sym} 170 -500 0 0 {name=p72 sig_type=std_logic lab=cap_ctrl_code[0:15]}
@@ -210,5 +219,11 @@ C {devices/lab_wire.sym} 100 -560 0 0 {name=p32 sig_type=std_logic lab=vin
 }
 C {devices/gnd.sym} 60 -640 2 0 {name=l23 lab=GND}
 C {devices/gnd.sym} 60 -500 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 60 -530 0 1 {name=V2 value="PULSE(1.8 0.9 0 51.2u 51.2u 10p 102.4u)"}
-C {devices/vsource.sym} 60 -610 2 0 {name=V4 value="PULSE(0.9 1.8 0 51.2u 51.2u 10p 102.4u)"}
+C {devices/vsource.sym} 60 -530 0 1 {name=V2 value="PULSE(1.8 0.9 30n 0.5u 0.5u 10p 1u)"}
+C {devices/vsource.sym} 60 -610 2 0 {name=V4 value="PULSE(0.9 1.8 30n 0.5u 0.5u 10p 1u)"}
+C {devices/vdd.sym} 740 -240 0 0 {name=l1 lab=VDD_offset}
+C {devices/gnd.sym} 740 -180 0 0 {name=l3 lab=GND}
+C {devices/vsource.sym} 740 -210 0 0 {name=V1 value=1.8}
+C {devices/vdd.sym} 800 -240 0 0 {name=l7 lab=VSS_offset}
+C {devices/gnd.sym} 800 -180 0 0 {name=l8 lab=GND}
+C {devices/vsource.sym} 800 -210 0 0 {name=V21 value=0}
