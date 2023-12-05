@@ -1,4 +1,4 @@
-timestamp 1699890160
+timestamp 1700813856
 version 8.3
 tech sky130A
 style ngspice()
@@ -30,26 +30,26 @@ node "CTOP" 0 37.0501 3678 800 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 substrate "SUB" 0 0 4096 526 ppd 0 0 0 0 0 0 0 0 0 0 3608 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "CTOP" "CBOT" 5.86035
 cap "x1[0]/CBOT" "x1[0]/SUB" -4.44089e-16
-cap "x1[0]/CBOT" "x1[0]/CTOP" -132.809
-cap "x1[0]/CBOT" "x1[1]/CTOP" -2.27374e-13
-cap "x1[0]/SUB" "x1[0]/CTOP" 0.632416
-cap "x1[0]/SUB" "x1[0]/CBOT" 2.6851
-cap "x1[0]/CBOT" "x1[1]/CTOP" -2.93017
+cap "x1[1]/CTOP" "x1[0]/CBOT" -2.27374e-13
 cap "x1[0]/CTOP" "x1[0]/CBOT" -132.809
-cap "x1[4]/SUB" "x1[2]/CBOT" -4.44089e-16
+cap "x1[0]/CTOP" "x1[0]/SUB" 0.632416
+cap "x1[0]/CBOT" "x1[0]/SUB" 2.6851
+cap "x1[1]/CTOP" "x1[0]/CBOT" -2.93017
+cap "x1[0]/CBOT" "x1[0]/CTOP" -132.809
+cap "x1[2]/CBOT" "x1[4]/CTOP" -131.626
 cap "x1[2]/CBOT" "x1[5]/CTOP" -2.93017
-cap "x1[4]/CTOP" "x1[2]/CBOT" -131.626
+cap "x1[2]/CBOT" "x1[4]/SUB" -4.44089e-16
+cap "x1[8]/CBOT" "x1[8]/CTOP" -67.5875
 cap "x1[8]/CBOT" "x1[8]/SUB" -4.44089e-16
-cap "x1[8]/CBOT" "x1[9]/CTOP" -2.84217e-14
-cap "x1[8]/CTOP" "x1[8]/CBOT" -67.5875
-cap "x1[1]/CTOP" "x1[0]/CBOT" -132.809
-cap "x1[0]/CBOT" "x1[0]/SUB" 2.22045e-16
+cap "x1[9]/CTOP" "x1[8]/CBOT" -2.84217e-14
 cap "x1[0]/CBOT" "x1[1]/CTOP" -132.809
 cap "x1[0]/CBOT" "x1[0]/SUB" 2.22045e-16
-cap "x1[1]/CTOP" "x1[0]/SUB" -4.44089e-16
-cap "x1[2]/CBOT" "x1[5]/CTOP" -131.626
-cap "x1[2]/CBOT" "x1[4]/SUB" 2.22045e-16
-cap "x1[8]/CBOT" "x1[9]/CTOP" -67.5875
+cap "x1[0]/SUB" "x1[1]/CTOP" -4.44089e-16
+cap "x1[0]/CBOT" "x1[0]/SUB" 2.22045e-16
+cap "x1[0]/CBOT" "x1[1]/CTOP" -132.809
+cap "x1[4]/SUB" "x1[2]/CBOT" 2.22045e-16
+cap "x1[5]/CTOP" "x1[2]/CBOT" -131.626
+cap "x1[9]/CTOP" "x1[8]/CBOT" -67.5875
 merge "x1[15]/CTOP" "x1[14]/CTOP" -1765.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -62832 -3752 -69320 -4236 0 0 0 0
 merge "x1[14]/CTOP" "x1[13]/CTOP"
 merge "x1[13]/CTOP" "x1[12]/CTOP"

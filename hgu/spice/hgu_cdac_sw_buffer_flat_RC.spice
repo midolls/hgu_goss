@@ -1,7 +1,7 @@
 * NGSPICE file created from hgu_cdac_sw_buffer_flat.ext - technology: sky130A
 
-.subckt hgu_cdac_sw_buffer_flat sar_val<7> sar_val<6> sar_val<5> sar_val<4> sar_val<3>
-+ sw<6> sw<2> sw<3> sw<4> sw<5> VSS VDD
+.subckt hgu_cdac_sw_buffer_RC sar_val<3> sar_val<6> sar_val<4> sar_val<5> sar_val<7>
++ sw<2> sw<5> sw<3> sw<4> sw<6> VDD VSS
 X0 sw<6>.t27 a_n85_n1195# VDD.t101 VDD.t100 sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
 X1 VSS.t59 a_795_n2019# sw<5>.t2 VSS.t58 sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
 X2 sw<6>.t26 a_n85_n1195# VDD.t99 VDD.t98 sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15

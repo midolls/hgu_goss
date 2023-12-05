@@ -1,4 +1,4 @@
-timestamp 1699890160
+timestamp 1700813856
 version 8.3
 tech sky130A
 style ngspice()
@@ -15,10 +15,10 @@ node "CBOT" 0 43.353 364 2058 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "CTOP" 0 51.3914 244 2488 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3672 276 0 0 0 0
 substrate "SUB" 0 0 300 2029 ppd 0 0 0 0 0 0 0 0 0 0 5472 324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "CBOT" "CTOP" 2.90223
-cap "x2/CBOT" "x1/CTOP" -2.90223
 cap "x2/SUB" "x2/CTOP" 0.448073
+cap "x2/CBOT" "x1/CTOP" -2.90223
 cap "x2/CBOT" "x2/SUB" 1.81501
-cap "x2/CBOT" "x2/SUB" 0.629864
+cap "x2/SUB" "x2/CBOT" 0.629864
 cap "x2/CTOP" "x2/SUB" 1.76985
 merge "x1/CTOP" "x2/CTOP" -93.9323 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6792 -512 0 0 0 0
 merge "x2/CTOP" "CTOP"

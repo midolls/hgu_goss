@@ -1,7 +1,7 @@
 * NGSPICE file created from hgu_delay_no_code_flat.ext - technology: sky130A
 
-.subckt hgu_delay_no_code_flat IN OUT code[3] code[1] code[2] code[0] code_offset
-+ VSS VDD
+.subckt hgu_delay_no_code_RC VDD IN OUT VSS code[0] code[1] code[2] code[3] code_offset
+
 X0 Uc x10.Y.t2 x5[7].floating.t7 VDD.t16 sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
 X1 Uc code[2].t0 x4[3].floating VSS.t8 sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
 X2 x5[7].floating.t6 x10.Y.t3 Uc VDD.t16 sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15

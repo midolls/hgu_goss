@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -34,13 +34,13 @@ C {devices/gnd.sym} 540 -110 0 0 {name=l24 lab=GND}
 C {devices/vsource.sym} 90 -250 0 0 {name=V2 value="PULSE(0 1.8 100n 5p 5p 17n 31n)"}
 C {devices/gnd.sym} 90 -220 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 90 -280 0 0 {name=p4 sig_type=std_logic lab=comp}
-C {devices/vsource.sym} 90 -340 0 0 {name=V3 value="PULSE(0 1.8 0 5p 5p 5n 10n)"}
+C {devices/vsource.sym} 90 -340 0 0 {name=V3 value="PULSE(0 1.8 0 5p 5p 4n 8n)"}
 C {devices/gnd.sym} 90 -310 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 90 -370 0 0 {name=p1 sig_type=std_logic lab=clk}
 C {devices/vsource.sym} 90 -430 0 0 {name=V12 value="PULSE(1.8 0 0 5p 5p 10n 100n)"}
 C {devices/gnd.sym} 90 -400 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 90 -460 0 0 {name=p7 sig_type=std_logic lab=reset}
-C {../xschem/hgu_sarlogic_8bit_logic.sym} 590 -310 0 0 {name=x3 csize=0.001}
+C {../xschem/hgu_sarlogic_8bit_logic_RC.sym} 590 -310 0 0 {name=x3 csize=0.001}
 C {devices/lab_pin.sym} 740 -360 1 0 {name=p3 sig_type=std_logic lab=EOB}
 C {devices/lab_pin.sym} 740 -340 2 0 {name=p9 sig_type=std_logic lab=D[0:7]}
 C {devices/vdd.sym} 440 -280 3 0 {name=l3 lab=VDD}
@@ -54,7 +54,7 @@ C {devices/code.sym} 50 -160 0 0 {name=spice1 only_toplevel=false value="
 
 
 *.tran 10ps 310ns
-.tran 10ps 300ns
+.tran 40ps 300ns
 
 .control
 	option temp = 25

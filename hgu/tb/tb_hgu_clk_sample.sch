@@ -8,20 +8,18 @@ E {}
 N 500 -520 560 -520 {
 lab=Vout}
 N 150 -700 620 -700 {
-lab=VSS}
+lab=GND}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
-C {devices/vsource.sym} 350 -170 0 0 {name=V2 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
+C {devices/vsource.sym} 350 -170 0 0 {name=V2 value="PULSE(0 1.8 0 500p 500p 50n 100n)"}
 C {devices/gnd.sym} 350 -140 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 350 -200 0 0 {name=p4 sig_type=std_logic lab=EXT_CLK}
 C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
 
-
-
-.tran 10ps 200ns
+.tran 40ps 250ns
 
 .control
-	option temp = 0
-	let vdd_act = 1.98
+	option temp = 25
+	let vdd_act = 1.8
       
 	alter V1 vdd_act
 
@@ -54,7 +52,7 @@ C {devices/vdd.sym} 210 -200 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} 210 -140 0 0 {name=l8 lab=GND}
 C {devices/gnd.sym} 200 -500 1 0 {name=l9 lab=GND}
 C {devices/vdd.sym} 200 -520 3 0 {name=l10 lab=VDD}
-C {devices/vsource.sym} 210 -170 0 0 {name=V4 value=1.8}
+C {devices/vsource.sym} 210 -170 0 0 {name=V1 value=1.8}
 C {../xschem/hgu_clk_sample_RC.sym} 350 -430 0 0 {name=x1}
 C {devices/gnd.sym} 200 -440 1 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 200 -460 1 0 {name=l3 lab=GND}
@@ -86,7 +84,6 @@ C {devices/vsource.sym} 530 -730 0 0 {name=V12 value=1.8}
 C {devices/vsource.sym} 200 -670 0 0 {name=V29 value=0}
 C {devices/vsource.sym} 310 -670 0 0 {name=V30 value=0}
 C {devices/vsource.sym} 420 -670 0 0 {name=V31 value=0}
-C {devices/lab_pin.sym} 150 -700 0 0 {name=p18 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 420 -730 0 0 {name=V16 value=1.8}
 C {devices/vsource.sym} 310 -730 0 0 {name=V17 value=1.8}
 C {devices/vsource.sym} 200 -730 0 0 {name=V18 value=1.8}
@@ -115,5 +112,6 @@ value="
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_delay_no_code_flat.spice
-*.include /foss/designs/hgu_goss/hgu/spice/hgu_delay_no_code_flat_no_cap.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_sample_flat_RC.spice
 "}
+C {devices/gnd.sym} 150 -700 1 0 {name=l6 lab=GND}
