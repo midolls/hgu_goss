@@ -106,8 +106,8 @@ resist "code[1].n0" "x3[0].SW" 0.201087
 resist "x3[1].SW" "code[1]" 2.45043
 resist "code[1].n0" "code[1].t1" 140.34
 resist "x3[0].SW" "code[1].t0" 140.387
-rnode "OUT.t1" 0 0 15673 1723 0
-rnode "OUT.t0" 0 0 15673 1520 0
+rnode "OUT.t0" 0 0 15673 1723 0
+rnode "OUT.t1" 0 0 15673 1520 0
 rnode "OUT.n0" 0 0 15653 1633 0
 rnode "OUT.t3" 0 0 15780 1520 0
 rnode "OUT.t5" 0 0 15780 1723 0
@@ -118,9 +118,9 @@ rnode "OUT.n2" 0 0 15780 1617 0
 rnode "OUT" 0 0 15751 1594 0
 resist "OUT" "OUT.n0" 0.422414
 resist "OUT" "OUT.n2" 13.4926
-resist "OUT.n0" "OUT.t0" 41.7547
+resist "OUT.n0" "OUT.t1" 41.7547
 resist "OUT.n2" "OUT.n1" 58.5722
-resist "OUT.n0" "OUT.t1" 68.3653
+resist "OUT.n0" "OUT.t0" 68.3653
 resist "OUT.n1" "OUT.t2" 91.58
 resist "OUT.n2" "OUT.t3" 91.58
 resist "OUT.n1" "OUT.t4" 107.647
@@ -707,7 +707,7 @@ rnode "VSS.n538" 0 0 15798 1723 0
 rnode "VSS.n539" 0 0 15737 1288 0
 rnode "VSS.n540" 0 0 15710 1258 0
 rnode "VSS.n541" 0 0 15737 1258 0
-rnode "VSS.t7" 0 0 15673 1382 0
+rnode "VSS.t2" 0 0 15673 1382 0
 rnode "VSS.n542" 0 0 15737 1258 0
 rnode "VSS.n543" 0 0 15737 1258 0
 rnode "VSS.n544" 0 0 15737 1258 0
@@ -733,9 +733,9 @@ rnode "VSS.n563" 0 0 10695 335 0
 rnode "VSS.n564" 0 0 10674 335 0
 rnode "VSS.n565" 0 0 10637 335 0
 rnode "VSS.n566" 0 0 10616 336 0
-rnode "VSS.t3" 0 0 15876 1520 0
-rnode "VSS.t2" 0 0 15036 1519 0
-rnode "VSS.t6" 0 0 15688 1382 0
+rnode "VSS.t0" 0 0 15876 1520 0
+rnode "VSS.t8" 0 0 15036 1519 0
+rnode "VSS.t1" 0 0 15688 1382 0
 rnode "VSS.n567" 0 0 10654 946 0
 rnode "VSS.n568" 0 0 10615 335 0
 rnode "VSS.n569" 0 0 10615 335 0
@@ -794,8 +794,8 @@ rnode "VSS.n620" 0 0 10132 986 0
 rnode "VSS.n621" 0 0 10130 1074 0
 rnode "pstack_sub" 0 0 9758 1312 0
 rnode "VSS.n622" 0 0 9837 1626 0
-rnode "VSS.t0" 0 0 9878 1335 0
-rnode "VSS.t1" 0 0 9950 1335 0
+rnode "VSS.t3" 0 0 9878 1335 0
+rnode "VSS.t4" 0 0 9950 1335 0
 rnode "VSS.n623" 0 0 10126 1260 0
 rnode "VSS.n624" 0 0 10126 1260 0
 rnode "VSS.n625" 0 0 10132 986 0
@@ -811,7 +811,7 @@ rnode "VSS.n634" 0 0 10142 604 0
 rnode "VSS.n635" 0 0 10142 604 0
 rnode "VSS.n636" 0 0 10142 506 0
 rnode "VSS.n637" 0 0 10142 506 0
-rnode "VSS.t8" 0 0 9965 369 0
+rnode "VSS.t5" 0 0 9965 369 0
 rnode "VSS.n638" 0 0 9994 379 0
 rnode "x9.vss" 0 -0 9977 339 0
 rnode "VSS.n639" 0 0 9994 375 0
@@ -856,13 +856,13 @@ rnode "VSS.n675" 0 0 9438 1762 0
 rnode "VSS.n676" 0 0 9445 1760 0
 rnode "VSS.n677" 0 0 9441 1745 0
 rnode "VSS.n678" 0 0 9438 1762 0
-rnode "VSS.t5" 0 0 9420 1872 0
+rnode "VSS.t7" 0 0 9420 1872 0
 rnode "VSS.n679" 0 0 9420 1872 0
 rnode "VSS.n680" 0 0 9407 1745 0
 rnode "VSS.n681" 0 0 9411 1728 0
 rnode "VSS.n682" 0 0 9407 1745 0
 rnode "VSS.n683" 0 0 9411 1728 0
-rnode "VSS.t4" 0 0 9435 1872 0
+rnode "VSS.t6" 0 0 9435 1872 0
 rnode "x10.VNB" 0 -0 9329 1743 0
 rnode "VSS.n684" 0 0 9407 1745 0
 rnode "VSS.n685" 0 0 9411 1731 0
@@ -1452,7 +1452,7 @@ resist "VSS.n650" "VSS.n649" 0.699277
 resist "VSS.n681" "VSS.n680" 0.787692
 resist "VSS.n689" "VSS.n688" 0.787692
 resist "VSS.n677" "VSS.n676" 0.787692
-resist "VSS.t2" "VSS.t3" 0.823507
+resist "VSS.t8" "VSS.t0" 0.823507
 resist "VSS.n708" "VSS.n707" 0.8525
 resist "VSS.n697" "VSS.n695" 0.8525
 resist "VSS.n611" "VSS.n610" 0.8525
@@ -1616,9 +1616,9 @@ resist "VSS.n683" "VSS.n682" 21.8889
 resist "VSS.n620" "VSS.n619" 25.9014
 resist "VSS.n661" "VSS.n660" 26.7477
 resist "VSS.n630" "VSS.n628" 36.9231
-resist "VSS.n638" "VSS.t8" 41.4443
+resist "VSS.n638" "VSS.t5" 41.4443
 resist "VSS.n638" "VSS.n637" 41.5849
-resist "VSS.n542" "VSS.t7" 43.7542
+resist "VSS.n542" "VSS.t2" 43.7542
 resist "VSS.n685" "VSS.n684" 53.4954
 resist "VSS.n632" "VSS.n631" 69.3628
 resist "VSS.n687" "VSS.n683" 71.1389
@@ -1628,15 +1628,15 @@ resist "VSS.n626" "VSS.n624" 81.7266
 resist "VSS.n624" "VSS.n9" 92.1823
 resist "VSS.n663" "VSS.n659" 93.0278
 resist "VSS.n712" "VSS.t10" 107.194
-resist "VSS.n679" "VSS.t5" 107.866
-resist "VSS.t6" "VSS.t2" 112.821
+resist "VSS.n679" "VSS.t7" 107.866
+resist "VSS.t1" "VSS.t8" 112.821
 resist "VSS.n568" "VSS.n567" 126.269
-resist "VSS.t0" "VSS.n622" 132.745
-resist "VSS.n686" "VSS.t4" 147.112
+resist "VSS.t3" "VSS.n622" 132.745
+resist "VSS.n686" "VSS.t6" 147.112
 resist "VSS.n686" "VSS.n685" 173.86
 resist "VSS.n624" "VSS.n623" 197.27
 resist "VSS.n662" "VSS.n661" 200.608
-resist "VSS.t1" "VSS.t0" 233.113
+resist "VSS.t4" "VSS.t3" 233.113
 resist "VSS.n622" "pstack_sub" 255.776
 resist "VSS.n711" "VSS.n710" 292.5
 resist "VSS.n712" "VSS.n711" 292.5
@@ -1646,9 +1646,9 @@ resist "VSS.n630" "VSS.n629" 292.5
 resist "VSS.n628" "VSS.n627" 292.5
 resist "VSS.n626" "VSS.n625" 292.5
 resist "VSS.n710" "x11.VNB" 320.973
-resist "VSS.n567" "VSS.t6" 359.049
+resist "VSS.n567" "VSS.t1" 359.049
 resist "VSS.n637" "VSS.n636" 362.96
-resist "VSS.n623" "VSS.t1" 569.831
+resist "VSS.n623" "VSS.t4" 569.831
 resist "VSS.n710" "VSS.t9" 641.945
 resist "VSS.n684" "x10.VNB" 1043.16
 resist "VSS.n617" "VSS.n616" 1265.93
@@ -1676,7 +1676,7 @@ resist "code[2].n0" "code[2].t0" 140.34
 resist "code[2].n1" "code[2].t2" 140.34
 resist "x4[0].SW" "code[2].t1" 140.387
 rnode "VDD.n0" 0 24.0455 9391 2306 0
-rnode "VDD.t5" 0 57.9419 9420 2157 0
+rnode "VDD.t6" 0 57.9419 9420 2157 0
 rnode "VDD.n1" 0 20.7023 9438 2304 0
 rnode "VDD.n2" 0 14.1573 9508 2318 0
 rnode "VDD.n3" 0 103.914 9525 2318 0
@@ -1706,18 +1706,18 @@ rnode "VDD.n25" 0 31.1676 9693 2306 0
 rnode "x11.VPWR" 0 56.3802 9697 2287 0
 rnode "VDD.n26" 0 4.63298 9547 2304 0
 rnode "VDD.n27" 0 20.9092 9547 2304 0
-rnode "VDD.t15" 0 57.9418 9640 2157 0
+rnode "VDD.t12" 0 57.9418 9640 2157 0
 rnode "VDD.n28" 0 67.6858 9671 2287 0
 rnode "pfet_floating" 0 388.611 9772 2210 0
-rnode "VDD.t1" 0 1351.69 9903 2172 0
+rnode "VDD.t10" 0 1351.69 9903 2172 0
 rnode "VDD.n29" 0 37.5059 10073 2257 0
-rnode "VDD.t17" 0 486.933 15039 1720 0
-rnode "VDD.t12" 0 154.123 10545 1717 0
+rnode "VDD.t16" 0 486.933 15039 1720 0
+rnode "VDD.t8" 0 154.123 10545 1717 0
 rnode "pfet_floating" 0 422.403 11875 1710 0
 rnode "VDD.n30" 0 464.299 15783 1692 0
 rnode "VDD.n31" 0 31.9833 15783 1692 0
-rnode "VDD.t11" 0 2476.04 15876 1723 0
-rnode "VDD.t9" 0 6285.36 15688 1861 0
+rnode "VDD.t2" 0 2476.04 15876 1723 0
+rnode "VDD.t0" 0 6285.36 15688 1861 0
 rnode "VDD.n32" 0 5303.86 10075 2095 0
 rnode "VDD.n33" 0 34.7841 10075 2425 0
 rnode "VDD.n34" 0 34.7841 10075 2425 0
@@ -1731,8 +1731,8 @@ rnode "VDD.n41" 0 19.5044 15828 1547 0
 rnode "VDD.n42" 0 8.93599 15849 1520 0
 rnode "VDD.n43" 0 19.1475 15828 1493 0
 rnode "VDD.n44" 0 7.5384 15828 1520 0
-rnode "VDD.t2" 0 7.5469 15861 1520 0
-rnode "VDD.t13" 0 7.5469 15795 1520 0
+rnode "VDD.t9" 0 7.5469 15861 1520 0
+rnode "VDD.t15" 0 7.5469 15795 1520 0
 rnode "VDD.n45" 0 18.5018 15828 1520 0
 rnode "VDD.n46" 0 54.8469 15849 1520 0
 rnode "VDD.n47" 0 9.1617 15849 1520 0
@@ -1740,7 +1740,7 @@ rnode "VDD.n48" 0 18.7083 15858 1520 0
 rnode "VDD.n49" 0 114.409 15858 1520 0
 rnode "VDD.n50" 0 127.909 15740 1954 0
 rnode "VDD.n51" 0 22.5809 15740 1984 0
-rnode "VDD.t10" 0 10.7262 15673 1861 0
+rnode "VDD.t1" 0 10.7262 15673 1861 0
 rnode "VDD.n52" 0 155.244 15740 1984 0
 rnode "VDD.n53" 0 22.7577 15713 1984 0
 rnode "VDD.n54" 0 12.3495 15740 1984 0
@@ -2663,7 +2663,7 @@ rnode "VDD.n964" 0 3.0547 10107 2899 0
 rnode "VDD.n965" 0 17.959 10085 2899 0
 rnode "VDD.n966" 0 3.0547 10107 2899 0
 rnode "VDD.n967" 0 3.43873 10105 2899 0
-rnode "VDD.t8" 0 6.63688 9918 2862 0
+rnode "VDD.t4" 0 6.63688 9918 2862 0
 rnode "VDD.n968" 0 13.8457 10035 2911 0
 rnode "VDD" 0 1170.02 9344 2338 0
 rnode "x6.VDD" 0 312.028 9972 2867 0
@@ -2691,13 +2691,13 @@ rnode "VDD.n988" 0 35.0903 10075 2639 0
 rnode "VDD.n989" 0 35.0903 10075 2639 0
 rnode "x5[0].VDD" 0 523.78 14942 2871 0
 rnode "x6.VDD" 0 152.065 9972 2868 0
-rnode "VDD.t7" 0 287.234 9903 2862 0
+rnode "VDD.t3" 0 287.234 9903 2862 0
 rnode "VDD.n990" 0 9.45087 15819 2851 0
 rnode "VDD.n991" 0 9.30208 15817 2849 0
 rnode "VDD.n992" 0 92.4731 15819 2851 0
 rnode "VDD.n993" 0 535.852 15819 2851 0
 rnode "x8.vdd" 0 2145.81 9930 2832 0
-rnode "VDD.t3" 0 1892.37 9903 2724 0
+rnode "VDD.t13" 0 1892.37 9903 2724 0
 rnode "VDD.n994" 0 9.45087 15824 2707 0
 rnode "VDD.n995" 0 9.30208 15822 2705 0
 rnode "VDD.n996" 0 92.4731 15824 2707 0
@@ -2706,14 +2706,14 @@ rnode "VDD.n998" 0 9.30208 15823 2553 0
 rnode "VDD.n999" 0 92.4731 15825 2555 0
 rnode "VDD.n1000" 0 1211.7 15825 2555 0
 rnode "VDD.n1001" 0 1064.46 10075 2425 0
-rnode "VDD.t16" 0 1182.73 9903 2448 0
+rnode "VDD.t17" 0 1182.73 9903 2448 0
 rnode "VDD.n1002" 0 1807.89 10073 2495 0
 rnode "VDD.n1003" 0 31.6133 10073 2495 0
 rnode "VDD.n1004" 0 31.6133 10073 2495 0
 rnode "VDD.n1005" 0 32.5861 10073 2565 0
 rnode "VDD.n1006" 0 32.5861 10073 2565 0
 rnode "VDD.n1007" 0 523.78 10073 2565 0
-rnode "VDD.t0" 0 1250.31 9903 2586 0
+rnode "VDD.t7" 0 1250.31 9903 2586 0
 rnode "VDD.n1008" 0 2044.43 10075 2639 0
 rnode "VDD.n1009" 0 1397.55 15824 2707 0
 rnode "VDD.n1010" 0 287.234 10072 2720 0
@@ -3441,7 +3441,7 @@ rnode "VDD.n1729" 0 9.30208 15822 2226 0
 rnode "VDD.n1730" 0 92.4731 15824 2228 0
 rnode "VDD.n1731" 0 823.086 15824 2228 0
 rnode "VDD.n1732" 0 1385.48 10073 2257 0
-rnode "VDD.t6" 0 1419.28 9903 2310 0
+rnode "VDD.t14" 0 1419.28 9903 2310 0
 rnode "VDD.n1733" 0 1267.21 10077 2341 0
 rnode "VDD.n1734" 0 37.9523 10077 2341 0
 rnode "VDD.n1735" 0 37.9523 10077 2341 0
@@ -3452,7 +3452,7 @@ rnode "VDD.n1739" 0 557.573 10073 2175 0
 rnode "VDD.n1740" 0 610.401 9791 2205 0
 rnode "pfet_floating" 0 94.1522 9772 2210 0
 rnode "x11.VPB" 0 104.893 9697 2287 0
-rnode "VDD.t14" 0 141.883 9625 2157 0
+rnode "VDD.t11" 0 141.883 9625 2157 0
 rnode "VDD.n1741" 0 71.9406 9667 2333 0
 rnode "VDD.n1742" 0 35.7198 9667 2333 0
 rnode "VDD.n1743" 0 8.66859 9667 2333 0
@@ -3477,7 +3477,7 @@ rnode "VDD.n1761" 0 3.00569 9521 2335 0
 rnode "VDD.n1762" 0 1.85133 9521 2333 0
 rnode "VDD.n1763" 0 16.9833 9521 2333 0
 rnode "VDD.n1764" 0 85.9236 9508 2318 0
-rnode "VDD.t4" 0 116.901 9435 2157 0
+rnode "VDD.t5" 0 116.901 9435 2157 0
 rnode "x10.VPB" 0 195.838 9329 2287 0
 rnode "VDD.n1765" 0 105.913 9391 2333 0
 rnode "VDD.n1766" 0 22.9783 9391 2333 0
@@ -4706,7 +4706,7 @@ resist "VDD.n284" "VDD.n283" 0.101603
 resist "VDD.n1713" "x5[0].VDD" 0.103254
 resist "VDD.n986" "VDD.n965" 0.126783
 resist "VDD.n987" "VDD.n986" 0.131907
-resist "VDD.t11" "VDD.n31" 0.149966
+resist "VDD.t2" "VDD.n31" 0.149966
 resist "x6.VDD" "VDD" 0.189702
 resist "VDD.n1032" "VDD.n967" 0.193939
 resist "VDD.n1032" "VDD.n966" 0.193939
@@ -4824,17 +4824,17 @@ resist "VDD.n1177" "VDD.n799" 0.30303
 resist "VDD.n1340" "VDD.n622" 0.30303
 resist "VDD.n1503" "VDD.n445" 0.30303
 resist "VDD.n1666" "VDD.n268" 0.30303
-resist "VDD.n31" "VDD.t17" 0.309074
+resist "VDD.n31" "VDD.t16" 0.309074
 resist "VDD.n710" "VDD.n709" 0.314394
 resist "VDD.n533" "VDD.n532" 0.314394
 resist "VDD.n356" "VDD.n355" 0.314394
 resist "VDD.n50" "VDD.n49" 0.356919
 resist "VDD.n1768" "VDD.n1767" 0.393846
-resist "VDD.t12" "VDD.t17" 0.459233
-resist "VDD.n1739" "VDD.t1" 0.459233
+resist "VDD.t8" "VDD.t16" 0.459233
+resist "VDD.n1739" "VDD.t10" 0.459233
 resist "x6.VDD" "x5[0].VDD" 0.459233
 resist "VDD.n1706" "VDD.n118" 0.459233
-resist "VDD.n1010" "VDD.t3" 0.612311
+resist "VDD.n1010" "VDD.t13" 0.612311
 resist "VDD.n985" "VDD.n984" 0.681947
 resist "VDD.n1750" "VDD.n1749" 0.682213
 resist "VDD.n19" "VDD.n14" 0.682213
@@ -4853,9 +4853,9 @@ resist "VDD.n1714" "VDD.n74" 0.8525
 resist "VDD.n41" "VDD.n40" 0.852791
 resist "VDD.n20" "VDD.n18" 0.870078
 resist "VDD.n25" "VDD.n23" 0.870266
-resist "VDD.t7" "x6.VDD" 0.918466
+resist "VDD.t3" "x6.VDD" 0.918466
 resist "VDD.n1759" "VDD.n5" 0.984615
-resist "VDD.n30" "VDD.t12" 1.03568
+resist "VDD.n30" "VDD.t8" 1.03568
 resist "VDD.n992" "VDD.n991" 1.03967
 resist "VDD.n996" "VDD.n995" 1.03967
 resist "VDD.n999" "VDD.n998" 1.03967
@@ -5053,7 +5053,7 @@ resist "VDD.n1018" "VDD.n1017" 1.66562
 resist "VDD.n1051" "VDD.n1050" 1.66562
 resist "VDD.n930" "VDD.n929" 1.66562
 resist "VDD.n1072" "VDD.n1071" 1.66562
-resist "VDD.n993" "VDD.t7" 1.68385
+resist "VDD.n993" "VDD.t3" 1.68385
 resist "VDD.n1031" "VDD.n1016" 1.76471
 resist "VDD.n893" "VDD.n892" 1.76471
 resist "VDD.n1683" "VDD.n1682" 1.76471
@@ -5206,7 +5206,7 @@ resist "VDD.n208" "VDD.n161" 3.10303
 resist "VDD.n209" "VDD.n177" 3.10303
 resist "VDD.n189" "VDD.n179" 3.10303
 resist "VDD.n190" "VDD.n81" 3.10303
-resist "VDD.t0" "VDD.n1007" 3.21463
+resist "VDD.t7" "VDD.n1007" 3.21463
 resist "VDD.n1683" "VDD.n87" 3.38518
 resist "VDD.n1520" "VDD.n96" 3.38518
 resist "VDD.n1357" "VDD.n105" 3.38518
@@ -5541,7 +5541,7 @@ resist "VDD.n48" "VDD.n42" 3.46271
 resist "VDD.n53" "VDD.n52" 3.46273
 resist "VDD.n20" "VDD.n19" 3.46601
 resist "VDD.n1749" "VDD.n25" 3.46738
-resist "VDD.t16" "VDD.n1001" 3.52079
+resist "VDD.t17" "VDD.n1001" 3.52079
 resist "VDD.n1738" "VDD.n1737" 3.56558
 resist "VDD.n1008" "VDD.n989" 4.20455
 resist "VDD.n989" "VDD.n988" 4.20455
@@ -5780,7 +5780,7 @@ resist "VDD.n1710" "VDD.n1709" 4.53977
 resist "VDD.n1740" "VDD.n1739" 4.59233
 resist "VDD.n1747" "VDD.n1746" 4.65
 resist "VDD.n7" "VDD.n1" 4.65
-resist "VDD.n1733" "VDD.t6" 4.74541
+resist "VDD.n1733" "VDD.t14" 4.74541
 resist "VDD.n1706" "VDD.n119" 5.1324
 resist "VDD.n1707" "VDD.n1706" 5.1324
 resist "VDD.n1706" "VDD.n116" 5.63269
@@ -5801,9 +5801,9 @@ resist "VDD.n1706" "VDD.n87" 5.63269
 resist "VDD.n1030" "VDD.n118" 5.63269
 resist "VDD.n1001" "VDD.n35" 6.12311
 resist "VDD.n1733" "VDD.n35" 6.73542
-resist "VDD.n1002" "VDD.t16" 7.19465
-resist "VDD.t6" "VDD.n1732" 8.11312
-resist "VDD.n1008" "VDD.t0" 8.11312
+resist "VDD.n1002" "VDD.t17" 7.19465
+resist "VDD.t14" "VDD.n1732" 8.11312
+resist "VDD.n1008" "VDD.t7" 8.11312
 resist "VDD.n1706" "VDD.n83" 8.77566
 resist "VDD.n1706" "VDD.n88" 8.77566
 resist "VDD.n1706" "VDD.n97" 8.77566
@@ -6057,7 +6057,7 @@ resist "VDD.n1004" "VDD.n33" 10.8028
 resist "VDD.n1005" "VDD.n988" 11.3758
 resist "VDD.n1708" "VDD.n1707" 11.5447
 resist "VDD.n862" "VDD.n119" 11.5447
-resist "VDD.n32" "VDD.t1" 11.787
+resist "VDD.n32" "VDD.t10" 11.787
 resist "VDD.n1762" "VDD.n4" 12
 resist "VDD.n1012" "VDD.n988" 12.4807
 resist "VDD.n1735" "VDD.n33" 12.9542
@@ -6123,7 +6123,7 @@ resist "VDD.n1737" "VDD.n1736" 13.1562
 resist "VDD.n1013" "VDD.n987" 13.3668
 resist "VDD.n1760" "VDD.n1" 13.7846
 resist "VDD.n1746" "VDD.n1745" 15.7538
-resist "VDD.t3" "x8.vdd" 16.5324
+resist "VDD.t13" "x8.vdd" 16.5324
 resist "VDD.n1737" "VDD.n32" 18.2311
 resist "VDD.n1731" "VDD.n1730" 20.7423
 resist "VDD.n61" "VDD.n35" 20.7423
@@ -6131,7 +6131,7 @@ resist "VDD.n1000" "VDD.n999" 20.7423
 resist "VDD.n1009" "VDD.n996" 20.7423
 resist "VDD.n993" "VDD.n992" 20.7423
 resist "VDD.n1013" "VDD.n1012" 21.0033
-resist "VDD.t9" "VDD.t11" 21.1247
+resist "VDD.t0" "VDD.t2" 21.1247
 resist "VDD.n1029" "VDD.n1018" 28.2353
 resist "VDD.n1050" "VDD.n1049" 28.2353
 resist "VDD.n941" "VDD.n930" 28.2353
@@ -6161,11 +6161,11 @@ resist "VDD.n1764" "VDD.n1763" 33.6512
 resist "VDD.n717" "VDD.n716" 33.7455
 resist "VDD.n540" "VDD.n539" 33.7455
 resist "VDD.n363" "VDD.n362" 33.7455
-resist "VDD.n32" "VDD.t9" 35.8202
+resist "VDD.n32" "VDD.t0" 35.8202
 resist "VDD.n1762" "VDD.n2" 39
 resist "VDD.n31" "VDD.n30" 41.3122
-resist "VDD.n45" "VDD.t13" 47.1429
-resist "VDD.n45" "VDD.t2" 47.1429
+resist "VDD.n45" "VDD.t15" 47.1429
+resist "VDD.n45" "VDD.t9" 47.1429
 resist "pfet_floating" "VDD.n1740" 49.0489
 resist "VDD.n1134" "VDD.n117" 67.3302
 resist "VDD.n1168" "VDD.n116" 67.3302
@@ -6185,8 +6185,8 @@ resist "VDD.n618" "VDD.n105" 67.3302
 resist "VDD.n795" "VDD.n114" 67.3302
 resist "VDD.n1100" "VDD.n119" 67.54
 resist "VDD.n1707" "VDD.n82" 67.54
-resist "VDD.n987" "VDD.t8" 68.0282
-resist "VDD.n52" "VDD.t10" 70.3644
+resist "VDD.n987" "VDD.t4" 68.0282
+resist "VDD.n52" "VDD.t1" 70.3644
 resist "VDD.n1741" "x11.VPB" 77.6567
 resist "VDD.n1706" "VDD.n121" 85.9422
 resist "VDD.n1706" "VDD.n123" 85.9422
@@ -6228,7 +6228,7 @@ resist "VDD.n1762" "VDD.n1761" 92.5
 resist "VDD.n1006" "VDD.n1003" 101.205
 resist "VDD.n1003" "VDD.n34" 101.276
 resist "VDD.n1006" "VDD.n989" 106.648
-resist "VDD.n1741" "VDD.t14" 108.719
+resist "VDD.n1741" "VDD.t11" 108.719
 resist "VDD.n1049" "VDD.n942" 111.176
 resist "VDD.n1052" "VDD.n941" 111.176
 resist "VDD.n1070" "VDD.n903" 111.176
@@ -6256,13 +6256,13 @@ resist "VDD.n735" "VDD.n110" 111.176
 resist "VDD.n720" "VDD.n128" 111.176
 resist "VDD.n1116" "VDD.n1115" 111.176
 resist "VDD.n1150" "VDD.n1149" 111.176
-resist "VDD.n1765" "VDD.t4" 113.896
+resist "VDD.n1765" "VDD.t5" 113.896
 resist "VDD.n1011" "VDD.n989" 117.006
 resist "VDD.n1738" "VDD.n29" 118.554
 resist "VDD.n1734" "VDD.n34" 121.446
 resist "VDD.n1734" "VDD.n29" 121.446
-resist "VDD.n28" "VDD.t15" 152.878
-resist "VDD.n1768" "VDD.t5" 152.879
+resist "VDD.n28" "VDD.t12" 152.878
+resist "VDD.n1768" "VDD.t6" 152.879
 resist "VDD.n1765" "x10.VPB" 160.49
 resist "VDD.n1764" "VDD.n2" 185
 resist "VDD.n1760" "VDD.n2" 185
@@ -6366,7 +6366,7 @@ resist "VDD.n1050" "VDD.n928" 185
 resist "VDD.n932" "VDD.n930" 185
 resist "VDD.n1071" "VDD.n889" 185
 resist "VDD.n902" "VDD.n901" 185
-resist "VDD.t4" "VDD.n1764" 188.965
+resist "VDD.t5" "VDD.n1764" 188.965
 resist "x11.VPB" "pfet_floating" 193.931
 resist "VDD.n716" "VDD.n130" 198.117
 resist "VDD.n539" "VDD.n141" 198.117
@@ -6375,389 +6375,389 @@ resist "VDD.n1015" "VDD.n1014" 198.117
 resist "VDD.n363" "VDD.n151" 198.117
 resist "VDD.n540" "VDD.n140" 198.117
 resist "VDD.n717" "VDD.n129" 198.117
-resist "VDD.t14" "VDD.n3" 258.856
+resist "VDD.t11" "VDD.n3" 258.856
 resist "VDD.n1766" "VDD.n2" 351
 resist "VDD.n1742" "VDD.n4" 426
-rnode "x5[6].floating.n0" 0 -7971.49 11523 1744 0
-rnode "x5[6].floating.n1" 0 -28818.8 11603 1744 0
-rnode "x5[6].floating.n2" 0 3823.76 11683 1744 0
-rnode "x5[6].floating.n3" 0 -7057.09 11763 1744 0
-rnode "x5[6].floating.n4" 0 -28269.1 11843 1744 0
-rnode "x5[6].floating.n5" 0 52585 11946 1778 0
-rnode "x5[6].floating.n6" 0 -28269.1 12049 1744 0
-rnode "x5[6].floating.n7" 0 -7057.09 12129 1744 0
-rnode "x5[6].floating.n8" 0 3823.76 12209 1744 0
-rnode "x5[6].floating.n9" 0 -28818.8 12289 1744 0
-rnode "x5[6].floating.n10" 0 -7996.67 12369 1744 0
-rnode "x5[6].floating.n11" 0 2203.13 12411 1732 0
-rnode "x5[6].floating.t5" 0 857.15 12474 1720 0
-rnode "x5[6].floating.n12" 0 6636.56 12466 1720 0
-rnode "x5[6].floating.n13" 0 1205.94 12438 1700 0
-rnode "x5[6].floating.n14" 0 1164.95 12417 1720 0
-rnode "x5[6].floating.n15" 0 2175.06 12438 1700 0
-rnode "x5[6].floating.n16" 0 1057.16 12438 1700 0
-rnode "x5[6].floating.n17" 0 365.313 12443 1732 0
-rnode "x5[6].floating.n18" 0 1057.16 12449 1744 0
-rnode "x5[6].floating.n19" 0 2796.27 12475 1732 0
-rnode "x5[6].floating.n20" 0 51275.9 12552 1778 0
+rnode "x5[7].floating.n0" 0 -7971.49 11523 1744 0
+rnode "x5[7].floating.n1" 0 -28818.8 11603 1744 0
+rnode "x5[7].floating.n2" 0 3823.76 11683 1744 0
+rnode "x5[7].floating.n3" 0 -7057.09 11763 1744 0
+rnode "x5[7].floating.n4" 0 -28269.1 11843 1744 0
+rnode "x5[7].floating.n5" 0 52585 11946 1778 0
+rnode "x5[7].floating.n6" 0 -28269.1 12049 1744 0
+rnode "x5[7].floating.n7" 0 -7057.09 12129 1744 0
+rnode "x5[7].floating.n8" 0 3823.76 12209 1744 0
+rnode "x5[7].floating.n9" 0 -28818.8 12289 1744 0
+rnode "x5[7].floating.n10" 0 -7996.67 12369 1744 0
+rnode "x5[7].floating.n11" 0 2203.13 12411 1732 0
+rnode "x5[7].floating.t5" 0 857.15 12474 1720 0
+rnode "x5[7].floating.n12" 0 6636.56 12466 1720 0
+rnode "x5[7].floating.n13" 0 1205.94 12438 1700 0
+rnode "x5[7].floating.n14" 0 1164.95 12417 1720 0
+rnode "x5[7].floating.n15" 0 2175.06 12438 1700 0
+rnode "x5[7].floating.n16" 0 1057.16 12438 1700 0
+rnode "x5[7].floating.n17" 0 365.313 12443 1732 0
+rnode "x5[7].floating.n18" 0 1057.16 12449 1744 0
+rnode "x5[7].floating.n19" 0 2796.27 12475 1732 0
+rnode "x5[7].floating.n20" 0 51275.9 12552 1778 0
 rnode "x5[3].floating" 0 2461.55 13229 1712 0
-rnode "x5[6].floating.n21" 0 2781.56 13840 1732 0
-rnode "x5[6].floating.n22" 0 1057.16 13867 1744 0
-rnode "x5[6].floating.n23" 0 363.398 13872 1732 0
-rnode "x5[6].floating.t2" 0 857.15 13842 1720 0
-rnode "x5[6].floating.n24" 0 6465.65 13899 1720 0
-rnode "x5[6].floating.n25" 0 1150.17 13878 1700 0
-rnode "x5[6].floating.n26" 0 1355.58 13872 1732 0
-rnode "x5[6].floating.n27" 0 2198.25 13878 1700 0
-rnode "x5[6].floating.n28" 0 1057.16 13878 1700 0
-rnode "x5[6].floating.n29" 0 2224.37 13904 1732 0
-rnode "x5[6].floating.n30" 0 -7971.49 13947 1744 0
-rnode "x5[6].floating.n31" 0 -28818.8 14027 1744 0
-rnode "x5[6].floating.n32" 0 3823.76 14107 1744 0
-rnode "x5[6].floating.n33" 0 -7057.09 14187 1744 0
-rnode "x5[6].floating.n34" 0 -28269.1 14267 1744 0
-rnode "x5[6].floating.n35" 0 52585 14370 1778 0
+rnode "x5[7].floating.n21" 0 2781.56 13840 1732 0
+rnode "x5[7].floating.n22" 0 1057.16 13867 1744 0
+rnode "x5[7].floating.n23" 0 363.398 13872 1732 0
+rnode "x5[7].floating.t2" 0 857.15 13842 1720 0
+rnode "x5[7].floating.n24" 0 6465.65 13899 1720 0
+rnode "x5[7].floating.n25" 0 1150.17 13878 1700 0
+rnode "x5[7].floating.n26" 0 1355.58 13872 1732 0
+rnode "x5[7].floating.n27" 0 2198.25 13878 1700 0
+rnode "x5[7].floating.n28" 0 1057.16 13878 1700 0
+rnode "x5[7].floating.n29" 0 2224.37 13904 1732 0
+rnode "x5[7].floating.n30" 0 -7971.49 13947 1744 0
+rnode "x5[7].floating.n31" 0 -28818.8 14027 1744 0
+rnode "x5[7].floating.n32" 0 3823.76 14107 1744 0
+rnode "x5[7].floating.n33" 0 -7057.09 14187 1744 0
+rnode "x5[7].floating.n34" 0 -28269.1 14267 1744 0
+rnode "x5[7].floating.n35" 0 52585 14370 1778 0
 rnode "x5[0].floating" 0 43566.5 15447 1712 0
-rnode "x5[6].floating.n36" 0 -28269.1 14473 1744 0
-rnode "x5[6].floating.n37" 0 -7057.09 14553 1744 0
-rnode "x5[6].floating.n38" 0 3823.76 14633 1744 0
-rnode "x5[6].floating.n39" 0 -28818.8 14713 1744 0
-rnode "x5[6].floating.n40" 0 -7996.67 14793 1744 0
-rnode "x5[6].floating.n41" 0 2203.13 14835 1732 0
-rnode "x5[6].floating.t1" 0 857.15 14898 1720 0
-rnode "x5[6].floating.n42" 0 6636.56 14890 1720 0
-rnode "x5[6].floating.n43" 0 1205.94 14862 1700 0
-rnode "x5[6].floating.n44" 0 1164.95 14841 1720 0
-rnode "x5[6].floating.n45" 0 2175.06 14862 1700 0
-rnode "x5[6].floating.n46" 0 1057.16 14862 1700 0
-rnode "x5[6].floating.n47" 0 365.313 14867 1732 0
-rnode "x5[6].floating.n48" 0 1057.16 14873 1744 0
-rnode "x5[6].floating.n49" 0 2796.27 14899 1732 0
-rnode "x5[6].floating.n50" 0 51275.9 14976 1778 0
-rnode "x5[6].floating.n51" 0 2781.56 15052 1732 0
-rnode "x5[6].floating.n52" 0 1057.16 15079 1764 0
-rnode "x5[6].floating.n53" 0 363.398 15084 1732 0
-rnode "x5[6].floating.t3" 0 857.15 15054 1720 0
-rnode "x5[6].floating.n54" 0 6465.65 15111 1720 0
-rnode "x5[6].floating.n55" 0 1150.17 15090 1700 0
-rnode "x5[6].floating.n56" 0 1355.58 15084 1732 0
-rnode "x5[6].floating.n57" 0 2198.25 15090 1700 0
-rnode "x5[6].floating.n58" 0 1057.16 15090 1700 0
-rnode "x5[6].floating.n59" 0 -15170 15116 1732 0
-rnode "x5[6].floating.n60" 0 -15122.5 15159 1744 0
-rnode "x5[6].floating.n61" 0 -41470.2 15084 1732 0
-rnode "x5[6].floating.n62" 0 764.752 15079 1764 0
-rnode "x5[6].floating.n63" 0 2461.55 15052 1732 0
-rnode "x5[6].floating.n64" 0 51374.9 14976 1778 0
-rnode "x5[6].floating.n65" 0 2461.55 14899 1732 0
-rnode "x5[6].floating.n66" 0 764.752 14873 1744 0
-rnode "x5[6].floating.n67" 0 -33377.4 14867 1732 0
-rnode "x5[6].floating.n68" 0 -4553.79 14793 1744 0
-rnode "x5[6].floating.n69" 0 3823.76 14713 1744 0
-rnode "x5[6].floating.n70" 0 -28818.8 14633 1744 0
-rnode "x5[6].floating.n71" 0 -7057.09 14553 1744 0
-rnode "x5[6].floating.n72" 0 2676.63 14473 1744 0
+rnode "x5[7].floating.n36" 0 -28269.1 14473 1744 0
+rnode "x5[7].floating.n37" 0 -7057.09 14553 1744 0
+rnode "x5[7].floating.n38" 0 3823.76 14633 1744 0
+rnode "x5[7].floating.n39" 0 -28818.8 14713 1744 0
+rnode "x5[7].floating.n40" 0 -7996.67 14793 1744 0
+rnode "x5[7].floating.n41" 0 2203.13 14835 1732 0
+rnode "x5[7].floating.t1" 0 857.15 14898 1720 0
+rnode "x5[7].floating.n42" 0 6636.56 14890 1720 0
+rnode "x5[7].floating.n43" 0 1205.94 14862 1700 0
+rnode "x5[7].floating.n44" 0 1164.95 14841 1720 0
+rnode "x5[7].floating.n45" 0 2175.06 14862 1700 0
+rnode "x5[7].floating.n46" 0 1057.16 14862 1700 0
+rnode "x5[7].floating.n47" 0 365.313 14867 1732 0
+rnode "x5[7].floating.n48" 0 1057.16 14873 1744 0
+rnode "x5[7].floating.n49" 0 2796.27 14899 1732 0
+rnode "x5[7].floating.n50" 0 51275.9 14976 1778 0
+rnode "x5[7].floating.n51" 0 2781.56 15052 1732 0
+rnode "x5[7].floating.n52" 0 1057.16 15079 1764 0
+rnode "x5[7].floating.n53" 0 363.398 15084 1732 0
+rnode "x5[7].floating.t3" 0 857.15 15054 1720 0
+rnode "x5[7].floating.n54" 0 6465.65 15111 1720 0
+rnode "x5[7].floating.n55" 0 1150.17 15090 1700 0
+rnode "x5[7].floating.n56" 0 1355.58 15084 1732 0
+rnode "x5[7].floating.n57" 0 2198.25 15090 1700 0
+rnode "x5[7].floating.n58" 0 1057.16 15090 1700 0
+rnode "x5[7].floating.n59" 0 -15170 15116 1732 0
+rnode "x5[7].floating.n60" 0 -15122.5 15159 1744 0
+rnode "x5[7].floating.n61" 0 -41470.2 15084 1732 0
+rnode "x5[7].floating.n62" 0 764.752 15079 1764 0
+rnode "x5[7].floating.n63" 0 2461.55 15052 1732 0
+rnode "x5[7].floating.n64" 0 51374.9 14976 1778 0
+rnode "x5[7].floating.n65" 0 2461.55 14899 1732 0
+rnode "x5[7].floating.n66" 0 764.752 14873 1744 0
+rnode "x5[7].floating.n67" 0 -33377.4 14867 1732 0
+rnode "x5[7].floating.n68" 0 -4553.79 14793 1744 0
+rnode "x5[7].floating.n69" 0 3823.76 14713 1744 0
+rnode "x5[7].floating.n70" 0 -28818.8 14633 1744 0
+rnode "x5[7].floating.n71" 0 -7057.09 14553 1744 0
+rnode "x5[7].floating.n72" 0 2676.63 14473 1744 0
 rnode "x5[1].floating" 0 2461.55 14441 1712 0
-rnode "x5[6].floating.n73" 0 51876.7 14370 1778 0
-rnode "x5[6].floating.n74" 0 3226.3 14267 1744 0
+rnode "x5[7].floating.n73" 0 51876.7 14370 1778 0
+rnode "x5[7].floating.n74" 0 3226.3 14267 1744 0
 rnode "x5[2].floating" 0 1911.88 14235 1712 0
-rnode "x5[6].floating.n75" 0 -7821.84 14187 1744 0
-rnode "x5[6].floating.n76" 0 -28818.8 14107 1744 0
-rnode "x5[6].floating.n77" 0 3823.76 14027 1744 0
-rnode "x5[6].floating.n78" 0 -5000.41 13947 1744 0
-rnode "x5[6].floating.n79" 0 -32906.8 13872 1732 0
-rnode "x5[6].floating.n80" 0 764.752 13867 1744 0
-rnode "x5[6].floating.n81" 0 2461.55 13840 1732 0
-rnode "x5[6].floating.n82" 0 2676.63 13261 1744 0
-rnode "x5[6].floating.n83" 0 -7057.09 13341 1744 0
-rnode "x5[6].floating.n84" 0 -28818.8 13421 1744 0
-rnode "x5[6].floating.n85" 0 3823.76 13501 1744 0
-rnode "x5[6].floating.n86" 0 -4553.79 13581 1744 0
-rnode "x5[6].floating.n87" 0 -33377.4 13655 1732 0
-rnode "x5[6].floating.n88" 0 764.752 13661 1744 0
-rnode "x5[6].floating.n89" 0 2461.55 13687 1732 0
-rnode "x5[6].floating.n90" 0 51374.9 13764 1778 0
-rnode "x5[6].floating.n91" 0 51275.9 13764 1778 0
-rnode "x5[6].floating.n92" 0 2796.27 13687 1732 0
-rnode "x5[6].floating.n93" 0 1057.16 13661 1744 0
-rnode "x5[6].floating.n94" 0 365.313 13655 1732 0
-rnode "x5[6].floating.t7" 0 857.15 13686 1720 0
-rnode "x5[6].floating.n95" 0 6636.56 13678 1720 0
-rnode "x5[6].floating.n96" 0 1205.94 13650 1700 0
-rnode "x5[6].floating.n97" 0 1164.95 13629 1720 0
-rnode "x5[6].floating.n98" 0 2175.06 13650 1700 0
-rnode "x5[6].floating.n99" 0 1057.16 13650 1700 0
-rnode "x5[6].floating.n100" 0 2203.13 13623 1732 0
-rnode "x5[6].floating.n101" 0 -7996.67 13581 1744 0
-rnode "x5[6].floating.n102" 0 -28818.8 13501 1744 0
-rnode "x5[6].floating.n103" 0 3823.76 13421 1744 0
-rnode "x5[6].floating.n104" 0 -7057.09 13341 1744 0
-rnode "x5[6].floating.n105" 0 -28269.1 13261 1744 0
-rnode "x5[6].floating.n106" 0 2781.56 12628 1732 0
-rnode "x5[6].floating.n107" 0 1057.16 12655 1744 0
-rnode "x5[6].floating.n108" 0 363.398 12660 1732 0
-rnode "x5[6].floating.t6" 0 857.15 12630 1720 0
-rnode "x5[6].floating.n109" 0 6465.65 12687 1720 0
-rnode "x5[6].floating.n110" 0 1150.17 12666 1700 0
-rnode "x5[6].floating.n111" 0 1355.58 12660 1732 0
-rnode "x5[6].floating.n112" 0 2198.25 12666 1700 0
-rnode "x5[6].floating.n113" 0 1057.16 12666 1700 0
-rnode "x5[6].floating.n114" 0 2224.37 12692 1732 0
-rnode "x5[6].floating.n115" 0 -7971.49 12735 1744 0
-rnode "x5[6].floating.n116" 0 -28818.8 12815 1744 0
-rnode "x5[6].floating.n117" 0 3823.76 12895 1744 0
-rnode "x5[6].floating.n118" 0 -7057.09 12975 1744 0
-rnode "x5[6].floating.n119" 0 -28269.1 13055 1744 0
-rnode "x5[6].floating.n120" 0 52585 13158 1778 0
-rnode "x5[6].floating.n121" 0 51876.7 13158 1778 0
-rnode "x5[6].floating.n122" 0 3226.3 13055 1744 0
+rnode "x5[7].floating.n75" 0 -7821.84 14187 1744 0
+rnode "x5[7].floating.n76" 0 -28818.8 14107 1744 0
+rnode "x5[7].floating.n77" 0 3823.76 14027 1744 0
+rnode "x5[7].floating.n78" 0 -5000.41 13947 1744 0
+rnode "x5[7].floating.n79" 0 -32906.8 13872 1732 0
+rnode "x5[7].floating.n80" 0 764.752 13867 1744 0
+rnode "x5[7].floating.n81" 0 2461.55 13840 1732 0
+rnode "x5[7].floating.n82" 0 2676.63 13261 1744 0
+rnode "x5[7].floating.n83" 0 -7057.09 13341 1744 0
+rnode "x5[7].floating.n84" 0 -28818.8 13421 1744 0
+rnode "x5[7].floating.n85" 0 3823.76 13501 1744 0
+rnode "x5[7].floating.n86" 0 -4553.79 13581 1744 0
+rnode "x5[7].floating.n87" 0 -33377.4 13655 1732 0
+rnode "x5[7].floating.n88" 0 764.752 13661 1744 0
+rnode "x5[7].floating.n89" 0 2461.55 13687 1732 0
+rnode "x5[7].floating.n90" 0 51374.9 13764 1778 0
+rnode "x5[7].floating.n91" 0 51275.9 13764 1778 0
+rnode "x5[7].floating.n92" 0 2796.27 13687 1732 0
+rnode "x5[7].floating.n93" 0 1057.16 13661 1744 0
+rnode "x5[7].floating.n94" 0 365.313 13655 1732 0
+rnode "x5[7].floating.t7" 0 857.15 13686 1720 0
+rnode "x5[7].floating.n95" 0 6636.56 13678 1720 0
+rnode "x5[7].floating.n96" 0 1205.94 13650 1700 0
+rnode "x5[7].floating.n97" 0 1164.95 13629 1720 0
+rnode "x5[7].floating.n98" 0 2175.06 13650 1700 0
+rnode "x5[7].floating.n99" 0 1057.16 13650 1700 0
+rnode "x5[7].floating.n100" 0 2203.13 13623 1732 0
+rnode "x5[7].floating.n101" 0 -7996.67 13581 1744 0
+rnode "x5[7].floating.n102" 0 -28818.8 13501 1744 0
+rnode "x5[7].floating.n103" 0 3823.76 13421 1744 0
+rnode "x5[7].floating.n104" 0 -7057.09 13341 1744 0
+rnode "x5[7].floating.n105" 0 -28269.1 13261 1744 0
+rnode "x5[7].floating.n106" 0 2781.56 12628 1732 0
+rnode "x5[7].floating.n107" 0 1057.16 12655 1744 0
+rnode "x5[7].floating.n108" 0 363.398 12660 1732 0
+rnode "x5[7].floating.t6" 0 857.15 12630 1720 0
+rnode "x5[7].floating.n109" 0 6465.65 12687 1720 0
+rnode "x5[7].floating.n110" 0 1150.17 12666 1700 0
+rnode "x5[7].floating.n111" 0 1355.58 12660 1732 0
+rnode "x5[7].floating.n112" 0 2198.25 12666 1700 0
+rnode "x5[7].floating.n113" 0 1057.16 12666 1700 0
+rnode "x5[7].floating.n114" 0 2224.37 12692 1732 0
+rnode "x5[7].floating.n115" 0 -7971.49 12735 1744 0
+rnode "x5[7].floating.n116" 0 -28818.8 12815 1744 0
+rnode "x5[7].floating.n117" 0 3823.76 12895 1744 0
+rnode "x5[7].floating.n118" 0 -7057.09 12975 1744 0
+rnode "x5[7].floating.n119" 0 -28269.1 13055 1744 0
+rnode "x5[7].floating.n120" 0 52585 13158 1778 0
+rnode "x5[7].floating.n121" 0 51876.7 13158 1778 0
+rnode "x5[7].floating.n122" 0 3226.3 13055 1744 0
 rnode "x5[4].floating" 0 1911.88 13023 1712 0
-rnode "x5[6].floating.n123" 0 -7821.84 12975 1744 0
-rnode "x5[6].floating.n124" 0 -28818.8 12895 1744 0
-rnode "x5[6].floating.n125" 0 3823.76 12815 1744 0
-rnode "x5[6].floating.n126" 0 -5000.41 12735 1744 0
-rnode "x5[6].floating.n127" 0 -32906.8 12660 1732 0
-rnode "x5[6].floating.n128" 0 764.752 12655 1744 0
-rnode "x5[6].floating.n129" 0 2461.55 12628 1732 0
-rnode "x5[6].floating.n130" 0 51374.9 12552 1778 0
-rnode "x5[6].floating.n131" 0 2461.55 12475 1732 0
-rnode "x5[6].floating.n132" 0 764.752 12449 1744 0
-rnode "x5[6].floating.n133" 0 -33377.4 12443 1732 0
-rnode "x5[6].floating.n134" 0 -4553.79 12369 1744 0
-rnode "x5[6].floating.n135" 0 3823.76 12289 1744 0
-rnode "x5[6].floating.n136" 0 -28818.8 12209 1744 0
-rnode "x5[6].floating.n137" 0 -7057.09 12129 1744 0
-rnode "x5[6].floating.n138" 0 2676.63 12049 1744 0
+rnode "x5[7].floating.n123" 0 -7821.84 12975 1744 0
+rnode "x5[7].floating.n124" 0 -28818.8 12895 1744 0
+rnode "x5[7].floating.n125" 0 3823.76 12815 1744 0
+rnode "x5[7].floating.n126" 0 -5000.41 12735 1744 0
+rnode "x5[7].floating.n127" 0 -32906.8 12660 1732 0
+rnode "x5[7].floating.n128" 0 764.752 12655 1744 0
+rnode "x5[7].floating.n129" 0 2461.55 12628 1732 0
+rnode "x5[7].floating.n130" 0 51374.9 12552 1778 0
+rnode "x5[7].floating.n131" 0 2461.55 12475 1732 0
+rnode "x5[7].floating.n132" 0 764.752 12449 1744 0
+rnode "x5[7].floating.n133" 0 -33377.4 12443 1732 0
+rnode "x5[7].floating.n134" 0 -4553.79 12369 1744 0
+rnode "x5[7].floating.n135" 0 3823.76 12289 1744 0
+rnode "x5[7].floating.n136" 0 -28818.8 12209 1744 0
+rnode "x5[7].floating.n137" 0 -7057.09 12129 1744 0
+rnode "x5[7].floating.n138" 0 2676.63 12049 1744 0
 rnode "x5[5].floating" 0 2461.55 12017 1712 0
-rnode "x5[6].floating.n139" 0 51876.7 11946 1778 0
-rnode "x5[6].floating.n140" 0 3226.3 11843 1744 0
+rnode "x5[7].floating.n139" 0 51876.7 11946 1778 0
+rnode "x5[7].floating.n140" 0 3226.3 11843 1744 0
 rnode "x5[7].floating" 0 49693.5 10805 1712 0
-rnode "x5[6].floating.n141" 0 2224.37 11480 1732 0
-rnode "x5[6].floating.t4" 0 857.15 11418 1720 0
-rnode "x5[6].floating.n142" 0 6465.65 11475 1720 0
-rnode "x5[6].floating.n143" 0 1150.17 11454 1700 0
-rnode "x5[6].floating.n144" 0 1355.58 11448 1732 0
-rnode "x5[6].floating.n145" 0 2198.25 11454 1700 0
-rnode "x5[6].floating.n146" 0 1057.16 11454 1700 0
-rnode "x5[6].floating.n147" 0 363.398 11448 1732 0
-rnode "x5[6].floating.n148" 0 1057.16 11443 1744 0
-rnode "x5[6].floating.n149" 0 2781.56 11416 1732 0
-rnode "x5[6].floating.n150" 0 51275.9 11340 1778 0
-rnode "x5[6].floating.n151" 0 2796.27 11263 1732 0
-rnode "x5[6].floating.n152" 0 1057.16 11237 1764 0
-rnode "x5[6].floating.n153" 0 365.246 11231 1732 0
-rnode "x5[6].floating.t0" 0 857.15 11262 1720 0
-rnode "x5[6].floating.n154" 0 7141.39 11233 1720 0
-rnode "x5[6].floating.n155" 0 1206.01 11226 1721 0
-rnode "x5[6].floating.n156" 0 1164.95 11205 1720 0
-rnode "x5[6].floating.n157" 0 1670.23 11226 1721 0
-rnode "x5[6].floating.n158" 0 1057.16 11226 1721 0
-rnode "x5[6].floating.n159" 0 -17324.7 11199 1732 0
-rnode "x5[6].floating.n160" 0 -17154.2 11157 1744 0
-rnode "x5[6].floating.n161" 0 -43481.1 11231 1732 0
-rnode "x5[6].floating.n162" 0 764.752 11237 1764 0
-rnode "x5[6].floating.n163" 0 2461.55 11263 1732 0
-rnode "x5[6].floating.n164" 0 51374.9 11340 1778 0
-rnode "x5[6].floating.n165" 0 2461.55 11416 1732 0
-rnode "x5[6].floating.n166" 0 764.752 11443 1744 0
-rnode "x5[6].floating.n167" 0 -32906.8 11448 1732 0
-rnode "x5[6].floating.n168" 0 -5000.41 11523 1744 0
-rnode "x5[6].floating.n169" 0 3823.76 11603 1744 0
-rnode "x5[6].floating.n170" 0 -28818.8 11683 1744 0
-rnode "x5[6].floating.n171" 0 -7821.84 11763 1744 0
+rnode "x5[7].floating.n141" 0 2224.37 11480 1732 0
+rnode "x5[7].floating.t4" 0 857.15 11418 1720 0
+rnode "x5[7].floating.n142" 0 6465.65 11475 1720 0
+rnode "x5[7].floating.n143" 0 1150.17 11454 1700 0
+rnode "x5[7].floating.n144" 0 1355.58 11448 1732 0
+rnode "x5[7].floating.n145" 0 2198.25 11454 1700 0
+rnode "x5[7].floating.n146" 0 1057.16 11454 1700 0
+rnode "x5[7].floating.n147" 0 363.398 11448 1732 0
+rnode "x5[7].floating.n148" 0 1057.16 11443 1744 0
+rnode "x5[7].floating.n149" 0 2781.56 11416 1732 0
+rnode "x5[7].floating.n150" 0 51275.9 11340 1778 0
+rnode "x5[7].floating.n151" 0 2796.27 11263 1732 0
+rnode "x5[7].floating.n152" 0 1057.16 11237 1764 0
+rnode "x5[7].floating.n153" 0 365.246 11231 1732 0
+rnode "x5[7].floating.t0" 0 857.15 11262 1720 0
+rnode "x5[7].floating.n154" 0 7141.39 11233 1720 0
+rnode "x5[7].floating.n155" 0 1206.01 11226 1721 0
+rnode "x5[7].floating.n156" 0 1164.95 11205 1720 0
+rnode "x5[7].floating.n157" 0 1670.23 11226 1721 0
+rnode "x5[7].floating.n158" 0 1057.16 11226 1721 0
+rnode "x5[7].floating.n159" 0 -17324.7 11199 1732 0
+rnode "x5[7].floating.n160" 0 -17154.2 11157 1744 0
+rnode "x5[7].floating.n161" 0 -43481.1 11231 1732 0
+rnode "x5[7].floating.n162" 0 764.752 11237 1764 0
+rnode "x5[7].floating.n163" 0 2461.55 11263 1732 0
+rnode "x5[7].floating.n164" 0 51374.9 11340 1778 0
+rnode "x5[7].floating.n165" 0 2461.55 11416 1732 0
+rnode "x5[7].floating.n166" 0 764.752 11443 1744 0
+rnode "x5[7].floating.n167" 0 -32906.8 11448 1732 0
+rnode "x5[7].floating.n168" 0 -5000.41 11523 1744 0
+rnode "x5[7].floating.n169" 0 3823.76 11603 1744 0
+rnode "x5[7].floating.n170" 0 -28818.8 11683 1744 0
+rnode "x5[7].floating.n171" 0 -7821.84 11763 1744 0
 rnode "x5[6].floating" 0 1911.88 11811 1712 0
-resist "x5[6].floating.n113" "x5[6].floating.n112" 3.97204e-05
-resist "x5[6].floating.n158" "x5[6].floating.n157" 3.97204e-05
-resist "x5[6].floating.n146" "x5[6].floating.n145" 3.97204e-05
-resist "x5[6].floating.n16" "x5[6].floating.n15" 3.97204e-05
-resist "x5[6].floating.n28" "x5[6].floating.n27" 3.97204e-05
-resist "x5[6].floating.n46" "x5[6].floating.n45" 3.97204e-05
-resist "x5[6].floating.n58" "x5[6].floating.n57" 3.97204e-05
-resist "x5[6].floating.n99" "x5[6].floating.n98" 3.97204e-05
-resist "x5[6].floating.n112" "x5[6].floating.n110" 0.000523299
-resist "x5[6].floating.n145" "x5[6].floating.n143" 0.000523299
-resist "x5[6].floating.n57" "x5[6].floating.n55" 0.000523299
-resist "x5[6].floating.n27" "x5[6].floating.n25" 0.000523299
-resist "x5[6].floating.n15" "x5[6].floating.n13" 0.00150689
-resist "x5[6].floating.n45" "x5[6].floating.n43" 0.00150689
-resist "x5[6].floating.n98" "x5[6].floating.n96" 0.00150689
-resist "x5[6].floating.n157" "x5[6].floating.n155" 0.00183747
-resist "x5[6].floating.n13" "x5[6].floating.n12" 0.0018396
-resist "x5[6].floating.n43" "x5[6].floating.n42" 0.0018396
-resist "x5[6].floating.n96" "x5[6].floating.n95" 0.0018396
-resist "x5[6].floating.n155" "x5[6].floating.n154" 0.00227942
-resist "x5[6].floating.n108" "x5[6].floating.n107" 0.0025
-resist "x5[6].floating.n158" "x5[6].floating.n153" 0.0025
-resist "x5[6].floating.n148" "x5[6].floating.n147" 0.0025
-resist "x5[6].floating.n17" "x5[6].floating.n16" 0.0025
-resist "x5[6].floating.n23" "x5[6].floating.n22" 0.0025
-resist "x5[6].floating.n47" "x5[6].floating.n46" 0.0025
-resist "x5[6].floating.n53" "x5[6].floating.n52" 0.0025
-resist "x5[6].floating.n99" "x5[6].floating.n94" 0.0025
-resist "x5[6].floating.n113" "x5[6].floating.n108" 0.003
-resist "x5[6].floating.n153" "x5[6].floating.n152" 0.003
-resist "x5[6].floating.n147" "x5[6].floating.n146" 0.003
-resist "x5[6].floating.n18" "x5[6].floating.n17" 0.003
-resist "x5[6].floating.n28" "x5[6].floating.n23" 0.003
-resist "x5[6].floating.n48" "x5[6].floating.n47" 0.003
-resist "x5[6].floating.n58" "x5[6].floating.n53" 0.003
-resist "x5[6].floating.n94" "x5[6].floating.n93" 0.003
-resist "x5[6].floating.n143" "x5[6].floating.n142" 0.00309614
-resist "x5[6].floating.n55" "x5[6].floating.n54" 0.00309614
-resist "x5[6].floating.n25" "x5[6].floating.n24" 0.00309614
-resist "x5[6].floating.n110" "x5[6].floating.n109" 0.00309614
-resist "x5[6].floating.n167" "x5[6].floating.n166" 0.00345588
-resist "x5[6].floating.n128" "x5[6].floating.n127" 0.00345588
-resist "x5[6].floating.n80" "x5[6].floating.n79" 0.00345588
-resist "x5[6].floating.n62" "x5[6].floating.n61" 0.00345588
-resist "x5[6].floating.n162" "x5[6].floating.n161" 0.00414706
-resist "x5[6].floating.n133" "x5[6].floating.n132" 0.00414706
-resist "x5[6].floating.n88" "x5[6].floating.n87" 0.00414706
-resist "x5[6].floating.n67" "x5[6].floating.n66" 0.00414706
-resist "x5[6].floating.n112" "x5[6].floating.n111" 0.0115385
-resist "x5[6].floating.n145" "x5[6].floating.n144" 0.0115385
-resist "x5[6].floating.n57" "x5[6].floating.n56" 0.0115385
-resist "x5[6].floating.n27" "x5[6].floating.n26" 0.0115385
-resist "x5[6].floating.n114" "x5[6].floating.n113" 0.013
-resist "x5[6].floating.n152" "x5[6].floating.n151" 0.013
-resist "x5[6].floating.n146" "x5[6].floating.n141" 0.013
-resist "x5[6].floating.n19" "x5[6].floating.n18" 0.013
-resist "x5[6].floating.n29" "x5[6].floating.n28" 0.013
-resist "x5[6].floating.n49" "x5[6].floating.n48" 0.013
-resist "x5[6].floating.n59" "x5[6].floating.n58" 0.013
-resist "x5[6].floating.n93" "x5[6].floating.n92" 0.013
-resist "x5[6].floating.n107" "x5[6].floating.n106" 0.0135
-resist "x5[6].floating.n159" "x5[6].floating.n158" 0.0135
-resist "x5[6].floating.n149" "x5[6].floating.n148" 0.0135
-resist "x5[6].floating.n16" "x5[6].floating.n11" 0.0135
-resist "x5[6].floating.n22" "x5[6].floating.n21" 0.0135
-resist "x5[6].floating.n46" "x5[6].floating.n41" 0.0135
-resist "x5[6].floating.n52" "x5[6].floating.n51" 0.0135
-resist "x5[6].floating.n100" "x5[6].floating.n99" 0.0135
-resist "x5[6].floating.n163" "x5[6].floating.n162" 0.0179706
-resist "x5[6].floating.n132" "x5[6].floating.n131" 0.0179706
-resist "x5[6].floating.n89" "x5[6].floating.n88" 0.0179706
-resist "x5[6].floating.n66" "x5[6].floating.n65" 0.0179706
-resist "x5[6].floating.n166" "x5[6].floating.n165" 0.0186618
-resist "x5[6].floating.n129" "x5[6].floating.n128" 0.0186618
-resist "x5[6].floating.n81" "x5[6].floating.n80" 0.0186618
-resist "x5[6].floating.n63" "x5[6].floating.n62" 0.0186618
-resist "x5[6].floating" "x5[6].floating.n140" 0.0221176
-resist "x5[5].floating" "x5[6].floating.n138" 0.0221176
-resist "x5[4].floating" "x5[6].floating.n122" 0.0221176
-resist "x5[6].floating.n82" "x5[3].floating" 0.0221176
-resist "x5[2].floating" "x5[6].floating.n74" 0.0221176
-resist "x5[1].floating" "x5[6].floating.n72" 0.0221176
-resist "x5[6].floating.n11" "x5[6].floating.n10" 0.0261618
-resist "x5[6].floating.n41" "x5[6].floating.n40" 0.0261618
-resist "x5[6].floating.n101" "x5[6].floating.n100" 0.0261618
-resist "x5[6].floating.n115" "x5[6].floating.n114" 0.0266618
-resist "x5[6].floating.n30" "x5[6].floating.n29" 0.0266618
-resist "x5[6].floating" "x5[6].floating.n171" 0.0331765
-resist "x5[6].floating.n123" "x5[4].floating" 0.0331765
-resist "x5[6].floating.n75" "x5[2].floating" 0.0331765
-resist "x5[6].floating.n15" "x5[6].floating.n14" 0.0403846
-resist "x5[6].floating.n157" "x5[6].floating.n156" 0.0403846
-resist "x5[6].floating.n45" "x5[6].floating.n44" 0.0403846
-resist "x5[6].floating.n98" "x5[6].floating.n97" 0.0403846
-resist "x5[6].floating.n139" "x5[5].floating" 0.0490735
-resist "x5[6].floating.n121" "x5[3].floating" 0.0490735
-resist "x5[6].floating.n73" "x5[1].floating" 0.0490735
-resist "x5[6].floating.n134" "x5[6].floating.n133" 0.0511471
-resist "x5[6].floating.n87" "x5[6].floating.n86" 0.0511471
-resist "x5[6].floating.n68" "x5[6].floating.n67" 0.0511471
-resist "x5[6].floating.n168" "x5[6].floating.n167" 0.0518382
-resist "x5[6].floating.n127" "x5[6].floating.n126" 0.0518382
-resist "x5[6].floating.n79" "x5[6].floating.n78" 0.0518382
-resist "x5[6].floating.n150" "x5[6].floating.n149" 0.0519559
-resist "x5[6].floating.n106" "x5[6].floating.n20" 0.0519559
-resist "x5[6].floating.n91" "x5[6].floating.n21" 0.0519559
-resist "x5[6].floating.n51" "x5[6].floating.n50" 0.0519559
-resist "x5[6].floating.n151" "x5[6].floating.n150" 0.0524559
-resist "x5[6].floating.n20" "x5[6].floating.n19" 0.0524559
-resist "x5[6].floating.n50" "x5[6].floating.n49" 0.0524559
-resist "x5[6].floating.n92" "x5[6].floating.n91" 0.0524559
-resist "x5[6].floating.n165" "x5[6].floating.n164" 0.0525294
-resist "x5[6].floating.n130" "x5[6].floating.n129" 0.0525294
-resist "x5[6].floating.n90" "x5[6].floating.n81" 0.0525294
-resist "x5[6].floating.n64" "x5[6].floating.n63" 0.0525294
-resist "x5[6].floating.n164" "x5[6].floating.n163" 0.0532206
-resist "x5[6].floating.n131" "x5[6].floating.n130" 0.0532206
-resist "x5[6].floating.n90" "x5[6].floating.n89" 0.0532206
-resist "x5[6].floating.n65" "x5[6].floating.n64" 0.0532206
-resist "x5[6].floating.n116" "x5[6].floating.n115" 0.0552941
-resist "x5[6].floating.n117" "x5[6].floating.n116" 0.0552941
-resist "x5[6].floating.n118" "x5[6].floating.n117" 0.0552941
-resist "x5[6].floating.n119" "x5[6].floating.n118" 0.0552941
-resist "x5[6].floating.n105" "x5[6].floating.n104" 0.0552941
-resist "x5[6].floating.n104" "x5[6].floating.n103" 0.0552941
-resist "x5[6].floating.n103" "x5[6].floating.n102" 0.0552941
-resist "x5[6].floating.n102" "x5[6].floating.n101" 0.0552941
-resist "x5[6].floating.n169" "x5[6].floating.n168" 0.0552941
-resist "x5[6].floating.n170" "x5[6].floating.n169" 0.0552941
-resist "x5[6].floating.n171" "x5[6].floating.n170" 0.0552941
-resist "x5[6].floating.n138" "x5[6].floating.n137" 0.0552941
-resist "x5[6].floating.n137" "x5[6].floating.n136" 0.0552941
-resist "x5[6].floating.n136" "x5[6].floating.n135" 0.0552941
-resist "x5[6].floating.n135" "x5[6].floating.n134" 0.0552941
-resist "x5[6].floating.n126" "x5[6].floating.n125" 0.0552941
-resist "x5[6].floating.n125" "x5[6].floating.n124" 0.0552941
-resist "x5[6].floating.n124" "x5[6].floating.n123" 0.0552941
-resist "x5[6].floating.n83" "x5[6].floating.n82" 0.0552941
-resist "x5[6].floating.n84" "x5[6].floating.n83" 0.0552941
-resist "x5[6].floating.n85" "x5[6].floating.n84" 0.0552941
-resist "x5[6].floating.n86" "x5[6].floating.n85" 0.0552941
-resist "x5[6].floating.n78" "x5[6].floating.n77" 0.0552941
-resist "x5[6].floating.n77" "x5[6].floating.n76" 0.0552941
-resist "x5[6].floating.n76" "x5[6].floating.n75" 0.0552941
-resist "x5[6].floating.n72" "x5[6].floating.n71" 0.0552941
-resist "x5[6].floating.n71" "x5[6].floating.n70" 0.0552941
-resist "x5[6].floating.n70" "x5[6].floating.n69" 0.0552941
-resist "x5[6].floating.n69" "x5[6].floating.n68" 0.0552941
-resist "x5[6].floating.n1" "x5[6].floating.n0" 0.0552941
-resist "x5[6].floating.n2" "x5[6].floating.n1" 0.0552941
-resist "x5[6].floating.n3" "x5[6].floating.n2" 0.0552941
-resist "x5[6].floating.n4" "x5[6].floating.n3" 0.0552941
-resist "x5[6].floating.n7" "x5[6].floating.n6" 0.0552941
-resist "x5[6].floating.n8" "x5[6].floating.n7" 0.0552941
-resist "x5[6].floating.n9" "x5[6].floating.n8" 0.0552941
-resist "x5[6].floating.n10" "x5[6].floating.n9" 0.0552941
-resist "x5[6].floating.n31" "x5[6].floating.n30" 0.0552941
-resist "x5[6].floating.n32" "x5[6].floating.n31" 0.0552941
-resist "x5[6].floating.n33" "x5[6].floating.n32" 0.0552941
-resist "x5[6].floating.n34" "x5[6].floating.n33" 0.0552941
-resist "x5[6].floating.n37" "x5[6].floating.n36" 0.0552941
-resist "x5[6].floating.n38" "x5[6].floating.n37" 0.0552941
-resist "x5[6].floating.n39" "x5[6].floating.n38" 0.0552941
-resist "x5[6].floating.n40" "x5[6].floating.n39" 0.0552941
-resist "x5[6].floating.n120" "x5[6].floating.n119" 0.0711912
-resist "x5[6].floating.n120" "x5[6].floating.n105" 0.0711912
-resist "x5[6].floating.n140" "x5[6].floating.n139" 0.0711912
-resist "x5[6].floating.n122" "x5[6].floating.n121" 0.0711912
-resist "x5[6].floating.n74" "x5[6].floating.n73" 0.0711912
-resist "x5[6].floating.n5" "x5[6].floating.n4" 0.0711912
-resist "x5[6].floating.n6" "x5[6].floating.n5" 0.0711912
-resist "x5[6].floating.n35" "x5[6].floating.n34" 0.0711912
-resist "x5[6].floating.n36" "x5[6].floating.n35" 0.0711912
-resist "x5[6].floating.n60" "x5[0].floating" 0.0750007
-resist "x5[6].floating.n160" "x5[7].floating" 0.100188
-resist "x5[6].floating.n61" "x5[6].floating.n60" 0.161603
-resist "x5[6].floating.n161" "x5[6].floating.n160" 0.172584
-resist "x5[6].floating.n160" "x5[6].floating.n159" 0.307769
-resist "x5[6].floating.n60" "x5[6].floating.n59" 0.319845
-resist "x5[6].floating.n121" "x5[6].floating.n120" 0.659901
-resist "x5[6].floating.n139" "x5[6].floating.n5" 0.659901
-resist "x5[6].floating.n130" "x5[6].floating.n20" 0.659901
-resist "x5[6].floating.n91" "x5[6].floating.n90" 0.659901
-resist "x5[6].floating.n73" "x5[6].floating.n35" 0.659901
-resist "x5[6].floating.n109" "x5[6].floating.t6" 68.034
-resist "x5[6].floating.n12" "x5[6].floating.t5" 68.034
-resist "x5[6].floating.n142" "x5[6].floating.t4" 68.034
-resist "x5[6].floating.n154" "x5[6].floating.t0" 68.034
-resist "x5[6].floating.n54" "x5[6].floating.t3" 68.034
-resist "x5[6].floating.n42" "x5[6].floating.t1" 68.034
-resist "x5[6].floating.n24" "x5[6].floating.t2" 68.034
-resist "x5[6].floating.n95" "x5[6].floating.t7" 68.034
+resist "x5[7].floating.n113" "x5[7].floating.n112" 3.97204e-05
+resist "x5[7].floating.n158" "x5[7].floating.n157" 3.97204e-05
+resist "x5[7].floating.n146" "x5[7].floating.n145" 3.97204e-05
+resist "x5[7].floating.n16" "x5[7].floating.n15" 3.97204e-05
+resist "x5[7].floating.n28" "x5[7].floating.n27" 3.97204e-05
+resist "x5[7].floating.n46" "x5[7].floating.n45" 3.97204e-05
+resist "x5[7].floating.n58" "x5[7].floating.n57" 3.97204e-05
+resist "x5[7].floating.n99" "x5[7].floating.n98" 3.97204e-05
+resist "x5[7].floating.n112" "x5[7].floating.n110" 0.000523299
+resist "x5[7].floating.n145" "x5[7].floating.n143" 0.000523299
+resist "x5[7].floating.n57" "x5[7].floating.n55" 0.000523299
+resist "x5[7].floating.n27" "x5[7].floating.n25" 0.000523299
+resist "x5[7].floating.n15" "x5[7].floating.n13" 0.00150689
+resist "x5[7].floating.n45" "x5[7].floating.n43" 0.00150689
+resist "x5[7].floating.n98" "x5[7].floating.n96" 0.00150689
+resist "x5[7].floating.n157" "x5[7].floating.n155" 0.00183747
+resist "x5[7].floating.n13" "x5[7].floating.n12" 0.0018396
+resist "x5[7].floating.n43" "x5[7].floating.n42" 0.0018396
+resist "x5[7].floating.n96" "x5[7].floating.n95" 0.0018396
+resist "x5[7].floating.n155" "x5[7].floating.n154" 0.00227942
+resist "x5[7].floating.n108" "x5[7].floating.n107" 0.0025
+resist "x5[7].floating.n158" "x5[7].floating.n153" 0.0025
+resist "x5[7].floating.n148" "x5[7].floating.n147" 0.0025
+resist "x5[7].floating.n17" "x5[7].floating.n16" 0.0025
+resist "x5[7].floating.n23" "x5[7].floating.n22" 0.0025
+resist "x5[7].floating.n47" "x5[7].floating.n46" 0.0025
+resist "x5[7].floating.n53" "x5[7].floating.n52" 0.0025
+resist "x5[7].floating.n99" "x5[7].floating.n94" 0.0025
+resist "x5[7].floating.n113" "x5[7].floating.n108" 0.003
+resist "x5[7].floating.n153" "x5[7].floating.n152" 0.003
+resist "x5[7].floating.n147" "x5[7].floating.n146" 0.003
+resist "x5[7].floating.n18" "x5[7].floating.n17" 0.003
+resist "x5[7].floating.n28" "x5[7].floating.n23" 0.003
+resist "x5[7].floating.n48" "x5[7].floating.n47" 0.003
+resist "x5[7].floating.n58" "x5[7].floating.n53" 0.003
+resist "x5[7].floating.n94" "x5[7].floating.n93" 0.003
+resist "x5[7].floating.n143" "x5[7].floating.n142" 0.00309614
+resist "x5[7].floating.n55" "x5[7].floating.n54" 0.00309614
+resist "x5[7].floating.n25" "x5[7].floating.n24" 0.00309614
+resist "x5[7].floating.n110" "x5[7].floating.n109" 0.00309614
+resist "x5[7].floating.n167" "x5[7].floating.n166" 0.00345588
+resist "x5[7].floating.n128" "x5[7].floating.n127" 0.00345588
+resist "x5[7].floating.n80" "x5[7].floating.n79" 0.00345588
+resist "x5[7].floating.n62" "x5[7].floating.n61" 0.00345588
+resist "x5[7].floating.n162" "x5[7].floating.n161" 0.00414706
+resist "x5[7].floating.n133" "x5[7].floating.n132" 0.00414706
+resist "x5[7].floating.n88" "x5[7].floating.n87" 0.00414706
+resist "x5[7].floating.n67" "x5[7].floating.n66" 0.00414706
+resist "x5[7].floating.n112" "x5[7].floating.n111" 0.0115385
+resist "x5[7].floating.n145" "x5[7].floating.n144" 0.0115385
+resist "x5[7].floating.n57" "x5[7].floating.n56" 0.0115385
+resist "x5[7].floating.n27" "x5[7].floating.n26" 0.0115385
+resist "x5[7].floating.n114" "x5[7].floating.n113" 0.013
+resist "x5[7].floating.n152" "x5[7].floating.n151" 0.013
+resist "x5[7].floating.n146" "x5[7].floating.n141" 0.013
+resist "x5[7].floating.n19" "x5[7].floating.n18" 0.013
+resist "x5[7].floating.n29" "x5[7].floating.n28" 0.013
+resist "x5[7].floating.n49" "x5[7].floating.n48" 0.013
+resist "x5[7].floating.n59" "x5[7].floating.n58" 0.013
+resist "x5[7].floating.n93" "x5[7].floating.n92" 0.013
+resist "x5[7].floating.n107" "x5[7].floating.n106" 0.0135
+resist "x5[7].floating.n159" "x5[7].floating.n158" 0.0135
+resist "x5[7].floating.n149" "x5[7].floating.n148" 0.0135
+resist "x5[7].floating.n16" "x5[7].floating.n11" 0.0135
+resist "x5[7].floating.n22" "x5[7].floating.n21" 0.0135
+resist "x5[7].floating.n46" "x5[7].floating.n41" 0.0135
+resist "x5[7].floating.n52" "x5[7].floating.n51" 0.0135
+resist "x5[7].floating.n100" "x5[7].floating.n99" 0.0135
+resist "x5[7].floating.n163" "x5[7].floating.n162" 0.0179706
+resist "x5[7].floating.n132" "x5[7].floating.n131" 0.0179706
+resist "x5[7].floating.n89" "x5[7].floating.n88" 0.0179706
+resist "x5[7].floating.n66" "x5[7].floating.n65" 0.0179706
+resist "x5[7].floating.n166" "x5[7].floating.n165" 0.0186618
+resist "x5[7].floating.n129" "x5[7].floating.n128" 0.0186618
+resist "x5[7].floating.n81" "x5[7].floating.n80" 0.0186618
+resist "x5[7].floating.n63" "x5[7].floating.n62" 0.0186618
+resist "x5[6].floating" "x5[7].floating.n140" 0.0221176
+resist "x5[5].floating" "x5[7].floating.n138" 0.0221176
+resist "x5[4].floating" "x5[7].floating.n122" 0.0221176
+resist "x5[7].floating.n82" "x5[3].floating" 0.0221176
+resist "x5[2].floating" "x5[7].floating.n74" 0.0221176
+resist "x5[1].floating" "x5[7].floating.n72" 0.0221176
+resist "x5[7].floating.n11" "x5[7].floating.n10" 0.0261618
+resist "x5[7].floating.n41" "x5[7].floating.n40" 0.0261618
+resist "x5[7].floating.n101" "x5[7].floating.n100" 0.0261618
+resist "x5[7].floating.n115" "x5[7].floating.n114" 0.0266618
+resist "x5[7].floating.n30" "x5[7].floating.n29" 0.0266618
+resist "x5[6].floating" "x5[7].floating.n171" 0.0331765
+resist "x5[7].floating.n123" "x5[4].floating" 0.0331765
+resist "x5[7].floating.n75" "x5[2].floating" 0.0331765
+resist "x5[7].floating.n15" "x5[7].floating.n14" 0.0403846
+resist "x5[7].floating.n157" "x5[7].floating.n156" 0.0403846
+resist "x5[7].floating.n45" "x5[7].floating.n44" 0.0403846
+resist "x5[7].floating.n98" "x5[7].floating.n97" 0.0403846
+resist "x5[7].floating.n139" "x5[5].floating" 0.0490735
+resist "x5[7].floating.n121" "x5[3].floating" 0.0490735
+resist "x5[7].floating.n73" "x5[1].floating" 0.0490735
+resist "x5[7].floating.n134" "x5[7].floating.n133" 0.0511471
+resist "x5[7].floating.n87" "x5[7].floating.n86" 0.0511471
+resist "x5[7].floating.n68" "x5[7].floating.n67" 0.0511471
+resist "x5[7].floating.n168" "x5[7].floating.n167" 0.0518382
+resist "x5[7].floating.n127" "x5[7].floating.n126" 0.0518382
+resist "x5[7].floating.n79" "x5[7].floating.n78" 0.0518382
+resist "x5[7].floating.n150" "x5[7].floating.n149" 0.0519559
+resist "x5[7].floating.n106" "x5[7].floating.n20" 0.0519559
+resist "x5[7].floating.n91" "x5[7].floating.n21" 0.0519559
+resist "x5[7].floating.n51" "x5[7].floating.n50" 0.0519559
+resist "x5[7].floating.n151" "x5[7].floating.n150" 0.0524559
+resist "x5[7].floating.n20" "x5[7].floating.n19" 0.0524559
+resist "x5[7].floating.n50" "x5[7].floating.n49" 0.0524559
+resist "x5[7].floating.n92" "x5[7].floating.n91" 0.0524559
+resist "x5[7].floating.n165" "x5[7].floating.n164" 0.0525294
+resist "x5[7].floating.n130" "x5[7].floating.n129" 0.0525294
+resist "x5[7].floating.n90" "x5[7].floating.n81" 0.0525294
+resist "x5[7].floating.n64" "x5[7].floating.n63" 0.0525294
+resist "x5[7].floating.n164" "x5[7].floating.n163" 0.0532206
+resist "x5[7].floating.n131" "x5[7].floating.n130" 0.0532206
+resist "x5[7].floating.n90" "x5[7].floating.n89" 0.0532206
+resist "x5[7].floating.n65" "x5[7].floating.n64" 0.0532206
+resist "x5[7].floating.n116" "x5[7].floating.n115" 0.0552941
+resist "x5[7].floating.n117" "x5[7].floating.n116" 0.0552941
+resist "x5[7].floating.n118" "x5[7].floating.n117" 0.0552941
+resist "x5[7].floating.n119" "x5[7].floating.n118" 0.0552941
+resist "x5[7].floating.n105" "x5[7].floating.n104" 0.0552941
+resist "x5[7].floating.n104" "x5[7].floating.n103" 0.0552941
+resist "x5[7].floating.n103" "x5[7].floating.n102" 0.0552941
+resist "x5[7].floating.n102" "x5[7].floating.n101" 0.0552941
+resist "x5[7].floating.n169" "x5[7].floating.n168" 0.0552941
+resist "x5[7].floating.n170" "x5[7].floating.n169" 0.0552941
+resist "x5[7].floating.n171" "x5[7].floating.n170" 0.0552941
+resist "x5[7].floating.n138" "x5[7].floating.n137" 0.0552941
+resist "x5[7].floating.n137" "x5[7].floating.n136" 0.0552941
+resist "x5[7].floating.n136" "x5[7].floating.n135" 0.0552941
+resist "x5[7].floating.n135" "x5[7].floating.n134" 0.0552941
+resist "x5[7].floating.n126" "x5[7].floating.n125" 0.0552941
+resist "x5[7].floating.n125" "x5[7].floating.n124" 0.0552941
+resist "x5[7].floating.n124" "x5[7].floating.n123" 0.0552941
+resist "x5[7].floating.n83" "x5[7].floating.n82" 0.0552941
+resist "x5[7].floating.n84" "x5[7].floating.n83" 0.0552941
+resist "x5[7].floating.n85" "x5[7].floating.n84" 0.0552941
+resist "x5[7].floating.n86" "x5[7].floating.n85" 0.0552941
+resist "x5[7].floating.n78" "x5[7].floating.n77" 0.0552941
+resist "x5[7].floating.n77" "x5[7].floating.n76" 0.0552941
+resist "x5[7].floating.n76" "x5[7].floating.n75" 0.0552941
+resist "x5[7].floating.n72" "x5[7].floating.n71" 0.0552941
+resist "x5[7].floating.n71" "x5[7].floating.n70" 0.0552941
+resist "x5[7].floating.n70" "x5[7].floating.n69" 0.0552941
+resist "x5[7].floating.n69" "x5[7].floating.n68" 0.0552941
+resist "x5[7].floating.n1" "x5[7].floating.n0" 0.0552941
+resist "x5[7].floating.n2" "x5[7].floating.n1" 0.0552941
+resist "x5[7].floating.n3" "x5[7].floating.n2" 0.0552941
+resist "x5[7].floating.n4" "x5[7].floating.n3" 0.0552941
+resist "x5[7].floating.n7" "x5[7].floating.n6" 0.0552941
+resist "x5[7].floating.n8" "x5[7].floating.n7" 0.0552941
+resist "x5[7].floating.n9" "x5[7].floating.n8" 0.0552941
+resist "x5[7].floating.n10" "x5[7].floating.n9" 0.0552941
+resist "x5[7].floating.n31" "x5[7].floating.n30" 0.0552941
+resist "x5[7].floating.n32" "x5[7].floating.n31" 0.0552941
+resist "x5[7].floating.n33" "x5[7].floating.n32" 0.0552941
+resist "x5[7].floating.n34" "x5[7].floating.n33" 0.0552941
+resist "x5[7].floating.n37" "x5[7].floating.n36" 0.0552941
+resist "x5[7].floating.n38" "x5[7].floating.n37" 0.0552941
+resist "x5[7].floating.n39" "x5[7].floating.n38" 0.0552941
+resist "x5[7].floating.n40" "x5[7].floating.n39" 0.0552941
+resist "x5[7].floating.n120" "x5[7].floating.n119" 0.0711912
+resist "x5[7].floating.n120" "x5[7].floating.n105" 0.0711912
+resist "x5[7].floating.n140" "x5[7].floating.n139" 0.0711912
+resist "x5[7].floating.n122" "x5[7].floating.n121" 0.0711912
+resist "x5[7].floating.n74" "x5[7].floating.n73" 0.0711912
+resist "x5[7].floating.n5" "x5[7].floating.n4" 0.0711912
+resist "x5[7].floating.n6" "x5[7].floating.n5" 0.0711912
+resist "x5[7].floating.n35" "x5[7].floating.n34" 0.0711912
+resist "x5[7].floating.n36" "x5[7].floating.n35" 0.0711912
+resist "x5[7].floating.n60" "x5[0].floating" 0.0750007
+resist "x5[7].floating.n160" "x5[7].floating" 0.100188
+resist "x5[7].floating.n61" "x5[7].floating.n60" 0.161603
+resist "x5[7].floating.n161" "x5[7].floating.n160" 0.172584
+resist "x5[7].floating.n160" "x5[7].floating.n159" 0.307769
+resist "x5[7].floating.n60" "x5[7].floating.n59" 0.319845
+resist "x5[7].floating.n121" "x5[7].floating.n120" 0.659901
+resist "x5[7].floating.n139" "x5[7].floating.n5" 0.659901
+resist "x5[7].floating.n130" "x5[7].floating.n20" 0.659901
+resist "x5[7].floating.n91" "x5[7].floating.n90" 0.659901
+resist "x5[7].floating.n73" "x5[7].floating.n35" 0.659901
+resist "x5[7].floating.n109" "x5[7].floating.t6" 68.034
+resist "x5[7].floating.n12" "x5[7].floating.t5" 68.034
+resist "x5[7].floating.n142" "x5[7].floating.t4" 68.034
+resist "x5[7].floating.n154" "x5[7].floating.t0" 68.034
+resist "x5[7].floating.n54" "x5[7].floating.t3" 68.034
+resist "x5[7].floating.n42" "x5[7].floating.t1" 68.034
+resist "x5[7].floating.n24" "x5[7].floating.t2" 68.034
+resist "x5[7].floating.n95" "x5[7].floating.t7" 68.034
 rnode "x5[1].SW" 0 241.531 14896 1809 0
 rnode "x5[2].SW" 0 241.531 13810 1809 0
 rnode "x5[3].SW" 0 241.531 13684 1809 0
@@ -6811,54 +6811,54 @@ resist "x5[3].SW" "x10.Y.t2" 154.8
 resist "x5[2].SW" "x10.Y.t7" 154.8
 resist "x5[1].SW" "x10.Y.t8" 154.8
 resist "x5[0].SW" "x10.Y.t6" 154.847
-device msubckt sky130_fd_pr__nfet_01v8 9863 1017 9864 1018  "VSS.t0" "IN.t21" 60 0 "nstack_lab5" 84 4872,284 "a_9893_1017#" 84 1764,126
-device msubckt sky130_fd_pr__nfet_01v8 9935 879 9936 880  "VSS.t1" "IN.t20" 60 0 "a_9893_879#" 84 1764,126 "nstack_lab4" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9935 1155 9936 1156  "VSS.t1" "IN.t19" 60 0 "a_9893_1155#" 84 1764,126 "nstack_lab6" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9863 603 9864 604  "VSS.t0" "IN.t18" 60 0 "nstack_lab3" 84 4872,284 "a_9893_603#" 84 1764,126
-device msubckt sky130_fd_pr__nfet_01v8 15021 1477 15022 1478  "VSS.t2" "code[0].t0" 60 0 "Uc" 84 4956,286 "x2.floating" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 15765 1681 15766 1682  "VDD.t11" "OUT.t5" 60 0 "a_15703_1681#" 84 2604,146 "VSS.t11" 84 2772,150
-device msubckt sky130_fd_pr__pfet_01v8 11262 1678 11263 1679  "VDD.t17" "x10.Y.t9" 60 0 "x5[6].floating.t0" 84 4872,284 "Uc" 84 4032,180
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2820 9889 2821  "VDD.t7" "IN.t17" 60 0 "pstack_lab1" 84 4872,284 "VDD.t8" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9863 1155 9864 1156  "VSS.t0" "IN.t16" 60 0 "nstack_lab7" 84 4872,284 "a_9893_1155#" 84 1764,126
-device msubckt sky130_fd_pr__nfet_01v8 9420 1807 9421 1808  "VSS.t4" "code[3].t1" 60 0 "VSS.t5" 130 6760,364 "x10.Y.t1" 130 6760,364
-device msubckt sky130_fd_pr__nfet_01v8 9935 1293 9936 1294  "VSS.t1" "IN.t15" 60 0 "a_9893_1293#" 84 1764,126 "Uc" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 15673 1478 15674 1479  "VSS.t3" "Uc" 60 0 "OUT.t0" 84 4872,284 "a_15703_1340#" 84 2604,146
-device msubckt sky130_fd_pr__nfet_01v8 11737 1477 11738 1478  "VSS.t2" "code[2].t3" 60 0 "Uc" 84 3864,176 "x4[3].floating" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2406 9889 2407  "VDD.t16" "IN.t14" 60 0 "pstack_lab3" 84 4872,284 "pstack_lab4" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9935 603 9936 604  "VSS.t1" "IN.t13" 60 0 "a_9893_603#" 84 1764,126 "nstack_lab2" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 12827 1477 12828 1478  "VSS.t2" "code[2].t2" 60 0 "x4[3].floating" 84 4872,284 "Uc" 84 3864,176
-device msubckt sky130_fd_pr__pfet_01v8 14898 1678 14899 1679  "VDD.t17" "x10.Y.t8" 60 0 "x5[6].floating.t1" 84 4872,284 "Uc" 84 4032,180
-device msubckt sky130_fd_pr__pfet_01v8 13812 1678 13813 1679  "VDD.t17" "x10.Y.t7" 60 0 "Uc" 84 4032,180 "x5[6].floating.t2" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2130 9889 2131  "VDD.t1" "IN.t12" 60 0 "pstack_lab5" 84 4872,284 "Uc" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9863 741 9864 742  "VSS.t0" "IN.t11" 60 0 "nstack_lab3" 84 4872,284 "a_9893_741#" 84 1764,126
-device msubckt sky130_fd_pr__pfet_01v8_hvt 15861 1681 15862 1682  "VDD.t11" "OUT.t4" 60 0 "VSS.t12" 84 2772,150 "a_15703_1681#" 84 5208,292
-device msubckt sky130_fd_pr__pfet_01v8 15024 1678 15025 1679  "VDD.t17" "x10.Y.t6" 60 0 "Uc" 84 4032,180 "x5[6].floating.t3" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9863 1293 9864 1294  "VSS.t0" "IN.t10" 60 0 "nstack_lab7" 84 4872,284 "a_9893_1293#" 84 1764,126
-device msubckt sky130_fd_pr__nfet_01v8 9610 1807 9611 1808  "VSS.t9" "code_offset.t2" 60 0 "x11.Y" 130 6760,364 "VSS.t10" 130 6760,364
-device msubckt sky130_fd_pr__pfet_01v8 10530 1675 10531 1676  "VDD.t12" "x11.Y" 60 0 "x6.floating" 84 4872,284 "Uc" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 15673 1819 15674 1820  "VDD.t9" "Uc" 60 0 "VDD.t10" 84 4872,284 "a_15703_1681#" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9420 2057 9421 2058  "VDD.t4" "code[3].t0" 60 0 "VDD.t5" 200 10400,504 "x10.Y.t0" 200 10400,504
-device msubckt sky130_fd_pr__nfet_01v8 9863 327 9864 328  "VSS.t0" "IN.t9" 60 0 "nstack_lab1" 84 4872,284 "a_9893_327#" 84 1764,126
-device msubckt sky130_fd_pr__nfet_01v8 9935 741 9936 742  "VSS.t1" "IN.t8" 60 0 "a_9893_741#" 84 1764,126 "nstack_lab4" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 14165 1477 14166 1478  "VSS.t2" "code[1].t1" 60 0 "x3[1].floating" 84 4872,284 "Uc" 84 3864,176
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2544 9889 2545  "VDD.t0" "IN.t7" 60 0 "pstack_lab3" 84 4872,284 "pstack_lab2" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8 11388 1678 11389 1679  "VDD.t17" "x10.Y.t5" 60 0 "Uc" 84 4032,180 "x5[6].floating.t4" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8 12474 1678 12475 1679  "VDD.t17" "x10.Y.t4" 60 0 "x5[6].floating.t5" 84 4872,284 "Uc" 84 4032,180
-device msubckt sky130_fd_pr__nfet_01v8 9935 327 9936 328  "VSS.t1" "IN.t6" 60 0 "a_9893_327#" 84 1764,126 "VSS.t8" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9610 2057 9611 2058  "VDD.t14" "code_offset.t1" 60 0 "x11.Y" 200 10400,504 "VDD.t15" 200 10400,504
-device msubckt sky130_fd_pr__nfet_01v8 9863 465 9864 466  "VSS.t0" "IN.t5" 60 0 "nstack_lab1" 84 4872,284 "a_9893_465#" 84 1764,126
-device msubckt sky130_fd_pr__nfet_01v8 15765 1478 15766 1479  "VSS.t3" "OUT.t3" 60 0 "a_15703_1340#" 84 2604,146 "VDD.t13" 84 2772,150
-device msubckt sky130_fd_pr__nfet_01v8 12949 1477 12950 1478  "VSS.t2" "code[2].t1" 60 0 "Uc" 84 3864,176 "x4[3].floating" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 15673 1681 15674 1682  "VDD.t11" "Uc" 60 0 "OUT.t1" 84 4872,284 "a_15703_1681#" 84 2604,146
-device msubckt sky130_fd_pr__nfet_01v8 15673 1340 15674 1341  "VSS.t6" "Uc" 60 0 "VSS.t7" 84 4872,284 "a_15703_1340#" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2682 9889 2683  "VDD.t3" "IN.t4" 60 0 "pstack_lab1" 84 4872,284 "pstack_lab2" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9935 1017 9936 1018  "VSS.t1" "IN.t3" 60 0 "a_9893_1017#" 84 1764,126 "nstack_lab6" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2268 9889 2269  "VDD.t6" "IN.t2" 60 0 "pstack_lab5" 84 4872,284 "pstack_lab4" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9935 465 9936 466  "VSS.t1" "IN.t1" 60 0 "a_9893_465#" 84 1764,126 "nstack_lab2" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 9863 879 9864 880  "VSS.t0" "IN.t0" 60 0 "nstack_lab5" 84 4872,284 "a_9893_879#" 84 1764,126
-device msubckt sky130_fd_pr__nfet_01v8 14287 1477 14288 1478  "VSS.t2" "code[1].t0" 60 0 "Uc" 84 3864,176 "x3[1].floating" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 15861 1478 15862 1479  "VSS.t3" "OUT.t2" 60 0 "VDD.t2" 84 2772,150 "a_15703_1340#" 84 5208,292
-device msubckt sky130_fd_pr__nfet_01v8 10883 1477 10884 1478  "VSS.t2" "code_offset.t0" 60 0 "x7.floating" 84 4872,284 "Uc" 84 4872,284
-device msubckt sky130_fd_pr__pfet_01v8 12600 1678 12601 1679  "VDD.t17" "x10.Y.t3" 60 0 "Uc" 84 4032,180 "x5[6].floating.t6" 84 4872,284
-device msubckt sky130_fd_pr__nfet_01v8 11615 1477 11616 1478  "VSS.t2" "code[2].t0" 60 0 "x4[3].floating" 84 4872,284 "Uc" 84 3864,176
-device msubckt sky130_fd_pr__pfet_01v8 13686 1678 13687 1679  "VDD.t17" "x10.Y.t2" 60 0 "x5[6].floating.t7" 84 4872,284 "Uc" 84 4032,180
+device msubckt sky130_fd_pr__nfet_01v8 9863 1017 9864 1018  "VSS.t3" "IN.t21" 60 0 "nstack_lab5" 84 4872,284 "a_9893_1017#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 9935 879 9936 880  "VSS.t4" "IN.t20" 60 0 "a_9893_879#" 84 1764,126 "nstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 1155 9936 1156  "VSS.t4" "IN.t19" 60 0 "a_9893_1155#" 84 1764,126 "nstack_lab6" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 603 9864 604  "VSS.t3" "IN.t18" 60 0 "nstack_lab3" 84 4872,284 "a_9893_603#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 15021 1477 15022 1478  "VSS.t8" "code[0].t0" 60 0 "Uc" 84 4956,286 "x2.floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15765 1681 15766 1682  "VDD.t2" "OUT.t5" 60 0 "a_15703_1681#" 84 2604,146 "VSS.t11" 84 2772,150
+device msubckt sky130_fd_pr__pfet_01v8 11262 1678 11263 1679  "VDD.t16" "x10.Y.t9" 60 0 "x5[7].floating.t0" 84 4872,284 "Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2820 9889 2821  "VDD.t3" "IN.t17" 60 0 "pstack_lab1" 84 4872,284 "VDD.t4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 1155 9864 1156  "VSS.t3" "IN.t16" 60 0 "nstack_lab7" 84 4872,284 "a_9893_1155#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 9420 1807 9421 1808  "VSS.t6" "code[3].t1" 60 0 "VSS.t7" 130 6760,364 "x10.Y.t1" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 9935 1293 9936 1294  "VSS.t4" "IN.t15" 60 0 "a_9893_1293#" 84 1764,126 "Uc" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 15673 1478 15674 1479  "VSS.t0" "Uc" 60 0 "OUT.t1" 84 4872,284 "a_15703_1340#" 84 2604,146
+device msubckt sky130_fd_pr__nfet_01v8 11737 1477 11738 1478  "VSS.t8" "code[2].t3" 60 0 "Uc" 84 3864,176 "x4[3].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2406 9889 2407  "VDD.t17" "IN.t14" 60 0 "pstack_lab3" 84 4872,284 "pstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 603 9936 604  "VSS.t4" "IN.t13" 60 0 "a_9893_603#" 84 1764,126 "nstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 12827 1477 12828 1478  "VSS.t8" "code[2].t2" 60 0 "x4[3].floating" 84 4872,284 "Uc" 84 3864,176
+device msubckt sky130_fd_pr__pfet_01v8 14898 1678 14899 1679  "VDD.t16" "x10.Y.t8" 60 0 "x5[7].floating.t1" 84 4872,284 "Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 13812 1678 13813 1679  "VDD.t16" "x10.Y.t7" 60 0 "Uc" 84 4032,180 "x5[7].floating.t2" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2130 9889 2131  "VDD.t10" "IN.t12" 60 0 "pstack_lab5" 84 4872,284 "Uc" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 741 9864 742  "VSS.t3" "IN.t11" 60 0 "nstack_lab3" 84 4872,284 "a_9893_741#" 84 1764,126
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15861 1681 15862 1682  "VDD.t2" "OUT.t4" 60 0 "VSS.t12" 84 2772,150 "a_15703_1681#" 84 5208,292
+device msubckt sky130_fd_pr__pfet_01v8 15024 1678 15025 1679  "VDD.t16" "x10.Y.t6" 60 0 "Uc" 84 4032,180 "x5[7].floating.t3" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 1293 9864 1294  "VSS.t3" "IN.t10" 60 0 "nstack_lab7" 84 4872,284 "a_9893_1293#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 9610 1807 9611 1808  "VSS.t9" "code_offset.t2" 60 0 "x6.SW" 130 6760,364 "VSS.t10" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8 10530 1675 10531 1676  "VDD.t8" "x6.SW" 60 0 "x6.floating" 84 4872,284 "Uc" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15673 1819 15674 1820  "VDD.t0" "Uc" 60 0 "VDD.t1" 84 4872,284 "a_15703_1681#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9420 2057 9421 2058  "VDD.t5" "code[3].t0" 60 0 "VDD.t6" 200 10400,504 "x10.Y.t0" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 9863 327 9864 328  "VSS.t3" "IN.t9" 60 0 "nstack_lab1" 84 4872,284 "a_9893_327#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 9935 741 9936 742  "VSS.t4" "IN.t8" 60 0 "a_9893_741#" 84 1764,126 "nstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 14165 1477 14166 1478  "VSS.t8" "code[1].t1" 60 0 "x3[1].floating" 84 4872,284 "Uc" 84 3864,176
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2544 9889 2545  "VDD.t7" "IN.t7" 60 0 "pstack_lab3" 84 4872,284 "pstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 11388 1678 11389 1679  "VDD.t16" "x10.Y.t5" 60 0 "Uc" 84 4032,180 "x5[7].floating.t4" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 12474 1678 12475 1679  "VDD.t16" "x10.Y.t4" 60 0 "x5[7].floating.t5" 84 4872,284 "Uc" 84 4032,180
+device msubckt sky130_fd_pr__nfet_01v8 9935 327 9936 328  "VSS.t4" "IN.t6" 60 0 "a_9893_327#" 84 1764,126 "VSS.t5" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9610 2057 9611 2058  "VDD.t11" "code_offset.t1" 60 0 "x6.SW" 200 10400,504 "VDD.t12" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 9863 465 9864 466  "VSS.t3" "IN.t5" 60 0 "nstack_lab1" 84 4872,284 "a_9893_465#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 15765 1478 15766 1479  "VSS.t0" "OUT.t3" 60 0 "a_15703_1340#" 84 2604,146 "VDD.t15" 84 2772,150
+device msubckt sky130_fd_pr__nfet_01v8 12949 1477 12950 1478  "VSS.t8" "code[2].t1" 60 0 "Uc" 84 3864,176 "x4[3].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 15673 1681 15674 1682  "VDD.t2" "Uc" 60 0 "OUT.t0" 84 4872,284 "a_15703_1681#" 84 2604,146
+device msubckt sky130_fd_pr__nfet_01v8 15673 1340 15674 1341  "VSS.t1" "Uc" 60 0 "VSS.t2" 84 4872,284 "a_15703_1340#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2682 9889 2683  "VDD.t13" "IN.t4" 60 0 "pstack_lab1" 84 4872,284 "pstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 1017 9936 1018  "VSS.t4" "IN.t3" 60 0 "a_9893_1017#" 84 1764,126 "nstack_lab6" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 9888 2268 9889 2269  "VDD.t14" "IN.t2" 60 0 "pstack_lab5" 84 4872,284 "pstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9935 465 9936 466  "VSS.t4" "IN.t1" 60 0 "a_9893_465#" 84 1764,126 "nstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 9863 879 9864 880  "VSS.t3" "IN.t0" 60 0 "nstack_lab5" 84 4872,284 "a_9893_879#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 14287 1477 14288 1478  "VSS.t8" "code[1].t0" 60 0 "Uc" 84 3864,176 "x3[1].floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 15861 1478 15862 1479  "VSS.t0" "OUT.t2" 60 0 "VDD.t9" 84 2772,150 "a_15703_1340#" 84 5208,292
+device msubckt sky130_fd_pr__nfet_01v8 10883 1477 10884 1478  "VSS.t8" "code_offset.t0" 60 0 "x7.floating" 84 4872,284 "Uc" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 12600 1678 12601 1679  "VDD.t16" "x10.Y.t3" 60 0 "Uc" 84 4032,180 "x5[7].floating.t6" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 11615 1477 11616 1478  "VSS.t8" "code[2].t0" 60 0 "x4[3].floating" 84 4872,284 "Uc" 84 3864,176
+device msubckt sky130_fd_pr__pfet_01v8 13686 1678 13687 1679  "VDD.t16" "x10.Y.t2" 60 0 "x5[7].floating.t7" 84 4872,284 "Uc" 84 4032,180

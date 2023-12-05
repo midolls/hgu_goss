@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -195,12 +195,12 @@ C {devices/lab_wire.sym} 1220 -790 0 0 {name=l1 sig_type=std_logic lab=mimtop1}
 C {devices/lab_wire.sym} 1230 -480 0 0 {name=l1 sig_type=std_logic lab=mimtop2}
 C {devices/lab_wire.sym} 900 -660 0 0 {name=l1 sig_type=std_logic lab=mimbot1}
 C {devices/lab_wire.sym} 670 -800 0 1 {name=l1 sig_type=std_logic lab=VSS}
-C {adc_vcm_clkgen.sym} 490 -690 0 0 {name=X1}
-C {adc_noise_decoup_cell1.sym} 660 -860 0 0 {name=x_decap_[1..3]}
-C {adc_vcm_switch.sym} 1090 -890 0 0 {name=X2}
-C {adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x_cap1_[1..40]}
-C {adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x_cap2_[1..40]}
-C {adc_vcm_switch.sym} 880 -570 0 0 {name=X4}
-C {adc_vcm_switch.sym} 1090 -580 0 0 {name=X3}
-C {adc_vcm_switch.sym} 1360 -480 3 0 {name=X6}
-C {adc_vcm_switch.sym} 1350 -790 3 0 {name=X5}
+C {../xschem/adc_vcm_clkgen.sym} 490 -690 0 0 {name=X1}
+C {../xschem/adc_noise_decoup_cell1.sym} 660 -860 0 0 {name=x_decap_[1..3]}
+C {../xschem/adc_vcm_switch.sym} 1090 -890 0 0 {name=X2}
+C {../xschem/adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x_cap1_[1..40]}
+C {../xschem/adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x_cap2_[1..40]}
+C {../xschem/adc_vcm_switch.sym} 880 -570 0 0 {name=X4}
+C {../xschem/adc_vcm_switch.sym} 1090 -580 0 0 {name=X3}
+C {../xschem/adc_vcm_switch.sym} 1360 -480 3 0 {name=X6}
+C {../xschem/adc_vcm_switch.sym} 1350 -790 3 0 {name=X5}

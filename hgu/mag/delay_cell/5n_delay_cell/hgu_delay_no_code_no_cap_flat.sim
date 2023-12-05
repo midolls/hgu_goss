@@ -1,0 +1,85 @@
+| units: 500000 tech: sky130A format: MIT
+x OUT VDD a_15703_1340# VSS s=2772,150 d=5208,292 l=30 w=84 x=15861 y=1478 sky130_fd_pr__nfet_01v8
+x IN nstack_lab5 a_9893_879# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=879 sky130_fd_pr__nfet_01v8
+x IN a_9893_465# nstack_lab2 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=465 sky130_fd_pr__nfet_01v8
+x IN pstack_lab5 pstack_lab4 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2268 sky130_fd_pr__pfet_01v8_hvt
+x IN a_9893_1017# nstack_lab6 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1017 sky130_fd_pr__nfet_01v8
+x IN pstack_lab1 pstack_lab2 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2682 sky130_fd_pr__pfet_01v8_hvt
+x Uc VSS a_15703_1340# VSS s=4872,284 d=4872,284 l=30 w=84 x=15673 y=1340 sky130_fd_pr__nfet_01v8
+x Uc OUT a_15703_1681# VDD s=4872,284 d=2604,146 l=30 w=84 x=15673 y=1681 sky130_fd_pr__pfet_01v8_hvt
+x OUT a_15703_1340# VDD VSS s=2604,146 d=2772,150 l=30 w=84 x=15765 y=1478 sky130_fd_pr__nfet_01v8
+x IN nstack_lab1 a_9893_465# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=465 sky130_fd_pr__nfet_01v8
+x code_offset x11.Y VDD VDD s=10400,504 d=10400,504 l=30 w=200 x=9610 y=2057 sky130_fd_pr__pfet_01v8_hvt
+x IN a_9893_327# VSS VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=327 sky130_fd_pr__nfet_01v8
+x IN pstack_lab3 pstack_lab2 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2544 sky130_fd_pr__pfet_01v8_hvt
+x IN a_9893_741# nstack_lab4 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=741 sky130_fd_pr__nfet_01v8
+x IN nstack_lab1 a_9893_327# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=327 sky130_fd_pr__nfet_01v8
+x code[3] VDD x10.Y VDD s=10400,504 d=10400,504 l=30 w=200 x=9420 y=2057 sky130_fd_pr__pfet_01v8_hvt
+x Uc VDD a_15703_1681# VDD s=4872,284 d=4872,284 l=30 w=84 x=15673 y=1819 sky130_fd_pr__pfet_01v8_hvt
+x code_offset x11.Y VSS VSS s=6760,364 d=6760,364 l=30 w=130 x=9610 y=1807 sky130_fd_pr__nfet_01v8
+x IN nstack_lab7 a_9893_1293# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1293 sky130_fd_pr__nfet_01v8
+x OUT VSS a_15703_1681# VDD s=2772,150 d=5208,292 l=30 w=84 x=15861 y=1681 sky130_fd_pr__pfet_01v8_hvt
+x IN nstack_lab3 a_9893_741# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=741 sky130_fd_pr__nfet_01v8
+x IN pstack_lab5 Uc VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2130 sky130_fd_pr__pfet_01v8_hvt
+x IN a_9893_603# nstack_lab2 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=603 sky130_fd_pr__nfet_01v8
+x IN pstack_lab3 pstack_lab4 VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2406 sky130_fd_pr__pfet_01v8_hvt
+x Uc OUT a_15703_1340# VSS s=4872,284 d=2604,146 l=30 w=84 x=15673 y=1478 sky130_fd_pr__nfet_01v8
+x IN a_9893_1293# Uc VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1293 sky130_fd_pr__nfet_01v8
+x code[3] VSS x10.Y VSS s=6760,364 d=6760,364 l=30 w=130 x=9420 y=1807 sky130_fd_pr__nfet_01v8
+x IN nstack_lab7 a_9893_1155# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1155 sky130_fd_pr__nfet_01v8
+x IN pstack_lab1 VDD VDD s=4872,284 d=4872,284 l=30 w=84 x=9888 y=2820 sky130_fd_pr__pfet_01v8_hvt
+x OUT a_15703_1681# VSS VDD s=2604,146 d=2772,150 l=30 w=84 x=15765 y=1681 sky130_fd_pr__pfet_01v8_hvt
+x IN nstack_lab3 a_9893_603# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=603 sky130_fd_pr__nfet_01v8
+x IN a_9893_1155# nstack_lab6 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=1155 sky130_fd_pr__nfet_01v8
+x IN a_9893_879# nstack_lab4 VSS s=1764,126 d=4872,284 l=30 w=84 x=9935 y=879 sky130_fd_pr__nfet_01v8
+x IN nstack_lab5 a_9893_1017# VSS s=4872,284 d=1764,126 l=30 w=84 x=9863 y=1017 sky130_fd_pr__nfet_01v8
+R OUT 1525
+R code_offset 814
+= code_offset x11.A
+R code[3] 807
+= code[3] x10.A
+R IN 5278
+= IN x9.input_stack
+= IN x8.input_stack
+C VDD0 29.6
+R VDD 14665
+= VDD x11.VPWR
+= VDD x11.VPB
+= VDD x10.VPWR
+= VDD x10.VPB
+= VDD x8.vdd
+= VDD pfet_floating
+R a_9893_327# 240
+R a_9893_465# 240
+R nstack_lab1 837
+R nstack_lab2 837
+R a_9893_603# 240
+R a_9893_741# 240
+R nstack_lab3 837
+R nstack_lab4 837
+R a_9893_879# 240
+R a_9893_1017# 240
+R nstack_lab5 837
+R nstack_lab6 837
+R a_9893_1155# 240
+R a_9893_1293# 240
+R nstack_lab7 837
+R a_15703_1340# 1397
+R a_15703_1681# 2184
+R Uc 7688
+= Uc x9.output_stack
+= Uc x8.output_stack
+R x11.Y 1332
+R x10.Y 1352
+R pstack_lab5 1308
+R pstack_lab4 1308
+R pstack_lab3 1308
+R pstack_lab2 1308
+R pstack_lab1 1308
+R VSS 6218
+= VSS x11.VGND
+= VSS x10.VNB
+= VSS x10.VGND
+= VSS pstack_sub
+= VSS x11.VNB
+= VSS x9.vss

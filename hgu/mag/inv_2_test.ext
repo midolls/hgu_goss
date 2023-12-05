@@ -1,4 +1,4 @@
-timestamp 1699782319
+timestamp 1700938176
 version 8.3
 tech sky130A
 style ngspice()
@@ -8,16 +8,16 @@ use hgu_inverter x2 -1 0 1203 0 1 2200
 use hgu_inverter x1 1 0 53 0 1 2200
 node "a_599_2591#" 58 81.5178 599 2591 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4060 256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "x2/VSS" "x2/VREF" -6.89869
+cap "x2/VSS" "x2/VDD" -11.5286
 cap "x2/VDD" "x2/VREF" -85.3523
+cap "x2/VSS" "x2/a_476_372#" 2.7597
+cap "x2/VSS" "x2/sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" -34.7085
+cap "x2/VDD" "x2/a_476_372#" 3.67393
 cap "x2/sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" "x2/VREF" -26.7071
 cap "x2/VDD" "x2/sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" -27.4768
-cap "x2/VREF" "x2/VSS" -6.89869
-cap "x2/VDD" "x2/VSS" -11.5286
-cap "x2/VREF" "x2/a_476_372#" 2.25213
-cap "x2/VDD" "x2/a_476_372#" 3.67393
-cap "x2/sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" "x2/VSS" -34.7085
+cap "x2/a_476_372#" "x2/VREF" 2.25213
 cap "x2/sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" "x2/a_476_372#" 14.2174
-cap "x2/VSS" "x2/a_476_372#" 2.7597
 merge "x1/VSS" "x2/VSS" -125.885 0 0 0 0 0 0 0 0 0 0 -5796 -344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5796 -344 -6300 -352 0 0 0 0 0 0 0 0 0 0
 merge "x2/VSS" "VSUBS"
 merge "x1/sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" "x2/sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" -261.831 0 0 0 0 0 0 0 0 -4872 -284 -9744 -452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9112 -672 -16080 -884 0 0 0 0 0 0 0 0 0 0

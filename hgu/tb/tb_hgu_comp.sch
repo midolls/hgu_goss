@@ -37,8 +37,6 @@ N 590 -380 620 -380 {
 lab=outn}
 N 370 -140 370 -120 {
 lab=GND}
-N 340 -500 350 -500 {
-lab=VDD}
 N 340 -280 350 -290 {
 lab=VSS}
 N 390 -290 390 -280 {
@@ -53,17 +51,20 @@ N 620 -380 620 -360 {
 lab=outn}
 N 620 -360 770 -360 {
 lab=outn}
+N 350 -520 350 -500 {
+lab=VDD}
 C {../xschem/hgu_comp.sym} 430 -400 0 0 {name=x1}
 C {devices/vsource.sym} 100 -80 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 180 -80 0 0 {name=V2 value=0}
 C {devices/gnd.sym} 180 -40 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 100 -130 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -130 0 0 {name=p2 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 340 -500 0 0 {name=p3 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 350 -520 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 340 -280 0 0 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 250 -80 0 0 {name=V3 value="PULSE(0 1.8 0 91p 77p 5n 20n)"}
-C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="PULSE(0.903515625 0.896484375 0 5p 5p 25n 50n)"}
-C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="PULSE(0.896484375 0.903515625 0 5p 5p 25n 50n)"}
+C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="sin(0.9 0.9 78125 0 0 0)"
+*"PULSE(0.903515625 0.896484375 0 5p 5p 25n 50n)"}
+C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="sin(0.9 -0.9 78125 0 0 0)"}
 C {devices/gnd.sym} 480 -110 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 250 -130 0 0 {name=p5 sig_type=std_logic lab=clk
 }
@@ -109,8 +110,12 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
 
     print rising_time falling_time rising_delay falling_delay 
     plot V(clk) V(inn) V(inp) V(ready) V(outp)+2 V(outn)+2
-    plot V(outp) V(outn)
-    print I_avg
+    
+	setplot tran1
+	linearize V(outp)
+	set specwindow=blackman
+	fft V(outp)
+	plot mag(V(outp))
 .endc
 .save all
 "}

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1700938530
+timestamp 1701704798
 << nwell >>
 rect -400 5384 -72 6034
 rect 400 5768 856 6034
@@ -11722,8 +11722,7 @@ rect 36791 5154 36825 5206
 rect 37047 5154 37081 5206
 rect 37303 5154 37337 5206
 rect 37559 5154 37593 5206
-rect 38407 5158 38421 5164
-rect 38455 5158 38471 5164
+rect 38407 5158 38471 5164
 rect 38407 5154 38413 5158
 rect -363 5148 38413 5154
 rect -363 5110 -319 5148
@@ -43570,8 +43569,6 @@ flabel poly 1921 5335 2375 5405 0 FreeSans 320 0 0 0 db<2>
 port 121 nsew
 flabel poly 3540 5335 4506 5405 0 FreeSans 320 0 0 0 db<3>
 port 123 nsew
-flabel space 8105 5335 10095 5405 0 FreeSans 320 0 0 0 db<4>
-port 125 nsew
 flabel metal5 245 4094 565 5026 0 FreeSans 800 0 0 0 t<1>
 port 166 nsew
 flabel metal5 1675 4100 1995 5026 0 FreeSans 800 0 0 0 t<2>
@@ -43602,8 +43599,6 @@ flabel poly 1409 6013 1863 6083 0 FreeSans 320 0 0 0 d<2>
 port 104 nsew
 flabel poly 3028 6013 3994 6083 0 FreeSans 320 0 0 0 d<3>
 port 102 nsew
-flabel space 5521 6013 7511 6083 0 FreeSans 320 0 0 0 d<4>
-port 111 nsew
 flabel metal5 10326 4154 10646 5026 0 FreeSans 800 0 0 0 t<5>
 port 176 nsew
 flabel poly 20445 6013 28579 6083 0 FreeSans 1600 0 0 0 d<6>
@@ -43620,6 +43615,10 @@ flabel metal4 37909 5449 38298 6013 0 FreeSans 1600 0 0 0 VREF
 port 163 nsew
 flabel metal4 38589 5806 38950 6291 0 FreeSans 1600 0 0 0 VSS
 port 159 nsew
+flabel poly 5521 6013 7511 6083 0 FreeSans 480 0 0 0 d<4>
+port 186 nsew
+flabel poly 8105 5335 10095 5405 0 FreeSans 480 0 0 0 db<4>
+port 188 nsew
 flabel pwell 17436 439 17468 489 0 FreeSans 160 0 0 0 hgu_cdac_8bit_array_2.SUB
 flabel metal4 7177 746 7228 787 0 FreeSans 320 0 0 0 hgu_cdac_8bit_array_2.drv<15:0>
 flabel metal4 35915 746 35966 787 0 FreeSans 320 0 0 0 hgu_cdac_8bit_array_2.drv<63:0>
@@ -44464,21 +44463,6 @@ flabel psubdiff 675 4600 713 4678 0 FreeSans 320 0 0 0 hgu_cdac_8bit_array_3.hgu
 flabel metal4 -197 3152 -171 3184 0 FreeSans 320 0 0 0 hgu_cdac_unit_1.CBOT
 flabel metal4 -79 3742 -53 3774 0 FreeSans 320 0 0 0 hgu_cdac_unit_1.CTOP
 flabel psubdiff -139 3440 -101 3518 0 FreeSans 320 0 0 0 hgu_cdac_unit_1.SUB
-flabel metal1 -318 5770 -291 5785 0 FreeSans 160 0 0 0 hgu_inverter_1.VREF
-flabel metal1 -355 5696 -329 5724 0 FreeSans 160 0 0 0 hgu_inverter_1.VDD
-flabel metal1 -357 6274 -333 6304 0 FreeSans 160 0 0 0 hgu_inverter_1.VSS
-flabel metal1 1618 5770 1645 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x2.VREF
-flabel metal1 1581 5696 1607 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x2.VDD
-flabel metal1 1579 6274 1603 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x2.VSS
-flabel metal1 1883 5770 1910 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x1.VREF
-flabel metal1 1921 5696 1947 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x1.VDD
-flabel metal1 1925 6274 1949 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x1.VSS
-flabel metal1 1362 5770 1389 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x2.VREF
-flabel metal1 1325 5696 1351 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x2.VDD
-flabel metal1 1323 6274 1347 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x2.VSS
-flabel metal1 1627 5770 1654 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x1.VREF
-flabel metal1 1665 5696 1691 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x1.VDD
-flabel metal1 1669 6274 1693 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x1.VSS
 flabel metal1 7266 5770 7293 5785 0 FreeSans 160 0 0 0 inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
 flabel metal1 7229 5696 7255 5724 0 FreeSans 160 0 0 0 inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
 flabel metal1 7227 6274 7251 6304 0 FreeSans 160 0 0 0 inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
@@ -44551,12 +44535,6 @@ flabel metal1 2942 6274 2966 6304 0 FreeSans 160 0 0 0 inv_8_test_1/inv_4_test_0
 flabel metal1 3246 5770 3273 5785 0 FreeSans 160 0 0 0 inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
 flabel metal1 3284 5696 3310 5724 0 FreeSans 160 0 0 0 inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
 flabel metal1 3288 6274 3312 6304 0 FreeSans 160 0 0 0 inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
-flabel metal1 482 5770 509 5785 0 FreeSans 160 0 0 0 inv_2_test_1/x2.VREF
-flabel metal1 445 5696 471 5724 0 FreeSans 160 0 0 0 inv_2_test_1/x2.VDD
-flabel metal1 443 6274 467 6304 0 FreeSans 160 0 0 0 inv_2_test_1/x2.VSS
-flabel metal1 747 5770 774 5785 0 FreeSans 160 0 0 0 inv_2_test_1/x1.VREF
-flabel metal1 785 5696 811 5724 0 FreeSans 160 0 0 0 inv_2_test_1/x1.VDD
-flabel metal1 789 6274 813 6304 0 FreeSans 160 0 0 0 inv_2_test_1/x1.VSS
 flabel metal1 3758 5633 3785 5648 0 FreeSans 160 0 0 0 inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
 flabel metal1 3796 5694 3822 5722 0 FreeSans 160 0 0 0 inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
 flabel metal1 3800 5114 3824 5144 0 FreeSans 160 0 0 0 inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
@@ -44581,6 +44559,18 @@ flabel metal1 4568 5114 4592 5144 0 FreeSans 160 0 0 0 inv_8_test_0/inv_4_test_0
 flabel metal1 4261 5633 4288 5648 0 FreeSans 160 0 0 0 inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
 flabel metal1 4224 5694 4250 5722 0 FreeSans 160 0 0 0 inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
 flabel metal1 4222 5114 4246 5144 0 FreeSans 160 0 0 0 inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+flabel metal1 1618 5770 1645 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x2.VREF
+flabel metal1 1581 5696 1607 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x2.VDD
+flabel metal1 1579 6274 1603 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x2.VSS
+flabel metal1 1883 5770 1910 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x1.VREF
+flabel metal1 1921 5696 1947 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x1.VDD
+flabel metal1 1925 6274 1949 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_1/x1.VSS
+flabel metal1 1362 5770 1389 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x2.VREF
+flabel metal1 1325 5696 1351 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x2.VDD
+flabel metal1 1323 6274 1347 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x2.VSS
+flabel metal1 1627 5770 1654 5785 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x1.VREF
+flabel metal1 1665 5696 1691 5724 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x1.VDD
+flabel metal1 1669 6274 1693 6304 0 FreeSans 160 0 0 0 inv_4_test_2/inv_2_test_0/x1.VSS
 flabel metal1 2139 5633 2166 5648 0 FreeSans 160 0 0 0 inv_4_test_1/inv_2_test_1/x2.VREF
 flabel metal1 2177 5694 2203 5722 0 FreeSans 160 0 0 0 inv_4_test_1/inv_2_test_1/x2.VDD
 flabel metal1 2181 5114 2205 5144 0 FreeSans 160 0 0 0 inv_4_test_1/inv_2_test_1/x2.VSS
@@ -44593,12 +44583,21 @@ flabel metal1 2437 5114 2461 5144 0 FreeSans 160 0 0 0 inv_4_test_1/inv_2_test_0
 flabel metal1 2130 5633 2157 5648 0 FreeSans 160 0 0 0 inv_4_test_1/inv_2_test_0/x1.VREF
 flabel metal1 2093 5694 2119 5722 0 FreeSans 160 0 0 0 inv_4_test_1/inv_2_test_0/x1.VDD
 flabel metal1 2091 5114 2115 5144 0 FreeSans 160 0 0 0 inv_4_test_1/inv_2_test_0/x1.VSS
+flabel metal1 482 5770 509 5785 0 FreeSans 160 0 0 0 inv_2_test_1/x2.VREF
+flabel metal1 445 5696 471 5724 0 FreeSans 160 0 0 0 inv_2_test_1/x2.VDD
+flabel metal1 443 6274 467 6304 0 FreeSans 160 0 0 0 inv_2_test_1/x2.VSS
+flabel metal1 747 5770 774 5785 0 FreeSans 160 0 0 0 inv_2_test_1/x1.VREF
+flabel metal1 785 5696 811 5724 0 FreeSans 160 0 0 0 inv_2_test_1/x1.VDD
+flabel metal1 789 6274 813 6304 0 FreeSans 160 0 0 0 inv_2_test_1/x1.VSS
 flabel metal1 875 5633 902 5648 0 FreeSans 160 0 0 0 inv_2_test_0/x2.VREF
 flabel metal1 913 5694 939 5722 0 FreeSans 160 0 0 0 inv_2_test_0/x2.VDD
 flabel metal1 917 5114 941 5144 0 FreeSans 160 0 0 0 inv_2_test_0/x2.VSS
 flabel metal1 610 5633 637 5648 0 FreeSans 160 0 0 0 inv_2_test_0/x1.VREF
 flabel metal1 573 5694 599 5722 0 FreeSans 160 0 0 0 inv_2_test_0/x1.VDD
 flabel metal1 571 5114 595 5144 0 FreeSans 160 0 0 0 inv_2_test_0/x1.VSS
+flabel metal1 -318 5770 -291 5785 0 FreeSans 160 0 0 0 hgu_inverter_1.VREF
+flabel metal1 -355 5696 -329 5724 0 FreeSans 160 0 0 0 hgu_inverter_1.VDD
+flabel metal1 -357 6274 -333 6304 0 FreeSans 160 0 0 0 hgu_inverter_1.VSS
 flabel metal1 -318 5633 -291 5648 0 FreeSans 160 0 0 0 hgu_inverter_0.VREF
 flabel metal1 -355 5694 -329 5722 0 FreeSans 160 0 0 0 hgu_inverter_0.VDD
 flabel metal1 -357 5114 -333 5144 0 FreeSans 160 0 0 0 hgu_inverter_0.VSS

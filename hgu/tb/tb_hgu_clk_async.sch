@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -11,10 +11,10 @@ N 940 -700 1410 -700 {
 lab=VSS}
 N 940 -400 1410 -400 {
 lab=VSS}
-C {devices/vsource.sym} 430 -100 0 0 {name=V3 value="PULSE(1.8 0 20n 5p 5p 12n 20n)"}
+C {devices/vsource.sym} 430 -100 0 0 {name=V3 value="PULSE(1.8 0 20n 500p 500p 12n 20n)"}
 C {devices/gnd.sym} 430 -70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 430 -130 0 0 {name=p13 sig_type=std_logic lab=READY}
-C {../xschem/hgu_clk_async.sym} 500 -360 0 0 {name=x1}
+C {../xschem/hgu_clk_async_RC.sym} 500 -350 0 0 {name=x1}
 C {devices/lab_pin.sym} 350 -420 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 350 -400 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 350 -340 0 0 {name=p8 sig_type=std_logic lab=READY}
@@ -28,15 +28,11 @@ C {devices/gnd.sym} 320 -70 0 0 {name=l9 lab=GND}
 C {devices/vsource.sym} 320 -100 0 0 {name=V5 value=0}
 C {devices/code.sym} 120 -160 0 0 {name=spice1 only_toplevel=false value="
 
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ss
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
-
-.tran 10ps 150ns
+.tran 40ps 150ns
 
 .control
-	option temp = 100
-	let vdd_act = 1.62
+	option temp = 25
+	let vdd_act = 1.8
       
 	alter V1 vdd_act
 
@@ -66,10 +62,10 @@ C {devices/code.sym} 120 -160 0 0 {name=spice1 only_toplevel=false value="
 
 "}
 C {devices/lab_pin.sym} 320 -380 0 0 {name=p1 sig_type=std_logic lab=sample_clk}
-C {devices/vsource.sym} 650 -100 0 0 {name=V1 value="PULSE(0 1.8 0 5p 5p 18n 200n)"}
+C {devices/vsource.sym} 650 -100 0 0 {name=V1 value="PULSE(0 1.8 0 500p 500p 18n 200n)"}
 C {devices/gnd.sym} 650 -70 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 650 -130 0 0 {name=p2 sig_type=std_logic lab=sample_clk}
-C {devices/vsource.sym} 860 -100 0 0 {name=V2 value="PULSE(0 1.8 116n 5p 5p 80n 160n)"}
+C {devices/vsource.sym} 860 -100 0 0 {name=V2 value="PULSE(0 1.8 116n 500p 500p 80n 160n)"}
 C {devices/gnd.sym} 860 -70 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 860 -130 0 0 {name=p6 sig_type=std_logic lab=EOC}
 C {devices/vdd.sym} 930 -250 0 0 {name=l10 lab=VGND}
@@ -118,5 +114,14 @@ C {devices/noconn.sym} 990 -460 2 0 {name=l67}
 C {devices/noconn.sym} 1100 -460 2 0 {name=l68}
 C {devices/noconn.sym} 1210 -340 2 0 {name=l69}
 C {devices/noconn.sym} 1320 -340 2 0 {name=l70}
-C {devices/lab_pin.sym} 350 -320 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
-C {devices/lab_pin.sym} 350 -300 0 0 {name=p9 sig_type=std_logic lab=async_setb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} 350 -300 0 0 {name=p12 sig_type=std_logic lab=async_resetb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} 350 -280 0 0 {name=p9 sig_type=std_logic lab=async_setb_delay_cap_ctrl_code[0:3]}
+C {devices/lab_pin.sym} 350 -320 0 0 {name=p10 sig_type=std_logic lab=VSS}
+C {devices/simulator_commands_shown.sym} 80 -650 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false 
+value="
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_clk_async_flat_RC.spice
+"}

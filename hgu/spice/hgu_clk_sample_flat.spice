@@ -1,0 +1,2036 @@
+* NGSPICE file created from hgu_clk_sample_flat.ext - technology: sky130A
+
+.subckt hgu_clk_sample_RC sample_clk_b vdd vss clk reset set sample_clk CAP_CTRL_CODE0[0] 
++ CAP_CTRL_CODE0[1] CAP_CTRL_CODE0[2] CAP_CTRL_CODE0[3] CAP_CTRL_CODE1[0] CAP_CTRL_CODE1[1] 
++ CAP_CTRL_CODE1[2] CAP_CTRL_CODE1[3] CAP_CTRL_CODE2[0] CAP_CTRL_CODE2[1] CAP_CTRL_CODE2[2]
++ CAP_CTRL_CODE2[3] CAP_CTRL_CODE3[0] CAP_CTRL_CODE3[1] CAP_CTRL_CODE3[2] CAP_CTRL_CODE3[3] 
++ sample_delay_offset 
+X0 a_11371_5456# x2.x4.OUT a_11283_5456# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X1 vss a_3106_6090# a_3041_6494# vss sky130_fd_pr__nfet_01v8 ad=0.0588 pd=0.7 as=0.066 ps=0.745 w=0.42 l=0.15
+X2 x2.x4.x2.floating CAP_CTRL_CODE0[0] x2.x4.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.124 ps=1.43 w=0.42 l=0.15
+X3 a_4687_7397# x3.A a_4599_7535# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X4 x2.x1.x5[6].floating x2.x1.x10.Y x2.x1.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X5 x7.A x2.x3.x8.output_stack a_4047_2819# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.0651 ps=0.73 w=0.42 l=0.15
+X6 a_2325_6090# x1.x2.SET_B vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.147 pd=1.23 as=0.0798 ps=0.8 w=0.42 l=0.15
+X7 a_10112_1680# x2.x3.IN a_10024_1818# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X8 x2.x4.x8.output_stack x2.x4.x10.Y x2.x4.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X9 a_10472_6534# x2.x4.x8.output_stack x2.x4.OUT vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0651 pd=0.73 as=0.122 ps=1.42 w=0.42 l=0.15
+X10 a_3340_6116# a_2932_6494# a_3106_6090# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0882 pd=1.05 as=0.123 ps=1.17 w=0.84 l=0.15
+X11 a_10065_3897# x2.x3.IN a_9977_3897# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X12 a_2325_6090# a_2151_6116# a_2465_6482# vss sky130_fd_pr__nfet_01v8 ad=0.0864 pd=0.91 as=0.101 ps=0.99 w=0.64 l=0.15
+X13 a_11396_7121# x2.x4.OUT a_11308_6983# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X14 x2.x1.x10.Y CAP_CTRL_CODE1[3] vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X15 x2.x4.x10.Y CAP_CTRL_CODE0[3] vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X16 a_2151_6116# a_1870_6122# a_2058_6116# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.0662 ps=0.735 w=0.42 l=0.15
+X17 a_4734_5594# x3.A a_4662_5594# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X18 x2.x2.x5[6].floating x2.x2.x10.Y x2.x2.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X19 vss a_2678_2626# sample_clk vss sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X20 a_16846_3483# x2.x2.IN a_16774_3483# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X21 x2.x2.x11.Y sample_delay_offset vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X22 vdd a_3106_6090# a_3813_6132# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.149 pd=1.33 as=0.166 ps=1.8 w=0.64 l=0.15
+X23 vdd x3.B x3.Y vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X24 x2.x3.x8.output_stack CAP_CTRL_CODE3[2] x2.x3.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X25 vdd a_2678_2626# sample_clk vdd sky130_fd_pr__pfet_01v8 ad=0.391 pd=3.14 as=0.208 ps=1.59 w=1.26 l=0.15
+X26 a_17181_6534# x2.x1.x8.output_stack x2.x2.IN vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0651 pd=0.73 as=0.122 ps=1.42 w=0.42 l=0.15
+X27 x3.A a_3813_6132# vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.149 ps=1.33 w=1 l=0.15
+X28 x2.x2.x7.floating sample_delay_offset x2.x2.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X29 x2.x1.x8.output_stack x2.x1.x11.Y x2.x1.x6.floating vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X30 a_10472_6193# x2.x4.OUT vdd vss sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X31 vdd CAP_CTRL_CODE3[3] x2.x3.x10.Y vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X32 vdd a_2678_2006# sample_clk_b vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.391 ps=3.14 w=1.26 l=0.15
+X33 a_4662_5180# x3.A a_4574_5180# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X34 vss x2.x4.OUT a_11371_5180# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X35 a_16846_3759# x2.x2.IN a_16774_3759# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X36 a_4047_3022# x7.A vdd vss sky130_fd_pr__nfet_01v8 ad=0.0651 pd=0.73 as=0.0693 ps=0.75 w=0.42 l=0.15
+X37 a_11371_5870# x2.x4.OUT a_11283_5732# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X38 x2.x1.x8.output_stack x2.x1.x10.Y x2.x1.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X39 a_16774_4173# x2.x2.IN vss vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X40 x2.x3.x5[6].floating x2.x3.x10.Y x2.x3.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X41 x2.x4.x8.output_stack CAP_CTRL_CODE0[2] x2.x4.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X42 a_4662_5456# x3.A a_4574_5456# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X43 a_11443_5318# x2.x4.OUT a_11371_5456# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X44 x2.x1.x5[6].floating x2.x1.x10.Y x2.x1.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X45 a_16774_3345# x2.x2.IN a_16686_3345# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X46 x2.x3.x8.output_stack x2.x3.x10.Y x2.x3.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X47 x2.x4.x5[6].floating x2.x4.x10.Y x2.x4.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X48 a_17181_6534# x2.x2.IN vss vdd sky130_fd_pr__pfet_01v8_hvt ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X49 x2.x1.x8.output_stack sample_delay_offset x2.x1.x7.floating vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X50 vdd a_3056_2150# a_2678_2006# vdd sky130_fd_pr__pfet_01v8 ad=0.365 pd=3.1 as=0.365 ps=3.1 w=1.26 l=0.15
+X51 x2.x3.x5[6].floating x2.x3.x10.Y x2.x3.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X52 x2.x1.x8.output_stack x2.x1.x10.Y x2.x1.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X53 x1.x2.RESET_B reset vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X54 a_10137_3759# x2.x3.IN a_10065_3897# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X55 vss a_2678_2006# sample_clk_b vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X56 x2.x2.x8.output_stack x2.x2.x10.Y x2.x2.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X57 x2.x1.x5[6].floating x2.x1.x10.Y x2.x1.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X58 a_11371_6146# x2.x4.OUT a_11283_6008# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X59 a_4687_7121# x3.A a_4599_6983# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X60 x2.x2.x4[3].floating CAP_CTRL_CODE2[2] x2.x2.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X61 vdd sample_delay_offset x2.x1.x11.Y vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X62 a_11371_5318# x2.x4.OUT a_11283_5180# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X63 a_10112_2232# x2.x3.IN a_10024_2094# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X64 a_4047_2819# x7.A vss vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0651 pd=0.73 as=0.0693 ps=0.75 w=0.42 l=0.15
+X65 x2.x2.x8.output_stack CAP_CTRL_CODE2[2] x2.x2.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X66 a_2058_6116# x1.x2.D vss vss sky130_fd_pr__nfet_01v8 ad=0.066 pd=0.745 as=0.109 ps=1.36 w=0.42 l=0.15
+X67 a_10065_3483# x2.x3.IN a_9977_3345# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X68 vss clk a_1704_6122# vss sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.109 ps=1.36 w=0.42 l=0.15
+X69 a_10472_6193# x2.x4.x8.output_stack vss vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X70 x2.x1.x8.output_stack CAP_CTRL_CODE1[1] x2.x1.x3[1].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X71 x2.x2.x6.floating x2.x2.x11.Y x2.x2.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X72 vss x3.A a_4662_5180# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X73 a_4662_5870# x3.A a_4574_5732# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X74 a_11443_5870# x2.x4.OUT a_11371_5870# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X75 a_10065_3759# x2.x3.IN a_9977_3621# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X76 x2.x2.x4[3].floating CAP_CTRL_CODE2[2] x2.x2.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X77 vdd a_3056_2936# a_2678_2626# vdd sky130_fd_pr__pfet_01v8 ad=0.365 pd=3.1 as=0.365 ps=3.1 w=1.26 l=0.15
+X78 vss a_2325_6090# a_2259_6494# vss sky130_fd_pr__nfet_01v8 ad=0.084 pd=0.82 as=0.0671 ps=0.75 w=0.42 l=0.15
+X79 a_3106_6090# x1.x2.SET_B vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.123 pd=1.17 as=0.0819 ps=0.81 w=0.42 l=0.15
+X80 x2.x4.x8.output_stack x2.x4.x10.Y x2.x4.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X81 a_16846_4035# x2.x2.IN a_16774_4173# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X82 x2.x4.x5[6].floating x2.x4.x10.Y x2.x4.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X83 a_17181_6193# x2.x1.x8.output_stack vss vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X84 a_4734_5318# x3.A a_4662_5456# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X85 x2.x3.x11.Y sample_delay_offset vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X86 x2.x3.x8.output_stack x2.x3.x10.Y x2.x3.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X87 sample_clk a_2678_2626# vss vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X88 vdd a_3106_6090# a_3018_6116# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0819 pd=0.81 as=0.0924 ps=0.86 w=0.42 l=0.15
+X89 x2.x4.x8.output_stack sample_delay_offset x2.x4.x7.floating vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X90 a_16846_3207# x2.x2.IN a_16774_3345# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X91 vss x2.x2.x8.output_stack a_10756_3022# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X92 sample_clk a_2678_2626# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
+X93 vss x7.A x3.B vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X94 a_3106_6090# a_2932_6494# a_3222_6482# vss sky130_fd_pr__nfet_01v8 ad=0.0864 pd=0.91 as=0.12 ps=1.08 w=0.64 l=0.15
+X95 vdd x2.x4.OUT a_10472_6193# vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0651 ps=0.73 w=0.42 l=0.15
+X96 a_11371_5732# x2.x4.OUT a_11283_5732# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X97 x2.x3.x8.output_stack x2.x3.x10.Y x2.x3.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X98 vdd x7.A a_4047_3022# vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X99 a_11396_7397# x2.x4.OUT a_11308_7259# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X100 a_3222_6482# x1.x2.SET_B vss vss sky130_fd_pr__nfet_01v8 ad=0.12 pd=1.08 as=0.0588 ps=0.7 w=0.42 l=0.15
+X101 x1.x2.D a_3106_6090# vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.097 ps=0.975 w=0.65 l=0.15
+X102 a_4662_6146# x3.A a_4574_6008# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X103 x2.x1.x8.output_stack x2.x4.OUT a_11371_6146# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X104 vdd a_2619_6316# a_2569_6116# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.225 pd=1.38 as=0.113 ps=1.11 w=0.84 l=0.15
+X105 x2.x3.x4[3].floating CAP_CTRL_CODE3[2] x2.x3.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X106 vdd sample_delay_offset x2.x4.x11.Y vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X107 a_4662_5318# x3.A a_4574_5180# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X108 a_16774_4035# x2.x2.IN a_16686_3897# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X109 a_11443_5318# x2.x4.OUT a_11371_5318# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X110 a_10472_6534# x2.x4.OUT vss vdd sky130_fd_pr__pfet_01v8_hvt ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X111 x2.x4.x3[1].floating CAP_CTRL_CODE0[1] x2.x4.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X112 a_10137_3483# x2.x3.IN a_10065_3483# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X113 x2.x2.x8.output_stack CAP_CTRL_CODE2[1] x2.x2.x3[1].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X114 a_16774_3207# x2.x2.IN x2.x2.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X115 x2.x1.x5[6].floating x2.x1.x10.Y x2.x1.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X116 vdd x2.x2.IN a_17181_6193# vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0651 ps=0.73 w=0.42 l=0.15
+X117 a_16821_1956# x2.x2.IN a_16733_2094# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X118 vdd x2.x2.x8.output_stack a_10756_2819# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X119 a_2465_6482# a_2619_6316# a_2325_6090# vss sky130_fd_pr__nfet_01v8 ad=0.166 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X120 x2.x4.x8.output_stack CAP_CTRL_CODE0[1] x2.x4.x3[1].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X121 x2.x2.x5[6].floating x2.x2.x10.Y x2.x2.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X122 x2.x1.x8.output_stack CAP_CTRL_CODE1[2] x2.x1.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X123 x2.x2.x8.output_stack CAP_CTRL_CODE2[0] x2.x2.x2.floating vss sky130_fd_pr__nfet_01v8 ad=0.124 pd=1.43 as=0.122 ps=1.42 w=0.42 l=0.15
+X124 x2.x1.x4[3].floating CAP_CTRL_CODE1[2] x2.x1.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X125 a_4734_5870# x3.A a_4662_5870# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X126 a_10137_3759# x2.x3.IN a_10065_3759# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X127 a_2235_6116# a_1704_6122# a_2151_6116# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0945 pd=0.87 as=0.0567 ps=0.69 w=0.42 l=0.15
+X128 a_3553_3025# x3.A x3.Y vss sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X129 a_11371_6008# x2.x4.OUT a_11283_6008# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X130 a_10065_4173# x2.x3.IN vss vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X131 vss x7.A a_4047_2819# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X132 vdd a_2619_6316# a_3340_6116# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.218 pd=2.2 as=0.0882 ps=1.05 w=0.84 l=0.15
+X133 a_10065_3345# x2.x3.IN a_9977_3345# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X134 vss x3.Y a_3056_2936# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X135 a_1870_6122# a_1704_6122# vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.166 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X136 x2.x1.x8.output_stack x2.x4.OUT a_11308_6983# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X137 a_4662_5732# x3.A a_4574_5732# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X138 a_11443_5594# x2.x4.OUT a_11371_5732# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X139 a_4687_7397# x3.A a_4599_7259# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X140 x2.x4.x8.output_stack x3.A a_4662_6146# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X141 x1.x2.SET_B set vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X142 a_16774_3621# x2.x2.IN a_16686_3621# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X143 vss CAP_CTRL_CODE2[3] x2.x2.x10.Y vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X144 x2.x4.x8.output_stack x2.x4.x11.Y x2.x4.x6.floating vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X145 a_16846_4035# x2.x2.IN a_16774_4035# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X146 a_4734_5318# x3.A a_4662_5318# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X147 vss a_2678_2626# sample_clk vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X148 a_16821_1680# x2.x2.IN vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X149 x2.x3.x8.output_stack CAP_CTRL_CODE3[1] x2.x3.x3[1].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X150 a_16846_3207# x2.x2.IN a_16774_3207# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X151 x2.x3.IN x2.x2.x8.output_stack a_10756_3022# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0651 ps=0.73 w=0.42 l=0.15
+X152 a_2058_6116# x1.x2.D vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0662 pd=0.735 as=0.109 ps=1.36 w=0.42 l=0.15
+X153 vdd a_2678_2626# sample_clk vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.391 ps=3.14 w=1.26 l=0.15
+X154 vss a_3056_2936# a_2678_2626# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X155 x2.x4.x8.output_stack CAP_CTRL_CODE0[2] x2.x4.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X156 x2.x3.x8.output_stack CAP_CTRL_CODE3[0] x2.x3.x2.floating vss sky130_fd_pr__nfet_01v8 ad=0.124 pd=1.43 as=0.122 ps=1.42 w=0.42 l=0.15
+X157 x2.x4.x10.Y CAP_CTRL_CODE0[3] vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X158 a_3018_6116# a_1870_6122# a_2932_6494# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0924 pd=0.86 as=0.0567 ps=0.69 w=0.42 l=0.15
+X159 x2.x4.x4[3].floating CAP_CTRL_CODE0[2] x2.x4.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X160 a_16821_1956# x2.x2.IN a_16733_1818# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X161 a_11396_7121# x2.x4.OUT a_11308_7259# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X162 a_2932_6494# a_1870_6122# a_2837_6438# vss sky130_fd_pr__nfet_01v8 ad=0.0711 pd=0.755 as=0.0935 ps=0.965 w=0.36 l=0.15
+X163 x2.x3.x5[6].floating x2.x3.x10.Y x2.x3.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X164 a_4662_6008# x3.A a_4574_6008# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X165 a_11443_5870# x2.x4.OUT a_11371_6008# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X166 vdd a_2325_6090# a_2235_6116# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0798 pd=0.8 as=0.0945 ps=0.87 w=0.42 l=0.15
+X167 x2.x1.x8.output_stack x2.x1.x10.Y x2.x1.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X168 a_10137_4035# x2.x3.IN a_10065_4173# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X169 x2.x3.x7.floating sample_delay_offset x2.x3.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X170 vss x2.x4.OUT a_10472_6534# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.0651 ps=0.73 w=0.42 l=0.15
+X171 a_10137_3207# x2.x3.IN a_10065_3345# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X172 x2.x1.x10.Y CAP_CTRL_CODE1[3] vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X173 a_3041_6494# a_1704_6122# a_2932_6494# vss sky130_fd_pr__nfet_01v8 ad=0.066 pd=0.745 as=0.0711 ps=0.755 w=0.36 l=0.15
+X174 x2.x4.x8.output_stack x3.A a_4599_6983# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X175 x2.x1.x2.floating CAP_CTRL_CODE1[0] x2.x1.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.124 ps=1.43 w=0.42 l=0.15
+X176 a_4734_5594# x3.A a_4662_5732# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X177 x2.x2.x8.output_stack CAP_CTRL_CODE2[2] x2.x2.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X178 a_16846_3483# x2.x2.IN a_16774_3621# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X179 x2.x2.x8.output_stack x2.x2.x10.Y x2.x2.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X180 x2.x3.IN x2.x2.x8.output_stack a_10756_2819# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.0651 ps=0.73 w=0.42 l=0.15
+X181 a_10756_3022# x2.x3.IN vdd vss sky130_fd_pr__nfet_01v8 ad=0.0651 pd=0.73 as=0.0693 ps=0.75 w=0.42 l=0.15
+X182 a_2151_6116# a_1704_6122# a_2058_6116# vss sky130_fd_pr__nfet_01v8 ad=0.0684 pd=0.74 as=0.066 ps=0.745 w=0.36 l=0.15
+X183 vss x2.x2.IN a_17181_6534# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.0651 ps=0.73 w=0.42 l=0.15
+X184 vdd x1.x2.RESET_B a_2619_6316# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.154 pd=1.34 as=0.166 ps=1.8 w=0.64 l=0.15
+X185 a_10065_4035# x2.x3.IN a_9977_3897# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X186 x2.x3.x6.floating x2.x3.x11.Y x2.x3.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X187 a_10065_3207# x2.x3.IN x2.x3.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X188 vdd x7.A x3.B vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X189 vdd x2.x4.OUT a_11308_7535# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X190 vss x1.x2.RESET_B a_2619_6316# vss sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.109 ps=1.36 w=0.42 l=0.15
+X191 x2.x4.x8.output_stack x2.x4.x10.Y x2.x4.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X192 a_10112_1956# x2.x3.IN a_10024_2094# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X193 vdd a_2678_2006# sample_clk_b vdd sky130_fd_pr__pfet_01v8 ad=0.391 pd=3.14 as=0.208 ps=1.59 w=1.26 l=0.15
+X194 a_2790_6116# a_2325_6090# vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.174 pd=1.41 as=0.225 ps=1.38 w=0.84 l=0.15
+X195 x2.x4.x5[6].floating x2.x4.x10.Y x2.x4.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X196 x2.x2.x11.Y sample_delay_offset vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X197 a_4687_7121# x3.A a_4599_7259# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X198 vss x2.x3.x8.output_stack a_4047_3022# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X199 x2.x2.x5[6].floating x2.x2.x10.Y x2.x2.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X200 x3.A a_3813_6132# vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.097 ps=0.975 w=0.65 l=0.15
+X201 a_4734_5870# x3.A a_4662_6008# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X202 vss CAP_CTRL_CODE3[3] x2.x3.x10.Y vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X203 x2.x3.x8.output_stack CAP_CTRL_CODE3[2] x2.x3.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X204 a_16821_2232# x2.x2.IN x2.x2.x8.output_stack vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X205 a_2837_6438# a_2325_6090# vss vss sky130_fd_pr__nfet_01v8 ad=0.0935 pd=0.965 as=0.166 ps=1.8 w=0.64 l=0.15
+X206 x1.x2.RESET_B reset vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X207 a_2465_6482# x1.x2.SET_B vss vss sky130_fd_pr__nfet_01v8 ad=0.101 pd=0.99 as=0.084 ps=0.82 w=0.42 l=0.15
+X208 x1.x2.D a_3106_6090# vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.154 ps=1.34 w=1 l=0.15
+X209 x2.x3.x4[3].floating CAP_CTRL_CODE3[2] x2.x3.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X210 vss x3.B a_3553_3025# vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X211 vss sample_delay_offset x2.x1.x11.Y vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X212 x2.x1.x8.output_stack x2.x1.x10.Y x2.x1.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X213 a_10756_2819# x2.x3.IN vss vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0651 pd=0.73 as=0.0693 ps=0.75 w=0.42 l=0.15
+X214 a_2569_6116# a_2151_6116# a_2325_6090# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.113 pd=1.11 as=0.147 ps=1.23 w=0.84 l=0.15
+X215 x2.x1.x8.output_stack CAP_CTRL_CODE1[2] x2.x1.x4[3].floating vss sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.122 ps=1.42 w=0.42 l=0.15
+X216 a_16821_1680# x2.x2.IN a_16733_1818# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X217 vss a_2678_2006# sample_clk_b vss sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X218 x2.x2.x8.output_stack x2.x2.x10.Y x2.x2.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X219 a_16774_3897# x2.x2.IN a_16686_3897# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X220 x3.Y x3.A vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X221 x2.x2.x3[1].floating CAP_CTRL_CODE2[1] x2.x2.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X222 vss a_3106_6090# a_3813_6132# vss sky130_fd_pr__nfet_01v8 ad=0.097 pd=0.975 as=0.109 ps=1.36 w=0.42 l=0.15
+X223 x2.x4.x5[6].floating x2.x4.x10.Y x2.x4.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X224 x2.x3.x8.output_stack x2.x3.x10.Y x2.x3.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X225 a_10065_3621# x2.x3.IN a_9977_3621# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X226 vdd x2.x3.x8.output_stack a_4047_2819# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X227 x2.x3.x5[6].floating x2.x3.x10.Y x2.x3.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+X228 vdd x3.Y a_3056_2936# vdd sky130_fd_pr__pfet_01v8 ad=0.406 pd=3.38 as=0.406 ps=3.38 w=1.4 l=0.15
+X229 a_10472_6193# x2.x4.x8.output_stack x2.x4.OUT vss sky130_fd_pr__nfet_01v8 ad=0.0651 pd=0.73 as=0.122 ps=1.42 w=0.42 l=0.15
+X230 x2.x1.x4[3].floating CAP_CTRL_CODE1[2] x2.x1.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X231 a_11371_5594# x2.x4.OUT a_11283_5456# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X232 a_10137_4035# x2.x3.IN a_10065_4035# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X233 a_10137_3207# x2.x3.IN a_10065_3207# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X234 a_10112_1680# x2.x3.IN vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X235 vdd x3.A a_4599_7535# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X236 x2.x2.x8.output_stack x2.x2.x10.Y x2.x2.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X237 a_10472_6534# x2.x4.x8.output_stack vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X238 a_1870_6122# a_1704_6122# vss vss sky130_fd_pr__nfet_01v8 ad=0.109 pd=1.36 as=0.0567 ps=0.69 w=0.42 l=0.15
+X239 a_17181_6193# x2.x1.x8.output_stack x2.x2.IN vss sky130_fd_pr__nfet_01v8 ad=0.0651 pd=0.73 as=0.122 ps=1.42 w=0.42 l=0.15
+X240 a_10112_1956# x2.x3.IN a_10024_1818# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X241 vdd x2.x3.IN a_10756_3022# vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X242 a_2259_6494# a_1870_6122# a_2151_6116# vss sky130_fd_pr__nfet_01v8 ad=0.0671 pd=0.75 as=0.0684 ps=0.74 w=0.36 l=0.15
+X243 vdd clk a_1704_6122# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0864 pd=0.91 as=0.166 ps=1.8 w=0.64 l=0.15
+X244 a_11396_7397# x2.x4.OUT a_11308_7535# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X245 a_17181_6534# x2.x1.x8.output_stack vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X246 vss sample_delay_offset x2.x4.x11.Y vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X247 x2.x4.x8.output_stack x2.x4.x10.Y x2.x4.x5[6].floating vdd sky130_fd_pr__pfet_01v8 ad=0.101 pd=0.9 as=0.122 ps=1.42 w=0.42 l=0.15
+X248 sample_clk_b a_2678_2006# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.208 pd=1.59 as=0.208 ps=1.59 w=1.26 l=0.15
+X249 x2.x3.x11.Y sample_delay_offset vss vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X250 x2.x1.x3[1].floating CAP_CTRL_CODE1[1] x2.x1.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X251 vdd CAP_CTRL_CODE2[3] x2.x2.x10.Y vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X252 a_17181_6193# x2.x2.IN vdd vss sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X253 a_16846_3759# x2.x2.IN a_16774_3897# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X254 x3.Y vdd a_3056_2150# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X255 x2.x3.x3[1].floating CAP_CTRL_CODE3[1] x2.x3.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X256 a_3222_6482# a_2619_6316# a_3106_6090# vss sky130_fd_pr__nfet_01v8 ad=0.166 pd=1.8 as=0.0864 ps=0.91 w=0.64 l=0.15
+X257 x7.A x2.x3.x8.output_stack a_4047_3022# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0651 ps=0.73 w=0.42 l=0.15
+X258 a_10137_3483# x2.x3.IN a_10065_3621# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X259 a_16821_2232# x2.x2.IN a_16733_2094# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X260 x2.x4.x4[3].floating CAP_CTRL_CODE0[2] x2.x4.x8.output_stack vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0966 ps=0.88 w=0.42 l=0.15
+X261 a_4662_5594# x3.A a_4574_5456# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X262 a_11443_5594# x2.x4.OUT a_11371_5594# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X263 x3.Y vss a_3056_2150# vdd sky130_fd_pr__pfet_01v8 ad=0.551 pd=4.38 as=0.551 ps=4.38 w=1.9 l=0.15
+X264 a_16774_3483# x2.x2.IN a_16686_3345# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X265 vss a_3056_2150# a_2678_2006# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X266 x1.x2.SET_B set vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X267 a_2932_6494# a_1704_6122# a_2790_6116# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.174 ps=1.41 w=0.42 l=0.15
+X268 vss x2.x3.IN a_10756_2819# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X269 a_11371_5180# x2.x4.OUT a_11283_5180# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X270 a_16774_3759# x2.x2.IN a_16686_3621# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X271 sample_clk_b a_2678_2006# vss vss sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.0693 ps=0.75 w=0.42 l=0.15
+X272 a_10112_2232# x2.x3.IN x2.x3.x8.output_stack vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X273 x2.x2.x5[6].floating x2.x2.x10.Y x2.x2.x8.output_stack vdd sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.101 ps=0.9 w=0.42 l=0.15
+C0 a_17181_6193# x2.x1.x3[1].floating 3.09e-19
+C1 x2.x4.x7.floating a_4662_5594# 8.52e-19
+C2 x2.x1.x5[6].floating a_11396_7397# 0.00154f
+C3 a_3813_6132# x2.x4.x11.Y 7e-21
+C4 x2.x1.x6.floating a_11396_7397# 0.0191f
+C5 a_4599_7259# a_4599_7535# 0.0316f
+C6 x2.x3.x10.Y CAP_CTRL_CODE2[0] 2.78e-20
+C7 x1.x2.SET_B a_3222_6482# 0.00974f
+C8 sample_delay_offset a_9977_3897# 0.0121f
+C9 x2.x1.x10.Y sample_delay_offset 0.0402f
+C10 x2.x4.x4[3].floating a_4574_6008# 1.17e-19
+C11 a_2151_6116# a_2058_6116# 0.0367f
+C12 sample_delay_offset a_10065_3897# 0.00102f
+C13 a_3056_2936# a_4047_2819# 3.92e-21
+C14 a_2678_2626# x2.x3.x2.floating 8.88e-20
+C15 CAP_CTRL_CODE2[2] a_4047_3022# 1.3e-21
+C16 x2.x3.x7.floating x2.x3.x4[3].floating 1.18f
+C17 a_11283_5732# sample_delay_offset 0.00384f
+C18 a_10112_2232# CAP_CTRL_CODE3[3] 2.69e-19
+C19 CAP_CTRL_CODE1[2] x2.x4.x4[3].floating 7.49e-20
+C20 a_4047_3022# x3.B 0.00318f
+C21 a_2678_2626# x7.A 2.12e-20
+C22 vdd a_10137_3207# 0.00115f
+C23 a_3340_6116# a_2619_6316# 7.61e-19
+C24 a_2619_6316# x1.x2.D 0.177f
+C25 vdd a_16846_3207# 0.00163f
+C26 a_11308_6983# sample_delay_offset 0.00273f
+C27 vdd a_4047_2819# 0.264f
+C28 x2.x2.IN a_16846_3207# 0.038f
+C29 a_2932_6494# a_2325_6090# 0.00187f
+C30 x3.A x2.x3.x5[6].floating 2.66e-19
+C31 CAP_CTRL_CODE2[2] x2.x4.OUT 5.86e-20
+C32 sample_delay_offset x2.x4.x5[6].floating 0.00542f
+C33 a_4734_5594# a_4574_5732# 0.0388f
+C34 x2.x4.x2.floating a_11443_5870# 6.24e-19
+C35 CAP_CTRL_CODE1[1] x2.x2.x8.output_stack 2.48e-21
+C36 sample_delay_offset a_10137_3483# 0.00378f
+C37 CAP_CTRL_CODE0[1] x2.x4.x2.floating 0.0027f
+C38 x2.x4.x4[3].floating x3.A 6.65e-19
+C39 a_2058_6116# clk 6.72e-19
+C40 x3.A x2.x3.x3[1].floating 2.07e-20
+C41 a_3553_3025# a_4047_3022# 1.45e-19
+C42 CAP_CTRL_CODE2[0] x2.x3.IN 0.018f
+C43 a_11443_5318# x2.x1.x8.output_stack 8.05e-20
+C44 sample_clk x3.B 9.3e-20
+C45 a_3106_6090# x2.x4.x6.floating 1.28e-19
+C46 sample_delay_offset a_2619_6316# 0.00134f
+C47 a_9977_3897# a_9977_3621# 0.0316f
+C48 sample_delay_offset a_4734_5318# 0.0126f
+C49 sample_delay_offset a_16821_2232# 0.00273f
+C50 x2.x2.x5[6].floating x2.x2.x2.floating 0.441f
+C51 CAP_CTRL_CODE0[2] a_4662_5594# 3.62e-19
+C52 a_2678_2626# a_2678_2006# 0.0231f
+C53 x2.x1.x5[6].floating a_17181_6534# 0.0132f
+C54 CAP_CTRL_CODE0[1] x2.x4.x3[1].floating 0.227f
+C55 a_4662_5732# a_4574_5732# 0.00227f
+C56 sample_delay_offset a_11371_6146# 0.00167f
+C57 a_2235_6116# a_2058_6116# 8.94e-19
+C58 sample_delay_offset x2.x1.x4[3].floating 0.00732f
+C59 a_10137_3759# a_9977_3897# 0.0388f
+C60 a_10137_3759# a_10065_3897# 0.00227f
+C61 a_4734_5870# x1.x2.RESET_B 1.29e-20
+C62 a_2678_2626# a_3056_2936# 0.0969f
+C63 a_3813_6132# x2.x4.x6.floating 3.23e-19
+C64 a_3553_3025# sample_clk 2.11e-20
+C65 CAP_CTRL_CODE2[1] a_4574_5180# 2.37e-20
+C66 x2.x2.x5[6].floating x2.x2.x4[3].floating 1.55f
+C67 x2.x4.x7.floating a_4574_5732# 0.00409f
+C68 a_10024_2094# a_10112_2232# 0.0704f
+C69 a_10137_3483# a_9977_3621# 0.0388f
+C70 a_2678_2626# vdd 0.7f
+C71 a_4734_5594# a_4574_5456# 0.0388f
+C72 x2.x3.x4[3].floating CAP_CTRL_CODE3[1] 0.00929f
+C73 x2.x2.x8.output_stack CAP_CTRL_CODE1[0] 4.11e-21
+C74 sample_delay_offset a_4047_3022# 8.56e-21
+C75 a_10756_2819# x2.x3.x11.Y 0.00208f
+C76 a_11443_5594# x2.x1.x8.output_stack 1.74e-19
+C77 a_10137_3759# a_10137_3483# 0.0316f
+C78 CAP_CTRL_CODE0[2] x2.x4.x3[1].floating 0.00115f
+C79 a_2259_6494# a_2151_6116# 0.00812f
+C80 x2.x2.x5[6].floating x2.x2.x7.floating 0.182f
+C81 sample_delay_offset a_10065_3759# 0.00111f
+C82 a_4047_2819# x2.x3.x5[6].floating 0.0132f
+C83 a_11283_5732# x2.x4.x2.floating 0.00177f
+C84 vdd CAP_CTRL_CODE3[3] 0.202f
+C85 sample_delay_offset x2.x4.OUT 0.258f
+C86 a_2619_6316# a_2058_6116# 2.06e-20
+C87 CAP_CTRL_CODE2[2] x3.A 0.00188f
+C88 a_2932_6494# x2.x4.x6.floating 4.63e-21
+C89 x3.A x3.B 0.0642f
+C90 a_2932_6494# a_2790_6116# 0.00412f
+C91 a_16846_3759# x2.x2.x10.Y 4.07e-20
+C92 x2.x4.x2.floating x2.x4.x5[6].floating 0.441f
+C93 a_16846_3483# x2.x2.x11.Y 8.11e-20
+C94 a_4574_6008# a_3340_6116# 3.49e-20
+C95 a_4574_6008# x1.x2.D 9.67e-19
+C96 x3.A a_4662_5180# 4.57e-19
+C97 a_16774_3483# a_16686_3345# 0.00227f
+C98 a_11283_5180# x2.x1.x11.Y 3.1e-20
+C99 sample_delay_offset a_4687_7397# 1.9e-19
+C100 x2.x2.x8.output_stack x2.x2.x10.Y 1.01f
+C101 x2.x1.x10.Y a_11396_7397# 1.49e-19
+C102 x2.x2.x6.floating a_16733_2094# 0.0194f
+C103 x2.x2.x5[6].floating a_16733_1818# 0.00154f
+C104 x2.x2.x6.floating a_16686_3897# 0.00109f
+C105 x2.x1.x5[6].floating x2.x1.x7.floating 0.182f
+C106 x2.x4.x7.floating a_4574_5456# 0.00409f
+C107 x2.x1.x6.floating x2.x1.x7.floating 0.202f
+C108 sample_clk_b sample_clk 0.141f
+C109 x2.x1.x5[6].floating x2.x1.x6.floating 1.18f
+C110 x3.A a_3553_3025# 2.66e-19
+C111 CAP_CTRL_CODE0[0] x2.x4.x7.floating 2.03e-20
+C112 CAP_CTRL_CODE3[2] a_4047_3022# 1.69e-21
+C113 CAP_CTRL_CODE0[2] a_4574_5732# 1.33e-19
+C114 x2.x1.x6.floating CAP_CTRL_CODE1[3] 0.00506f
+C115 x2.x4.x3[1].floating x2.x4.x5[6].floating 0.8f
+C116 a_11283_6008# x2.x1.x11.Y 0.00179f
+C117 a_16686_3621# x2.x2.IN 0.0166f
+C118 x2.x2.x11.Y a_16686_3897# 7.9e-20
+C119 a_10065_3759# a_9977_3621# 0.00227f
+C120 x2.x3.x10.Y a_10137_3483# 6.65e-20
+C121 a_16846_4035# x2.x2.x10.Y 2.2e-20
+C122 a_11396_7121# x2.x1.x8.output_stack 0.032f
+C123 x2.x1.x2.floating CAP_CTRL_CODE1[1] 0.0027f
+C124 x2.x4.x2.floating a_11371_6146# 2.02e-19
+C125 x3.A x1.x2.D 0.00992f
+C126 a_11308_7535# x2.x1.x11.Y 5.11e-20
+C127 a_2151_6116# a_1704_6122# 0.14f
+C128 sample_delay_offset a_4574_6008# 0.0189f
+C129 x2.x4.x5[6].floating a_11396_7397# 1.78e-19
+C130 x2.x3.x8.output_stack x2.x3.x11.Y 0.164f
+C131 a_2678_2626# x2.x3.x5[6].floating 7.05e-19
+C132 a_9977_3897# x2.x3.IN 0.0135f
+C133 a_10065_3759# a_10137_3759# 0.00227f
+C134 a_11371_5732# x2.x1.x7.floating 8.52e-19
+C135 CAP_CTRL_CODE1[2] sample_delay_offset 0.0969f
+C136 a_10065_3897# x2.x3.IN 2.42e-19
+C137 a_16846_3759# vdd 4.84e-19
+C138 a_4662_5732# a_4734_5594# 0.00227f
+C139 a_16846_3759# x2.x2.IN 0.0299f
+C140 a_10024_2094# vdd 0.0801f
+C141 CAP_CTRL_CODE0[1] CAP_CTRL_CODE0[0] 2.72f
+C142 sample_delay_offset a_11371_5318# 9.69e-19
+C143 x2.x2.x8.output_stack vdd 0.595f
+C144 CAP_CTRL_CODE3[0] a_4574_5180# 1.29e-20
+C145 x2.x2.x8.output_stack x2.x2.IN 0.371f
+C146 x2.x3.x8.output_stack a_10756_2819# 1.18e-20
+C147 a_4734_5870# x2.x4.x8.output_stack 0.032f
+C148 a_4734_5594# x2.x4.x7.floating 0.00959f
+C149 sample_delay_offset a_16774_3483# 0.00138f
+C150 a_10137_4035# x2.x3.x11.Y 3.1e-20
+C151 sample_delay_offset x3.A 0.343f
+C152 a_4047_2819# x3.B 0.00365f
+C153 a_3106_6090# a_3041_6494# 4.2e-20
+C154 a_1704_6122# clk 0.246f
+C155 a_16774_4173# x2.x2.IN 1.34e-19
+C156 a_10137_3483# x2.x3.IN 0.0136f
+C157 x2.x4.x2.floating x2.x4.OUT 0.0257f
+C158 vdd a_16846_4035# 4.84e-19
+C159 x2.x1.x10.Y a_17181_6534# 0.00127f
+C160 a_16846_3207# a_16686_3345# 0.0388f
+C161 CAP_CTRL_CODE0[2] a_4574_5456# 2.81e-19
+C162 a_16846_4035# x2.x2.IN 0.029f
+C163 sample_delay_offset a_3222_6482# 5.28e-19
+C164 CAP_CTRL_CODE1[1] a_17181_6193# 3.4e-20
+C165 vdd a_2465_6482# 0.00118f
+C166 vdd a_2837_6438# 0.00126f
+C167 CAP_CTRL_CODE0[0] CAP_CTRL_CODE0[2] 7.44e-20
+C168 a_11283_5180# a_11371_5180# 0.0022f
+C169 x2.x1.x7.floating a_11443_5870# 0.00959f
+C170 x2.x1.x2.floating CAP_CTRL_CODE1[0] 0.163f
+C171 x2.x1.x6.floating a_11443_5870# 0.00278f
+C172 a_4662_5732# x2.x4.x7.floating 8.52e-19
+C173 x2.x3.x6.floating x2.x3.x11.Y 0.13f
+C174 a_10137_3207# a_10065_3345# 0.00227f
+C175 a_2235_6116# a_1704_6122# 5.76e-19
+C176 x2.x1.x2.floating x2.x1.x8.output_stack 0.193f
+C177 a_2465_6482# a_1870_6122# 0.00118f
+C178 a_2837_6438# a_1870_6122# 0.00126f
+C179 a_16774_3345# x2.x2.IN 0.0013f
+C180 vdd a_11396_7121# 0.0797f
+C181 x2.x4.x11.Y x2.x4.x10.Y 0.788f
+C182 x2.x4.OUT a_11396_7397# 0.00847f
+C183 a_10472_6193# a_11283_6008# 0.00348f
+C184 a_10472_6534# x2.x1.x8.output_stack 1.18e-20
+C185 x2.x3.x8.output_stack CAP_CTRL_CODE2[1] 4.73e-20
+C186 x2.x3.x6.floating a_10756_2819# 0.0013f
+C187 x1.x2.SET_B a_2465_6482# 0.0351f
+C188 x1.x2.SET_B a_2837_6438# 0.00408f
+C189 CAP_CTRL_CODE3[2] x3.A 0.00186f
+C190 a_11283_5732# CAP_CTRL_CODE0[0] 0.00654f
+C191 a_10024_2094# x2.x3.x5[6].floating 0.00169f
+C192 a_2678_2626# x3.B 1.93e-20
+C193 a_2932_6494# a_3041_6494# 0.00707f
+C194 sample_delay_offset a_10137_3207# 0.0189f
+C195 sample_delay_offset a_16846_3207# 0.0189f
+C196 CAP_CTRL_CODE1[2] x2.x4.x2.floating 0.00611f
+C197 CAP_CTRL_CODE0[0] x2.x4.x5[6].floating 0.00131f
+C198 x2.x1.x11.Y x2.x1.x8.output_stack 0.164f
+C199 a_2325_6090# vdd 0.323f
+C200 a_17181_6193# CAP_CTRL_CODE1[0] 0.00169f
+C201 x2.x4.x2.floating a_11371_5318# 2.21e-19
+C202 CAP_CTRL_CODE2[1] a_10137_4035# 9.56e-20
+C203 a_10065_3759# x2.x3.IN 3.4e-19
+C204 x2.x4.x8.output_stack x1.x2.RESET_B 4.23e-20
+C205 CAP_CTRL_CODE0[1] x2.x4.x7.floating 2.21e-20
+C206 x3.A a_4662_5594# 6.77e-19
+C207 a_1704_6122# a_2619_6316# 0.124f
+C208 a_16846_3483# x2.x2.x4[3].floating 1.17e-19
+C209 x2.x4.x11.Y vdd 0.427f
+C210 a_10472_6534# x2.x4.x10.Y 0.00127f
+C211 x2.x1.x10.Y x2.x1.x7.floating 0.00345f
+C212 a_10472_6193# CAP_CTRL_CODE1[1] 9.55e-21
+C213 a_17181_6193# x2.x1.x8.output_stack 0.00892f
+C214 x2.x1.x5[6].floating x2.x1.x10.Y 1.01f
+C215 a_2678_2626# a_3553_3025# 6.88e-22
+C216 a_4574_5456# a_4734_5318# 0.0388f
+C217 a_2325_6090# a_1870_6122# 0.153f
+C218 x2.x1.x10.Y x2.x1.x6.floating 0.0881f
+C219 a_4662_5732# CAP_CTRL_CODE0[2] 2.5e-19
+C220 x2.x1.x10.Y CAP_CTRL_CODE1[3] 0.0519f
+C221 a_11283_5732# x2.x1.x7.floating 0.00409f
+C222 a_16846_3207# a_16774_3207# 0.00227f
+C223 CAP_CTRL_CODE1[2] x2.x4.x3[1].floating 3.74e-20
+C224 x3.Y a_4047_3022# 0.00115f
+C225 x2.x2.x5[6].floating a_10112_2232# 1.79e-19
+C226 a_16846_3483# x2.x2.x7.floating 0.00409f
+C227 x1.x2.SET_B a_2325_6090# 0.192f
+C228 CAP_CTRL_CODE0[3] x2.x4.x11.Y 0.00466f
+C229 CAP_CTRL_CODE2[0] a_10065_3897# 3.43e-19
+C230 a_11308_6983# x2.x1.x5[6].floating 2.76e-19
+C231 x2.x2.x4[3].floating a_16686_3897# 7.47e-19
+C232 a_11308_6983# x2.x1.x6.floating 0.00996f
+C233 CAP_CTRL_CODE0[2] x2.x4.x7.floating 0.0173f
+C234 x2.x4.x10.Y x2.x1.x11.Y 1.5e-20
+C235 CAP_CTRL_CODE2[1] x2.x4.x8.output_stack 9.58e-22
+C236 x2.x1.x2.floating vdd 0.0486f
+C237 a_16686_3621# a_16774_3621# 0.00227f
+C238 a_11308_6983# CAP_CTRL_CODE1[3] 2.69e-19
+C239 a_4662_6146# x2.x4.x7.floating 8.52e-19
+C240 x2.x1.x2.floating x2.x2.IN 0.0392f
+C241 x2.x4.x10.Y x2.x4.x6.floating 0.0865f
+C242 x2.x3.x6.floating x2.x3.x8.output_stack 0.229f
+C243 x2.x2.x5[6].floating a_10112_1680# 3.13e-19
+C244 x2.x1.x6.floating x2.x4.x5[6].floating 0.0269f
+C245 x2.x4.x5[6].floating CAP_CTRL_CODE1[3] 0.00291f
+C246 a_10472_6534# vdd 0.211f
+C247 a_11283_5732# a_11371_5732# 0.00227f
+C248 a_16686_3897# x2.x2.x7.floating 0.00925f
+C249 x2.x3.x8.output_stack a_10065_3207# 0.00227f
+C250 x3.Y sample_clk 0.00198f
+C251 CAP_CTRL_CODE2[0] a_10137_3483# 0.00663f
+C252 a_4599_7259# x2.x4.x10.Y 2.35e-19
+C253 a_16686_3621# a_16686_3345# 0.0316f
+C254 a_9977_3345# x2.x3.x4[3].floating 8.29e-19
+C255 a_4574_6008# a_4574_5732# 0.0316f
+C256 CAP_CTRL_CODE2[1] CAP_CTRL_CODE3[0] 1.6e-20
+C257 a_10756_3022# a_10137_3207# 0.00348f
+C258 a_4734_5594# a_4734_5318# 0.0316f
+C259 CAP_CTRL_CODE1[2] x2.x3.IN 4.34e-20
+C260 x2.x3.x7.floating x2.x3.x11.Y 9.72e-19
+C261 CAP_CTRL_CODE0[1] CAP_CTRL_CODE0[2] 1.31f
+C262 CAP_CTRL_CODE3[1] a_4574_5180# 1.48e-20
+C263 a_10472_6193# CAP_CTRL_CODE1[0] 8.82e-21
+C264 x2.x2.x5[6].floating x2.x2.x10.Y 1.01f
+C265 CAP_CTRL_CODE0[0] x2.x4.OUT 8.71e-19
+C266 a_11371_6146# x2.x1.x7.floating 8.52e-19
+C267 x2.x2.x8.output_stack CAP_CTRL_CODE2[2] 0.322f
+C268 x2.x1.x4[3].floating x2.x1.x7.floating 1.18f
+C269 x2.x1.x5[6].floating x2.x1.x4[3].floating 1.55f
+C270 vdd x2.x1.x11.Y 0.452f
+C271 sample_delay_offset CAP_CTRL_CODE3[3] 0.0294f
+C272 x2.x3.x8.output_stack CAP_CTRL_CODE3[0] 0.0285f
+C273 a_2678_2626# sample_clk_b 0.00102f
+C274 vdd x2.x4.x6.floating 5.79f
+C275 a_10472_6193# x2.x1.x8.output_stack 6.54e-19
+C276 x2.x2.x3[1].floating x2.x2.x8.output_stack 0.341f
+C277 sample_delay_offset a_4662_5870# 0.00138f
+C278 a_16733_1818# a_16733_2094# 0.0316f
+C279 a_2790_6116# vdd 0.0184f
+C280 x2.x4.x7.floating x2.x4.x5[6].floating 0.182f
+C281 a_17181_6193# vdd 0.237f
+C282 x2.x2.x8.output_stack a_16686_3345# 0.032f
+C283 a_3813_6132# a_4734_5870# 1.39e-21
+C284 vdd x2.x3.x4[3].floating 0.0565f
+C285 x2.x2.x6.floating x2.x2.x11.Y 0.13f
+C286 x3.A a_4574_5732# 0.0146f
+C287 a_2151_6116# a_2235_6116# 0.00972f
+C288 a_17181_6193# x2.x2.IN 0.244f
+C289 a_16774_4035# x2.x2.x7.floating 8.52e-19
+C290 a_4687_7121# x2.x4.x6.floating 0.0194f
+C291 a_11283_5732# a_11443_5870# 0.0388f
+C292 a_11443_5318# sample_delay_offset 0.0126f
+C293 a_4599_7259# vdd 0.0712f
+C294 CAP_CTRL_CODE0[3] x2.x4.x6.floating 0.00405f
+C295 a_2790_6116# a_1870_6122# 1.09e-19
+C296 a_4662_6146# CAP_CTRL_CODE0[2] 1.06e-19
+C297 x2.x3.x10.Y a_10137_3207# 1.69e-19
+C298 x2.x4.x7.floating a_2619_6316# 1.58e-19
+C299 x1.x2.SET_B x2.x4.x6.floating 8.13e-21
+C300 x2.x1.x7.floating x2.x4.OUT 0.0242f
+C301 x2.x1.x5[6].floating x2.x4.OUT 0.00127f
+C302 a_4687_7121# a_4599_7259# 0.0704f
+C303 x2.x4.x7.floating a_4734_5318# 0.00925f
+C304 CAP_CTRL_CODE2[0] a_4047_3022# 6.85e-22
+C305 x2.x1.x6.floating x2.x4.OUT 0.03f
+C306 sample_delay_offset a_16686_3621# 0.0132f
+C307 x2.x2.x5[6].floating vdd 44f
+C308 a_4047_2819# x2.x3.x10.Y 0.00127f
+C309 CAP_CTRL_CODE0[1] x2.x4.x5[6].floating 0.00228f
+C310 x1.x2.SET_B a_2790_6116# 0.0015f
+C311 x2.x2.x5[6].floating x2.x2.IN 0.00127f
+C312 a_4599_6983# x2.x4.x8.output_stack 0.0702f
+C313 CAP_CTRL_CODE1[3] x2.x4.OUT 0.00868f
+C314 x3.Y x3.A 0.211f
+C315 a_10065_3759# CAP_CTRL_CODE2[0] 2.39e-19
+C316 CAP_CTRL_CODE2[0] x2.x4.OUT 4.21e-20
+C317 CAP_CTRL_CODE0[0] CAP_CTRL_CODE1[2] 3.13f
+C318 a_16774_3345# a_16686_3345# 0.00227f
+C319 a_16846_3759# sample_delay_offset 0.00298f
+C320 sample_delay_offset a_10065_4173# 5.66e-19
+C321 x3.A a_1704_6122# 2.34e-19
+C322 x2.x3.x7.floating CAP_CTRL_CODE2[1] 1.76e-20
+C323 a_2151_6116# a_2619_6316# 0.0633f
+C324 sample_delay_offset a_11443_5594# 0.0133f
+C325 sample_delay_offset a_10024_2094# 3.64e-19
+C326 a_11371_5732# x2.x4.OUT 5.05e-19
+C327 sample_delay_offset x2.x2.x8.output_stack 0.264f
+C328 x2.x3.x7.floating a_10065_3483# 8.52e-19
+C329 x3.A a_4574_5456# 0.0148f
+C330 x2.x1.x4[3].floating a_11443_5870# 8.29e-19
+C331 a_3106_6090# x1.x2.RESET_B 0.117f
+C332 x1.x2.RESET_B a_2569_6116# 2.07e-19
+C333 a_10137_3207# x2.x3.IN 0.0217f
+C334 sample_delay_offset a_11283_5456# 0.00299f
+C335 a_10065_3897# a_9977_3897# 0.00227f
+C336 x2.x3.x8.output_stack x2.x3.x7.floating 0.185f
+C337 CAP_CTRL_CODE0[2] x2.x4.x5[6].floating 0.00564f
+C338 CAP_CTRL_CODE0[0] x3.A 0.00183f
+C339 a_10472_6193# vdd 0.235f
+C340 CAP_CTRL_CODE2[1] x2.x2.x2.floating 0.00516f
+C341 sample_delay_offset a_16774_4173# 5.68e-19
+C342 a_10024_1818# a_10024_2094# 0.0316f
+C343 a_11283_5732# x2.x1.x10.Y 6.65e-20
+C344 a_3018_6116# a_2619_6316# 3.13e-19
+C345 x2.x3.x5[6].floating x2.x3.x4[3].floating 1.55f
+C346 vdd a_4662_6008# 9.37e-20
+C347 a_10065_3483# x2.x2.x2.floating 2.21e-19
+C348 a_11308_6983# x2.x1.x10.Y 0.039f
+C349 a_3813_6132# x1.x2.RESET_B 0.0103f
+C350 sample_delay_offset a_16846_4035# 0.00232f
+C351 x2.x2.x6.floating CAP_CTRL_CODE2[3] 0.00525f
+C352 x2.x3.x8.output_stack x2.x2.x2.floating 2.95e-19
+C353 x2.x3.x3[1].floating x2.x3.x4[3].floating 1.19f
+C354 a_2619_6316# clk 3.33e-20
+C355 CAP_CTRL_CODE1[2] x2.x1.x7.floating 0.0129f
+C356 CAP_CTRL_CODE1[2] x2.x1.x5[6].floating 0.0056f
+C357 x2.x1.x10.Y x2.x4.x5[6].floating 0.00422f
+C358 CAP_CTRL_CODE2[1] x2.x2.x4[3].floating 0.00929f
+C359 x2.x2.x8.output_stack a_16774_3207# 0.00227f
+C360 x2.x1.x7.floating a_11371_5318# 8.52e-19
+C361 CAP_CTRL_CODE1[2] x2.x1.x6.floating 3.95e-22
+C362 x2.x3.x7.floating a_10137_4035# 0.00218f
+C363 CAP_CTRL_CODE2[3] x2.x2.x11.Y 0.00466f
+C364 CAP_CTRL_CODE1[1] a_4574_5180# 8.94e-20
+C365 a_11443_5318# x2.x4.x2.floating 6.88e-19
+C366 x2.x4.OUT a_11443_5870# 0.0135f
+C367 CAP_CTRL_CODE0[1] x2.x4.OUT 5.47e-22
+C368 sample_delay_offset a_16774_3345# 0.00155f
+C369 CAP_CTRL_CODE3[3] x2.x3.x10.Y 0.0519f
+C370 x3.A a_4734_5594# 0.0138f
+C371 x3.Y a_4047_2819# 0.00933f
+C372 a_11308_6983# x2.x4.x5[6].floating 1.79e-19
+C373 x2.x2.x2.floating a_10137_4035# 9.24e-19
+C374 a_2325_6090# x1.x2.D 0.0326f
+C375 sample_delay_offset a_11396_7121# 3.64e-19
+C376 CAP_CTRL_CODE1[2] a_11371_5732# 1.7e-19
+C377 x2.x4.x11.Y x1.x2.D 5.6e-21
+C378 x2.x3.x6.floating x2.x3.x7.floating 0.202f
+C379 a_2932_6494# x1.x2.RESET_B 0.00621f
+C380 CAP_CTRL_CODE2[1] CAP_CTRL_CODE3[1] 3.2e-20
+C381 x3.A CAP_CTRL_CODE2[0] 0.00182f
+C382 a_4574_6008# x2.x4.x7.floating 0.00409f
+C383 x2.x1.x10.Y x2.x1.x4[3].floating 0.00668f
+C384 x2.x2.x5[6].floating a_16821_1956# 2.76e-19
+C385 a_10756_3022# x2.x2.x8.output_stack 0.00892f
+C386 x2.x3.x7.floating a_10065_3207# 8.52e-19
+C387 a_11308_7535# a_11308_7259# 0.0316f
+C388 vdd a_3041_6494# 7.35e-20
+C389 a_10065_4035# sample_delay_offset 9.64e-19
+C390 a_11283_5732# x2.x1.x4[3].floating 1.17e-19
+C391 CAP_CTRL_CODE1[2] x2.x4.x7.floating 1.87e-20
+C392 a_4662_5732# x3.A 6.73e-19
+C393 x2.x3.x8.output_stack CAP_CTRL_CODE3[1] 0.0715f
+C394 x2.x4.x2.floating a_11443_5594# 6.88e-19
+C395 sample_delay_offset a_2325_6090# 8.22e-21
+C396 CAP_CTRL_CODE3[3] x2.x3.IN 0.00868f
+C397 sample_delay_offset x2.x4.x11.Y 0.19f
+C398 x2.x2.x2.floating a_10065_3207# 2.02e-19
+C399 x2.x4.x2.floating a_11283_5456# 0.00177f
+C400 CAP_CTRL_CODE1[0] a_4574_5180# 6.54e-20
+C401 x3.A x2.x4.x7.floating 0.0275f
+C402 CAP_CTRL_CODE2[2] x2.x3.x4[3].floating 6.52e-20
+C403 x1.x2.SET_B a_3041_6494# 7.87e-19
+C404 a_10024_2094# a_10112_1956# 0.0704f
+C405 a_4662_5870# a_4574_5732# 0.00227f
+C406 x2.x1.x10.Y x2.x4.OUT 0.0967f
+C407 CAP_CTRL_CODE0[1] CAP_CTRL_CODE1[2] 3.42e-20
+C408 a_2678_2626# x3.Y 0.00609f
+C409 x2.x2.x6.floating x2.x2.x7.floating 0.202f
+C410 a_11283_5732# x2.x4.OUT 0.0136f
+C411 a_16846_3483# x2.x2.x10.Y 6.65e-20
+C412 a_10024_2094# x2.x3.x10.Y 4.2e-19
+C413 a_3106_6090# x2.x4.x8.output_stack 2.52e-19
+C414 a_11283_6008# a_11371_6008# 0.00227f
+C415 x2.x2.x8.output_stack x2.x3.x10.Y 1.93e-19
+C416 a_4574_6008# a_3018_6116# 2.23e-20
+C417 a_11308_6983# x2.x4.OUT 0.0175f
+C418 CAP_CTRL_CODE2[1] a_11283_5180# 2.37e-20
+C419 x2.x1.x2.floating sample_delay_offset 0.00286f
+C420 x2.x2.x11.Y x2.x2.x7.floating 9.72e-19
+C421 CAP_CTRL_CODE0[1] x3.A 0.00191f
+C422 x2.x2.x5[6].floating CAP_CTRL_CODE2[2] 0.0056f
+C423 a_2151_6116# x3.A 1.73e-20
+C424 set x1.x2.RESET_B 2.95e-19
+C425 x2.x4.x5[6].floating x2.x4.OUT 0.0218f
+C426 CAP_CTRL_CODE2[0] a_10137_3207# 0.00186f
+C427 x1.x2.D x2.x4.x6.floating 6.74e-20
+C428 a_4574_6008# CAP_CTRL_CODE0[2] 7.47e-20
+C429 sample_delay_offset a_10472_6534# 0.00117f
+C430 a_3813_6132# x2.x4.x8.output_stack 1.59e-19
+C431 x2.x2.x10.Y a_16733_2094# 4.2e-19
+C432 a_4662_6146# a_4574_6008# 0.00227f
+C433 x2.x2.x3[1].floating x2.x2.x5[6].floating 0.8f
+C434 a_2790_6116# x1.x2.D 0.00646f
+C435 CAP_CTRL_CODE1[2] CAP_CTRL_CODE0[2] 6.83e-20
+C436 a_2325_6090# a_2058_6116# 6.99e-20
+C437 x2.x2.x6.floating a_16733_1818# 0.0191f
+C438 x2.x4.x10.Y a_4574_5180# 2.2e-20
+C439 a_10065_4173# x2.x3.IN 1.34e-19
+C440 a_10024_2094# x2.x3.IN 0.00921f
+C441 a_4687_7397# x2.x4.x5[6].floating 0.00154f
+C442 a_16846_3483# vdd 4.84e-19
+C443 sample_delay_offset x2.x1.x11.Y 0.19f
+C444 x2.x2.x8.output_stack x2.x3.IN 0.127f
+C445 a_3056_2150# a_2678_2006# 0.0895f
+C446 x3.A CAP_CTRL_CODE0[2] 0.0143f
+C447 a_16846_3483# x2.x2.IN 0.03f
+C448 a_11371_6146# x2.x4.OUT 0.00196f
+C449 CAP_CTRL_CODE1[2] x2.x1.x10.Y 0.00201f
+C450 x2.x1.x4[3].floating x2.x4.OUT 6.65e-19
+C451 a_10112_2232# x2.x3.x11.Y 0.00707f
+C452 sample_delay_offset x2.x4.x6.floating 0.0683f
+C453 a_4662_6146# x3.A 0.00225f
+C454 a_16686_3621# a_16774_3759# 0.00227f
+C455 a_10472_6193# CAP_CTRL_CODE2[2] 3.71e-21
+C456 CAP_CTRL_CODE3[0] CAP_CTRL_CODE3[1] 0.465f
+C457 sample_delay_offset a_2790_6116# 1.82e-20
+C458 a_11283_5732# CAP_CTRL_CODE1[2] 9.19e-20
+C459 a_3056_2150# a_3056_2936# 0.00995f
+C460 sample_delay_offset x2.x3.x4[3].floating 0.00736f
+C461 a_2932_6494# x2.x4.x8.output_stack 6.7e-21
+C462 a_11396_7121# a_11396_7397# 0.0316f
+C463 vdd a_16733_2094# 0.0737f
+C464 sample_delay_offset a_4599_7259# 6.38e-19
+C465 a_10112_1680# x2.x3.x11.Y 5.11e-20
+C466 x2.x2.IN a_16733_2094# 0.00921f
+C467 sample_delay_offset a_11371_5594# 0.00111f
+C468 a_16846_3759# a_16774_3759# 0.00227f
+C469 x2.x2.IN a_16686_3897# 0.0166f
+C470 x2.x3.x7.floating x2.x2.x2.floating 0.0475f
+C471 sample_delay_offset a_4662_5318# 9.69e-19
+C472 a_3056_2150# vdd 0.293f
+C473 CAP_CTRL_CODE1[2] x2.x4.x5[6].floating 3.3e-21
+C474 CAP_CTRL_CODE1[1] x2.x3.x8.output_stack 2.48e-21
+C475 sample_delay_offset a_11371_5870# 0.00138f
+C476 sample_clk a_4047_3022# 0.00117f
+C477 x2.x2.x5[6].floating sample_delay_offset 0.00542f
+C478 a_4574_6008# a_2619_6316# 1.75e-20
+C479 x2.x2.x10.Y x2.x3.x11.Y 1.5e-20
+C480 x3.A x2.x4.x5[6].floating 0.00127f
+C481 vdd a_4734_5870# 0.00378f
+C482 x2.x2.x5[6].floating a_10024_1818# 8.4e-20
+C483 a_11443_5318# x2.x1.x7.floating 0.00925f
+C484 a_11443_5318# x2.x1.x6.floating 0.00109f
+C485 a_11283_6008# x2.x4.x8.output_stack 5.22e-20
+C486 CAP_CTRL_CODE1[2] x2.x1.x4[3].floating 0.527f
+C487 CAP_CTRL_CODE1[2] a_11371_6146# 8.1e-20
+C488 a_9977_3345# x2.x3.x11.Y 2.44e-19
+C489 x2.x3.x4[3].floating a_9977_3621# 8.29e-19
+C490 CAP_CTRL_CODE1[1] a_10137_4035# 2.46e-20
+C491 a_10756_2819# x2.x2.x10.Y 0.00127f
+C492 a_16774_4035# x2.x2.IN 1.8e-19
+C493 CAP_CTRL_CODE3[2] x2.x3.x4[3].floating 0.536f
+C494 CAP_CTRL_CODE0[0] a_11283_5456# 0.00654f
+C495 x3.A a_2619_6316# 0.00211f
+C496 x3.A a_4734_5318# 0.014f
+C497 a_10065_4035# x2.x3.IN 1.8e-19
+C498 a_10137_3759# x2.x3.x4[3].floating 1.17e-19
+C499 sample_delay_offset a_11371_5180# 5.69e-19
+C500 a_1704_6122# a_2465_6482# 6.04e-20
+C501 a_10472_6193# sample_delay_offset 0.00651f
+C502 a_1704_6122# a_2837_6438# 2.56e-19
+C503 sample_delay_offset a_4662_6008# 0.00155f
+C504 a_3222_6482# a_2619_6316# 0.0552f
+C505 vdd a_11308_7259# 0.0923f
+C506 x2.x3.x2.floating CAP_CTRL_CODE2[1] 1.76e-20
+C507 x2.x3.x8.output_stack CAP_CTRL_CODE1[0] 4.11e-21
+C508 x2.x3.x8.output_stack a_10112_2232# 0.0702f
+C509 vdd x2.x3.x11.Y 0.45f
+C510 x2.x4.x11.Y a_4574_5732# 8.11e-20
+C511 x2.x4.x7.floating a_4662_5870# 8.52e-19
+C512 x2.x1.x7.floating a_11443_5594# 0.00959f
+C513 CAP_CTRL_CODE1[1] x2.x4.x8.output_stack 4.64e-20
+C514 a_16846_3759# a_16774_3897# 0.00227f
+C515 CAP_CTRL_CODE1[2] x2.x4.OUT 0.0169f
+C516 x2.x1.x6.floating a_11443_5594# 0.00167f
+C517 a_3056_2150# x2.x3.x5[6].floating 0.00132f
+C518 x2.x4.x4[3].floating a_4574_5180# 7.17e-20
+C519 x2.x3.x2.floating x2.x3.x8.output_stack 0.193f
+C520 x2.x2.x4[3].floating x2.x2.x7.floating 1.18f
+C521 x2.x4.OUT a_11371_5318# 1.8e-19
+C522 x3.A a_4047_3022# 0.00142f
+C523 vdd a_10756_2819# 0.21f
+C524 x2.x1.x7.floating a_11283_5456# 0.00409f
+C525 x2.x3.x8.output_stack x7.A 0.127f
+C526 a_10065_4173# CAP_CTRL_CODE2[0] 8.2e-19
+C527 x2.x4.x2.floating a_11371_5594# 2.21e-19
+C528 a_10137_3207# a_10137_3483# 0.0316f
+C529 a_16821_1956# a_16733_2094# 0.0704f
+C530 CAP_CTRL_CODE1[0] a_10137_4035# 2.97e-20
+C531 CAP_CTRL_CODE2[1] x2.x2.x10.Y 6.64e-19
+C532 a_3106_6090# a_3813_6132# 0.0968f
+C533 x2.x2.x8.output_stack CAP_CTRL_CODE2[0] 0.028f
+C534 a_11371_5870# x2.x4.x2.floating 2.21e-19
+C535 a_11371_5732# a_11443_5594# 0.00227f
+C536 x2.x3.x10.Y x2.x3.x4[3].floating 0.00668f
+C537 vdd x1.x2.RESET_B 1.47f
+C538 a_2325_6090# a_1704_6122# 0.111f
+C539 x2.x4.x4[3].floating a_4734_5870# 8.29e-19
+C540 x3.A sample_clk 0.00102f
+C541 sample_delay_offset a_3041_6494# 4.25e-20
+C542 a_9977_3345# a_10065_3483# 0.00227f
+C543 x2.x2.x5[6].floating a_10112_1956# 1.94e-19
+C544 x2.x3.x6.floating a_10112_2232# 0.00996f
+C545 a_4687_7397# x3.A 0.00847f
+C546 a_9977_3345# x2.x3.x8.output_stack 0.032f
+C547 x1.x2.RESET_B a_1870_6122# 0.00621f
+C548 x2.x4.x11.Y a_4574_5456# 4.74e-20
+C549 a_16846_3483# a_16774_3621# 0.00227f
+C550 CAP_CTRL_CODE1[0] x2.x4.x8.output_stack 2.42e-20
+C551 x2.x2.x5[6].floating x2.x3.x10.Y 0.00422f
+C552 CAP_CTRL_CODE0[0] x2.x4.x11.Y 4.21e-21
+C553 x2.x1.x5[6].floating a_11396_7121# 0.00169f
+C554 CAP_CTRL_CODE0[2] a_4662_5870# 1.81e-19
+C555 sample_delay_offset a_11371_5456# 0.00103f
+C556 x2.x3.x8.output_stack a_3056_2936# 1.29e-19
+C557 x1.x2.SET_B x1.x2.RESET_B 0.261f
+C558 x2.x1.x6.floating a_11396_7121# 0.0194f
+C559 x2.x3.x6.floating a_10112_1680# 0.00578f
+C560 a_3106_6090# a_2932_6494# 0.197f
+C561 CAP_CTRL_CODE2[1] vdd 0.0183f
+C562 x2.x3.x5[6].floating x2.x3.x11.Y 0.00138f
+C563 x2.x4.x8.output_stack x2.x1.x8.output_stack 2.93e-20
+C564 CAP_CTRL_CODE1[2] a_11371_5318# 5.02e-19
+C565 a_10472_6193# x2.x4.x2.floating 0.0104f
+C566 a_11443_5594# a_11443_5870# 0.0316f
+C567 a_16846_3483# a_16686_3345# 0.0388f
+C568 x2.x3.x4[3].floating x2.x3.IN 6.65e-19
+C569 a_4574_6008# x3.A 0.0311f
+C570 x2.x2.x6.floating x2.x2.x10.Y 0.0881f
+C571 CAP_CTRL_CODE2[2] a_4574_5180# 2.86e-20
+C572 a_4047_2819# a_4047_3022# 0.0121f
+C573 x2.x3.x8.output_stack vdd 0.599f
+C574 CAP_CTRL_CODE1[1] x2.x1.x3[1].floating 0.224f
+C575 CAP_CTRL_CODE1[2] x3.A 0.00176f
+C576 x2.x2.x5[6].floating a_16821_1680# 2.14e-19
+C577 x2.x2.x11.Y x2.x2.x10.Y 0.788f
+C578 a_4662_5180# a_4574_5180# 0.0022f
+C579 x2.x3.x2.floating CAP_CTRL_CODE3[0] 0.17f
+C580 x2.x4.x11.Y a_4734_5594# 1.28e-19
+C581 a_10472_6193# x2.x4.x3[1].floating 3.09e-19
+C582 a_10065_4035# CAP_CTRL_CODE2[0] 5.2e-19
+C583 x2.x2.x5[6].floating x2.x3.IN 0.0216f
+C584 CAP_CTRL_CODE3[0] x7.A 4.4e-19
+C585 a_17181_6193# a_17181_6534# 0.0121f
+C586 a_9977_3345# x2.x3.x6.floating 0.00278f
+C587 x2.x4.x10.Y x2.x4.x8.output_stack 1.01f
+C588 a_4599_6983# x2.x4.x10.Y 0.039f
+C589 a_2151_6116# a_2465_6482# 0.0258f
+C590 a_2790_6116# a_1704_6122# 0.00566f
+C591 x3.A a_3222_6482# 6.54e-19
+C592 x2.x2.x6.floating vdd 5.78f
+C593 x2.x2.x6.floating x2.x2.IN 0.0299f
+C594 x2.x1.x2.floating x2.x1.x5[6].floating 0.441f
+C595 sample_delay_offset a_16846_3483# 0.00382f
+C596 CAP_CTRL_CODE0[0] x2.x4.x6.floating 1.18e-19
+C597 x2.x3.x6.floating vdd 5.87f
+C598 x2.x1.x3[1].floating CAP_CTRL_CODE1[0] 0.0394f
+C599 vdd x2.x2.x11.Y 0.43f
+C600 a_2678_2626# a_4047_3022# 8.79e-20
+C601 x2.x2.x11.Y x2.x2.IN 0.0928f
+C602 a_10472_6534# x2.x1.x6.floating 0.0013f
+C603 a_11283_5732# a_11443_5594# 0.0388f
+C604 vdd x2.x4.x8.output_stack 0.595f
+C605 x2.x1.x10.Y a_11283_5456# 4.07e-20
+C606 a_4662_5456# sample_delay_offset 0.00103f
+C607 vdd a_10065_3207# 1.29e-19
+C608 x2.x4.x11.Y x2.x4.x7.floating 9.72e-19
+C609 a_10472_6534# CAP_CTRL_CODE1[3] 0.00241f
+C610 x2.x1.x3[1].floating x2.x1.x8.output_stack 0.341f
+C611 CAP_CTRL_CODE2[1] x2.x3.x3[1].floating 3.52e-20
+C612 a_4599_6983# vdd 0.106f
+C613 x2.x4.x2.floating a_11371_5456# 2.21e-19
+C614 sample_delay_offset a_16733_2094# 3.64e-19
+C615 sample_delay_offset a_16686_3897# 0.0124f
+C616 x2.x3.x8.output_stack x2.x3.x5[6].floating 1.19f
+C617 a_11443_5318# x2.x1.x4[3].floating 7.47e-19
+C618 sample_delay_offset a_4574_5180# 0.0025f
+C619 a_11283_5732# a_11283_5456# 0.0316f
+C620 a_4687_7121# x2.x4.x8.output_stack 0.032f
+C621 x2.x3.x8.output_stack x2.x3.x3[1].floating 0.341f
+C622 a_4687_7121# a_4599_6983# 0.0704f
+C623 x2.x1.x11.Y x2.x1.x7.floating 9.72e-19
+C624 x2.x1.x5[6].floating x2.x1.x11.Y 0.00138f
+C625 a_2151_6116# a_2325_6090# 0.205f
+C626 CAP_CTRL_CODE3[0] vdd 0.00327f
+C627 a_2678_2626# sample_clk 0.109f
+C628 x2.x1.x6.floating x2.x1.x11.Y 0.13f
+C629 a_4734_5594# x2.x4.x6.floating 0.00167f
+C630 CAP_CTRL_CODE0[3] a_4599_6983# 2.69e-19
+C631 CAP_CTRL_CODE2[3] x2.x2.x10.Y 0.0519f
+C632 CAP_CTRL_CODE1[3] x2.x1.x11.Y 0.00466f
+C633 x1.x2.SET_B x2.x4.x8.output_stack 1.29e-20
+C634 CAP_CTRL_CODE0[1] x2.x4.x11.Y 5.52e-21
+C635 x3.A a_4047_2819# 3.02e-19
+C636 a_3056_2150# sample_clk_b 0.00457f
+C637 sample_delay_offset a_4734_5870# 0.0155f
+C638 x2.x4.x10.Y a_4599_7535# 1.02e-19
+C639 x2.x1.x7.floating a_11371_5594# 8.52e-19
+C640 a_11443_5318# x2.x4.OUT 0.0135f
+C641 sample_delay_offset a_16774_4035# 9.67e-19
+C642 x2.x2.x8.output_stack a_16821_2232# 0.0702f
+C643 x2.x1.x10.Y a_11396_7121# 4.2e-19
+C644 CAP_CTRL_CODE2[0] x2.x3.x4[3].floating 0.00915f
+C645 x2.x1.x4[3].floating a_11443_5594# 8.29e-19
+C646 a_11371_5870# x2.x1.x7.floating 8.52e-19
+C647 a_10472_6193# CAP_CTRL_CODE0[0] 0.00169f
+C648 x2.x1.x4[3].floating a_11283_5456# 1.17e-19
+C649 CAP_CTRL_CODE3[2] a_4574_5180# 1.71e-20
+C650 x2.x3.x6.floating x2.x3.x5[6].floating 1.18f
+C651 x2.x4.x11.Y CAP_CTRL_CODE0[2] 9.76e-21
+C652 a_11308_6983# a_11396_7121# 0.0704f
+C653 a_9977_3345# x2.x3.x7.floating 0.00959f
+C654 a_10065_4035# a_9977_3897# 0.00227f
+C655 vdd CAP_CTRL_CODE2[3] 0.133f
+C656 x2.x2.x2.floating x2.x2.x10.Y 0.00202f
+C657 x2.x4.x7.floating x2.x4.x6.floating 0.202f
+C658 CAP_CTRL_CODE2[2] CAP_CTRL_CODE2[1] 4.67f
+C659 x2.x4.x5[6].floating a_11396_7121# 4.88e-20
+C660 sample_delay_offset a_11308_7259# 6.38e-19
+C661 CAP_CTRL_CODE2[3] x2.x2.IN 0.0087f
+C662 x2.x2.x5[6].floating CAP_CTRL_CODE2[0] 0.00119f
+C663 a_2619_6316# a_2465_6482# 0.00943f
+C664 vdd a_4599_7535# 0.149f
+C665 a_2837_6438# a_2619_6316# 3.73e-19
+C666 x2.x4.x4[3].floating x2.x4.x8.output_stack 0.636f
+C667 x2.x2.x6.floating a_16821_1956# 0.00996f
+C668 sample_delay_offset x2.x3.x11.Y 0.19f
+C669 vdd x2.x1.x3[1].floating 0.0301f
+C670 a_2325_6090# a_2235_6116# 6.69e-20
+C671 a_3340_6116# x1.x2.RESET_B 7.54e-19
+C672 x1.x2.RESET_B x1.x2.D 0.0552f
+C673 CAP_CTRL_CODE1[1] a_11283_5180# 8.94e-20
+C674 a_9977_3345# x2.x2.x2.floating 6.24e-19
+C675 x2.x4.OUT a_11443_5594# 0.0135f
+C676 x2.x2.x3[1].floating CAP_CTRL_CODE2[1] 0.226f
+C677 a_2678_2626# x3.A 0.00228f
+C678 x2.x2.x4[3].floating x2.x2.x10.Y 0.00668f
+C679 CAP_CTRL_CODE2[2] x2.x3.x8.output_stack 2.46e-20
+C680 x2.x1.x11.Y a_11443_5870# 2.44e-19
+C681 a_16821_1956# x2.x2.x11.Y 9.98e-20
+C682 x2.x3.x2.floating CAP_CTRL_CODE3[1] 0.00656f
+C683 sample_delay_offset a_10756_2819# 0.00117f
+C684 x2.x3.x8.output_stack x3.B 4.33e-19
+C685 CAP_CTRL_CODE3[0] x2.x3.x5[6].floating 0.00121f
+C686 x2.x4.x7.floating a_4662_5318# 8.52e-19
+C687 x2.x3.x7.floating vdd 0.0315f
+C688 x2.x4.OUT a_11283_5456# 0.0136f
+C689 x7.A CAP_CTRL_CODE3[1] 5.47e-22
+C690 CAP_CTRL_CODE0[1] x2.x4.x6.floating 1.27e-19
+C691 a_10472_6193# x2.x1.x7.floating 7.29e-19
+C692 CAP_CTRL_CODE3[0] x2.x3.x3[1].floating 0.0326f
+C693 a_11443_5318# a_11371_5318# 0.00227f
+C694 x2.x2.x7.floating x2.x2.x10.Y 0.00345f
+C695 x2.x4.x11.Y x2.x4.x5[6].floating 0.00138f
+C696 sample_delay_offset x1.x2.RESET_B 0.00954f
+C697 CAP_CTRL_CODE2[2] a_10137_4035# 6.93e-20
+C698 x3.A a_4662_5870# 0.00113f
+C699 vdd x2.x2.x2.floating 0.0334f
+C700 x2.x1.x2.floating x2.x1.x10.Y 0.00202f
+C701 sample_delay_offset a_11371_6008# 0.00155f
+C702 a_2325_6090# a_2619_6316# 0.199f
+C703 x2.x3.x11.Y a_9977_3621# 1.28e-19
+C704 a_11371_5870# a_11443_5870# 0.00227f
+C705 x2.x1.x10.Y a_10472_6534# 6.93e-19
+C706 vdd x2.x2.x4[3].floating 0.0565f
+C707 x2.x4.x11.Y a_4734_5318# 7.9e-20
+C708 CAP_CTRL_CODE0[2] x2.x4.x6.floating 1.36e-19
+C709 a_10137_3759# x2.x3.x11.Y 4.74e-20
+C710 x2.x2.x4[3].floating x2.x2.IN 6.65e-19
+C711 a_11283_5180# CAP_CTRL_CODE1[0] 6.54e-20
+C712 a_3106_6090# vdd 0.567f
+C713 vdd a_2569_6116# 0.0112f
+C714 a_16733_1818# x2.x2.x10.Y 1.49e-19
+C715 x2.x4.OUT a_11396_7121# 0.00921f
+C716 sample_delay_offset CAP_CTRL_CODE2[1] 0.0313f
+C717 x2.x2.x6.floating a_16686_3345# 0.00278f
+C718 CAP_CTRL_CODE2[2] x2.x4.x8.output_stack 4.06e-21
+C719 x2.x4.x7.floating a_4662_6008# 8.52e-19
+C720 x2.x1.x10.Y x2.x1.x11.Y 0.788f
+C721 reset x1.x2.RESET_B 0.0529f
+C722 a_10472_6534# x2.x4.x5[6].floating 0.0132f
+C723 vdd x2.x2.x7.floating 0.0321f
+C724 sample_delay_offset a_10065_3483# 0.00138f
+C725 CAP_CTRL_CODE1[2] a_11283_5456# 1.74e-19
+C726 x2.x2.IN x2.x2.x7.floating 0.0261f
+C727 a_3106_6090# a_1870_6122# 0.0264f
+C728 a_1870_6122# a_2569_6116# 2.46e-19
+C729 CAP_CTRL_CODE0[2] a_4662_5318# 8.73e-19
+C730 a_11283_5732# x2.x1.x11.Y 8.11e-20
+C731 a_3813_6132# vdd 0.194f
+C732 sample_delay_offset x2.x3.x8.output_stack 0.261f
+C733 x2.x2.x11.Y a_16686_3345# 2.44e-19
+C734 vdd CAP_CTRL_CODE3[1] 0.0182f
+C735 a_10756_3022# a_10756_2819# 0.0121f
+C736 x2.x3.x7.floating x2.x3.x5[6].floating 0.182f
+C737 x2.x3.x4[3].floating a_9977_3897# 7.47e-19
+C738 a_11283_6008# x2.x1.x8.output_stack 0.0388f
+C739 x1.x2.SET_B a_2569_6116# 9.85e-19
+C740 a_11308_6983# x2.x1.x11.Y 0.00707f
+C741 a_2058_6116# x1.x2.RESET_B 3.34e-21
+C742 a_3106_6090# x1.x2.SET_B 0.143f
+C743 CAP_CTRL_CODE2[2] CAP_CTRL_CODE3[0] 1.48e-20
+C744 a_10472_6193# CAP_CTRL_CODE0[1] 3.4e-20
+C745 x2.x4.x5[6].floating x2.x1.x11.Y 0.00313f
+C746 x2.x1.x7.floating a_11371_5456# 8.52e-19
+C747 a_10024_1818# x2.x3.x8.output_stack 1.5e-19
+C748 a_3813_6132# a_1870_6122# 9.65e-21
+C749 CAP_CTRL_CODE3[0] x3.B 8.54e-21
+C750 a_10112_1956# x2.x3.x11.Y 9.98e-20
+C751 x2.x4.x5[6].floating x2.x4.x6.floating 1.18f
+C752 sample_delay_offset a_10137_4035# 0.00246f
+C753 vdd a_16733_1818# 0.129f
+C754 a_3340_6116# x2.x4.x8.output_stack 6.72e-21
+C755 x2.x4.x8.output_stack x1.x2.D 1.79e-20
+C756 a_16733_1818# x2.x2.IN 0.00847f
+C757 x2.x3.x10.Y x2.x3.x11.Y 0.788f
+C758 a_3813_6132# x1.x2.SET_B 4.86e-19
+C759 a_11308_7259# a_11396_7397# 0.0704f
+C760 x2.x3.x4[3].floating a_10137_3483# 1.17e-19
+C761 a_4734_5870# a_4574_5732# 0.0388f
+C762 CAP_CTRL_CODE1[1] CAP_CTRL_CODE1[0] 6.51f
+C763 a_11283_5732# a_11371_5870# 0.00227f
+C764 CAP_CTRL_CODE3[2] CAP_CTRL_CODE2[1] 7.21e-19
+C765 a_4599_7259# x2.x4.x5[6].floating 2.76e-19
+C766 a_2932_6494# vdd 0.186f
+C767 a_2619_6316# x2.x4.x6.floating 1.55e-20
+C768 x2.x2.x6.floating sample_delay_offset 0.0706f
+C769 x3.A a_2465_6482# 6.9e-20
+C770 x3.A a_2837_6438# 6.08e-20
+C771 x3.Y a_3056_2150# 0.432f
+C772 x2.x4.x6.floating a_4734_5318# 0.00109f
+C773 x2.x4.x2.floating a_11371_6008# 1.6e-19
+C774 x2.x3.x10.Y a_10756_2819# 6.93e-19
+C775 CAP_CTRL_CODE1[1] x2.x1.x8.output_stack 0.0731f
+C776 x2.x3.x8.output_stack a_9977_3621# 1.74e-19
+C777 a_2790_6116# a_2619_6316# 0.00652f
+C778 a_4662_5456# a_4574_5456# 0.00227f
+C779 x2.x3.x8.output_stack CAP_CTRL_CODE3[2] 0.334f
+C780 x2.x3.x6.floating sample_delay_offset 0.0706f
+C781 CAP_CTRL_CODE0[2] a_4662_6008# 1.36e-19
+C782 a_10756_3022# CAP_CTRL_CODE2[1] 4.37e-20
+C783 a_2932_6494# a_1870_6122# 0.137f
+C784 sample_delay_offset x2.x2.x11.Y 0.19f
+C785 a_4574_5456# a_4574_5180# 0.0316f
+C786 sample_delay_offset x2.x4.x8.output_stack 0.263f
+C787 a_10472_6534# x2.x4.OUT 0.15f
+C788 sample_delay_offset a_10065_3207# 0.00166f
+C789 CAP_CTRL_CODE0[0] a_4574_5180# 1.99e-19
+C790 sample_delay_offset a_4599_6983# 0.00273f
+C791 x2.x3.x11.Y x2.x3.IN 0.0933f
+C792 a_4662_5318# a_4734_5318# 0.00227f
+C793 a_10756_3022# x2.x3.x8.output_stack 6.54e-19
+C794 a_10024_1818# x2.x3.x6.floating 0.0191f
+C795 a_2932_6494# x1.x2.SET_B 0.162f
+C796 a_4574_6008# x2.x4.x11.Y 0.00179f
+C797 x2.x2.x8.output_stack a_10137_3207# 5.22e-20
+C798 x2.x3.x5[6].floating CAP_CTRL_CODE3[1] 0.00224f
+C799 x2.x2.x5[6].floating a_16821_2232# 2.76e-19
+C800 a_11283_6008# vdd 0.00115f
+C801 x2.x2.x8.output_stack a_16846_3207# 0.0388f
+C802 CAP_CTRL_CODE1[2] x2.x4.x11.Y 3.93e-21
+C803 a_10137_3759# a_10137_4035# 0.0316f
+C804 x2.x3.x3[1].floating CAP_CTRL_CODE3[1] 0.23f
+C805 sample_delay_offset CAP_CTRL_CODE3[0] 0.00152f
+C806 a_10756_2819# x2.x3.IN 0.15f
+C807 a_11308_7535# vdd 0.179f
+C808 CAP_CTRL_CODE2[2] x2.x3.x7.floating 1.63e-20
+C809 x2.x1.x11.Y x2.x4.OUT 0.0933f
+C810 x2.x3.x7.floating a_10065_3621# 8.52e-19
+C811 x3.A a_2325_6090# 8.24e-20
+C812 x2.x3.x6.floating a_9977_3621# 0.00167f
+C813 x2.x4.x11.Y x3.A 0.0928f
+C814 CAP_CTRL_CODE1[0] x2.x1.x8.output_stack 0.0244f
+C815 vdd set 0.125f
+C816 CAP_CTRL_CODE2[2] x2.x2.x2.floating 1.63e-20
+C817 a_16774_3897# a_16686_3897# 0.00227f
+C818 a_10065_3621# x2.x2.x2.floating 2.21e-19
+C819 x1.x2.RESET_B a_4574_5732# 0.00234f
+C820 x2.x3.x8.output_stack x2.x3.x10.Y 1.01f
+C821 x2.x4.OUT a_11371_5594# 3.4e-19
+C822 a_4687_7397# x2.x4.x6.floating 0.0191f
+C823 x2.x2.x3[1].floating x2.x2.x2.floating 1.17f
+C824 CAP_CTRL_CODE1[1] vdd 0.0183f
+C825 CAP_CTRL_CODE2[2] x2.x2.x4[3].floating 0.53f
+C826 x2.x3.x2.floating x7.A 0.0195f
+C827 a_16821_1956# a_16733_1818# 0.0704f
+C828 CAP_CTRL_CODE2[0] a_4574_5180# 2e-20
+C829 a_16774_3345# a_16846_3207# 0.00227f
+C830 a_11371_5870# x2.x4.OUT 7.93e-19
+C831 CAP_CTRL_CODE1[1] x2.x2.IN 5.47e-22
+C832 x2.x3.x7.floating a_10065_3345# 8.52e-19
+C833 a_4734_5594# a_4734_5870# 0.0316f
+C834 sample_delay_offset CAP_CTRL_CODE2[3] 0.0294f
+C835 x2.x2.x3[1].floating x2.x2.x4[3].floating 1.19f
+C836 a_4599_7259# a_4687_7397# 0.0704f
+C837 x1.x2.SET_B set 0.0536f
+C838 CAP_CTRL_CODE3[2] CAP_CTRL_CODE3[0] 1.89e-20
+C839 sample_delay_offset a_4599_7535# 3.28e-19
+C840 CAP_CTRL_CODE2[1] x2.x3.IN 1.94e-19
+C841 x2.x3.x10.Y a_10137_4035# 2.2e-20
+C842 sample_delay_offset x2.x1.x3[1].floating 3.48e-20
+C843 x2.x2.x4[3].floating a_16686_3345# 8.29e-19
+C844 x2.x2.x7.floating a_16774_3621# 8.52e-19
+C845 CAP_CTRL_CODE2[2] x2.x2.x7.floating 0.0056f
+C846 CAP_CTRL_CODE1[2] x2.x1.x11.Y 3.93e-21
+C847 x2.x2.x2.floating a_10065_3345# 1.6e-19
+C848 a_10065_3483# x2.x3.IN 7.93e-19
+C849 a_4662_5456# x2.x4.x7.floating 8.52e-19
+C850 x2.x4.x2.floating x2.x4.x8.output_stack 0.193f
+C851 CAP_CTRL_CODE1[2] x2.x4.x6.floating 3.95e-22
+C852 x2.x4.x7.floating a_4574_5180# 0.00218f
+C853 x2.x3.x8.output_stack x2.x3.IN 0.371f
+C854 CAP_CTRL_CODE2[2] CAP_CTRL_CODE3[1] 2.96e-20
+C855 a_1704_6122# x1.x2.RESET_B 0.00163f
+C856 x2.x2.x8.output_stack CAP_CTRL_CODE3[3] 4.13e-19
+C857 x2.x3.x6.floating a_10112_1956# 0.00996f
+C858 sample_delay_offset x2.x3.x7.floating 0.261f
+C859 x2.x2.x7.floating a_16686_3345# 0.00959f
+C860 x2.x4.OUT a_11371_5180# 1.34e-19
+C861 x2.x3.x6.floating x2.x3.x10.Y 0.0881f
+C862 a_10472_6193# x2.x4.OUT 0.158f
+C863 x2.x1.x5[6].floating a_11308_7259# 2.76e-19
+C864 a_11443_5318# a_11443_5594# 0.0316f
+C865 CAP_CTRL_CODE1[2] a_11371_5594# 2.32e-19
+C866 a_3106_6090# a_3340_6116# 0.00945f
+C867 x2.x3.x2.floating a_3056_2936# 4.15e-20
+C868 x2.x4.x3[1].floating x2.x4.x8.output_stack 0.341f
+C869 x2.x1.x6.floating a_11308_7259# 0.00996f
+C870 a_3106_6090# x1.x2.D 0.208f
+C871 x1.x2.D a_2569_6116# 0.00306f
+C872 x3.A x2.x4.x6.floating 0.0308f
+C873 a_10112_2232# vdd 0.11f
+C874 vdd CAP_CTRL_CODE1[0] 0.00346f
+C875 a_2619_6316# a_3041_6494# 2.87e-21
+C876 sample_delay_offset x2.x2.x2.floating 0.00558f
+C877 a_3056_2936# x7.A 0.00243f
+C878 a_11443_5318# a_11283_5456# 0.0388f
+C879 CAP_CTRL_CODE1[0] x2.x2.IN 0.0555f
+C880 x3.A a_2790_6116# 2.16e-20
+C881 x2.x4.x7.floating a_4734_5870# 0.00959f
+C882 CAP_CTRL_CODE0[1] a_4574_5180# 3.36e-19
+C883 a_10137_4035# x2.x3.IN 0.0127f
+C884 CAP_CTRL_CODE1[2] a_11371_5870# 1.29e-19
+C885 a_16846_3759# a_16686_3621# 0.0388f
+C886 x2.x2.x6.floating a_16821_1680# 0.00578f
+C887 a_3222_6482# x2.x4.x6.floating 2.8e-20
+C888 vdd x2.x1.x8.output_stack 0.596f
+C889 x2.x3.x2.floating vdd 0.0335f
+C890 a_4599_7259# x3.A 0.00866f
+C891 vdd a_10112_1680# 0.171f
+C892 CAP_CTRL_CODE2[0] x2.x3.x11.Y 3.98e-21
+C893 x2.x2.IN x2.x1.x8.output_stack 0.127f
+C894 x3.Y x2.x3.x8.output_stack 8.42e-19
+C895 vdd x7.A 0.408f
+C896 a_3813_6132# x1.x2.D 0.183f
+C897 sample_delay_offset x2.x2.x4[3].floating 0.0137f
+C898 x3.A a_4662_5318# 5.17e-19
+C899 x2.x2.x8.output_stack a_16686_3621# 1.74e-19
+C900 CAP_CTRL_CODE3[0] x2.x3.x10.Y 0.0124f
+C901 x2.x4.x4[3].floating CAP_CTRL_CODE1[1] 6.93e-20
+C902 a_16821_1680# x2.x2.x11.Y 5.11e-20
+C903 a_3106_6090# sample_delay_offset 0.00255f
+C904 x2.x3.x7.floating a_9977_3621# 0.00959f
+C905 x2.x3.x6.floating x2.x3.IN 0.03f
+C906 a_4662_5456# CAP_CTRL_CODE0[2] 5.52e-19
+C907 CAP_CTRL_CODE3[2] x2.x3.x7.floating 0.0056f
+C908 CAP_CTRL_CODE2[2] a_11283_5180# 2.86e-20
+C909 a_2678_2006# a_3056_2936# 9.31e-20
+C910 vdd x2.x2.x10.Y 2.71f
+C911 CAP_CTRL_CODE0[2] a_4574_5180# 0.0177f
+C912 sample_delay_offset x2.x2.x7.floating 0.264f
+C913 x2.x2.IN x2.x2.x10.Y 0.0967f
+C914 a_11371_6008# x2.x1.x7.floating 8.52e-19
+C915 a_10065_3207# x2.x3.IN 0.00196f
+C916 x2.x3.x7.floating a_10137_3759# 0.00409f
+C917 x2.x4.x10.Y vdd 2.71f
+C918 a_3813_6132# sample_delay_offset 0.00346f
+C919 a_11443_5594# a_11283_5456# 0.0388f
+C920 a_4574_6008# a_4662_6008# 0.00227f
+C921 a_10472_6193# CAP_CTRL_CODE1[2] 0.00525f
+C922 CAP_CTRL_CODE1[2] a_11371_5180# 7.9e-19
+C923 x2.x2.x2.floating a_9977_3621# 6.88e-19
+C924 a_10756_3022# x2.x3.x7.floating 7.29e-19
+C925 sample_delay_offset CAP_CTRL_CODE3[1] 4.51e-19
+C926 a_2678_2006# vdd 0.708f
+C927 a_2932_6494# x1.x2.D 0.0358f
+C928 a_16846_3759# a_16846_4035# 0.0316f
+C929 a_4687_7121# x2.x4.x10.Y 4.2e-19
+C930 a_10137_3759# x2.x2.x2.floating 0.00177f
+C931 x2.x4.OUT a_11371_5456# 2.42e-19
+C932 a_10112_2232# x2.x3.x5[6].floating 2.76e-19
+C933 x2.x2.x7.floating a_16774_3207# 8.52e-19
+C934 a_10137_3207# x2.x3.x4[3].floating 1.17e-19
+C935 a_3056_2936# vdd 0.614f
+C936 CAP_CTRL_CODE0[3] x2.x4.x10.Y 0.0519f
+C937 a_10756_3022# x2.x2.x2.floating 0.0104f
+C938 sample_delay_offset a_16733_1818# 1.9e-19
+C939 x3.A a_4662_6008# 0.00163f
+C940 x2.x4.x4[3].floating CAP_CTRL_CODE1[0] 6.43e-20
+C941 x2.x3.x2.floating x2.x3.x5[6].floating 0.441f
+C942 x2.x4.x7.floating x1.x2.RESET_B 3.62e-19
+C943 a_16774_4173# a_16846_4035# 0.0022f
+C944 x2.x3.x5[6].floating a_10112_1680# 2.14e-19
+C945 CAP_CTRL_CODE2[1] CAP_CTRL_CODE2[0] 4.26f
+C946 a_2932_6494# sample_delay_offset 2.62e-19
+C947 vdd x2.x2.IN 0.707f
+C948 x2.x3.x5[6].floating x7.A 0.0208f
+C949 a_10065_3483# CAP_CTRL_CODE2[0] 1.32e-19
+C950 x2.x3.x2.floating x2.x3.x3[1].floating 1.17f
+C951 x2.x3.x7.floating x2.x3.x10.Y 0.00345f
+C952 a_4687_7121# vdd 0.0761f
+C953 x2.x3.x8.output_stack CAP_CTRL_CODE2[0] 0.0111f
+C954 vdd a_1870_6122# 0.303f
+C955 CAP_CTRL_CODE3[2] CAP_CTRL_CODE3[1] 0.889f
+C956 a_4662_5456# a_4734_5318# 0.00227f
+C957 CAP_CTRL_CODE0[0] x2.x4.x8.output_stack 0.0321f
+C958 CAP_CTRL_CODE0[3] vdd 0.139f
+C959 a_16821_2232# a_16733_2094# 0.0704f
+C960 sample_delay_offset a_11283_5180# 0.0025f
+C961 a_4574_5180# a_4734_5318# 0.0388f
+C962 a_2151_6116# x1.x2.RESET_B 5.14e-19
+C963 a_2837_6438# a_2465_6482# 3.34e-19
+C964 a_11371_6008# a_11443_5870# 0.00227f
+C965 x1.x2.SET_B vdd 0.834f
+C966 CAP_CTRL_CODE2[0] a_10137_4035# 0.0131f
+C967 a_2678_2006# x2.x3.x5[6].floating 8.78e-19
+C968 x2.x1.x10.Y a_11308_7259# 2.35e-19
+C969 x2.x4.x4[3].floating x2.x4.x10.Y 0.00668f
+C970 CAP_CTRL_CODE1[2] a_11371_5456# 3.33e-19
+C971 a_11283_6008# sample_delay_offset 0.0189f
+C972 a_9977_3897# x2.x3.x11.Y 7.9e-20
+C973 x3.A a_3041_6494# 3.6e-20
+C974 x1.x2.SET_B a_1870_6122# 0.346f
+C975 a_3018_6116# x1.x2.RESET_B 2.7e-19
+C976 a_11308_7535# sample_delay_offset 3.28e-19
+C977 a_16821_1956# x2.x2.x10.Y 2.35e-19
+C978 a_3056_2936# x2.x3.x5[6].floating 7.35e-19
+C979 x2.x3.x7.floating x2.x3.IN 0.0242f
+C980 x2.x1.x7.floating x2.x4.x8.output_stack 3.32e-19
+C981 a_4734_5594# x2.x4.x8.output_stack 1.74e-19
+C982 a_3222_6482# a_3041_6494# 4.11e-20
+C983 x2.x1.x6.floating x2.x4.x8.output_stack 4.17e-19
+C984 a_11308_6983# a_11308_7259# 0.0316f
+C985 a_4662_6146# x1.x2.RESET_B 2.16e-20
+C986 CAP_CTRL_CODE1[3] x2.x4.x8.output_stack 4.13e-19
+C987 x2.x3.x6.floating CAP_CTRL_CODE2[0] 1.3e-21
+C988 x2.x4.x5[6].floating a_11308_7259# 4.61e-19
+C989 a_11443_5318# x2.x1.x11.Y 7.9e-20
+C990 vdd x2.x3.x5[6].floating 44f
+C991 x2.x2.x2.floating x2.x3.IN 0.0257f
+C992 a_10137_3483# x2.x3.x11.Y 8.11e-20
+C993 a_2325_6090# a_2465_6482# 0.07f
+C994 a_2325_6090# a_2837_6438# 9.75e-19
+C995 CAP_CTRL_CODE2[0] a_10065_3207# 8.23e-20
+C996 x2.x4.x4[3].floating vdd 0.0565f
+C997 x2.x3.x2.floating CAP_CTRL_CODE2[2] 1.63e-20
+C998 x2.x3.x3[1].floating vdd 0.0301f
+C999 x2.x3.x2.floating x3.B 6.51e-19
+C1000 x2.x3.x10.Y CAP_CTRL_CODE3[1] 6.71e-19
+C1001 CAP_CTRL_CODE1[1] sample_delay_offset 0.0596f
+C1002 x7.A x3.B 0.0744f
+C1003 x2.x2.x5[6].floating CAP_CTRL_CODE3[3] 0.00291f
+C1004 a_16821_1956# vdd 0.0343f
+C1005 a_16821_1956# x2.x2.IN 0.00866f
+C1006 CAP_CTRL_CODE3[0] CAP_CTRL_CODE2[0] 1.74e-20
+C1007 set reset 0.0236f
+C1008 CAP_CTRL_CODE2[2] x2.x2.x10.Y 0.00201f
+C1009 x2.x3.x2.floating a_3553_3025# 4.02e-20
+C1010 x2.x4.x7.floating x2.x4.x8.output_stack 0.185f
+C1011 a_11283_5180# x2.x4.x2.floating 9.24e-19
+C1012 x2.x1.x11.Y a_11443_5594# 1.28e-19
+C1013 x2.x2.x3[1].floating x2.x2.x10.Y 0.00302f
+C1014 x2.x1.x11.Y a_11283_5456# 4.74e-20
+C1015 a_2619_6316# x1.x2.RESET_B 0.107f
+C1016 a_16846_3483# a_16774_3483# 0.00227f
+C1017 a_11283_6008# x2.x4.x2.floating 8.75e-19
+C1018 x2.x3.x8.output_stack a_9977_3897# 8.05e-20
+C1019 a_16821_1680# a_16733_1818# 0.0704f
+C1020 CAP_CTRL_CODE0[1] x2.x4.x8.output_stack 0.0744f
+C1021 CAP_CTRL_CODE1[2] a_4574_5180# 1.29e-19
+C1022 x2.x1.x5[6].floating x2.x1.x3[1].floating 0.8f
+C1023 sample_delay_offset a_10112_2232# 0.00273f
+C1024 sample_delay_offset CAP_CTRL_CODE1[0] 6.99f
+C1025 a_3056_2936# x3.B 4.39e-19
+C1026 a_11308_7259# x2.x4.OUT 0.00866f
+C1027 a_11443_5594# a_11371_5594# 0.00227f
+C1028 a_3106_6090# a_1704_6122# 0.0492f
+C1029 a_1704_6122# a_2569_6116# 0.00114f
+C1030 a_11371_5594# a_11283_5456# 0.00227f
+C1031 a_4662_5456# x3.A 5.79e-19
+C1032 a_16774_3759# x2.x2.x7.floating 8.52e-19
+C1033 CAP_CTRL_CODE2[2] vdd 0.0375f
+C1034 sample_delay_offset x2.x1.x8.output_stack 0.262f
+C1035 sample_delay_offset x2.x3.x2.floating 0.00186f
+C1036 a_4574_6008# a_4734_5870# 0.0388f
+C1037 x2.x3.x3[1].floating x2.x3.x5[6].floating 0.8f
+C1038 x2.x2.IN a_16774_3621# 5.05e-19
+C1039 a_10065_3483# a_10137_3483# 0.00227f
+C1040 vdd x3.B 0.326f
+C1041 sample_delay_offset a_10112_1680# 3.28e-19
+C1042 x3.A a_4574_5180# 0.014f
+C1043 a_9977_3897# a_10137_4035# 0.0388f
+C1044 x2.x2.x5[6].floating x2.x2.x8.output_stack 1.19f
+C1045 a_3056_2150# x3.A 2.93e-19
+C1046 a_9977_3345# a_10065_3345# 0.00227f
+C1047 x2.x2.x3[1].floating vdd 0.0301f
+C1048 a_3813_6132# a_1704_6122# 1.03e-19
+C1049 a_10024_1818# a_10112_1680# 0.0704f
+C1050 CAP_CTRL_CODE1[1] x2.x4.x2.floating 1.73e-20
+C1051 CAP_CTRL_CODE0[2] x2.x4.x8.output_stack 0.334f
+C1052 x2.x2.IN a_16686_3345# 0.0166f
+C1053 x2.x3.x7.floating CAP_CTRL_CODE2[0] 0.0075f
+C1054 a_4662_6146# x2.x4.x8.output_stack 0.00227f
+C1055 a_11308_7535# a_11396_7397# 0.0704f
+C1056 vdd a_3553_3025# 5.6e-19
+C1057 sample_delay_offset x2.x2.x10.Y 0.0403f
+C1058 x3.A a_4734_5870# 0.014f
+C1059 x2.x3.x6.floating a_9977_3897# 0.00109f
+C1060 a_11371_6008# x2.x4.OUT 0.0013f
+C1061 sample_delay_offset x2.x4.x10.Y 0.0403f
+C1062 a_3340_6116# vdd 0.0055f
+C1063 vdd x1.x2.D 1.22f
+C1064 x2.x1.x10.Y x2.x4.x8.output_stack 1.93e-19
+C1065 CAP_CTRL_CODE2[0] x2.x2.x2.floating 0.167f
+C1066 a_9977_3345# sample_delay_offset 0.015f
+C1067 CAP_CTRL_CODE1[1] x2.x4.x3[1].floating 3.46e-20
+C1068 a_16846_3483# a_16846_3207# 0.0316f
+C1069 CAP_CTRL_CODE2[1] a_4047_3022# 9.41e-22
+C1070 x2.x3.x2.floating CAP_CTRL_CODE3[2] 2.06e-20
+C1071 a_10756_3022# CAP_CTRL_CODE1[0] 3.76e-21
+C1072 a_2932_6494# a_1704_6122# 0.0322f
+C1073 a_2325_6090# a_2790_6116# 9.46e-19
+C1074 x2.x2.x4[3].floating CAP_CTRL_CODE2[0] 2.28e-21
+C1075 x1.x2.D a_1870_6122# 0.127f
+C1076 CAP_CTRL_CODE2[1] x2.x4.OUT 4.93e-20
+C1077 x2.x3.x8.output_stack a_4047_3022# 0.00892f
+C1078 x2.x4.x11.Y x2.x4.x6.floating 0.128f
+C1079 a_2678_2006# sample_clk_b 0.109f
+C1080 x2.x4.x5[6].floating x2.x4.x8.output_stack 1.19f
+C1081 a_16774_3897# x2.x2.x7.floating 8.52e-19
+C1082 x1.x2.SET_B a_3340_6116# 2.04e-19
+C1083 x2.x2.x6.floating a_16821_2232# 0.00996f
+C1084 a_4599_6983# x2.x4.x5[6].floating 2.76e-19
+C1085 x1.x2.SET_B x1.x2.D 0.0589f
+C1086 sample_delay_offset vdd 0.928f
+C1087 x2.x3.x5[6].floating x3.B 0.00134f
+C1088 x2.x4.x2.floating CAP_CTRL_CODE1[0] 1.61e-20
+C1089 a_11443_5318# a_11371_5456# 0.00227f
+C1090 sample_delay_offset x2.x2.IN 0.27f
+C1091 a_4574_6008# x1.x2.RESET_B 5e-20
+C1092 a_4599_7259# x2.x4.x11.Y 9.98e-20
+C1093 CAP_CTRL_CODE2[2] x2.x3.x3[1].floating 3.26e-20
+C1094 x2.x4.x2.floating x2.x1.x8.output_stack 2.95e-19
+C1095 a_4687_7121# sample_delay_offset 3.64e-19
+C1096 a_2619_6316# x2.x4.x8.output_stack 2.26e-20
+C1097 x2.x2.x11.Y a_16821_2232# 0.00707f
+C1098 a_10024_1818# vdd 0.138f
+C1099 x2.x3.x8.output_stack sample_clk 1.49e-20
+C1100 CAP_CTRL_CODE1[1] x2.x3.IN 5.1e-20
+C1101 x2.x4.x8.output_stack a_4734_5318# 8.05e-20
+C1102 a_9977_3345# a_9977_3621# 0.0316f
+C1103 a_10112_1956# a_10112_2232# 0.0316f
+C1104 sample_delay_offset a_1870_6122# 3.45e-20
+C1105 sample_clk_b vdd 0.716f
+C1106 CAP_CTRL_CODE0[0] a_11283_5180# 0.00533f
+C1107 CAP_CTRL_CODE2[0] CAP_CTRL_CODE3[1] 3.47e-20
+C1108 CAP_CTRL_CODE0[3] sample_delay_offset 0.0294f
+C1109 a_10472_6534# x2.x1.x11.Y 0.00208f
+C1110 CAP_CTRL_CODE1[2] a_11371_6008# 1.01e-19
+C1111 a_3106_6090# x2.x4.x7.floating 0.00116f
+C1112 vdd a_16774_3207# 1.29e-19
+C1113 x2.x1.x2.floating a_17181_6193# 0.0104f
+C1114 a_10112_2232# x2.x3.x10.Y 0.039f
+C1115 x2.x4.x3[1].floating CAP_CTRL_CODE1[0] 3.21e-20
+C1116 sample_delay_offset x1.x2.SET_B 2.41e-19
+C1117 x2.x2.IN a_16774_3207# 0.00196f
+C1118 a_10112_1956# a_10112_1680# 0.0316f
+C1119 x3.A x1.x2.RESET_B 0.0439f
+C1120 vdd reset 0.105f
+C1121 CAP_CTRL_CODE0[0] a_11283_6008# 0.00181f
+C1122 x2.x3.x2.floating x2.x3.x10.Y 0.00202f
+C1123 x2.x3.x10.Y a_10112_1680# 1.02e-19
+C1124 a_3813_6132# x2.x4.x7.floating 0.00173f
+C1125 x2.x1.x10.Y x2.x1.x3[1].floating 0.00302f
+C1126 a_1704_6122# set 0.00161f
+C1127 x2.x3.x10.Y x7.A 1.13e-19
+C1128 a_11396_7397# x2.x1.x8.output_stack 1.5e-19
+C1129 a_3222_6482# x1.x2.RESET_B 3.78e-20
+C1130 x2.x4.x10.Y x2.x4.x2.floating 0.00202f
+C1131 CAP_CTRL_CODE3[2] vdd 0.0374f
+C1132 reset a_1870_6122# 2.47e-20
+C1133 a_11371_5456# a_11283_5456# 0.00227f
+C1134 a_3106_6090# a_2151_6116# 4.7e-22
+C1135 vdd a_2058_6116# 0.109f
+C1136 a_11283_5180# x2.x1.x7.floating 0.00218f
+C1137 a_10137_3207# x2.x3.x11.Y 0.00179f
+C1138 a_2465_6482# a_3041_6494# 2.46e-21
+C1139 a_2678_2626# a_3056_2150# 9.31e-20
+C1140 x2.x4.OUT x2.x4.x8.output_stack 0.127f
+C1141 x2.x3.x7.floating a_9977_3897# 0.00925f
+C1142 a_10112_2232# x2.x3.IN 0.0175f
+C1143 x1.x2.SET_B reset 0.0461f
+C1144 x2.x3.x7.floating a_10065_3897# 8.52e-19
+C1145 CAP_CTRL_CODE1[0] x2.x3.IN 6.06e-20
+C1146 x3.A CAP_CTRL_CODE2[1] 0.00184f
+C1147 sample_delay_offset x2.x3.x5[6].floating 0.00308f
+C1148 x2.x4.x5[6].floating a_4599_7535# 2.14e-19
+C1149 a_10756_3022# vdd 0.235f
+C1150 x2.x3.x10.Y x2.x2.x10.Y 1.79e-20
+C1151 a_2058_6116# a_1870_6122# 0.163f
+C1152 CAP_CTRL_CODE3[0] a_4047_3022# 0.00169f
+C1153 x2.x4.x10.Y x2.x4.x3[1].floating 0.00302f
+C1154 a_4599_7259# x2.x4.x6.floating 0.00996f
+C1155 a_3106_6090# a_3018_6116# 7.71e-20
+C1156 a_11283_5180# CAP_CTRL_CODE2[0] 2e-20
+C1157 a_11283_6008# x2.x1.x7.floating 0.00409f
+C1158 x2.x4.x4[3].floating sample_delay_offset 0.00732f
+C1159 CAP_CTRL_CODE0[0] CAP_CTRL_CODE1[1] 1.58e-20
+C1160 sample_delay_offset x2.x3.x3[1].floating 4.68e-20
+C1161 x2.x2.x2.floating a_9977_3897# 6.88e-19
+C1162 a_10112_1680# x2.x3.IN 0.00832f
+C1163 x2.x3.x8.output_stack x3.A 0.00105f
+C1164 x2.x4.x2.floating vdd 0.0334f
+C1165 a_10024_1818# x2.x3.x5[6].floating 0.00154f
+C1166 x2.x2.x2.floating a_10065_3897# 2.21e-19
+C1167 a_11308_7535# x2.x1.x5[6].floating 2.14e-19
+C1168 x1.x2.SET_B a_2058_6116# 0.0013f
+C1169 CAP_CTRL_CODE1[2] a_10137_4035# 2.07e-20
+C1170 a_4687_7397# x2.x4.x8.output_stack 1.5e-19
+C1171 x2.x2.x3[1].floating CAP_CTRL_CODE2[2] 0.00624f
+C1172 a_16846_3483# a_16686_3621# 0.0388f
+C1173 CAP_CTRL_CODE2[3] a_16821_2232# 2.69e-19
+C1174 sample_clk_b x2.x3.x5[6].floating 2.37e-19
+C1175 a_11308_7535# x2.x1.x6.floating 0.00578f
+C1176 x2.x3.x7.floating a_10137_3483# 0.00409f
+C1177 a_16821_1956# sample_delay_offset 6.38e-19
+C1178 a_16821_1680# x2.x2.x10.Y 1.02e-19
+C1179 a_10112_1956# vdd 0.0945f
+C1180 a_10472_6193# a_10472_6534# 0.0121f
+C1181 x2.x1.x4[3].floating x2.x1.x3[1].floating 1.19f
+C1182 a_16846_3759# a_16846_3483# 0.0316f
+C1183 x2.x2.x10.Y x2.x3.IN 1.23e-19
+C1184 a_16686_3621# a_16686_3897# 0.0316f
+C1185 x2.x2.x2.floating a_10137_3483# 0.00177f
+C1186 a_4734_5870# a_4662_5870# 0.00227f
+C1187 x2.x4.x3[1].floating vdd 0.0301f
+C1188 a_17181_6534# x2.x1.x8.output_stack 0.00887f
+C1189 vdd x2.x3.x10.Y 2.73f
+C1190 a_4574_6008# x2.x4.x8.output_stack 0.0388f
+C1191 x3.Y x2.x3.x2.floating 3.67e-19
+C1192 x2.x1.x5[6].floating CAP_CTRL_CODE1[1] 0.0022f
+C1193 CAP_CTRL_CODE1[1] x2.x1.x7.floating 1.73e-20
+C1194 x2.x4.x10.Y a_4574_5732# 6.65e-20
+C1195 CAP_CTRL_CODE3[2] x2.x3.x5[6].floating 0.00568f
+C1196 vdd a_11396_7397# 0.138f
+C1197 CAP_CTRL_CODE1[2] x2.x4.x8.output_stack 0.00469f
+C1198 x3.Y x7.A 0.00394f
+C1199 a_9977_3345# x2.x3.IN 0.0135f
+C1200 a_16846_3759# a_16686_3897# 0.0388f
+C1201 CAP_CTRL_CODE0[0] CAP_CTRL_CODE1[0] 1.46e-20
+C1202 CAP_CTRL_CODE3[2] x2.x3.x3[1].floating 0.00838f
+C1203 a_2932_6494# a_3018_6116# 0.00976f
+C1204 x2.x2.x8.output_stack a_16686_3897# 8.05e-20
+C1205 CAP_CTRL_CODE3[3] x2.x3.x11.Y 0.00466f
+C1206 x2.x2.x8.output_stack a_16733_2094# 0.032f
+C1207 a_16821_1680# vdd 0.112f
+C1208 x3.A x2.x4.x8.output_stack 0.371f
+C1209 x2.x3.x8.output_stack a_10137_3207# 0.0388f
+C1210 sample_delay_offset a_16774_3621# 0.00123f
+C1211 a_16821_1680# x2.x2.IN 0.00832f
+C1212 a_11283_6008# a_11443_5870# 0.0388f
+C1213 a_4599_6983# x3.A 0.0175f
+C1214 sample_delay_offset CAP_CTRL_CODE2[2] 6.09f
+C1215 x2.x3.x8.output_stack a_4047_2819# 0.00887f
+C1216 vdd x2.x3.IN 0.612f
+C1217 a_3813_6132# x2.x4.x5[6].floating 2.06e-20
+C1218 sample_delay_offset a_10065_3621# 0.00122f
+C1219 a_3106_6090# a_2619_6316# 0.27f
+C1220 a_2619_6316# a_2569_6116# 1.21e-20
+C1221 vdd a_4574_5732# 0.00849f
+C1222 CAP_CTRL_CODE3[3] a_10756_2819# 0.00416f
+C1223 x2.x3.x7.floating a_10065_3759# 8.52e-19
+C1224 a_3340_6116# x1.x2.D 0.00273f
+C1225 x3.Y a_2678_2006# 0.00253f
+C1226 a_2259_6494# a_1870_6122# 0.0019f
+C1227 a_16846_4035# a_16686_3897# 0.0388f
+C1228 x2.x2.x3[1].floating sample_delay_offset 7.23e-20
+C1229 sample_delay_offset a_4662_5180# 5.69e-19
+C1230 a_4687_7397# a_4599_7535# 0.0704f
+C1231 CAP_CTRL_CODE1[1] x2.x4.x7.floating 1.73e-20
+C1232 sample_delay_offset a_16686_3345# 0.0153f
+C1233 x3.A CAP_CTRL_CODE3[0] 0.00498f
+C1234 a_10112_1956# x2.x3.x5[6].floating 2.76e-19
+C1235 x3.Y a_3056_2936# 0.0957f
+C1236 x2.x1.x7.floating CAP_CTRL_CODE1[0] 1.61e-20
+C1237 x2.x1.x5[6].floating CAP_CTRL_CODE1[0] 0.00119f
+C1238 x2.x4.x10.Y a_4574_5456# 4.07e-20
+C1239 a_10065_3759# x2.x2.x2.floating 2.21e-19
+C1240 a_3813_6132# a_2619_6316# 6.04e-19
+C1241 CAP_CTRL_CODE0[0] x2.x4.x10.Y 0.0125f
+C1242 x2.x1.x5[6].floating x2.x1.x8.output_stack 1.19f
+C1243 x2.x3.x5[6].floating x2.x3.x10.Y 1.01f
+C1244 x2.x1.x7.floating x2.x1.x8.output_stack 0.185f
+C1245 a_17181_6534# vdd 0.217f
+C1246 x2.x1.x6.floating x2.x1.x8.output_stack 0.229f
+C1247 x3.Y vdd 1.6f
+C1248 sample_delay_offset a_3340_6116# 3.81e-20
+C1249 a_17181_6534# x2.x2.IN 0.145f
+C1250 x2.x4.x4[3].floating x2.x4.x3[1].floating 1.19f
+C1251 x2.x1.x10.Y a_11283_5180# 2.2e-20
+C1252 sample_delay_offset a_10065_3345# 0.00154f
+C1253 sample_delay_offset x1.x2.D 0.00127f
+C1254 CAP_CTRL_CODE0[1] CAP_CTRL_CODE1[1] 3.15e-20
+C1255 x2.x2.IN a_16774_3759# 3.4e-19
+C1256 x2.x3.x3[1].floating x2.x3.x10.Y 0.00302f
+C1257 CAP_CTRL_CODE1[2] x2.x1.x3[1].floating 0.00115f
+C1258 a_16774_4035# a_16846_4035# 0.00227f
+C1259 x2.x3.x2.floating CAP_CTRL_CODE2[0] 1.9e-20
+C1260 CAP_CTRL_CODE2[2] CAP_CTRL_CODE3[2] 7.54e-19
+C1261 a_10065_3621# a_9977_3621# 0.00227f
+C1262 a_1704_6122# vdd 0.595f
+C1263 x2.x2.x11.Y a_16846_3207# 0.00179f
+C1264 a_10137_3207# a_10065_3207# 0.00227f
+C1265 a_11283_6008# x2.x1.x10.Y 1.69e-19
+C1266 set clk 0.00167f
+C1267 x2.x2.x8.output_stack x2.x3.x11.Y 3.62e-19
+C1268 a_2678_2626# x2.x3.x8.output_stack 1.57e-19
+C1269 a_11308_7535# x2.x1.x10.Y 1.02e-19
+C1270 a_2932_6494# a_2619_6316# 0.119f
+C1271 CAP_CTRL_CODE3[1] a_4047_3022# 3.52e-20
+C1272 CAP_CTRL_CODE0[0] vdd 0.00321f
+C1273 a_11283_5732# a_11283_6008# 0.0316f
+C1274 a_10756_3022# CAP_CTRL_CODE2[2] 8.96e-21
+C1275 a_1704_6122# a_1870_6122# 0.782f
+C1276 x2.x4.x7.floating CAP_CTRL_CODE1[0] 1.61e-20
+C1277 x3.A a_4599_7535# 0.00832f
+C1278 x2.x3.x5[6].floating x2.x3.IN 0.00127f
+C1279 x2.x2.x8.output_stack a_10756_2819# 0.00887f
+C1280 CAP_CTRL_CODE1[1] CAP_CTRL_CODE0[2] 6.3e-20
+C1281 reset x1.x2.D 0.00215f
+C1282 CAP_CTRL_CODE2[0] x2.x2.x10.Y 0.0124f
+C1283 x2.x4.x11.Y a_4574_5180# 3.1e-20
+C1284 x1.x2.SET_B a_1704_6122# 0.0445f
+C1285 x2.x2.x3[1].floating a_10756_3022# 3.09e-19
+C1286 x2.x4.x4[3].floating a_4574_5732# 1.17e-19
+C1287 a_16821_1956# a_16821_1680# 0.0316f
+C1288 a_10024_1818# sample_delay_offset 1.9e-19
+C1289 a_11308_7535# x2.x4.x5[6].floating 4.6e-19
+C1290 CAP_CTRL_CODE0[1] CAP_CTRL_CODE1[0] 2.91e-20
+C1291 a_2058_6116# x1.x2.D 0.164f
+C1292 sample_delay_offset a_16774_3207# 0.00167f
+C1293 CAP_CTRL_CODE1[1] x2.x1.x10.Y 6.64e-19
+C1294 a_11283_5180# x2.x1.x4[3].floating 7.17e-20
+C1295 a_11443_5870# x2.x1.x8.output_stack 0.032f
+C1296 a_3106_6090# a_4574_6008# 3e-19
+C1297 a_11308_7259# a_11396_7121# 0.0704f
+C1298 vdd x2.x1.x7.floating 0.0315f
+C1299 x2.x1.x5[6].floating vdd 44f
+C1300 x3.Y x2.x3.x5[6].floating 0.00713f
+C1301 x2.x4.x11.Y a_4734_5870# 2.44e-19
+C1302 x2.x1.x6.floating vdd 5.87f
+C1303 x2.x1.x5[6].floating x2.x2.IN 0.0199f
+C1304 vdd CAP_CTRL_CODE1[3] 0.199f
+C1305 a_16774_3897# x2.x2.IN 2.42e-19
+C1306 x2.x4.x10.Y x2.x4.x7.floating 0.00345f
+C1307 x2.x3.x10.Y x3.B 3.72e-20
+C1308 a_11283_6008# a_11371_6146# 0.00227f
+C1309 a_11283_6008# x2.x1.x4[3].floating 1.17e-19
+C1310 sample_delay_offset a_9977_3621# 0.0128f
+C1311 vdd CAP_CTRL_CODE2[0] 0.00338f
+C1312 sample_delay_offset CAP_CTRL_CODE3[2] 0.00886f
+C1313 a_3813_6132# a_4574_6008# 2.47e-19
+C1314 x2.x3.x6.floating CAP_CTRL_CODE3[3] 0.00509f
+C1315 x2.x2.x8.output_stack CAP_CTRL_CODE2[1] 0.0705f
+C1316 sample_delay_offset a_10137_3759# 0.00294f
+C1317 CAP_CTRL_CODE0[2] CAP_CTRL_CODE1[0] 5.83e-20
+C1318 a_11283_5180# x2.x4.OUT 0.0127f
+C1319 a_3106_6090# x3.A 0.0108f
+C1320 x3.A a_2569_6116# 7.05e-21
+C1321 x2.x4.x4[3].floating a_4574_5456# 1.17e-19
+C1322 x2.x3.x8.output_stack a_10024_2094# 0.032f
+C1323 a_10756_3022# sample_delay_offset 0.00652f
+C1324 x2.x2.x8.output_stack x2.x3.x8.output_stack 2.93e-20
+C1325 x2.x2.x7.floating a_16774_3483# 8.52e-19
+C1326 sample_delay_offset a_4662_5594# 0.00111f
+C1327 CAP_CTRL_CODE0[0] x2.x4.x4[3].floating 8.34e-20
+C1328 CAP_CTRL_CODE0[1] x2.x4.x10.Y 6.94e-19
+C1329 a_3106_6090# a_3222_6482# 0.0397f
+C1330 x2.x4.x7.floating vdd 0.0369f
+C1331 x2.x1.x10.Y CAP_CTRL_CODE1[0] 0.0124f
+C1332 CAP_CTRL_CODE2[2] x2.x3.IN 1.46e-19
+C1333 x2.x3.x7.floating a_10137_3207# 0.00409f
+C1334 a_3813_6132# x3.A 0.0827f
+C1335 a_11283_6008# x2.x4.OUT 0.0217f
+C1336 a_10065_3621# x2.x3.IN 5.05e-19
+C1337 x2.x2.x6.floating a_16686_3621# 0.00167f
+C1338 sample_delay_offset x2.x4.x2.floating 0.0039f
+C1339 CAP_CTRL_CODE1[1] x2.x1.x4[3].floating 0.0226f
+C1340 a_10065_4173# a_10137_4035# 0.0022f
+C1341 x3.A CAP_CTRL_CODE3[1] 0.00183f
+C1342 a_11308_7535# x2.x4.OUT 0.00832f
+C1343 a_2932_6494# a_4574_6008# 3.99e-20
+C1344 x2.x1.x10.Y x2.x1.x8.output_stack 1.01f
+C1345 reset a_2058_6116# 6.52e-19
+C1346 a_10137_3207# x2.x2.x2.floating 8.75e-19
+C1347 x2.x2.x11.Y a_16686_3621# 1.28e-19
+C1348 sample_delay_offset a_10112_1956# 6.38e-19
+C1349 a_4662_5318# a_4574_5180# 0.00227f
+C1350 a_2325_6090# x1.x2.RESET_B 0.00131f
+C1351 a_4734_5870# x2.x4.x6.floating 0.00278f
+C1352 x2.x4.x10.Y CAP_CTRL_CODE0[2] 0.00203f
+C1353 a_10137_3759# a_9977_3621# 0.0388f
+C1354 CAP_CTRL_CODE0[1] vdd 0.0182f
+C1355 sample_delay_offset x2.x4.x3[1].floating 6.03e-20
+C1356 a_2151_6116# vdd 0.182f
+C1357 x2.x2.x5[6].floating a_16733_2094# 0.00169f
+C1358 sample_delay_offset x2.x3.x10.Y 0.0402f
+C1359 x2.x4.x4[3].floating a_4734_5594# 8.29e-19
+C1360 a_11308_6983# x2.x1.x8.output_stack 0.0702f
+C1361 x2.x2.x6.floating x2.x2.x8.output_stack 0.229f
+C1362 x2.x2.x4[3].floating a_16846_3207# 1.17e-19
+C1363 x2.x4.x5[6].floating x2.x1.x8.output_stack 1.33e-19
+C1364 a_10024_1818# a_10112_1956# 0.0704f
+C1365 a_16846_3759# x2.x2.x11.Y 4.74e-20
+C1366 x3.Y x3.B 0.0851f
+C1367 sample_delay_offset a_11396_7397# 1.9e-19
+C1368 a_10065_3345# x2.x3.IN 0.0013f
+C1369 x2.x3.x5[6].floating CAP_CTRL_CODE2[0] 1.4e-20
+C1370 x2.x3.x6.floating a_10024_2094# 0.0194f
+C1371 a_2932_6494# x3.A 2.67e-19
+C1372 CAP_CTRL_CODE1[1] x2.x4.OUT 1.86e-19
+C1373 CAP_CTRL_CODE1[2] a_11283_5180# 0.00747f
+C1374 x2.x3.x6.floating x2.x2.x8.output_stack 4.17e-19
+C1375 x2.x2.x8.output_stack x2.x2.x11.Y 0.164f
+C1376 a_2151_6116# a_1870_6122# 0.155f
+C1377 a_10024_1818# x2.x3.x10.Y 1.49e-19
+C1378 a_11283_5180# a_11371_5318# 0.00227f
+C1379 x2.x1.x10.Y x2.x4.x10.Y 1.79e-20
+C1380 x2.x3.x3[1].floating CAP_CTRL_CODE2[0] 3.8e-20
+C1381 vdd a_3018_6116# 0.0036f
+C1382 x2.x1.x11.Y a_11308_7259# 9.98e-20
+C1383 a_2932_6494# a_3222_6482# 0.0282f
+C1384 x2.x1.x4[3].floating CAP_CTRL_CODE1[0] 6.66e-20
+C1385 x2.x2.x7.floating a_16846_3207# 0.00409f
+C1386 CAP_CTRL_CODE1[2] a_11283_6008# 5.6e-20
+C1387 sample_delay_offset a_16821_1680# 3.28e-19
+C1388 vdd clk 0.129f
+C1389 CAP_CTRL_CODE0[2] vdd 0.0374f
+C1390 x1.x2.SET_B a_2151_6116# 0.152f
+C1391 x3.Y a_3553_3025# 0.00962f
+C1392 a_4662_6146# vdd 1.29e-19
+C1393 x2.x2.x11.Y a_16846_4035# 3.1e-20
+C1394 a_11371_6146# x2.x1.x8.output_stack 0.00227f
+C1395 a_3018_6116# a_1870_6122# 2.13e-19
+C1396 x2.x1.x4[3].floating x2.x1.x8.output_stack 0.636f
+C1397 sample_delay_offset x2.x3.IN 0.258f
+C1398 x2.x4.x10.Y x2.x4.x5[6].floating 1.01f
+C1399 sample_delay_offset a_4574_5732# 0.00384f
+C1400 x2.x4.x4[3].floating x2.x4.x7.floating 1.18f
+C1401 a_1870_6122# clk 0.00626f
+C1402 x1.x2.SET_B a_3018_6116# 2.23e-19
+C1403 CAP_CTRL_CODE1[0] a_4047_3022# 5.53e-22
+C1404 CAP_CTRL_CODE3[2] x2.x3.x10.Y 0.00203f
+C1405 a_9977_3345# a_10137_3483# 0.0388f
+C1406 x2.x1.x10.Y vdd 2.73f
+C1407 a_10024_1818# x2.x3.IN 0.00847f
+C1408 a_10065_4035# a_10137_4035# 0.00227f
+C1409 a_2235_6116# vdd 0.00381f
+C1410 a_3340_6116# a_1704_6122# 1.25e-19
+C1411 x2.x1.x10.Y x2.x2.IN 1.13e-19
+C1412 a_10137_3759# x2.x3.x10.Y 4.07e-20
+C1413 x1.x2.SET_B clk 4.05e-19
+C1414 a_1704_6122# x1.x2.D 0.647f
+C1415 a_16821_2232# x2.x2.x10.Y 0.039f
+C1416 x2.x3.x2.floating a_4047_3022# 0.0104f
+C1417 x2.x4.OUT CAP_CTRL_CODE1[0] 1.38e-19
+C1418 x7.A a_4047_3022# 0.151f
+C1419 x2.x2.x5[6].floating x2.x3.x11.Y 0.00313f
+C1420 x1.x2.RESET_B x2.x4.x6.floating 1.28e-20
+C1421 CAP_CTRL_CODE1[2] CAP_CTRL_CODE1[1] 5.09f
+C1422 a_11308_6983# vdd 0.11f
+C1423 a_4734_5870# a_4662_6008# 0.00227f
+C1424 a_2235_6116# a_1870_6122# 4.45e-20
+C1425 x2.x4.OUT x2.x1.x8.output_stack 0.371f
+C1426 a_2790_6116# x1.x2.RESET_B 7.18e-19
+C1427 CAP_CTRL_CODE0[1] x2.x4.x4[3].floating 0.0296f
+C1428 sample_delay_offset a_16774_3759# 0.00111f
+C1429 x2.x4.x5[6].floating vdd 44f
+C1430 x1.x2.SET_B a_2235_6116# 5.36e-19
+C1431 x2.x2.x5[6].floating a_10756_2819# 0.0132f
+C1432 x2.x4.x3[1].floating x2.x4.x2.floating 1.17f
+C1433 a_2259_6494# a_2058_6116# 3.67e-19
+C1434 CAP_CTRL_CODE2[2] CAP_CTRL_CODE2[0] 1.48e-20
+C1435 a_9977_3621# x2.x3.IN 0.0135f
+C1436 sample_delay_offset a_1704_6122# 6.22e-19
+C1437 CAP_CTRL_CODE1[1] x3.A 0.0017f
+C1438 x2.x3.x2.floating sample_clk 9.72e-20
+C1439 a_10065_3621# CAP_CTRL_CODE2[0] 1.74e-19
+C1440 a_4687_7121# x2.x4.x5[6].floating 0.00169f
+C1441 x3.Y sample_clk_b 8.9e-19
+C1442 sample_delay_offset a_4574_5456# 0.00299f
+C1443 x7.A sample_clk 4.05e-20
+C1444 vdd a_2619_6316# 0.271f
+C1445 x2.x2.x3[1].floating CAP_CTRL_CODE2[0] 0.0326f
+C1446 vdd a_16821_2232# 0.104f
+C1447 a_10137_3759# x2.x3.IN 0.0136f
+C1448 a_10112_1956# x2.x3.x10.Y 2.35e-19
+C1449 x2.x2.IN a_16821_2232# 0.0175f
+C1450 CAP_CTRL_CODE0[0] sample_delay_offset 0.0313f
+C1451 x2.x4.x11.Y x2.x4.x8.output_stack 0.164f
+C1452 x2.x4.x4[3].floating CAP_CTRL_CODE0[2] 0.532f
+C1453 a_10756_3022# x2.x3.IN 0.157f
+C1454 vdd a_11371_6146# 1.29e-19
+C1455 a_4599_6983# x2.x4.x11.Y 0.00707f
+C1456 vdd x2.x1.x4[3].floating 0.0565f
+C1457 CAP_CTRL_CODE2[1] x2.x3.x4[3].floating 7.03e-20
+C1458 x2.x4.x10.Y x2.x4.OUT 1.23e-19
+C1459 a_3056_2936# a_4047_3022# 8.77e-20
+C1460 a_2619_6316# a_1870_6122# 0.139f
+C1461 x2.x2.x8.output_stack x2.x3.x7.floating 3.32e-19
+C1462 x2.x2.x4[3].floating a_16686_3621# 8.29e-19
+C1463 CAP_CTRL_CODE1[2] CAP_CTRL_CODE1[0] 3.87e-19
+C1464 x2.x3.x8.output_stack x2.x3.x4[3].floating 0.636f
+C1465 a_1704_6122# reset 2.51e-21
+C1466 CAP_CTRL_CODE2[0] a_10065_3345# 1.03e-19
+C1467 x1.x2.SET_B a_2619_6316# 0.0972f
+C1468 a_2678_2006# sample_clk 0.00102f
+C1469 x2.x2.x8.output_stack x2.x2.x2.floating 0.193f
+C1470 vdd a_4047_3022# 0.236f
+C1471 CAP_CTRL_CODE1[2] x2.x1.x8.output_stack 0.333f
+C1472 x2.x2.x5[6].floating CAP_CTRL_CODE2[1] 0.0022f
+C1473 x2.x4.x10.Y a_4687_7397# 1.49e-19
+C1474 a_16846_3759# x2.x2.x4[3].floating 1.17e-19
+C1475 x3.A CAP_CTRL_CODE1[0] 0.00168f
+C1476 sample_delay_offset x2.x1.x7.floating 0.259f
+C1477 x2.x1.x5[6].floating sample_delay_offset 0.00308f
+C1478 sample_delay_offset a_4734_5594# 0.0133f
+C1479 a_10112_1956# x2.x3.IN 0.00866f
+C1480 a_16686_3621# x2.x2.x7.floating 0.00959f
+C1481 sample_delay_offset x2.x1.x6.floating 0.0706f
+C1482 a_1704_6122# a_2058_6116# 0.0661f
+C1483 a_10472_6534# x2.x4.x8.output_stack 0.00887f
+C1484 a_3056_2936# sample_clk 0.00366f
+C1485 a_16774_3897# sample_delay_offset 0.00103f
+C1486 vdd x2.x4.OUT 0.613f
+C1487 x2.x2.x5[6].floating x2.x3.x8.output_stack 1.33e-19
+C1488 x2.x3.x4[3].floating a_10137_4035# 7.17e-20
+C1489 x2.x2.x8.output_stack x2.x2.x4[3].floating 0.636f
+C1490 sample_delay_offset CAP_CTRL_CODE1[3] 0.0294f
+C1491 x2.x3.x10.Y x2.x3.IN 0.0967f
+C1492 x2.x3.x2.floating x3.A 0.00544f
+C1493 x2.x4.x4[3].floating x2.x4.x5[6].floating 1.55f
+C1494 sample_delay_offset CAP_CTRL_CODE2[0] 0.0609f
+C1495 x2.x4.x7.floating x1.x2.D 6.71e-19
+C1496 a_4574_6008# x2.x4.x10.Y 1.69e-19
+C1497 x3.A x7.A 0.0116f
+C1498 vdd sample_clk 0.708f
+C1499 a_16846_3759# x2.x2.x7.floating 0.00409f
+C1500 CAP_CTRL_CODE1[2] x2.x4.x10.Y 2.74e-20
+C1501 a_4662_5594# a_4574_5456# 0.00227f
+C1502 sample_delay_offset a_11371_5732# 0.00123f
+C1503 x2.x1.x11.Y x2.x4.x8.output_stack 3.62e-19
+C1504 a_4662_5732# sample_delay_offset 0.00123f
+C1505 a_4687_7397# vdd 0.134f
+C1506 x2.x2.x8.output_stack x2.x2.x7.floating 0.185f
+C1507 x2.x2.x4[3].floating a_16846_4035# 7.17e-20
+C1508 x2.x4.x8.output_stack x2.x4.x6.floating 0.229f
+C1509 x2.x4.x4[3].floating a_4734_5318# 7.47e-19
+C1510 a_4599_6983# x2.x4.x6.floating 0.00996f
+C1511 x2.x4.x11.Y a_4599_7535# 5.11e-20
+C1512 a_4687_7121# a_4687_7397# 0.0316f
+C1513 a_10065_4035# x2.x3.x7.floating 8.52e-19
+C1514 a_2151_6116# x1.x2.D 0.0392f
+C1515 x3.Y x2.x3.x10.Y 1.94e-19
+C1516 CAP_CTRL_CODE0[0] x2.x4.x2.floating 0.164f
+C1517 sample_delay_offset x2.x4.x7.floating 0.259f
+C1518 a_11443_5318# a_11283_5180# 0.0388f
+C1519 x2.x4.x10.Y x3.A 0.0967f
+C1520 CAP_CTRL_CODE0[2] a_4662_5180# 0.0013f
+C1521 x2.x2.x6.floating x2.x2.x5[6].floating 1.18f
+C1522 a_16846_4035# x2.x2.x7.floating 0.00218f
+C1523 a_16821_1956# a_16821_2232# 0.0316f
+C1524 a_4599_6983# a_4599_7259# 0.0316f
+C1525 a_4574_6008# vdd 0.0171f
+C1526 x2.x2.x5[6].floating x2.x3.x6.floating 0.0231f
+C1527 a_10065_4035# x2.x2.x2.floating 2.21e-19
+C1528 x2.x2.x8.output_stack a_16733_1818# 1.5e-19
+C1529 CAP_CTRL_CODE1[2] vdd 0.0376f
+C1530 x2.x2.x5[6].floating x2.x2.x11.Y 0.00138f
+C1531 a_3018_6116# x1.x2.D 0.00218f
+C1532 CAP_CTRL_CODE3[0] x2.x3.x4[3].floating 2.28e-21
+C1533 CAP_CTRL_CODE3[2] CAP_CTRL_CODE2[0] 2.26f
+C1534 x3.A a_3056_2936# 0.00499f
+C1535 sample_delay_offset a_11443_5870# 0.0155f
+C1536 x2.x3.x3[1].floating a_4047_3022# 3.09e-19
+C1537 x2.x1.x2.floating x2.x1.x3[1].floating 1.17f
+C1538 a_4574_6008# a_1870_6122# 9.42e-21
+C1539 CAP_CTRL_CODE0[0] x2.x4.x3[1].floating 0.0424f
+C1540 a_16774_3345# x2.x2.x7.floating 8.52e-19
+C1541 a_4734_5594# a_4662_5594# 0.00227f
+C1542 a_10137_3759# CAP_CTRL_CODE2[0] 0.00672f
+C1543 CAP_CTRL_CODE0[1] sample_delay_offset 0.029f
+C1544 x1.x2.D clk 0.007f
+C1545 x3.A vdd 0.748f
+C1546 a_10756_3022# CAP_CTRL_CODE2[0] 0.00699f
+C1547 a_4574_6008# x1.x2.SET_B 2.23e-20
+C1548 x2.x4.x2.floating x2.x1.x7.floating 0.0475f
+C1549 x2.x2.IN a_16774_3483# 7.93e-19
+C1550 x2.x3.x5[6].floating sample_clk 2.13e-19
+C1551 a_4047_2819# x7.A 0.146f
+C1552 a_10065_3621# a_10137_3483# 0.00227f
+C1553 a_2325_6090# a_2569_6116# 0.0104f
+C1554 a_16774_4035# a_16686_3897# 0.00227f
+C1555 a_4687_7121# x3.A 0.00921f
+C1556 vdd a_3222_6482# 0.00235f
+C1557 a_2235_6116# x1.x2.D 0.00271f
+C1558 a_11283_5180# a_11283_5456# 0.0316f
+C1559 x3.A a_1870_6122# 4.92e-20
+C1560 x2.x2.x10.Y a_16846_3207# 1.69e-19
+C1561 CAP_CTRL_CODE0[3] x3.A 6.16e-19
+C1562 a_2932_6494# a_2465_6482# 0.00316f
+C1563 a_2932_6494# a_2837_6438# 0.00276f
+C1564 a_10472_6193# x2.x4.x8.output_stack 0.00892f
+C1565 a_4574_5732# a_4574_5456# 0.0316f
+C1566 x2.x4.x6.floating a_4599_7535# 0.00578f
+C1567 sample_delay_offset CAP_CTRL_CODE0[2] 0.0696f
+C1568 a_4662_6146# sample_delay_offset 0.00167f
+C1569 x1.x2.SET_B x3.A 0.0052f
+C1570 a_11371_5732# x2.x4.x2.floating 2.21e-19
+C1571 a_9977_3345# a_10137_3207# 0.0388f
+C1572 sample_clk_b vss 0.655f
+C1573 CAP_CTRL_CODE2[3] vss 0.267f
+C1574 CAP_CTRL_CODE3[3] vss 0.211f
+C1575 CAP_CTRL_CODE2[2] vss 2.98f
+C1576 CAP_CTRL_CODE2[1] vss 1.76f
+C1577 CAP_CTRL_CODE2[0] vss 2.04f
+C1578 CAP_CTRL_CODE3[2] vss 2.52f
+C1579 CAP_CTRL_CODE3[1] vss 1.27f
+C1580 sample_clk vss 0.653f
+C1581 CAP_CTRL_CODE3[0] vss 1.08f
+C1582 reset vss 0.218f
+C1583 set vss 0.239f
+C1584 CAP_CTRL_CODE1[0] vss 1.83f
+C1585 CAP_CTRL_CODE1[1] vss 2.3f
+C1586 CAP_CTRL_CODE1[2] vss 3.01f
+C1587 CAP_CTRL_CODE0[0] vss 1.4f
+C1588 CAP_CTRL_CODE0[1] vss 1.95f
+C1589 CAP_CTRL_CODE0[2] vss 2.4f
+C1590 clk vss 0.251f
+C1591 CAP_CTRL_CODE1[3] vss 0.211f
+C1592 sample_delay_offset vss 9.9f
+C1593 CAP_CTRL_CODE0[3] vss 0.294f
+C1594 vdd vss 0.151p
+C1595 a_16821_1680# vss 0.0953f
+C1596 a_10112_1680# vss 0.0334f
+C1597 a_16733_1818# vss 0.032f
+C1598 a_10024_1818# vss 0.0233f
+C1599 a_16821_1956# vss 0.0815f
+C1600 a_10112_1956# vss 0.018f
+C1601 a_16733_2094# vss 0.0402f
+C1602 a_10024_2094# vss 0.0348f
+C1603 a_16821_2232# vss 0.0147f
+C1604 a_10112_2232# vss 0.00895f
+C1605 a_3056_2150# vss 0.531f
+C1606 a_2678_2006# vss 0.668f
+C1607 x2.x2.x6.floating vss 0.353f
+C1608 x2.x2.x5[6].floating vss 0.52f
+C1609 a_10756_2819# vss 0.333f
+C1610 x2.x2.x11.Y vss 0.299f
+C1611 x2.x2.x10.Y vss 0.593f
+C1612 x2.x3.x6.floating vss 0.218f
+C1613 x2.x3.x5[6].floating vss 0.542f
+C1614 a_4047_2819# vss 0.257f
+C1615 x2.x3.x11.Y vss 0.282f
+C1616 x2.x3.x10.Y vss 0.576f
+C1617 x2.x2.x7.floating vss 5.89f
+C1618 x2.x2.x4[3].floating vss 21.7f
+C1619 x2.x2.x3[1].floating vss 10.9f
+C1620 x2.x2.x2.floating vss 6.35f
+C1621 x2.x3.x7.floating vss 5.82f
+C1622 x2.x3.x4[3].floating vss 21.7f
+C1623 x2.x3.x3[1].floating vss 10.9f
+C1624 x2.x3.x2.floating vss 6.43f
+C1625 a_16774_3207# vss 6.32e-19
+C1626 a_3553_3025# vss 0.00235f
+C1627 a_3056_2936# vss 0.423f
+C1628 x3.Y vss 0.742f
+C1629 a_2678_2626# vss 0.669f
+C1630 a_10756_3022# vss 0.275f
+C1631 x2.x2.x8.output_stack vss 1.54f
+C1632 a_10065_3207# vss 6.56e-19
+C1633 x7.A vss 0.618f
+C1634 x3.B vss 0.357f
+C1635 a_4047_3022# vss 0.293f
+C1636 x2.x3.x8.output_stack vss 1.51f
+C1637 a_16846_3207# vss 0.103f
+C1638 a_16774_3345# vss 6.69e-19
+C1639 a_10137_3207# vss 0.114f
+C1640 a_10065_3345# vss 7.81e-19
+C1641 a_16774_3483# vss 7.52e-19
+C1642 a_16686_3345# vss 0.108f
+C1643 a_10065_3483# vss 7.43e-19
+C1644 a_9977_3345# vss 0.112f
+C1645 a_16846_3483# vss 0.0982f
+C1646 a_16774_3621# vss 0.00106f
+C1647 a_10137_3483# vss 0.11f
+C1648 a_10065_3621# vss 9.98e-19
+C1649 a_16774_3759# vss 0.00116f
+C1650 a_16686_3621# vss 0.111f
+C1651 a_10065_3759# vss 0.00109f
+C1652 a_9977_3621# vss 0.114f
+C1653 a_16846_3759# vss 0.0991f
+C1654 a_16774_3897# vss 0.00129f
+C1655 a_10137_3759# vss 0.111f
+C1656 a_10065_3897# vss 0.00121f
+C1657 a_16774_4035# vss 0.00145f
+C1658 a_16686_3897# vss 0.161f
+C1659 a_10065_4035# vss 0.00134f
+C1660 a_9977_3897# vss 0.165f
+C1661 a_16846_4035# vss 0.164f
+C1662 a_16774_4173# vss 0.0049f
+C1663 a_10137_4035# vss 0.17f
+C1664 a_10065_4173# vss 0.005f
+C1665 x2.x3.IN vss 1.77f
+C1666 a_11371_5180# vss 0.005f
+C1667 a_4662_5180# vss 0.00476f
+C1668 a_11371_5318# vss 0.00134f
+C1669 a_11283_5180# vss 0.17f
+C1670 a_4662_5318# vss 0.00134f
+C1671 a_4574_5180# vss 0.178f
+C1672 a_11443_5318# vss 0.165f
+C1673 a_11371_5456# vss 0.00121f
+C1674 a_4734_5318# vss 0.165f
+C1675 a_4662_5456# vss 0.00121f
+C1676 a_11371_5594# vss 0.00109f
+C1677 a_11283_5456# vss 0.111f
+C1678 a_4662_5594# vss 0.00114f
+C1679 a_4574_5456# vss 0.117f
+C1680 a_11443_5594# vss 0.114f
+C1681 a_11371_5732# vss 9.98e-19
+C1682 a_4734_5594# vss 0.115f
+C1683 a_4662_5732# vss 0.00157f
+C1684 a_11371_5870# vss 7.43e-19
+C1685 a_11283_5732# vss 0.11f
+C1686 a_4662_5870# vss 7.43e-19
+C1687 a_4574_5732# vss 0.106f
+C1688 a_11443_5870# vss 0.112f
+C1689 a_11371_6008# vss 7.81e-19
+C1690 a_4734_5870# vss 0.108f
+C1691 a_4662_6008# vss 6.69e-19
+C1692 a_11371_6146# vss 6.56e-19
+C1693 a_11283_6008# vss 0.114f
+C1694 a_4662_6146# vss 6.32e-19
+C1695 a_4574_6008# vss 0.0874f
+C1696 a_17181_6193# vss 0.256f
+C1697 x2.x1.x2.floating vss 6.41f
+C1698 x2.x1.x3[1].floating vss 10.9f
+C1699 x2.x1.x4[3].floating vss 21.7f
+C1700 x2.x1.x7.floating vss 5.82f
+C1701 a_10472_6193# vss 0.276f
+C1702 x2.x4.x2.floating vss 6.35f
+C1703 x2.x4.x3[1].floating vss 10.9f
+C1704 x2.x4.x4[3].floating vss 21.7f
+C1705 x2.x4.x7.floating vss 5.88f
+C1706 a_3340_6116# vss 0.00104f
+C1707 a_3018_6116# vss 8.58e-20
+C1708 x2.x1.x5[6].floating vss 0.6f
+C1709 x2.x1.x6.floating vss 0.218f
+C1710 x2.x2.IN vss 3.33f
+C1711 x2.x4.x5[6].floating vss 0.519f
+C1712 x2.x4.x6.floating vss 0.379f
+C1713 a_2790_6116# vss 0.00109f
+C1714 a_2569_6116# vss 9.34e-19
+C1715 a_2235_6116# vss 1.36e-19
+C1716 a_3222_6482# vss 0.166f
+C1717 a_3041_6494# vss 0.00253f
+C1718 a_2837_6438# vss 0.0109f
+C1719 a_2465_6482# vss 0.189f
+C1720 a_2259_6494# vss 0.00244f
+C1721 a_2058_6116# vss 0.109f
+C1722 a_3813_6132# vss 0.272f
+C1723 x1.x2.RESET_B vss 0.632f
+C1724 a_2932_6494# vss 0.268f
+C1725 a_3106_6090# vss 0.489f
+C1726 a_2619_6316# vss 0.422f
+C1727 a_2151_6116# vss 0.284f
+C1728 x1.x2.SET_B vss 0.956f
+C1729 a_2325_6090# vss 0.303f
+C1730 a_1870_6122# vss 0.588f
+C1731 x1.x2.D vss 0.354f
+C1732 a_1704_6122# vss 0.61f
+C1733 a_17181_6534# vss 0.319f
+C1734 a_10472_6534# vss 0.333f
+C1735 x2.x1.x8.output_stack vss 1.53f
+C1736 x2.x1.x11.Y vss 0.282f
+C1737 x2.x1.x10.Y vss 0.576f
+C1738 x2.x4.x8.output_stack vss 1.51f
+C1739 x2.x4.x11.Y vss 0.313f
+C1740 x2.x4.x10.Y vss 0.6f
+C1741 a_11308_6983# vss 0.00895f
+C1742 a_4599_6983# vss 0.0147f
+C1743 a_11396_7121# vss 0.0348f
+C1744 a_4687_7121# vss 0.0386f
+C1745 a_11308_7259# vss 0.0226f
+C1746 a_4599_7259# vss 0.049f
+C1747 a_11396_7397# vss 0.0236f
+C1748 a_4687_7397# vss 0.027f
+C1749 a_11308_7535# vss 0.0292f
+C1750 x2.x4.OUT vss 1.77f
+C1751 a_4599_7535# vss 0.0628f
+C1752 x3.A vss 3.73f
+.ends
+
