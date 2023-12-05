@@ -26,7 +26,7 @@ value=10f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 660 -620 2 0 {name=p70 sig_type=std_logic lab=VSS}
-C {devices/simulator_commands_shown.sym} 150 -890 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 150 -960 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -43,6 +43,7 @@ value="
 .include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_sw_buffer_flat_RC.spice
 
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_half_flat.mag.spice
 "}
 C {devices/vdd.sym} 1100 -860 1 0 {name=l4 lab=cap_ctrl_code[15]}
 C {devices/vdd.sym} 1210 -860 1 0 {name=l6 lab=cap_ctrl_code[14]}
@@ -195,10 +196,10 @@ C {devices/gnd.sym} 420 -180 0 0 {name=l95 lab=GND}
 C {devices/vsource.sym} 420 -210 0 0 {name=V34 value=0}
 C {devices/lab_pin.sym} 170 -620 0 0 {name=p68 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 170 -600 0 0 {name=p77 sig_type=std_logic lab=VSS}
-C {devices/gnd.sym} 60 -320 2 0 {name=l90 lab=GND}
-C {devices/gnd.sym} 60 -180 0 0 {name=l91 lab=GND}
-C {devices/vsource.sym} 60 -210 0 1 {name=V31 value=0.9}
-C {devices/vsource.sym} 60 -290 2 0 {name=V32 value=0.9}
+C {devices/gnd.sym} 60 -640 2 0 {name=l90 lab=GND}
+C {devices/gnd.sym} 60 -500 0 0 {name=l91 lab=GND}
+C {devices/vsource.sym} 60 -530 0 1 {name=V31 value=0.9}
+C {devices/vsource.sym} 60 -610 2 0 {name=V32 value=0.9}
 C {devices/vsource.sym} 480 -210 0 0 {name=V60 value="PULSE(0 1.8 50p 100p 100p 50n 100n)"}
 C {devices/gnd.sym} 480 -180 0 0 {name=l57 lab=GND}
 C {devices/lab_pin.sym} 480 -240 2 0 {name=p75 sig_type=std_logic lab=EXT_CLK}
@@ -217,10 +218,10 @@ C {devices/lab_wire.sym} 100 -580 0 0 {name=p29 sig_type=std_logic lab=vip
 C {devices/lab_wire.sym} 100 -560 0 0 {name=p32 sig_type=std_logic lab=vin
 
 }
-C {devices/gnd.sym} 60 -640 2 0 {name=l23 lab=GND}
-C {devices/gnd.sym} 60 -500 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 60 -530 0 1 {name=V2 value="PULSE(1.8 0.9 30n 0.5u 0.5u 10p 1u)"}
-C {devices/vsource.sym} 60 -610 2 0 {name=V4 value="PULSE(0.9 1.8 30n 0.5u 0.5u 10p 1u)"}
+C {devices/gnd.sym} -230 -620 2 0 {name=l23 lab=GND}
+C {devices/gnd.sym} -230 -480 0 0 {name=l5 lab=GND}
+C {devices/vsource.sym} -230 -510 0 1 {name=V2 value="PULSE(1.8 0.9 30n 0.5u 0.5u 10p 1u)"}
+C {devices/vsource.sym} -230 -590 2 0 {name=V4 value="PULSE(0.9 1.8 30n 0.5u 0.5u 10p 1u)"}
 C {devices/vdd.sym} 740 -240 0 0 {name=l1 lab=VDD_offset}
 C {devices/gnd.sym} 740 -180 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} 740 -210 0 0 {name=V1 value=1.8}
