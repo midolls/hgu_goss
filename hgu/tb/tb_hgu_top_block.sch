@@ -88,13 +88,15 @@ C {devices/vdd.sym} 2040 -520 1 0 {name=l35 lab=retimer_delay_cap_ctrl_code[0]}
 C {devices/code.sym} 190 -270 0 0 {name=spice2 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 70ps 40us 30us
+.tran 70ps 80us 40us
+
+.option ABSTOL=1e-9 RELTOL=1e-2
 
 .control
 	run
 	plot analog_out
 
-	wrdata sar_dnl_640u(060u_090u) x1.sample_clk vip vin analog_out
+	wrdata sar_dnl_640u_70ps(040u_080u) x1.sample_clk vip vin analog_out
 
 .endc
 *.save x1.sample_clk vip vin x1.tah_vp x1.tah_vn \\"result[0]\\" \\"result[1]\\" \\"result[2]\\" \\"result[3]\\" \\"result[4]\\" \\"result[5]\\" \\"result[6]\\" \\"result[7]\\" \\"x1.x1.sar_result_temp[0]\\" \\"x1.x1.sar_result_temp[1]\\" \\"x1.x1.sar_result_temp[2]\\" \\"x1.x1.sar_result_temp[3]\\" \\"x1.x1.sar_result_temp[4]\\" \\"x1.x1.sar_result_temp[5]\\" \\"x1.x1.sar_result_temp[6]\\" \\"x1.x1.sar_result_temp[7]\\"
@@ -109,9 +111,9 @@ C {devices/code.sym} 190 -270 0 0 {name=spice2 only_toplevel=false value="
 
 *.save x1.sample_clk vip vin x1.tah_vp x1.tah_vn \\"result[0]\\" \\"result[1]\\" \\"result[2]\\" \\"result[3]\\" \\"result[4]\\" \\"result[5]\\" \\"result[6]\\" \\"result[7]\\"
 
-.save all
+*.save all
 
-*.save x1.sample_clk vip vin analog_out i(v33) vdd
+.save x1.sample_clk vip vin analog_out i(v33)
 "}
 C {devices/vdd.sym} 370 -240 0 0 {name=l92 lab=VDD}
 C {devices/gnd.sym} 370 -180 0 0 {name=l93 lab=GND}
@@ -144,8 +146,8 @@ C {devices/lab_wire.sym} 100 -560 0 0 {name=p32 sig_type=std_logic lab=vin
 }
 C {devices/gnd.sym} 70 -640 2 0 {name=l23 lab=GND}
 C {devices/gnd.sym} 70 -500 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 70 -530 0 1 {name=V2 value="PULSE(1.8 0.9 30n 6.40u 6.40u 10p 12.80u)"}
-C {devices/vsource.sym} 70 -610 2 0 {name=V4 value="PULSE(0.9 1.8 30n 6.40u 6.40u 10p 12.80u)"}
+C {devices/vsource.sym} 70 -530 0 1 {name=V2 value="PULSE(1.8 0.9 30n 640u 640u 10p 1280u)"}
+C {devices/vsource.sym} 70 -610 2 0 {name=V4 value="PULSE(0.9 1.8 30n 640u 640u 10p 1280u)"}
 C {devices/vdd.sym} 740 -240 0 0 {name=l1 lab=VDD_offset}
 C {devices/gnd.sym} 740 -180 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} 740 -210 0 0 {name=V1 value=1.8}
