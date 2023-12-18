@@ -187,7 +187,7 @@ N 1210 -460 1210 -280 {
 lab=result2_sw_b[2]}
 N 1240 -460 1240 -280 {
 lab=result2_sw_b[1]}
-C {../xschem/hgu_sarlogic_RC.sym} 2610 -880 0 0 {name=x1}
+C {../xschem/hgu_sarlogic.sym} 2610 -880 0 0 {name=x1}
 C {../xschem/hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {../xschem/hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}

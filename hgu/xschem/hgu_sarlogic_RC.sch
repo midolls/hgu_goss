@@ -84,7 +84,7 @@ C {devices/ipin.sym} 230 100 0 0 {name=p46 lab=async_delay_offset}
 C {devices/lab_pin.sym} 560 -380 0 0 {name=p47 sig_type=std_logic lab=async_delay_offset}
 C {devices/ipin.sym} 230 120 0 0 {name=p48 lab=sample_delay_offset}
 C {devices/lab_pin.sym} 180 -90 0 0 {name=p49 sig_type=std_logic lab=sample_delay_offset}
-C {/foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer.sym} 1680 -470 0 0 {name=x5}
+C {/foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_retimer_RC.sym} 1680 -470 0 0 {name=x5}
 C {devices/lab_pin.sym} 1830 -520 2 0 {name=p50 sig_type=std_logic lab=sar_result[0:7]}
 C {devices/lab_pin.sym} 1530 -520 0 0 {name=p24 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1530 -500 0 0 {name=p51 sig_type=std_logic lab=VSS}
