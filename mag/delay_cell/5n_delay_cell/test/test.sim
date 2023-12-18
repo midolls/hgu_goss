@@ -1,0 +1,19 @@
+| units: 500000 tech: sky130A format: MIT
+x XM48/a_15_115# XM48/a_n33_n84# XM48/a_63_n84# XM48/w_n263_n303# s=5544,234 d=10416,460 l=30 w=168 x=716 y=714 sky130_fd_pr__pfet_01v8_hvt
+x XM48/a_n81_n181# XM48/a_n125_n84# XM48/a_n33_n84# XM48/w_n263_n303# s=10416,460 d=5544,234 l=30 w=168 x=621 y=714 sky130_fd_pr__pfet_01v8_hvt
+x XM1/a_n81_n172# XM1/a_n125_n84# XM1/a_n33_n84# VSUBS s=10416,460 d=5544,234 l=30 w=168 x=148 y=758 sky130_fd_pr__nfet_01v8
+x XM1/a_15_106# XM1/a_n33_n84# XM1/a_63_n84# VSUBS s=5544,234 d=10416,460 l=30 w=168 x=243 y=758 sky130_fd_pr__nfet_01v8
+R XM1/a_63_n84# 392
+R XM1/a_n33_n84# 372
+R XM1/a_n125_n84# 392
+R XM1/a_n81_n172# 462
+R XM1/a_15_106# 462
+R XM48/a_63_n84# 601
+R XM48/a_n33_n84# 568
+R XM48/a_n125_n84# 601
+R XM48/a_n81_n181# 477
+R XM48/a_15_115# 477
+R XM48/w_n263_n303# 8013
+R VSUBS 10708
+= VSUBS XM1/a_n227_n258#
+= VSUBS XM48/VSUBS

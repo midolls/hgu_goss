@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sch
+.subckt hgu_cdac_unit CTOP CBOT SUB
+*.iopin CTOP
+*.iopin CBOT
+*.iopin SUB
+x1 CTOP CBOT SUB hgu_cdac_unit
+**.ends
+.end

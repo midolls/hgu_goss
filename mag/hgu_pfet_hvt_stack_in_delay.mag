@@ -1,0 +1,107 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699599969
+<< checkpaint >>
+rect -1313 2276 1629 2329
+rect -1313 2223 1998 2276
+rect -1313 2170 2367 2223
+rect -1313 2117 2736 2170
+rect -1313 2064 3105 2117
+rect -1313 -713 3474 2064
+rect -944 -766 3474 -713
+rect -575 -819 3474 -766
+rect -206 -872 3474 -819
+rect 163 -925 3474 -872
+rect 532 -978 3474 -925
+<< error_s >>
+rect 298 999 333 1033
+rect 299 980 333 999
+rect 129 931 187 937
+rect 129 897 141 931
+rect 129 891 187 897
+rect 129 719 187 725
+rect 129 685 141 719
+rect 129 679 187 685
+rect 318 583 333 980
+rect 352 946 387 980
+rect 667 946 702 980
+rect 352 583 386 946
+rect 668 927 702 946
+rect 498 878 556 884
+rect 498 844 510 878
+rect 498 838 556 844
+rect 498 666 556 672
+rect 498 632 510 666
+rect 498 626 556 632
+rect 352 549 367 583
+rect 687 530 702 927
+rect 721 893 756 927
+rect 1036 893 1071 927
+rect 721 530 755 893
+rect 1037 874 1071 893
+rect 867 825 925 831
+rect 867 791 879 825
+rect 867 785 925 791
+rect 867 613 925 619
+rect 867 579 879 613
+rect 867 573 925 579
+rect 721 496 736 530
+rect 1056 477 1071 874
+rect 1090 840 1125 874
+rect 1405 840 1440 874
+rect 1090 477 1124 840
+rect 1406 821 1440 840
+rect 1236 772 1294 778
+rect 1236 738 1248 772
+rect 1236 732 1294 738
+rect 1236 560 1294 566
+rect 1236 526 1248 560
+rect 1236 520 1294 526
+rect 1090 443 1105 477
+rect 1425 424 1440 821
+rect 1459 787 1494 821
+rect 1459 424 1493 787
+rect 1605 719 1663 725
+rect 1605 685 1617 719
+rect 1605 679 1663 685
+rect 1605 507 1663 513
+rect 1605 473 1617 507
+rect 1605 467 1663 473
+rect 1459 390 1474 424
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM1
+timestamp 0
+transform 1 0 158 0 1 808
+box -211 -261 211 261
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM2
+timestamp 0
+transform 1 0 527 0 1 755
+box -211 -261 211 261
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM3
+timestamp 0
+transform 1 0 896 0 1 702
+box -211 -261 211 261
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM4
+timestamp 0
+transform 1 0 1265 0 1 649
+box -211 -261 211 261
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM5
+timestamp 0
+transform 1 0 1634 0 1 596
+box -211 -261 211 261
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM6
+timestamp 0
+transform 1 0 2003 0 1 543
+box -211 -261 211 261
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 input_stack
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 output_stack
+port 2 nsew
+<< end >>

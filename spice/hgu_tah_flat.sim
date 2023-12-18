@@ -1,0 +1,36 @@
+| units: 500000 tech: sky130A format: MIT
+x sw_n tah_vp vip VDD s=36300,1166 d=36300,1166 l=30 w=1100 x=1340 y=4036 sky130_fd_pr__pfet_01v8
+x sw_n vin tah_vn VDD s=36300,1166 d=36300,1166 l=30 w=1100 x=1244 y=516 sky130_fd_pr__pfet_01v8
+x sw_n tah_vn vin VDD s=36300,1166 d=36300,1166 l=30 w=1100 x=1340 y=516 sky130_fd_pr__pfet_01v8
+x sw tah_vn tah_vn VDD s=36300,1166 l=30 w=1100 x=1532 y=516 sky130_fd_pr__pfet_01v8
+x sw_n tah_vn vin VDD s=68200,2324 d=36300,1166 l=30 w=1100 x=1148 y=516 sky130_fd_pr__pfet_01v8
+x sw_n vin tah_vn VDD s=36300,1166 d=36300,1166 l=30 w=1100 x=1436 y=516 sky130_fd_pr__pfet_01v8
+x sw tah_vn tah_vn VDD d=36300,1166 l=30 w=1100 x=1628 y=516 sky130_fd_pr__pfet_01v8
+x sw vip tah_vp a_984_1934# s=18150,616 d=18150,616 l=30 w=550 x=1244 y=2961 sky130_fd_pr__nfet_01v8
+x sw_n tah_vp tah_vp a_984_1934# s=18150,616 l=30 w=550 x=1532 y=2961 sky130_fd_pr__nfet_01v8
+x sw vin tah_vn a_984_1934# s=18150,616 d=18150,616 l=30 w=550 x=1244 y=2141 sky130_fd_pr__nfet_01v8
+x sw_n vip tah_vp VDD s=36300,1166 d=36300,1166 l=30 w=1100 x=1244 y=4036 sky130_fd_pr__pfet_01v8
+x sw_n tah_vn tah_vn a_984_1934# s=18150,616 l=30 w=550 x=1532 y=2141 sky130_fd_pr__nfet_01v8
+x sw tah_vp tah_vp VDD s=36300,1166 l=30 w=1100 x=1532 y=4036 sky130_fd_pr__pfet_01v8
+x sw tah_vp vip a_984_1934# s=34100,1224 d=18150,616 l=30 w=550 x=1148 y=2961 sky130_fd_pr__nfet_01v8
+x sw vip tah_vp a_984_1934# s=18150,616 d=18150,616 l=30 w=550 x=1436 y=2961 sky130_fd_pr__nfet_01v8
+x sw tah_vn vin a_984_1934# s=34100,1224 d=18150,616 l=30 w=550 x=1148 y=2141 sky130_fd_pr__nfet_01v8
+x sw_n tah_vp vip VDD s=68200,2324 d=36300,1166 l=30 w=1100 x=1148 y=4036 sky130_fd_pr__pfet_01v8
+x sw vin tah_vn a_984_1934# s=18150,616 d=18150,616 l=30 w=550 x=1436 y=2141 sky130_fd_pr__nfet_01v8
+x sw_n vip tah_vp VDD s=36300,1166 d=36300,1166 l=30 w=1100 x=1436 y=4036 sky130_fd_pr__pfet_01v8
+x sw_n tah_vp tah_vp a_984_1934# d=18150,616 l=30 w=550 x=1628 y=2961 sky130_fd_pr__nfet_01v8
+x sw_n tah_vn tah_vn a_984_1934# d=18150,616 l=30 w=550 x=1628 y=2141 sky130_fd_pr__nfet_01v8
+x sw tah_vp tah_vp VDD d=36300,1166 l=30 w=1100 x=1628 y=4036 sky130_fd_pr__pfet_01v8
+x sw tah_vp vip a_984_1934# s=18150,616 d=18150,616 l=30 w=550 x=1340 y=2961 sky130_fd_pr__nfet_01v8
+x sw tah_vn vin a_984_1934# s=18150,616 d=18150,616 l=30 w=550 x=1340 y=2141 sky130_fd_pr__nfet_01v8
+C tah_vn vin 5.1
+C vip tah_vp 5.1
+R vin 10587
+R tah_vn 28011
+R sw 17586
+R sw_n 21537
+R vip 10587
+R tah_vp 28011
+C VDD0 12.1
+R VDD 41018
+R a_984_1934# 35431

@@ -1,0 +1,23 @@
+timestamp 1699172750
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+node "hgu_sw_cap_pmos_1.delay_signal" 225 0 591 49 pdif 0 0 0 0 0 0 0 0 0 0 8064 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "hgu_sw_cap_pmos_1.delay_signal" "hgu_sw_cap_pmos_0.delay_signal"
+node "a_503_49#" 1321 1501.95 503 49 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 12018 652 10782 592 542444 17220 538128 17116 0 0 0 0
+node "hgu_sw_cap_pmos_1.SW" 831 134.211 543 164 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17292 1100 0 0 4488 400 8789 468 0 0 0 0 0 0 0 0 0 0
+equiv "hgu_sw_cap_pmos_1.SW" "hgu_sw_cap_pmos_0.SW"
+node "hgu_sw_cap_pmos_1.VDD" 3876 6437.54 1 80 nw 0 0 0 0 1655696 5264 0 0 73168 2424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83952 2676 83952 2676 83952 2676 334104 10932 335376 10934 0 0 0 0
+equiv "hgu_sw_cap_pmos_1.VDD" "hgu_sw_cap_pmos_0.VDD"
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "hgu_sw_cap_pmos_1.delay_signal" "hgu_sw_cap_pmos_1.SW" 5.11993
+cap "hgu_sw_cap_pmos_1.VDD" "hgu_sw_cap_pmos_1.SW" 251.855
+cap "a_503_49#" "hgu_sw_cap_pmos_1.SW" 82.6903
+cap "hgu_sw_cap_pmos_1.delay_signal" "hgu_sw_cap_pmos_1.VDD" 0.408603
+cap "a_503_49#" "hgu_sw_cap_pmos_1.delay_signal" 16.6279
+cap "a_503_49#" "hgu_sw_cap_pmos_1.VDD" 10891.8
+device msubckt sky130_fd_pr__pfet_01v8 687 49 688 50 l=30 w=84 "hgu_sw_cap_pmos_1.VDD" "hgu_sw_cap_pmos_1.SW" 60 0 "hgu_sw_cap_pmos_1.delay_signal" 84 4032,180 "a_503_49#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 561 49 562 50 l=30 w=84 "hgu_sw_cap_pmos_1.VDD" "hgu_sw_cap_pmos_1.SW" 60 0 "a_503_49#" 84 4872,284 "hgu_sw_cap_pmos_1.delay_signal" 84 4032,180

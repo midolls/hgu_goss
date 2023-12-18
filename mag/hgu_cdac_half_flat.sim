@@ -1,0 +1,2197 @@
+| units: 500000 tech: sky130A format: MIT
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=3668 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=4436 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=16125 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=20445 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=13040 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=27357 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=12656 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=30565 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=34405 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=21213 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=7185 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=16765 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=26077 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=24925 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=36197 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=11376 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=3156 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<1> VSS hgu_cdac_8bit_array_3.drv<1:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=529 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=6801 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=30053 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=12144 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=35685 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=9641 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=22493 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=8489 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=16253 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=24413 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=5521 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=6289 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=34533 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=32229 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<1> VSS hgu_cdac_8bit_array_2.drv<1:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=657 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=26973 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=35173 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=22749 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<3> VSS hgu_cdac_8bit_array_2.drv<7:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=4052 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=18429 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=32869 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=36709 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=25693 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=34021 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=23517 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=10992 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<3> VREF hgu_cdac_8bit_array_2.drv<7:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=3540 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=2049 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=26461 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=11760 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<3> VSS hgu_cdac_8bit_array_3.drv<7:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=3540 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=22237 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=32357 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=14448 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=25181 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=23005 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=24797 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=18557 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=31845 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=26717 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=13168 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=36837 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=19197 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<2> VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VSS s=2436,142 d=2436,142 l=70 w=84 x=2177 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=37477 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<0> VSS hgu_cdac_8bit_array_2.drv<0> VSS s=4872,284 d=4872,284 l=70 w=84 x=-270 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=24285 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=18045 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=31333 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=26205 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=7313 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=27997 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=11504 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=6929 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=36325 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=9769 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=21853 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=17533 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<2> VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VSS s=2436,142 d=2436,142 l=70 w=84 x=1665 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=31973 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=35813 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=5649 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=29541 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=22621 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=8617 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=27485 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=6417 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=25309 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=15869 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=12784 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=10608 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=9257 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=17021 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=21341 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=28253 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=31461 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=13552 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=20957 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=35301 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=24029 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=34149 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=8105 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<1> hgu_cdac_8bit_array_3.drv<1:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=657 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=9897 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=17661 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=3668 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=25821 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=12272 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=37093 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=26589 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=35941 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=3668 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=11888 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=33637 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=28509 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<2> VREF hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VDD s=9744,452 d=4872,226 l=70 w=168 x=1409 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=13040 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=20445 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=13808 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=15997 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=36581 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=9385 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=19837 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=7185 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=26077 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=24925 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=3156 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=11376 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=33125 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=8873 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<3> VSS hgu_cdac_8bit_array_2.drv<7:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=3796 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=23645 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=19325 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=33765 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=2305 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=5521 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=24413 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=8361 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=14576 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<0> VREF hgu_cdac_8bit_array_3.drv<0> VDD s=9744,452 d=9744,452 l=70 w=168 x=-270 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=30309 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=23133 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=29669 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=33253 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=22749 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=16509 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=25693 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=19453 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=10992 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=32741 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=17149 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=27613 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=21469 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=14064 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=12912 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=31589 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=35429 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=22237 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<3> VSS hgu_cdac_8bit_array_2.drv<7:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=4308 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=18941 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=17789 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<2> VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VSS s=4872,284 d=2436,142 l=70 w=84 x=1921 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=25949 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=25181 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=27101 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=29797 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=12400 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=1793 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=26717 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=31077 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=37221 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=13168 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=17277 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=30565 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=25437 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=6545 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=10736 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=35557 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=9513 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=28381 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=7313 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=26205 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=16765 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=13680 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=11504 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=27997 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=36197 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=3924 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=21853 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=6033 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=30053 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=5649 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=35045 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=9001 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<3> VREF hgu_cdac_8bit_array_3.drv<7:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=3796 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=8489 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=16253 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=20573 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=27485 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=12784 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=30693 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=34533 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=21341 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<1> VREF hgu_cdac_8bit_array_2.drv<1:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=657 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=16893 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=24029 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<3> VREF hgu_cdac_8bit_array_3.drv<7:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=3284 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<3> VREF hgu_cdac_8bit_array_2.drv<7:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=4052 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<1> hgu_cdac_8bit_array_3.drv<1:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=657 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=32869 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=25821 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=30181 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=12272 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=34021 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<2> VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VSS s=4872,284 d=2436,142 l=70 w=84 x=1409 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=28509 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=31717 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=13808 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=16381 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=24541 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=19069 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=34661 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=32357 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=27229 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=17917 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=12528 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=37349 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<1> hgu_cdac_8bit_array_2.drv<1:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=785 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=29925 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=31205 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=4180 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=18557 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=22877 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=32997 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=36837 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=23645 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=17405 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=12016 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<2> VREF hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VDD s=4872,226 d=4872,226 l=70 w=168 x=2177 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=29413 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<0> VREF hgu_cdac_8bit_array_2.drv<0> VDD s=9744,452 d=9744,452 l=70 w=168 x=-270 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=10025 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=18045 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=22365 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=32485 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<0> VSS hgu_cdac_8bit_array_3.drv<0> VSS s=4872,284 d=4872,284 l=70 w=84 x=-270 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=14576 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=36325 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=23133 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=9129 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=18685 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=31973 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=26845 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=13296 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=36965 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=3924 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=8617 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=20701 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=21469 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=27613 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=14064 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=30821 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=12912 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=33509 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=18173 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=31461 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=26333 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=7441 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=11632 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=25949 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=36453 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=3412 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=34149 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=8105 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=19709 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=27101 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=9897 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=21981 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=17661 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=1793 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=12400 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=37093 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=35941 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=24669 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=5777 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=34789 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=8745 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=11120 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=6545 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=25437 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=15997 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=10736 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=9385 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=28381 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=13680 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=24157 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=34277 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=8233 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=6033 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<3> VREF hgu_cdac_8bit_array_2.drv<7:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=3796 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<3> VSS hgu_cdac_8bit_array_3.drv<7:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=3796 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=33765 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=1537 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=2305 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=20573 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=13936 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=32613 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=30309 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<3> VSS hgu_cdac_8bit_array_3.drv<7:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=3284 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=33253 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=28125 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=18813 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=16509 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=20829 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=13424 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=30949 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=23773 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=32101 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=19453 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=33893 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=31589 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=24541 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=18301 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<3> VREF hgu_cdac_8bit_array_2.drv<7:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=4308 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=27229 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=17789 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<2> VREF hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VDD s=9744,452 d=4872,226 l=70 w=168 x=1921 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=12528 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=30437 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=23261 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=29797 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=33381 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=22877 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=37221 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=7057 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=16637 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=31077 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=5905 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=36069 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=11248 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<3> VREF hgu_cdac_8bit_array_3.drv<7:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=3028 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=34917 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=19581 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=17277 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=27741 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=21597 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=14192 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=12016 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=35557 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=9513 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=22365 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=4436 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=16125 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=34405 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=3924 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=21085 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=26845 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=13296 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=35045 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=9001 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=3924 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=20701 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=30693 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=25565 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=6673 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=10864 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=35685 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=9641 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=7441 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=26333 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=16893 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=11632 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<3> hgu_cdac_8bit_array_3.drv<7:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=3412 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=22109 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=32229 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=21981 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=25053 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=6161 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=30181 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=23901 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=5777 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=35173 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=24669 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=18429 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=31717 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=16381 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=36709 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=11120 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=34661 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=19069 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=23389 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<3> VSS hgu_cdac_8bit_array_2.drv<7:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=3540 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=17917 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=2049 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=37349 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<1> hgu_cdac_8bit_array_2.drv<1:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=785 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=24157 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=29925 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=31205 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=4180 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=32997 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=27869 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=21725 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=17405 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=14320 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=1537 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=31845 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=13936 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=29413 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=9744,452 l=70 w=168 x=10025 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=19197 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=32485 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=27357 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=12656 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=37477 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VREF hgu_cdac_8bit_array_2.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=9129 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=21213 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=28125 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=31333 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=18685 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=13424 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=20829 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=36965 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<1> VREF hgu_cdac_8bit_array_3.drv<1:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=529 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=23773 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=9769 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=17533 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=6801 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=30821 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=12144 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=35813 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=29541 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=33509 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=18173 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=22493 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> VREF hgu_cdac_8bit_array_3.drv<15:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=6289 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=15869 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=36453 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=23261 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=9257 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=19709 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=17021 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<4> VSS hgu_cdac_8bit_array_3.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=7057 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=26973 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=5905 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=35301 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<3> VSS hgu_cdac_8bit_array_3.drv<7:0> VSS s=4872,284 d=2436,142 l=70 w=84 x=3028 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=11248 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=34789 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=8745 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=21597 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=27741 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<3> hgu_cdac_8bit_array_2.drv<7:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=3668 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=14192 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=23517 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=33637 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=26461 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=11760 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=36581 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<3> VREF hgu_cdac_8bit_array_3.drv<7:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=3540 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=34277 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<4> hgu_cdac_8bit_array_2.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=8233 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=4872,284 l=70 w=84 x=19837 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=21085 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=14448 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=23005 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=24797 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=33125 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=8873 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=6673 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=25565 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=19325 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x d<5> VSS hgu_cdac_8bit_array_3.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=10864 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=32613 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=24285 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=22109 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<4> VSS hgu_cdac_8bit_array_2.drv<15:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=8361 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=18813 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=6161 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=30949 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=6929 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=25053 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=23901 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=32101 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=29669 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=33893 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<2> VREF hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT VDD s=4872,226 d=4872,226 l=70 w=168 x=1665 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=22621 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=18301 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=23389 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VSS hgu_cdac_8bit_array_2.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=32741 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=17149 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=30437 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=25309 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<4> hgu_cdac_8bit_array_3.drv<15:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=6417 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=9744,452 d=4872,226 l=70 w=168 x=10608 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=35429 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=33381 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> hgu_cdac_8bit_array_3.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=28253 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x db<5> VSS hgu_cdac_8bit_array_2.drv<31:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=18941 y=5206 sky130_fd_pr__nfet_01v8_lvt
+x db<5> VREF hgu_cdac_8bit_array_2.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=16637 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=20957 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=13552 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=27869 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x db<6> VREF hgu_cdac_8bit_array_2.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=36069 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<6> hgu_cdac_8bit_array_2.drv<63:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=34917 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x db<5> hgu_cdac_8bit_array_2.drv<31:0> VREF VDD s=4872,226 d=4872,226 l=70 w=168 x=19581 y=5422 sky130_fd_pr__pfet_01v8_lvt
+x d<5> hgu_cdac_8bit_array_3.drv<31:0> VSS VSS s=2436,142 d=2436,142 l=70 w=84 x=14320 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VSS hgu_cdac_8bit_array_3.drv<63:0> VSS s=2436,142 d=2436,142 l=70 w=84 x=21725 y=6128 sky130_fd_pr__nfet_01v8_lvt
+x d<6> VREF hgu_cdac_8bit_array_3.drv<63:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=26589 y=5828 sky130_fd_pr__pfet_01v8_lvt
+x d<5> VREF hgu_cdac_8bit_array_3.drv<31:0> VDD s=4872,226 d=4872,226 l=70 w=168 x=11888 y=5828 sky130_fd_pr__pfet_01v8_lvt
+C tb<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT 22.1
+C t<4> hgu_cdac_8bit_array_3.drv<15:0> 83.1
+C t<0> hgu_cdac_8bit_array_3.drv<0> 5.1
+C d<5> hgu_cdac_8bit_array_3.drv<31:0> 2.1
+C t<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT 22.2
+C tb<6> t<6> 4.0
+C hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_2.drv<15:0> 3.0
+C hgu_cdac_8bit_array_3.drv<63:0> t<6> 327.5
+C hgu_cdac_8bit_array_2.drv<63:0> tb<6> 325.4
+C tb<3> hgu_cdac_8bit_array_2.drv<7:0> 42.3
+C d<6> hgu_cdac_8bit_array_3.drv<63:0> 4.1
+C VREF hgu_cdac_8bit_array_3.drv<63:0> 10.0
+C hgu_cdac_unit_0.CBOT tb<0> 5.1
+C hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_3.drv<63:0> 7.3
+C hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.drv<31:0> 2.3
+C t<3> hgu_cdac_8bit_array_3.drv<7:0> 42.6
+C hgu_cdac_8bit_array_2.drv<0> tb<0> 5.1
+C d<6> VDD 4.0
+C VREF VDD 49.1
+C t<0> hgu_cdac_unit_1.CBOT 5.1
+C hgu_cdac_8bit_array_2.drv<63:0> t<6> 4.7
+C VREF hgu_cdac_8bit_array_2.drv<63:0> 8.3
+C hgu_cdac_8bit_array_2.drv<31:0> VREF 4.1
+C hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.drv<63:0> 2.3
+C hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.drv<63:0> 2.3
+C hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.drv<7:0> 2.3
+C hgu_cdac_8bit_array_2.drv<31:0> t<5> 2.4
+C VREF hgu_cdac_8bit_array_2.drv<15:0> 2.1
+C hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.drv<15:0> 2.3
+C hgu_cdac_8bit_array_2.drv<1:0> tb<1> 11.5
+C hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT 2.1
+C t<1> hgu_cdac_8bit_array_3.drv<1:0> 11.6
+C VREF hgu_cdac_8bit_array_3.drv<31:0> 5.0
+C db<6> VDD 4.0
+C hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_3.drv<31:0> 3.8
+C tb<4> hgu_cdac_8bit_array_2.drv<15:0> 82.5
+C hgu_cdac_8bit_array_3.drv<31:0> t<5> 164.5
+C hgu_cdac_8bit_array_2.drv<63:0> db<6> 3.9
+C hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.drv<7:0> 2.8
+C hgu_cdac_8bit_array_2.drv<31:0> tb<5> 163.4
+C VREF hgu_cdac_8bit_array_3.drv<15:0> 2.7
+C tb<5> t<5> 2.1
+C db<6>0 12.7
+R db<6> 21950
+C db<5>0 6.4
+R db<5> 10955
+C db<4>0 3.2
+R db<4> 5458
+R db<3> 2709
+R db<2> 1334
+R db<1> 647
+R db<0> 304
+C d<6>0 12.7
+R d<6> 21950
+C d<5>0 6.4
+R d<5> 10362
+C d<4>0 3.2
+R d<4> 5458
+R d<3> 2709
+R d<2> 1334
+R d<1> 647
+R d<0> 304
+= tb<0> hgu_cdac_8bit_array_2.x1.CTOP
+= tb<0> hgu_cdac_8bit_array_2.tah<0>
+= tb<0> hgu_cdac_unit_0.CTOP
+C tb<6>0 24.1
+R tb<6> 260
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[62].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[61].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[60].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[59].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[58].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[57].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[56].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[55].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[54].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[53].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[52].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[51].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[50].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[49].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[48].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[47].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[46].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[45].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[44].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[43].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[42].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[41].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[40].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[39].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[38].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[37].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[36].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[35].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[34].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[33].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[32].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[31].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[30].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[29].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[28].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[27].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[26].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[25].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[24].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[23].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[22].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[21].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[20].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[19].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[18].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[17].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[16].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[15].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[14].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[13].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[12].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[11].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[10].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[63].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[8].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[7].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[6].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[5].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[4].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[3].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[2].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[1].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[0].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[9].CTOP
+= tb<6> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.CTOP
+= tb<6> hgu_cdac_8bit_array_2.tah<63:0>
+C tb<5>0 12.5
+R tb<5> 130
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[30].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[29].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[28].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[27].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[26].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[25].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[24].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[23].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[22].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[21].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[20].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[19].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[18].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[17].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[16].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[15].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[14].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[13].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[12].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[11].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[10].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[31].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[8].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[7].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[6].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[5].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[4].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[3].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[2].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[1].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[0].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[9].CTOP
+= tb<5> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.CTOP
+= tb<5> hgu_cdac_8bit_array_2.tah<31:0>
+C tb<4>0 6.8
+R tb<4> 65
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[14].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[13].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[12].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[11].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[10].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[15].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[8].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[7].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[6].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[5].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[4].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[3].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[2].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[1].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[0].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[9].CTOP
+= tb<4> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.CTOP
+= tb<4> hgu_cdac_8bit_array_2.tah<15:0>
+C tb<3>0 3.6
+R tb<3> 33
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[0].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[1].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[2].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[3].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[4].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[5].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[6].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[7].CTOP
+= tb<3> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.CTOP
+= tb<3> hgu_cdac_8bit_array_2.tah<7:0>
+R tb<2> 16
+= tb<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[0].CTOP
+= tb<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[1].CTOP
+= tb<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[2].CTOP
+= tb<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[3].CTOP
+= tb<2> hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CTOP
+= tb<2> hgu_cdac_8bit_array_2.tah<3:0>
+= tb<1> hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.x1.CTOP
+= tb<1> hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.x2.CTOP
+= tb<1> hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.CTOP
+= tb<1> hgu_cdac_8bit_array_2.tah<1:0>
+= t<0> hgu_cdac_8bit_array_3.x1.CTOP
+= t<0> hgu_cdac_8bit_array_3.tah<0>
+= t<0> hgu_cdac_unit_1.CTOP
+C t<6>0 23.4
+R t<6> 260
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[62].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[61].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[60].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[59].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[58].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[57].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[56].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[55].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[54].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[53].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[52].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[51].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[50].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[49].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[48].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[47].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[46].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[45].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[44].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[43].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[42].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[41].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[40].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[39].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[38].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[37].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[36].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[35].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[34].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[33].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[32].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[31].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[30].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[29].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[28].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[27].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[26].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[25].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[24].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[23].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[22].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[21].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[20].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[19].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[18].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[17].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[16].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[15].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[14].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[13].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[12].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[11].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[10].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[63].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[8].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[7].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[6].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[5].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[4].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[3].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[2].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[1].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[0].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[9].CTOP
+= t<6> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.CTOP
+= t<6> hgu_cdac_8bit_array_3.tah<63:0>
+C t<5>0 12.3
+R t<5> 130
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[30].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[29].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[28].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[27].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[26].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[25].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[24].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[23].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[22].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[21].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[20].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[19].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[18].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[17].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[16].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[15].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[14].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[13].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[12].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[11].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[10].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[31].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[8].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[7].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[6].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[5].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[4].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[3].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[2].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[1].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[0].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[9].CTOP
+= t<5> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.CTOP
+= t<5> hgu_cdac_8bit_array_3.tah<31:0>
+C t<4>0 6.6
+R t<4> 65
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[14].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[13].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[12].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[11].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[10].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[15].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[8].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[7].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[6].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[5].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[4].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[3].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[2].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[1].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[0].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[9].CTOP
+= t<4> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.CTOP
+= t<4> hgu_cdac_8bit_array_3.tah<15:0>
+C t<3>0 3.5
+R t<3> 33
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[0].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[1].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[2].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[3].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[4].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[5].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[6].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[7].CTOP
+= t<3> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.CTOP
+= t<3> hgu_cdac_8bit_array_3.tah<7:0>
+R t<2> 16
+= t<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[0].CTOP
+= t<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[1].CTOP
+= t<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[2].CTOP
+= t<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[3].CTOP
+= t<2> hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CTOP
+= t<2> hgu_cdac_8bit_array_3.tah<3:0>
+= t<1> hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.x1.CTOP
+= t<1> hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.x2.CTOP
+= t<1> hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.CTOP
+= t<1> hgu_cdac_8bit_array_3.tah<1:0>
+C hgu_cdac_8bit_array_2.drv<63:0>0 36.4
+R hgu_cdac_8bit_array_2.drv<63:0> 53895
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[62].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[61].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[60].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[59].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[58].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[57].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[56].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[55].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[54].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[53].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[52].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[51].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[50].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[49].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[48].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[47].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[46].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[45].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[44].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[43].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[42].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[41].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[40].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[39].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[38].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[37].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[36].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[35].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[34].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[33].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[32].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[31].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[30].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[29].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[28].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[27].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[26].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[25].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[24].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[23].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[22].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[21].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[20].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[19].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[18].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[17].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[16].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[15].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[14].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[13].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[12].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[11].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[10].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[63].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[8].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[7].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[6].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[5].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[4].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[3].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[2].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[1].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[0].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[9].CBOT
+= hgu_cdac_8bit_array_2.drv<63:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.CBOT
+C hgu_cdac_8bit_array_2.drv<31:0>0 18.2
+R hgu_cdac_8bit_array_2.drv<31:0> 26619
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[30].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[29].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[28].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[27].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[26].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[25].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[24].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[23].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[22].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[21].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[20].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[19].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[18].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[17].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[16].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[15].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[14].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[13].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[12].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[11].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[10].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[31].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[8].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[7].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[6].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[5].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[4].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[3].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[2].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[1].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[0].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[9].CBOT
+= hgu_cdac_8bit_array_2.drv<31:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.CBOT
+C hgu_cdac_8bit_array_2.drv<15:0>0 9.9
+R hgu_cdac_8bit_array_2.drv<15:0> 12986
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[14].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[13].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[12].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[11].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[10].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[15].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[8].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[7].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[6].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[5].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[4].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[3].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[2].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[1].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[0].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[9].CBOT
+= hgu_cdac_8bit_array_2.drv<15:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.CBOT
+C hgu_cdac_8bit_array_2.drv<7:0>0 5.4
+R hgu_cdac_8bit_array_2.drv<7:0> 6148
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[0].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[1].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[2].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[3].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[4].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[5].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[6].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[7].CBOT
+= hgu_cdac_8bit_array_2.drv<7:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.CBOT
+C hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT0 3.4
+R hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT 2721
+= hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[0].CBOT
+= hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[1].CBOT
+= hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[2].CBOT
+= hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[3].CBOT
+R hgu_cdac_8bit_array_2.drv<1:0> 901
+= hgu_cdac_8bit_array_2.drv<1:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.x1.CBOT
+= hgu_cdac_8bit_array_2.drv<1:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.x2.CBOT
+= hgu_cdac_8bit_array_2.drv<1:0> hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.CBOT
+C hgu_cdac_8bit_array_2.drv<0>0 2.2
+R hgu_cdac_8bit_array_2.drv<0> 893
+= hgu_cdac_8bit_array_2.drv<0> hgu_cdac_8bit_array_2.x1.CBOT
+C VREF0 13.4
+R VREF 157740
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF hgu_inverter_0.VREF
+= VREF inv_2_test_0/x1.VREF
+= VREF inv_2_test_0/x2.VREF
+= VREF inv_2_test_1/x1.VREF
+= VREF inv_2_test_1/x2.VREF
+= VREF inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_4_test_2/inv_2_test_0/x1.VREF
+= VREF inv_4_test_2/inv_2_test_0/x2.VREF
+= VREF inv_4_test_2/inv_2_test_1/x1.VREF
+= VREF inv_4_test_2/inv_2_test_1/x2.VREF
+= VREF inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VREF
+= VREF inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VREF
+= VREF hgu_inverter_1.VREF
+C hgu_cdac_8bit_array_3.drv<63:0>0 33.0
+R hgu_cdac_8bit_array_3.drv<63:0> 53878
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[62].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[61].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[60].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[59].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[58].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[57].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[56].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[55].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[54].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[53].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[52].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[51].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[50].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[49].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[48].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[47].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[46].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[45].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[44].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[43].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[42].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[41].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[40].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[39].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[38].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[37].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[36].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[35].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[34].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[33].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[32].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[31].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[30].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[29].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[28].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[27].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[26].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[25].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[24].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[23].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[22].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[21].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[20].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[19].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[18].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[17].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[16].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[15].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[14].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[13].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[12].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[11].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[10].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[63].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[8].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[7].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[6].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[5].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[4].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[3].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[2].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[1].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[0].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[9].CBOT
+= hgu_cdac_8bit_array_3.drv<63:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.CBOT
+C hgu_cdac_8bit_array_3.drv<31:0>0 16.7
+R hgu_cdac_8bit_array_3.drv<31:0> 26613
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[30].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[29].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[28].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[27].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[26].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[25].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[24].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[23].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[22].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[21].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[20].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[19].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[18].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[17].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[16].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[15].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[14].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[13].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[12].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[11].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[10].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[31].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[8].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[7].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[6].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[5].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[4].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[3].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[2].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[1].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[0].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[9].CBOT
+= hgu_cdac_8bit_array_3.drv<31:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.CBOT
+C hgu_cdac_8bit_array_3.drv<15:0>0 9.0
+R hgu_cdac_8bit_array_3.drv<15:0> 12980
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[14].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[13].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[12].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[11].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[10].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[15].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[8].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[7].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[6].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[5].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[4].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[3].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[2].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[1].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[0].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[9].CBOT
+= hgu_cdac_8bit_array_3.drv<15:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.CBOT
+C hgu_cdac_8bit_array_3.drv<7:0>0 5.2
+R hgu_cdac_8bit_array_3.drv<7:0> 6152
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[0].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[1].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[2].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[3].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[4].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[5].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[6].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[7].CBOT
+= hgu_cdac_8bit_array_3.drv<7:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.CBOT
+C hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT0 2.8
+R hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT 2718
+= hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[0].CBOT
+= hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[1].CBOT
+= hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[2].CBOT
+= hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.CBOT hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[3].CBOT
+R hgu_cdac_8bit_array_3.drv<1:0> 901
+= hgu_cdac_8bit_array_3.drv<1:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.x1.CBOT
+= hgu_cdac_8bit_array_3.drv<1:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.x2.CBOT
+= hgu_cdac_8bit_array_3.drv<1:0> hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.CBOT
+R hgu_cdac_8bit_array_3.drv<0> 891
+= hgu_cdac_8bit_array_3.drv<0> hgu_cdac_8bit_array_3.x1.CBOT
+C VDD0 49.1
+R VDD 203132
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD hgu_inverter_0.VDD
+= VDD inv_2_test_0/x1.VDD
+= VDD inv_2_test_0/x2.VDD
+= VDD inv_2_test_1/x1.VDD
+= VDD inv_2_test_1/x2.VDD
+= VDD inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_4_test_2/inv_2_test_0/x1.VDD
+= VDD inv_4_test_2/inv_2_test_0/x2.VDD
+= VDD inv_4_test_2/inv_2_test_1/x1.VDD
+= VDD inv_4_test_2/inv_2_test_1/x2.VDD
+= VDD inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VDD
+= VDD inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VDD
+= VDD hgu_inverter_1.VDD
+R VSS 533482
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_0/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_64_test_1/inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_0/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_32_test_1/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_16_test_0/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS hgu_inverter_0.VSS
+= VSS inv_2_test_0/x1.VSS
+= VSS inv_2_test_0/x2.VSS
+= VSS inv_2_test_1/x1.VSS
+= VSS inv_2_test_1/x2.VSS
+= VSS inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_4_test_2/inv_2_test_0/x1.VSS
+= VSS inv_4_test_2/inv_2_test_0/x2.VSS
+= VSS inv_4_test_2/inv_2_test_1/x1.VSS
+= VSS inv_4_test_2/inv_2_test_1/x2.VSS
+= VSS inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_16_test_1/inv_8_test_0/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x1.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_0/x2.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x1.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_0/inv_2_test_1/x2.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x1.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_0/x2.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x1.VSS
+= VSS inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2.VSS
+= VSS hgu_cdac_unit_1.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.x1.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.x2.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_2_0.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_4_0.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_8_0.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[15].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[14].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[13].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[12].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[11].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[10].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[9].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[8].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_16_0.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[31].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[30].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[29].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[28].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[27].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[26].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[25].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[24].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[23].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[22].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[21].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[20].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[19].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[18].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[17].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[16].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[15].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[14].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[13].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[12].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[11].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[10].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[9].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[8].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_32_0.SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[63].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[62].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[61].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[60].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[59].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[58].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[57].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[56].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[55].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[54].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[53].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[52].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[51].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[50].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[49].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[48].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[47].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[46].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[45].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[44].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[43].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[42].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[41].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[40].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[39].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[38].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[37].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[36].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[35].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[34].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[33].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[32].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[31].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[30].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[29].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[28].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[27].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[26].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[25].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[24].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[23].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[22].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[21].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[20].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[19].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[18].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[17].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[16].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[15].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[14].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[13].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[12].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[11].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[10].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[9].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[8].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_3.hgu_cdac_cap_64_0.SUB
+= VSS hgu_cdac_8bit_array_3.x1.SUB
+= VSS hgu_cdac_8bit_array_3.SUB
+= VSS hgu_cdac_unit_0.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.x1.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.x2.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_2_0.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_4_0.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_8_0.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[15].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[14].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[13].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[12].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[11].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[10].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[9].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[8].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_16_0.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[31].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[30].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[29].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[28].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[27].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[26].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[25].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[24].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[23].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[22].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[21].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[20].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[19].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[18].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[17].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[16].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[15].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[14].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[13].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[12].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[11].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[10].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[9].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[8].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_32_0.SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[63].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[62].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[61].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[60].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[59].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[58].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[57].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[56].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[55].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[54].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[53].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[52].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[51].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[50].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[49].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[48].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[47].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[46].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[45].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[44].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[43].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[42].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[41].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[40].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[39].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[38].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[37].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[36].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[35].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[34].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[33].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[32].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[31].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[30].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[29].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[28].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[27].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[26].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[25].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[24].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[23].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[22].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[21].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[20].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[19].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[18].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[17].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[16].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[15].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[14].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[13].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[12].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[11].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[10].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[9].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[8].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[7].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[6].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[5].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[4].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[3].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[2].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[1].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.x1[0].SUB
+= VSS hgu_cdac_8bit_array_2.hgu_cdac_cap_64_0.SUB
+= VSS hgu_cdac_8bit_array_2.x1.SUB
+= VSS hgu_cdac_8bit_array_2.SUB
+= VSS hgu_inverter_1.VSS

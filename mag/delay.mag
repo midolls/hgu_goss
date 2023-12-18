@@ -1,0 +1,153 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698045514
+<< checkpaint >>
+rect 2997 -1137 5939 2141
+<< error_s >>
+rect 1699 1092 1734 1101
+rect 1663 1067 1734 1092
+rect 1060 1051 1095 1056
+rect 1024 1022 1095 1051
+rect 1024 583 1094 1022
+rect 1024 547 1077 583
+rect 1663 530 1733 1067
+rect 2395 856 2429 910
+rect 2817 892 2852 897
+rect 2781 863 2852 892
+rect 1663 494 1716 530
+rect 2414 477 2429 856
+rect 2448 822 2483 856
+rect 2448 477 2482 822
+rect 2594 754 2652 760
+rect 2594 720 2606 754
+rect 2594 714 2652 720
+rect 2594 560 2652 566
+rect 2594 526 2606 560
+rect 2594 520 2652 526
+rect 2448 443 2463 477
+rect 2781 424 2851 863
+rect 2963 795 3021 801
+rect 2963 761 2975 795
+rect 3133 786 3167 801
+rect 3555 786 3590 791
+rect 2963 755 3021 761
+rect 3133 750 3203 786
+rect 3519 757 3590 786
+rect 3870 764 3905 782
+rect 3870 757 3941 764
+rect 3150 716 3221 750
+rect 2963 507 3021 513
+rect 2963 473 2975 507
+rect 2963 467 3021 473
+rect 2781 388 2834 424
+rect 3150 371 3220 716
+rect 3332 648 3390 654
+rect 3332 614 3344 648
+rect 3332 608 3390 614
+rect 3332 454 3390 460
+rect 3332 420 3344 454
+rect 3332 414 3390 420
+rect 3150 335 3203 371
+rect 3519 318 3589 757
+rect 3871 728 3941 757
+rect 3701 689 3759 695
+rect 3888 694 3959 728
+rect 3701 655 3713 689
+rect 3701 649 3759 655
+rect 3701 401 3759 407
+rect 3701 367 3713 401
+rect 3701 361 3759 367
+rect 3519 282 3572 318
+rect 3888 265 3958 694
+rect 4070 626 4128 632
+rect 4070 592 4082 626
+rect 4070 586 4128 592
+rect 4070 348 4128 354
+rect 4070 314 4082 348
+rect 4070 308 4128 314
+rect 3888 229 3941 265
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+rect 0 -4000 200 -3800
+rect 0 -4400 200 -4200
+rect 0 -4800 200 -4600
+rect 0 -5200 200 -5000
+rect 0 -5600 200 -5400
+use sky130_fd_pr__nfet_01v8_J3KQQP  XM1
+timestamp 0
+transform 1 0 512 0 1 799
+box -565 -252 565 252
+use sky130_fd_pr__pfet_01v8_GVE7YE  XM2
+timestamp 0
+transform 1 0 1370 0 1 793
+box -346 -299 346 299
+use sky130_fd_pr__nfet_01v8_WENHSZ  XM3
+timestamp 0
+transform 1 0 2064 0 1 789
+box -401 -348 401 348
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM4
+timestamp 0
+transform 1 0 2623 0 1 640
+box -211 -252 211 252
+use sky130_fd_pr__pfet_01v8_XYUFBL  XM5
+timestamp 0
+transform 1 0 2992 0 1 634
+box -211 -299 211 299
+use sky130_fd_pr__nfet_01v8_L7T3GD  XM6
+timestamp 0
+transform 1 0 3361 0 1 534
+box -211 -252 211 252
+use sky130_fd_pr__pfet_01v8_XYUFBL  XM7
+timestamp 0
+transform 1 0 3730 0 1 528
+box -211 -299 211 299
+use sky130_fd_pr__nfet_01v8_9NW3WL  XM8
+timestamp 0
+transform 1 0 4099 0 1 470
+box -211 -294 211 294
+use sky130_fd_pr__pfet_01v8_XCA4BL  XM9
+timestamp 0
+transform 1 0 4468 0 1 502
+box -211 -379 211 379
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 IN
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 OUT
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 VSS
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[0\]}
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[1\]}
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[2\]}
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[3\]}
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 {}
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[4\]}
+port 9 nsew
+flabel metal1 0 -4000 200 -3800 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[5\]}
+port 10 nsew
+flabel metal1 0 -4400 200 -4200 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[6\]}
+port 11 nsew
+flabel metal1 0 -4800 200 -4600 0 FreeSans 256 0 0 0 {CAP_CTRL_CODE\[7\]}
+port 12 nsew
+flabel metal1 0 -5200 200 -5000 0 FreeSans 256 0 0 0 {}
+port 13 nsew
+flabel metal1 0 -5600 200 -5400 0 FreeSans 256 0 0 0 DELAY_CAP=DELAY_CAP
+port 14 nsew
+<< end >>

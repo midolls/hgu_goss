@@ -1,0 +1,40 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -90 -130 90 {}
+L 4 40 70 60 70 {}
+L 4 -130 -90 130 0 {}
+L 4 -130 90 130 -0 {}
+L 4 -80 70 -80 110 {}
+L 4 -80 -100 -80 -70 {}
+L 4 40 30 40 70 {}
+L 4 -40 60 -40 110 {}
+L 4 70 -20 160 -20 {}
+L 4 70 20 160 20 {}
+L 4 -170 -30 -130 -30 {}
+L 4 -170 30 -130 30 {}
+B 5 57.5 67.5 62.5 72.5 {name=ready dir=out}
+B 5 -172.5 27.5 -167.5 32.5 {name=cdac_vn dir=in}
+B 5 157.5 -22.5 162.5 -17.5 {name=comp_outp dir=out}
+B 5 157.5 17.5 162.5 22.5 {name=comp_outn dir=out}
+B 5 -172.5 -32.5 -167.5 -27.5 {name=cdac_vp dir=in}
+B 5 -42.5 107.5 -37.5 112.5 {name=clk dir=in}
+B 5 -82.5 -102.5 -77.5 -97.5 {name=VDD dir=in}
+B 5 -82.5 107.5 -77.5 112.5 {name=VSS dir=in}
+T {@symname} -66 -6 0 0 0.3 0.3 {}
+T {@name} -125 -62 0 0 0.2 0.2 {}
+T {ready} 85 76 0 1 0.2 0.2 {}
+T {cdac_vn} -125 26 0 0 0.2 0.2 {}
+T {comp_outp} 155 -34 0 1 0.2 0.2 {}
+T {comp_outn} 155 26 0 1 0.2 0.2 {}
+T {cdac_vp} -125 -34 0 0 0.2 0.2 {}
+T {clk} -35 106 0 0 0.2 0.2 {}
+T {VDD} -75 -94 0 0 0.2 0.2 {}
+T {VSS} -75 96 0 0 0.2 0.2 {}

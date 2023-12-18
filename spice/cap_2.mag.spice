@@ -1,0 +1,5 @@
+* NGSPICE file created from hgu_cdac_cap_2.ext - technology: sky130A
+
+.subckt hgu_cdac_cap_2 SUB CBOT CTOP
+.ends
+

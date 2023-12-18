@@ -1,0 +1,158 @@
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_8bit_array.sch
+.subckt hgu_cdac_8bit_array drv<0> drv<1:0> drv<3:0> drv<7:0> drv<15:0> drv<31:0> drv<63:0> tah<0>
+*+ tah<1:0> tah<3:0> tah<7:0> tah<15:0> tah<31:0> tah<63:0> SUB
+*.iopin drv<0>
+*.iopin drv<1:0>
+*.iopin drv<3:0>
+*.iopin drv<7:0>
+*.iopin drv<15:0>
+*.iopin drv<31:0>
+*.iopin drv<63:0>
+*.iopin tah<0>
+*.iopin tah<1:0>
+*.iopin tah<3:0>
+*.iopin tah<7:0>
+*.iopin tah<15:0>
+*.iopin tah<31:0>
+*.iopin tah<63:0>
+*.iopin SUB
+x1 tah<0> drv<0> SUB hgu_cdac_unit
+x2[1] tah<1:0> drv<1:0> SUB hgu_cdac_unit
+x2[0] tah<1:0> drv<1:0> SUB hgu_cdac_unit
+x3[3] tah<3:0> drv<3:0> SUB hgu_cdac_unit
+x3[2] tah<3:0> drv<3:0> SUB hgu_cdac_unit
+x3[1] tah<3:0> drv<3:0> SUB hgu_cdac_unit
+x3[0] tah<3:0> drv<3:0> SUB hgu_cdac_unit
+x4[7] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x4[6] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x4[5] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x4[4] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x4[3] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x4[2] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x4[1] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x4[0] tah<7:0> drv<7:0> SUB hgu_cdac_unit
+x5[15] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[14] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[13] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[12] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[11] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[10] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[9] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[8] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[7] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[6] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[5] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[4] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[3] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[2] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[1] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x5[0] tah<15:0> drv<15:0> SUB hgu_cdac_unit
+x6[31] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[30] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[29] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[28] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[27] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[26] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[25] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[24] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[23] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[22] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[21] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[20] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[19] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[18] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[17] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[16] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[15] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[14] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[13] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[12] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[11] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[10] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[9] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[8] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[7] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[6] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[5] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[4] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[3] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[2] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[1] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x6[0] tah<31:0> drv<31:0> SUB hgu_cdac_unit
+x7[63] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[62] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[61] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[60] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[59] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[58] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[57] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[56] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[55] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[54] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[53] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[52] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[51] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[50] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[49] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[48] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[47] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[46] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[45] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[44] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[43] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[42] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[41] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[40] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[39] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[38] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[37] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[36] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[35] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[34] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[33] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[32] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[31] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[30] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[29] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[28] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[27] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[26] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[25] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[24] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[23] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[22] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[21] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[20] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[19] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[18] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[17] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[16] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[15] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[14] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[13] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[12] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[11] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[10] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[9] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[8] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[7] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[6] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[5] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[4] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[3] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[2] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[1] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+x7[0] tah<63:0> drv<63:0> SUB hgu_cdac_unit
+**.ends
+
+* expanding   symbol:  hgu_cdac_unit.sym # of pins=3
+** sym_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_unit.sym
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_unit.sch
+*.subckt hgu_cdac_unit PLUS MINUS SUB  csize=1
+*.iopin PLUS
+*.iopin MINUS
+*.iopin SUB
+x1 PLUS MINUS SUB hgu_cdac_unit
+.ends
+
+.end

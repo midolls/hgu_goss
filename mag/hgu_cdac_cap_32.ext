@@ -1,0 +1,184 @@
+timestamp 1700813856
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use hgu_cdac_unit x1[0] 1 0 14490 0 1 -3644
+use hgu_cdac_unit x1[1] -1 0 16534 0 -1 -60
+use hgu_cdac_unit x1[2] 1 0 15096 0 1 -3644
+use hgu_cdac_unit x1[3] -1 0 17140 0 -1 -60
+use hgu_cdac_unit x1[4] 1 0 15702 0 1 -3644
+use hgu_cdac_unit x1[5] -1 0 17746 0 -1 -60
+use hgu_cdac_unit x1[6] 1 0 16308 0 1 -3644
+use hgu_cdac_unit x1[7] -1 0 18352 0 -1 -60
+use hgu_cdac_unit x1[8] 1 0 16914 0 1 -3644
+use hgu_cdac_unit x1[9] -1 0 18958 0 -1 -60
+use hgu_cdac_unit x1[10] 1 0 17520 0 1 -3644
+use hgu_cdac_unit x1[11] -1 0 19564 0 -1 -60
+use hgu_cdac_unit x1[12] 1 0 18126 0 1 -3644
+use hgu_cdac_unit x1[13] -1 0 20170 0 -1 -60
+use hgu_cdac_unit x1[14] 1 0 18732 0 1 -3644
+use hgu_cdac_unit x1[15] -1 0 20776 0 -1 -60
+use hgu_cdac_unit x1[16] 1 0 19338 0 1 -3644
+use hgu_cdac_unit x1[17] -1 0 21382 0 -1 -60
+use hgu_cdac_unit x1[18] 1 0 19944 0 1 -3644
+use hgu_cdac_unit x1[19] -1 0 21988 0 -1 -60
+use hgu_cdac_unit x1[20] 1 0 20550 0 1 -3644
+use hgu_cdac_unit x1[21] -1 0 22594 0 -1 -60
+use hgu_cdac_unit x1[22] 1 0 21156 0 1 -3644
+use hgu_cdac_unit x1[23] -1 0 23200 0 -1 -60
+use hgu_cdac_unit x1[24] 1 0 21762 0 1 -3644
+use hgu_cdac_unit x1[25] -1 0 23806 0 -1 -60
+use hgu_cdac_unit x1[26] 1 0 22368 0 1 -3644
+use hgu_cdac_unit x1[27] -1 0 24412 0 -1 -60
+use hgu_cdac_unit x1[28] 1 0 22974 0 1 -3644
+use hgu_cdac_unit x1[29] -1 0 25018 0 -1 -60
+use hgu_cdac_unit x1[30] 1 0 23580 0 1 -3644
+use hgu_cdac_unit x1[31] -1 0 25624 0 -1 -60
+port "CTOP" 8 19552 -2118 19596 -2026 m4
+port "CTOP" 6 19674 -1598 19718 -1506 m4
+port "CBOT" 4 19186 -1594 19230 -1502 m4
+port "SUB" 2 19616 -1798 19660 -1706 ppd
+node "CTOP" 0 50.7369 19552 -2118 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4048 272 0 0 0 0
+node "CTOP" 0 38.2734 19674 -1598 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4048 272 0 0 0 0
+node "CBOT" 0 38.2734 19186 -1594 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4048 272 0 0 0 0
+substrate "SUB" 0 0 19616 -1798 ppd 0 0 0 0 0 0 0 0 0 0 4048 272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "CTOP" "CBOT" 14.8244
+cap "x1[0]/CBOT" "x1[0]/SUB" -4.44089e-16
+cap "x1[1]/CTOP" "x1[0]/CBOT" -2.27374e-13
+cap "x1[0]/CBOT" "x1[0]/CTOP" -132.809
+cap "x1[0]/SUB" "x1[0]/CTOP" -4.44089e-16
+cap "x1[0]/CTOP" "x1[0]/CBOT" -132.809
+cap "x1[1]/CTOP" "x1[0]/CBOT" -3.41061e-13
+cap "x1[0]/SUB" "x1[0]/CBOT" -4.44089e-16
+cap "x1[2]/CBOT" "x1[4]/CTOP" -131.626
+cap "x1[2]/CBOT" "x1[5]/CTOP" -5.68434e-14
+cap "x1[2]/CBOT" "x1[4]/SUB" -4.44089e-16
+cap "x1[9]/CTOP" "x1[8]/CBOT" 1.98952e-13
+cap "x1[8]/CBOT" "x1[8]/CTOP" -200.397
+cap "x1[8]/SUB" "x1[9]/CTOP" 0.586631
+cap "x1[8]/SUB" "x1[8]/CBOT" 2.63403
+cap "x1[14]/SUB" "x1[12]/CBOT" -8.88178e-16
+cap "x1[12]/CBOT" "x1[15]/CTOP" -5.68434e-13
+cap "x1[12]/CTOP" "x1[12]/CBOT" -132.809
+cap "x1[14]/SUB" "x1[12]/CTOP" 4.44089e-16
+cap "x1[16]/CBOT" "x1[18]/CTOP" -132.809
+cap "x1[16]/CBOT" "x1[19]/CTOP" -1.7053e-13
+cap "x1[18]/SUB" "x1[16]/CBOT" -1.44329e-15
+cap "x1[22]/CBOT" "x1[23]/CTOP" 2.55795e-13
+cap "x1[22]/CBOT" "x1[22]/SUB" -4.44089e-16
+cap "x1[22]/CTOP" "x1[22]/CBOT" -132.809
+cap "x1[0]/SUB" "x1[0]/CBOT" 2.22045e-16
+cap "x1[0]/CBOT" "x1[1]/CTOP" -132.809
+cap "x1[0]/SUB" "x1[0]/CBOT" 2.22045e-16
+cap "x1[0]/CBOT" "x1[1]/CTOP" -132.809
+cap "x1[0]/SUB" "x1[1]/CTOP" -4.44089e-16
+cap "x1[4]/SUB" "x1[2]/CBOT" 2.22045e-16
+cap "x1[5]/CTOP" "x1[2]/CBOT" -139.038
+cap "x1[8]/CBOT" "x1[8]/SUB" 2.22045e-16
+cap "x1[9]/CTOP" "x1[8]/SUB" 0.49154
+cap "x1[9]/CTOP" "x1[8]/CBOT" -207.809
+cap "x1[14]/SUB" "x1[12]/CBOT" 2.22045e-16
+cap "x1[15]/CTOP" "x1[12]/CBOT" -132.809
+cap "x1[16]/CBOT" "x1[19]/CTOP" -132.809
+cap "x1[16]/CBOT" "x1[18]/SUB" 2.22045e-16
+cap "x1[18]/SUB" "x1[19]/CTOP" -3.33067e-16
+cap "x1[23]/CTOP" "x1[22]/CBOT" -132.809
+cap "x1[22]/SUB" "x1[22]/CBOT" 2.22045e-16
+merge "x1[31]/CTOP" "x1[30]/CTOP" -3691.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -134640 -8040 -142736 -8584 0 0 0 0
+merge "x1[30]/CTOP" "x1[29]/CTOP"
+merge "x1[29]/CTOP" "x1[28]/CTOP"
+merge "x1[28]/CTOP" "x1[27]/CTOP"
+merge "x1[27]/CTOP" "x1[26]/CTOP"
+merge "x1[26]/CTOP" "x1[25]/CTOP"
+merge "x1[25]/CTOP" "x1[24]/CTOP"
+merge "x1[24]/CTOP" "x1[23]/CTOP"
+merge "x1[23]/CTOP" "x1[22]/CTOP"
+merge "x1[22]/CTOP" "x1[21]/CTOP"
+merge "x1[21]/CTOP" "x1[20]/CTOP"
+merge "x1[20]/CTOP" "x1[19]/CTOP"
+merge "x1[19]/CTOP" "x1[18]/CTOP"
+merge "x1[18]/CTOP" "x1[17]/CTOP"
+merge "x1[17]/CTOP" "x1[16]/CTOP"
+merge "x1[16]/CTOP" "x1[15]/CTOP"
+merge "x1[15]/CTOP" "x1[13]/CTOP"
+merge "x1[13]/CTOP" "x1[11]/CTOP"
+merge "x1[11]/CTOP" "x1[9]/CTOP"
+merge "x1[9]/CTOP" "x1[7]/CTOP"
+merge "x1[7]/CTOP" "x1[5]/CTOP"
+merge "x1[5]/CTOP" "x1[3]/CTOP"
+merge "x1[3]/CTOP" "x1[1]/CTOP"
+merge "x1[1]/CTOP" "x1[14]/CTOP"
+merge "x1[14]/CTOP" "CTOP"
+merge "CTOP" "x1[12]/CTOP"
+merge "x1[12]/CTOP" "x1[10]/CTOP"
+merge "x1[10]/CTOP" "x1[8]/CTOP"
+merge "x1[8]/CTOP" "x1[6]/CTOP"
+merge "x1[6]/CTOP" "x1[4]/CTOP"
+merge "x1[4]/CTOP" "x1[2]/CTOP"
+merge "x1[2]/CTOP" "x1[0]/CTOP"
+merge "x1[31]/SUB" "x1[30]/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1[30]/SUB" "x1[29]/SUB"
+merge "x1[29]/SUB" "x1[28]/SUB"
+merge "x1[28]/SUB" "x1[27]/SUB"
+merge "x1[27]/SUB" "x1[26]/SUB"
+merge "x1[26]/SUB" "x1[25]/SUB"
+merge "x1[25]/SUB" "x1[24]/SUB"
+merge "x1[24]/SUB" "x1[23]/SUB"
+merge "x1[23]/SUB" "x1[22]/SUB"
+merge "x1[22]/SUB" "x1[21]/SUB"
+merge "x1[21]/SUB" "x1[20]/SUB"
+merge "x1[20]/SUB" "x1[19]/SUB"
+merge "x1[19]/SUB" "x1[18]/SUB"
+merge "x1[18]/SUB" "x1[17]/SUB"
+merge "x1[17]/SUB" "x1[16]/SUB"
+merge "x1[16]/SUB" "x1[15]/SUB"
+merge "x1[15]/SUB" "x1[14]/SUB"
+merge "x1[14]/SUB" "x1[13]/SUB"
+merge "x1[13]/SUB" "x1[12]/SUB"
+merge "x1[12]/SUB" "x1[11]/SUB"
+merge "x1[11]/SUB" "x1[10]/SUB"
+merge "x1[10]/SUB" "x1[9]/SUB"
+merge "x1[9]/SUB" "x1[8]/SUB"
+merge "x1[8]/SUB" "x1[7]/SUB"
+merge "x1[7]/SUB" "x1[6]/SUB"
+merge "x1[6]/SUB" "x1[5]/SUB"
+merge "x1[5]/SUB" "x1[4]/SUB"
+merge "x1[4]/SUB" "x1[3]/SUB"
+merge "x1[3]/SUB" "x1[2]/SUB"
+merge "x1[2]/SUB" "x1[1]/SUB"
+merge "x1[1]/SUB" "x1[0]/SUB"
+merge "x1[0]/SUB" "SUB"
+merge "x1[31]/CBOT" "x1[30]/CBOT" -34932.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2833896 -89380 -2837944 -89652 0 0 0 0
+merge "x1[30]/CBOT" "x1[29]/CBOT"
+merge "x1[29]/CBOT" "x1[28]/CBOT"
+merge "x1[28]/CBOT" "x1[27]/CBOT"
+merge "x1[27]/CBOT" "x1[26]/CBOT"
+merge "x1[26]/CBOT" "x1[25]/CBOT"
+merge "x1[25]/CBOT" "x1[24]/CBOT"
+merge "x1[24]/CBOT" "x1[23]/CBOT"
+merge "x1[23]/CBOT" "x1[22]/CBOT"
+merge "x1[22]/CBOT" "x1[21]/CBOT"
+merge "x1[21]/CBOT" "x1[20]/CBOT"
+merge "x1[20]/CBOT" "x1[19]/CBOT"
+merge "x1[19]/CBOT" "x1[18]/CBOT"
+merge "x1[18]/CBOT" "x1[17]/CBOT"
+merge "x1[17]/CBOT" "x1[16]/CBOT"
+merge "x1[16]/CBOT" "x1[15]/CBOT"
+merge "x1[15]/CBOT" "x1[14]/CBOT"
+merge "x1[14]/CBOT" "x1[13]/CBOT"
+merge "x1[13]/CBOT" "CBOT"
+merge "CBOT" "x1[12]/CBOT"
+merge "x1[12]/CBOT" "x1[11]/CBOT"
+merge "x1[11]/CBOT" "x1[10]/CBOT"
+merge "x1[10]/CBOT" "x1[9]/CBOT"
+merge "x1[9]/CBOT" "x1[8]/CBOT"
+merge "x1[8]/CBOT" "x1[7]/CBOT"
+merge "x1[7]/CBOT" "x1[6]/CBOT"
+merge "x1[6]/CBOT" "x1[5]/CBOT"
+merge "x1[5]/CBOT" "x1[4]/CBOT"
+merge "x1[4]/CBOT" "x1[3]/CBOT"
+merge "x1[3]/CBOT" "x1[2]/CBOT"
+merge "x1[2]/CBOT" "x1[1]/CBOT"
+merge "x1[1]/CBOT" "x1[0]/CBOT"

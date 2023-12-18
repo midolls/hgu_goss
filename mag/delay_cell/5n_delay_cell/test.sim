@@ -1,0 +1,7 @@
+| units: 500000 tech: sky130A format: MIT
+x input vdd output vdd s=4872,284 d=4872,284 l=30 w=84 x=707 y=1300 sky130_fd_pr__pfet_01v8
+x input vss output vss s=4872,284 d=4872,284 l=30 w=84 x=714 y=780 sky130_fd_pr__nfet_01v8
+R output 564
+R input 816
+R vdd 6984
+R vss 8636

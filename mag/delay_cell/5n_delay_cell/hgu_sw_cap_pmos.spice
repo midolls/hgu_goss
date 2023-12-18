@@ -1,0 +1,7 @@
+* SPICE3 file created from hgu_sw_cap_pmos.ext - technology: sky130A
+
+.subckt hgu_sw_cap_pmos SW delay_signal VDD
+X0 delay_signal SW a_872_1723# VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+C0 VDD a_872_1723# 5.5f
+C1 VDD VSUBS 3.48f
+.ends

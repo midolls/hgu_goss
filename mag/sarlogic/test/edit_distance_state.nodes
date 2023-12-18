@@ -1,0 +1,7 @@
+x1.inv_1 0 600 comment
+x2.inv_1 352 600 comment
+out 524 816 m1
+x2.A 150 647 ndif
+in -53 808 m1
+VDD 0 1108 m1
+VSS 0 530 m1

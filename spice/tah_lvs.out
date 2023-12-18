@@ -1,0 +1,75 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_YCY3T5 in circuit hgu_tah (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UJB66J in circuit hgu_tah (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UJKTUG in circuit hgu_tah (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5AY3TR in circuit hgu_tah (0)(2 instances)
+
+Class hgu_tah (0):  Merged 12 parallel devices.
+Subcircuit summary:
+Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (12->6)            |sky130_fd_pr__nfet_01v8 (4) **Mismatch**   
+sky130_fd_pr__pfet_01v8 (12->6)            |sky130_fd_pr__pfet_01v8 (4) **Mismatch**   
+Number of devices: 12 **Mismatch**         |Number of devices: 8 **Mismatch**          
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
+
+---------------------------------------------------------------------------------------
+Net: sw                                    |Net: sw                                    
+  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/4 = 6            |  sky130_fd_pr__pfet_01v8/4 = 4            
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  sky130_fd_pr__nfet_01v8/4 = 6            |  sky130_fd_pr__nfet_01v8/4 = 4            
+                                           |                                           
+Net: sw_n                                  |Net: sw_n                                  
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: hgu_tah                         |Circuit 2: hgu_tah                         
+-------------------------------------------|-------------------------------------------
+sw                                         |sw                                         
+VSS                                        |VDD **Mismatch**                           
+VDD                                        |VSS **Mismatch**                           
+sw_n                                       |sw_n                                       
+Cell pin lists are equivalent.
+Device classes hgu_tah and hgu_tah are equivalent.
+
+Final result: Netlists do not match.

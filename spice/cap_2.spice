@@ -1,0 +1,17 @@
+** sch_path: /foss/designs/hgu_goss/hgu/mag/cap_2.sch
+.subckt cap_2
+x1[1] net1[1] net2[1] net3[1] hgu_cdac_unit
+x1[0] net1[0] net2[0] net3[0] hgu_cdac_unit
+**.ends
+
+* expanding   symbol:  /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sym # of pins=3
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sch
+.subckt hgu_cdac_unit PLUS MINUS SUB  csize=1
+*.iopin PLUS
+*.iopin MINUS
+*.iopin SUB
+x1 PLUS MINUS SUB hgu_cdac_unit
+.ends
+
+.end

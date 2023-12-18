@@ -1,0 +1,53 @@
+| units: 500000 tech: sky130A format: MIT
+x input a_30_854# a_118_854# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=854 sky130_fd_pr__nfet_01v8
+x input a_84_1583# a_172_1721# vdd s=4872,284 d=4872,284 l=30 w=84 x=142 y=1721 sky130_fd_pr__pfet_01v8_hvt
+x input a_118_578# a_190_440# vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=578 sky130_fd_pr__nfet_01v8
+x input a_30_302# a_118_440# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=440 sky130_fd_pr__nfet_01v8
+x input a_118_992# output vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=992 sky130_fd_pr__nfet_01v8
+x input a_30_578# a_118_716# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=716 sky130_fd_pr__nfet_01v8
+x input a_118_164# a_190_164# vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=164 sky130_fd_pr__nfet_01v8
+x input a_84_1859# vdd vdd s=4872,284 d=4872,284 l=30 w=84 x=142 y=1997 sky130_fd_pr__pfet_01v8_hvt
+x input a_30_302# a_118_302# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=302 sky130_fd_pr__nfet_01v8
+x input a_118_854# a_190_716# vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=854 sky130_fd_pr__nfet_01v8
+x input a_30_26# a_118_26# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=26 sky130_fd_pr__nfet_01v8
+x input a_84_1583# a_172_1445# vdd s=4872,284 d=4872,284 l=30 w=84 x=142 y=1583 sky130_fd_pr__pfet_01v8_hvt
+x input a_84_1859# a_172_1721# vdd s=4872,284 d=4872,284 l=30 w=84 x=142 y=1859 sky130_fd_pr__pfet_01v8_hvt
+x input a_118_440# a_190_440# vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=440 sky130_fd_pr__nfet_01v8
+x input a_118_716# a_190_716# vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=716 sky130_fd_pr__nfet_01v8
+x input a_30_578# a_118_578# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=578 sky130_fd_pr__nfet_01v8
+x input a_84_1307# a_172_1445# vdd s=4872,284 d=4872,284 l=30 w=84 x=142 y=1445 sky130_fd_pr__pfet_01v8_hvt
+x input a_30_854# a_118_992# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=992 sky130_fd_pr__nfet_01v8
+x input a_118_302# a_190_164# vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=302 sky130_fd_pr__nfet_01v8
+x input a_30_26# a_118_164# vss s=4872,284 d=1764,126 l=30 w=84 x=88 y=164 sky130_fd_pr__nfet_01v8
+x input a_118_26# vss vss s=1764,126 d=4872,284 l=30 w=84 x=160 y=26 sky130_fd_pr__nfet_01v8
+x input a_84_1307# output vdd s=4872,284 d=4872,284 l=30 w=84 x=142 y=1307 sky130_fd_pr__pfet_01v8_hvt
+R output 565
+= output hgu_nfet_hvt_stack_in_delay_0.output_stack
+= output hgu_pfet_hvt_stack_in_delay_0.output_stack
+R input 5055
+= input hgu_nfet_hvt_stack_in_delay_0.input_stack
+= input hgu_pfet_hvt_stack_in_delay_0.input_stack
+R vdd 7972
+= vdd hgu_pfet_hvt_stack_in_delay_0.vdd
+R vss 12361
+= vss hgu_nfet_hvt_stack_in_delay_0.vss
+R a_118_26# 240
+R a_118_164# 240
+R a_30_26# 821
+R a_190_164# 821
+R a_118_302# 240
+R a_118_440# 240
+R a_30_302# 821
+R a_190_440# 821
+R a_118_578# 240
+R a_118_716# 240
+R a_30_578# 821
+R a_190_716# 821
+R a_118_854# 240
+R a_118_992# 240
+R a_30_854# 821
+R a_84_1307# 1292
+R a_172_1445# 1292
+R a_84_1583# 1292
+R a_172_1721# 1292
+R a_84_1859# 1292

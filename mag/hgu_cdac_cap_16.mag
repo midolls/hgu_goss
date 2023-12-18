@@ -1,0 +1,83 @@
+magic
+tech sky130A
+timestamp 1700813856
+<< psubdiff >>
+rect 2048 263 2070 304
+<< metal4 >>
+rect 1839 400 1857 440
+rect 2201 385 2219 425
+rect 1896 213 1918 254
+use hgu_cdac_unit  x1[0]
+timestamp 1700813856
+transform 1 0 456 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[1]
+timestamp 1700813856
+transform -1 0 1478 0 -1 1229
+box 343 299 679 913
+use hgu_cdac_unit  x1[2]
+timestamp 1700813856
+transform 1 0 759 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[3]
+timestamp 1700813856
+transform -1 0 1781 0 -1 1229
+box 343 299 679 913
+use hgu_cdac_unit  x1[4]
+timestamp 1700813856
+transform 1 0 1062 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[5]
+timestamp 1700813856
+transform -1 0 2084 0 -1 1229
+box 343 299 679 913
+use hgu_cdac_unit  x1[6]
+timestamp 1700813856
+transform 1 0 1365 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[7]
+timestamp 1700813856
+transform -1 0 2387 0 -1 1229
+box 343 299 679 913
+use hgu_cdac_unit  x1[8]
+timestamp 1700813856
+transform 1 0 1668 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[9]
+timestamp 1700813856
+transform -1 0 2690 0 -1 1229
+box 343 299 679 913
+use hgu_cdac_unit  x1[10]
+timestamp 1700813856
+transform 1 0 1971 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[11]
+timestamp 1700813856
+transform -1 0 2993 0 -1 1229
+box 343 299 679 913
+use hgu_cdac_unit  x1[12]
+timestamp 1700813856
+transform 1 0 2274 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[13]
+timestamp 1700813856
+transform -1 0 3296 0 -1 1229
+box 343 299 679 913
+use hgu_cdac_unit  x1[14]
+timestamp 1700813856
+transform 1 0 2577 0 1 -563
+box 343 299 679 913
+use hgu_cdac_unit  x1[15]
+timestamp 1700813856
+transform -1 0 3599 0 -1 1229
+box 343 299 679 913
+<< labels >>
+flabel metal4 2201 385 2219 425 0 FreeSans 160 0 0 0 CBOT
+port 2 nsew
+flabel metal4 1839 400 1857 440 0 FreeSans 160 0 0 0 CTOP
+port 4 nsew
+flabel metal4 1896 213 1918 254 0 FreeSans 160 0 0 0 CTOP
+port 8 nsew
+flabel psubdiff 2048 263 2070 304 0 FreeSans 160 0 0 0 SUB
+port 10 nsew
+<< end >>
