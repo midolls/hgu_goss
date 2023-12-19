@@ -1,4 +1,4 @@
-timestamp 1700938176
+timestamp 1701692850
 version 8.3
 tech sky130A
 style ngspice()
@@ -20,16 +20,16 @@ cap "a_476_372#" "VREF" 1.76412
 cap "m1_558_334#" "VREF" 7.79167
 cap "VDD" "VREF" 150.199
 cap "a_476_372#" "m1_558_334#" 4.13339
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" 9.43125
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n93_n84#" "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" 12.789
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" 6.41324
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n35_n111#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" 2.70947
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n35_n111#" "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" 21.9024
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n93_n84#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" 23.2758
 cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n93_n84#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n35_n111#" 11.7555
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" 25.0342
-cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n35_n111#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" 14.0795
 cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n93_n84#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" 19.1427
+cap "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n93_n84#" 12.789
+cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n93_n84#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" 23.2758
+cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n35_n111#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" 2.70947
+cap "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n35_n111#" 21.9024
+cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_n35_n111#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" 14.0795
+cap "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" 25.0342
+cap "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/a_35_n84#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" 9.43125
+cap "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/w_n164_n122#" 6.41324
 merge "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/VSUBS" "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" -69.5977 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__nfet_01v8_lvt_K7QELY_0/a_n93_n42#" "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/VSUBS"
 merge "sky130_fd_pr__pfet_01v8_lvt_EZRHP7_0/VSUBS" "VSS"

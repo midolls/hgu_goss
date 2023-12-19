@@ -1,0 +1,1591 @@
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_top.sch
+.subckt hgu_top
+x1 sar_clk EOB result[0] result[1] result[2] result[3] result[4] result[5] result[6] result[7]
++ tempD[0] tempD[1] tempD[2] tempD[3] tempD[4] tempD[5] tempD[6] tempD[7] sample_clk sel_bit[0] sel_bit[1]
++ sample_clk_b VDD result_b[0] result_b[1] result_b[2] result_b[3] result_b[4] result_b[5] result_b[6] result_b[7]
++ VSS EXT_CLK COMP_RESULT READY result_sw[1] result_sw[2] result_sw[3] result_sw[4] result_sw[5]
++ result_sw[6] result_sw[7] result_sw_b[1] result_sw_b[2] result_sw_b[3] result_sw_b[4] result_sw_b[5]
++ result_sw_b[6] result_sw_b[7] result2_sw[1] result2_sw[2] result2_sw[3] result2_sw[4] result2_sw[5] result2_sw[6]
++ result2_sw[7] result2_sw_b[1] result2_sw_b[2] result2_sw_b[3] result2_sw_b[4] result2_sw_b[5] result2_sw_b[6]
++ result2_sw_b[7] cap_ctrl_code[0] cap_ctrl_code[1] cap_ctrl_code[2] cap_ctrl_code[3] cap_ctrl_code[4]
++ cap_ctrl_code[5] cap_ctrl_code[6] cap_ctrl_code[7] hgu_sarlogic
+x2 Y X X_drive P Q READY tah_vn COMP_RESULT net11 tah_vp sar_clk Y_drive VDD VSS hgu_comp
+x3 sw5 swd4 sw3 result_sw[2] swd2 sw2 swd6 swd5 result_sw[1] sw4 sw6 result2_sw[2] result2_sw[1]
++ swd3 VSS VREF tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp tah_vp
++ tah_vp tah_vp tah_vp VDD hgu_cdac_half
+x4 net4 net8 net2 result_sw_b[2] net10 net1 net6 net7 result_sw_b[1] net3 net5 result2_sw_b[2]
++ result2_sw_b[1] net9 VSS VREF tah_vn tah_vn tah_vn tah_vn tah_vn tah_vn tah_vn tah_vn tah_vn tah_vn tah_vn tah_vn
++ tah_vn tah_vn tah_vn tah_vn VDD hgu_cdac_half
+x21 sample_clk VDD GND sample_clk_b tah_vp vip vin tah_vn hgu_tah
+V5 vip GND SINE(0.9 0.45 2MEG 0 0 0)
+.save i(v5)
+V6 vin GND SINE(0.9 0.45 2MEG 0 0 180)
+.save i(v6)
+C2 result[0] VSS 10f m=1
+V36 cap_ctrl_code[0] VSS 1.8
+.save i(v36)
+V37 VSS cap_ctrl_code[7] 0
+.save i(v37)
+V38 VSS cap_ctrl_code[6] 0
+.save i(v38)
+V39 VSS cap_ctrl_code[5] 0
+.save i(v39)
+V40 VSS cap_ctrl_code[4] 0
+.save i(v40)
+V41 VSS net12 0
+.save i(v41)
+V42 VSS net13 0
+.save i(v42)
+V43 VSS net14 0
+.save i(v43)
+V44 cap_ctrl_code[1] VSS 1.8
+.save i(v44)
+V45 cap_ctrl_code[2] VSS 1.8
+.save i(v45)
+V46 cap_ctrl_code[3] VSS 1.8
+.save i(v46)
+V47 net15 VSS 1.8
+.save i(v47)
+V48 net16 VSS 1.8
+.save i(v48)
+V49 net17 VSS 1.8
+.save i(v49)
+V50 net18 VSS 1.8
+.save i(v50)
+V51 VSS net19 0
+.save i(v51)
+V52 VDD GND 1.8
+.save i(v52)
+V53 VSS GND 0
+.save i(v53)
+V54 VPWR GND 1.8
+.save i(v54)
+V55 VNB GND 0
+.save i(v55)
+V56 VPB GND 1.8
+.save i(v56)
+V57 VGND GND 0
+.save i(v57)
+V60 EXT_CLK GND PULSE(0 1.8 0 10p 10p 50n 100n)
+.save i(v60)
+x5 VDD VSS EXT_CLK net20 hgu_vgen_vref
+C1 result_b[0] VSS 10f m=1
+V58 sel_bit[1] GND 1.8
+.save i(v58)
+V59 sel_bit[0] GND 1.8
+.save i(v59)
+x6 result2_sw[3] result2_sw[6] result2_sw[4] result2_sw[5] result2_sw[7] sw2 sw5 sw3 sw4 sw6
++ hgu_cdac_sw_buffer
+x7 result_sw[3] result_sw[6] result_sw[4] result_sw[5] result_sw[7] swd2 swd5 swd3 swd4 swd6
++ hgu_cdac_sw_buffer
+x8 result2_sw_b[3] result2_sw_b[6] result2_sw_b[4] result2_sw_b[5] result2_sw_b[7] net1 net4 net2
++ net3 net5 hgu_cdac_sw_buffer
+x9 result_sw_b[3] result_sw_b[6] result_sw_b[4] result_sw_b[5] result_sw_b[7] net10 net7 net9 net8
++ net6 hgu_cdac_sw_buffer
+V1 VREF GND 0.9
+.save i(v1)
+**** begin user architecture code
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.OPTIONS savecurrents
+.tran 10ps 800ns
+
+.control
+	run
+	plot V(sample_clk) V(vip) V(vin) V(vip)-V(vin)+0.9 V(tah_vp) V(tah_vn) V(tah_vp)-V(tah_vn)
++ V(vip)-V(vin)
+	plot V(EXT_CLK)-2 V(sample_clk) V(sample_clk_b) V(EOB)+2 V(READY)+4 V(sar_clk)+6 V(COMP_RESULT)+8
+	plot V("tempD[0]") V("tempD[1]")+2 V("tempD[2]")+4 V("tempD[3]")+6 V("tempD[4]")+8 V("tempD[5]")+10
++ V("tempD[6]")+12 V("tempD[7]")+14 V(sar_clk) V(sar_clk)+2 V(sar_clk)+4 V(sar_clk)+6 V(sar_clk)+8 V(sar_clk)+10
++ V(sar_clk)+12 V(sar_clk)+14 V(EOB)-2
+	*plot V("result_sw[1]")+2 V("result_sw[2]")+4 V("result_sw[3]")+6 V("result_sw[4]")+8
++ V("result_sw[5]")+10 V("result_sw[6]")+12 V("result_sw[7]")+14 V("result2_sw[1]")+2 V("result2_sw[2]")+4
++ V("result2_sw[3]")+6 V("result2_sw[4]")+8 V("result2_sw[5]")+10 V("result2_sw[6]")+12 V("result2_sw[7]")+14
+ 	*plot V(vip)-V(vin)+0.9 V(X)+2 V(Y)+2 V(Q)-2 V(P)-2 V(X_drive)+4 V(Y_drive)+4
+	plot V("result_sw[1]")+2 V("result_sw[2]")+4 V("result_sw[3]")+6 V("result_sw[4]")+8
++ V("result_sw[5]")+10 V("result_sw[6]")+12 V("result_sw[7]")+14 V("result2_sw[1]")+2 V("result2_sw[2]")+4
++ V("result2_sw[3]")+6 V("result2_sw[4]")+8 V("result2_sw[5]")+10 V("result2_sw[6]")+12 V("result2_sw[7]")+14
++ V("result_sw_b[1]")+2 V("result_sw_b[2]")+4 V("result_sw_b[3]")+6 V("result_sw_b[4]")+8 V("result_sw_b[5]")+10
++ V("result_sw_b[6]")+12 V("result_sw_b[7]")+14 V("result2_sw_b[1]")+2 V("result2_sw_b[2]")+4 V("result2_sw_b[3]")+6
++ V("result2_sw_b[4]")+8 V("result2_sw_b[5]")+10 V("result2_sw_b[6]")+12 V("result2_sw_b[7]")+14
+
+
+
+.endc
+.save all
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  hgu_sarlogic.sym # of pins=18
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic.sch
+.subckt hgu_sarlogic sar_clk EOB sar_result[0] sar_result[1] sar_result[2] sar_result[3]
++ sar_result[4] sar_result[5] sar_result[6] sar_result[7] check[0] check[1] check[2] check[3] check[4] check[5]
++ check[6] check[7] sample_clk sel_bit[0] sel_bit[1] sample_clk_b VDD sar_result_b[0] sar_result_b[1]
++ sar_result_b[2] sar_result_b[3] sar_result_b[4] sar_result_b[5] sar_result_b[6] sar_result_b[7] VSS EXT_CLK
++ COMP_RESULT READY vdd_sw[1] vdd_sw[2] vdd_sw[3] vdd_sw[4] vdd_sw[5] vdd_sw[6] vdd_sw[7] vdd_sw_b[1] vdd_sw_b[2]
++ vdd_sw_b[3] vdd_sw_b[4] vdd_sw_b[5] vdd_sw_b[6] vdd_sw_b[7] vss_sw[1] vss_sw[2] vss_sw[3] vss_sw[4] vss_sw[5]
++ vss_sw[6] vss_sw[7] vss_sw_b[1] vss_sw_b[2] vss_sw_b[3] vss_sw_b[4] vss_sw_b[5] vss_sw_b[6] vss_sw_b[7]
++ cap_ctrl_code[0] cap_ctrl_code[1] cap_ctrl_code[2] cap_ctrl_code[3] cap_ctrl_code[4] cap_ctrl_code[5]
++ cap_ctrl_code[6] cap_ctrl_code[7]
+*.ipin VDD
+*.ipin VSS
+*.ipin COMP_RESULT
+*.ipin READY
+*.ipin EXT_CLK
+*.opin sar_clk
+*.opin EOB
+*.opin
+*+ sar_result[0],sar_result[1],sar_result[2],sar_result[3],sar_result[4],sar_result[5],sar_result[6],sar_result[7]
+*.opin check[0],check[1],check[2],check[3],check[4],check[5],check[6],check[7]
+*.opin sample_clk
+*.ipin sel_bit[0],sel_bit[1]
+*.ipin
+*+ cap_ctrl_code[0],cap_ctrl_code[1],cap_ctrl_code[2],cap_ctrl_code[3],cap_ctrl_code[4],cap_ctrl_code[5],cap_ctrl_code[6],cap_ctrl_code[7]
+*.opin sample_clk_b
+*.opin
+*+ sar_result_b[0],sar_result_b[1],sar_result_b[2],sar_result_b[3],sar_result_b[4],sar_result_b[5],sar_result_b[6],sar_result_b[7]
+*.opin vdd_sw[1],vdd_sw[2],vdd_sw[3],vdd_sw[4],vdd_sw[5],vdd_sw[6],vdd_sw[7]
+*.opin vdd_sw_b[1],vdd_sw_b[2],vdd_sw_b[3],vdd_sw_b[4],vdd_sw_b[5],vdd_sw_b[6],vdd_sw_b[7]
+*.opin vss_sw[1],vss_sw[2],vss_sw[3],vss_sw[4],vss_sw[5],vss_sw[6],vss_sw[7]
+*.opin vss_sw_b[1],vss_sw_b[2],vss_sw_b[3],vss_sw_b[4],vss_sw_b[5],vss_sw_b[6],vss_sw_b[7]
+x1 sar_clk VDD VSS sample_clk EOB READY hgu_clk_async
+x2 sample_clk VDD VSS EXT_CLK VSS VSS sample_clk_b cap_ctrl_code[0] cap_ctrl_code[1]
++ cap_ctrl_code[2] cap_ctrl_code[3] cap_ctrl_code[4] cap_ctrl_code[5] cap_ctrl_code[6] cap_ctrl_code[7] hgu_clk_sample
+x3 sel_bit[0] sel_bit[1] EOB sar_clk sar_result[0] sar_result[1] sar_result[2] sar_result[3]
++ sar_result[4] sar_result[5] sar_result[6] sar_result[7] COMP_RESULT check[0] check[1] check[2] check[3] check[4]
++ check[5] check[6] check[7] sample_clk sar_result_b[0] sar_result_b[1] sar_result_b[2] sar_result_b[3]
++ sar_result_b[4] sar_result_b[5] sar_result_b[6] sar_result_b[7] VDD VSS hgu_sarlogic_8bit_logic csize=0.001
+C1 sample_clk VSS 5f m=1
+C2 sar_clk VSS 5f m=1
+C3 EOB VSS 5f m=1
+x4 VDD VSS vdd_sw[1] vdd_sw[2] vdd_sw[3] vdd_sw[4] vdd_sw[5] vdd_sw[6] vdd_sw[7] vdd_sw_b[1]
++ vdd_sw_b[2] vdd_sw_b[3] vdd_sw_b[4] vdd_sw_b[5] vdd_sw_b[6] vdd_sw_b[7] sar_result[1] sar_result[2]
++ sar_result[3] sar_result[4] sar_result[5] sar_result[6] sar_result[7] vss_sw[1] vss_sw[2] vss_sw[3] vss_sw[4]
++ vss_sw[5] vss_sw[6] vss_sw[7] check[0] check[1] check[2] check[3] check[4] check[5] check[6] vss_sw_b[1]
++ vss_sw_b[2] vss_sw_b[3] vss_sw_b[4] vss_sw_b[5] vss_sw_b[6] vss_sw_b[7] sar_clk sample_clk_b
++ hgu_sarlogic_sw_ctrl
+.ends
+
+
+* expanding   symbol:  hgu_comp.sym # of pins=14
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_comp.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_comp.sch
+.subckt hgu_comp Y X X_drive P Q ready cdac_vn comp_outp comp_outn cdac_vp clk Y_drive VDD VSS
+*.ipin cdac_vn
+*.ipin cdac_vp
+*.ipin VSS
+*.ipin VDD
+*.ipin clk
+*.opin X
+*.opin Y
+*.opin P
+*.opin Q
+*.opin ready
+*.opin X_drive
+*.opin Y_drive
+*.opin comp_outp
+*.opin comp_outn
+XM1 net1 clk VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y X Q VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 X Y P VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 X Y VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 Y X VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 X clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 P clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM10 Y clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM11 Q clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM16 RS_n RS_p VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM17 RS_p RS_n VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM19 RS_p Y_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM23 RS_n X_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 P cdac_vp net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=4 ad='int((nf+1)/2) * W / nf * 0.29'
++ as='int((nf+2)/2) * W / nf * 0.29' pd='2*int((nf+1)/2) * (W / nf + 0.29)' ps='2*int((nf+2)/2) * (W / nf + 0.29)'
++ nrd='0.29 / W ' nrs='0.29 / W ' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Q cdac_vn net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=4 ad='int((nf+1)/2) * W / nf * 0.29'
++ as='int((nf+2)/2) * W / nf * 0.29' pd='2*int((nf+1)/2) * (W / nf + 0.29)' ps='2*int((nf+2)/2) * (W / nf + 0.29)'
++ nrd='0.29 / W ' nrs='0.29 / W ' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 X_inv X VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM13 X_inv X VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM14 X_drive X_inv VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM15 X_drive X_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM18 Y_inv Y VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM20 Y_inv Y VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM21 Y_drive Y_inv VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM22 Y_drive Y_inv VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM24 net2 Y_drive X_drive VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM25 net2 X_drive Y_drive VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM26 net2 Y_drive net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM27 net3 X_drive VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM28 ready net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM29 ready net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+C1 Q VSS 5f m=1
+C2 P VSS 5f m=1
+C3 Y VSS 5f m=1
+C4 X VSS 5f m=1
+C5 net1 VSS 5f m=1
+C6 cdac_vn VSS 5f m=1
+C7 cdac_vp VSS 5f m=1
+C8 X_inv VSS 5f m=1
+C9 Y_inv VSS 5f m=1
+C10 Y_drive VSS 5f m=1
+C11 X_drive VSS 5f m=1
+C12 net2 VSS 5f m=1
+C13 ready VSS 5f m=1
+C14 RS_p VSS 5f m=1
+C15 RS_n VSS 5f m=1
+C16 clk VSS 5f m=1
+C17 clk VSS 5f m=1
+C18 clk VSS 5f m=1
+C19 clk VSS 5f m=1
+C20 clk VSS 5f m=1
+XM30 net4 RS_p VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM31 net4 RS_p VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM32 comp_outp net4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=3 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM33 comp_outp net4 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM34 net5 RS_n VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM35 net5 RS_n VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM36 comp_outn net5 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=3 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM37 comp_outn net5 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+C21 net4 VSS 5f m=1
+C22 net5 VSS 5f m=1
+C23 comp_outn VSS 5f m=1
+C24 comp_outp VSS 5f m=1
+.ends
+
+
+* expanding   symbol:  hgu_cdac_half.sym # of pins=33
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_half.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_half.sch
+.subckt hgu_cdac_half d<5> db<4> d<3> db<1> db<2> d<2> db<6> db<5> db<0> d<4> d<6> d<1> d<0> db<3>
++ VSS VREF tu tub tb<0> tb<1> tb<2> tb<4> tb<5> tb<6> t<0> tb<3> t<1> t<2> t<3> t<4> t<5> t<6> VDD
+*.iopin d<6>
+*.iopin d<5>
+*.iopin d<4>
+*.iopin d<3>
+*.iopin d<2>
+*.iopin d<1>
+*.iopin d<0>
+*.iopin db<6>
+*.iopin db<5>
+*.iopin db<4>
+*.iopin db<3>
+*.iopin db<2>
+*.iopin db<1>
+*.iopin db<0>
+*.ipin VSS
+*.ipin VREF
+*.iopin t<6>
+*.iopin t<5>
+*.iopin t<4>
+*.iopin t<3>
+*.iopin t<2>
+*.iopin t<1>
+*.iopin t<0>
+*.iopin tb<6>
+*.iopin tb<5>
+*.iopin tb<4>
+*.iopin tb<3>
+*.iopin tb<2>
+*.iopin tb<1>
+*.iopin tb<0>
+*.iopin tu
+*.iopin tub
+*.ipin VDD
+x1 sw5 net1 net2 sw2 sw6 sw4 sw3 t<6> t<5> t<4> t<3> t<2> t<1> t<0> hgu_cdac_8bit_array
+x2 VREF d<4> d<1> d<2> d<3> d<5> d<6> d<0> sw2 sw3 sw4 sw5 net2 net1 sw6 VSS VDD hgu_cdac_drv
+x3 swd5 net3 net4 swd2 swd6 swd4 swd3 tb<6> tb<5> tb<4> tb<3> tb<2> tb<1> tb<0> hgu_cdac_8bit_array
+x4 VREF db<4> db<1> db<2> db<3> db<5> db<6> db<0> swd2 swd3 swd4 swd5 net4 net3 swd6 VSS VDD
++ hgu_cdac_drv
+x9 tu VSS hgu_cdac_unit csize=1
+x10 tub VSS hgu_cdac_unit csize=1
+.ends
+
+
+* expanding   symbol:  hgu_tah.sym # of pins=8
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_tah.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_tah.sch
+.subckt hgu_tah sw VDD VSS sw_n tah_vp vip vin tah_vn
+*.iopin tah_vp
+*.iopin vip
+*.iopin VDD
+*.iopin VSS
+*.ipin sw
+*.ipin sw_n
+*.iopin tah_vn
+*.iopin vin
+XM1 tah_vp sw tah_vp VDD sky130_fd_pr__pfet_01v8 L=0.22 W=7.6 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 tah_vp sw vip VSS sky130_fd_pr__nfet_01v8 L=0.22 W=7.6 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 vip sw_n tah_vp VDD sky130_fd_pr__pfet_01v8 L=0.22 W=15.2 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 tah_vp sw_n tah_vp VSS sky130_fd_pr__nfet_01v8 L=0.22 W=3.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 vin sw_n tah_vn VDD sky130_fd_pr__pfet_01v8 L=0.22 W=15.2 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 tah_vn sw tah_vn VDD sky130_fd_pr__pfet_01v8 L=0.22 W=7.6 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 tah_vn sw vin VSS sky130_fd_pr__nfet_01v8 L=0.22 W=7.6 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 tah_vn sw_n tah_vn VSS sky130_fd_pr__nfet_01v8 L=0.22 W=3.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+C1 vip VSS 5f m=1
+C2 tah_vp VSS 5f m=1
+C3 vin VSS 5f m=1
+C4 tah_vn VSS 5f m=1
+C5 tah_vp VSS 5f m=1
+C6 tah_vp VSS 5f m=1
+C7 tah_vn VSS 5f m=1
+C8 tah_vn VSS 5f m=1
+.ends
+
+
+* expanding   symbol:  hgu_vgen_vref.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_vgen_vref.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_vgen_vref.sch
+.subckt hgu_vgen_vref VDD VSS clk vcm
+*.iopin VDD
+*.iopin VSS
+*.ipin clk
+*.iopin vcm
+X1 clk VDD VSS phi1_n phi1 phi2 phi2_n adc_vcm_clkgen
+x_decap_1 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+x_decap_2 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+x_decap_3 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+X2 phi2_n VDD phi2 mimtop1 VDD VSS adc_vcm_switch
+x_cap1_1 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_2 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_3 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_4 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_5 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_6 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_7 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_8 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_9 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_10 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_11 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_12 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_13 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_14 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_15 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_16 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_17 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_18 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_19 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_20 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_21 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_22 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_23 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_24 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_25 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_26 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_27 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_28 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_29 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_30 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_31 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_32 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_33 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_34 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_35 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_36 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_37 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_38 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_39 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap1_40 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_1 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_2 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_3 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_4 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_5 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_6 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_7 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_8 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_9 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_10 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_11 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_12 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_13 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_14 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_15 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_16 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_17 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_18 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_19 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_20 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_21 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_22 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_23 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_24 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_25 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_26 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_27 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_28 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_29 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_30 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_31 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_32 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_33 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_34 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_35 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_36 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_37 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_38 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_39 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_40 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+X4 phi1_n mimbot1 phi1 VSS VDD VSS adc_vcm_switch
+X3 phi2_n mimbot1 phi2 mimtop2 VDD VSS adc_vcm_switch
+X6 phi1_n mimtop2 phi1 vcm VDD VSS adc_vcm_switch
+X5 phi1_n mimtop1 phi1 vcm VDD VSS adc_vcm_switch
+.ends
+
+
+* expanding   symbol:  hgu_cdac_sw_buffer.sym # of pins=10
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_sw_buffer.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_sw_buffer.sch
+.subckt hgu_cdac_sw_buffer sar_val<3> sar_val<6> sar_val<4> sar_val<5> sar_val<7> sw<2> sw<5> sw<3>
++ sw<4> sw<6>
+*.ipin sar_val<7>
+*.opin sw<6>
+*.opin sw<5>
+*.opin sw<4>
+*.opin sw<3>
+*.opin sw<2>
+*.ipin sar_val<6>
+*.ipin sar_val<5>
+*.ipin sar_val<4>
+*.ipin sar_val<3>
+x6 sar_val<3> VGND VNB VPB VPWR sw<2> sky130_fd_sc_hd__buf_1
+x7 sar_val<5> VGND VNB VPB VPWR net1 sky130_fd_sc_hd__buf_1
+x9 sar_val<7> VGND VNB VPB VPWR net2 sky130_fd_sc_hd__buf_1
+x8 net1 VGND VNB VPB VPWR sw<4> sky130_fd_sc_hd__buf_4
+x10 net2 VGND VNB VPB VPWR net3 sky130_fd_sc_hd__buf_4
+x11 net3 VGND VNB VPB VPWR sw<6> sky130_fd_sc_hd__buf_16
+x12 sar_val<4> VGND VNB VPB VPWR sw<3> sky130_fd_sc_hd__buf_1
+x13 sar_val<6> VGND VNB VPB VPWR net4 sky130_fd_sc_hd__buf_1
+x14 net4 VGND VNB VPB VPWR sw<5> sky130_fd_sc_hd__buf_4
+.ends
+
+
+* expanding   symbol:  hgu_clk_async.sym # of pins=6
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_async.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_async.sch
+.subckt hgu_clk_async ASYNC_CLK_SAR VDD VSS sample_clk EOC READY
+*.ipin VDD
+*.opin ASYNC_CLK_SAR
+*.ipin VSS
+*.ipin sample_clk
+*.ipin EOC
+*.ipin READY
+V10 VSS async_cap_ctrl_code[3] 0
+.save i(v10)
+V11 VSS async_cap_ctrl_code[6] 0
+.save i(v11)
+V12 VSS async_cap_ctrl_code[5] 0
+.save i(v12)
+V28 VSS async_cap_ctrl_code[4] 0
+.save i(v28)
+V29 VSS async_cap_ctrl_code[0] 0
+.save i(v29)
+V30 VSS async_cap_ctrl_code[2] 0
+.save i(v30)
+V31 VSS async_cap_ctrl_code[1] 0
+.save i(v31)
+x6 net4 net5 net6 net7 hgu_delay_no_code
+x7 net8 net9 net10 net11 hgu_delay_no_code
+V1 net17 VSS 1.8
+.save i(v1)
+x3 net2 VSS sample_clk VGND VNB VPB VPWR net18 sky130_fd_sc_hd__mux2_1
+x8 net18 VSS EOC VGND VNB VPB VPWR ASYNC_CLK_SAR sky130_fd_sc_hd__mux2_1
+x27 sample_clk VDD net19 net20 VGND VNB VPB VPWR net2 net21 sky130_fd_sc_hd__dfbbp_1
+x9 net1 VGND VNB VPB VPWR net20 sky130_fd_sc_hd__inv_1
+x10 net3 VGND VNB VPB VPWR net19 sky130_fd_sc_hd__inv_1
+C1 net1 VSS 5f m=1
+C2 net3 VSS 5f m=1
+C3 net2 VSS 5f m=1
+C4 net18 VSS 5f m=1
+x1 net13 net14 net12 net15 net16 net16 net16 net16 net16 net16 net16 net16 hgu_delay DELAY_CAP=1f
+V2 VSS async_cap_ctrl_code[7] 0
+.save i(v2)
+x2 VDD READY net1 VSS hgu_delay_no_code
+x4 VDD ASYNC_CLK_SAR net3 VSS hgu_delay_no_code
+.ends
+
+
+* expanding   symbol:  hgu_clk_sample.sym # of pins=8
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_sample.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_sample.sch
+.subckt hgu_clk_sample SAMPLE_CLK VDD VSS CLK RESET SET SAMPLE_CLK_b cap_ctrl_code[0]
++ cap_ctrl_code[1] cap_ctrl_code[2] cap_ctrl_code[3] cap_ctrl_code[4] cap_ctrl_code[5] cap_ctrl_code[6]
++ cap_ctrl_code[7]
+*.ipin VDD
+*.ipin VSS
+*.ipin SET
+*.ipin RESET
+*.ipin CLK
+*.opin SAMPLE_CLK
+*.ipin
+*+ cap_ctrl_code[0],cap_ctrl_code[1],cap_ctrl_code[2],cap_ctrl_code[3],cap_ctrl_code[4],cap_ctrl_code[5],cap_ctrl_code[6],cap_ctrl_code[7]
+*.opin SAMPLE_CLK_b
+x1 net2 CLK RESET SET hgu_clk_div
+x2 VDD net2 net5 VSS cap_ctrl_code[0] cap_ctrl_code[1] cap_ctrl_code[2] cap_ctrl_code[3]
++ cap_ctrl_code[4] cap_ctrl_code[5] cap_ctrl_code[6] cap_ctrl_code[7] hgu_delay DELAY_CAP=8f
+x7 net5 VGND VNB VPB VPWR net1 sky130_fd_sc_hd__inv_1
+C1 net1 VSS 5f m=1
+C2 net2 VSS 5f m=1
+C3 net5 VSS 5f m=1
+x3 net2 net1 VGND VNB VPB VPWR net3 sky130_fd_sc_hd__nand2_1
+XM1 SAMPLE_CLK net3 VSS VSS sky130_fd_pr__nfet_01v8 L=0.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 SAMPLE_CLK net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=3.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net4 net3 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net4 net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 SAMPLE_CLK_b net4 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 SAMPLE_CLK_b net4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.98 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  hgu_sarlogic_8bit_logic.sym # of pins=10
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_8bit_logic.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_8bit_logic.sch
+.subckt hgu_sarlogic_8bit_logic sel_bit[0] sel_bit[1] EOB clk_sar D[0] D[1] D[2] D[3] D[4] D[5] D[6]
++ D[7] comparator_out check[0] check[1] check[2] check[3] check[4] check[5] check[6] check[7] reset D_b[0]
++ D_b[1] D_b[2] D_b[3] D_b[4] D_b[5] D_b[6] D_b[7] VDD VSS  csize=csize
+*.ipin clk_sar
+*.ipin VDD
+*.ipin VSS
+*.ipin comparator_out
+*.ipin reset
+*.opin EOB
+*.opin D[0],D[1],D[2],D[3],D[4],D[5],D[6],D[7]
+*.opin check[0],check[1],check[2],check[3],check[4],check[5],check[6],check[7]
+*.ipin sel_bit[0],sel_bit[1]
+*.opin D_b[0],D_b[1],D_b[2],D_b[3],D_b[4],D_b[5],D_b[6],D_b[7]
+x20 clk_sar_buff EOB VDD resetb VGND VNB VPB VPWR check[7] net3 sky130_fd_sc_hd__dfbbp_1
+x27 clk_sar_buff check[7] resetb VDD VGND VNB VPB VPWR check[6] net4 sky130_fd_sc_hd__dfbbp_1
+x30 clk_sar_buff check[6] resetb VDD VGND VNB VPB VPWR check[5] net5 sky130_fd_sc_hd__dfbbp_1
+x33 clk_sar_buff check[5] resetb VDD VGND VNB VPB VPWR check[4] net6 sky130_fd_sc_hd__dfbbp_1
+x36 clk_sar_buff check[4] resetb VDD VGND VNB VPB VPWR check[3] net7 sky130_fd_sc_hd__dfbbp_1
+x39 clk_sar_buff check[3] resetb VDD VGND VNB VPB VPWR check[2] net8 sky130_fd_sc_hd__dfbbp_1
+x42 clk_sar_buff check[2] resetb VDD VGND VNB VPB VPWR check[1] net9 sky130_fd_sc_hd__dfbbp_1
+x45 clk_sar_buff check[1] resetb VDD VGND VNB VPB VPWR check[0] net10 sky130_fd_sc_hd__dfbbp_1
+x48 clk_sar_buff check[0] resetb VDD VGND VNB VPB VPWR net2 net11 sky130_fd_sc_hd__dfbbp_1
+x51 D[6] comparator_out resetb net3 VGND VNB VPB VPWR D[7] D_b[7] sky130_fd_sc_hd__dfbbp_1
+x54 D[5] comparator_out resetb net4 VGND VNB VPB VPWR D[6] D_b[6] sky130_fd_sc_hd__dfbbp_1
+x57 D[4] comparator_out resetb net5 VGND VNB VPB VPWR D[5] D_b[5] sky130_fd_sc_hd__dfbbp_1
+x60 D[3] comparator_out resetb net6 VGND VNB VPB VPWR D[4] D_b[4] sky130_fd_sc_hd__dfbbp_1
+x63 D[2] comparator_out resetb net7 VGND VNB VPB VPWR D[3] D_b[3] sky130_fd_sc_hd__dfbbp_1
+x66 D[1] comparator_out resetb net8 VGND VNB VPB VPWR D[2] D_b[2] sky130_fd_sc_hd__dfbbp_1
+x69 D[0] comparator_out resetb net9 VGND VNB VPB VPWR D[1] D_b[1] sky130_fd_sc_hd__dfbbp_1
+x72 net1 comparator_out resetb net10 VGND VNB VPB VPWR D[0] D_b[0] sky130_fd_sc_hd__dfbbp_1
+x75 VSS VSS resetb net12 VGND VNB VPB VPWR net1 net13 sky130_fd_sc_hd__dfbbp_1
+x77 EOB VGND VNB VPB VPWR net12 sky130_fd_sc_hd__inv_1
+x78 check[2] check[1] check[0] net2 sel_bit[0] sel_bit[1] VGND VNB VPB VPWR EOB
++ sky130_fd_sc_hd__mux4_4
+x22[17] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[16] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[15] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[14] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[13] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[12] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[11] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[10] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[9] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[8] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[7] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[6] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[5] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[4] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[3] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[2] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[1] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22[0] reset VGND VNB VPB VPWR resetb sky130_fd_sc_hd__inv_1
+x22 clk_sar VGND VNB VPB VPWR clk_sar_buff sky130_fd_sc_hd__buf_1
+C2[17] resetb VSS 5f m=1
+C2[16] resetb VSS 5f m=1
+C2[15] resetb VSS 5f m=1
+C2[14] resetb VSS 5f m=1
+C2[13] resetb VSS 5f m=1
+C2[12] resetb VSS 5f m=1
+C2[11] resetb VSS 5f m=1
+C2[10] resetb VSS 5f m=1
+C2[9] resetb VSS 5f m=1
+C2[8] resetb VSS 5f m=1
+C2[7] resetb VSS 5f m=1
+C2[6] resetb VSS 5f m=1
+C2[5] resetb VSS 5f m=1
+C2[4] resetb VSS 5f m=1
+C2[3] resetb VSS 5f m=1
+C2[2] resetb VSS 5f m=1
+C2[1] resetb VSS 5f m=1
+C2[0] resetb VSS 5f m=1
+C2 check[7] VSS 5f m=1
+C3 check[6] VSS 5f m=1
+C4 check[5] VSS 5f m=1
+C5 check[4] VSS 5f m=1
+C6 check[3] VSS 5f m=1
+C7 check[2] VSS 5f m=1
+C8 check[1] VSS 5f m=1
+C9 check[0] VSS 5f m=1
+C10 net2 VSS 5f m=1
+C11 EOB VSS 5f m=1
+C12 D[6] VSS 5f m=1
+C13 D[5] VSS 5f m=1
+C14 D[4] VSS 5f m=1
+C15 D[3] VSS 5f m=1
+C16 D[2] VSS 5f m=1
+C17 D[1] VSS 5f m=1
+C18 D[0] VSS 5f m=1
+C19 net1 VSS 5f m=1
+C20 D[7] VSS 5f m=1
+C21 D[6] VSS 5f m=1
+C22 D[5] VSS 5f m=1
+C23 D[4] VSS 5f m=1
+C24 D[3] VSS 5f m=1
+C25 D[2] VSS 5f m=1
+C26 D[1] VSS 5f m=1
+C27 D[0] VSS 5f m=1
+C28 net4 VSS 5f m=1
+C29 net5 VSS 5f m=1
+C30 net6 VSS 5f m=1
+C31 net7 VSS 5f m=1
+C32 net8 VSS 5f m=1
+C33 net9 VSS 5f m=1
+C34 net10 VSS 5f m=1
+C35 net12 VSS 5f m=1
+C36 clk_sar_buff VSS 5f m=1
+C1 D_b[7] VSS 5f m=1
+C37 D_b[6] VSS 5f m=1
+C38 D_b[5] VSS 5f m=1
+C39 D_b[4] VSS 5f m=1
+C40 D_b[3] VSS 5f m=1
+C41 D_b[2] VSS 5f m=1
+C42 D_b[1] VSS 5f m=1
+C43 D_b[0] VSS 5f m=1
+.ends
+
+
+* expanding   symbol:  hgu_sarlogic_sw_ctrl.sym # of pins=10
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_sw_ctrl.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sarlogic_sw_ctrl.sch
+.subckt hgu_sarlogic_sw_ctrl VDD VSS vdd_sw[1] vdd_sw[2] vdd_sw[3] vdd_sw[4] vdd_sw[5] vdd_sw[6]
++ vdd_sw[7] vdd_sw_b[1] vdd_sw_b[2] vdd_sw_b[3] vdd_sw_b[4] vdd_sw_b[5] vdd_sw_b[6] vdd_sw_b[7] D[1] D[2] D[3]
++ D[4] D[5] D[6] D[7] vss_sw[1] vss_sw[2] vss_sw[3] vss_sw[4] vss_sw[5] vss_sw[6] vss_sw[7] check[0]
++ check[1] check[2] check[3] check[4] check[5] check[6] vss_sw_b[1] vss_sw_b[2] vss_sw_b[3] vss_sw_b[4]
++ vss_sw_b[5] vss_sw_b[6] vss_sw_b[7] READY resetb
+*.opin vdd_sw[1],vdd_sw[2],vdd_sw[3],vdd_sw[4],vdd_sw[5],vdd_sw[6],vdd_sw[7]
+*.opin vdd_sw_b[1],vdd_sw_b[2],vdd_sw_b[3],vdd_sw_b[4],vdd_sw_b[5],vdd_sw_b[6],vdd_sw_b[7]
+*.opin vss_sw[1],vss_sw[2],vss_sw[3],vss_sw[4],vss_sw[5],vss_sw[6],vss_sw[7]
+*.opin vss_sw_b[1],vss_sw_b[2],vss_sw_b[3],vss_sw_b[4],vss_sw_b[5],vss_sw_b[6],vss_sw_b[7]
+*.ipin VDD
+*.ipin VSS
+*.ipin READY
+*.ipin D[1],D[2],D[3],D[4],D[5],D[6],D[7]
+*.ipin check[0],check[1],check[2],check[3],check[4],check[5],check[6]
+*.ipin resetb
+x4 net1 D[7] VDD resetb VGND VNB VPB VPWR vdd_sw[7] vdd_sw_b[7] sky130_fd_sc_hd__dfbbn_1
+x5 net2 D[7] resetb VDD VGND VNB VPB VPWR vss_sw[7] vss_sw_b[7] sky130_fd_sc_hd__dfbbn_1
+x19 net3 D[6] VDD resetb VGND VNB VPB VPWR vdd_sw[6] vdd_sw_b[6] sky130_fd_sc_hd__dfbbn_1
+x21 net4 D[6] resetb VDD VGND VNB VPB VPWR vss_sw[6] vss_sw_b[6] sky130_fd_sc_hd__dfbbn_1
+x23 net5 D[5] VDD resetb VGND VNB VPB VPWR vdd_sw[5] vdd_sw_b[5] sky130_fd_sc_hd__dfbbn_1
+x24 net6 D[5] resetb VDD VGND VNB VPB VPWR vss_sw[5] vss_sw_b[5] sky130_fd_sc_hd__dfbbn_1
+x25 net7 D[4] VDD resetb VGND VNB VPB VPWR vdd_sw[4] vdd_sw_b[4] sky130_fd_sc_hd__dfbbn_1
+x26 net8 D[4] resetb VDD VGND VNB VPB VPWR vss_sw[4] vss_sw_b[4] sky130_fd_sc_hd__dfbbn_1
+x28 net9 D[3] VDD resetb VGND VNB VPB VPWR vdd_sw[3] vdd_sw_b[3] sky130_fd_sc_hd__dfbbn_1
+x29 net10 D[3] resetb VDD VGND VNB VPB VPWR vss_sw[3] vss_sw_b[3] sky130_fd_sc_hd__dfbbn_1
+x31 net11 D[2] VDD resetb VGND VNB VPB VPWR vdd_sw[2] vdd_sw_b[2] sky130_fd_sc_hd__dfbbn_1
+x32 net12 D[2] resetb VDD VGND VNB VPB VPWR vss_sw[2] vss_sw_b[2] sky130_fd_sc_hd__dfbbn_1
+x34 net13 D[1] VDD resetb VGND VNB VPB VPWR vdd_sw[1] vdd_sw_b[1] sky130_fd_sc_hd__dfbbn_1
+x35 net14 D[1] resetb VDD VGND VNB VPB VPWR vss_sw[1] vss_sw_b[1] sky130_fd_sc_hd__dfbbn_1
+x6 VSS READY check[6] VGND VNB VPB VPWR net1 sky130_fd_sc_hd__mux2_1
+x7 VSS READY check[6] VGND VNB VPB VPWR net2 sky130_fd_sc_hd__mux2_1
+x8 VSS READY check[5] VGND VNB VPB VPWR net3 sky130_fd_sc_hd__mux2_1
+x9 VSS READY check[5] VGND VNB VPB VPWR net4 sky130_fd_sc_hd__mux2_1
+x10 VSS READY check[4] VGND VNB VPB VPWR net5 sky130_fd_sc_hd__mux2_1
+x11 VSS READY check[4] VGND VNB VPB VPWR net6 sky130_fd_sc_hd__mux2_1
+x12 VSS READY check[3] VGND VNB VPB VPWR net7 sky130_fd_sc_hd__mux2_1
+x13 VSS READY check[3] VGND VNB VPB VPWR net8 sky130_fd_sc_hd__mux2_1
+x14 VSS READY check[2] VGND VNB VPB VPWR net9 sky130_fd_sc_hd__mux2_1
+x15 VSS READY check[2] VGND VNB VPB VPWR net10 sky130_fd_sc_hd__mux2_1
+x16 VSS READY check[1] VGND VNB VPB VPWR net11 sky130_fd_sc_hd__mux2_1
+x17 VSS READY check[1] VGND VNB VPB VPWR net12 sky130_fd_sc_hd__mux2_1
+x18 VSS READY check[0] VGND VNB VPB VPWR net13 sky130_fd_sc_hd__mux2_1
+x20 VSS READY check[0] VGND VNB VPB VPWR net14 sky130_fd_sc_hd__mux2_1
+.ends
+
+
+* expanding   symbol:  ../xschem/hgu_cdac_8bit_array.sym # of pins=14
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_8bit_array.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_8bit_array.sch
+.subckt hgu_cdac_8bit_array drv<31:0> drv<1:0> drv<0> drv<3:0> drv<63:0> drv<15:0> drv<7:0>
++ tah<63:0> tah<31:0> tah<15:0> tah<7:0> tah<3:0> tah<1:0> tah<0>
+*.iopin drv<0>
+*.iopin drv<1:0>
+*.iopin drv<3:0>
+*.iopin drv<7:0>
+*.iopin drv<15:0>
+*.iopin drv<31:0>
+*.iopin drv<63:0>
+*.iopin tah<0>
+*.iopin tah<1:0>
+*.iopin tah<3:0>
+*.iopin tah<7:0>
+*.iopin tah<15:0>
+*.iopin tah<31:0>
+*.iopin tah<63:0>
+x1 tah<0> drv<0> hgu_cdac_unit csize=1
+x2[1] tah<1:0> drv<1:0> hgu_cdac_unit csize=1
+x2[0] tah<1:0> drv<1:0> hgu_cdac_unit csize=1
+x3[3] tah<3:0> drv<3:0> hgu_cdac_unit csize=1
+x3[2] tah<3:0> drv<3:0> hgu_cdac_unit csize=1
+x3[1] tah<3:0> drv<3:0> hgu_cdac_unit csize=1
+x3[0] tah<3:0> drv<3:0> hgu_cdac_unit csize=1
+x4[7] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x4[6] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x4[5] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x4[4] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x4[3] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x4[2] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x4[1] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x4[0] tah<7:0> drv<7:0> hgu_cdac_unit csize=1
+x5[15] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[14] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[13] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[12] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[11] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[10] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[9] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[8] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[7] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[6] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[5] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[4] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[3] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[2] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[1] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x5[0] tah<15:0> drv<15:0> hgu_cdac_unit csize=1
+x6[31] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[30] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[29] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[28] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[27] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[26] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[25] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[24] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[23] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[22] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[21] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[20] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[19] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[18] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[17] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[16] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[15] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[14] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[13] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[12] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[11] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[10] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[9] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[8] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[7] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[6] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[5] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[4] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[3] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[2] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[1] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x6[0] tah<31:0> drv<31:0> hgu_cdac_unit csize=1
+x7[63] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[62] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[61] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[60] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[59] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[58] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[57] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[56] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[55] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[54] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[53] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[52] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[51] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[50] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[49] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[48] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[47] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[46] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[45] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[44] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[43] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[42] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[41] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[40] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[39] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[38] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[37] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[36] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[35] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[34] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[33] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[32] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[31] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[30] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[29] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[28] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[27] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[26] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[25] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[24] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[23] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[22] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[21] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[20] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[19] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[18] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[17] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[16] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[15] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[14] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[13] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[12] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[11] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[10] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[9] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[8] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[7] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[6] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[5] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[4] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[3] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[2] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[1] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+x7[0] tah<63:0> drv<63:0> hgu_cdac_unit csize=1
+.ends
+
+
+* expanding   symbol:  ../xschem/hgu_cdac_drv.sym # of pins=17
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_drv.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_drv.sch
+.subckt hgu_cdac_drv VREF SAR<4> SAR<1> SAR<2> SAR<3> SAR<5> SAR<6> SAR<0> C<3:0> C<7:0> C<15:0>
++ C<31:0> C<0> C<1:0> C<63:0> VSS VDD
+*.ipin VREF
+*.ipin VSS
+*.ipin SAR<6>
+*.ipin SAR<5>
+*.ipin SAR<4>
+*.ipin SAR<3>
+*.ipin SAR<2>
+*.ipin SAR<1>
+*.ipin SAR<0>
+*.opin C<63:0>
+*.opin C<31:0>
+*.opin C<15:0>
+*.opin C<7:0>
+*.opin C<3:0>
+*.opin C<1:0>
+*.opin C<0>
+*.ipin VDD
+x7[63] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[62] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[61] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[60] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[59] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[58] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[57] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[56] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[55] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[54] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[53] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[52] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[51] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[50] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[49] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[48] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[47] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[46] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[45] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[44] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[43] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[42] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[41] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[40] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[39] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[38] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[37] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[36] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[35] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[34] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[33] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[32] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[31] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[30] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[29] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[28] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[27] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[26] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[25] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[24] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[23] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[22] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[21] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[20] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[19] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[18] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[17] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[16] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[15] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[14] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[13] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[12] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[11] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[10] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[9] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[8] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[7] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[6] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[5] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[4] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[3] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[2] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[1] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[0] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x1 VDD SAR<0> C<0> VSS VREF hgu_inverter
+x2[1] VDD SAR<1> C<1:0> VSS VREF hgu_inverter
+x2[0] VDD SAR<1> C<1:0> VSS VREF hgu_inverter
+x3[3] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x3[2] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x3[1] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x3[0] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x4[7] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[6] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[5] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[4] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[3] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[2] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[1] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[0] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x5[15] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[14] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[13] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[12] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[11] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[10] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[9] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[8] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[7] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[6] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[5] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[4] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[3] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[2] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[1] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[0] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x6[31] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[30] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[29] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[28] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[27] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[26] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[25] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[24] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[23] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[22] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[21] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[20] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[19] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[18] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[17] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[16] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[15] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[14] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[13] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[12] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[11] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[10] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[9] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[8] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[7] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[6] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[5] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[4] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[3] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[2] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[1] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[0] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+.ends
+
+
+* expanding   symbol:  ../xschem/hgu_cdac_unit.sym # of pins=2
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_cdac_unit.sch
+.subckt hgu_cdac_unit PLUS MINUS  csize=csize
+*.iopin PLUS
+*.iopin MINUS
+C1 PLUS MINUS 9f m=csize
+.ends
+
+
+* expanding   symbol:  adc_vcm_clkgen.sym # of pins=7
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/adc_vcm_clkgen.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/adc_vcm_clkgen.sch
+.subckt adc_vcm_clkgen clk VDD VSS phi1_n phi1 phi2 phi2_n
+*.iopin VDD
+*.iopin VSS
+*.opin phi2_n
+*.opin phi2
+*.opin phi1
+*.opin phi1_n
+*.ipin clk
+x23 clk VSS VSS VDD VDD net5 sky130_fd_sc_hd__inv_1
+x2 net6 VSS VSS VDD VDD phi1 sky130_fd_sc_hd__buf_4
+x5 net6 VSS VSS VDD VDD net3 sky130_fd_sc_hd__inv_1
+x11 net11 VSS VSS VDD VDD net6 sky130_fd_sc_hd__inv_1
+x12 net7 VSS VSS VDD VDD net4 sky130_fd_sc_hd__inv_1
+x4 net3 VSS VSS VDD VDD phi1_n sky130_fd_sc_hd__buf_4
+x7 net4 VSS VSS VDD VDD phi2_n sky130_fd_sc_hd__buf_4
+x8 net7 VSS VSS VDD VDD phi2 sky130_fd_sc_hd__buf_4
+x3 net1 VSS VSS VDD VDD net8 sky130_fd_sc_hd__dlymetal6s6s_1
+x10 net2 VSS VSS VDD VDD net9 sky130_fd_sc_hd__dlymetal6s6s_1
+x6 net8 VSS VSS VDD VDD net10 sky130_fd_sc_hd__dlymetal6s6s_1
+x13 net9 VSS VSS VDD VDD net13 sky130_fd_sc_hd__dlymetal6s6s_1
+x1 net12 VSS VSS VDD VDD net7 sky130_fd_sc_hd__inv_1
+x9 net10 VSS VSS VDD VDD net11 sky130_fd_sc_hd__dlymetal6s6s_1
+x14 net13 VSS VSS VDD VDD net12 sky130_fd_sc_hd__dlymetal6s6s_1
+x15 clk net4 VSS VSS VDD VDD net1 sky130_fd_sc_hd__nand2_1
+x16 net3 net5 VSS VSS VDD VDD net2 sky130_fd_sc_hd__nand2_1
+.ends
+
+
+* expanding   symbol:  adc_noise_decoup_cell1.sym # of pins=5
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/adc_noise_decoup_cell1.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/adc_noise_decoup_cell1.sch
+.subckt adc_noise_decoup_cell1 mimcap_top mimcap_bot nmoscap_top nmoscap_bot pwell
+*.iopin nmoscap_top
+*.iopin mimcap_top
+*.iopin mimcap_bot
+*.iopin nmoscap_bot
+*.iopin pwell
+XC1 mimcap_top mimcap_bot sky130_fd_pr__cap_mim_m3_1 W=17.2 L=17.2 MF=1 m=1
+XC2 nmoscap_top nmoscap_bot pwell sky130_fd_pr__cap_var_lvt W=16.4 L=16.0 VM=1 m=1
+.ends
+
+
+* expanding   symbol:  adc_vcm_switch.sym # of pins=6
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/adc_vcm_switch.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/adc_vcm_switch.sch
+.subckt adc_vcm_switch sw_n a sw b VDD VSS
+*.iopin VSS
+*.iopin VDD
+*.ipin sw_n
+*.ipin sw
+*.iopin a
+*.iopin b
+XM1 a sw_n b VDD sky130_fd_pr__pfet_01v8 L=0.5 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 a sw b VSS sky130_fd_pr__nfet_01v8 L=0.5 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  hgu_delay_no_code.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay_no_code.sch
+.subckt hgu_delay_no_code VDD IN OUT VSS
+*.ipin IN
+*.ipin VDD
+*.ipin VSS
+*.opin OUT
+XM1 net1 IN VSS VSS sky130_fd_pr__nfet_01v8 L=3.69 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 IN VDD VDD sky130_fd_pr__pfet_01v8 L=1.5 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VSS net1 VSS VSS sky130_fd_pr__nfet_01v8 L=2.045 W=1.375 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 OUT net1 net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 OUT net1 net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net3 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VDD OUT net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 VSS OUT net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  hgu_delay.sym # of pins=5
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_delay.sch
+.subckt hgu_delay VDD IN OUT VSS CAP_CTRL_CODE[0] CAP_CTRL_CODE[1] CAP_CTRL_CODE[2] CAP_CTRL_CODE[3]
++ CAP_CTRL_CODE[4] CAP_CTRL_CODE[5] CAP_CTRL_CODE[6] CAP_CTRL_CODE[7]  DELAY_CAP=DELAY_CAP
+*.ipin IN
+*.ipin VDD
+*.ipin VSS
+*.opin OUT
+*.ipin
+*+ CAP_CTRL_CODE[0],CAP_CTRL_CODE[1],CAP_CTRL_CODE[2],CAP_CTRL_CODE[3],CAP_CTRL_CODE[4],CAP_CTRL_CODE[5],CAP_CTRL_CODE[6],CAP_CTRL_CODE[7]
+XM1 net1 IN VSS VSS sky130_fd_pr__nfet_01v8 L=3.69 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 IN VDD VDD sky130_fd_pr__pfet_01v8 L=1.5 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VSS net1 VSS VSS sky130_fd_pr__nfet_01v8 L=2.045 W=1.375 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 OUT net1 net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 OUT net1 net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net3 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VDD OUT net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 VSS OUT net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x2 CAP_CTRL_CODE[0] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x3[1] CAP_CTRL_CODE[1] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x3[0] CAP_CTRL_CODE[1] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[3] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[2] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[1] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x4[0] CAP_CTRL_CODE[2] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[7] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[6] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[5] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[4] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[3] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[2] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[1] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x5[0] CAP_CTRL_CODE[3] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[15] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[14] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[13] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[12] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[11] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[10] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[9] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[8] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[7] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[6] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[5] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[4] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[3] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[2] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[1] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x6[0] CAP_CTRL_CODE[4] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[31] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[30] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[29] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[28] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[27] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[26] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[25] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[24] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[23] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[22] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[21] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[20] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[19] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[18] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[17] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[16] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[15] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[14] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[13] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[12] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[11] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[10] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[9] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[8] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[7] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[6] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[5] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[4] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[3] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[2] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[1] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x7[0] CAP_CTRL_CODE[5] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[63] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[62] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[61] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[60] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[59] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[58] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[57] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[56] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[55] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[54] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[53] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[52] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[51] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[50] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[49] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[48] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[47] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[46] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[45] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[44] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[43] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[42] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[41] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[40] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[39] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[38] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[37] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[36] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[35] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[34] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[33] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[32] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[31] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[30] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[29] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[28] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[27] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[26] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[25] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[24] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[23] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[22] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[21] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[20] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[19] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[18] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[17] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[16] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[15] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[14] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[13] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[12] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[11] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[10] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[9] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[8] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[7] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[6] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[5] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[4] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[3] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[2] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[1] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x8[0] CAP_CTRL_CODE[6] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[127] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[126] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[125] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[124] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[123] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[122] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[121] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[120] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[119] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[118] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[117] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[116] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[115] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[114] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[113] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[112] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[111] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[110] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[109] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[108] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[107] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[106] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[105] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[104] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[103] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[102] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[101] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[100] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[99] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[98] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[97] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[96] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[95] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[94] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[93] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[92] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[91] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[90] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[89] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[88] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[87] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[86] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[85] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[84] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[83] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[82] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[81] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[80] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[79] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[78] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[77] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[76] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[75] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[74] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[73] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[72] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[71] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[70] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[69] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[68] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[67] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[66] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[65] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[64] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[63] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[62] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[61] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[60] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[59] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[58] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[57] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[56] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[55] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[54] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[53] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[52] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[51] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[50] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[49] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[48] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[47] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[46] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[45] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[44] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[43] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[42] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[41] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[40] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[39] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[38] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[37] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[36] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[35] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[34] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[33] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[32] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[31] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[30] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[29] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[28] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[27] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[26] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[25] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[24] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[23] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[22] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[21] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[20] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[19] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[18] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[17] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[16] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[15] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[14] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[13] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[12] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[11] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[10] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[9] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[8] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[7] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[6] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[5] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[4] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[3] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[2] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[1] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+x1[0] CAP_CTRL_CODE[7] VSS net1 hgu_sw_cap DELAY_CAP=DELAY_CAP
+.ends
+
+
+* expanding   symbol:  hgu_clk_div.sym # of pins=4
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_div.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_clk_div.sch
+.subckt hgu_clk_div DIV_CLK CLK RESET SET
+*.opin DIV_CLK
+*.ipin SET
+*.ipin RESET
+*.ipin CLK
+x2 CLK D_loop net1 net2 VGND VNB VPB VPWR DIV_CLK D_loop sky130_fd_sc_hd__dfbbp_1
+x3 SET VGND VNB VPB VPWR net2 sky130_fd_sc_hd__inv_1
+x4 RESET VGND VNB VPB VPWR net1 sky130_fd_sc_hd__inv_1
+.ends
+
+
+* expanding   symbol:  ../xschem/hgu_inverter.sym # of pins=5
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_inverter.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_inverter.sch
+.subckt hgu_inverter VDD IN OUT VSS VREF
+*.ipin IN
+*.ipin VREF
+*.ipin VSS
+*.opin OUT
+*.ipin VDD
+XM1 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT IN VREF VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  hgu_sw_cap.sym # of pins=3
+** sym_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sym
+** sch_path: /foss/designs/hgu_goss/hgu/xschem/hgu_sw_cap.sch
+.subckt hgu_sw_cap SW VSS DELAY_SIGNAL  DELAY_CAP=DELAY_CAP
+*.ipin SW
+*.ipin VSS
+*.iopin DELAY_SIGNAL
+C5 net1 VSS DELAY_CAP m=1
+XM14 DELAY_SIGNAL SW net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL cap_ctrl_code[7]
+.GLOBAL cap_ctrl_code[6]
+.GLOBAL cap_ctrl_code[5]
+.GLOBAL cap_ctrl_code[4]
+.GLOBAL cap_ctrl_code[3]
+.GLOBAL cap_ctrl_code[2]
+.GLOBAL cap_ctrl_code[1]
+.GLOBAL cap_ctrl_code[0]
+.GLOBAL VSS
+.GLOBAL VGND
+.GLOBAL VNB
+.GLOBAL VPB
+.GLOBAL VPWR
+.GLOBAL async_cap_ctrl_code[7]
+.GLOBAL async_cap_ctrl_code[6]
+.GLOBAL async_cap_ctrl_code[5]
+.GLOBAL async_cap_ctrl_code[4]
+.GLOBAL async_cap_ctrl_code[3]
+.GLOBAL async_cap_ctrl_code[2]
+.GLOBAL async_cap_ctrl_code[1]
+.GLOBAL async_cap_ctrl_code[0]
+.end

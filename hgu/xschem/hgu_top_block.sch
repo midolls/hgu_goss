@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -187,12 +187,12 @@ N 1210 -460 1210 -280 {
 lab=result2_sw_b[2]}
 N 1240 -460 1240 -280 {
 lab=result2_sw_b[1]}
-C {../xschem/hgu_sarlogic_RC.sym} 2610 -880 0 0 {name=x1}
+C {../xschem/hgu_sarlogic.sym} 2610 -880 0 0 {name=x1}
 C {../xschem/hgu_comp.sym} 1910 -900 0 0 {name=x2}
 C {../xschem/hgu_cdac_half.sym} 510 -890 0 0 {name=x3}
 C {hgu_cdac_half.sym} 510 -910 2 1 {name=x4}
 C {devices/lab_wire.sym} 1350 -530 2 1 {name=p4 sig_type=std_logic lab=VSS}
-C {../xschem/hgu_tah.sym} 650 -900 0 0 {name=x21}
+C {../xschem/hgu_tah_flat.sym} -1040 340 0 0 {name=x21}
 C {devices/lab_wire.sym} 570 -920 0 0 {name=p29 sig_type=std_logic lab=vip
 
 }
@@ -242,8 +242,8 @@ C {devices/lab_pin.sym} 1150 -1520 1 0 {name=p52 sig_type=std_logic lab=result2_
 C {devices/lab_pin.sym} 1180 -1520 1 0 {name=p53 sig_type=std_logic lab=result2_sw[3]}
 C {devices/lab_pin.sym} 1210 -1520 1 0 {name=p54 sig_type=std_logic lab=result2_sw[2]}
 C {devices/lab_pin.sym} 1240 -1520 1 0 {name=p55 sig_type=std_logic lab=result2_sw[1]}
-C {../xschem/hgu_cdac_sw_buffer_RC.sym} 1150 -1420 0 0 {name=x6}
-C {../xschem/hgu_cdac_sw_buffer_RC.sym} 1520 -1420 0 1 {name=x7}
+C {../xschem/hgu_cdac_sw_buffer.sym} 1150 -1420 0 0 {name=x6}
+C {../xschem/hgu_cdac_sw_buffer.sym} 1520 -1420 0 1 {name=x7}
 C {devices/lab_wire.sym} 1060 -1300 0 0 {name=p56 sig_type=std_logic lab=sw6
 }
 C {devices/lab_wire.sym} 1090 -1300 0 0 {name=p57 sig_type=std_logic lab=sw5
@@ -268,8 +268,8 @@ C {devices/lab_pin.sym} 1150 -280 3 0 {name=p95 sig_type=std_logic lab=result2_s
 C {devices/lab_pin.sym} 1180 -280 3 0 {name=p96 sig_type=std_logic lab=result2_sw_b[3]}
 C {devices/lab_pin.sym} 1210 -280 3 0 {name=p97 sig_type=std_logic lab=result2_sw_b[2]}
 C {devices/lab_pin.sym} 1240 -280 3 0 {name=p98 sig_type=std_logic lab=result2_sw_b[1]}
-C {../xschem/hgu_cdac_sw_buffer_RC.sym} 1150 -380 2 1 {name=x8}
-C {../xschem/hgu_cdac_sw_buffer_RC.sym} 1520 -380 2 0 {name=x9}
+C {../xschem/hgu_cdac_sw_buffer.sym} 1150 -380 2 1 {name=x8}
+C {../xschem/hgu_cdac_sw_buffer.sym} 1520 -380 2 0 {name=x9}
 C {devices/lab_wire.sym} 1380 -1270 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1380 -530 2 1 {name=p17 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1610 -1300 0 1 {name=p19 sig_type=std_logic lab=swd6

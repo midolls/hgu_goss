@@ -85,7 +85,7 @@ N -70 100 -70 180 {
 lab=vip}
 N -20 160 -20 180 {
 lab=vin}
-C {../xschem/hgu_tah.sym} 120 0 0 0 {name=x1}
+C {../xschem/hgu_tah_flat.sym} -1570 1240 0 0 {name=x1}
 C {devices/vsource.sym} -240 -50 0 0 {name=V2 value=1.62
 }
 C {devices/gnd.sym} -240 -20 0 0 {name=l1 lab=GND}
@@ -94,10 +94,12 @@ C {devices/code.sym} -235 40 0 0 {name=s1 only_toplevel=false value="
 .temp = 100
 .tran 100p 600n
 .OPTIONS savecurrents
+.include /foss/designs/hgu_goss/hgu/spice/hgu_tah_route.mag.spice
+
 
 .control
 run
-plot v(sw) vip vin vip-vin+0.9 tah_vp-tah_vn+0.9
+plot v(sw) v(sw_n) vip vin vip-vin+0.9 tah_vp-tah_vn+0.9
 
         let svdd = 1.62
         let max = svdd*0.8
@@ -120,7 +122,7 @@ plot v(sw) vip vin vip-vin+0.9 tah_vp-tah_vn+0.9
         print rising_time falling_time rising_delay falling_delay
 
 
-plot v(sw) vip-vin tah_vp-tah_vn
+plot v(sw) v(sw_n)  vip-vin tah_vp-tah_vn
 .endc
 "
 }

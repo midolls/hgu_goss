@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -33,8 +33,10 @@ value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
+.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_half_flat.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_tah_route.mag.spice
 
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_retimer_flat_RC.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_sw_ctrl_flat_RC.spice
@@ -167,7 +169,7 @@ C {devices/noconn.sym} 2040 -560 2 0 {name=l65}
 C {devices/code.sym} 190 -270 0 0 {name=spice2 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 100ps 500ns
+.tran 30ps 200ns
 
 .control
 	run

@@ -1,6 +1,6 @@
 * NGSPICE file created from hgu_cdac_half_flat.ext - technology: sky130A
 
-.subckt hgu_cdac_half_flat d<3> d<2> d<1> d<0> d<5> db<0> db<1> db<2> db<3> tb<1>
+.subckt hgu_cdac_half d<3> d<2> d<1> d<0> d<5> db<0> db<1> db<2> db<3> tb<1>
 + tb<2> tb<3> tb<4> VREF t<1> t<2> t<3> t<4> d<6> db<6> db<5> d<4> db<4> tb<0> tb<5>
 + t<0> t<5> t<6> tb<6> VDD VSS
 X0 VREF.t235 d<3>.t0 hgu_cdac_8bit_array_3.drv<7:0>.t5 VDD.t147 sky130_fd_pr__pfet_01v8_lvt ad=0.122 pd=1.13 as=0.122 ps=1.13 w=0.84 l=0.35

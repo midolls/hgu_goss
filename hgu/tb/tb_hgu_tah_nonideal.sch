@@ -165,7 +165,7 @@ C {devices/gnd.sym} -530 250 0 0 {name=l16 lab=GND}
 C {devices/vsource.sym} -570 350 0 0 {name=V6 value=0.9
 }
 C {devices/gnd.sym} -570 380 0 0 {name=l17 lab=GND}
-C {../xschem/hgu_clk_sample.sym} -370 -370 0 0 {name=x3}
+C {../xschem/hgu_clk_sample.sym} -370 -330 0 0 {name=x3}
 C {devices/vdd.sym} -970 -540 1 0 {name=l4 lab=cap_ctrl_code[7]}
 C {devices/vdd.sym} -860 -540 1 0 {name=l9 lab=cap_ctrl_code[6]}
 C {devices/vdd.sym} -750 -540 1 0 {name=l18 lab=cap_ctrl_code[5]}

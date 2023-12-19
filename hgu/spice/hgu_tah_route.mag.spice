@@ -1,6 +1,6 @@
 * NGSPICE file created from hgu_tah_flat.ext - technology: sky130A
 
-.subckt hgu_tah_flat vip vin tah_vp tah_vn sw sw_n VSS VDD
+.subckt hgu_tah_flat sw VDD GND sw_n tah_vp vip vin tah_vn
 X0 vip.t7 sw_n tah_vp.t8 VDD.t11 sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
 X1 tah_vn.t11 sw_n.t0 vin.t6 VDD.t10 sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
 X2 vin.t7 sw_n.t1 tah_vn.t10 VDD.t9 sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15

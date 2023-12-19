@@ -21,19 +21,19 @@ node "CBOT" 0 42.9314 2272 4214 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "CTOP" 0 42.9314 1544 4192 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4232 276 0 0 0 0
 substrate "SUB" 0 0 2092 4038 ppd 0 0 0 0 0 0 0 0 0 0 4400 288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "CBOT" "CTOP" 8.26633
-cap "x1[7]/SUB" "x1[7]/CTOP" 0.365386
-cap "x1[7]/CBOT" "x1[7]/CTOP" -1.7053e-13
-cap "x1[7]/CBOT" "x1[6]/CTOP" -132.809
 cap "x1[7]/SUB" "x1[7]/CBOT" 0.796431
-cap "x1[7]/SUB" "x1[7]/CTOP" 0.221353
-cap "x1[7]/CBOT" "x1[7]/CTOP" 3.41061e-13
+cap "x1[6]/CTOP" "x1[7]/CBOT" -132.809
+cap "x1[7]/SUB" "x1[7]/CTOP" 0.365386
+cap "x1[7]/CTOP" "x1[7]/CBOT" -1.7053e-13
 cap "x1[7]/CBOT" "x1[6]/CTOP" -66.4045
-cap "x1[7]/SUB" "x1[7]/CBOT" 2.11715
+cap "x1[7]/CBOT" "x1[7]/SUB" 2.11715
+cap "x1[7]/CBOT" "x1[7]/CTOP" 3.41061e-13
+cap "x1[7]/SUB" "x1[7]/CTOP" 0.221353
+cap "x1[7]/SUB" "x1[7]/CBOT" 2.22045e-16
 cap "x1[7]/CTOP" "x1[7]/CBOT" -136.942
-cap "x1[7]/SUB" "x1[7]/CBOT" 2.22045e-16
-cap "x1[7]/SUB" "x1[7]/CBOT" 2.22045e-16
-cap "x1[7]/CTOP" "x1[7]/SUB" 0.532133
-cap "x1[7]/CTOP" "x1[7]/CBOT" -70.5376
+cap "x1[7]/CBOT" "x1[7]/CTOP" -70.5376
+cap "x1[7]/CBOT" "x1[7]/SUB" 2.22045e-16
+cap "x1[7]/SUB" "x1[7]/CTOP" 0.532133
 merge "x1[0]/CTOP" "x1[1]/CTOP" -810.443 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26928 -1608 -34520 -2132 0 0 0 0
 merge "x1[1]/CTOP" "x1[2]/CTOP"
 merge "x1[2]/CTOP" "x1[4]/CTOP"

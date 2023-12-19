@@ -1,4 +1,4 @@
-timestamp 1700938176
+timestamp 1701694680
 version 8.3
 tech sky130A
 style ngspice()
@@ -10,15 +10,15 @@ node "m1_364_175#" 1 104.401 364 175 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "a_446_191#" 58 81.5178 446 191 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4060 256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "m1_364_175#" "a_446_191#" 3.70847
-cap "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" -51.0876
-cap "inv_8_test_1/m1_597_2535#" "inv_8_test_1/a_679_2551#" 42.6362
-cap "inv_8_test_1/a_679_2551#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" 3.67393
-cap "inv_8_test_1/m1_597_2535#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" 39.8904
-cap "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" -110.192
-cap "inv_8_test_1/m1_597_2535#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" 61.8303
-cap "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" -13.8217
-cap "inv_8_test_1/a_679_2551#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" 3.67836
+cap "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -51.0876
 cap "inv_8_test_1/a_679_2551#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -5.12457
+cap "inv_8_test_1/m1_597_2535#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" 39.8904
+cap "inv_8_test_1/a_679_2551#" "inv_8_test_1/m1_597_2535#" 42.6362
+cap "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" -110.192
+cap "inv_8_test_1/a_679_2551#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" 3.67393
+cap "inv_8_test_1/m1_597_2535#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" 61.8303
+cap "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -13.8217
+cap "inv_8_test_1/a_679_2551#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" 3.67836
 cap "inv_8_test_1/m1_597_2535#" "inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" -1.14424
 merge "inv_8_test_0/VSUBS" "inv_8_test_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "inv_8_test_1/VSUBS" "VSUBS"

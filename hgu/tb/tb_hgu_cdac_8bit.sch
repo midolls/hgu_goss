@@ -294,7 +294,7 @@ C {devices/code.sym} -165 -910 0 0 {name=s1 only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
-.include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_half_flat.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_half_flat.mag.spice
 
 
 .control

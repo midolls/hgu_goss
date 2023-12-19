@@ -1,4 +1,4 @@
-timestamp 1700938176
+timestamp 1701694680
 version 8.3
 tech sky130A
 style ngspice()
@@ -11,25 +11,25 @@ node "a_584_n2171#" 58 81.5178 584 -2171 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "m1_502_n2187#" "a_584_n2171#" 3.70847
 cap "inv_32_test_2/inv_16_test_1/m1_364_175#" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" 21.4613
-cap "inv_32_test_2/inv_16_test_1/m1_364_175#" "inv_32_test_2/inv_16_test_1/a_446_191#" 21.3181
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_32_test_2/inv_16_test_1/a_446_191#" 2.67148
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/m1_364_175#" 33.2959
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" -28.1921
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" -58.9595
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/m1_364_175#" -0.55526
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/a_446_191#" -2.04128
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/a_446_191#" 3.00297
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -7.08616
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/m1_364_175#" 28.5344
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/a_446_191#" 0.670951
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -22.8955
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/m1_364_175#" -0.588976
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" -51.2328
-cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -6.73549
+cap "inv_32_test_2/inv_16_test_1/m1_364_175#" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" 33.2959
+cap "inv_32_test_2/inv_16_test_1/a_446_191#" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" 2.67148
+cap "inv_32_test_2/inv_16_test_1/m1_364_175#" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" -0.55526
+cap "inv_32_test_2/inv_16_test_1/a_446_191#" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -2.04128
+cap "inv_32_test_2/inv_16_test_1/a_446_191#" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" 3.00297
 cap "inv_32_test_2/inv_16_test_1/a_446_191#" "inv_32_test_2/inv_16_test_1/m1_364_175#" 21.3181
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -28.1921
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" -58.9595
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" -7.08616
 cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_32_test_2/inv_16_test_1/a_446_191#" 1.00688
 cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/a_446_191#" -3.08329
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/a_446_191#" 0.670951
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" -22.8955
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" -51.2328
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" -6.73549
+cap "inv_32_test_2/inv_16_test_1/a_446_191#" "inv_32_test_2/inv_16_test_1/m1_364_175#" 21.3181
 cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VREF" "inv_32_test_2/inv_16_test_1/m1_364_175#" 18.4291
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VSS" "inv_32_test_2/inv_16_test_1/m1_364_175#" 28.5344
+cap "inv_32_test_2/inv_16_test_1/inv_8_test_1/inv_4_test_1/inv_2_test_1/x2/VDD" "inv_32_test_2/inv_16_test_1/m1_364_175#" -0.588976
 merge "inv_32_test_2/VSUBS" "inv_32_test_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "inv_32_test_1/VSUBS" "VSUBS"
 merge "inv_32_test_1/inv_16_test_0/inv_8_test_0/inv_4_test_0/m1_n202_1539#" "inv_32_test_2/inv_16_test_1/m1_364_175#" -144.144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -116 0 0 0 0 0 0 0 0 0 0
