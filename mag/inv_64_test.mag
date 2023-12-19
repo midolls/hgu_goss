@@ -1,0 +1,17 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1701694680
+<< poly >>
+rect 584 -2171 642 -2101
+<< metal1 >>
+rect 502 -2187 724 -2158
+use inv_32_test  inv_32_test_1
+timestamp 1701694680
+transform 1 0 -1280 0 1 0
+box -2303 -2402 1993 -1738
+use inv_32_test  inv_32_test_2
+timestamp 1701694680
+transform 1 0 2816 0 1 0
+box -2303 -2402 1993 -1738
+<< end >>

@@ -1,0 +1,17 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1701692850
+<< poly >>
+rect 679 2551 737 2621
+<< metal1 >>
+rect 597 2535 819 2564
+use inv_4_test  inv_4_test_0
+timestamp 1701692850
+transform 1 0 1055 0 1 996
+box -447 1324 265 1988
+use inv_4_test  inv_4_test_1
+timestamp 1701692850
+transform 1 0 543 0 1 996
+box -447 1324 265 1988
+<< end >>

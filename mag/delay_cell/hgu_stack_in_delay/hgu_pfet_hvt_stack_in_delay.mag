@@ -1,0 +1,65 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698839612
+<< error_s >>
+rect 129 931 187 937
+rect 129 897 141 931
+rect 129 891 187 897
+<< nwell >>
+rect 143 879 173 884
+<< poly >>
+rect 125 931 191 947
+rect 125 897 141 931
+rect 175 897 191 931
+rect 125 881 191 897
+rect 143 879 173 881
+<< polycont >>
+rect 141 897 175 931
+<< locali >>
+rect 125 897 141 931
+rect 175 897 191 931
+<< viali >>
+rect 141 897 175 931
+<< metal1 >>
+rect 129 931 187 937
+rect 129 897 141 931
+rect 175 897 187 931
+rect 129 891 187 897
+rect 179 708 225 769
+rect 91 572 137 633
+rect 179 432 225 493
+rect 91 294 137 355
+rect 179 156 225 217
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM1
+timestamp 1698804823
+transform 1 0 158 0 1 808
+box -110 -78 110 90
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM2
+timestamp 1698804823
+transform 1 0 158 0 1 670
+box -110 -78 110 90
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM3
+timestamp 1698804823
+transform 1 0 158 0 1 532
+box -110 -78 110 90
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM4
+timestamp 1698804823
+transform 1 0 158 0 1 394
+box -110 -78 110 90
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM5
+timestamp 1698804823
+transform 1 0 158 0 1 256
+box -110 -78 110 90
+use sky130_fd_pr__pfet_01v8_hvt_M479BZ  XM6
+timestamp 1698804823
+transform 1 0 158 0 1 118
+box -110 -78 110 90
+<< labels >>
+flabel metal1 141 897 175 931 0 FreeSans 320 0 0 0 input_stack
+port 0 nsew
+flabel space 97 88 131 148 0 FreeSans 320 0 0 0 vdd
+port 1 nsew
+flabel space 97 778 131 838 0 FreeSans 320 0 0 0 output_stack
+port 3 nsew
+<< end >>

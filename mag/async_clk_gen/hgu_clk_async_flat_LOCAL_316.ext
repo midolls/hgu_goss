@@ -1,0 +1,1531 @@
+timestamp 1700915886
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8_hvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8_hvt l=l w=w a1=as p1=ps a2=ad p2=pd
+port "async_setb_delay_ctrl_code[3]" 14 -6862 -2399 -6830 -2365 m1
+port "async_setb_delay_ctrl_code[0]" 15 -6257 -537 -1032 -509 m1
+port "async_setb_delay_ctrl_code[1]" 16 -6255 -593 -1889 -565 m1
+port "async_setb_delay_ctrl_code[2]" 18 -6256 -649 -4315 -621 m1
+port "ready" 3 -6856 -2029 -6811 -1982 m1
+port "async_resetb_delay_ctrl_code[0]" 12 -6258 -481 -1032 -453 m1
+port "async_resetb_delay_ctrl_code[1]" 11 -6254 -425 -1889 -397 m1
+port "async_resetb_delay_ctrl_code[2]" 10 -6256 -369 -4315 -341 m1
+port "delay_offset" 4 -6449 -1712 -6396 828 m2
+port "async_resetb_delay_ctrl_code[3]" 13 -6862 1375 -6820 1409 m1
+port "sample_clk" 1 2370 2212 2404 2241 m2
+port "eob" 2 1560 369 1594 402 m2
+port "async_clk_sar" 5 -6148 2427 809 2461 m1
+port "vdd" 8 -7122 -3238 -6816 2344 m4
+port "vss" 6 -6728 -602 -6616 -295 m4
+node "x2.x11.inv_1" 0 0 -6340 -2146 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.x10.inv_1" 0 0 -6800 -2146 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x3.mux2_1" 0 0 1695 2040 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.x11.inv_1" 0 0 -6340 1156 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.x10.inv_1" 0 0 -6800 1156 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x8.mux2_1" 0 0 868 2040 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x9.inv_1" 0 0 -125 -1769 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x10.inv_1" 0 0 -125 777 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x27.dfbbp_1" 0 0 2523 777 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.pstack_lab1" 1308 95.2755 -6270 -3290 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x2.pstack_lab2" 1308 20.3868 -6182 -3152 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x2.pstack_lab3" 1308 81.5002 -6270 -3014 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x2.pstack_lab4" 1308 17.1501 -6182 -2876 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x2.pstack_lab5" 1308 14.2991 -6270 -2738 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_n397_n2289#" 2184 276.01 -397 -2289 pdif 0 0 0 0 0 0 0 0 0 0 15288 868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9384 756 20932 1144 0 0 0 0 0 0 0 0 0 0
+node "async_setb_delay_ctrl_code[3]" 807 263.389 -6862 -2399 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18756 1176 0 0 3168 228 7018 464 0 0 0 0 0 0 0 0 0 0
+equiv "async_setb_delay_ctrl_code[3]" "x2.x10.A"
+equiv "async_setb_delay_ctrl_code[3]" "x2.code[3]"
+node "x2.x5[6].floating" 6624 583.746 -4896 -2148 pdif 0 0 0 0 0 0 0 0 0 0 38976 2272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25024 2016 48072 2608 43128 2368 1952768 61908 1935504 61492 0 0 0 0
+equiv "x2.x5[6].floating" "x2.x5[0].floating"
+equiv "x2.x5[6].floating" "x2.x5[1].floating"
+equiv "x2.x5[6].floating" "x2.x5[2].floating"
+equiv "x2.x5[6].floating" "x2.x5[3].floating"
+equiv "x2.x5[6].floating" "x2.x5[4].floating"
+equiv "x2.x5[6].floating" "x2.x5[5].floating"
+equiv "x2.x5[6].floating" "x2.x5[7].floating"
+node "x2.x10.Y" 5012 592.233 -6650 -2643 pdif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69168 4400 0 0 61216 3630 253707 11534 0 0 0 0 0 0 0 0 0 0
+equiv "x2.x10.Y" "x2.x5[0].SW"
+equiv "x2.x10.Y" "x2.x5[1].SW"
+equiv "x2.x10.Y" "x2.x5[2].SW"
+equiv "x2.x10.Y" "x2.x5[3].SW"
+equiv "x2.x10.Y" "x2.x5[4].SW"
+equiv "x2.x10.Y" "x2.x5[5].SW"
+equiv "x2.x10.Y" "x2.x5[7].SW"
+equiv "x2.x10.Y" "x2.x5[6].SW"
+node "x2.x6.floating" 327 359.508 -5628 -2145 pdif 0 0 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3128 252 6009 326 5391 296 307390 9772 305232 9720 0 0 0 0
+node "x2.x11.Y" 1695 298.716 -6542 -2643 pdif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8646 550 0 0 45088 2194 41024 2270 0 0 0 0 0 0 0 0 0 0
+equiv "x2.x11.Y" "x2.x6.SW"
+node "x9.A" 2460 631.243 -485 -2151 pdif 0 0 0 0 0 0 0 0 4872 284 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45648 2672 0 0 11668 932 29574 1594 0 0 0 0 0 0 0 0 0 0
+equiv "x9.A" "x2.OUT"
+node "x2.x2.floating" 216 6428.79 -1049 -1947 ndif 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3128 252 6204 332 5330 294 307446 9774 305232 9720 0 0 0 0
+node "x2.x3[1].floating" 851 10904.1 -1993 -1947 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 12408 664 10660 588 542556 17224 538128 17116 0 0 0 0
+equiv "x2.x3[1].floating" "x2.x3[0].floating"
+node "x2.x4[3].floating" 1999 21657.9 -4543 -1947 ndif 0 0 0 0 0 0 0 0 19488 1136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12512 1008 24816 1328 21320 1176 1012776 32124 1003920 31908 0 0 0 0
+equiv "x2.x4[3].floating" "x2.x4[0].floating"
+equiv "x2.x4[3].floating" "x2.x4[1].floating"
+equiv "x2.x4[3].floating" "x2.x4[2].floating"
+node "x2.x7.floating" 216 5924.99 -5275 -1947 ndif 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3128 252 6204 332 5330 294 307446 9774 305232 9720 0 0 0 0
+node "a_n397_n1948#" 1397 306.255 -397 -1948 ndif 0 0 0 0 0 0 0 0 15288 868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9384 756 20932 1144 0 0 0 0 0 0 0 0 0 0
+node "async_setb_delay_ctrl_code[0]" 348 1471.7 -6257 -537 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8316 528 0 0 2244 200 222915 13104 0 0 0 0 0 0 0 0 0 0
+equiv "async_setb_delay_ctrl_code[0]" "x2.x2.SW"
+equiv "async_setb_delay_ctrl_code[0]" "x2.code[0]"
+node "async_setb_delay_ctrl_code[1]" 815 2002.93 -6255 -593 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16632 1056 0 0 4488 400 199848 11516 0 0 0 0 0 0 0 0 0 0
+equiv "async_setb_delay_ctrl_code[1]" "x2.x3[0].SW"
+equiv "async_setb_delay_ctrl_code[1]" "x2.x3[1].SW"
+equiv "async_setb_delay_ctrl_code[1]" "x2.code[1]"
+node "async_setb_delay_ctrl_code[2]" 1733 2375.57 -6256 -649 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33264 2112 0 0 8976 800 184452 8978 0 0 0 0 0 0 0 0 0 0
+equiv "async_setb_delay_ctrl_code[2]" "x2.x4[0].SW"
+equiv "async_setb_delay_ctrl_code[2]" "x2.x4[1].SW"
+equiv "async_setb_delay_ctrl_code[2]" "x2.x4[2].SW"
+equiv "async_setb_delay_ctrl_code[2]" "x2.x4[3].SW"
+equiv "async_setb_delay_ctrl_code[2]" "x2.code[2]"
+node "x2.Uc" 8748 1510.07 -6182 -2600 pdif 0 0 0 0 0 0 0 0 37884 1910 42000 2008 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28047 1560 0 0 39780 3224 338458 15664 0 0 0 0 0 0 0 0 0 0
+equiv "x2.Uc" "x2.x5[0].delay_signal"
+equiv "x2.Uc" "x2.x2.delay_signal"
+equiv "x2.Uc" "x2.x5[1].delay_signal"
+equiv "x2.Uc" "x2.x3[0].delay_signal"
+equiv "x2.Uc" "x2.x5[2].delay_signal"
+equiv "x2.Uc" "x2.x3[1].delay_signal"
+equiv "x2.Uc" "x2.x5[3].delay_signal"
+equiv "x2.Uc" "x2.x4[0].delay_signal"
+equiv "x2.Uc" "x2.x5[4].delay_signal"
+equiv "x2.Uc" "x2.x4[1].delay_signal"
+equiv "x2.Uc" "x2.x5[5].delay_signal"
+equiv "x2.Uc" "x2.x4[2].delay_signal"
+equiv "x2.Uc" "x2.x5[7].delay_signal"
+equiv "x2.Uc" "x2.x5[6].delay_signal"
+equiv "x2.Uc" "x2.x4[3].delay_signal"
+equiv "x2.Uc" "x2.x7.delay_signal"
+equiv "x2.Uc" "x2.x6.delay_signal"
+equiv "x2.Uc" "x2.x9.output_stack"
+equiv "x2.Uc" "x2.x8.output_stack"
+node "a_n6207_n1763#" 240 0.632073 -6207 -1763 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n1625#" 240 0.66855 -6207 -1625 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.nstack_lab7" 837 117.918 -6295 -1763 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x2.nstack_lab6" 837 142.723 -6135 -1625 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n1487#" 240 0.710211 -6207 -1487 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n1349#" 240 0.756996 -6207 -1349 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.nstack_lab5" 837 112.994 -6295 -1487 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x2.nstack_lab4" 837 137.607 -6135 -1349 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n1211#" 240 0.808738 -6207 -1211 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n1073#" 240 0.865197 -6207 -1073 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.nstack_lab3" 837 113.485 -6295 -1211 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x2.nstack_lab2" 837 176.805 -6135 -1073 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n935#" 240 0.9211 -6207 -935 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n797#" 240 4.26478 -6207 -797 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.nstack_lab1" 837 169.351 -6295 -935 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "ready" 5279 1444.22 -6856 -2029 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100764 6648 0 0 4488 400 64663 2820 0 0 0 0 0 0 0 0 0 0
+equiv "ready" "x2.x9.input_stack"
+equiv "ready" "x2.x8.input_stack"
+equiv "ready" "x2.IN"
+node "a_n6207_n277#" 240 4.26478 -6207 -277 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n139#" 240 0.9211 -6207 -139 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.nstack_lab1" 837 169.332 -6295 -277 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x4.nstack_lab2" 837 176.805 -6135 -139 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_n1#" 240 0.865197 -6207 -1 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_137#" 240 0.808738 -6207 137 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.nstack_lab3" 837 113.485 -6295 -1 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x4.nstack_lab4" 837 137.607 -6135 137 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_275#" 240 0.756996 -6207 275 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_413#" 240 0.710211 -6207 413 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.nstack_lab5" 837 112.994 -6295 275 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x4.nstack_lab6" 837 142.723 -6135 413 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_551#" 240 0.66855 -6207 551 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6207_689#" 240 0.632073 -6207 689 ndif 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.nstack_lab7" 837 117.918 -6295 551 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_1875_824#" 186 3.1716 1875 824 ndif 0 0 0 0 0 0 0 0 5364 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1499_824#" 1017 189.081 1499 824 ndif 0 0 0 0 0 0 0 0 14736 756 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11512 700 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1298_824#" 311 13.2051 1298 824 ndif 0 0 0 0 0 0 0 0 7480 386 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1094_824#" 188 2.16101 1094 824 ndif 0 0 0 0 0 0 0 0 5280 298 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2077_824#" 690 113.821 2077 824 ndif 0 0 0 0 0 0 0 0 5280 298 5292 294 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22536 1368 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1875_1190#" 211 1.79257 1875 1190 pdif 0 0 0 0 0 0 0 0 0 0 7560 348 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1577_1106#" 613 0.771207 1577 1106 pdif 0 0 0 0 0 0 0 0 0 0 9072 444 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_724_824#" 1001 165.084 724 824 ndif 0 0 0 0 0 0 0 0 16248 792 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10628 648 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1296_1190#" 672 4.87254 1296 1190 pdif 0 0 0 0 0 0 0 0 0 0 13944 564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1094_1190#" 206 0.492887 1094 1190 pdif 0 0 0 0 0 0 0 0 0 0 7392 344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_818_1106#" 788 0.772999 818 1106 pdif 0 0 0 0 0 0 0 0 0 0 7056 420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n397_736#" 1397 294.285 -397 736 ndif 0 0 0 0 0 0 0 0 15288 868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9384 756 20932 1144 0 0 0 0 0 0 0 0 0 0
+node "x4.x2.floating" 216 6427.43 -1049 873 ndif 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3128 252 6204 332 5330 294 307446 9774 305232 9720 0 0 0 0
+node "x4.x3[1].floating" 851 10904.1 -1993 873 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 12408 664 10660 588 542556 17224 538128 17116 0 0 0 0
+equiv "x4.x3[1].floating" "x4.x3[0].floating"
+node "x4.x4[3].floating" 1999 21657.9 -4543 873 ndif 0 0 0 0 0 0 0 0 19488 1136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12512 1008 24816 1328 21320 1176 1012776 32124 1003920 31908 0 0 0 0
+equiv "x4.x4[3].floating" "x4.x4[0].floating"
+equiv "x4.x4[3].floating" "x4.x4[1].floating"
+equiv "x4.x4[3].floating" "x4.x4[2].floating"
+node "x4.x7.floating" 216 5924.92 -5275 873 ndif 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3128 252 6204 332 5330 294 307446 9774 305232 9720 0 0 0 0
+node "async_resetb_delay_ctrl_code[0]" 348 1473.17 -6258 -481 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8316 528 0 0 2244 200 222943 13106 0 0 0 0 0 0 0 0 0 0
+equiv "async_resetb_delay_ctrl_code[0]" "x4.x2.SW"
+equiv "async_resetb_delay_ctrl_code[0]" "x4.code[0]"
+node "async_resetb_delay_ctrl_code[1]" 815 2002.88 -6254 -425 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16632 1056 0 0 4488 400 199820 11514 0 0 0 0 0 0 0 0 0 0
+equiv "async_resetb_delay_ctrl_code[1]" "x4.x3[0].SW"
+equiv "async_resetb_delay_ctrl_code[1]" "x4.x3[1].SW"
+equiv "async_resetb_delay_ctrl_code[1]" "x4.code[1]"
+node "async_resetb_delay_ctrl_code[2]" 1733 2375.6 -6256 -369 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33264 2112 0 0 8976 800 184452 8978 0 0 0 0 0 0 0 0 0 0
+equiv "async_resetb_delay_ctrl_code[2]" "x4.x4[0].SW"
+equiv "async_resetb_delay_ctrl_code[2]" "x4.x4[1].SW"
+equiv "async_resetb_delay_ctrl_code[2]" "x4.x4[2].SW"
+equiv "async_resetb_delay_ctrl_code[2]" "x4.x4[3].SW"
+equiv "async_resetb_delay_ctrl_code[2]" "x4.code[2]"
+node "x27.Q_N" 1183 102.799 441 824 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22266 1030 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1631_1008#" 1581 284.663 1631 1008 p 0 0 0 0 0 0 0 0 5472 296 4536 276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17436 1136 0 0 35638 2060 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1363_798#" 2845 294.199 1363 798 p 0 0 0 0 0 0 0 0 6912 364 11760 492 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34638 2290 0 0 37348 1904 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1159_798#" 3721 603.075 1159 798 p 0 0 0 0 0 0 0 0 4368 272 6656 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52992 3504 0 0 46702 2318 35668 2488 0 0 0 0 0 0 0 0 0 0
+node "a_1158_1098#" 2762 579.046 1158 1098 p 0 0 0 0 0 0 0 0 4368 272 6656 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35910 2370 0 0 38136 1946 35393 2422 0 0 0 0 0 0 0 0 0 0
+node "x27.SET_B" 2978 2497.71 25 -2266 pdif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34596 2268 0 0 36814 1634 75483 4192 88357 6210 0 0 0 0 0 0 0 0
+equiv "x27.SET_B" "x9.Y"
+node "a_860_798#" 1580 255.838 860 798 p 0 0 0 0 0 0 0 0 5688 302 4536 276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16644 1112 0 0 33334 1968 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_618_824#" 2607 392.631 618 824 ndif 0 0 0 0 0 0 0 0 4368 272 6656 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38004 2380 0 0 33640 1632 21744 1532 0 0 0 0 0 0 0 0 0 0
+node "a_305_798#" 3881 463.949 305 798 p 0 0 0 0 0 0 0 0 6912 364 9828 468 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57216 3536 0 0 42168 2418 0 0 0 0 0 0 0 0 0 0 0 0
+node "x27.RESET_B" 1894 440.621 25 824 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15264 996 0 0 30222 1298 29808 1338 0 0 0 0 0 0 0 0 0 0
+equiv "x27.RESET_B" "x10.Y"
+node "x4.x5[6].floating" 6624 558.786 -4896 1074 pdif 0 0 0 0 0 0 0 0 0 0 38976 2272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25024 2016 48072 2608 43128 2368 1952768 61908 1935504 61492 0 0 0 0
+equiv "x4.x5[6].floating" "x4.x5[0].floating"
+equiv "x4.x5[6].floating" "x4.x5[1].floating"
+equiv "x4.x5[6].floating" "x4.x5[2].floating"
+equiv "x4.x5[6].floating" "x4.x5[3].floating"
+equiv "x4.x5[6].floating" "x4.x5[4].floating"
+equiv "x4.x5[6].floating" "x4.x5[5].floating"
+equiv "x4.x5[6].floating" "x4.x5[7].floating"
+node "x4.x6.floating" 327 360.25 -5628 1071 pdif 0 0 0 0 0 0 0 0 0 0 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3128 252 6009 326 5391 296 307390 9772 305232 9720 0 0 0 0
+node "a_210_798#" 1581 225.431 210 798 p 0 0 0 0 0 0 0 0 4368 272 6656 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16974 1122 0 0 34080 1198 0 0 0 0 0 0 0 0 0 0 0 0
+node "x10.A" 2460 598.362 -485 874 ndif 0 0 0 0 0 0 0 0 4872 284 4872 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45648 2672 0 0 11668 932 29427 1598 0 0 0 0 0 0 0 0 0 0
+equiv "x10.A" "x4.OUT"
+node "a_n397_1077#" 2184 253.806 -397 1077 pdif 0 0 0 0 0 0 0 0 0 0 15288 868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9384 756 20932 1144 0 0 0 0 0 0 0 0 0 0
+node "a_2230_1582#" 394 1.41124 2230 1582 pdif 0 0 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1913_1582#" 227 1.73674 1913 1582 pdif 0 0 0 0 0 0 0 0 0 0 6132 314 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1403_1582#" 394 0.656228 1403 1582 pdif 0 0 0 0 0 0 0 0 0 0 3528 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1086_1582#" 227 0.697871 1086 1582 pdif 0 0 0 0 0 0 0 0 0 0 6132 314 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2134_1909#" 153 10.5219 2134 1909 ndif 0 0 0 0 0 0 0 0 5544 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1913_1909#" 153 4.7387 1913 1909 ndif 0 0 0 0 0 0 0 0 5544 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.Uc" 8748 1499.83 -6182 1526 pdif 0 0 0 0 0 0 0 0 37884 1910 42000 2008 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28047 1560 0 0 39780 3224 338458 15664 0 0 0 0 0 0 0 0 0 0
+equiv "x4.Uc" "x4.x5[0].delay_signal"
+equiv "x4.Uc" "x4.x2.delay_signal"
+equiv "x4.Uc" "x4.x5[1].delay_signal"
+equiv "x4.Uc" "x4.x3[0].delay_signal"
+equiv "x4.Uc" "x4.x5[2].delay_signal"
+equiv "x4.Uc" "x4.x3[1].delay_signal"
+equiv "x4.Uc" "x4.x5[3].delay_signal"
+equiv "x4.Uc" "x4.x4[0].delay_signal"
+equiv "x4.Uc" "x4.x5[4].delay_signal"
+equiv "x4.Uc" "x4.x4[1].delay_signal"
+equiv "x4.Uc" "x4.x5[5].delay_signal"
+equiv "x4.Uc" "x4.x4[2].delay_signal"
+equiv "x4.Uc" "x4.x5[7].delay_signal"
+equiv "x4.Uc" "x4.x5[6].delay_signal"
+equiv "x4.Uc" "x4.x4[3].delay_signal"
+equiv "x4.Uc" "x4.x7.delay_signal"
+equiv "x4.Uc" "x4.x6.delay_signal"
+equiv "x4.Uc" "x4.x9.output_stack"
+equiv "x4.Uc" "x4.x8.output_stack"
+node "x4.x11.Y" 1695 298.716 -6542 1203 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8646 550 0 0 45088 2194 41024 2270 0 0 0 0 0 0 0 0 0 0
+equiv "x4.x11.Y" "x4.x6.SW"
+node "x4.x10.Y" 5012 589.281 -6650 1203 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69168 4400 0 0 61216 3630 253707 11534 0 0 0 0 0 0 0 0 0 0
+equiv "x4.x10.Y" "x4.x5[0].SW"
+equiv "x4.x10.Y" "x4.x5[1].SW"
+equiv "x4.x10.Y" "x4.x5[2].SW"
+equiv "x4.x10.Y" "x4.x5[3].SW"
+equiv "x4.x10.Y" "x4.x5[4].SW"
+equiv "x4.x10.Y" "x4.x5[5].SW"
+equiv "x4.x10.Y" "x4.x5[7].SW"
+equiv "x4.x10.Y" "x4.x5[6].SW"
+node "delay_offset" 2698 3360.86 -6449 -1712 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54144 3408 0 0 10824 856 100318 4788 261824 10646 0 0 0 0 0 0 0 0
+equiv "delay_offset" "x2.x7.SW"
+equiv "delay_offset" "x2.x11.A"
+equiv "delay_offset" "x2.code_offset"
+equiv "delay_offset" "x4.x7.SW"
+equiv "delay_offset" "x4.x11.A"
+equiv "delay_offset" "x4.code_offset"
+node "async_resetb_delay_ctrl_code[3]" 807 266.82 -6862 1375 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18756 1176 0 0 3168 228 7018 464 0 0 0 0 0 0 0 0 0 0
+equiv "async_resetb_delay_ctrl_code[3]" "x4.x10.A"
+equiv "async_resetb_delay_ctrl_code[3]" "x4.code[3]"
+node "x4.pstack_lab5" 1308 14.2991 -6270 1526 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "a_1307_1909#" 153 8.14879 1307 1909 ndif 0 0 0 0 0 0 0 0 5544 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1086_1909#" 153 3.88365 1086 1909 ndif 0 0 0 0 0 0 0 0 5544 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2200_1841#" 1487 485.22 2200 1841 p 0 0 0 0 0 0 0 0 4368 272 4704 280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17634 1178 0 0 33755 1360 0 0 0 0 0 0 0 0 0 0 0 0
+node "x27.Q" 2198 967.129 158 824 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19014 1270 0 0 34628 1580 62933 4408 22683 1520 0 0 0 0 0 0 0 0
+equiv "x27.Q" "x3.A0"
+node "sample_clk" 2968 1192.57 2370 2212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49458 3302 0 0 42426 2386 12292 744 44630 2590 0 0 0 0 0 0 0 0
+equiv "sample_clk" "x3.S"
+equiv "sample_clk" "x27.CLK"
+node "a_1771_1775#" 1667 486.908 1771 1775 p 0 0 0 0 0 0 0 0 7980 358 15456 536 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16644 1112 0 0 34163 1878 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1373_1841#" 1487 390.147 1373 1841 p 0 0 0 0 0 0 0 0 4368 272 4704 280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17634 1178 0 0 33755 1360 0 0 0 0 0 0 0 0 0 0 0 0
+node "x8.A0" 2190 835.158 1159 1556 p 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19014 1270 0 0 36128 1626 20660 1124 0 0 0 0 0 0 0 0 0 0
+equiv "x8.A0" "x3.X"
+node "eob" 1926 738.045 1560 369 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30948 2068 0 0 33196 1984 3705 244 50086 2952 0 0 0 0 0 0 0 0
+equiv "eob" "x8.S"
+node "a_944_1775#" 1667 493.176 944 1775 p 0 0 0 0 0 0 0 0 7980 358 15456 536 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16644 1112 0 0 34163 1878 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.pstack_lab4" 1308 17.1501 -6182 1664 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x4.pstack_lab3" 1308 81.5002 -6270 1802 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x4.pstack_lab2" 1308 20.3868 -6182 1940 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "x4.pstack_lab1" 1308 95.2755 -6270 2078 pdif 0 0 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 10212 536 0 0 0 0 0 0 0 0 0 0
+node "async_clk_sar" 6497 3846.69 -6148 2427 m1 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100764 6648 0 0 27856 1452 327152 18208 38228 2250 0 0 0 0 0 0 0 0
+equiv "async_clk_sar" "x4.x9.input_stack"
+equiv "async_clk_sar" "x4.x8.input_stack"
+equiv "async_clk_sar" "x4.IN"
+equiv "async_clk_sar" "x8.X"
+node "vdd" 81214 74941.9 -7122 -3238 m4 0 0 0 0 18844234 39510 0 0 1095066 37066 193472 9210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21684 1336 0 0 1684657 45666 1587867 39500 896088 32236 3288289 107976 6866410 123712 0 0 0 0
+equiv "vdd" "x2.x5[0].VDD"
+equiv "vdd" "x2.x5[1].VDD"
+equiv "vdd" "x2.x5[2].VDD"
+equiv "vdd" "x2.x5[3].VDD"
+equiv "vdd" "x2.x5[4].VDD"
+equiv "vdd" "x2.x5[5].VDD"
+equiv "vdd" "x2.x5[7].VDD"
+equiv "vdd" "x2.x5[6].VDD"
+equiv "vdd" "x2.x6.VDD"
+equiv "vdd" "x2.x11.VPWR"
+equiv "vdd" "x2.x11.VPB"
+equiv "vdd" "x2.x10.VPWR"
+equiv "vdd" "x2.x10.VPB"
+equiv "vdd" "x2.x8.vdd"
+equiv "vdd" "x2.pfet_floating"
+equiv "vdd" "x2.VDD"
+equiv "vdd" "x3.VPWR"
+equiv "vdd" "x3.VPB"
+equiv "vdd" "x3.VPWR"
+equiv "vdd" "x4.x5[0].VDD"
+equiv "vdd" "x4.x5[1].VDD"
+equiv "vdd" "x4.x5[2].VDD"
+equiv "vdd" "x4.x5[3].VDD"
+equiv "vdd" "x4.x5[4].VDD"
+equiv "vdd" "x4.x5[5].VDD"
+equiv "vdd" "x4.x5[7].VDD"
+equiv "vdd" "x4.x5[6].VDD"
+equiv "vdd" "x4.x6.VDD"
+equiv "vdd" "x4.x11.VPWR"
+equiv "vdd" "x4.x11.VPB"
+equiv "vdd" "x4.x10.VPWR"
+equiv "vdd" "x4.x10.VPB"
+equiv "vdd" "x4.x8.vdd"
+equiv "vdd" "x4.pfet_floating"
+equiv "vdd" "x4.VDD"
+equiv "vdd" "x8.VPWR"
+equiv "vdd" "x8.VPB"
+equiv "vdd" "x8.VPWR"
+equiv "vdd" "x9.VPWR"
+equiv "vdd" "x9.VPB"
+equiv "vdd" "x10.VPWR"
+equiv "vdd" "x10.VPB"
+equiv "vdd" "x27.VPWR"
+equiv "vdd" "x27.VPB"
+equiv "vdd" "x27.VPWR"
+equiv "vdd" "x27.D"
+equiv "vdd" "x27.VPWR"
+substrate "x2.x11.VNB" 0 0 -6732 -2323 ndif 0 0 0 0 0 0 0 0 143792 7340 745143 27868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35124 2212 0 0 1128489 37336 1160980 29792 480800 19880 2953675 97682 8881956 105358 0 0 0 0
+equiv "x2.x11.VNB" "x2.x2.VSS"
+equiv "x2.x11.VNB" "x2.x3[0].VSS"
+equiv "x2.x11.VNB" "x2.x3[1].VSS"
+equiv "x2.x11.VNB" "x2.x4[0].VSS"
+equiv "x2.x11.VNB" "x2.x4[1].VSS"
+equiv "x2.x11.VNB" "x2.x4[2].VSS"
+equiv "x2.x11.VNB" "x2.x4[3].VSS"
+equiv "x2.x11.VNB" "x2.x7.VSS"
+equiv "x2.x11.VNB" "x2.x11.VGND"
+equiv "x2.x11.VNB" "x2.x10.VNB"
+equiv "x2.x11.VNB" "x2.x10.VGND"
+equiv "x2.x11.VNB" "x2.pstack_sub"
+equiv "x2.x11.VNB" "x2.x9.vss"
+equiv "x2.x11.VNB" "x3.VNB"
+equiv "x2.x11.VNB" "x2.VSS"
+equiv "x2.x11.VNB" "x3.VGND"
+equiv "x2.x11.VNB" "x4.x11.VNB"
+equiv "x2.x11.VNB" "x3.A1"
+equiv "x2.x11.VNB" "x3.VGND"
+equiv "x2.x11.VNB" "x4.x2.VSS"
+equiv "x2.x11.VNB" "x4.x3[0].VSS"
+equiv "x2.x11.VNB" "x4.x3[1].VSS"
+equiv "x2.x11.VNB" "x4.x4[0].VSS"
+equiv "x2.x11.VNB" "x4.x4[1].VSS"
+equiv "x2.x11.VNB" "x4.x4[2].VSS"
+equiv "x2.x11.VNB" "x4.x4[3].VSS"
+equiv "x2.x11.VNB" "x4.x7.VSS"
+equiv "x2.x11.VNB" "x4.x11.VGND"
+equiv "x2.x11.VNB" "x4.x10.VNB"
+equiv "x2.x11.VNB" "x4.x10.VGND"
+equiv "x2.x11.VNB" "x4.pstack_sub"
+equiv "x2.x11.VNB" "x4.x9.vss"
+equiv "x2.x11.VNB" "x8.VNB"
+equiv "x2.x11.VNB" "x4.VSS"
+equiv "x2.x11.VNB" "x8.VGND"
+equiv "x2.x11.VNB" "x9.VNB"
+equiv "x2.x11.VNB" "x8.A1"
+equiv "x2.x11.VNB" "x8.VGND"
+equiv "x2.x11.VNB" "x9.VGND"
+equiv "x2.x11.VNB" "x10.VNB"
+equiv "x2.x11.VNB" "x10.VGND"
+equiv "x2.x11.VNB" "x27.VNB"
+equiv "x2.x11.VNB" "x27.VGND"
+equiv "x2.x11.VNB" "x27.VNB"
+equiv "x2.x11.VNB" "vss"
+equiv "x2.x11.VNB" "x27.VGND"
+cap "sample_clk" "vdd" 929.817
+cap "x2.x2.floating" "x2.x5[6].floating" 441.107
+cap "async_clk_sar" "x4.nstack_lab5" 13.6434
+cap "async_setb_delay_ctrl_code[2]" "x2.x10.Y" 2.02676
+cap "a_1298_824#" "vdd" 2.54795
+cap "x27.Q_N" "x4.x5[6].floating" 0.48405
+cap "a_1913_1582#" "sample_clk" 7.47683
+cap "a_1296_1190#" "eob" 2.73439
+cap "a_618_824#" "a_1158_1098#" 139.383
+cap "delay_offset" "a_n6207_n1487#" 1.39746
+cap "x4.x10.Y" "x4.pstack_lab1" 0.102077
+cap "a_1296_1190#" "a_1159_798#" 9.07266
+cap "x4.Uc" "a_724_824#" 0.0256556
+cap "async_resetb_delay_ctrl_code[2]" "x4.x11.Y" 0.0098987
+cap "eob" "a_1631_1008#" 11.941
+cap "a_1363_798#" "x27.RESET_B" 0.0206889
+cap "a_1159_798#" "a_1631_1008#" 149.863
+cap "vdd" "async_setb_delay_ctrl_code[1]" 18.4303
+cap "x4.x4[3].floating" "x4.nstack_lab6" 0.666265
+cap "x10.A" "a_n397_1077#" 146.38
+cap "x2.x11.Y" "x2.nstack_lab2" 0.0790112
+cap "async_setb_delay_ctrl_code[2]" "x2.x7.floating" 17.664
+cap "x27.Q" "x27.RESET_B" 174.889
+cap "async_setb_delay_ctrl_code[2]" "x2.x4[3].floating" 532.016
+cap "x4.nstack_lab4" "x4.nstack_lab3" 38.8042
+cap "x4.pstack_lab5" "async_resetb_delay_ctrl_code[3]" 0.268565
+cap "x4.pstack_lab3" "async_clk_sar" 38.0644
+cap "x4.x7.floating" "x4.nstack_lab7" 4.09158
+cap "x27.SET_B" "x27.RESET_B" 3.60431
+cap "delay_offset" "x2.nstack_lab2" 3.03926
+cap "async_resetb_delay_ctrl_code[2]" "async_resetb_delay_ctrl_code[0]" 0.732368
+cap "x27.Q" "x4.x10.Y" 0.138642
+cap "x2.pstack_lab2" "x2.pstack_lab4" 31.6127
+cap "x4.x6.floating" "x4.x11.Y" 129.756
+cap "a_860_798#" "vdd" 199.47
+cap "a_860_798#" "a_1094_824#" 7.07352
+cap "a_n6207_413#" "x4.nstack_lab6" 2.2654
+cap "a_1086_1909#" "x8.A0" 0.616142
+cap "x4.x11.Y" "x4.x5[6].floating" 1.38078
+cap "async_clk_sar" "x4.x4[3].floating" 0.664929
+cap "x4.x10.Y" "x4.nstack_lab1" 0.02202
+cap "x4.pstack_lab5" "vdd" 107.391
+cap "sample_clk" "x8.A0" 11.9495
+cap "eob" "a_1159_798#" 37.1316
+cap "async_resetb_delay_ctrl_code[1]" "x4.x4[3].floating" 30.2306
+cap "async_resetb_delay_ctrl_code[0]" "x2.x10.Y" 0.0277577
+cap "x4.Uc" "x4.x4[3].floating" 635.751
+cap "a_1363_798#" "a_2077_824#" 0.0698533
+cap "async_resetb_delay_ctrl_code[0]" "x4.x6.floating" 0.148722
+cap "x2.pstack_lab4" "x2.x10.Y" 0.419625
+cap "x27.Q_N" "a_618_824#" 5.52759
+cap "x2.x11.Y" "x2.x6.floating" 129.756
+cap "async_clk_sar" "a_n6207_413#" 0.79321
+cap "x27.Q" "a_2077_824#" 0.197893
+cap "eob" "a_944_1775#" 323.527
+cap "async_resetb_delay_ctrl_code[0]" "x4.x5[6].floating" 1.31503
+cap "a_1159_798#" "a_944_1775#" 0.136319
+cap "x4.x6.floating" "x4.nstack_lab2" 1.0898
+cap "a_1373_1841#" "vdd" 173.054
+cap "x27.Q_N" "x4.x2.floating" 0.20712
+cap "async_resetb_delay_ctrl_code[2]" "async_setb_delay_ctrl_code[1]" 0.0640103
+cap "delay_offset" "x2.x6.floating" 62.4022
+cap "x27.SET_B" "a_2077_824#" 0.0245042
+cap "vdd" "a_n6207_689#" 0.128668
+cap "a_2134_1909#" "vdd" 0.455596
+cap "x27.Q_N" "a_818_1106#" 0.020178
+cap "async_resetb_delay_ctrl_code[0]" "x2.x7.floating" 0.0190088
+cap "a_1086_1909#" "x4.x5[6].floating" 0.000912572
+cap "a_1363_798#" "a_1158_1098#" 153.051
+cap "x4.x3[1].floating" "a_n397_736#" 0.309396
+cap "eob" "async_clk_sar" 10.5337
+cap "async_resetb_delay_ctrl_code[0]" "x2.x4[3].floating" 0.0760352
+cap "x2.nstack_lab7" "ready" 21.6946
+cap "a_1577_1106#" "vdd" 10.7836
+cap "x4.x11.Y" "x4.nstack_lab3" 0.0473818
+cap "async_setb_delay_ctrl_code[2]" "x2.nstack_lab5" 0.0681119
+cap "x4.x10.Y" "x27.RESET_B" 0.039122
+cap "async_clk_sar" "x4.nstack_lab6" 13.458
+cap "a_n397_1077#" "a_n397_736#" 12.1079
+cap "x2.nstack_lab6" "a_n6207_n1625#" 2.2654
+cap "x27.Q" "a_1158_1098#" 2.59502
+cap "x2.pstack_lab3" "ready" 8.66384
+cap "a_1499_824#" "a_1094_824#" 0.00245718
+cap "a_1499_824#" "vdd" 3.68855
+cap "async_setb_delay_ctrl_code[3]" "x2.pstack_lab5" 0.268565
+cap "x2.x6.floating" "async_setb_delay_ctrl_code[0]" 0.148722
+cap "x2.x10.Y" "async_setb_delay_ctrl_code[1]" 0.705224
+cap "x2.x5[6].floating" "x9.A" 20.7935
+cap "x10.A" "a_724_824#" 0.0337756
+cap "x27.SET_B" "a_1158_1098#" 313.109
+cap "a_860_798#" "x8.A0" 0.138572
+cap "a_1631_1008#" "a_1771_1775#" 0.0417412
+cap "x4.Uc" "x4.nstack_lab6" 32.0043
+cap "a_1307_1909#" "sample_clk" 0.071736
+cap "a_2230_1582#" "vdd" 0.862752
+cap "async_clk_sar" "a_944_1775#" 81.1632
+cap "x4.pstack_lab4" "vdd" 125.325
+cap "x4.pstack_lab2" "x4.pstack_lab4" 31.6127
+cap "a_n6207_n1073#" "ready" 0.242175
+cap "x27.SET_B" "x2.x5[6].floating" 1.10413
+cap "delay_offset" "a_n6207_n139#" 0.985403
+cap "a_2077_824#" "x27.RESET_B" 0.00426294
+cap "async_setb_delay_ctrl_code[0]" "a_n397_n1948#" 1.69257
+cap "x4.nstack_lab3" "x4.nstack_lab2" 38.8042
+cap "async_setb_delay_ctrl_code[1]" "x2.x7.floating" 0.02244
+cap "async_resetb_delay_ctrl_code[0]" "x2.x2.floating" 0.0373361
+cap "async_setb_delay_ctrl_code[1]" "x2.x4[3].floating" 30.2306
+cap "async_resetb_delay_ctrl_code[1]" "async_clk_sar" 0.358139
+cap "x4.Uc" "async_clk_sar" 415.165
+cap "x2.pstack_lab1" "ready" 8.32117
+cap "x4.x7.floating" "a_n6207_275#" 0.852074
+cap "a_1373_1841#" "x8.A0" 215.921
+cap "async_resetb_delay_ctrl_code[1]" "x4.Uc" 74.5124
+cap "a_305_798#" "x4.x3[1].floating" 0.00868546
+cap "a_860_798#" "x4.x5[6].floating" 0.217477
+cap "x4.pstack_lab5" "x4.x6.floating" 9.95913
+cap "a_2134_1909#" "x8.A0" 0.269495
+cap "a_1158_1098#" "x27.RESET_B" 3.21235
+cap "x2.pstack_lab1" "x2.pstack_lab3" 31.6127
+cap "eob" "a_1771_1775#" 17.1487
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_689#" 0.108204
+cap "a_n6207_n935#" "x2.nstack_lab1" 2.2654
+cap "x2.nstack_lab2" "x2.nstack_lab4" 31.6127
+cap "x2.nstack_lab3" "a_n6207_n1211#" 2.2654
+cap "x4.pstack_lab5" "x4.x5[6].floating" 0.276178
+cap "a_1159_798#" "a_1771_1775#" 0.370712
+cap "a_n397_1077#" "a_305_798#" 0.986096
+cap "x4.x7.floating" "vdd" 32.0724
+cap "async_resetb_delay_ctrl_code[0]" "x4.x2.floating" 164.067
+cap "vdd" "async_setb_delay_ctrl_code[3]" 136.792
+cap "x27.Q" "x27.Q_N" 3.20576
+cap "x2.x5[6].floating" "ready" 1.13479
+cap "a_618_824#" "sample_clk" 2.26873
+cap "x2.x2.floating" "async_setb_delay_ctrl_code[1]" 2.69926
+cap "x2.x3[1].floating" "async_setb_delay_ctrl_code[0]" 42.7178
+cap "x2.x11.Y" "x2.Uc" 163.55
+cap "a_618_824#" "a_1298_824#" 0.37344
+cap "a_1771_1775#" "a_944_1775#" 0.521957
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_137#" 0.373838
+cap "x27.SET_B" "x27.Q_N" 1.18181
+cap "x2.x5[6].floating" "x2.pstack_lab3" 0.276178
+cap "a_n397_736#" "a_724_824#" 0.485637
+cap "x4.x11.Y" "x4.pstack_lab1" 0.0510655
+cap "a_818_1106#" "sample_clk" 0.000743545
+cap "delay_offset" "x2.Uc" 256.434
+cap "a_1771_1775#" "async_clk_sar" 0.0896944
+cap "a_2200_1841#" "vdd" 165.672
+cap "async_setb_delay_ctrl_code[2]" "x4.nstack_lab1" 0.0142741
+cap "delay_offset" "x4.nstack_lab7" 31.0504
+cap "a_2077_824#" "a_1158_1098#" 163.255
+cap "x2.x6.floating" "x2.nstack_lab4" 1.66702
+cap "a_n6207_n1625#" "x2.x7.floating" 0.852074
+cap "x10.A" "eob" 0.125811
+cap "x2.x11.Y" "x2.nstack_lab1" 0.031012
+cap "x2.Uc" "async_setb_delay_ctrl_code[0]" 32.1767
+cap "x10.A" "a_1159_798#" 0.0235928
+cap "x4.x6.floating" "x4.pstack_lab4" 15.3571
+cap "delay_offset" "x2.nstack_lab1" 14.8945
+cap "x4.pstack_lab4" "x4.x5[6].floating" 1.37824
+cap "a_1094_1190#" "a_305_798#" 0.0771193
+cap "x27.Q_N" "x27.RESET_B" 34.8386
+cap "x2.pstack_lab1" "x2.x5[6].floating" 0.21407
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_n1#" 0.57252
+cap "a_860_798#" "a_618_824#" 123.976
+cap "async_resetb_delay_ctrl_code[2]" "x4.x7.floating" 17.664
+cap "x4.x11.Y" "x4.nstack_lab1" 0.031012
+cap "a_n6207_n1211#" "x2.x7.floating" 0.852074
+cap "async_setb_delay_ctrl_code[0]" "x2.nstack_lab1" 0.247879
+cap "a_860_798#" "x4.x2.floating" 0.0432467
+cap "x27.Q_N" "x4.x10.Y" 0.00941684
+cap "x10.A" "async_clk_sar" 0.925449
+cap "a_305_798#" "a_724_824#" 39.6993
+cap "async_setb_delay_ctrl_code[2]" "ready" 8.43848
+cap "async_resetb_delay_ctrl_code[1]" "x10.A" 0.000547447
+cap "async_setb_delay_ctrl_code[2]" "x2.nstack_lab7" 0.0380959
+cap "x4.nstack_lab7" "x4.nstack_lab5" 31.6127
+cap "x2.x11.Y" "x2.pstack_lab5" 7.07007
+cap "x8.A0" "a_2200_1841#" 0.16542
+cap "x2.x10.Y" "async_setb_delay_ctrl_code[3]" 51.9259
+cap "x10.A" "x4.Uc" 127.283
+cap "async_resetb_delay_ctrl_code[0]" "x4.nstack_lab1" 0.450748
+cap "a_1363_798#" "sample_clk" 2.77316
+cap "x4.x6.floating" "x4.x7.floating" 202.418
+cap "a_n6207_137#" "x4.nstack_lab3" 2.2654
+cap "x27.Q" "a_1086_1909#" 1.1755
+cap "a_618_824#" "a_1373_1841#" 0.294559
+cap "a_1363_798#" "a_1298_824#" 0.97482
+cap "delay_offset" "x2.pstack_lab5" 2.73349
+cap "x4.x7.floating" "x4.x5[6].floating" 182.21
+cap "x4.nstack_lab1" "x4.nstack_lab2" 38.8042
+cap "x27.Q" "sample_clk" 62.1716
+cap "x27.SET_B" "a_1086_1909#" 0.0298675
+cap "a_618_824#" "a_1577_1106#" 0.0121322
+cap "a_n6207_n797#" "ready" 0.133615
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n1073#" 0.57252
+cap "x27.SET_B" "sample_clk" 0.597128
+cap "a_210_798#" "a_n397_1077#" 0.852856
+cap "a_n6207_n1763#" "x2.Uc" 2.2654
+cap "x27.SET_B" "a_1298_824#" 5.19009
+cap "a_618_824#" "a_1499_824#" 9.42692
+cap "a_n397_n2289#" "a_n397_n1948#" 12.1079
+cap "x9.A" "async_setb_delay_ctrl_code[1]" 0.000547447
+cap "a_1159_798#" "a_n397_736#" 0.0270593
+cap "x4.x3[1].floating" "vdd" 30.0651
+cap "a_n397_1077#" "vdd" 260.186
+cap "x4.x11.Y" "x4.x10.Y" 787.553
+cap "x27.Q_N" "a_1158_1098#" 0.00721671
+cap "a_1631_1008#" "a_305_798#" 0.000469545
+cap "async_setb_delay_ctrl_code[1]" "x4.nstack_lab1" 0.0168732
+cap "async_resetb_delay_ctrl_code[0]" "x27.RESET_B" 0.00899455
+cap "x4.nstack_lab7" "x4.x4[3].floating" 0.116889
+cap "async_clk_sar" "a_n6207_n139#" 0.179953
+cap "x2.Uc" "x2.nstack_lab4" 0.174332
+cap "async_resetb_delay_ctrl_code[3]" "delay_offset" 29.3316
+cap "async_resetb_delay_ctrl_code[0]" "ready" 0.215682
+cap "a_n6207_n1#" "x4.nstack_lab3" 2.2654
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_n277#" 1.33573
+cap "x4.x7.floating" "x4.nstack_lab3" 4.09158
+cap "delay_offset" "a_n6207_275#" 1.24532
+cap "a_860_798#" "a_1363_798#" 1.87354
+cap "vdd" "x2.x11.Y" 432.187
+cap "async_resetb_delay_ctrl_code[0]" "x4.x10.Y" 12.4773
+cap "x2.pstack_lab4" "ready" 9.20721
+cap "async_resetb_delay_ctrl_code[1]" "a_n397_736#" 0.0339514
+cap "a_860_798#" "x27.Q" 0.892476
+cap "x2.nstack_lab6" "x2.x11.Y" 0.243549
+cap "async_setb_delay_ctrl_code[2]" "x2.x5[6].floating" 5.63951
+cap "delay_offset" "x4.pstack_lab2" 0.087076
+cap "delay_offset" "vdd" 483.039
+cap "x4.Uc" "a_n397_736#" 8.92403
+cap "x2.pstack_lab4" "x2.pstack_lab3" 70.3566
+cap "a_860_798#" "x27.SET_B" 175.333
+cap "delay_offset" "x2.nstack_lab6" 5.61487
+cap "eob" "a_305_798#" 6.65035
+cap "a_1159_798#" "a_305_798#" 49.2297
+cap "async_resetb_delay_ctrl_code[1]" "x2.x3[1].floating" 0.0344303
+cap "vdd" "async_setb_delay_ctrl_code[0]" 3.5256
+cap "a_1363_798#" "a_1373_1841#" 1.06977
+cap "async_setb_delay_ctrl_code[1]" "ready" 0.339099
+cap "x4.nstack_lab7" "x4.nstack_lab6" 38.8042
+cap "async_resetb_delay_ctrl_code[2]" "x4.x3[1].floating" 1.14957
+cap "x2.x6.floating" "x2.nstack_lab2" 1.0898
+cap "a_n6207_n1349#" "x2.x7.floating" 0.852074
+cap "x2.x11.Y" "x2.nstack_lab3" 0.0473818
+cap "x2.Uc" "a_n397_n2289#" 8.87454
+cap "a_1094_1190#" "vdd" 4.32554
+cap "x27.Q" "a_1373_1841#" 59.5641
+cap "a_1363_798#" "a_1577_1106#" 10.4326
+cap "a_305_798#" "a_944_1775#" 0.0386025
+cap "a_n6207_275#" "x4.nstack_lab5" 2.2654
+cap "a_1913_1909#" "x8.A0" 0.896263
+cap "x27.Q" "a_2134_1909#" 3.70193
+cap "x27.Q" "a_1577_1106#" 0.0605282
+cap "x27.SET_B" "a_1373_1841#" 0.0263714
+cap "a_1363_798#" "a_1499_824#" 69.9631
+cap "delay_offset" "x2.nstack_lab3" 15.0976
+cap "a_2077_824#" "sample_clk" 4.44719
+cap "a_305_798#" "async_clk_sar" 0.0539195
+cap "async_resetb_delay_ctrl_code[1]" "x2.Uc" 0.0126125
+cap "a_860_798#" "x27.RESET_B" 1.3759
+cap "a_1094_824#" "a_724_824#" 0.0411078
+cap "vdd" "a_724_824#" 6.29489
+cap "x4.nstack_lab7" "async_clk_sar" 21.6946
+cap "a_1875_1190#" "vdd" 4.20177
+cap "vdd" "x4.nstack_lab5" 3.08428
+cap "a_n6207_n935#" "x2.x7.floating" 0.852074
+cap "x27.SET_B" "a_1499_824#" 33.5665
+cap "delay_offset" "x2.pstack_lab2" 0.189849
+cap "async_resetb_delay_ctrl_code[0]" "x2.x5[6].floating" 0.0137692
+cap "x4.Uc" "a_305_798#" 0.029772
+cap "x4.x3[1].floating" "x4.x5[6].floating" 800.124
+cap "a_1158_1098#" "sample_clk" 12.5071
+cap "x4.Uc" "x4.nstack_lab7" 38.7857
+cap "a_n397_1077#" "x4.x5[6].floating" 12.8572
+cap "async_resetb_delay_ctrl_code[2]" "delay_offset" 28.2203
+cap "a_1158_1098#" "a_1298_824#" 1.25671
+cap "x4.pstack_lab5" "x4.x10.Y" 39.0091
+cap "x2.pstack_lab4" "x2.x5[6].floating" 1.37824
+cap "x2.x11.Y" "x2.x10.Y" 787.553
+cap "async_resetb_delay_ctrl_code[1]" "x2.nstack_lab1" 0.014061
+cap "x4.x11.Y" "x4.nstack_lab4" 0.128416
+cap "x4.pstack_lab3" "vdd" 36.1361
+cap "x4.x7.floating" "a_n6207_551#" 0.852074
+cap "async_resetb_delay_ctrl_code[2]" "async_setb_delay_ctrl_code[0]" 0.0694693
+cap "x4.pstack_lab2" "x4.pstack_lab3" 70.3566
+cap "delay_offset" "x2.x10.Y" 40.176
+cap "vdd" "a_n6207_n1763#" 0.128668
+cap "a_n6207_n1625#" "ready" 1.29601
+cap "a_1296_1190#" "vdd" 19.7439
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n797#" 1.33573
+cap "a_n6207_n1349#" "x2.nstack_lab5" 2.2654
+cap "x2.nstack_lab7" "a_n6207_n1625#" 2.2654
+cap "x4.x6.floating" "delay_offset" 62.4022
+cap "x10.A" "a_n397_736#" 151.004
+cap "x2.x5[6].floating" "async_setb_delay_ctrl_code[1]" 2.28213
+cap "x2.x10.Y" "async_setb_delay_ctrl_code[0]" 12.4773
+cap "x2.x11.Y" "x2.x7.floating" 0.972138
+cap "a_1631_1008#" "vdd" 187.169
+cap "delay_offset" "x4.x5[6].floating" 3.08269
+cap "vdd" "x4.x4[3].floating" 56.5152
+cap "x4.nstack_lab4" "x4.nstack_lab2" 31.6127
+cap "x4.x7.floating" "x4.nstack_lab1" 2.184
+cap "delay_offset" "x2.x7.floating" 178.375
+cap "x4.x6.floating" "async_setb_delay_ctrl_code[0]" 0.00129664
+cap "async_resetb_delay_ctrl_code[2]" "x4.nstack_lab5" 0.0681119
+cap "delay_offset" "x2.x4[3].floating" 4.97804
+cap "vdd" "x2.nstack_lab4" 0.505347
+cap "a_860_798#" "a_1158_1098#" 136.68
+cap "async_setb_delay_ctrl_code[0]" "x4.x5[6].floating" 0.0137692
+cap "a_n6207_n1211#" "ready" 0.340418
+cap "x2.Uc" "x2.nstack_lab2" 0.080526
+cap "x2.nstack_lab6" "x2.nstack_lab4" 31.6127
+cap "a_1094_1190#" "x4.x5[6].floating" 0.0347201
+cap "eob" "a_210_798#" 0.60314
+cap "async_setb_delay_ctrl_code[0]" "x2.x7.floating" 0.0206179
+cap "a_210_798#" "a_1159_798#" 0.103437
+cap "x4.x10.Y" "x4.pstack_lab4" 0.419625
+cap "async_resetb_delay_ctrl_code[0]" "async_setb_delay_ctrl_code[2]" 0.0694693
+cap "async_setb_delay_ctrl_code[0]" "x2.x4[3].floating" 0.0847545
+cap "x27.Q" "a_2200_1841#" 39.5864
+cap "a_618_824#" "a_n397_1077#" 1.71294
+cap "eob" "a_1094_824#" 0.0143133
+cap "eob" "vdd" 965.433
+cap "x4.x3[1].floating" "x4.x2.floating" 1166.86
+cap "a_1159_798#" "vdd" 940.876
+cap "delay_offset" "x4.nstack_lab3" 15.0976
+cap "eob" "a_1913_1582#" 0.698542
+cap "vdd" "x4.nstack_lab6" 0.505347
+cap "a_1158_1098#" "a_1373_1841#" 0.0386255
+cap "x2.nstack_lab2" "x2.nstack_lab1" 38.8042
+cap "x2.nstack_lab3" "x2.nstack_lab4" 38.8042
+cap "a_n397_1077#" "a_818_1106#" 0.0876558
+cap "async_resetb_delay_ctrl_code[3]" "async_clk_sar" 4.02808
+cap "x10.A" "a_305_798#" 0.494172
+cap "a_n6207_275#" "async_clk_sar" 0.504618
+cap "a_1577_1106#" "a_1158_1098#" 0.245765
+cap "a_210_798#" "async_clk_sar" 0.0147038
+cap "a_1631_1008#" "x8.A0" 0.051492
+cap "vdd" "a_944_1775#" 131.054
+cap "vdd" "a_n397_n2289#" 256.109
+cap "async_resetb_delay_ctrl_code[0]" "x4.x11.Y" 0.0042746
+cap "async_resetb_delay_ctrl_code[2]" "x4.x4[3].floating" 532.016
+cap "async_setb_delay_ctrl_code[3]" "ready" 6.99176
+cap "a_1499_824#" "a_1158_1098#" 1.18465
+cap "x2.x3[1].floating" "a_n397_n1948#" 0.309396
+cap "x2.x11.Y" "x2.nstack_lab5" 0.0810504
+cap "async_setb_delay_ctrl_code[2]" "async_setb_delay_ctrl_code[1]" 1117.9
+cap "x2.x2.floating" "async_setb_delay_ctrl_code[0]" 164.067
+cap "x2.x6.floating" "x2.Uc" 228.679
+cap "x4.x11.Y" "x4.nstack_lab2" 0.0790112
+cap "x4.x7.floating" "x4.x10.Y" 3.45184
+cap "vdd" "async_clk_sar" 3236.86
+cap "x4.pstack_lab2" "async_clk_sar" 51.3446
+cap "a_210_798#" "x4.Uc" 0.0394134
+cap "x4.x6.floating" "x4.pstack_lab3" 9.95913
+cap "x4.pstack_lab3" "x4.x5[6].floating" 0.276178
+cap "async_resetb_delay_ctrl_code[1]" "vdd" 18.4298
+cap "delay_offset" "x2.nstack_lab5" 15.9397
+cap "a_860_798#" "x27.Q_N" 0.00957561
+cap "a_n6207_n277#" "x4.nstack_lab1" 2.20314
+cap "x4.Uc" "x4.pstack_lab2" 0.150221
+cap "x4.Uc" "vdd" 652.868
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_413#" 0.185589
+cap "x4.nstack_lab5" "x4.nstack_lab3" 31.6127
+cap "a_n6207_n1763#" "x2.x7.floating" 0.852074
+cap "x2.Uc" "a_n397_n1948#" 8.92403
+cap "a_1094_1190#" "a_618_824#" 1.32533
+cap "x4.x2.floating" "async_setb_delay_ctrl_code[0]" 0.0373361
+cap "eob" "x8.A0" 52.1785
+cap "x4.x4[3].floating" "x4.x5[6].floating" 1554.24
+cap "a_1159_798#" "x8.A0" 3.04712
+cap "a_1086_1909#" "sample_clk" 0.10171
+cap "a_1363_798#" "a_n397_1077#" 0.00784041
+cap "a_618_824#" "a_724_824#" 55.1903
+cap "x8.A0" "a_944_1775#" 61.1622
+cap "x2.nstack_lab4" "x2.x7.floating" 8.90387
+cap "a_305_798#" "a_n397_736#" 0.932543
+cap "x2.nstack_lab4" "x2.x4[3].floating" 0.666265
+cap "x4.x2.floating" "a_724_824#" 0.385993
+cap "x27.Q" "a_n397_1077#" 10.1574
+cap "x4.nstack_lab4" "a_n6207_137#" 2.2654
+cap "delay_offset" "x4.pstack_lab1" 0.328119
+cap "a_2077_824#" "a_2200_1841#" 0.0388279
+cap "async_resetb_delay_ctrl_code[0]" "async_setb_delay_ctrl_code[1]" 0.0347347
+cap "x8.A0" "async_clk_sar" 5.5277
+cap "a_1771_1775#" "vdd" 110.952
+cap "a_n6207_n1349#" "ready" 0.504618
+cap "x27.Q" "a_1913_1909#" 1.1755
+cap "a_n6207_n277#" "ready" 0.00626946
+cap "async_resetb_delay_ctrl_code[2]" "async_clk_sar" 8.47656
+cap "x27.SET_B" "a_n397_1077#" 0.0868885
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n1625#" 0.13942
+cap "x4.pstack_lab5" "x4.x11.Y" 7.07007
+cap "eob" "x4.x5[6].floating" 0.239135
+cap "x2.x3[1].floating" "x2.Uc" 341.368
+cap "a_n6207_n1487#" "x2.nstack_lab6" 2.2654
+cap "x4.x6.floating" "x4.nstack_lab6" 2.77871
+cap "a_1913_1582#" "a_1771_1775#" 5.57222
+cap "x2.x6.floating" "x2.pstack_lab5" 9.95913
+cap "x4.nstack_lab3" "x4.x4[3].floating" 0.116889
+cap "x2.x10.Y" "a_n397_n2289#" 1.2719
+cap "delay_offset" "a_n6207_551#" 1.56548
+cap "async_resetb_delay_ctrl_code[2]" "async_resetb_delay_ctrl_code[1]" 1117.33
+cap "a_1158_1098#" "a_2200_1841#" 0.586022
+cap "async_resetb_delay_ctrl_code[2]" "x4.Uc" 334.568
+cap "vdd" "x2.nstack_lab2" 0.505347
+cap "a_944_1775#" "x4.x5[6].floating" 0.623226
+cap "eob" "a_1086_1582#" 7.45619
+cap "eob" "a_1403_1582#" 5.74846
+cap "a_n6207_n935#" "ready" 0.179953
+cap "a_1296_1190#" "a_618_824#" 6.51542
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n1211#" 0.373838
+cap "x4.x6.floating" "async_clk_sar" 142.963
+cap "x10.A" "a_210_798#" 15.4084
+cap "x9.A" "async_setb_delay_ctrl_code[0]" 0.404747
+cap "x27.SET_B" "a_1875_824#" 0.00776142
+cap "delay_offset" "x4.nstack_lab1" 14.8945
+cap "async_clk_sar" "x4.x5[6].floating" 5.41068
+cap "a_1631_1008#" "a_618_824#" 63.2838
+cap "async_resetb_delay_ctrl_code[1]" "x4.x6.floating" 0.159543
+cap "x4.x7.floating" "x4.nstack_lab4" 8.90387
+cap "a_860_798#" "sample_clk" 0.0321871
+cap "async_resetb_delay_ctrl_code[1]" "x4.x5[6].floating" 2.28213
+cap "a_n397_1077#" "x27.RESET_B" 4.06429
+cap "a_860_798#" "a_1298_824#" 2.76336
+cap "x10.A" "vdd" 397.372
+cap "a_1086_1582#" "a_944_1775#" 5.57222
+cap "x4.x6.floating" "x4.Uc" 227.35
+cap "a_1403_1582#" "a_944_1775#" 0.663553
+cap "async_setb_delay_ctrl_code[0]" "x4.nstack_lab1" 0.0327921
+cap "x27.Q" "a_1094_1190#" 0.277133
+cap "a_1307_1909#" "async_clk_sar" 0.119928
+cap "x4.Uc" "x4.x5[6].floating" 1194.24
+cap "x27.SET_B" "async_setb_delay_ctrl_code[0]" 0.00899455
+cap "x4.x10.Y" "x4.x3[1].floating" 3.02392
+cap "async_resetb_delay_ctrl_code[1]" "x2.x7.floating" 0.0175809
+cap "async_resetb_delay_ctrl_code[1]" "x2.x4[3].floating" 0.0703234
+cap "x2.nstack_lab2" "x2.nstack_lab3" 38.8042
+cap "x2.nstack_lab5" "x2.nstack_lab4" 38.8042
+cap "x8.A0" "a_1771_1775#" 80.3574
+cap "a_n397_1077#" "x4.x10.Y" 1.2719
+cap "x27.SET_B" "a_1094_1190#" 0.369775
+cap "a_1363_798#" "a_1875_1190#" 0.0668742
+cap "vdd" "x2.x6.floating" 5926.35
+cap "x4.x7.floating" "async_setb_delay_ctrl_code[2]" 0.0163078
+cap "x2.x11.Y" "ready" 92.779
+cap "x4.pstack_lab1" "x4.pstack_lab3" 31.6127
+cap "a_1373_1841#" "sample_clk" 3.06933
+cap "eob" "a_618_824#" 17.2491
+cap "x2.nstack_lab6" "x2.x6.floating" 2.77871
+cap "x2.nstack_lab7" "x2.x11.Y" 1.78728
+cap "a_1159_798#" "a_618_824#" 125.404
+cap "a_2134_1909#" "sample_clk" 0.633968
+cap "async_clk_sar" "x4.nstack_lab3" 13.5546
+cap "x2.x11.Y" "x2.pstack_lab3" 0.0997931
+cap "a_1577_1106#" "sample_clk" 0.279579
+cap "x27.SET_B" "a_724_824#" 14.6558
+cap "delay_offset" "ready" 257.171
+cap "eob" "a_818_1106#" 0.373686
+cap "delay_offset" "x2.nstack_lab7" 31.0504
+cap "a_1159_798#" "a_818_1106#" 0.124974
+cap "a_1499_824#" "a_1298_824#" 0.333727
+cap "delay_offset" "x2.pstack_lab3" 0.638094
+cap "vdd" "a_n397_n1948#" 235.057
+cap "a_618_824#" "a_944_1775#" 0.0219736
+cap "delay_offset" "x4.x10.Y" 40.176
+cap "async_setb_delay_ctrl_code[0]" "ready" 0.273633
+cap "a_n6207_n1487#" "x2.x7.floating" 0.852074
+cap "a_210_798#" "a_n397_736#" 1.14796
+cap "x2.Uc" "x2.pstack_lab5" 70.2445
+cap "a_2230_1582#" "sample_clk" 5.75752
+cap "x4.x11.Y" "x4.x7.floating" 0.972138
+cap "a_618_824#" "async_clk_sar" 0.265655
+cap "a_1296_1190#" "a_1363_798#" 0.946053
+cap "a_n397_1077#" "a_1158_1098#" 0.0471991
+cap "x4.x10.Y" "async_setb_delay_ctrl_code[0]" 0.0277577
+cap "delay_offset" "a_n6207_n1073#" 1.04529
+cap "a_1363_798#" "a_1631_1008#" 205.485
+cap "a_1094_824#" "a_n397_736#" 0.042868
+cap "a_1296_1190#" "x27.Q" 0.598108
+cap "x4.x2.floating" "async_clk_sar" 0.0019586
+cap "a_n397_736#" "vdd" 235.219
+cap "x2.pstack_lab1" "x2.x11.Y" 0.0510655
+cap "x2.pstack_lab2" "x2.x6.floating" 18.6985
+cap "async_resetb_delay_ctrl_code[1]" "x4.x2.floating" 2.69926
+cap "a_618_824#" "x4.Uc" 0.0196592
+cap "x27.RESET_B" "a_724_824#" 0.0378064
+cap "a_1875_824#" "a_2077_824#" 0.367362
+cap "x27.Q" "a_1631_1008#" 0.139063
+cap "x2.nstack_lab2" "x2.x7.floating" 8.90387
+cap "async_resetb_delay_ctrl_code[0]" "x4.x7.floating" 0.0206179
+cap "x4.Uc" "x4.x2.floating" 192.959
+cap "x2.nstack_lab2" "x2.x4[3].floating" 0.666265
+cap "x4.nstack_lab1" "x4.x4[3].floating" 0.0716814
+cap "delay_offset" "x2.pstack_lab1" 0.328119
+cap "x27.SET_B" "a_1631_1008#" 137.501
+cap "x4.x7.floating" "x4.nstack_lab2" 8.90387
+cap "a_n6207_n1#" "x4.nstack_lab2" 2.2654
+cap "vdd" "x2.x3[1].floating" 30.0651
+cap "x4.x10.Y" "x4.nstack_lab5" 0.0665474
+cap "a_860_798#" "a_1499_824#" 3.15823
+cap "x10.A" "x4.x5[6].floating" 20.7921
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n1349#" 0.257138
+cap "a_1875_824#" "a_1158_1098#" 1.90245
+cap "x2.x11.Y" "x2.x5[6].floating" 1.38078
+cap "x2.x6.floating" "x2.x10.Y" 87.0351
+cap "a_n6207_551#" "x4.nstack_lab6" 2.2654
+cap "a_1363_798#" "eob" 22.222
+cap "a_210_798#" "a_305_798#" 96.845
+cap "a_1363_798#" "a_1159_798#" 116.949
+cap "x4.pstack_lab5" "x4.pstack_lab4" 70.3566
+cap "delay_offset" "x2.x5[6].floating" 3.08269
+cap "x4.pstack_lab1" "async_clk_sar" 37.7278
+cap "x27.Q" "eob" 103.004
+cap "vdd" "x2.Uc" 646.419
+cap "x27.Q" "a_1159_798#" 1.9227
+cap "a_n6207_n1763#" "ready" 1.95981
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_n139#" 0.905225
+cap "x4.x7.floating" "async_setb_delay_ctrl_code[1]" 0.0175809
+cap "a_1094_1190#" "a_1158_1098#" 0.213477
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n935#" 0.905225
+cap "a_305_798#" "vdd" 614.756
+cap "a_305_798#" "a_1094_824#" 0.0419646
+cap "a_n6207_n1487#" "x2.nstack_lab5" 2.2654
+cap "x2.nstack_lab6" "x2.Uc" 32.0043
+cap "x2.nstack_lab7" "a_n6207_n1763#" 2.2654
+cap "x27.SET_B" "eob" 90.1772
+cap "a_2077_824#" "a_1875_1190#" 0.893863
+cap "sample_clk" "a_2200_1841#" 236.729
+cap "x4.x10.Y" "x4.pstack_lab3" 0.235079
+cap "x2.x6.floating" "x2.x7.floating" 202.418
+cap "a_1631_1008#" "x27.RESET_B" 0.024536
+cap "x27.SET_B" "a_1159_798#" 13.6693
+cap "x2.x5[6].floating" "async_setb_delay_ctrl_code[0]" 1.31503
+cap "a_n397_n2289#" "x9.A" 146.53
+cap "x27.Q_N" "a_n397_1077#" 0.371287
+cap "async_clk_sar" "a_n6207_551#" 1.29601
+cap "x4.nstack_lab7" "vdd" 4.23046
+cap "x27.Q" "a_944_1775#" 60.6732
+cap "vdd" "x2.nstack_lab1" 3.08428
+cap "x4.x10.Y" "x4.x4[3].floating" 6.68098
+cap "a_1158_1098#" "a_1875_1190#" 0.0445002
+cap "x27.SET_B" "a_n397_n2289#" 4.13876
+cap "x27.SET_B" "a_944_1775#" 2.849
+cap "x2.nstack_lab4" "ready" 13.458
+cap "x27.Q" "async_clk_sar" 120.255
+cap "delay_offset" "x4.nstack_lab4" 3.47485
+cap "async_clk_sar" "x4.nstack_lab1" 12.6991
+cap "async_resetb_delay_ctrl_code[1]" "x4.nstack_lab1" 0.055371
+cap "x27.Q" "x4.Uc" 0.430478
+cap "eob" "x27.RESET_B" 0.771673
+cap "x10.A" "a_618_824#" 0.836897
+cap "a_1159_798#" "x27.RESET_B" 0.217673
+cap "x2.pstack_lab2" "x2.Uc" 0.150221
+cap "async_setb_delay_ctrl_code[2]" "x2.x11.Y" 0.0098987
+cap "x2.x3[1].floating" "x2.x10.Y" 3.02392
+cap "x27.SET_B" "x4.Uc" 0.121849
+cap "a_1631_1008#" "a_2077_824#" 36.6828
+cap "x10.A" "x4.x2.floating" 19.5615
+cap "x2.nstack_lab3" "x2.nstack_lab1" 31.6127
+cap "async_resetb_delay_ctrl_code[2]" "x2.Uc" 0.00763678
+cap "delay_offset" "async_setb_delay_ctrl_code[2]" 28.2203
+cap "x4.x7.floating" "a_n6207_689#" 0.852074
+cap "a_1296_1190#" "a_1158_1098#" 0.10945
+cap "vdd" "x2.pstack_lab5" 108.772
+cap "async_resetb_delay_ctrl_code[2]" "x4.nstack_lab7" 0.0380959
+cap "a_1631_1008#" "a_1158_1098#" 155.321
+cap "x2.x2.floating" "a_n397_n1948#" 10.4149
+cap "async_setb_delay_ctrl_code[2]" "async_setb_delay_ctrl_code[0]" 0.40401
+cap "x2.x10.Y" "x2.Uc" 1007.34
+cap "async_resetb_delay_ctrl_code[0]" "x4.x3[1].floating" 42.7178
+cap "x4.nstack_lab4" "x4.nstack_lab5" 38.8042
+cap "x27.RESET_B" "async_clk_sar" 0.0148027
+cap "x2.x3[1].floating" "x2.x4[3].floating" 1185.94
+cap "a_1363_798#" "a_1771_1775#" 0.519929
+cap "async_clk_sar" "ready" 2.53564
+cap "async_resetb_delay_ctrl_code[2]" "x2.nstack_lab1" 0.0142741
+cap "delay_offset" "a_n6207_n797#" 0.983027
+cap "x27.Q" "a_1771_1775#" 111.591
+cap "x4.x7.floating" "a_n6207_137#" 0.852074
+cap "async_resetb_delay_ctrl_code[1]" "ready" 0.169952
+cap "eob" "a_2077_824#" 2.29069
+cap "x4.Uc" "x27.RESET_B" 0.657968
+cap "delay_offset" "x4.x11.Y" 190.038
+cap "x4.x10.Y" "async_clk_sar" 109.585
+cap "a_1159_798#" "a_2077_824#" 70.8078
+cap "x27.SET_B" "a_1771_1775#" 0.854683
+cap "a_305_798#" "x4.x5[6].floating" 2.16589
+cap "x2.x10.Y" "x2.nstack_lab1" 0.02202
+cap "async_resetb_delay_ctrl_code[1]" "x4.x10.Y" 0.705224
+cap "x2.Uc" "x2.x7.floating" 185.158
+cap "x2.Uc" "x2.x4[3].floating" 635.751
+cap "async_resetb_delay_ctrl_code[3]" "vdd" 137.684
+cap "async_resetb_delay_ctrl_code[0]" "x2.x11.Y" 0.0039803
+cap "a_1913_1909#" "sample_clk" 0.440391
+cap "x4.Uc" "x4.x10.Y" 1005.41
+cap "x4.x11.Y" "async_setb_delay_ctrl_code[0]" 0.0039803
+cap "eob" "a_1158_1098#" 35.3079
+cap "a_210_798#" "vdd" 209.285
+cap "a_1159_798#" "a_1158_1098#" 795.524
+cap "a_618_824#" "a_n397_736#" 0.364123
+cap "x2.x3[1].floating" "x2.x2.floating" 1166.86
+cap "x4.x3[1].floating" "async_setb_delay_ctrl_code[1]" 0.0344303
+cap "async_resetb_delay_ctrl_code[0]" "delay_offset" 3.40353
+cap "x4.x2.floating" "a_n397_736#" 10.4149
+cap "a_1363_798#" "x10.A" 0.00310312
+cap "delay_offset" "x4.nstack_lab2" 3.03926
+cap "x4.nstack_lab4" "x4.x4[3].floating" 0.666265
+cap "x2.x7.floating" "x2.nstack_lab1" 2.184
+cap "a_1094_824#" "vdd" 0.170642
+cap "x4.pstack_lab2" "vdd" 156.48
+cap "x2.nstack_lab1" "x2.x4[3].floating" 0.0716814
+cap "delay_offset" "x2.pstack_lab4" 0.364478
+cap "x4.x7.floating" "a_n6207_n1#" 0.852074
+cap "x27.Q" "x10.A" 2.58656
+cap "a_1158_1098#" "a_944_1775#" 0.0703701
+cap "async_resetb_delay_ctrl_code[0]" "async_setb_delay_ctrl_code[0]" 2947.71
+cap "vdd" "x2.nstack_lab6" 0.505347
+cap "a_1913_1582#" "vdd" 1.7653
+cap "a_n6207_n1487#" "ready" 0.79321
+cap "x4.x11.Y" "x4.nstack_lab5" 0.0810504
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n1763#" 0.108204
+cap "x27.SET_B" "x10.A" 1.319
+cap "x2.x2.floating" "x2.Uc" 192.959
+cap "x2.x5[6].floating" "a_n397_n2289#" 13.2415
+cap "x2.x10.Y" "x2.pstack_lab5" 39.0091
+cap "x2.x11.Y" "async_setb_delay_ctrl_code[1]" 0.0074119
+cap "a_860_798#" "a_n397_1077#" 0.121414
+cap "async_setb_delay_ctrl_code[2]" "x4.x4[3].floating" 0.0329896
+cap "delay_offset" "async_setb_delay_ctrl_code[1]" 3.33466
+cap "vdd" "x2.nstack_lab3" 3.08428
+cap "x2.nstack_lab2" "ready" 13.458
+cap "x4.x11.Y" "x4.pstack_lab3" 0.0997931
+cap "a_618_824#" "a_305_798#" 272.731
+cap "x4.nstack_lab4" "x4.nstack_lab6" 31.6127
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_275#" 0.257138
+cap "async_setb_delay_ctrl_code[1]" "async_setb_delay_ctrl_code[0]" 2533.69
+cap "x9.A" "a_n397_n1948#" 150.757
+cap "eob" "x27.Q_N" 0.49832
+cap "a_305_798#" "x4.x2.floating" 0.59909
+cap "a_1159_798#" "x27.Q_N" 0.107278
+cap "sample_clk" "a_1875_1190#" 0.507014
+cap "vdd" "x2.pstack_lab2" 160.712
+cap "a_305_798#" "a_818_1106#" 9.45283
+cap "x10.A" "x27.RESET_B" 73.3096
+cap "x8.A0" "vdd" 280.789
+cap "async_resetb_delay_ctrl_code[2]" "vdd" 37.5632
+cap "x27.SET_B" "a_n397_n1948#" 3.3806
+cap "x4.pstack_lab5" "delay_offset" 2.73349
+cap "a_1363_798#" "a_n397_736#" 0.0295898
+cap "x2.nstack_lab2" "a_n6207_n1073#" 2.2654
+cap "x4.nstack_lab4" "async_clk_sar" 13.458
+cap "x4.x6.floating" "async_resetb_delay_ctrl_code[3]" 5.04414
+cap "x4.nstack_lab1" "a_n6207_n139#" 2.2654
+cap "x10.A" "x4.x10.Y" 0.113368
+cap "x27.Q" "a_n397_736#" 1.25498
+cap "a_1158_1098#" "a_1771_1775#" 0.132617
+cap "vdd" "x2.x10.Y" 2726.44
+cap "a_860_798#" "a_1094_1190#" 9.75667
+cap "x4.Uc" "x4.nstack_lab4" 0.174332
+cap "x2.x6.floating" "ready" 29.2609
+cap "a_210_798#" "x4.x5[6].floating" 0.99549
+cap "x27.SET_B" "a_n397_736#" 2.23745
+cap "async_resetb_delay_ctrl_code[0]" "x4.x4[3].floating" 0.0847545
+cap "x4.x6.floating" "vdd" 5809.53
+cap "x2.x6.floating" "x2.pstack_lab3" 9.95913
+cap "x4.x6.floating" "x4.pstack_lab2" 15.3496
+cap "x4.x4[3].floating" "x4.nstack_lab2" 0.666265
+cap "a_1296_1190#" "sample_clk" 0.00691243
+cap "x27.Q_N" "x4.Uc" 0.0283188
+cap "delay_offset" "a_n6207_689#" 1.68316
+cap "x4.pstack_lab2" "x4.x5[6].floating" 1.37824
+cap "vdd" "x4.x5[6].floating" 44017.1
+cap "delay_offset" "a_n6207_n1625#" 1.56548
+cap "async_clk_sar" "async_setb_delay_ctrl_code[2]" 0.135401
+cap "a_1631_1008#" "sample_clk" 3.62585
+cap "a_860_798#" "a_724_824#" 28.1914
+cap "async_resetb_delay_ctrl_code[1]" "async_setb_delay_ctrl_code[2]" 0.0640103
+cap "x4.x11.Y" "x4.nstack_lab6" 0.243549
+cap "vdd" "x2.x7.floating" 32.0724
+cap "vdd" "x2.x4[3].floating" 56.5152
+cap "a_1307_1909#" "vdd" 0.507586
+cap "x4.Uc" "async_setb_delay_ctrl_code[2]" 0.00763678
+cap "x2.nstack_lab6" "x2.x7.floating" 8.90387
+cap "x2.x10.Y" "x2.nstack_lab3" 0.0406604
+cap "x2.Uc" "x9.A" 127.449
+cap "x4.nstack_lab7" "a_n6207_551#" 2.2654
+cap "x2.nstack_lab6" "x2.x4[3].floating" 0.666265
+cap "delay_offset" "a_n6207_137#" 1.1291
+cap "a_1403_1582#" "vdd" 1.16276
+cap "a_1086_1582#" "vdd" 2.67238
+cap "delay_offset" "x4.pstack_lab4" 0.197105
+cap "x10.A" "a_1158_1098#" 0.0704507
+cap "delay_offset" "a_n6207_n1211#" 1.1291
+cap "x27.RESET_B" "a_n397_736#" 3.59474
+cap "async_clk_sar" "a_n6207_n797#" 0.00626946
+cap "async_setb_delay_ctrl_code[1]" "x4.x4[3].floating" 0.0703234
+cap "x27.Q" "a_305_798#" 9.89745
+cap "x2.pstack_lab1" "x2.x6.floating" 5.78093
+cap "x2.pstack_lab2" "x2.x10.Y" 0.148662
+cap "x4.x11.Y" "async_clk_sar" 95.8428
+cap "x27.SET_B" "x2.Uc" 0.694178
+cap "async_resetb_delay_ctrl_code[1]" "x4.x11.Y" 0.0074119
+cap "x27.SET_B" "a_305_798#" 145.425
+cap "vdd" "x4.nstack_lab3" 3.08428
+cap "x2.nstack_lab3" "x2.x7.floating" 4.09158
+cap "x4.pstack_lab5" "x4.pstack_lab3" 31.6127
+cap "eob" "sample_clk" 55.5584
+cap "eob" "a_1298_824#" 1.38268
+cap "x2.nstack_lab3" "x2.x4[3].floating" 0.116889
+cap "a_1159_798#" "sample_clk" 329.681
+cap "x4.x11.Y" "x4.Uc" 163.483
+cap "a_1159_798#" "a_1298_824#" 0.256334
+cap "a_1296_1190#" "a_860_798#" 4.12335
+cap "vdd" "x2.x2.floating" 33.4451
+cap "async_setb_delay_ctrl_code[2]" "a_n6207_n1487#" 0.185589
+cap "a_210_798#" "a_618_824#" 0.603924
+cap "async_resetb_delay_ctrl_code[2]" "x4.x6.floating" 0.171574
+cap "a_1086_1909#" "a_944_1775#" 7.83272
+cap "x2.nstack_lab1" "x4.nstack_lab1" 4.72482
+cap "async_resetb_delay_ctrl_code[0]" "async_clk_sar" 0.273965
+cap "x2.x6.floating" "x2.x5[6].floating" 1179.18
+cap "x2.x11.Y" "async_setb_delay_ctrl_code[3]" 4.66277
+cap "async_resetb_delay_ctrl_code[2]" "x4.x5[6].floating" 5.63951
+cap "delay_offset" "a_n6207_n1#" 1.04529
+cap "a_210_798#" "x4.x2.floating" 0.452625
+cap "sample_clk" "a_944_1775#" 0.743353
+cap "delay_offset" "x4.x7.floating" 178.375
+cap "async_resetb_delay_ctrl_code[0]" "async_resetb_delay_ctrl_code[1]" 2533.13
+cap "async_clk_sar" "x4.nstack_lab2" 13.458
+cap "a_618_824#" "vdd" 382.841
+cap "a_1086_1909#" "async_clk_sar" 1.13356
+cap "a_618_824#" "a_1094_824#" 0.00286714
+cap "async_resetb_delay_ctrl_code[2]" "x2.x7.floating" 0.0163078
+cap "async_resetb_delay_ctrl_code[0]" "x4.Uc" 32.1767
+cap "delay_offset" "async_setb_delay_ctrl_code[3]" 29.3316
+cap "a_1307_1909#" "x8.A0" 5.6952
+cap "async_resetb_delay_ctrl_code[2]" "x2.x4[3].floating" 0.0329896
+cap "sample_clk" "async_clk_sar" 0.303273
+cap "vdd" "x2.nstack_lab5" 3.08428
+cap "a_1094_824#" "x4.x2.floating" 0.01936
+cap "x2.Uc" "ready" 370.342
+cap "x4.x2.floating" "vdd" 34.0963
+cap "x4.Uc" "x4.nstack_lab2" 0.080526
+cap "x4.x7.floating" "async_setb_delay_ctrl_code[0]" 0.0190088
+cap "a_305_798#" "x27.RESET_B" 123.794
+cap "a_818_1106#" "vdd" 6.22308
+cap "x2.nstack_lab6" "x2.nstack_lab5" 38.8042
+cap "x2.nstack_lab7" "x2.Uc" 38.7857
+cap "a_1631_1008#" "a_1373_1841#" 0.515779
+cap "x2.x10.Y" "x2.x7.floating" 3.45184
+cap "x10.A" "x27.Q_N" 0.138432
+cap "x2.x10.Y" "x2.x4[3].floating" 6.68098
+cap "x4.x6.floating" "x4.x5[6].floating" 1179.18
+cap "a_860_798#" "eob" 5.43355
+cap "a_1158_1098#" "a_n397_736#" 0.0377179
+cap "a_860_798#" "a_1159_798#" 33.3645
+cap "a_305_798#" "x4.x10.Y" 0.000355645
+cap "async_clk_sar" "async_setb_delay_ctrl_code[1]" 0.169952
+cap "x4.pstack_lab3" "x4.pstack_lab4" 70.3566
+cap "async_resetb_delay_ctrl_code[2]" "x4.nstack_lab3" 0.145594
+cap "x4.x10.Y" "x4.nstack_lab7" 0.169228
+cap "async_resetb_delay_ctrl_code[1]" "async_setb_delay_ctrl_code[1]" 0.208864
+cap "a_1631_1008#" "a_1499_824#" 25.8462
+cap "x2.nstack_lab1" "ready" 12.6991
+cap "x2.nstack_lab5" "x2.nstack_lab3" 31.6127
+cap "x4.x7.floating" "x4.nstack_lab5" 4.09158
+cap "x4.Uc" "async_setb_delay_ctrl_code[1]" 0.0126125
+cap "a_860_798#" "a_944_1775#" 0.0188294
+cap "a_1086_1582#" "x4.x5[6].floating" 0.00163374
+cap "x2.x7.floating" "x2.x4[3].floating" 1181.8
+cap "x4.pstack_lab1" "vdd" 110.62
+cap "x4.pstack_lab1" "x4.pstack_lab2" 70.3566
+cap "eob" "a_1373_1841#" 219.161
+cap "a_860_798#" "async_clk_sar" 0.304504
+cap "async_setb_delay_ctrl_code[2]" "x2.x6.floating" 0.171574
+cap "a_1159_798#" "a_1373_1841#" 0.06831
+cap "a_618_824#" "x8.A0" 0.0441516
+cap "x2.x2.floating" "x2.x10.Y" 2.02112
+cap "x2.x3[1].floating" "x2.x5[6].floating" 800.124
+cap "x4.pstack_lab5" "async_clk_sar" 46.8848
+cap "eob" "a_1577_1106#" 1.9427
+cap "sample_clk" "a_1771_1775#" 328.143
+cap "a_n6207_n1211#" "x2.nstack_lab4" 2.2654
+cap "a_1159_798#" "a_1577_1106#" 2.75572
+cap "delay_offset" "a_n6207_n1349#" 1.24532
+cap "a_860_798#" "x4.Uc" 0.00788396
+cap "delay_offset" "a_n6207_n277#" 0.983027
+cap "eob" "a_1499_824#" 8.78974
+cap "x27.Q" "a_210_798#" 79.1914
+cap "x4.pstack_lab5" "x4.Uc" 70.2445
+cap "a_1159_798#" "a_1499_824#" 0.0603549
+cap "vdd" "x9.A" 385.752
+cap "a_1363_798#" "vdd" 330.291
+cap "a_305_798#" "a_1158_1098#" 26.4476
+cap "x2.pstack_lab5" "ready" 17.4782
+cap "x27.SET_B" "a_210_798#" 1.19338
+cap "eob" "a_2230_1582#" 0.187388
+cap "x2.x10.Y" "x2.nstack_lab5" 0.0665474
+cap "x2.Uc" "x2.x5[6].floating" 1194.38
+cap "x27.Q" "vdd" 1035.12
+cap "a_1373_1841#" "async_clk_sar" 0.0861011
+cap "x27.Q_N" "a_n397_736#" 0.464283
+cap "x2.pstack_lab5" "x2.pstack_lab3" 31.6127
+cap "x4.x7.floating" "x4.x4[3].floating" 1181.8
+cap "vdd" "x4.nstack_lab1" 3.08428
+cap "x27.Q" "a_1913_1582#" 1.40823
+cap "a_2134_1909#" "async_clk_sar" 0.022684
+cap "async_resetb_delay_ctrl_code[0]" "x10.A" 0.443733
+cap "async_clk_sar" "a_n6207_689#" 1.95981
+cap "delay_offset" "a_n6207_n935#" 0.985403
+cap "a_618_824#" "x4.x5[6].floating" 0.220873
+cap "x27.SET_B" "a_1094_824#" 1.47826
+cap "x27.SET_B" "vdd" 401.674
+cap "x4.x2.floating" "x4.x5[6].floating" 441.107
+cap "a_818_1106#" "x4.x5[6].floating" 0.139746
+cap "x4.Uc" "a_n6207_689#" 2.2654
+cap "x2.nstack_lab5" "x2.x7.floating" 4.09158
+cap "x4.x7.floating" "a_n6207_413#" 0.852074
+cap "x2.nstack_lab5" "x2.x4[3].floating" 0.116889
+cap "async_clk_sar" "a_n6207_137#" 0.340418
+cap "async_resetb_delay_ctrl_code[0]" "x2.x6.floating" 0.00129664
+cap "x4.pstack_lab4" "async_clk_sar" 52.3077
+cap "a_210_798#" "x27.RESET_B" 65.9936
+cap "x2.x3[1].floating" "async_setb_delay_ctrl_code[2]" 1.14957
+cap "x4.x3[1].floating" "async_setb_delay_ctrl_code[0]" 0.0380176
+cap "async_resetb_delay_ctrl_code[2]" "a_n6207_551#" 0.13942
+cap "x2.pstack_lab4" "x2.x6.floating" 18.706
+cap "async_resetb_delay_ctrl_code[3]" "x4.x10.Y" 51.9259
+cap "x4.Uc" "x4.pstack_lab4" 31.9662
+cap "x4.x7.floating" "x4.nstack_lab6" 8.90387
+cap "x27.RESET_B" "vdd" 352.441
+cap "a_1094_1190#" "a_n397_1077#" 0.0238129
+cap "vdd" "ready" 355.143
+cap "a_210_798#" "x4.x10.Y" 0.0118569
+cap "delay_offset" "x2.x11.Y" 190.038
+cap "x4.x6.floating" "x4.pstack_lab1" 5.78093
+cap "x27.Q_N" "a_305_798#" 123.549
+cap "x27.Q" "x8.A0" 198.504
+cap "vdd" "x2.nstack_lab7" 4.23046
+cap "a_1373_1841#" "a_1771_1775#" 2.81013
+cap "x2.nstack_lab6" "ready" 13.458
+cap "x4.pstack_lab1" "x4.x5[6].floating" 0.21407
+cap "vdd" "x2.pstack_lab3" 37.5178
+cap "async_setb_delay_ctrl_code[2]" "x2.Uc" 334.568
+cap "x2.nstack_lab6" "x2.nstack_lab7" 38.8042
+cap "x4.x10.Y" "vdd" 2722.96
+cap "x4.x10.Y" "x4.pstack_lab2" 0.148662
+cap "eob" "a_2200_1841#" 0.236859
+cap "x27.SET_B" "x8.A0" 0.658088
+cap "async_resetb_delay_ctrl_code[2]" "x4.nstack_lab1" 5.54734
+cap "x2.x5[6].floating" "x2.pstack_lab5" 0.276178
+cap "x2.x6.floating" "async_setb_delay_ctrl_code[1]" 0.159543
+cap "x2.x11.Y" "async_setb_delay_ctrl_code[0]" 0.0042746
+cap "x2.x10.Y" "x9.A" 0.113368
+cap "a_1159_798#" "a_2200_1841#" 0.0529903
+cap "async_clk_sar" "a_n6207_n1#" 0.242175
+cap "a_860_798#" "x10.A" 0.0846311
+cap "x4.x7.floating" "async_clk_sar" 24.1175
+cap "x4.nstack_lab2" "a_n6207_n139#" 2.2654
+cap "async_resetb_delay_ctrl_code[0]" "a_n397_736#" 1.69257
+cap "delay_offset" "async_setb_delay_ctrl_code[0]" 3.3796
+cap "async_resetb_delay_ctrl_code[1]" "x4.x7.floating" 0.02244
+cap "x2.nstack_lab3" "ready" 13.5546
+cap "a_618_824#" "x4.x2.floating" 0.170555
+cap "x27.SET_B" "x2.x10.Y" 0.039122
+cap "x4.Uc" "x4.x7.floating" 185.158
+cap "a_2230_1582#" "a_1771_1775#" 0.663553
+cap "a_618_824#" "a_818_1106#" 1.84901
+cap "async_setb_delay_ctrl_code[2]" "x2.nstack_lab1" 5.54734
+cap "a_n6207_n1349#" "x2.nstack_lab4" 2.2654
+cap "async_setb_delay_ctrl_code[1]" "a_n397_n1948#" 0.0339514
+cap "a_1298_824#" "a_n397_736#" 0.0902927
+cap "x27.Q" "x4.x5[6].floating" 3.49056
+cap "a_2077_824#" "vdd" 257.004
+cap "async_resetb_delay_ctrl_code[0]" "x2.x3[1].floating" 0.0380176
+cap "a_2200_1841#" "async_clk_sar" 0.00741124
+cap "a_210_798#" "a_1158_1098#" 0.0173225
+cap "vdd" "x2.pstack_lab1" 113.466
+cap "x27.SET_B" "x4.x5[6].floating" 0.194459
+cap "x2.pstack_lab2" "ready" 8.4711
+cap "x4.x11.Y" "x4.nstack_lab7" 1.78728
+cap "a_1307_1909#" "x27.Q" 0.113559
+cap "delay_offset" "x4.nstack_lab5" 15.9397
+cap "async_resetb_delay_ctrl_code[2]" "ready" 0.135401
+cap "a_1296_1190#" "a_n397_1077#" 0.0173296
+cap "x27.Q" "a_1403_1582#" 0.7813
+cap "x2.pstack_lab2" "x2.pstack_lab3" 70.3566
+cap "a_1158_1098#" "vdd" 379.93
+cap "x27.Q" "a_1086_1582#" 1.63598
+cap "x4.x3[1].floating" "x4.x4[3].floating" 1185.94
+cap "a_n6207_n797#" "x2.nstack_lab1" 2.20314
+cap "x2.nstack_lab3" "a_n6207_n1073#" 2.2654
+cap "async_resetb_delay_ctrl_code[0]" "x2.Uc" 0.0259413
+cap "x27.SET_B" "a_1086_1582#" 0.173904
+cap "async_resetb_delay_ctrl_code[2]" "x4.x10.Y" 2.02676
+cap "vdd" "x2.x5[6].floating" 43978.9
+cap "x2.x10.Y" "ready" 96.6581
+cap "x2.pstack_lab4" "x2.Uc" 31.9662
+cap "x2.x3[1].floating" "async_setb_delay_ctrl_code[1]" 226.754
+cap "x2.x2.floating" "x9.A" 19.5371
+cap "x2.nstack_lab7" "x2.x10.Y" 0.169228
+cap "delay_offset" "x4.pstack_lab3" 0.638094
+cap "x2.x10.Y" "x2.pstack_lab3" 0.235079
+cap "x4.nstack_lab1" "x4.nstack_lab3" 31.6127
+cap "a_860_798#" "a_n397_736#" 0.210275
+cap "x27.RESET_B" "x4.x5[6].floating" 1.20521
+cap "delay_offset" "a_n6207_n1763#" 1.68316
+cap "a_305_798#" "sample_clk" 0.0141177
+cap "async_clk_sar" "a_n6207_n277#" 0.133615
+cap "async_resetb_delay_ctrl_code[0]" "x2.nstack_lab1" 0.194015
+cap "a_n6207_275#" "x4.nstack_lab4" 2.2654
+cap "x27.SET_B" "x2.x2.floating" 0.413474
+cap "x2.pstack_lab2" "x2.pstack_lab1" 70.3566
+cap "x4.x6.floating" "x4.x10.Y" 87.0114
+cap "a_1363_798#" "a_618_824#" 198.527
+cap "x2.x7.floating" "ready" 24.0743
+cap "a_1631_1008#" "a_1875_824#" 8.11912
+cap "delay_offset" "x4.x4[3].floating" 4.97804
+cap "x2.x4[3].floating" "ready" 0.664929
+cap "x4.x10.Y" "x4.x5[6].floating" 1011.83
+cap "x2.nstack_lab7" "x2.x7.floating" 4.09158
+cap "x2.x11.Y" "x2.nstack_lab4" 0.128416
+cap "x2.Uc" "async_setb_delay_ctrl_code[1]" 74.5124
+cap "a_1159_798#" "a_n397_1077#" 1.04439
+cap "x2.nstack_lab7" "x2.x4[3].floating" 0.116889
+cap "x27.Q" "a_618_824#" 0.831648
+cap "x4.nstack_lab4" "vdd" 0.505347
+cap "a_210_798#" "x27.Q_N" 177.677
+cap "delay_offset" "x2.nstack_lab4" 3.47485
+cap "x27.Q" "x4.x2.floating" 0.314141
+cap "a_1158_1098#" "x8.A0" 2.68547
+cap "x27.SET_B" "a_618_824#" 96.9159
+cap "async_setb_delay_ctrl_code[0]" "x4.x4[3].floating" 0.0760352
+cap "x27.Q" "a_818_1106#" 0.4676
+cap "x2.pstack_lab2" "x2.x5[6].floating" 1.37824
+cap "x2.pstack_lab1" "x2.x10.Y" 0.102077
+cap "x27.Q_N" "vdd" 76.3731
+cap "x27.SET_B" "x4.x2.floating" 0.103191
+cap "delay_offset" "a_n6207_413#" 1.39746
+cap "a_n6207_n1073#" "x2.x7.floating" 0.852074
+cap "async_setb_delay_ctrl_code[1]" "x2.nstack_lab1" 0.0664452
+cap "eob" "a_1875_824#" 0.469254
+cap "async_resetb_delay_ctrl_code[1]" "x4.x3[1].floating" 226.754
+cap "a_n397_1077#" "async_clk_sar" 2.78771
+cap "a_860_798#" "a_305_798#" 196.703
+cap "vdd" "async_setb_delay_ctrl_code[2]" 37.5632
+cap "a_1913_1909#" "async_clk_sar" 0.0355954
+cap "x4.Uc" "x4.x3[1].floating" 341.368
+cap "x4.x10.Y" "x4.nstack_lab3" 0.0406604
+cap "delay_offset" "x4.nstack_lab6" 5.61487
+cap "a_1631_1008#" "a_1875_1190#" 9.7173
+cap "x4.nstack_lab5" "x4.x4[3].floating" 0.116889
+cap "x2.x6.floating" "async_setb_delay_ctrl_code[3]" 5.04414
+cap "x2.pstack_lab4" "x2.pstack_lab5" 70.3566
+cap "async_resetb_delay_ctrl_code[3]" "x4.x11.Y" 4.66277
+cap "a_n397_1077#" "x4.Uc" 8.87454
+cap "x2.x10.Y" "x2.x5[6].floating" 1011.83
+cap "a_618_824#" "x27.RESET_B" 94.6543
+cap "a_1094_1190#" "eob" 0.513711
+cap "x27.RESET_B" "x4.x2.floating" 0.597467
+cap "x2.nstack_lab5" "ready" 13.6434
+cap "x4.nstack_lab5" "a_n6207_413#" 2.2654
+cap "async_setb_delay_ctrl_code[2]" "x2.nstack_lab3" 0.145594
+cap "x4.x11.Y" "vdd" 431.11
+cap "delay_offset" "async_clk_sar" 261.321
+cap "x2.nstack_lab7" "x2.nstack_lab5" 31.6127
+cap "x2.x5[6].floating" "x2.x7.floating" 182.21
+cap "x4.x7.floating" "a_n6207_n139#" 0.852074
+cap "async_resetb_delay_ctrl_code[1]" "delay_offset" 3.31154
+cap "x2.x5[6].floating" "x2.x4[3].floating" 1554.24
+cap "x4.nstack_lab7" "a_n6207_689#" 2.2654
+cap "eob" "a_1875_1190#" 0.651197
+cap "x4.x10.Y" "x4.x2.floating" 2.02112
+cap "delay_offset" "x4.Uc" 256.312
+cap "a_1159_798#" "a_1875_1190#" 1.80337
+cap "a_1363_798#" "x27.Q" 0.28564
+cap "async_clk_sar" "async_setb_delay_ctrl_code[0]" 0.215682
+cap "x4.nstack_lab5" "x4.nstack_lab6" 38.8042
+cap "async_resetb_delay_ctrl_code[1]" "async_setb_delay_ctrl_code[0]" 0.0347347
+cap "x27.SET_B" "x9.A" 76.9547
+cap "a_1363_798#" "x27.SET_B" 176.085
+cap "async_resetb_delay_ctrl_code[0]" "vdd" 3.52608
+cap "a_n6207_n935#" "x2.nstack_lab2" 2.2654
+cap "x4.x6.floating" "x4.nstack_lab4" 1.66702
+cap "async_resetb_delay_ctrl_code[2]" "async_setb_delay_ctrl_code[2]" 0.186459
+cap "a_1913_1909#" "a_1771_1775#" 7.83272
+cap "x4.Uc" "async_setb_delay_ctrl_code[0]" 0.0259413
+cap "a_618_824#" "a_2077_824#" 0.0378806
+cap "a_944_1775#" "a_724_824#" 0.0116782
+cap "x27.Q" "x27.SET_B" 0.848036
+cap "vdd" "x4.nstack_lab2" 0.505347
+cap "a_1086_1909#" "vdd" 0.655927
+cap "vdd" "x2.pstack_lab4" 130.288
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 -3290 -6211 -3289 l=30 w=84 "vdd" "ready" 60 0 "x2.pstack_lab1" 84 4872,284 "vdd" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 -3152 -6211 -3151 l=30 w=84 "vdd" "ready" 60 0 "x2.pstack_lab1" 84 4872,284 "x2.pstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 -3014 -6211 -3013 l=30 w=84 "vdd" "ready" 60 0 "x2.pstack_lab3" 84 4872,284 "x2.pstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 -2876 -6211 -2875 l=30 w=84 "vdd" "ready" 60 0 "x2.pstack_lab3" 84 4872,284 "x2.pstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 -2738 -6211 -2737 l=30 w=84 "vdd" "ready" 60 0 "x2.pstack_lab5" 84 4872,284 "x2.pstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 -2600 -6211 -2599 l=30 w=84 "vdd" "ready" 60 0 "x2.pstack_lab5" 84 4872,284 "x2.Uc" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6490 -2643 -6489 -2642 l=30 w=200 "vdd" "delay_offset" 60 0 "x2.x11.Y" 200 10400,504 "vdd" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6680 -2643 -6679 -2642 l=30 w=200 "vdd" "async_setb_delay_ctrl_code[3]" 60 0 "vdd" 200 10400,504 "x2.x10.Y" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt -5 -2266 -4 -2265 l=30 w=200 "vdd" "x9.A" 60 0 "vdd" 200 10400,504 "x27.SET_B" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt -427 -2289 -426 -2288 l=30 w=84 "vdd" "x2.Uc" 60 0 "vdd" 84 4872,284 "a_n397_n2289#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6490 -2323 -6489 -2322 l=30 w=130 "x2.x11.VNB" "delay_offset" 60 0 "x2.x11.Y" 130 6760,364 "x2.x11.VNB" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 -6680 -2323 -6679 -2322 l=30 w=130 "x2.x11.VNB" "async_setb_delay_ctrl_code[3]" 60 0 "x2.x11.VNB" 130 6760,364 "x2.x10.Y" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt -239 -2151 -238 -2150 l=30 w=84 "vdd" "x9.A" 60 0 "x2.x11.VNB" 84 2772,150 "a_n397_n2289#" 84 5208,292
+device msubckt sky130_fd_pr__pfet_01v8_hvt -335 -2151 -334 -2150 l=30 w=84 "vdd" "x9.A" 60 0 "a_n397_n2289#" 84 2604,146 "x2.x11.VNB" 84 2772,150
+device msubckt sky130_fd_pr__pfet_01v8_hvt -427 -2151 -426 -2150 l=30 w=84 "vdd" "x2.Uc" 60 0 "x9.A" 84 4872,284 "a_n397_n2289#" 84 2604,146
+device msubckt sky130_fd_pr__pfet_01v8 -1076 -2148 -1075 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.Uc" 84 4032,180 "x2.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -1202 -2148 -1201 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.x5[6].floating" 84 4872,284 "x2.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -2288 -2148 -2287 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.Uc" 84 4032,180 "x2.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -2414 -2148 -2413 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.x5[6].floating" 84 4872,284 "x2.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -3500 -2148 -3499 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.Uc" 84 4032,180 "x2.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -3626 -2148 -3625 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.x5[6].floating" 84 4872,284 "x2.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -4712 -2148 -4711 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.Uc" 84 4032,180 "x2.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -4838 -2148 -4837 -2147 l=30 w=84 "vdd" "x2.x10.Y" 60 0 "x2.x5[6].floating" 84 4872,284 "x2.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -5570 -2145 -5569 -2144 l=30 w=84 "vdd" "x2.x11.Y" 60 0 "x2.x6.floating" 84 4872,284 "x2.Uc" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -5 -1946 -4 -1945 l=30 w=130 "x2.x11.VNB" "x9.A" 60 0 "x2.x11.VNB" 130 6760,364 "x27.SET_B" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 -239 -1948 -238 -1947 l=30 w=84 "x2.x11.VNB" "x9.A" 60 0 "vdd" 84 2772,150 "a_n397_n1948#" 84 5208,292
+device msubckt sky130_fd_pr__nfet_01v8 -335 -1948 -334 -1947 l=30 w=84 "x2.x11.VNB" "x9.A" 60 0 "a_n397_n1948#" 84 2604,146 "vdd" 84 2772,150
+device msubckt sky130_fd_pr__nfet_01v8 -427 -1948 -426 -1947 l=30 w=84 "x2.x11.VNB" "x2.Uc" 60 0 "x9.A" 84 4872,284 "a_n397_n1948#" 84 2604,146
+device msubckt sky130_fd_pr__nfet_01v8 -1079 -1947 -1078 -1946 l=30 w=84 "x2.x11.VNB" "async_setb_delay_ctrl_code[0]" 60 0 "x2.Uc" 84 4956,286 "x2.x2.floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -1813 -1947 -1812 -1946 l=30 w=84 "x2.x11.VNB" "async_setb_delay_ctrl_code[1]" 60 0 "x2.Uc" 84 3864,176 "x2.x3[1].floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -1935 -1947 -1934 -1946 l=30 w=84 "x2.x11.VNB" "async_setb_delay_ctrl_code[1]" 60 0 "x2.x3[1].floating" 84 4872,284 "x2.Uc" 84 3864,176
+device msubckt sky130_fd_pr__nfet_01v8 -3151 -1947 -3150 -1946 l=30 w=84 "x2.x11.VNB" "async_setb_delay_ctrl_code[2]" 60 0 "x2.Uc" 84 3864,176 "x2.x4[3].floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -3273 -1947 -3272 -1946 l=30 w=84 "x2.x11.VNB" "async_setb_delay_ctrl_code[2]" 60 0 "x2.x4[3].floating" 84 4872,284 "x2.Uc" 84 3864,176
+device msubckt sky130_fd_pr__nfet_01v8 -4363 -1947 -4362 -1946 l=30 w=84 "x2.x11.VNB" "async_setb_delay_ctrl_code[2]" 60 0 "x2.Uc" 84 3864,176 "x2.x4[3].floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -4485 -1947 -4484 -1946 l=30 w=84 "x2.x11.VNB" "async_setb_delay_ctrl_code[2]" 60 0 "x2.x4[3].floating" 84 4872,284 "x2.Uc" 84 3864,176
+device msubckt sky130_fd_pr__nfet_01v8 -5217 -1947 -5216 -1946 l=30 w=84 "x2.x11.VNB" "delay_offset" 60 0 "x2.x7.floating" 84 4872,284 "x2.Uc" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -427 -1810 -426 -1809 l=30 w=84 "x2.x11.VNB" "x2.Uc" 60 0 "x2.x11.VNB" 84 4872,284 "a_n397_n1948#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -1763 -6164 -1762 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n1763#" 84 1764,126 "x2.Uc" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -1763 -6236 -1762 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab7" 84 4872,284 "a_n6207_n1763#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -1625 -6164 -1624 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n1625#" 84 1764,126 "x2.nstack_lab6" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -1625 -6236 -1624 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab7" 84 4872,284 "a_n6207_n1625#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -1487 -6164 -1486 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n1487#" 84 1764,126 "x2.nstack_lab6" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -1487 -6236 -1486 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab5" 84 4872,284 "a_n6207_n1487#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -1349 -6164 -1348 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n1349#" 84 1764,126 "x2.nstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -1349 -6236 -1348 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab5" 84 4872,284 "a_n6207_n1349#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -1211 -6164 -1210 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n1211#" 84 1764,126 "x2.nstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -1211 -6236 -1210 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab3" 84 4872,284 "a_n6207_n1211#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -1073 -6164 -1072 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n1073#" 84 1764,126 "x2.nstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -1073 -6236 -1072 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab3" 84 4872,284 "a_n6207_n1073#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -935 -6164 -934 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n935#" 84 1764,126 "x2.nstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -935 -6236 -934 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab1" 84 4872,284 "a_n6207_n935#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -797 -6164 -796 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "a_n6207_n797#" 84 1764,126 "x2.x11.VNB" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -797 -6236 -796 l=30 w=84 "x2.x11.VNB" "ready" 60 0 "x2.nstack_lab1" 84 4872,284 "a_n6207_n797#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -277 -6164 -276 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_n277#" 84 1764,126 "x2.x11.VNB" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -277 -6236 -276 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab1" 84 4872,284 "a_n6207_n277#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -139 -6164 -138 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_n139#" 84 1764,126 "x4.nstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -139 -6236 -138 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab1" 84 4872,284 "a_n6207_n139#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 -1 -6164 0 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_n1#" 84 1764,126 "x4.nstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 -1 -6236 0 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab3" 84 4872,284 "a_n6207_n1#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 137 -6164 138 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_137#" 84 1764,126 "x4.nstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 137 -6236 138 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab3" 84 4872,284 "a_n6207_137#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 275 -6164 276 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_275#" 84 1764,126 "x4.nstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 275 -6236 276 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab5" 84 4872,284 "a_n6207_275#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 413 -6164 414 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_413#" 84 1764,126 "x4.nstack_lab6" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 413 -6236 414 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab5" 84 4872,284 "a_n6207_413#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -6165 551 -6164 552 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_551#" 84 1764,126 "x4.nstack_lab6" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 551 -6236 552 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab7" 84 4872,284 "a_n6207_551#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 -427 736 -426 737 l=30 w=84 "x2.x11.VNB" "x4.Uc" 60 0 "x2.x11.VNB" 84 4872,284 "a_n397_736#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6165 689 -6164 690 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "a_n6207_689#" 84 1764,126 "x4.Uc" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6237 689 -6236 690 l=30 w=84 "x2.x11.VNB" "async_clk_sar" 60 0 "x4.nstack_lab7" 84 4872,284 "a_n6207_689#" 84 1764,126
+device msubckt sky130_fd_pr__nfet_01v8 2414 824 2415 825 l=30 w=84 "x2.x11.VNB" "sample_clk" 60 0 "x2.x11.VNB" 84 2268,138 "a_1159_798#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 2330 824 2331 825 l=30 w=84 "x2.x11.VNB" "a_1159_798#" 60 0 "a_1158_1098#" 84 4368,272 "x2.x11.VNB" 84 2268,138
+device msubckt sky130_fd_pr__nfet_01v8 2142 824 2143 825 l=30 w=84 "x2.x11.VNB" "vdd" 60 0 "a_2077_824#" 84 2640,149 "x2.x11.VNB" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 2047 824 2048 825 l=30 w=72 "x2.x11.VNB" "a_1159_798#" 60 0 "a_1631_1008#" 72 2736,148 "a_2077_824#" 72 2640,149
+device msubckt sky130_fd_pr__nfet_01v8 1941 824 1942 825 l=30 w=72 "x2.x11.VNB" "a_1158_1098#" 60 0 "a_1875_824#" 72 2682,150 "a_1631_1008#" 72 2736,148
+device msubckt sky130_fd_pr__nfet_01v8 1845 824 1846 825 l=30 w=84 "x2.x11.VNB" "a_1363_798#" 60 0 "x2.x11.VNB" 84 3360,164 "a_1875_824#" 84 2682,150
+device msubckt sky130_fd_pr__nfet_01v8 1735 824 1736 825 l=30 w=84 "x2.x11.VNB" "x27.SET_B" 60 0 "a_1499_824#" 84 4040,198 "x2.x11.VNB" 84 3360,164
+device msubckt sky130_fd_pr__pfet_01v8_hvt 2414 1140 2415 1141 l=30 w=128 "vdd" "sample_clk" 60 0 "vdd" 128 3456,182 "a_1159_798#" 128 6656,360
+device msubckt sky130_fd_pr__pfet_01v8_hvt 2330 1140 2331 1141 l=30 w=128 "vdd" "a_1159_798#" 60 0 "a_1158_1098#" 128 6656,360 "vdd" 128 3456,182
+device msubckt sky130_fd_pr__nfet_01v8 1635 824 1636 825 l=30 w=128 "x2.x11.VNB" "a_1631_1008#" 60 0 "a_1363_798#" 128 3456,182 "a_1499_824#" 128 4040,198
+device msubckt sky130_fd_pr__nfet_01v8 1551 824 1552 825 l=30 w=128 "x2.x11.VNB" "a_618_824#" 60 0 "a_1499_824#" 128 6656,360 "a_1363_798#" 128 3456,182
+device msubckt sky130_fd_pr__nfet_01v8 1363 824 1364 825 l=30 w=128 "x2.x11.VNB" "a_1363_798#" 60 0 "a_1298_824#" 128 3740,193 "x2.x11.VNB" 128 6656,360
+device msubckt sky130_fd_pr__nfet_01v8 1268 824 1269 825 l=30 w=72 "x2.x11.VNB" "a_1158_1098#" 60 0 "a_860_798#" 72 2844,151 "a_1298_824#" 72 3740,193
+device msubckt sky130_fd_pr__nfet_01v8 1159 824 1160 825 l=30 w=72 "x2.x11.VNB" "a_1159_798#" 60 0 "a_1094_824#" 72 2640,149 "a_860_798#" 72 2844,151
+device msubckt sky130_fd_pr__nfet_01v8 1064 824 1065 825 l=30 w=84 "x2.x11.VNB" "a_305_798#" 60 0 "x2.x11.VNB" 84 2352,140 "a_1094_824#" 84 2640,149
+device msubckt sky130_fd_pr__nfet_01v8 978 824 979 825 l=30 w=84 "x2.x11.VNB" "x27.SET_B" 60 0 "a_724_824#" 84 4796,216 "x2.x11.VNB" 84 2352,140
+device msubckt sky130_fd_pr__pfet_01v8_hvt 2142 1190 2143 1191 l=30 w=84 "vdd" "vdd" 60 0 "a_2077_824#" 84 2646,147 "vdd" 84 4368,272
+device msubckt sky130_fd_pr__pfet_01v8_hvt 2049 1190 2050 1191 l=30 w=84 "vdd" "a_1158_1098#" 60 0 "a_1631_1008#" 84 2268,138 "a_2077_824#" 84 2646,147
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1965 1190 1966 1191 l=30 w=84 "vdd" "a_1159_798#" 60 0 "a_1875_1190#" 84 3780,174 "a_1631_1008#" 84 2268,138
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1845 1190 1846 1191 l=30 w=84 "vdd" "a_1363_798#" 60 0 "vdd" 84 3192,160 "a_1875_1190#" 84 3780,174
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1739 1190 1740 1191 l=30 w=84 "vdd" "x27.SET_B" 60 0 "a_1363_798#" 84 5880,246 "vdd" 84 3192,160
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1631 1106 1632 1107 l=30 w=168 "vdd" "a_1631_1008#" 60 0 "a_1577_1106#" 168 4536,222 "a_1363_798#" 168 5880,246
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1547 1106 1548 1107 l=30 w=168 "vdd" "a_618_824#" 60 0 "vdd" 168 8988,275 "a_1577_1106#" 168 4536,222
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1410 1106 1411 1107 l=30 w=168 "vdd" "a_1363_798#" 60 0 "a_1296_1190#" 168 6972,282 "vdd" 168 8988,275
+device msubckt sky130_fd_pr__nfet_01v8 860 824 861 825 l=30 w=128 "x2.x11.VNB" "a_860_798#" 60 0 "a_305_798#" 128 3456,182 "a_724_824#" 128 4796,216
+device msubckt sky130_fd_pr__nfet_01v8 776 824 777 825 l=30 w=128 "x2.x11.VNB" "a_618_824#" 60 0 "a_724_824#" 128 6656,360 "a_305_798#" 128 3456,182
+device msubckt sky130_fd_pr__nfet_01v8 588 824 589 825 l=30 w=84 "x2.x11.VNB" "x27.RESET_B" 60 0 "x2.x11.VNB" 84 3880,195 "a_618_824#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 493 824 494 825 l=30 w=130 "x2.x11.VNB" "a_305_798#" 60 0 "x27.Q_N" 130 6760,364 "x2.x11.VNB" 130 3880,195
+device msubckt sky130_fd_pr__nfet_01v8 305 824 306 825 l=30 w=84 "x2.x11.VNB" "a_305_798#" 60 0 "x2.x11.VNB" 84 3880,195 "a_210_798#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 210 824 211 825 l=30 w=130 "x2.x11.VNB" "a_210_798#" 60 0 "x27.Q" 130 6760,364 "x2.x11.VNB" 130 3880,195
+device msubckt sky130_fd_pr__nfet_01v8 -5 824 -4 825 l=30 w=130 "x2.x11.VNB" "x10.A" 60 0 "x2.x11.VNB" 130 6760,364 "x27.RESET_B" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1266 1190 1267 1191 l=30 w=84 "vdd" "a_1159_798#" 60 0 "a_860_798#" 84 2268,138 "a_1296_1190#" 84 6972,282
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1182 1190 1183 1191 l=30 w=84 "vdd" "a_1158_1098#" 60 0 "a_1094_1190#" 84 3696,172 "a_860_798#" 84 2268,138
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1064 1190 1065 1191 l=30 w=84 "vdd" "a_305_798#" 60 0 "vdd" 84 3276,162 "a_1094_1190#" 84 3696,172
+device msubckt sky130_fd_pr__pfet_01v8_hvt 956 1190 957 1191 l=30 w=84 "vdd" "x27.SET_B" 60 0 "a_305_798#" 84 4914,234 "vdd" 84 3276,162
+device msubckt sky130_fd_pr__pfet_01v8_hvt 860 1106 861 1107 l=30 w=168 "vdd" "a_860_798#" 60 0 "a_818_1106#" 168 3528,210 "a_305_798#" 168 4914,234
+device msubckt sky130_fd_pr__pfet_01v8_hvt 788 1106 789 1107 l=30 w=168 "vdd" "a_618_824#" 60 0 "vdd" 168 8736,440 "a_818_1106#" 168 3528,210
+device msubckt sky130_fd_pr__pfet_01v8_hvt 590 1078 591 1079 l=30 w=128 "vdd" "x27.RESET_B" 60 0 "vdd" 128 6156,267 "a_618_824#" 128 6656,360
+device msubckt sky130_fd_pr__pfet_01v8_hvt 493 1074 494 1075 l=30 w=200 "vdd" "a_305_798#" 60 0 "x27.Q_N" 200 10400,504 "vdd" 200 6156,267
+device msubckt sky130_fd_pr__nfet_01v8 -239 874 -238 875 l=30 w=84 "x2.x11.VNB" "x10.A" 60 0 "vdd" 84 2772,150 "a_n397_736#" 84 5208,292
+device msubckt sky130_fd_pr__nfet_01v8 -335 874 -334 875 l=30 w=84 "x2.x11.VNB" "x10.A" 60 0 "a_n397_736#" 84 2604,146 "vdd" 84 2772,150
+device msubckt sky130_fd_pr__nfet_01v8 -427 874 -426 875 l=30 w=84 "x2.x11.VNB" "x4.Uc" 60 0 "x10.A" 84 4872,284 "a_n397_736#" 84 2604,146
+device msubckt sky130_fd_pr__nfet_01v8 -1079 873 -1078 874 l=30 w=84 "x2.x11.VNB" "async_resetb_delay_ctrl_code[0]" 60 0 "x4.Uc" 84 4956,286 "x4.x2.floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -1813 873 -1812 874 l=30 w=84 "x2.x11.VNB" "async_resetb_delay_ctrl_code[1]" 60 0 "x4.Uc" 84 3864,176 "x4.x3[1].floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -1935 873 -1934 874 l=30 w=84 "x2.x11.VNB" "async_resetb_delay_ctrl_code[1]" 60 0 "x4.x3[1].floating" 84 4872,284 "x4.Uc" 84 3864,176
+device msubckt sky130_fd_pr__nfet_01v8 -3151 873 -3150 874 l=30 w=84 "x2.x11.VNB" "async_resetb_delay_ctrl_code[2]" 60 0 "x4.Uc" 84 3864,176 "x4.x4[3].floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -3273 873 -3272 874 l=30 w=84 "x2.x11.VNB" "async_resetb_delay_ctrl_code[2]" 60 0 "x4.x4[3].floating" 84 4872,284 "x4.Uc" 84 3864,176
+device msubckt sky130_fd_pr__nfet_01v8 -4363 873 -4362 874 l=30 w=84 "x2.x11.VNB" "async_resetb_delay_ctrl_code[2]" 60 0 "x4.Uc" 84 3864,176 "x4.x4[3].floating" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -4485 873 -4484 874 l=30 w=84 "x2.x11.VNB" "async_resetb_delay_ctrl_code[2]" 60 0 "x4.x4[3].floating" 84 4872,284 "x4.Uc" 84 3864,176
+device msubckt sky130_fd_pr__nfet_01v8 -5217 873 -5216 874 l=30 w=84 "x2.x11.VNB" "delay_offset" 60 0 "x4.x7.floating" 84 4872,284 "x4.Uc" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt 305 1130 306 1131 l=30 w=128 "vdd" "a_305_798#" 60 0 "vdd" 128 5960,265 "a_210_798#" 128 6656,360
+device msubckt sky130_fd_pr__pfet_01v8_hvt 210 1074 211 1075 l=30 w=200 "vdd" "a_210_798#" 60 0 "x27.Q" 200 10400,504 "vdd" 200 5960,265
+device msubckt sky130_fd_pr__pfet_01v8_hvt -5 1074 -4 1075 l=30 w=200 "vdd" "x10.A" 60 0 "vdd" 200 10400,504 "x27.RESET_B" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt -239 1077 -238 1078 l=30 w=84 "vdd" "x10.A" 60 0 "x2.x11.VNB" 84 2772,150 "a_n397_1077#" 84 5208,292
+device msubckt sky130_fd_pr__pfet_01v8_hvt -335 1077 -334 1078 l=30 w=84 "vdd" "x10.A" 60 0 "a_n397_1077#" 84 2604,146 "x2.x11.VNB" 84 2772,150
+device msubckt sky130_fd_pr__pfet_01v8_hvt -427 1077 -426 1078 l=30 w=84 "vdd" "x4.Uc" 60 0 "x10.A" 84 4872,284 "a_n397_1077#" 84 2604,146
+device msubckt sky130_fd_pr__pfet_01v8 -1076 1074 -1075 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.Uc" 84 4032,180 "x4.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -1202 1074 -1201 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.x5[6].floating" 84 4872,284 "x4.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -2288 1074 -2287 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.Uc" 84 4032,180 "x4.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -2414 1074 -2413 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.x5[6].floating" 84 4872,284 "x4.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -3500 1074 -3499 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.Uc" 84 4032,180 "x4.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -3626 1074 -3625 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.x5[6].floating" 84 4872,284 "x4.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -4712 1074 -4711 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.Uc" 84 4032,180 "x4.x5[6].floating" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 -4838 1074 -4837 1075 l=30 w=84 "vdd" "x4.x10.Y" 60 0 "x4.x5[6].floating" 84 4872,284 "x4.Uc" 84 4032,180
+device msubckt sky130_fd_pr__pfet_01v8 -5570 1071 -5569 1072 l=30 w=84 "vdd" "x4.x11.Y" 60 0 "x4.x6.floating" 84 4872,284 "x4.Uc" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -427 1215 -426 1216 l=30 w=84 "vdd" "x4.Uc" 60 0 "vdd" 84 4872,284 "a_n397_1077#" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 -6490 1203 -6489 1204 l=30 w=130 "x2.x11.VNB" "delay_offset" 60 0 "x4.x11.Y" 130 6760,364 "x2.x11.VNB" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 -6680 1203 -6679 1204 l=30 w=130 "x2.x11.VNB" "async_resetb_delay_ctrl_code[3]" 60 0 "x2.x11.VNB" 130 6760,364 "x4.x10.Y" 130 6760,364
+device msubckt sky130_fd_pr__pfet_01v8_hvt 2368 1582 2369 1583 l=30 w=84 "vdd" "sample_clk" 60 0 "vdd" 84 2772,150 "a_2200_1841#" 84 4704,280
+device msubckt sky130_fd_pr__pfet_01v8_hvt 2272 1582 2273 1583 l=30 w=84 "vdd" "a_2200_1841#" 60 0 "a_2230_1582#" 84 1764,126 "vdd" 84 2772,150
+device msubckt sky130_fd_pr__pfet_01v8_hvt 2200 1582 2201 1583 l=30 w=84 "vdd" "x2.x11.VNB" 60 0 "a_1771_1775#" 84 7728,268 "a_2230_1582#" 84 1764,126
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1986 1582 1987 1583 l=30 w=84 "vdd" "x27.Q" 60 0 "a_1913_1582#" 84 3066,157 "a_1771_1775#" 84 7728,268
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1883 1582 1884 1583 l=30 w=84 "vdd" "sample_clk" 60 0 "vdd" 84 6334,279 "a_1913_1582#" 84 3066,157
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1774 1543 1775 1544 l=30 w=200 "vdd" "a_1771_1775#" 60 0 "x8.A0" 200 10400,504 "vdd" 200 6334,279
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1541 1582 1542 1583 l=30 w=84 "vdd" "eob" 60 0 "vdd" 84 2772,150 "a_1373_1841#" 84 4704,280
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1445 1582 1446 1583 l=30 w=84 "vdd" "a_1373_1841#" 60 0 "a_1403_1582#" 84 1764,126 "vdd" 84 2772,150
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1373 1582 1374 1583 l=30 w=84 "vdd" "x2.x11.VNB" 60 0 "a_944_1775#" 84 7728,268 "a_1403_1582#" 84 1764,126
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1159 1582 1160 1583 l=30 w=84 "vdd" "x8.A0" 60 0 "a_1086_1582#" 84 3066,157 "a_944_1775#" 84 7728,268
+device msubckt sky130_fd_pr__pfet_01v8_hvt 1056 1582 1057 1583 l=30 w=84 "vdd" "eob" 60 0 "vdd" 84 6334,279 "a_1086_1582#" 84 3066,157
+device msubckt sky130_fd_pr__nfet_01v8 2368 1909 2369 1910 l=30 w=84 "x2.x11.VNB" "sample_clk" 60 0 "x2.x11.VNB" 84 5796,222 "a_2200_1841#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 2200 1909 2201 1910 l=30 w=84 "x2.x11.VNB" "a_2200_1841#" 60 0 "a_2134_1909#" 84 2772,150 "x2.x11.VNB" 84 5796,222
+device msubckt sky130_fd_pr__nfet_01v8 2104 1909 2105 1910 l=30 w=84 "x2.x11.VNB" "x27.Q" 60 0 "a_1771_1775#" 84 3990,179 "a_2134_1909#" 84 2772,150
+device msubckt sky130_fd_pr__nfet_01v8 1979 1909 1980 1910 l=30 w=84 "x2.x11.VNB" "x2.x11.VNB" 60 0 "a_1913_1909#" 84 2772,150 "a_1771_1775#" 84 3990,179
+device msubckt sky130_fd_pr__nfet_01v8 1883 1909 1884 1910 l=30 w=84 "x2.x11.VNB" "sample_clk" 60 0 "x2.x11.VNB" 84 4514,209 "a_1913_1909#" 84 2772,150
+device msubckt sky130_fd_pr__nfet_01v8 1774 1863 1775 1864 l=30 w=130 "x2.x11.VNB" "a_1771_1775#" 60 0 "x8.A0" 130 6760,364 "x2.x11.VNB" 130 4514,209
+device msubckt sky130_fd_pr__pfet_01v8_hvt 947 1543 948 1544 l=30 w=200 "vdd" "a_944_1775#" 60 0 "async_clk_sar" 200 10400,504 "vdd" 200 6334,279
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 1526 -6211 1527 l=30 w=84 "vdd" "async_clk_sar" 60 0 "x4.pstack_lab5" 84 4872,284 "x4.Uc" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6490 1453 -6489 1454 l=30 w=200 "vdd" "delay_offset" 60 0 "x4.x11.Y" 200 10400,504 "vdd" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6680 1453 -6679 1454 l=30 w=200 "vdd" "async_resetb_delay_ctrl_code[3]" 60 0 "vdd" 200 10400,504 "x4.x10.Y" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 1664 -6211 1665 l=30 w=84 "vdd" "async_clk_sar" 60 0 "x4.pstack_lab5" 84 4872,284 "x4.pstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 1541 1909 1542 1910 l=30 w=84 "x2.x11.VNB" "eob" 60 0 "x2.x11.VNB" 84 5796,222 "a_1373_1841#" 84 4368,272
+device msubckt sky130_fd_pr__nfet_01v8 1373 1909 1374 1910 l=30 w=84 "x2.x11.VNB" "a_1373_1841#" 60 0 "a_1307_1909#" 84 2772,150 "x2.x11.VNB" 84 5796,222
+device msubckt sky130_fd_pr__nfet_01v8 1277 1909 1278 1910 l=30 w=84 "x2.x11.VNB" "x8.A0" 60 0 "a_944_1775#" 84 3990,179 "a_1307_1909#" 84 2772,150
+device msubckt sky130_fd_pr__nfet_01v8 1152 1909 1153 1910 l=30 w=84 "x2.x11.VNB" "x2.x11.VNB" 60 0 "a_1086_1909#" 84 2772,150 "a_944_1775#" 84 3990,179
+device msubckt sky130_fd_pr__nfet_01v8 1056 1909 1057 1910 l=30 w=84 "x2.x11.VNB" "eob" 60 0 "x2.x11.VNB" 84 4514,209 "a_1086_1909#" 84 2772,150
+device msubckt sky130_fd_pr__nfet_01v8 947 1863 948 1864 l=30 w=130 "x2.x11.VNB" "a_944_1775#" 60 0 "async_clk_sar" 130 6760,364 "x2.x11.VNB" 130 4514,209
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 1802 -6211 1803 l=30 w=84 "vdd" "async_clk_sar" 60 0 "x4.pstack_lab3" 84 4872,284 "x4.pstack_lab4" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 1940 -6211 1941 l=30 w=84 "vdd" "async_clk_sar" 60 0 "x4.pstack_lab3" 84 4872,284 "x4.pstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 2078 -6211 2079 l=30 w=84 "vdd" "async_clk_sar" 60 0 "x4.pstack_lab1" 84 4872,284 "x4.pstack_lab2" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8_hvt -6212 2216 -6211 2217 l=30 w=84 "vdd" "async_clk_sar" 60 0 "x4.pstack_lab1" 84 4872,284 "vdd" 84 4872,284

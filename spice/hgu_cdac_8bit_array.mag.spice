@@ -1,0 +1,6 @@
+* NGSPICE file created from hgu_cdac_8bit_array.ext - technology: sky130A
+
+.subckt hgu_cdac_8bit_array SUB tah<1:0> tah<3:0> tah<7:0> tah<31:0> tah<63:0> tah<15:0>
++ tah<0> drv<1:0> drv<0> drv<3:0> drv<7:0> drv<15:0> drv<63:0> drv<31:0>
+.ends
+

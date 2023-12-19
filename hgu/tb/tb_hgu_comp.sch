@@ -62,9 +62,11 @@ C {devices/lab_pin.sym} 180 -130 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 350 -520 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 340 -280 0 0 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 250 -80 0 0 {name=V3 value="PULSE(0 1.8 0 91p 77p 5n 20n)"}
-C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="sin(0.9 0.9 78125 0 0 0)"
-*"PULSE(0.903515625 0.896484375 0 5p 5p 25n 50n)"}
-C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="sin(0.9 -0.9 78125 0 0 0)"}
+C {devices/vsource.sym} 370 -170 0 0 {name=V4 value="PULSE(0.903515625 0.896484375 0 5p 5p 25n 50n)"
+*"PULSE(0.903515625 0.896484375 0 5p 5p 25n 50n)"
+*"sin(0.9 0.9 50000000 0 0 0)"}
+C {devices/vsource.sym} 580 -150 0 0 {name=V5 value="PULSE(0.896484375 0.903515625 0 5p 5p 25n 50n)"
+*"sin(0.9 -0.9 50000000 0 0 0)"}
 C {devices/gnd.sym} 480 -110 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 250 -130 0 0 {name=p5 sig_type=std_logic lab=clk
 }
@@ -81,7 +83,7 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.tran 1ns 100ns
+.tran 0.1ns 100ns
 .temp 25
 .control
     run
@@ -111,11 +113,11 @@ C {devices/code.sym} 60 -280 0 0 {name=s1 only_toplevel=false value="
     print rising_time falling_time rising_delay falling_delay 
     plot V(clk) V(inn) V(inp) V(ready) V(outp)+2 V(outn)+2
     
-	setplot tran1
-	linearize V(outp)
-	set specwindow=blackman
-	fft V(outp)
-	plot mag(V(outp))
+	*setplot tran1
+	*linearize V(outp)
+	*set specwindow=blackman
+	*fft V(outp)
+	*plot mag(V(outp))
 .endc
 .save all
 "}

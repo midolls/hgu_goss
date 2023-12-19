@@ -1,0 +1,104 @@
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_sarlogic_8bit_logic.sch
+**.subckt hgu_sarlogic_8bit_logic clk_sar VDD VSS comparator_out reset EOB
+*+ D[0],D[1],D[2],D[3],D[4],D[5],D[6],D[7] check[0],check[1],check[2],check[3],check[4],check[5],check[6],check[7] sel_bit[0],sel_bit[1]
+*+ D_b[0],D_b[1],D_b[2],D_b[3],D_b[4],D_b[5],D_b[6],D_b[7]
+*.ipin clk_sar
+*.ipin VDD
+*.ipin VSS
+*.ipin comparator_out
+*.ipin reset
+*.opin EOB
+*.opin D[0],D[1],D[2],D[3],D[4],D[5],D[6],D[7]
+*.opin check[0],check[1],check[2],check[3],check[4],check[5],check[6],check[7]
+*.ipin sel_bit[0],sel_bit[1]
+*.opin D_b[0],D_b[1],D_b[2],D_b[3],D_b[4],D_b[5],D_b[6],D_b[7]
+x20 clk_sar_buff EOB VDD resetb VGND VNB VPB VPWR check[7] net3 sky130_fd_sc_hd__dfbbp_1
+x27 clk_sar_buff check[7] resetb VDD VGND VNB VPB VPWR check[6] net4 sky130_fd_sc_hd__dfbbp_1
+x30 clk_sar_buff check[6] resetb VDD VGND VNB VPB VPWR check[5] net5 sky130_fd_sc_hd__dfbbp_1
+x33 clk_sar_buff check[5] resetb VDD VGND VNB VPB VPWR check[4] net6 sky130_fd_sc_hd__dfbbp_1
+x36 clk_sar_buff check[4] resetb VDD VGND VNB VPB VPWR check[3] net7 sky130_fd_sc_hd__dfbbp_1
+x39 clk_sar_buff check[3] resetb VDD VGND VNB VPB VPWR check[2] net8 sky130_fd_sc_hd__dfbbp_1
+x42 clk_sar_buff check[2] resetb VDD VGND VNB VPB VPWR check[1] net9 sky130_fd_sc_hd__dfbbp_1
+x45 clk_sar_buff check[1] resetb VDD VGND VNB VPB VPWR check[0] net10 sky130_fd_sc_hd__dfbbp_1
+x48 clk_sar_buff check[0] resetb VDD VGND VNB VPB VPWR net2 net11 sky130_fd_sc_hd__dfbbp_1
+x51 D[6] comparator_out resetb net3 VGND VNB VPB VPWR D[7] D_b[7] sky130_fd_sc_hd__dfbbp_1
+x54 D[5] comparator_out resetb net4 VGND VNB VPB VPWR D[6] D_b[6] sky130_fd_sc_hd__dfbbp_1
+x57 D[4] comparator_out resetb net5 VGND VNB VPB VPWR D[5] D_b[5] sky130_fd_sc_hd__dfbbp_1
+x60 D[3] comparator_out resetb net6 VGND VNB VPB VPWR D[4] D_b[4] sky130_fd_sc_hd__dfbbp_1
+x63 D[2] comparator_out resetb net7 VGND VNB VPB VPWR D[3] D_b[3] sky130_fd_sc_hd__dfbbp_1
+x66 D[1] comparator_out resetb net8 VGND VNB VPB VPWR D[2] D_b[2] sky130_fd_sc_hd__dfbbp_1
+x69 D[0] comparator_out resetb net9 VGND VNB VPB VPWR D[1] D_b[1] sky130_fd_sc_hd__dfbbp_1
+x72 net1 comparator_out resetb net10 VGND VNB VPB VPWR D[0] D_b[0] sky130_fd_sc_hd__dfbbp_1
+x75 VSS VSS resetb net12 VGND VNB VPB VPWR net1 net13 sky130_fd_sc_hd__dfbbp_1
+x77 EOB VGND VNB VPB VPWR net12 sky130_fd_sc_hd__inv_1
+x78 check[2] check[1] check[0] net2 sel_bit[0] sel_bit[1] VGND VNB VPB VPWR EOB
++ sky130_fd_sc_hd__mux4_4
+C2[17] resetb VSS 5f m=1
+C2[16] resetb VSS 5f m=1
+C2[15] resetb VSS 5f m=1
+C2[14] resetb VSS 5f m=1
+C2[13] resetb VSS 5f m=1
+C2[12] resetb VSS 5f m=1
+C2[11] resetb VSS 5f m=1
+C2[10] resetb VSS 5f m=1
+C2[9] resetb VSS 5f m=1
+C2[8] resetb VSS 5f m=1
+C2[7] resetb VSS 5f m=1
+C2[6] resetb VSS 5f m=1
+C2[5] resetb VSS 5f m=1
+C2[4] resetb VSS 5f m=1
+C2[3] resetb VSS 5f m=1
+C2[2] resetb VSS 5f m=1
+C2[1] resetb VSS 5f m=1
+C2[0] resetb VSS 5f m=1
+C2 check[7] VSS 5f m=1
+C3 check[6] VSS 5f m=1
+C4 check[5] VSS 5f m=1
+C5 check[4] VSS 5f m=1
+C6 check[3] VSS 5f m=1
+C7 check[2] VSS 5f m=1
+C8 check[1] VSS 5f m=1
+C9 check[0] VSS 5f m=1
+C10 net2 VSS 5f m=1
+C11 EOB VSS 5f m=1
+C12 D[6] VSS 5f m=1
+C13 D[5] VSS 5f m=1
+C14 D[4] VSS 5f m=1
+C15 D[3] VSS 5f m=1
+C16 D[2] VSS 5f m=1
+C17 D[1] VSS 5f m=1
+C18 D[0] VSS 5f m=1
+C19 net1 VSS 5f m=1
+C20 D[7] VSS 5f m=1
+C21 D[6] VSS 5f m=1
+C22 D[5] VSS 5f m=1
+C23 D[4] VSS 5f m=1
+C24 D[3] VSS 5f m=1
+C25 D[2] VSS 5f m=1
+C26 D[1] VSS 5f m=1
+C27 D[0] VSS 5f m=1
+C28 net4 VSS 5f m=1
+C29 net5 VSS 5f m=1
+C30 net6 VSS 5f m=1
+C31 net7 VSS 5f m=1
+C32 net8 VSS 5f m=1
+C33 net9 VSS 5f m=1
+C34 net10 VSS 5f m=1
+C35 net12 VSS 5f m=1
+C36 clk_sar_buff VSS 5f m=1
+C1 D_b[7] VSS 5f m=1
+C37 D_b[6] VSS 5f m=1
+C38 D_b[5] VSS 5f m=1
+C39 D_b[4] VSS 5f m=1
+C40 D_b[3] VSS 5f m=1
+C41 D_b[2] VSS 5f m=1
+C42 D_b[1] VSS 5f m=1
+C43 D_b[0] VSS 5f m=1
+x1 reset VGND VNB VPB VPWR net14 sky130_fd_sc_hd__buf_1
+x2 clk_sar VGND VNB VPB VPWR net15 sky130_fd_sc_hd__buf_1
+x3 net14 VGND VNB VPB VPWR net16 sky130_fd_sc_hd__buf_4
+x4 net16 VGND VNB VPB VPWR resetb sky130_fd_sc_hd__buf_8
+x5 net15 VGND VNB VPB VPWR net17 sky130_fd_sc_hd__buf_4
+x6 net17 VGND VNB VPB VPWR clk_sar_buff sky130_fd_sc_hd__buf_8
+**.ends
+.end

@@ -1,0 +1,48 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698848585
+<< error_s >>
+rect 916 1676 974 1682
+rect 916 1642 928 1676
+rect 916 1636 974 1642
+<< pdiff >>
+rect 960 1723 1018 1807
+<< metal1 >>
+rect 855 1732 862 1796
+rect 926 1732 934 1796
+rect 855 1731 934 1732
+rect 928 1642 962 1676
+<< via1 >>
+rect 862 1732 926 1796
+<< metal2 >>
+rect 852 1732 862 1796
+rect 926 1732 935 1796
+rect 855 1731 934 1732
+<< via2 >>
+rect 862 1732 926 1796
+<< metal3 >>
+rect 852 1796 935 1801
+rect 852 1737 862 1796
+rect 855 1732 862 1737
+rect 926 1737 935 1796
+rect 926 1732 934 1737
+rect 855 1731 934 1732
+<< metal4 >>
+rect 372 546 1042 614
+use hgu_cdac_unit  x1
+timestamp 1698848585
+transform 1 0 -317 0 1 -51
+box 686 598 1358 1826
+use sky130_fd_pr__pfet_01v8_M479BZ  XM16
+timestamp 1698815256
+transform 1 0 945 0 1 1765
+box -109 -139 109 91
+<< labels >>
+flabel metal1 928 1642 962 1676 0 FreeSans 320 0 0 0 SW
+port 5 nsew
+flabel metal4 372 546 1042 614 0 FreeSans 320 0 0 0 CTOP
+port 7 nsew
+flabel pdiff 960 1723 1018 1807 0 FreeSans 320 0 0 0 delay_signal
+port 9 nsew
+<< end >>

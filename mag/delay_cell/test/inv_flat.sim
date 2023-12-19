@@ -1,0 +1,8 @@
+| units: 500000 tech: sky130A format: MIT
+x x11.A x11.VPWR x11.Y x11.VPB s=10400,504 d=10400,504 l=30 w=200 x=120 y=897 sky130_fd_pr__pfet_01v8_hvt
+x x11.A x11.VGND x11.Y x11.VNB s=6760,364 d=6760,364 l=30 w=130 x=120 y=647 sky130_fd_pr__nfet_01v8
+R x11.VGND 444
+R x11.Y 1164
+R x11.VPWR 927
+R x11.A 807
+R x11.VPB 1042

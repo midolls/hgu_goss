@@ -1,0 +1,177 @@
+timestamp 1700813856
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use hgu_cdac_unit x1 -1 0 -3303 0 -1 -5580
+use hgu_cdac_cap_64 hgu_cdac_cap_64_0 1 0 2164 0 1 -9210
+use hgu_cdac_cap_32 hgu_cdac_cap_32_0 1 0 -9052 0 1 -4360
+use hgu_cdac_cap_16 hgu_cdac_cap_16_0 1 0 -448 0 1 -6878
+use hgu_cdac_cap_8 hgu_cdac_cap_8_0 1 0 -2087 0 1 -10204
+use hgu_cdac_cap_4 hgu_cdac_cap_4_0 1 0 -3621 0 1 -10204
+use hgu_cdac_cap_2 hgu_cdac_cap_2_0 1 0 -3833 0 1 -8070
+port "drv<0>" 23 -4287 -6576 -4245 -6542 m4
+port "tah<0>" 19 -4407 -6470 -4358 -6418 m4
+port "drv<63:0>" 35 31713 -6232 31764 -6191 m4
+port "drv<31:0>" 37 7950 -6231 8005 -6192 m4
+port "drv<15:0>" 31 2975 -6232 3026 -6191 m4
+port "drv<7:0>" 29 -180 -6235 -129 -6194 m4
+port "drv<1:0>" 21 -3236 -6228 -3182 -6194 m4
+port "tah<63:0>" 15 35130 -5012 35304 -4912 v4
+port "tah<31:0>" 13 6194 -5007 6368 -4907 v4
+port "tah<15:0>" 17 1227 -5009 1394 -4926 v4
+port "tah<7:0>" 9 -867 -5013 -693 -4913 v4
+port "tah<3:0>" 7 -2457 -5017 -2283 -4917 v4
+port "tah<1:0>" 5 -3915 -5086 -3678 -4850 v4
+port "SUB" 1 13234 -5934 13266 -5884 pw
+node "drv<0>" 0 28.1774 -4287 -6576 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1428 152 0 0 0 0
+node "tah<0>" 0 37.5832 -4407 -6470 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2548 202 0 0 0 0
+node "drv<63:0>" 0 34.1858 31713 -6232 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2091 184 0 0 0 0
+node "drv<31:0>" 0 34.9307 7950 -6231 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2145 188 0 0 0 0
+node "drv<15:0>" 0 34.1858 2975 -6232 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2091 184 0 0 0 0
+node "drv<7:0>" 0 34.1858 -180 -6235 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2091 184 0 0 0 0
+node "drv<1:0>" 0 32.6649 -3236 -6228 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1836 176 0 0 0 0
+node "tah<63:0>" 1 1711.94 35130 -5012 v4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111392 1888 900480 6268 0 0
+node "tah<31:0>" 1 1706.91 6194 -5007 v4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111864 1892 896320 6242 0 0
+node "tah<15:0>" 1 1706.81 1227 -5009 v4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111864 1892 896320 6242 0 0
+node "tah<7:0>" 1 1345.69 -867 -5013 v4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111864 1892 896320 6242 0 0
+node "tah<3:0>" 1 959.54 -2457 -5017 v4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111864 1892 896320 6242 0 0
+node "tah<1:0>" 1 1320.38 -3915 -5086 v4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111864 1892 896320 6242 0 0
+substrate "SUB" 0 0 13234 -5934 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "tah<3:0>" "drv<1:0>" 0.505926
+cap "tah<1:0>" "tah<3:0>" 392.752
+cap "tah<1:0>" "drv<0>" 1.66203
+cap "tah<1:0>" "tah<0>" 1.65065
+cap "tah<7:0>" "tah<3:0>" 348.664
+cap "tah<15:0>" "drv<15:0>" 0.0692224
+cap "tah<7:0>" "drv<7:0>" 1.13002
+cap "tah<31:0>" "drv<31:0>" 0.0678853
+cap "tah<15:0>" "drv<7:0>" 0.18575
+cap "tah<1:0>" "drv<1:0>" 1.10827
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_2_0/CTOP" 542.387
+cap "x1/CTOP" "hgu_cdac_cap_2_0/CTOP" 70.7742
+cap "hgu_cdac_cap_2_0/CBOT" "x1/CBOT" 677.003
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_4_0/CTOP" 0.310231
+cap "x1/CTOP" "hgu_cdac_cap_2_0/CBOT" 49.6223
+cap "x1/CBOT" "hgu_cdac_cap_2_0/CTOP" 353.198
+cap "hgu_cdac_cap_4_0/CTOP" "hgu_cdac_cap_2_0/CTOP" 10.9786
+cap "x1/SUB" "hgu_cdac_cap_2_0/CTOP" 0.621882
+cap "hgu_cdac_cap_4_0/CBOT" "hgu_cdac_cap_2_0/CTOP" 8.52658
+cap "hgu_cdac_cap_8_0/x1[3]/CBOT" "hgu_cdac_cap_4_0/CTOP" 6.66355
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_4_0/CTOP" 12.3209
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_2_0/CTOP" -0.358123
+cap "hgu_cdac_cap_2_0/CTOP" "hgu_cdac_cap_4_0/CTOP" 43.7073
+cap "x1/SUB" "hgu_cdac_cap_4_0/CTOP" 0.79133
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_4_0/CBOT" 527.588
+cap "hgu_cdac_cap_4_0/CBOT" "hgu_cdac_cap_4_0/CTOP" 770.941
+cap "hgu_cdac_cap_4_0/CBOT" "hgu_cdac_cap_2_0/CTOP" 0.258741
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_4_0/CTOP" 7.13506
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_4_0/CBOT" 11.3367
+cap "hgu_cdac_cap_4_0/CBOT" "hgu_cdac_cap_8_0/CBOT" 503.698
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_8_0/CBOT" 753.925
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_4_0/CTOP" 46.6642
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_8_0/SUB" 0.955379
+cap "hgu_cdac_cap_4_0/CTOP" "hgu_cdac_cap_8_0/CBOT" 0.503401
+cap "hgu_cdac_cap_8_0/CBOT" "hgu_cdac_cap_16_0/x1[0]/CTOP" -0.0779288
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_8_0/CBOT" -0.445621
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_16_0/x1[0]/CTOP" 6.22224
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_16_0/x1[0]/CBOT" 571.238
+cap "hgu_cdac_cap_16_0/x1[0]/CBOT" "hgu_cdac_cap_8_0/CBOT" 1127.81
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_8_0/CBOT" 158.263
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_16_0/SUB" 1.0165
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_8_0/CTOP" 140.353
+cap "hgu_cdac_cap_16_0/x1[0]/CBOT" "hgu_cdac_cap_8_0/CTOP" 0.753181
+cap "hgu_cdac_cap_16_0/CBOT" "hgu_cdac_cap_16_0/CTOP" -0.0171153
+cap "hgu_cdac_cap_32_0/x1[0]/CBOT" "hgu_cdac_cap_32_0/x1[0]/CTOP" 570.868
+cap "hgu_cdac_cap_32_0/x1[0]/SUB" "hgu_cdac_cap_32_0/x1[0]/CTOP" 1.01976
+cap "hgu_cdac_cap_32_0/x1[0]/CBOT" "hgu_cdac_cap_16_0/CBOT" 1135.07
+cap "hgu_cdac_cap_16_0/CBOT" "hgu_cdac_cap_32_0/x1[0]/CTOP" 159.165
+cap "hgu_cdac_cap_32_0/x1[0]/CBOT" "hgu_cdac_cap_16_0/x1[8]/CTOP" 0.755102
+cap "hgu_cdac_cap_16_0/x1[8]/CTOP" "hgu_cdac_cap_32_0/x1[0]/CTOP" 147.319
+cap "hgu_cdac_cap_32_0/x1[0]/CTOP" "hgu_cdac_cap_32_0/x1[0]/CBOT" 0.370107
+cap "hgu_cdac_cap_32_0/x1[0]/CBOT" "hgu_cdac_cap_32_0/x1[0]/CTOP" -0.0160778
+cap "hgu_cdac_cap_64_0/x1[1]/CTOP" "hgu_cdac_cap_32_0/x1[26]/CTOP" 92.8638
+cap "hgu_cdac_cap_32_0/x1[27]/CBOT" "hgu_cdac_cap_64_0/x1[0]/CBOT" 1135.07
+cap "hgu_cdac_cap_32_0/x1[27]/CBOT" "hgu_cdac_cap_64_0/x1[1]/CTOP" 0.882629
+cap "hgu_cdac_cap_64_0/x1[0]/CBOT" "hgu_cdac_cap_32_0/x1[26]/CTOP" 0.755102
+cap "hgu_cdac_cap_64_0/x1[56]/CTOP" "hgu_cdac_cap_64_0/x1[56]/SUB" 0.369413
+cap "hgu_cdac_cap_64_0/x1[56]/CBOT" "hgu_cdac_cap_64_0/x1[56]/CTOP" 738.084
+cap "x1/CTOP" "hgu_cdac_cap_2_0/CTOP" 13.7645
+cap "hgu_cdac_cap_2_0/CBOT" "x1/CTOP" 23.8177
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_2_0/CTOP" 621.884
+cap "hgu_cdac_cap_2_0/CTOP" "hgu_cdac_cap_4_0/CBOT" 10.4577
+cap "hgu_cdac_cap_2_0/CTOP" "x1/SUB" 0.83141
+cap "hgu_cdac_cap_4_0/CTOP" "hgu_cdac_cap_2_0/CBOT" 0.258741
+cap "hgu_cdac_cap_4_0/CTOP" "hgu_cdac_cap_2_0/CTOP" 9.22904
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_2_0/CTOP" -0.402888
+cap "hgu_cdac_cap_2_0/CTOP" "hgu_cdac_cap_4_0/CTOP" 46.2697
+cap "hgu_cdac_cap_8_0/x1[3]/CBOT" "hgu_cdac_cap_4_0/CTOP" 8.57469
+cap "hgu_cdac_cap_2_0/CBOT" "hgu_cdac_cap_4_0/CTOP" 9.54845
+cap "x1/SUB" "hgu_cdac_cap_4_0/CTOP" 1.45408
+cap "hgu_cdac_cap_4_0/CBOT" "hgu_cdac_cap_2_0/CTOP" 0.310231
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_4_0/CTOP" 4.55543
+cap "hgu_cdac_cap_4_0/CBOT" "hgu_cdac_cap_2_0/CBOT" 527.588
+cap "hgu_cdac_cap_4_0/CBOT" "hgu_cdac_cap_4_0/CTOP" 802.964
+cap "hgu_cdac_cap_4_0/CTOP" "hgu_cdac_cap_8_0/CBOT" 0.604502
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_4_0/CTOP" 48.2721
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_8_0/SUB" 1.48137
+cap "hgu_cdac_cap_8_0/CBOT" "hgu_cdac_cap_4_0/CBOT" 503.698
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_4_0/CBOT" 10.2937
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_8_0/CBOT" 770.859
+cap "hgu_cdac_cap_8_0/CBOT" "hgu_cdac_cap_16_0/x1[0]/CTOP" -0.0609878
+cap "hgu_cdac_cap_8_0/CBOT" "hgu_cdac_cap_8_0/CTOP" -0.348747
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_16_0/x1[0]/CTOP" 5.18947
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_16_0/x1[0]/CBOT" 670.846
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_8_0/CTOP" 164.713
+cap "hgu_cdac_cap_8_0/CTOP" "hgu_cdac_cap_16_0/x1[0]/CBOT" 0.880562
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_16_0/SUB" 1.19352
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_8_0/CBOT" 136.171
+cap "hgu_cdac_cap_8_0/CBOT" "hgu_cdac_cap_16_0/x1[0]/CBOT" 1127.81
+cap "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_16_0/CBOT" -0.0179711
+cap "hgu_cdac_cap_32_0/x1[0]/CTOP" "hgu_cdac_cap_32_0/x1[0]/CBOT" 670.711
+cap "hgu_cdac_cap_16_0/x1[9]/CTOP" "hgu_cdac_cap_32_0/x1[0]/CTOP" 170.815
+cap "hgu_cdac_cap_16_0/x1[9]/CTOP" "hgu_cdac_cap_32_0/x1[0]/CBOT" 0.882629
+cap "hgu_cdac_cap_16_0/CBOT" "hgu_cdac_cap_32_0/x1[0]/CTOP" 136.909
+cap "hgu_cdac_cap_16_0/CBOT" "hgu_cdac_cap_32_0/x1[0]/CBOT" 1135.07
+cap "hgu_cdac_cap_32_0/x1[0]/CTOP" "hgu_cdac_cap_32_0/x1[0]/SUB" 0.964138
+cap "hgu_cdac_cap_32_0/x1[0]/CBOT" "hgu_cdac_cap_32_0/x1[0]/CTOP" 0.135372
+cap "hgu_cdac_cap_32_0/x1[0]/CBOT" "hgu_cdac_cap_32_0/x1[0]/CTOP" -0.016924
+cap "hgu_cdac_cap_32_0/x1[27]/CBOT" "hgu_cdac_cap_64_0/x1[0]/CTOP" 0.755102
+cap "hgu_cdac_cap_64_0/x1[0]/CTOP" "hgu_cdac_cap_32_0/x1[29]/CTOP" 92.8638
+cap "hgu_cdac_cap_32_0/x1[27]/CBOT" "hgu_cdac_cap_64_0/x1[0]/CBOT" 1135.07
+cap "hgu_cdac_cap_32_0/x1[29]/CTOP" "hgu_cdac_cap_64_0/x1[0]/CBOT" 0.882629
+cap "hgu_cdac_cap_64_0/x1[56]/CTOP" "hgu_cdac_cap_64_0/x1[56]/CBOT" 634.319
+cap "hgu_cdac_cap_64_0/x1[56]/CTOP" "hgu_cdac_cap_64_0/x1[56]/SUB" 0.405558
+merge "hgu_cdac_cap_64_0/SUB" "hgu_cdac_cap_32_0/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hgu_cdac_cap_32_0/SUB" "hgu_cdac_cap_16_0/SUB"
+merge "hgu_cdac_cap_16_0/SUB" "hgu_cdac_cap_8_0/SUB"
+merge "hgu_cdac_cap_8_0/SUB" "hgu_cdac_cap_2_0/SUB"
+merge "hgu_cdac_cap_2_0/SUB" "hgu_cdac_cap_4_0/SUB"
+merge "hgu_cdac_cap_4_0/SUB" "x1/SUB"
+merge "x1/SUB" "SUB"
+merge "hgu_cdac_cap_16_0/x1[1]/CBOT" "hgu_cdac_cap_16_0/CBOT" -1619.73 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2091 -184 0 0 0 0
+merge "hgu_cdac_cap_16_0/CBOT" "hgu_cdac_cap_16_0/x1[0]/CBOT"
+merge "hgu_cdac_cap_16_0/x1[0]/CBOT" "drv<15:0>"
+merge "hgu_cdac_cap_16_0/CTOP" "hgu_cdac_cap_16_0/x1[0]/CTOP" -690.907 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32232 -1220 0 0 0 0
+merge "hgu_cdac_cap_16_0/x1[0]/CTOP" "hgu_cdac_cap_16_0/x1[1]/CTOP"
+merge "hgu_cdac_cap_16_0/x1[1]/CTOP" "tah<15:0>"
+merge "x1/CBOT" "drv<0>" -411.834 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1428 -152 0 0 0 0
+merge "hgu_cdac_cap_2_0/CTOP" "tah<1:0>" -468.884 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22984 -948 0 0 0 0
+merge "hgu_cdac_cap_32_0/x1[7]/CBOT" "hgu_cdac_cap_32_0/x1[1]/CBOT" -827.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2145 -188 0 0 0 0
+merge "hgu_cdac_cap_32_0/x1[1]/CBOT" "hgu_cdac_cap_32_0/x1[6]/CBOT"
+merge "hgu_cdac_cap_32_0/x1[6]/CBOT" "hgu_cdac_cap_32_0/x1[0]/CBOT"
+merge "hgu_cdac_cap_32_0/x1[0]/CBOT" "drv<31:0>"
+merge "hgu_cdac_cap_32_0/x1[0]/CTOP" "hgu_cdac_cap_32_0/x1[1]/CTOP" -690.901 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32232 -1220 0 0 0 0
+merge "hgu_cdac_cap_32_0/x1[1]/CTOP" "tah<31:0>"
+merge "hgu_cdac_cap_8_0/CTOP" "tah<7:0>" -737.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32232 -1220 0 0 0 0
+merge "hgu_cdac_cap_64_0/x1[52]/CBOT" "hgu_cdac_cap_64_0/x1[46]/CBOT" -34.1858 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2091 -184 0 0 0 0
+merge "hgu_cdac_cap_64_0/x1[46]/CBOT" "drv<63:0>"
+merge "x1/CTOP" "tah<0>" -80.3767 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2548 -202 0 0 0 0
+merge "hgu_cdac_cap_2_0/CBOT" "drv<1:0>" -1112.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1836 -176 0 0 0 0
+merge "hgu_cdac_cap_8_0/CBOT" "drv<7:0>" -1514.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2091 -184 0 0 0 0
+merge "hgu_cdac_cap_64_0/x1[57]/CTOP" "hgu_cdac_cap_64_0/x1[56]/CTOP" -477.425 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32096 -1216 0 0 0 0
+merge "hgu_cdac_cap_64_0/x1[56]/CTOP" "hgu_cdac_cap_64_0/x1[53]/CTOP"
+merge "hgu_cdac_cap_64_0/x1[53]/CTOP" "hgu_cdac_cap_64_0/x1[52]/CTOP"
+merge "hgu_cdac_cap_64_0/x1[52]/CTOP" "tah<63:0>"
+merge "hgu_cdac_cap_4_0/CTOP" "tah<3:0>" -626.967 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32232 -1220 0 0 0 0

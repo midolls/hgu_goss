@@ -1,0 +1,1593 @@
+timestamp 1699343210
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use hgu_delay_no_code x2 1 0 -16100 0 -1 -386
+use hgu_delay_no_code x4 1 0 -16100 0 1 -604
+use sky130_fd_sc_hd__dfbbp_1 x27 -1 0 2523 0 1 777
+use sky130_fd_sc_hd__inv_1 x10 1 0 -125 0 1 777
+use sky130_fd_sc_hd__inv_1 x9 1 0 -125 0 -1 -1769
+use sky130_fd_sc_hd__mux2_1 x8 1 0 868 0 -1 2040
+use sky130_fd_sc_hd__mux2_1 x3 1 0 1695 0 -1 2040
+port "vss" 6 -6728 -602 -6616 -295 m4
+port "vdd" 8 -7122 -3238 -6816 2344 m4
+port "delay_offset" 4 -6449 -1712 -6396 828 m2
+port "async_setb_delay_ctrl_code[3]" 14 -6862 -2399 -6830 -2365 m1
+port "ready" 3 -6856 -2029 -6811 -1982 m1
+port "async_setb_delay_ctrl_code[2]" 18 -6256 -649 -4315 -621 m1
+port "async_setb_delay_ctrl_code[1]" 16 -6255 -593 -1889 -565 m1
+port "async_setb_delay_ctrl_code[0]" 15 -6257 -537 -1032 -509 m1
+port "async_resetb_delay_ctrl_code[0]" 12 -6258 -481 -1032 -453 m1
+port "async_resetb_delay_ctrl_code[1]" 11 -6254 -425 -1889 -397 m1
+port "async_resetb_delay_ctrl_code[2]" 10 -6256 -369 -4315 -341 m1
+port "async_resetb_delay_ctrl_code[3]" 13 -6862 1375 -6820 1409 m1
+port "sample_clk" 1 2370 2212 2404 2241 m2
+port "eob" 2 1560 369 1594 402 m2
+port "async_clk_sar" 5 -6148 2427 809 2461 m1
+node "vss" 1 2841.36 -6728 -602 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2674480 14048 0 0 0 0
+node "vdd" 1 2541.68 -7122 -3238 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1820428 12240 0 0 0 0
+node "m2_n5830_n3534#" 4 430.824 -5830 -3534 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36210 2198 0 0 0 0 0 0 0 0
+node "delay_offset" 6 1056.55 -6449 -1712 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 139708 5378 0 0 0 0 0 0 0 0
+node "m1_n125_n2471#" 1 447.553 -125 -2471 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34348 802 4736 276 10375 416 110760 1526 0 0 0 0
+node "async_setb_delay_ctrl_code[3]" 0 24.6 -6862 -2399 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1088 132 0 0 0 0 0 0 0 0 0 0
+node "ready" 0 35.8101 -6856 -2029 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2115 184 0 0 0 0 0 0 0 0 0 0
+node "m1_n123_n1733#" 1 496.223 -123 -1733 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34348 802 4736 276 10375 416 101325 1508 0 0 0 0
+node "async_setb_delay_ctrl_code[2]" 9 462.186 -6256 -649 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54870 3956 0 0 0 0 0 0 0 0 0 0
+node "async_setb_delay_ctrl_code[1]" 19 669.04 -6255 -593 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 126714 8942 0 0 0 0 0 0 0 0 0 0
+node "async_setb_delay_ctrl_code[0]" 23 421.079 -6257 -537 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 154029 10768 0 0 0 0 0 0 0 0 0 0
+node "async_resetb_delay_ctrl_code[0]" 23 420.984 -6258 -481 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153939 10766 0 0 0 0 0 0 0 0 0 0
+node "async_resetb_delay_ctrl_code[1]" 19 665.81 -6254 -425 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 126222 8924 0 0 0 0 0 0 0 0 0 0
+node "async_resetb_delay_ctrl_code[2]" 9 460.875 -6256 -369 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54696 3950 0 0 0 0 0 0 0 0 0 0
+node "m1_2276_726#" 0 21.0602 2276 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_1816_726#" 0 20.4835 1816 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_1540_726#" 0 20.5794 1540 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_1448_726#" 0 20.7424 1448 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_1172_726#" 0 20.7424 1172 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_1080_726#" 0 20.7424 1080 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_804_726#" 0 20.8349 804 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_712_725#" 0 20.9098 712 725 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_620_726#" 0 20.0867 620 726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0
+node "m1_2130_1324#" 0 8.47255 2130 1324 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2046 194 0 0 0 0 0 0 0 0 0 0
+node "async_resetb_delay_ctrl_code[3]" 0 31.7535 -6862 1375 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1428 152 0 0 0 0 0 0 0 0 0 0
+node "m1_n125_1367#" 7 680.489 -125 1367 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 162166 4106 28480 1658 61956 2496 624624 4940 0 0 0 0
+node "m1_3_653#" 17 4070.66 3 653 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 235701 7768 61568 3588 135500 5418 1813143 11258 0 0 0 0
+node "li_50_n2021#" 30 1650.67 50 -2021 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 52703 2642 88357 6210 0 0 0 0 0 0 0 0
+node "li_n52_n2022#" 13 70.2198 -52 -2022 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 7844 424 0 0 0 0 0 0 0 0 0 0
+node "li_50_1000#" 76 161.875 50 1000 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 29808 1338 0 0 0 0 0 0 0 0 0 0
+node "li_n50_995#" 13 70.7913 -50 995 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 8224 450 0 0 0 0 0 0 0 0 0 0
+node "sample_clk" 80 396.494 2370 2212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 12292 744 44630 2590 0 0 0 0 0 0 0 0
+node "eob" 18 224.881 1560 369 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 3705 244 50086 2952 0 0 0 0 0 0 0 0
+node "li_157_1193#" 87 380.946 157 1193 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 62933 4408 22683 1520 0 0 0 0 0 0 0 0
+node "li_1279_1920#" 76 108.114 1279 1920 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 20660 1124 0 0 0 0 0 0 0 0 0 0
+node "async_clk_sar" 45 3604.03 -6148 2427 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 266466 15652 38228 2250 0 0 0 0 0 0 0 0
+node "li_2182_1987#" 23 40.4402 2182 1987 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2730 218 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1355_1985#" 15 29.6098 1355 1985 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1794 170 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n132_n2517#" 2217 289.426 -132 -2517 nw 0 0 0 0 59706 1014 0 0 17728 682 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16836 674 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n645_n2733#" 2885 247.227 -645 -2733 nw 0 0 0 0 82409 1330 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n667_1716#" 9898 8344.35 -667 1716 nw 0 0 0 0 2579739 8718 0 0 182760 5480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5040 284 0 0 371808 5654 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_n125_n1753#" 0 0 -125 -1753 ppd 0 0 0 0 0 0 0 0 0 0 169927 8980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 170353 8984 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n125_n2471#" "w_n645_n2733#" 5.80112
+cap "sample_clk" "li_157_1193#" 2.21908
+cap "m1_804_726#" "w_n667_1716#" 1.60916
+cap "li_50_1000#" "m1_n125_1367#" 81.2764
+cap "li_50_1000#" "eob" 0.367077
+cap "w_n667_1716#" "m1_2130_1324#" 42.8337
+cap "sample_clk" "li_1355_1985#" 0.0674657
+cap "async_clk_sar" "li_157_1193#" 90.0927
+cap "vss" "vdd" 188
+cap "m1_3_653#" "li_50_1000#" 43.1911
+cap "vdd" "async_setb_delay_ctrl_code[2]" 0.316171
+cap "async_clk_sar" "li_1355_1985#" 0.137594
+cap "delay_offset" "async_setb_delay_ctrl_code[0]" 3.19252
+cap "sample_clk" "async_clk_sar" 0.113171
+cap "li_n50_995#" "w_n667_1716#" 23.4055
+cap "m1_620_726#" "m1_n125_1367#" 0.145412
+cap "li_n52_n2022#" "m1_n123_n1733#" 19.566
+cap "li_50_n2021#" "m1_620_726#" 0.0484036
+cap "m1_620_726#" "m1_3_653#" 16.8614
+cap "vdd" "async_resetb_delay_ctrl_code[3]" 5.88277
+cap "m1_n125_1367#" "w_n667_1716#" 1432.42
+cap "m1_1816_726#" "eob" 0.260418
+cap "vss" "async_resetb_delay_ctrl_code[2]" 35.208
+cap "li_2182_1987#" "li_1355_1985#" 1.375
+cap "w_n667_1716#" "eob" 224.039
+cap "async_setb_delay_ctrl_code[2]" "async_setb_delay_ctrl_code[1]" 1094.36
+cap "vss" "async_setb_delay_ctrl_code[1]" 91.3423
+cap "async_resetb_delay_ctrl_code[1]" "delay_offset" 3.12398
+cap "m1_1816_726#" "m1_3_653#" 30.3902
+cap "li_2182_1987#" "sample_clk" 0.439113
+cap "m1_1540_726#" "w_n667_1716#" 1.63411
+cap "li_50_n2021#" "w_n667_1716#" 9.99229
+cap "m1_3_653#" "w_n667_1716#" 456.769
+cap "m1_2276_726#" "eob" 0.0329267
+cap "li_1279_1920#" "m1_n125_1367#" 4.88631
+cap "li_n52_n2022#" "w_n132_n2517#" 3.62375
+cap "li_1279_1920#" "eob" 1.40213
+cap "li_50_n2021#" "m1_n123_n1733#" 24.2018
+cap "vss" "w_n667_1716#" 1.73412
+cap "async_resetb_delay_ctrl_code[2]" "vdd" 0.316171
+cap "vdd" "async_setb_delay_ctrl_code[1]" 0.315701
+cap "li_2182_1987#" "async_clk_sar" 0.00406916
+cap "m1_2276_726#" "m1_3_653#" 32.4075
+cap "vss" "m1_n123_n1733#" 30.1577
+cap "m1_3_653#" "li_1279_1920#" 162.424
+cap "async_resetb_delay_ctrl_code[0]" "async_setb_delay_ctrl_code[0]" 2947.44
+cap "m1_712_725#" "m1_804_726#" 13.4444
+cap "m1_620_726#" "li_50_1000#" 5.26761
+cap "m1_1448_726#" "m1_n125_1367#" 2.49157
+cap "m1_1448_726#" "eob" 1.27409
+cap "li_50_n2021#" "m1_1448_726#" 0.161343
+cap "m1_3_653#" "m1_1448_726#" 15.794
+cap "m1_1540_726#" "m1_1448_726#" 13.8519
+cap "li_50_1000#" "w_n667_1716#" 65.5807
+cap "li_50_n2021#" "w_n132_n2517#" 4.46127
+cap "vdd" "ready" 5.68684
+cap "li_157_1193#" "m1_2130_1324#" 1.67089
+cap "async_setb_delay_ctrl_code[3]" "vdd" 3.70543
+cap "async_resetb_delay_ctrl_code[0]" "async_resetb_delay_ctrl_code[1]" 2467.34
+cap "m1_1172_726#" "m1_1080_726#" 13.8519
+cap "sample_clk" "m1_2130_1324#" 0.975353
+cap "m1_712_725#" "m1_n125_1367#" 2.48347
+cap "vss" "delay_offset" 80.3233
+cap "delay_offset" "async_setb_delay_ctrl_code[2]" 3.1694
+cap "m1_3_653#" "m1_712_725#" 2.41143
+cap "li_50_n2021#" "m1_712_725#" 0.0691992
+cap "m1_1816_726#" "w_n667_1716#" 2.34192
+cap "li_157_1193#" "m1_n125_1367#" 370.049
+cap "delay_offset" "vdd" 77.6077
+cap "li_157_1193#" "eob" 63.1472
+cap "li_n52_n2022#" "m1_n125_n2471#" 16.4063
+cap "li_n50_995#" "async_clk_sar" 1.73904
+cap "m1_n125_1367#" "li_1355_1985#" 0.278303
+cap "m1_2276_726#" "w_n667_1716#" 2.34192
+cap "li_50_n2021#" "li_157_1193#" 0.0356194
+cap "m1_3_653#" "li_157_1193#" 155.687
+cap "li_1279_1920#" "w_n667_1716#" 4.53313
+cap "sample_clk" "m1_n125_1367#" 7.03564
+cap "sample_clk" "eob" 43.559
+cap "m1_3_653#" "li_1355_1985#" 6.51233
+cap "m1_1448_726#" "w_n667_1716#" 1.63766
+cap "m1_3_653#" "sample_clk" 246.774
+cap "async_clk_sar" "m1_n125_1367#" 21.7587
+cap "async_setb_delay_ctrl_code[3]" "ready" 2.96373
+cap "m1_n125_1367#" "m1_1080_726#" 2.49157
+cap "async_resetb_delay_ctrl_code[0]" "vss" 103.867
+cap "li_50_n2021#" "m1_n125_n2471#" 14.8914
+cap "async_resetb_delay_ctrl_code[2]" "delay_offset" 3.1694
+cap "m1_3_653#" "async_clk_sar" 71.5147
+cap "w_n132_n2517#" "m1_n123_n1733#" 1.33865
+cap "delay_offset" "async_setb_delay_ctrl_code[1]" 3.14656
+cap "m1_3_653#" "m1_1080_726#" 16.0542
+cap "li_50_n2021#" "m1_1080_726#" 4.50477
+cap "li_50_1000#" "li_157_1193#" 15.2991
+cap "async_resetb_delay_ctrl_code[0]" "vdd" 0.317115
+cap "m1_620_726#" "m1_712_725#" 13.4444
+cap "vdd" "async_clk_sar" 17.6622
+cap "m1_712_725#" "w_n667_1716#" 1.60504
+cap "m1_3_653#" "li_2182_1987#" 13.8773
+cap "m1_n123_n1733#" "w_n645_n2733#" 0.0554257
+cap "async_resetb_delay_ctrl_code[0]" "async_resetb_delay_ctrl_code[2]" 0.656716
+cap "m1_1816_726#" "li_157_1193#" 1.38647
+cap "li_157_1193#" "w_n667_1716#" 384.692
+cap "m1_1172_726#" "m1_n125_1367#" 2.49157
+cap "m1_1172_726#" "eob" 0.113765
+cap "async_setb_delay_ctrl_code[0]" "async_setb_delay_ctrl_code[2]" 0.328358
+cap "vss" "async_setb_delay_ctrl_code[0]" 104.115
+cap "w_n667_1716#" "li_1355_1985#" 4.1384
+cap "li_1279_1920#" "li_157_1193#" 149.073
+cap "li_50_n2021#" "m1_1172_726#" 4.42454
+cap "m1_3_653#" "m1_1172_726#" 15.7405
+cap "sample_clk" "w_n667_1716#" 206.233
+cap "m1_804_726#" "m1_n125_1367#" 2.49157
+cap "li_1279_1920#" "li_1355_1985#" 4.33571
+cap "async_setb_delay_ctrl_code[0]" "vdd" 0.316643
+cap "m1_n125_1367#" "m1_2130_1324#" 1.0521
+cap "async_clk_sar" "w_n667_1716#" 65.2092
+cap "m1_2130_1324#" "eob" 0.13819
+cap "m1_n125_n2471#" "m1_n123_n1733#" 92.3904
+cap "li_1279_1920#" "sample_clk" 0.542962
+cap "li_50_n2021#" "m1_804_726#" 0.119782
+cap "w_n667_1716#" "m1_1080_726#" 1.63766
+cap "m1_3_653#" "m1_804_726#" 15.9745
+cap "m1_3_653#" "m1_2130_1324#" 15.0265
+cap "vss" "async_resetb_delay_ctrl_code[1]" 89.929
+cap "li_1279_1920#" "async_clk_sar" 7.34076
+cap "li_n50_995#" "m1_n125_1367#" 17.4654
+cap "li_n50_995#" "eob" 0.0116054
+cap "async_resetb_delay_ctrl_code[1]" "vdd" 0.315231
+cap "m1_3_653#" "li_n50_995#" 4.2245
+cap "m1_n125_n2471#" "w_n132_n2517#" 98.2056
+cap "li_50_n2021#" "li_n52_n2022#" 30.8915
+cap "li_2182_1987#" "w_n667_1716#" 4.00676
+cap "async_setb_delay_ctrl_code[0]" "async_setb_delay_ctrl_code[1]" 2468.22
+cap "li_n50_995#" "vss" 0.326106
+cap "vss" "li_n52_n2022#" 0.207904
+cap "m1_n125_1367#" "eob" 164.958
+cap "async_resetb_delay_ctrl_code[0]" "delay_offset" 3.21591
+cap "m1_3_653#" "m1_n125_1367#" 738.476
+cap "m1_1540_726#" "m1_n125_1367#" 2.41039
+cap "li_50_n2021#" "m1_n125_1367#" 9.08317
+cap "m1_1540_726#" "eob" 10.9057
+cap "li_50_n2021#" "eob" 58.8075
+cap "m1_3_653#" "eob" 158.879
+cap "li_50_n2021#" "m1_3_653#" 90.1821
+cap "li_n50_995#" "li_50_1000#" 27.6912
+cap "li_50_n2021#" "m1_1540_726#" 0.0595199
+cap "async_resetb_delay_ctrl_code[2]" "async_resetb_delay_ctrl_code[1]" 1093.79
+cap "m1_3_653#" "m1_1540_726#" 15.3914
+cap "m1_620_726#" "m1_804_726#" 0.22
+cap "m1_1172_726#" "w_n667_1716#" 1.63766
+cap "m1_3_653#" "vss" 32.5909
+cap "li_50_n2021#" "vss" 2.76662
+cap "li_157_1193#" "li_1355_1985#" 0.259845
+cap "vdd" "m2_n5830_n3534#" 9.20276
+cap "vss" "async_setb_delay_ctrl_code[2]" 35.9277
+cap "x2/VDD" "x2/a_9918_2544#" 3.3608
+cap "x2/a_9918_2268#" "x2/VDD" 3.46075
+cap "x2/VSS" "x2/code_offset" -0.431128
+cap "x2/x6.floating" "x2/code[3]" -0.14937
+cap "x2/VSS" "x2/x11.Y" 0.00429069
+cap "x2/VDD" "x2/x8.output_stack" 3.36991
+cap "x2/VDD" "x2/a_9830_2130#" 3.01342
+cap "x2/x6.floating" "x2/VDD" 174.919
+cap "x2/VDD" "x2/code_offset" 9.22721
+cap "x2/VDD" "x2/x5[6].floating" 8.75281
+cap "x2/code[3]" "x2/VSS" 0.0196953
+cap "x2/IN" "x2/code[3]" 0.284974
+cap "x2/VDD" "x2/x11.Y" 9.24207
+cap "x2/VDD" "x2/x10.Y" 11.7277
+cap "x2/VDD" "x2/a_9830_2682#" 4.87034
+cap "x2/VDD" "x2/VSS" 39.4913
+cap "x2/VDD" "x2/IN" 9.37072
+cap "x2/VDD" "x2/code[3]" 6.47522
+cap "x2/VDD" "x2/a_9830_2406#" 5.10975
+cap "x2/x11.Y" "x2/VSS" 0.0120751
+cap "x2/VSS" "x2/x10.Y" 0.024084
+cap "x2/x11.Y" "x2/code[2]" 0.00492939
+cap "x2/code[2]" "x2/x10.Y" 0.00982129
+cap "x2/x11.Y" "async_setb_delay_ctrl_code[1]" 0.00280939
+cap "async_setb_delay_ctrl_code[1]" "x2/x10.Y" 0.00461864
+cap "x2/VDD" "x2/x11.Y" 0.150866
+cap "x2/x5[6].SW" "x2/code[1]" 0.00461864
+cap "x2/x5[6].SW" "x2/x7.VSS" 0.036121
+cap "x2/x5[5].SW" "x2/x5[6].VDD" -1.13687e-13
+cap "x2/x5[5].SW" "x2/code[1]" 0.00461864
+cap "x2/x5[6].floating" "x2/x5[6].VDD" -1.81899e-12
+cap "x2/x4[2].VSS" "x2/x5[5].SW" 0.0547595
+cap "x9/Y" "x2/x4[0].VSS" 0.386449
+cap "x2/x5[4].VDD" "x2/x4[0].VSS" -18.2133
+cap "x2/x5[3].delay_signal" "x2/OUT" 0.0612245
+cap "x2/x5[3].SW" "x9/Y" 0.0204522
+cap "x2/x5[3].SW" "x2/x5[4].VDD" 0.284898
+cap "x2/x5[4].floating" "x2/OUT" 0.717457
+cap "x2/OUT" "x2/a_15703_1681#" 1.04657
+cap "x2/x5[3].SW" "x2/x4[0].VSS" 0.0413222
+cap "x2/x5[3].delay_signal" "x9/Y" 0.0608894
+cap "x2/x5[3].delay_signal" "x2/x5[4].VDD" 2.24431
+cap "x2/x5[4].floating" "x9/Y" 1.02777
+cap "x9/Y" "x2/a_15703_1681#" 2.0445
+cap "x2/x5[4].floating" "x2/x5[4].VDD" 15.6707
+cap "x2/a_15703_1681#" "x2/x5[4].VDD" 17.6746
+cap "x2/OUT" "x9/Y" 0.221444
+cap "x2/OUT" "x2/x5[4].VDD" 2.65917
+cap "x2/OUT" "x2/x4[0].VSS" 0.184534
+cap "x2/x5[1].VDD" "x2/OUT" 14.0313
+cap "x2/x5[1].VDD" "x2/x5[1].SW" 0.154443
+cap "x2/x5[1].floating" "x2/OUT" 0.127985
+cap "x2/x5[1].floating" "x2/x5[1].VDD" 4.92202
+cap "x9/Y" "x2/x5[1].VDD" 11.257
+cap "x2/x5[1].delay_signal" "x2/OUT" 0.0612245
+cap "x2/x5[1].VDD" "x2/x3[0].VSS" -13.0204
+cap "x2/x5[1].delay_signal" "x2/x5[1].VDD" 0.187926
+cap "x2/a_15703_1681#" "x2/OUT" 0.0707101
+cap "x2/a_15703_1681#" "x2/x5[1].VDD" 8.28927
+cap "x2/code[2]" "x2/x6.floating" 0.16835
+cap "x2/a_9805_327#" "x2/code_offset" 12.9939
+cap "x2/a_9805_1155#" "x2/code_offset" 14.5411
+cap "x2/a_9893_879#" "x2/code_offset" 0.775434
+cap "x2/a_9805_603#" "x2/VSS" -1.01254
+cap "x2/IN" "x2/code_offset" 17.2643
+cap "async_setb_delay_ctrl_code[0]" "x2/code_offset" 0.0786761
+cap "x2/code_offset" "x2/VSS" 91.9291
+cap "x2/x8.output_stack" "x2/code_offset" 1.1519
+cap "x2/a_9893_465#" "x2/code_offset" 0.775434
+cap "x2/a_9805_327#" "x2/VDD" 2.72242
+cap "x2/a_9805_1155#" "x2/VDD" 3.08428
+cap "async_setb_delay_ctrl_code[0]" "x2/x6.floating" 0.145948
+cap "x2/x6.floating" "x2/VSS" 0.342839
+cap "x2/IN" "x2/VDD" 4.66664
+cap "x2/VDD" "x2/VSS" 657.343
+cap "x2/IN" "async_resetb_delay_ctrl_code[1]" 0.0117358
+cap "x2/x8.output_stack" "x2/VDD" 0.129117
+cap "x2/a_9965_1017#" "x2/VSS" -0.18817
+cap "async_resetb_delay_ctrl_code[1]" "x2/VSS" 0.0192738
+cap "x2/IN" "async_setb_delay_ctrl_code[1]" 0.0151488
+cap "x4/x9.input_stack" "x2/code_offset" 0.0999011
+cap "x2/a_9965_465#" "x2/code_offset" 2.64134
+cap "async_setb_delay_ctrl_code[1]" "x2/VSS" 0.0481212
+cap "x2/IN" "async_resetb_delay_ctrl_code[0]" 0.0127335
+cap "x4/a_9893_327#" "x2/code_offset" 0.0781826
+cap "x2/a_9965_741#" "x2/VSS" -0.18817
+cap "x2/IN" "x4/code[2]" 0.0108503
+cap "x2/a_9805_879#" "x2/VSS" -1.01254
+cap "async_resetb_delay_ctrl_code[0]" "x2/VSS" 0.0250869
+cap "x4/code[2]" "x2/VSS" 0.0152529
+cap "x2/a_9893_741#" "x2/code_offset" 0.775434
+cap "x2/a_9965_465#" "x2/VDD" 0.505347
+cap "x2/a_9805_603#" "x2/code_offset" 14.5411
+cap "x2/x7.floating" "x2/code_offset" 8.57857
+cap "x2/IN" "x2/code[2]" 1.32658
+cap "x2/code[2]" "x2/VSS" 0.0728655
+cap "x2/x8.output_stack" "x2/code[2]" 1.46137
+cap "x4/a_9805_327#" "x2/code_offset" 0.0551186
+cap "x2/a_9805_603#" "x2/VDD" 3.08428
+cap "x2/x7.floating" "x2/VDD" 3.85603
+cap "x2/x4[3].floating" "x2/code_offset" 0.954842
+cap "x2/a_9805_327#" "x2/VSS" -0.897425
+cap "x2/a_9893_327#" "x2/code_offset" 0.564307
+cap "x2/VDD" "x2/code_offset" -4.95821
+cap "x2/a_9805_1155#" "x2/VSS" -1.01254
+cap "async_setb_delay_ctrl_code[0]" "x2/IN" 0.0138632
+cap "async_resetb_delay_ctrl_code[1]" "x2/code_offset" 0.0656443
+cap "x2/IN" "x2/VSS" 0.837197
+cap "x2/a_9893_1155#" "x2/code_offset" 0.775434
+cap "x2/a_9965_1017#" "x2/code_offset" 2.64134
+cap "async_setb_delay_ctrl_code[0]" "x2/VSS" 0.0339056
+cap "x2/x6.floating" "x2/VDD" 0.0285017
+cap "x2/x8.output_stack" "x2/VSS" -0.00729287
+cap "async_setb_delay_ctrl_code[1]" "x2/code_offset" 0.0855455
+cap "x2/a_9893_1293#" "x2/code_offset" 0.775434
+cap "x2/a_9893_1017#" "x2/code_offset" 0.775434
+cap "x2/a_9965_741#" "x2/code_offset" 2.64134
+cap "x2/a_9805_879#" "x2/code_offset" 14.5411
+cap "async_resetb_delay_ctrl_code[0]" "x2/code_offset" 0.0723821
+cap "x4/code[2]" "x2/code_offset" 0.0610349
+cap "x2/a_9965_1017#" "x2/VDD" 0.505347
+cap "x2/a_9893_603#" "x2/code_offset" 0.775434
+cap "async_setb_delay_ctrl_code[1]" "x2/x6.floating" 0.156557
+cap "x2/IN" "x4/x9.input_stack" 0.0178179
+cap "x2/a_9965_741#" "x2/VDD" 0.505347
+cap "x2/IN" "x2/code[3]" 0.284974
+cap "x2/a_9965_465#" "x2/VSS" -0.18817
+cap "x2/a_9805_879#" "x2/VDD" 3.08428
+cap "x2/IN" "x4/a_9893_327#" 0.00626946
+cap "x2/code[2]" "x2/code_offset" 4.69973
+cap "async_resetb_delay_ctrl_code[0]" "x2/code_offset" 0.0173673
+cap "async_resetb_delay_ctrl_code[0]" "x2/x8.output_stack" 0.00891021
+cap "x2/code[2]" "x2/x6.floating" 0.00322369
+cap "async_resetb_delay_ctrl_code[0]" "x2/x5[6].floating" 0.00101546
+cap "x2/code_offset" "async_setb_delay_ctrl_code[1]" 0.0206725
+cap "async_setb_delay_ctrl_code[1]" "x2/x8.output_stack" 0.0105303
+cap "async_setb_delay_ctrl_code[1]" "x2/x5[6].floating" 0.0385545
+cap "x2/code_offset" "x2/VDD" 0.00182573
+cap "x2/code_offset" "x2/VSS" 0.539999
+cap "x2/x8.output_stack" "x2/VSS" 0.298497
+cap "async_resetb_delay_ctrl_code[0]" "x2/x7.floating" 0.0190088
+cap "x2/code_offset" "async_resetb_delay_ctrl_code[1]" 0.0160026
+cap "x2/VSS" "x2/x5[6].floating" 0.113741
+cap "x2/x8.output_stack" "async_resetb_delay_ctrl_code[1]" 0.00823675
+cap "async_setb_delay_ctrl_code[1]" "x2/x7.floating" 0.02244
+cap "x2/code[2]" "x2/x4[3].floating" 0.813418
+cap "x4/code[2]" "x2/x4[3].floating" 0.0284984
+cap "x2/VDD" "x2/x7.floating" 0.0377407
+cap "x2/VSS" "x2/x7.floating" 0.498677
+cap "x2/code[2]" "x2/x10.Y" 0.00989715
+cap "x2/x7.floating" "async_resetb_delay_ctrl_code[1]" 0.0175809
+cap "x2/code_offset" "async_setb_delay_ctrl_code[0]" 0.0189129
+cap "async_resetb_delay_ctrl_code[0]" "x2/x11.Y" 0.0039803
+cap "x2/x8.output_stack" "async_setb_delay_ctrl_code[0]" 0.00966965
+cap "async_setb_delay_ctrl_code[0]" "x2/x5[6].floating" 0.0359367
+cap "x2/x11.Y" "async_setb_delay_ctrl_code[1]" 0.00460251
+cap "async_resetb_delay_ctrl_code[0]" "x2/code[2]" 0.032338
+cap "x2/x11.Y" "x2/VDD" 0.0587971
+cap "x2/code[2]" "async_setb_delay_ctrl_code[1]" 0.0384909
+cap "async_resetb_delay_ctrl_code[0]" "x2/x6.floating" 0.00129664
+cap "async_setb_delay_ctrl_code[0]" "x2/x7.floating" 0.0206179
+cap "x2/x11.Y" "x2/VSS" 0.025284
+cap "async_setb_delay_ctrl_code[1]" "x2/x6.floating" 0.00298627
+cap "x2/code[2]" "x2/VSS" 0.426095
+cap "x2/code[2]" "async_resetb_delay_ctrl_code[1]" 0.0297971
+cap "x2/VDD" "x2/x6.floating" 0.127112
+cap "x2/code_offset" "x2/x7.floating" 0.00906352
+cap "x2/VSS" "x2/x6.floating" 0.0374674
+cap "x2/x11.Y" "async_setb_delay_ctrl_code[0]" 0.0042746
+cap "async_resetb_delay_ctrl_code[0]" "x2/x4[3].floating" 0.0232939
+cap "async_setb_delay_ctrl_code[1]" "x2/x4[3].floating" 0.0274971
+cap "x2/code[2]" "async_setb_delay_ctrl_code[0]" 0.0352154
+cap "async_resetb_delay_ctrl_code[0]" "x2/x10.Y" 0.00793078
+cap "async_setb_delay_ctrl_code[0]" "x2/x6.floating" 0.00277412
+cap "async_setb_delay_ctrl_code[1]" "x2/x10.Y" 0.00916801
+cap "x2/x4[3].floating" "x2/VSS" 0.642923
+cap "x2/x4[3].floating" "async_resetb_delay_ctrl_code[1]" 0.0215446
+cap "x2/code[2]" "x2/code_offset" 4.10687
+cap "x2/code[2]" "x2/x8.output_stack" 4.75521
+cap "x2/code[2]" "x2/x5[6].floating" 0.0414655
+cap "x4/code[2]" "x2/code_offset" 0.0147917
+cap "x4/code[2]" "x2/x8.output_stack" 0.00763678
+cap "x2/VSS" "x2/x10.Y" 0.049407
+cap "x2/code[2]" "x2/x7.floating" 0.0245144
+cap "x2/x4[3].floating" "async_setb_delay_ctrl_code[0]" 0.025265
+cap "x4/code[2]" "x2/x7.floating" 0.0163078
+cap "async_setb_delay_ctrl_code[0]" "x2/x10.Y" 0.00851604
+cap "x2/VDD" "x2/VSS" 0.132589
+cap "x2/code[2]" "x2/x11.Y" 0.00496931
+cap "x4/code[2]" "x2/code[2]" 0.0809499
+cap "x2/x4[3].floating" "async_resetb_delay_ctrl_code[0]" 0.0527413
+cap "x2/code[2]" "async_resetb_delay_ctrl_code[0]" 0.0371314
+cap "x2/code[1]" "x2/x5[6].SW" 0.00916801
+cap "async_setb_delay_ctrl_code[0]" "x2/x6.delay_signal" 0.005137
+cap "x2/code[1]" "x2/x4[3].floating" 0.744806
+cap "x2/code[1]" "x2/code[2]" 9.75112
+cap "x2/x7.VSS" "x2/x5[6].floating" 0.0392038
+cap "x4/code[1]" "x2/x6.delay_signal" 0.00437577
+cap "x2/x5[6].SW" "async_setb_delay_ctrl_code[0]" 0.00851604
+cap "x2/code[2]" "x2/x4[3].floating" 0.00240826
+cap "x2/x4[3].floating" "x4/code[2]" 0.00449125
+cap "x2/code[2]" "x4/code[2]" 0.0122796
+cap "async_resetb_delay_ctrl_code[0]" "x2/x5[6].floating" 0.00101546
+cap "x2/x4[3].floating" "async_setb_delay_ctrl_code[0]" 0.0572064
+cap "x2/code[2]" "async_setb_delay_ctrl_code[0]" 0.0404363
+cap "x2/x6.delay_signal" "x2/x7.VSS" 0.107949
+cap "x4/code[1]" "x2/x4[3].floating" 0.0487789
+cap "x4/code[1]" "x2/code[2]" 0.0342132
+cap "x2/code[1]" "x2/x5[6].floating" 0.0029743
+cap "async_resetb_delay_ctrl_code[0]" "x2/x6.delay_signal" 0.00473355
+cap "x2/x5[6].SW" "x2/x7.VSS" 0.0608645
+cap "x2/x4[3].floating" "x2/x7.VSS" 1.48719
+cap "x2/code[2]" "x2/x7.VSS" 1.48803
+cap "async_setb_delay_ctrl_code[0]" "x2/x5[6].floating" 0.0027634
+cap "x2/x5[6].SW" "async_resetb_delay_ctrl_code[0]" 0.00793078
+cap "x2/code[1]" "x2/x6.delay_signal" 0.00559423
+cap "x2/x4[3].delay_signal" "x2/code[1]" 6.17151
+cap "x4/code[1]" "x2/code[1]" 0.104432
+cap "x2/x4[2].VSS" "x2/x5[6].floating" 0.176476
+cap "x2/x4[3].delay_signal" "x2/x4[2].VSS" 0.689126
+cap "x2/code[1]" "x2/x5[6].floating" 0.0435447
+cap "x2/code[1]" "x2/x4[2].VSS" 0.77601
+cap "x2/code[1]" "x2/x5[6].VDD" 3.55271e-15
+cap "x2/x4[3].delay_signal" "x4/code[0]" 0.00705789
+cap "x2/x5[6].floating" "x4/code[0]" 0.00343619
+cap "x2/code[1]" "x4/code[0]" 0.0347347
+cap "x2/code[1]" "x2/x5[5].SW" 0.00916801
+cap "x2/x4[2].VSS" "x2/x5[5].SW" 0.0608645
+cap "x4/code[0]" "x2/x5[5].SW" 0.00793078
+cap "x4/code[1]" "x2/x3[1].floating" 0.0344303
+cap "x2/code[1]" "x2/x3[1].floating" 0.784091
+cap "x2/x4[2].VSS" "x2/x3[1].floating" 1.21415
+cap "x2/x3[1].floating" "x4/code[0]" 0.0380176
+cap "x2/code[0]" "x2/x5[6].floating" 0.0405721
+cap "x2/x4[3].delay_signal" "x2/code[0]" 0.00845088
+cap "x2/code[1]" "x2/code[0]" 2.13952
+cap "x2/code[0]" "x2/x5[5].SW" 0.00851604
+cap "x2/x3[1].floating" "x2/code[0]" 0.696032
+cap "x9/Y" "x2/x5[4].VDD" 3.57051
+cap "x2/x2.floating" "x2/OUT" 0.294125
+cap "x2/x2.floating" "x2/x4[0].VSS" 13.1464
+cap "x2/x4[0].VSS" "x2/a_15703_1681#" 0.000340542
+cap "x2/x5[4].floating" "x9/Y" 0.0405109
+cap "x2/x4[0].VSS" "x2/x3[1].floating" 0.0446494
+cap "x2/OUT" "x2/a_15703_1681#" 8.16133
+cap "x2/x4[0].VSS" "x2/OUT" 2.53842
+cap "x2/x5[4].floating" "x2/code[0]" 0.0420944
+cap "x2/x5[3].delay_signal" "x2/x5[4].VDD" -0.00385084
+cap "x2/a_15703_1340#" "x2/a_15703_1681#" -3.69467
+cap "x2/x4[0].VSS" "x2/a_15703_1340#" 44.4304
+cap "x2/OUT" "x2/a_15703_1340#" 9.56133
+cap "x4/code[0]" "x2/code[0]" 0.136302
+cap "x2/x5[4].floating" "x2/x5[4].VDD" 0.03342
+cap "x2/x2.floating" "x9/Y" 0.413474
+cap "x4/code[0]" "x2/x5[3].delay_signal" 0.00523968
+cap "x2/x2.floating" "x2/code[0]" 0.0344291
+cap "x2/x5[3].SW" "x4/code[0]" 0.00396539
+cap "x2/x4[0].VSS" "x9/Y" 2.83441
+cap "x9/Y" "x2/a_15703_1681#" 1.7948
+cap "x2/OUT" "x9/Y" 0.527052
+cap "x2/OUT" "x2/code[0]" 0.155811
+cap "x2/x4[0].VSS" "x2/code[0]" 0.48526
+cap "x2/a_15703_1340#" "x9/Y" 3.03951
+cap "x2/x2.floating" "x2/x5[3].delay_signal" -2.84217e-14
+cap "x2/x5[4].floating" "x4/code[0]" 0.00830208
+cap "x2/OUT" "x2/x5[3].delay_signal" 0.21195
+cap "x2/x4[0].VSS" "x2/x5[3].delay_signal" 2.87227
+cap "x2/x4[0].VSS" "x2/x5[3].SW" 0.0358672
+cap "x2/x4[0].VSS" "x2/x5[4].VDD" 8.17823
+cap "x2/a_15703_1681#" "x2/x5[4].VDD" 11.8354
+cap "x2/OUT" "x2/x5[4].VDD" 10.9762
+cap "x2/a_15703_1340#" "x2/x5[4].VDD" -0.259894
+cap "x2/x5[4].floating" "x2/OUT" 0.00383085
+cap "x2/x5[4].floating" "x2/x4[0].VSS" 0.200261
+cap "x2/x2.floating" "x4/code[0]" 0.0373361
+cap "x9/Y" "x2/x5[3].delay_signal" 0.0555069
+cap "x2/x5[3].delay_signal" "x2/code[0]" 4.45062
+cap "x2/x5[3].SW" "x2/code[0]" 0.00425802
+cap "x9/Y" "x2/OUT" -2.29001
+cap "x2/a_15703_1340#" "x9/Y" 0.341083
+cap "x2/OUT" "x2/x3[0].VSS" 16.776
+cap "x2/a_15703_1340#" "x2/x3[0].VSS" 13.4405
+cap "x9/Y" "x2/x5[1].SW" 0.0186698
+cap "x9/Y" "x2/x5[1].VDD" 18.1984
+cap "x2/x5[1].VDD" "x2/x3[0].VSS" -14.2594
+cap "x9/Y" "x2/x5[1].floating" 0.0358482
+cap "x9/Y" "x2/code[0]" 0.00899455
+cap "x9/Y" "x2/x5[1].delay_signal" 0.577782
+cap "x2/code[0]" "x2/x3[0].VSS" 0.190615
+cap "x2/x3[0].VSS" "x2/x5[1].delay_signal" 0.218488
+cap "x9/Y" "x2/a_15703_1681#" 0.29946
+cap "x2/a_15703_1340#" "x2/OUT" 0.319011
+cap "x2/x2.floating" "x2/x3[0].VSS" 2.21903
+cap "x2/x3[0].floating" "x2/x3[0].VSS" 0.143276
+cap "x2/OUT" "x2/x5[1].VDD" 17.3734
+cap "x2/code[0]" "x2/OUT" 0.163608
+cap "x2/OUT" "x2/x5[1].delay_signal" 0.491563
+cap "x2/OUT" "x2/a_15703_1681#" 0.0214889
+cap "x9/Y" "x2/x3[0].VSS" 19.3232
+cap "x2/OUT" "x2/x2.floating" 0.11134
+cap "x2/x5[1].VDD" "x2/a_15703_1681#" 7.17382
+cap "x2/code[2]" "x2/a_9893_879#" 0.257138
+cap "x2/a_9805_327#" "x2/code_offset" 1.54714
+cap "x2/a_9805_327#" "async_resetb_delay_ctrl_code[1]" 0.014061
+cap "x4/IN" "x2/IN" 2.5
+cap "x4/IN" "x4/VDD" 1.53779
+cap "x4/x4[3].floating" "x2/code_offset" 0.835205
+cap "x4/a_9805_1155#" "x2/code_offset" 7.50904
+cap "x2/code[2]" "x2/a_9805_603#" 0.145594
+cap "async_setb_delay_ctrl_code[0]" "x4/IN" 0.202948
+cap "x2/code[2]" "x2/x9.output_stack" 1.46137
+cap "x4/a_9965_1017#" "x4/VDD" 0.505347
+cap "x4/a_9805_603#" "x2/code_offset" 14.5411
+cap "x4/a_9805_327#" "x2/code_offset" 14.5411
+cap "x2/code_offset" "x2/VSS" 82.1122
+cap "async_resetb_delay_ctrl_code[1]" "x2/VSS" 9.37989
+cap "x4/a_9805_327#" "async_resetb_delay_ctrl_code[1]" 0.055371
+cap "x2/code[2]" "x2/code_offset" 4.69061
+cap "x4/code[2]" "x4/a_9893_879#" 0.257138
+cap "x4/IN" "x2/code_offset" 15.6949
+cap "x4/IN" "async_resetb_delay_ctrl_code[1]" 0.32395
+cap "x4/a_9965_465#" "x4/VDD" 0.505347
+cap "x2/a_9805_327#" "x4/code[2]" 0.0142741
+cap "x2/x7.floating" "x2/code[2]" 3.87483
+cap "x2/a_9805_327#" "async_setb_delay_ctrl_code[1]" 0.0664452
+cap "x4/code[2]" "x4/a_9805_1155#" 0.0380959
+cap "x4/a_9965_1017#" "x2/code_offset" 2.64134
+cap "x4/a_9893_741#" "x2/code_offset" 0.775434
+cap "x2/code[2]" "x2/a_9893_1293#" 0.108204
+cap "x4/a_9805_879#" "x4/VDD" 3.08428
+cap "x2/a_9893_1155#" "x2/code[2]" 0.13942
+cap "x4/a_9965_741#" "x4/VDD" 0.505347
+cap "x2/code[2]" "x2/a_9893_741#" 0.373838
+cap "x4/a_9805_603#" "x4/code[2]" 0.145594
+cap "x4/code[2]" "x2/VSS" 89.5356
+cap "x4/a_9805_327#" "x4/code[2]" 5.54734
+cap "x2/VSS" "async_setb_delay_ctrl_code[1]" 9.35104
+cap "x4/a_9805_327#" "async_setb_delay_ctrl_code[1]" 0.0168732
+cap "x2/code[2]" "x2/a_9893_1017#" 0.185589
+cap "x4/a_9893_1155#" "x2/code_offset" 0.775434
+cap "x2/code[2]" "x2/a_9893_327#" 1.33573
+cap "x4/a_9965_465#" "x2/code_offset" 2.64134
+cap "x2/IN" "x4/VDD" 0.104941
+cap "x4/IN" "x4/code[2]" 7.1119
+cap "x4/IN" "async_setb_delay_ctrl_code[1]" 0.158216
+cap "x2/a_9805_327#" "x2/VSS" 1.21701
+cap "async_setb_delay_ctrl_code[0]" "x2/IN" 0.25977
+cap "x2/a_9805_327#" "x4/a_9805_327#" 4.72482
+cap "x2/a_9805_327#" "async_resetb_delay_ctrl_code[0]" 0.194015
+cap "x4/a_9805_1155#" "x2/VSS" -0.522274
+cap "x2/code_offset" "x4/a_9893_465#" 0.775434
+cap "x2/a_9805_327#" "x2/code[2]" 5.54734
+cap "x4/a_9805_879#" "x2/code_offset" 14.5411
+cap "x4/a_9965_741#" "x2/code_offset" 2.64134
+cap "x4/code[2]" "x4/a_9893_1293#" 0.108204
+cap "x4/a_9805_603#" "x2/VSS" -1.01254
+cap "x4/a_9893_741#" "x4/code[2]" 0.373838
+cap "x4/a_9805_327#" "x2/VSS" 0.315629
+cap "async_resetb_delay_ctrl_code[1]" "x2/IN" 0.158216
+cap "x2/IN" "x2/code_offset" 0.482933
+cap "async_resetb_delay_ctrl_code[0]" "x2/VSS" 8.05481
+cap "async_resetb_delay_ctrl_code[0]" "x4/a_9805_327#" 0.450748
+cap "x2/code_offset" "x4/a_9893_1017#" 0.775434
+cap "x2/code_offset" "x4/VDD" -9.66375
+cap "x4/x7.floating" "x4/VDD" 2.94128
+cap "x2/code[2]" "x2/VSS" 89.3946
+cap "x2/code[2]" "x4/a_9805_327#" 0.0142741
+cap "x4/IN" "x2/VSS" -0.144068
+cap "x4/a_9893_1155#" "x4/code[2]" 0.13942
+cap "async_resetb_delay_ctrl_code[0]" "x4/IN" 0.25977
+cap "x2/code[2]" "x4/IN" 0.124551
+cap "x2/code[2]" "x2/a_9805_1155#" 0.0380959
+cap "x4/a_9893_603#" "x2/code_offset" 0.775434
+cap "x4/a_9965_1017#" "x2/VSS" -0.18817
+cap "x4/code[2]" "x4/a_9893_465#" 0.905225
+cap "x4/a_9805_879#" "x4/code[2]" 0.0681119
+cap "x4/a_9893_327#" "x2/code_offset" 0.744734
+cap "x2/code_offset" "x4/x7.floating" 7.50024
+cap "x4/code[2]" "x2/IN" 0.124551
+cap "x4/code[2]" "x4/a_9893_1017#" 0.185589
+cap "x2/IN" "async_setb_delay_ctrl_code[1]" 0.32395
+cap "x4/a_9965_465#" "x2/VSS" -0.18817
+cap "x2/a_9893_603#" "x2/code[2]" 0.57252
+cap "x2/code[2]" "x2/a_9893_465#" 0.905225
+cap "x2/a_9805_327#" "x4/VDD" 0.361865
+cap "x4/a_9805_1155#" "x4/VDD" 1.58959
+cap "x4/a_9805_879#" "x2/VSS" -1.01254
+cap "x2/a_9805_327#" "async_setb_delay_ctrl_code[0]" 0.247879
+cap "x4/a_9965_741#" "x2/VSS" -0.18817
+cap "x4/a_9893_603#" "x4/code[2]" 0.57252
+cap "x2/code[2]" "x2/a_9805_879#" 0.0681119
+cap "x2/code_offset" "x2/a_9893_327#" 0.180427
+cap "x4/x8.output_stack" "x4/code[2]" 1.46137
+cap "x4/a_9893_327#" "x4/code[2]" 1.33573
+cap "x4/code[2]" "x2/code_offset" 4.69061
+cap "x4/a_9805_603#" "x4/VDD" 3.08428
+cap "x2/code_offset" "x4/a_9893_879#" 0.775434
+cap "x4/code[2]" "x4/x7.floating" 3.87483
+cap "x2/IN" "x2/VSS" 0.223842
+cap "async_resetb_delay_ctrl_code[0]" "x2/IN" 0.202948
+cap "x4/a_9805_327#" "x4/VDD" 3.08428
+cap "x2/VSS" "x4/VDD" 465.557
+cap "x2/code[2]" "x2/IN" 7.1119
+cap "async_setb_delay_ctrl_code[0]" "x2/VSS" 8.04353
+cap "x4/a_9805_327#" "async_setb_delay_ctrl_code[0]" 0.0327921
+cap "x2/code[2]" "x2/code_offset" 4.0873
+cap "async_resetb_delay_ctrl_code[1]" "x2/VSS" 64.3951
+cap "async_setb_delay_ctrl_code[0]" "x2/VSS" 54.6865
+cap "x4/x4[3].floating" "x4/code[2]" 13.0944
+cap "x2/x4[3].floating" "x2/code[2]" 13.0944
+cap "x2/code[2]" "x2/x7.floating" 8.1652
+cap "async_resetb_delay_ctrl_code[0]" "x2/VSS" 54.6865
+cap "x4/code[2]" "x2/VSS" 445.686
+cap "x2/code_offset" "x2/VSS" 0.30236
+cap "x2/code[2]" "x2/VSS" 445.238
+cap "x4/code[2]" "x4/x7.floating" 8.1652
+cap "x2/x9.output_stack" "x2/code[2]" 4.75338
+cap "x4/VDD" "x2/VSS" 0.283944
+cap "x4/x7.floating" "x2/code_offset" 0.00906352
+cap "async_setb_delay_ctrl_code[1]" "x2/VSS" 64.3951
+cap "x4/code[2]" "x2/code_offset" 4.0873
+cap "x4/code[2]" "x4/x8.output_stack" 4.75338
+cap "x4/x7.floating" "x4/VDD" 0.0114925
+cap "x2/x7.VSS" "x2/code[1]" 337.806
+cap "async_setb_delay_ctrl_code[0]" "x2/x7.VSS" 61.0099
+cap "x4/code[1]" "x4/x4[3].floating" 13.5069
+cap "x2/code[2]" "x2/code[1]" 9.73695
+cap "x4/code[2]" "x2/x7.VSS" 1.60469
+cap "x2/x4[3].floating" "x2/code[1]" 13.5069
+cap "x4/code[1]" "x4/code[2]" 9.73695
+cap "async_resetb_delay_ctrl_code[0]" "x2/x7.VSS" 61.0099
+cap "x4/code[1]" "x2/x7.VSS" 338.02
+cap "x2/code[2]" "x2/x7.VSS" 1.41285
+cap "x2/code[0]" "x2/x4[2].VSS" 106.043
+cap "x2/code[1]" "x2/code[0]" 1.75264
+cap "x4/code[0]" "x4/code[1]" 1.9083
+cap "x4/x4[2].floating" "x4/code[1]" 6.65789
+cap "x2/code[1]" "x2/x4[2].floating" 6.65789
+cap "x2/code[1]" "x2/x4[2].VSS" 223.262
+cap "x2/code[0]" "x2/x3[1].floating" 3.75197
+cap "x4/code[0]" "x4/x3[1].floating" 3.75197
+cap "x4/x4[3].delay_signal" "x4/code[1]" 6.16794
+cap "x4/code[0]" "x2/x4[2].VSS" 106.098
+cap "x2/code[1]" "x2/x3[1].floating" 7.46717
+cap "x4/code[1]" "x4/x3[1].floating" 7.46717
+cap "x4/code[1]" "x2/x4[2].VSS" 224.448
+cap "x2/code[1]" "x2/x4[3].delay_signal" 6.16794
+cap "x2/x3[1].floating" "x2/code[0]" 5.69099
+cap "x4/code[0]" "x4/code[1]" -0.207547
+cap "x4/x2.floating" "x2/x4[0].VSS" 3.83973
+cap "x2/code[0]" "x2/x4[0].VSS" 53.7317
+cap "x4/code[0]" "x2/x4[0].VSS" 55.4428
+cap "x4/x5[3].delay_signal" "x4/code[0]" 4.45627
+cap "x2/code[0]" "x2/code[1]" -0.363208
+cap "x27/SET_B" "x2/x4[0].VSS" 0.697322
+cap "x4/x2.floating" "x4/code[0]" 3.27763
+cap "x2/x2.floating" "x2/code[0]" 3.27763
+cap "x2/x5[3].delay_signal" "x2/code[0]" 4.45627
+cap "x2/x4[0].VSS" "x4/x5[0].VDD" -1.73412
+cap "x4/x3[1].floating" "x4/code[0]" 5.69099
+cap "x27/SET_B" "x2/x3[0].VSS" 5.82146
+cap "x4/IN" "x4/a_9830_2406#" 29.4006
+cap "x4/code_offset" "x2/a_9893_327#" 0.0781826
+cap "x4/code_offset" "x4/a_9918_2268#" -0.167373
+cap "x4/code_offset" "x4/x7.floating" 1.07833
+cap "async_setb_delay_ctrl_code[2]" "x4/IN" 0.0108503
+cap "x2/x9.vss" "x4/code[3]" 0.0196953
+cap "x4/VDD" "x4/a_9918_2544#" 0.0577891
+cap "x4/VDD" "x4/IN" 154.878
+cap "x4/x6.floating" "x4/code[2]" 0.16835
+cap "x4/x8.output_stack" "x2/x9.vss" -0.00729287
+cap "async_resetb_delay_ctrl_code[1]" "x4/IN" 0.0151488
+cap "x4/x8.output_stack" "x4/x10.Y" -1.92661
+cap "x4/code_offset" "async_setb_delay_ctrl_code[0]" 0.072124
+cap "x4/a_9918_2544#" "x4/IN" 23.9605
+cap "x4/code_offset" "x2/a_9805_327#" 0.0551186
+cap "x4/code_offset" "x4/code[2]" 4.69973
+cap "x4/code_offset" "x4/a_9805_1155#" 7.03202
+cap "x4/code_offset" "async_setb_delay_ctrl_code[2]" 0.0610349
+cap "x4/VDD" "x4/x6.floating" 57.1043
+cap "x4/code_offset" "x4/x4[3].floating" 0.119637
+cap "x4/VDD" "x4/code_offset" 12.0097
+cap "x4/VDD" "x4/a_9830_2130#" 1.63173
+cap "x4/x6.floating" "async_resetb_delay_ctrl_code[1]" 0.156557
+cap "x4/x6.floating" "x4/a_9918_2544#" -1.87742
+cap "x4/VDD" "x4/x11.Y" 8.16431
+cap "x4/x6.floating" "x4/IN" 93.1718
+cap "x4/VDD" "x4/x5[6].floating" -0.0414913
+cap "x4/code_offset" "async_resetb_delay_ctrl_code[1]" 0.0852371
+cap "x4/code_offset" "x4/a_9918_2544#" -0.102773
+cap "x2/x9.input_stack" "x4/IN" 0.00890895
+cap "x4/x8.output_stack" "x4/code[2]" 1.46137
+cap "x2/x9.vss" "x4/a_9805_1155#" -0.490269
+cap "x4/IN" "x4/a_9830_2130#" 29.4066
+cap "x4/code_offset" "x4/IN" 5.97952
+cap "x4/VDD" "x4/code[3]" 5.18963
+cap "x4/code_offset" "x4/a_9893_1293#" 0.775434
+cap "x4/x11.Y" "x4/IN" 3.03657
+cap "async_resetb_delay_ctrl_code[0]" "x4/IN" 0.0138632
+cap "x4/x5[6].floating" "x4/IN" 2.41382
+cap "x4/IN" "x4/code[3]" 0.57
+cap "x4/VDD" "x2/x9.vss" 267.316
+cap "x4/VDD" "x4/x10.Y" 7.98792
+cap "x4/VDD" "x4/x8.output_stack" -0.531131
+cap "x4/IN" "x2/x9.input_stack" 0.00890895
+cap "x4/VDD" "x4/a_9918_2268#" -1.10592
+cap "x2/x9.input_stack" "x4/code_offset" 0.0217991
+cap "x4/x6.floating" "async_resetb_delay_ctrl_code[0]" 0.145948
+cap "x4/VDD" "x4/x7.floating" 0.914752
+cap "x2/x9.vss" "x4/IN" 1.20511
+cap "x4/IN" "x4/x10.Y" 10.3966
+cap "x4/x8.output_stack" "x4/IN" 44.7641
+cap "x4/code_offset" "async_resetb_delay_ctrl_code[0]" 0.0789577
+cap "async_setb_delay_ctrl_code[1]" "x4/IN" 0.0117358
+cap "x4/code_offset" "x4/x11.Y" -2.84217e-14
+cap "x4/x6.floating" "x4/code[3]" -0.14937
+cap "x2/a_9893_327#" "x4/IN" 0.00626946
+cap "x4/IN" "x4/a_9918_2268#" 43.0442
+cap "x4/VDD" "x4/a_9805_1155#" 1.4947
+cap "x4/code_offset" "x2/x9.input_stack" 0.078102
+cap "x4/x6.floating" "x2/x9.vss" 0.342839
+cap "x4/VDD" "x4/a_9830_2406#" 3.72807
+cap "x4/x6.floating" "x4/x8.output_stack" -1.3291
+cap "x4/x6.floating" "x4/x10.Y" -0.02377
+cap "x4/code_offset" "x2/x9.vss" 16.485
+cap "x4/code_offset" "x4/x10.Y" -7.10543e-15
+cap "x4/code_offset" "x4/x8.output_stack" 1.02995
+cap "x4/code_offset" "async_setb_delay_ctrl_code[1]" 0.0658818
+cap "x4/x6.floating" "x4/a_9918_2268#" -3.34889
+cap "async_setb_delay_ctrl_code[0]" "x4/IN" 0.0127335
+cap "x4/x11.Y" "x2/x9.vss" 0.00429069
+cap "x4/code[2]" "x4/IN" 1.32658
+cap "x4/x8.output_stack" "x4/x11.Y" -0.0669457
+cap "x4/x4[3].floating" "x2/x9.vss" 0.642923
+cap "async_setb_delay_ctrl_code[2]" "x4/x8.output_stack" 0.00763678
+cap "x2/x9.vss" "x4/x11.Y" 0.0373591
+cap "x2/x9.vss" "x4/code_offset" 0.357821
+cap "x2/x9.vss" "x4/code[2]" 0.426095
+cap "async_resetb_delay_ctrl_code[1]" "x4/x7.floating" 0.02244
+cap "async_setb_delay_ctrl_code[0]" "x4/x7.floating" 0.0190088
+cap "x4/x4[3].floating" "async_resetb_delay_ctrl_code[0]" 0.025265
+cap "x4/x11.Y" "async_resetb_delay_ctrl_code[0]" 0.0042746
+cap "async_resetb_delay_ctrl_code[0]" "x4/code_offset" 0.0189129
+cap "x4/VDD" "x4/x11.Y" 0.209663
+cap "x4/VDD" "x4/code_offset" 0.00182573
+cap "async_resetb_delay_ctrl_code[0]" "x4/code[2]" 0.0352154
+cap "async_setb_delay_ctrl_code[2]" "x4/x7.floating" 0.0163078
+cap "x4/IN" "x4/x7.floating" 0.0431513
+cap "x4/x10.Y" "x4/code[2]" 0.0197184
+cap "x2/x9.vss" "x4/x6.floating" 0.0374674
+cap "x2/x9.vss" "x4/x5[6].floating" 0.113741
+cap "x4/x4[3].floating" "async_setb_delay_ctrl_code[1]" 0.0215446
+cap "async_setb_delay_ctrl_code[1]" "x4/code_offset" 0.0160026
+cap "async_setb_delay_ctrl_code[1]" "x4/code[2]" 0.0297971
+cap "x4/x10.Y" "async_resetb_delay_ctrl_code[1]" 0.0137867
+cap "x4/x10.Y" "async_setb_delay_ctrl_code[0]" 0.00793078
+cap "x4/x6.floating" "async_resetb_delay_ctrl_code[0]" 0.00277412
+cap "x4/x5[6].floating" "async_resetb_delay_ctrl_code[0]" 0.0359367
+cap "x4/VDD" "x4/x6.floating" 0.127112
+cap "x2/x9.vss" "x4/x8.output_stack" 0.298497
+cap "x4/x4[3].floating" "x4/code[2]" 0.813418
+cap "async_resetb_delay_ctrl_code[0]" "x4/x8.output_stack" 0.00966965
+cap "x4/x11.Y" "x4/code[2]" 0.0098987
+cap "x4/code[2]" "x4/code_offset" 4.10687
+cap "x2/x9.vss" "x4/x7.floating" 0.498677
+cap "x4/x10.Y" "x4/IN" 1.22316
+cap "x4/x4[3].floating" "async_resetb_delay_ctrl_code[1]" 0.0274971
+cap "x4/x4[3].floating" "async_setb_delay_ctrl_code[0]" 0.0232939
+cap "x4/x11.Y" "async_setb_delay_ctrl_code[0]" 0.0039803
+cap "async_resetb_delay_ctrl_code[0]" "x4/x7.floating" 0.0206179
+cap "x4/x11.Y" "async_resetb_delay_ctrl_code[1]" 0.0074119
+cap "async_resetb_delay_ctrl_code[1]" "x4/code_offset" 0.0206725
+cap "async_setb_delay_ctrl_code[0]" "x4/code_offset" 0.0173673
+cap "x4/VDD" "x4/x7.floating" 0.0262483
+cap "async_resetb_delay_ctrl_code[1]" "x4/code[2]" 0.0384909
+cap "async_setb_delay_ctrl_code[0]" "x4/code[2]" 0.032338
+cap "x4/x4[3].floating" "async_setb_delay_ctrl_code[2]" 0.0284984
+cap "async_setb_delay_ctrl_code[2]" "x4/code_offset" 0.0147917
+cap "async_setb_delay_ctrl_code[2]" "x4/code[2]" 0.0809499
+cap "async_setb_delay_ctrl_code[1]" "x4/x8.output_stack" 0.00823675
+cap "x4/x5[6].floating" "x4/code[2]" 0.0414655
+cap "x4/x6.floating" "x4/code[2]" 0.00322369
+cap "x4/x11.Y" "x4/IN" 0.0180929
+cap "x4/IN" "x4/code_offset" 0.00952024
+cap "x4/IN" "x4/code[2]" 0.0182659
+cap "x4/x10.Y" "x2/x9.vss" 0.073491
+cap "async_setb_delay_ctrl_code[1]" "x4/x7.floating" 0.0175809
+cap "x4/code[2]" "x4/x8.output_stack" 4.75521
+cap "x4/x6.floating" "async_resetb_delay_ctrl_code[1]" 0.00298627
+cap "x4/x6.floating" "async_setb_delay_ctrl_code[0]" 0.00129664
+cap "async_resetb_delay_ctrl_code[1]" "x4/x5[6].floating" 0.0385545
+cap "x4/x5[6].floating" "async_setb_delay_ctrl_code[0]" 0.00101546
+cap "x4/x10.Y" "async_resetb_delay_ctrl_code[0]" 0.00851604
+cap "x4/x7.floating" "x4/code[2]" 0.0245144
+cap "async_resetb_delay_ctrl_code[1]" "x4/x8.output_stack" 0.0105303
+cap "async_setb_delay_ctrl_code[0]" "x4/x8.output_stack" 0.00891021
+cap "x4/x5[6].SW" "async_setb_delay_ctrl_code[0]" 0.00793078
+cap "x4/x4[3].floating" "x2/x7.VSS" 1.48719
+cap "x4/x5[6].SW" "async_resetb_delay_ctrl_code[0]" 0.00851604
+cap "async_setb_delay_ctrl_code[1]" "x4/x4[3].floating" 0.0487789
+cap "async_setb_delay_ctrl_code[0]" "x4/code[2]" 0.0371314
+cap "x4/x5[6].SW" "x2/x7.VSS" 0.0969855
+cap "async_setb_delay_ctrl_code[0]" "x4/x6.delay_signal" 0.00473355
+cap "async_resetb_delay_ctrl_code[0]" "x4/code[2]" 0.0404363
+cap "x4/x6.delay_signal" "async_resetb_delay_ctrl_code[0]" 0.005137
+cap "x2/x7.VSS" "x4/code[2]" 1.48803
+cap "x4/x6.delay_signal" "x2/x7.VSS" 0.107949
+cap "async_setb_delay_ctrl_code[1]" "x4/code[2]" 0.0342132
+cap "async_setb_delay_ctrl_code[1]" "x4/x6.delay_signal" 0.00437577
+cap "async_clk_sar" "x4/x5[6].SW" 0.0363624
+cap "x4/x5[6].floating" "x4/code[1]" 0.0029743
+cap "async_clk_sar" "x4/code[2]" 0.019815
+cap "x4/x4[3].floating" "x4/code[1]" 0.744806
+cap "x4/x4[3].floating" "async_setb_delay_ctrl_code[2]" 0.00449125
+cap "x4/x5[6].SW" "x4/code[1]" 0.0137867
+cap "async_setb_delay_ctrl_code[2]" "x4/code[2]" 0.0122796
+cap "x4/code[1]" "x4/code[2]" 9.75112
+cap "x4/x6.delay_signal" "x4/code[1]" 0.00559423
+cap "async_setb_delay_ctrl_code[0]" "x4/x5[6].floating" 0.00101546
+cap "x4/x4[3].floating" "x4/code[2]" 0.00240826
+cap "x4/x5[6].floating" "async_resetb_delay_ctrl_code[0]" 0.0027634
+cap "async_setb_delay_ctrl_code[0]" "x4/x4[3].floating" 0.0527413
+cap "x4/x5[6].floating" "x2/x7.VSS" 0.0392038
+cap "x4/x4[3].floating" "async_resetb_delay_ctrl_code[0]" 0.0572064
+cap "x4/code[0]" "x4/x4[3].delay_signal" 0.00845088
+cap "async_clk_sar" "x4/code[1]" 0.0190405
+cap "x4/x3[1].floating" "async_setb_delay_ctrl_code[1]" 0.0344303
+cap "x4/code[1]" "async_setb_delay_ctrl_code[1]" 0.104432
+cap "x4/x3[1].floating" "x4/code[1]" 0.784091
+cap "async_clk_sar" "x4/x5[5].SW" 0.0363624
+cap "x4/x5[6].VDD" "x4/x5[6].floating" -7.27596e-12
+cap "x4/code[1]" "x4/x5[6].floating" 0.0435447
+cap "x4/x3[1].floating" "async_setb_delay_ctrl_code[0]" 0.0380176
+cap "x4/code[1]" "async_setb_delay_ctrl_code[0]" 0.0347347
+cap "x4/x3[1].floating" "x2/x4[2].VSS" 1.21415
+cap "x4/x5[5].SW" "x4/code[1]" 0.0137867
+cap "x4/code[1]" "x2/x4[2].VSS" 0.77601
+cap "x4/code[0]" "x4/x3[1].floating" 0.696032
+cap "x4/code[0]" "x4/code[1]" 2.13952
+cap "x4/code[1]" "x4/x4[3].delay_signal" 6.17151
+cap "async_setb_delay_ctrl_code[0]" "x4/x5[6].floating" 0.00343619
+cap "x4/x5[6].floating" "x2/x4[2].VSS" 0.176476
+cap "x4/x5[5].SW" "async_setb_delay_ctrl_code[0]" 0.00793078
+cap "x4/code[0]" "x4/x5[6].floating" 0.0405721
+cap "async_setb_delay_ctrl_code[0]" "x4/x4[3].delay_signal" 0.00705789
+cap "x4/x5[5].SW" "x2/x4[2].VSS" 0.115624
+cap "x4/code[0]" "x4/x5[5].SW" 0.00851604
+cap "x4/x4[3].delay_signal" "x2/x4[2].VSS" 0.689126
+cap "x27/RESET_B" "x2/x4[0].VSS" 3.36012
+cap "x4/a_15703_1340#" "x27/a_1429_21#" 0.812877
+cap "x4/a_15703_1681#" "x4/OUT" 9.07115
+cap "x27/a_942_21#" "x2/x4[0].VSS" 1.65653
+cap "x2/x4[0].VSS" "x27/a_1364_47#" 0.0280119
+cap "x4/a_15703_1340#" "x27/a_2136_47#" 1.14796
+cap "x4/a_15703_1340#" "x2/x4[0].VSS" 44.3125
+cap "x27/a_1255_47#" "x4/x5[4].VDD" 0.439376
+cap "x2/x4[0].VSS" "x27/a_193_47#" 0.208133
+cap "x4/a_15703_1340#" "x27/Q_N" 0.464283
+cap "x4/x5[3].SW" "x8/X" 0.0363624
+cap "x4/x5[3].SW" "x27/Q" 0.0132286
+cap "x27/RESET_B" "x4/a_15703_1681#" 3.835
+cap "x4/x5[4].VDD" "x27/SET_B" 1.66145
+cap "x2/x4[0].VSS" "x27/a_27_47#" 0.193259
+cap "x4/x5[3].delay_signal" "x4/code[0]" 4.45062
+cap "x8/X" "x4/code[0]" 0.000331955
+cap "x27/a_942_21#" "x4/a_15703_1681#" 0.991959
+cap "x4/a_15703_1340#" "x4/a_15703_1681#" -3.69467
+cap "x4/x5[3].delay_signal" "x4/OUT" 0.182565
+cap "x8/X" "x4/OUT" -0.408134
+cap "x4/OUT" "x27/Q" 0.304188
+cap "x27/a_1663_329#" "x4/x5[4].floating" 0.139746
+cap "x4/a_15703_1681#" "x27/a_193_47#" 0.0471991
+cap "x4/a_15703_1681#" "x27/a_1341_413#" 0.0238129
+cap "x4/x5[4].VDD" "x8/S" 0.528491
+cap "x27/a_1429_21#" "x4/x2.floating" 0.456531
+cap "x4/a_15703_1681#" "x27/a_27_47#" 0.526001
+cap "x27/a_1545_47#" "x4/x5[3].delay_signal" 0.0256556
+cap "x27/a_2136_47#" "x4/x2.floating" 0.452625
+cap "x4/x5[4].VDD" "x8/A0" 0.488162
+cap "x2/x4[0].VSS" "x4/x2.floating" 16.8511
+cap "x4/x5[4].VDD" "x27/a_648_21#" 0.105615
+cap "x27/VPWR" "x4/a_15703_1681#" 0.00216736
+cap "x27/RESET_B" "x4/x5[3].delay_signal" 0.186785
+cap "x27/a_942_21#" "x4/x5[3].delay_signal" 0.00647663
+cap "x27/Q_N" "x4/x2.floating" 0.20712
+cap "x27/a_1429_21#" "x4/x5[4].floating" 1.90274
+cap "x4/a_15703_1340#" "x27/Q" 1.25498
+cap "x4/x5[4].VDD" "x4/x5[3].SW" 0.539511
+cap "async_setb_delay_ctrl_code[0]" "x4/x5[3].SW" 0.00396539
+cap "x27/a_2136_47#" "x4/x5[4].floating" 0.99549
+cap "x4/x5[4].VDD" "x4/code[0]" 4.44089e-16
+cap "x2/x4[0].VSS" "x4/x5[4].floating" 0.588003
+cap "async_setb_delay_ctrl_code[0]" "x4/code[0]" 0.136302
+cap "x4/x5[4].VDD" "x8/a_218_47#" 0.202367
+cap "x27/Q_N" "x4/x5[4].floating" 0.48405
+cap "x4/x5[4].VDD" "x4/OUT" 10.9226
+cap "x27/a_1545_47#" "x4/x5[4].VDD" 0.755821
+cap "x27/a_1113_329#" "x2/x4[0].VSS" 0.0345974
+cap "x2/x4[0].VSS" "x27/a_1663_329#" 0.122636
+cap "x4/a_15703_1681#" "x4/x5[4].floating" -0.384231
+cap "x27/RESET_B" "x4/x5[4].VDD" 2.81938
+cap "x4/x5[3].delay_signal" "x4/x2.floating" -2.84217e-14
+cap "x27/Q" "x4/x2.floating" 0.314141
+cap "x4/x5[4].VDD" "x27/a_942_21#" 1.0677
+cap "x27/a_1255_47#" "x4/OUT" 0.076148
+cap "x4/x5[4].VDD" "x27/a_1364_47#" 0.0294047
+cap "x4/a_15703_1340#" "x4/x5[4].VDD" -0.0982044
+cap "x27/a_1113_329#" "x4/a_15703_1681#" 0.0173296
+cap "x4/a_15703_1681#" "x27/a_1663_329#" 0.0876558
+cap "x27/SET_B" "x4/OUT" 0.477715
+cap "x27/a_1429_21#" "x2/x4[0].VSS" 2.39737
+cap "x4/x5[4].VDD" "x27/a_193_47#" 0.101
+cap "x2/x4[0].VSS" "x27/a_2136_47#" 2.3323
+cap "x4/x5[4].VDD" "x27/a_27_47#" 0.0839099
+cap "x4/x5[3].delay_signal" "x4/x5[4].floating" -0.143353
+cap "x8/X" "x4/x5[4].floating" 0.445201
+cap "x8/a_218_374#" "x4/x5[4].floating" 0.00163374
+cap "x27/Q" "x4/x5[4].floating" 0.963514
+cap "x8/a_76_199#" "x4/x5[4].floating" 0.49467
+cap "x27/Q_N" "x2/x4[0].VSS" 1.15114
+cap "x27/a_1255_47#" "x4/a_15703_1340#" 0.210275
+cap "x4/a_15703_1681#" "x27/a_1429_21#" 0.831771
+cap "x4/a_15703_1340#" "x27/SET_B" 1.04797
+cap "x4/a_15703_1681#" "x2/x4[0].VSS" -0.383234
+cap "x4/a_15703_1681#" "x27/a_2136_47#" 0.852856
+cap "x4/x5[3].SW" "x4/code[0]" 0.00425802
+cap "x4/x5[4].VDD" "x4/x2.floating" 0.651274
+cap "x27/Q_N" "x4/a_15703_1681#" 0.371287
+cap "async_setb_delay_ctrl_code[0]" "x4/x2.floating" 0.0373361
+cap "x4/OUT" "x4/code[0]" 0.179203
+cap "x27/a_1429_21#" "x4/x5[3].delay_signal" 0.00895828
+cap "x4/a_15703_1340#" "x27/a_648_21#" 0.0295898
+cap "x27/a_1255_47#" "x4/x2.floating" 0.0432467
+cap "x4/x5[4].VDD" "x4/x5[4].floating" 64.4952
+cap "x27/RESET_B" "x4/x5[3].SW" 0.0204522
+cap "x4/x5[3].delay_signal" "x27/a_2136_47#" 0.0394134
+cap "x2/x4[0].VSS" "x4/x5[3].delay_signal" 2.76069
+cap "async_setb_delay_ctrl_code[0]" "x4/x5[4].floating" 0.00830208
+cap "x2/x4[0].VSS" "x27/Q" 1.89278
+cap "x2/x4[0].VSS" "x8/X" 0.00658049
+cap "x27/SET_B" "x4/x2.floating" 0.103191
+cap "x2/x4[0].VSS" "x4/x3[1].floating" 0.0234997
+cap "x27/Q_N" "x4/x5[3].delay_signal" 0.0283188
+cap "x27/a_1545_47#" "x4/OUT" 0.0337756
+cap "x4/x5[4].VDD" "x27/a_1160_47#" 0.110009
+cap "x27/RESET_B" "x4/OUT" 1.04317
+cap "x27/a_1255_47#" "x4/x5[4].floating" 0.217477
+cap "x4/a_15703_1681#" "x8/X" 1.3958
+cap "x27/a_942_21#" "x4/OUT" 0.396466
+cap "x4/a_15703_1681#" "x27/Q" 5.36099
+cap "x27/SET_B" "x4/x5[4].floating" 0.161177
+cap "x4/a_15703_1340#" "x4/OUT" 9.82806
+cap "x4/a_15703_1340#" "x27/a_1545_47#" 0.485637
+cap "x4/x5[4].VDD" "x27/a_1429_21#" 1.63109
+cap "x4/OUT" "x27/a_27_47#" 0.00276023
+cap "x27/RESET_B" "x4/a_15703_1340#" 3.36908
+cap "x8/S" "x4/x5[4].floating" 0.183082
+cap "x4/x5[4].VDD" "x27/a_2136_47#" 2.01087
+cap "x4/a_15703_1340#" "x27/a_942_21#" 0.364123
+cap "x4/x5[4].VDD" "x2/x4[0].VSS" 7.07789
+cap "x4/a_15703_1340#" "x27/a_1364_47#" 0.042868
+cap "x8/X" "x4/x5[3].delay_signal" 0.0355369
+cap "x4/x5[3].delay_signal" "x27/Q" 0.0572288
+cap "x4/code[0]" "x4/x2.floating" 0.0344291
+cap "x27/Q_N" "x4/x5[4].VDD" 0.905223
+cap "x4/a_15703_1340#" "x27/a_193_47#" 0.0377179
+cap "x4/a_15703_1340#" "x27/a_27_47#" 0.021996
+cap "x4/x5[4].VDD" "x4/a_15703_1681#" 33.3781
+cap "x4/OUT" "x4/x2.floating" 0.306615
+cap "x27/a_1255_47#" "x2/x4[0].VSS" 0.558433
+cap "x27/a_1545_47#" "x4/x2.floating" 0.385993
+cap "x4/code[0]" "x4/x5[4].floating" 0.0420944
+cap "x2/x4[0].VSS" "x27/SET_B" 0.309764
+cap "x8/a_218_47#" "x4/x5[4].floating" 0.000912572
+cap "x27/RESET_B" "x4/x2.floating" 0.597467
+cap "x4/OUT" "x4/x5[4].floating" 0.708781
+cap "x27/a_942_21#" "x4/x2.floating" 0.170555
+cap "x27/a_1255_47#" "x4/a_15703_1681#" 0.121414
+cap "x27/a_1364_47#" "x4/x2.floating" 0.01936
+cap "x4/a_15703_1340#" "x4/x2.floating" 1.77636e-15
+cap "x4/a_15703_1681#" "x27/SET_B" 0.0574638
+cap "x4/x5[4].VDD" "x4/x5[3].delay_signal" 12.8096
+cap "x4/x5[4].VDD" "x8/X" 8.30308
+cap "x4/x5[4].VDD" "x27/Q" 16.0287
+cap "async_setb_delay_ctrl_code[0]" "x4/x5[3].delay_signal" 0.00523968
+cap "x4/x5[4].VDD" "x8/a_218_374#" 0.252884
+cap "x4/x5[4].VDD" "x8/a_76_199#" 2.17911
+cap "x27/RESET_B" "x4/x5[4].floating" 1.12856
+cap "x27/a_942_21#" "x4/x5[4].floating" 0.220873
+cap "x4/x5[3].SW" "x27/a_1429_21#" 0.000355645
+cap "x4/x5[3].SW" "x27/a_2136_47#" 0.0118569
+cap "x4/x5[3].SW" "x2/x4[0].VSS" 0.0771894
+cap "x27/a_1255_47#" "x4/x5[3].delay_signal" 0.00788396
+cap "x27/a_1341_413#" "x4/x5[4].floating" 0.0347201
+cap "x27/a_648_21#" "x4/a_15703_1681#" 0.00784041
+cap "x2/x4[0].VSS" "x4/code[0]" 0.312165
+cap "x4/x5[3].delay_signal" "x27/SET_B" 0.00288527
+cap "x4/a_15703_1340#" "x27/a_1160_47#" 0.0902927
+cap "x27/Q_N" "x4/x5[3].SW" 0.00941684
+cap "x27/a_1429_21#" "x4/OUT" 0.310873
+cap "x2/x4[0].VSS" "x4/OUT" 2.34595
+cap "x4/OUT" "x27/a_2136_47#" 0.366792
+cap "x4/x5[4].VDD" "x8/a_439_47#" 0.0702293
+cap "x27/a_1545_47#" "x2/x4[0].VSS" 0.525804
+cap "x27/Q_N" "x4/OUT" 0.12219
+cap "x8/X" "x4/x5[1].floating" 0.34392
+cap "x8/X" "x27/Q" 30.1545
+cap "x27/a_193_47#" "x27/a_1255_47#" 2.84217e-14
+cap "x27/RESET_B" "x27/SET_B" 1.34799
+cap "x27/a_942_21#" "x27/Q_N" -8.88178e-16
+cap "x8/a_505_21#" "x2/x3[0].VSS" -0.117476
+cap "x4/a_15703_1681#" "x27/a_27_47#" 0.518384
+cap "x8/a_505_21#" "x4/x5[1].VDD" 0.301239
+cap "x8/a_76_199#" "x27/a_193_47#" 0.0703701
+cap "x2/x3[0].VSS" "x4/x2.floating" 3.81878
+cap "x8/a_439_47#" "x2/x3[0].VSS" -0.0131447
+cap "x8/X" "x8/S" 0.975067
+cap "x8/a_76_199#" "x27/a_1429_21#" 0.0386025
+cap "x27/a_27_47#" "x27/a_2136_47#" -1.38778e-17
+cap "x8/a_439_47#" "x4/x5[1].VDD" 0.060789
+cap "x4/x5[1].floating" "x2/x3[0].VSS" 0.0690631
+cap "x2/x3[0].VSS" "x27/Q" 35.0761
+cap "x8/X" "x4/OUT" 0.0201046
+cap "x4/x5[1].floating" "x4/x5[1].VDD" 2.92299
+cap "x27/Q" "x4/x5[1].VDD" 26.4925
+cap "x8/A0" "x27/a_942_21#" 0.0337836
+cap "x4/a_15703_1681#" "x27/a_1429_21#" 0.154325
+cap "x27/RESET_B" "x27/a_381_47#" 0.000918102
+cap "x2/x3[0].VSS" "x27/a_1364_47#" 0.12813
+cap "x4/x5[1].VDD" "x27/a_1364_47#" 0.141237
+cap "x27/a_193_47#" "x27/a_2136_47#" -0.156655
+cap "x8/S" "x2/x3[0].VSS" 0.525331
+cap "x8/A0" "x27/a_1255_47#" 0.138572
+cap "x27/a_381_47#" "x27/SET_B" 0.0245042
+cap "x8/A0" "x8/a_76_199#" 6.7192
+cap "x8/S" "x4/x5[1].VDD" 14.712
+cap "x4/x5[1].VDD" "x27/a_648_21#" 0.424396
+cap "x4/OUT" "x2/x3[0].VSS" 29.2604
+cap "x27/RESET_B" "x27/a_942_21#" 11.958
+cap "x4/OUT" "x4/x5[1].VDD" 24.8963
+cap "x27/a_942_21#" "x27/SET_B" 5.61902
+cap "x27/RESET_B" "x27/a_1255_47#" 1.33144
+cap "x27/a_1663_329#" "x2/x3[0].VSS" 0.403463
+cap "x27/a_1663_329#" "x4/x5[1].VDD" 1.16272
+cap "x8/X" "x8/a_218_47#" 0.84547
+cap "x27/SET_B" "x27/a_1255_47#" 16.252
+cap "x27/a_27_47#" "x2/x3[0].VSS" 1.58167
+cap "x8/a_76_199#" "x27/SET_B" 2.849
+cap "x8/X" "x27/a_1429_21#" 0.0539195
+cap "x27/a_27_47#" "x4/x5[1].VDD" 9.29546
+cap "x27/RESET_B" "x4/a_15703_1681#" 0.229295
+cap "x27/RESET_B" "x27/a_474_413#" 0.0170417
+cap "x4/a_15703_1681#" "x27/SET_B" 0.0294247
+cap "x2/x3[0].VSS" "x27/a_193_47#" 2.46514
+cap "x27/RESET_B" "x27/a_2136_47#" 65.4895
+cap "x4/x5[1].SW" "x4/x5[1].VDD" 0.154443
+cap "x2/x3[0].VSS" "x8/a_218_47#" 0.342823
+cap "x8/a_218_47#" "x4/x5[1].VDD" -0.0415968
+cap "x27/a_193_47#" "x4/x5[1].VDD" 12.1526
+cap "x2/x3[0].VSS" "x27/a_1429_21#" 16.0277
+cap "x27/a_474_413#" "x27/SET_B" 0.0331542
+cap "x8/X" "x8/A0" -0.775663
+cap "x2/x3[0].VSS" "x27/Q_N" 0.65728
+cap "x27/a_1429_21#" "x4/x5[1].VDD" 60.1615
+cap "x27/Q_N" "x4/x5[1].VDD" 3.84672
+cap "x27/SET_B" "x27/a_2136_47#" 0.877965
+cap "x4/x5[1].delay_signal" "x27/Q" 0.37325
+cap "x27/SET_B" "x8/a_218_374#" 0.173904
+cap "x27/a_892_329#" "x27/Q" 0.0605282
+cap "x27/a_1113_329#" "x27/Q" 0.598108
+cap "x4/x3[0].floating" "x27/a_1429_21#" 0.00868546
+cap "x27/a_942_21#" "x27/a_1255_47#" -0.336461
+cap "x8/a_76_199#" "x27/a_942_21#" 0.0219736
+cap "x8/A0" "x2/x3[0].VSS" 2.07787
+cap "x8/X" "x27/RESET_B" 0.0148027
+cap "x27/a_1341_413#" "x27/SET_B" 0.369775
+cap "x8/a_505_21#" "x27/Q" 0.23161
+cap "x8/A0" "x4/x5[1].VDD" 10.2996
+cap "x2/x3[0].VSS" "x4/code[0]" 0.205618
+cap "x8/a_76_199#" "x27/a_1255_47#" 0.0188294
+cap "x4/OUT" "x4/x5[1].delay_signal" 0.477273
+cap "x4/a_15703_1681#" "x27/a_942_21#" 0.720981
+cap "x4/OUT" "x4/a_15703_1340#" 0.299205
+cap "x27/a_788_47#" "x27/SET_B" 0.95799
+cap "x4/x5[1].floating" "x27/Q" 2.52705
+cap "x27/RESET_B" "x2/x3[0].VSS" 97.9502
+cap "x8/a_535_374#" "x4/x5[1].VDD" 0.0743528
+cap "x27/RESET_B" "x4/x5[1].VDD" 5.07293
+cap "x3/a_439_47#" "x8/X" 0.022684
+cap "x27/a_1545_47#" "x27/SET_B" 5.15347
+cap "x2/x3[0].VSS" "x27/SET_B" 76.9188
+cap "x8/X" "x27/CLK" 0.0343178
+cap "x27/SET_B" "x4/x5[1].VDD" 0.955661
+cap "x8/S" "x27/Q" 21.0668
+cap "x8/a_76_199#" "x3/a_76_199#" 0.260979
+cap "x4/a_15703_1340#" "x27/a_27_47#" 0.00506327
+cap "x8/S" "x4/x5[1].floating" 0.056053
+cap "x4/OUT" "x4/x2.floating" 0.123224
+cap "x27/Q" "x27/a_648_21#" 0.215662
+cap "x4/OUT" "x4/x5[1].floating" 0.139114
+cap "x4/OUT" "x27/Q" 2.28237
+cap "x4/x5[1].delay_signal" "x27/a_1429_21#" 0.0208138
+cap "x27/CLK" "x4/x5[1].VDD" -0.000958167
+cap "x8/S" "x4/OUT" -0.000311471
+cap "x27/a_1663_329#" "x27/Q" 0.4676
+cap "x8/X" "x27/a_942_21#" 0.265655
+cap "x4/a_15703_1340#" "x27/a_1429_21#" 0.119666
+cap "x4/OUT" "x27/a_648_21#" 0.00310312
+cap "x8/X" "x27/a_1255_47#" 0.304504
+cap "x27/a_27_47#" "x27/Q" 0.649893
+cap "x8/X" "x8/a_76_199#" 3.52599
+cap "x27/a_942_21#" "x2/x3[0].VSS" 8.08407
+cap "x4/x2.floating" "x27/a_1429_21#" 0.142559
+cap "x27/a_942_21#" "x4/x5[1].VDD" 24.6753
+cap "x8/S" "x27/a_27_47#" 0.0880468
+cap "x4/x5[1].SW" "x27/Q" 0.125413
+cap "x2/x3[0].VSS" "x27/a_1255_47#" 7.07461
+cap "x8/a_218_47#" "x27/Q" 1.1755
+cap "x27/a_193_47#" "x27/Q" 0.14231
+cap "x8/X" "x3/a_76_199#" 0.0896944
+cap "x4/OUT" "x27/a_27_47#" 0.0208326
+cap "x27/a_1255_47#" "x4/x5[1].VDD" 23.4381
+cap "x8/a_76_199#" "x2/x3[0].VSS" 2.92178
+cap "x8/a_76_199#" "x27/a_1545_47#" 0.0116782
+cap "x27/Q" "x27/a_1429_21#" 6.72692
+cap "x4/x5[1].floating" "x27/a_1429_21#" 0.263152
+cap "x27/Q_N" "x27/Q" 3.20576
+cap "x8/a_76_199#" "x4/x5[1].VDD" 23.0421
+cap "x8/X" "x27/a_2136_47#" 0.0147038
+cap "x8/S" "x27/a_193_47#" 0.120572
+cap "x27/RESET_B" "x4/x5[1].delay_signal" 0.471183
+cap "x8/S" "x27/a_1429_21#" 2.51084
+cap "x4/OUT" "x27/a_193_47#" 0.0704507
+cap "x27/RESET_B" "x4/a_15703_1340#" 0.225664
+cap "x4/a_15703_1681#" "x4/x5[1].VDD" 15.6699
+cap "x27/SET_B" "x4/x5[1].delay_signal" 0.118964
+cap "x4/OUT" "x27/a_1429_21#" 0.183299
+cap "x27/a_1160_47#" "x27/SET_B" 1.36043
+cap "x4/a_15703_1340#" "x27/SET_B" 1.18948
+cap "x4/OUT" "x27/Q_N" 0.0162418
+cap "x8/A0" "x27/Q" 7.75405
+cap "x2/x3[0].VSS" "x27/a_2136_47#" -0.847088
+cap "x27/a_2136_47#" "x4/x5[1].VDD" 21.6787
+cap "x2/x3[0].VSS" "x8/a_218_374#" -0.33719
+cap "x8/S" "x8/A0" 0.546881
+cap "x8/a_218_374#" "x4/x5[1].VDD" 0.654197
+cap "x8/X" "x3/a_218_47#" 0.0355954
+cap "x27/a_27_47#" "x27/a_193_47#" 2.84217e-14
+cap "x8/a_535_374#" "x27/Q" 0.0707435
+cap "x27/a_27_47#" "x27/a_1429_21#" 7.10543e-15
+cap "x27/RESET_B" "x27/Q" 159.527
+cap "x27/a_27_47#" "x27/Q_N" -1.38778e-17
+cap "x27/RESET_B" "x4/x5[1].floating" 0.0766475
+cap "x27/a_1341_413#" "x2/x3[0].VSS" 0.25105
+cap "x27/a_1341_413#" "x4/x5[1].VDD" 0.612667
+cap "x8/X" "x2/x3[0].VSS" 33.1271
+cap "x27/SET_B" "x27/Q" 0.666023
+cap "x4/OUT" "x4/code[0]" 0.179203
+cap "x4/x5[1].floating" "x27/SET_B" 0.0332821
+cap "x8/X" "x4/x5[1].VDD" 54.5355
+cap "x8/S" "x27/RESET_B" -0.00836087
+cap "x27/a_942_21#" "x4/x5[1].delay_signal" 0.0131826
+cap "x27/SET_B" "x27/a_1364_47#" 0.69142
+cap "x27/a_193_47#" "x27/a_1429_21#" -0.20613
+cap "x27/a_193_47#" "x27/Q_N" -0.0457121
+cap "x27/RESET_B" "x27/a_648_21#" 0.0141654
+cap "x8/S" "x27/SET_B" 0.176129
+cap "x8/A0" "x27/a_27_47#" 1.6057
+cap "x27/RESET_B" "x4/OUT" -3.02945
+cap "x27/SET_B" "x27/a_648_21#" 1.18826
+cap "x27/a_1545_47#" "x2/x3[0].VSS" 6.12081
+cap "x4/OUT" "x27/SET_B" 0.841288
+cap "x27/a_1545_47#" "x4/x5[1].VDD" 5.05549
+cap "x2/x3[0].VSS" "x4/x5[1].VDD" -312.081
+cap "x8/A0" "x27/a_193_47#" 2.68012
+cap "x8/A0" "x8/a_218_47#" 0.616142
+cap "x4/x3[0].floating" "x2/x3[0].VSS" 0.16389
+cap "x27/RESET_B" "x27/a_27_47#" 0.149441
+cap "x27/a_27_47#" "x27/SET_B" 1.39107
+cap "x27/a_942_21#" "x27/Q" 0.631724
+cap "x27/RESET_B" "x4/x5[1].SW" 0.0186698
+cap "x27/RESET_B" "x27/a_193_47#" 3.04582
+cap "x27/a_1255_47#" "x27/Q" 0.892476
+cap "x8/X" "x3/a_505_21#" 0.00741124
+cap "x27/RESET_B" "x27/a_1429_21#" 36.5272
+cap "x8/a_76_199#" "x4/x5[1].floating" 0.128556
+cap "x8/a_76_199#" "x27/Q" 57.4604
+cap "x27/RESET_B" "x27/Q_N" 33.0463
+cap "x27/SET_B" "x8/a_218_47#" 0.0298675
+cap "x27/a_193_47#" "x27/SET_B" 2.12597
+cap "x4/OUT" "x27/a_942_21#" 0.440431
+cap "x27/Q_N" "x27/SET_B" 0.82188
+cap "x27/SET_B" "x27/a_1429_21#" 4.47977
+cap "x4/a_15703_1681#" "x27/Q" 4.79641
+cap "x27/SET_B" "x27/a_582_47#" 0.00776142
+cap "x4/OUT" "x27/a_1255_47#" 0.00848311
+cap "x27/a_474_413#" "x27/Q" 0.0255819
+cap "x3/a_76_199#" "x27/Q" 0.0312565
+cap "x27/a_2136_47#" "x27/Q" 7.13745
+cap "x27/RESET_B" "x4/code[0]" 0.00899455
+cap "x8/A0" "x27/SET_B" 0.099713
+cap "x27/a_27_47#" "x27/a_942_21#" -0.0997119
+cap "x8/a_218_374#" "x27/Q" 1.63598
+cap "x4/a_15703_1681#" "x4/OUT" 0.0794467
+cap "x8/X" "x8/a_505_21#" 0.0861011
+cap "x2/x3[0].VSS" "x4/x5[1].delay_signal" 0.512651
+cap "x4/a_15703_1340#" "x2/x3[0].VSS" 13.3771
+cap "x4/x5[1].delay_signal" "x4/x5[1].VDD" 0.180256
+cap "x8/a_76_199#" "x27/a_27_47#" 0.0640004
+cap "x8/X" "x8/a_439_47#" 0.119928
+cap "x27/a_1113_329#" "x4/x5[1].VDD" 0.435397
+cap "x4/OUT" "x27/a_2136_47#" 15.0416
+cap "x27/a_1160_47#" "x4/x5[1].VDD" 0.129957
+cap "x27/a_1341_413#" "x27/Q" 0.277133
+cap "x27/a_942_21#" "x27/a_193_47#" -7.10543e-15
+cap "x3/a_218_47#" "x27/Q" 1.1755
+cap "x2/x2.VSS" "x27/a_1113_329#" 4.45422
+cap "x8/a_505_21#" "x27/a_193_47#" 0.0386255
+cap "x3/a_505_21#" "x27/a_27_47#" 0.0529903
+cap "x4/x5[0].VDD" "x27/a_193_47#" 17.0139
+cap "x4/OUT" "x8/S" 0.114517
+cap "x8/A0" "x8/S" 16.122
+cap "x27/RESET_B" "x8/S" 0.412957
+cap "x3/a_505_21#" "x27/a_193_47#" 0.586022
+cap "x2/x2.VSS" "x27/a_942_21#" 10.5591
+cap "x2/x2.VSS" "x27/a_558_413#" 1.52379
+cap "x8/a_218_374#" "x8/S" 0.577311
+cap "x8/A0" "x27/a_474_413#" 0.051492
+cap "x8/a_505_21#" "x8/S" 21.6458
+cap "x27/CLK" "x3/a_218_47#" 0.440391
+cap "x27/a_942_21#" "x27/Q" 0.0237191
+cap "x3/a_218_374#" "x8/S" 0.698542
+cap "x4/x5[0].VDD" "x8/S" 0.127647
+cap "x8/a_505_21#" "x27/a_648_21#" 1.06977
+cap "x8/a_76_199#" "x27/a_27_47#" 0.0723185
+cap "x8/A0" "x2/x2.VSS" 130.496
+cap "x8/A0" "x8/X" -1.0374
+cap "x27/a_648_21#" "x4/x5[0].VDD" 29.4107
+cap "x2/x2.VSS" "x27/RESET_B" 0.472055
+cap "x27/CLK" "x27/a_1113_329#" 0.00691243
+cap "x8/a_505_21#" "x27/a_474_413#" 0.515779
+cap "x3/a_505_21#" "x8/S" 0.236859
+cap "x27/a_474_413#" "x4/x5[0].VDD" 16.6217
+cap "x8/A0" "x27/Q" 41.6764
+cap "x8/A0" "x3/a_76_199#" 2.72023
+cap "x8/a_218_374#" "x2/x2.VSS" 0.306243
+cap "x8/a_505_21#" "x2/x2.VSS" -6.94098
+cap "x8/a_439_47#" "x8/A0" 2.0081
+cap "x2/x2.VSS" "x3/a_218_374#" 0.761483
+cap "x27/CLK" "x27/a_942_21#" 2.21396
+cap "x27/a_892_329#" "x4/x5[0].VDD" 0.946944
+cap "x2/x2.VSS" "x4/x5[0].VDD" -424.301
+cap "x27/CLK" "x27/a_558_413#" 0.507014
+cap "x8/a_505_21#" "x27/Q" 59.3325
+cap "x8/A0" "x27/SET_B" 0.558375
+cap "x2/x2.VSS" "x3/a_439_47#" 0.972948
+cap "x8/a_505_21#" "x3/a_76_199#" 2.81013
+cap "x27/a_27_47#" "x27/a_193_47#" -0.00406005
+cap "x3/a_218_374#" "x27/Q" 1.40823
+cap "x4/x5[0].VDD" "x27/Q" 10.7988
+cap "x3/a_505_21#" "x2/x2.VSS" 18.5978
+cap "x3/a_76_199#" "x4/x5[0].VDD" 8.64562
+cap "x8/a_76_199#" "x8/S" 5.3666
+cap "x3/a_439_47#" "x27/Q" 0.0148265
+cap "x27/CLK" "x8/A0" 3.17688
+cap "x3/a_505_21#" "x27/Q" 1.30074
+cap "x8/a_505_21#" "x27/SET_B" 0.0263714
+cap "x8/a_439_47#" "x4/x5[0].VDD" -0.0926409
+cap "x2/x2.VSS" "x8/a_218_47#" 0.261798
+cap "x27/a_788_47#" "x8/S" 8.78974
+cap "x4/x5[0].VDD" "x27/SET_B" 12.8919
+cap "x27/Q_N" "x27/a_193_47#" -0.00192708
+cap "x3/a_535_374#" "x8/S" 0.187388
+cap "x8/a_535_374#" "x8/S" 0.483685
+cap "x27/CLK" "x8/a_505_21#" 3.06933
+cap "x27/a_27_47#" "x8/S" 37.0436
+cap "x27/a_1160_47#" "x8/S" 1.38268
+cap "x27/a_381_47#" "x4/x5[0].VDD" 0.86458
+cap "x27/CLK" "x3/a_218_374#" 0.597956
+cap "x27/a_193_47#" "x27/a_1429_21#" -0.0143302
+cap "x8/a_76_199#" "x2/x2.VSS" 4.50541
+cap "x27/CLK" "x4/x5[0].VDD" 67.4142
+cap "x27/CLK" "x3/a_439_47#" 0.633968
+cap "x3/a_505_21#" "x27/a_381_47#" 0.0388279
+cap "x8/A0" "x3/a_218_47#" 0.608172
+cap "x27/a_193_47#" "x8/S" 35.1873
+cap "x27/CLK" "x3/a_505_21#" 39.2135
+cap "x8/a_76_199#" "x27/Q" 3.21281
+cap "x27/Q_N" "x8/S" 0.49832
+cap "x2/x2.VSS" "x27/a_788_47#" 8.61455
+cap "x8/a_76_199#" "x3/a_76_199#" 0.260979
+cap "x3/a_535_374#" "x2/x2.VSS" 0.49278
+cap "x2/x2.VSS" "x8/a_535_374#" 0.0177957
+cap "x2/x2.VSS" "x27/a_27_47#" 47.8493
+cap "x27/CLK" "x8/a_218_47#" 0.10171
+cap "x2/x2.VSS" "x27/a_1160_47#" 3.979
+cap "x27/a_1429_21#" "x8/S" 4.13952
+cap "x8/a_535_374#" "x27/Q" 0.710556
+cap "x27/a_27_47#" "x27/Q" 1.21752
+cap "x3/a_218_47#" "x4/x5[0].VDD" -0.495157
+cap "x27/a_27_47#" "x3/a_76_199#" 0.370712
+cap "x2/x2.VSS" "x27/a_193_47#" 53.5918
+cap "x27/a_1255_47#" "x27/a_193_47#" -0.0109897
+cap "x27/a_788_47#" "x27/SET_B" 0.0312294
+cap "x8/A0" "x27/a_942_21#" 0.0103681
+cap "x27/a_648_21#" "x8/S" 22.222
+cap "x2/x2.VSS" "x27/Q_N" 0.970895
+cap "x4/x5[0].VDD" "x27/a_1113_329#" 3.03218
+cap "x27/CLK" "x8/a_76_199#" 0.743353
+cap "x27/a_193_47#" "x27/Q" 2.42483
+cap "x3/a_76_199#" "x27/a_193_47#" 0.132617
+cap "x27/a_474_413#" "x8/S" 11.941
+cap "x27/a_27_47#" "x27/SET_B" -0.0206052
+cap "x2/x2.VSS" "x27/a_1429_21#" 4.1411
+cap "x8/a_505_21#" "x27/a_942_21#" 0.294559
+cap "x27/a_582_47#" "x8/S" 0.469254
+cap "x27/CLK" "x3/a_535_374#" 0.492746
+cap "x27/a_1364_47#" "x8/S" 0.0143133
+cap "x27/a_892_329#" "x8/S" 1.9427
+cap "x8/X" "x8/S" 1.3289
+cap "x27/a_193_47#" "x27/SET_B" 0.160633
+cap "x2/x2.VSS" "x8/S" 69.1521
+cap "x27/CLK" "x27/a_27_47#" 100.634
+cap "x27/a_1663_329#" "x8/S" 0.373686
+cap "x4/x5[0].VDD" "x27/a_942_21#" 13.4017
+cap "x27/a_1255_47#" "x8/S" 5.43355
+cap "x27/a_648_21#" "x2/x2.VSS" 19.46
+cap "x27/Q" "x8/S" 18.7896
+cap "x8/a_505_21#" "x8/A0" 177.635
+cap "x3/a_76_199#" "x8/S" 17.1487
+cap "x2/x2.VSS" "x27/a_474_413#" 26.6569
+cap "x27/CLK" "x27/a_193_47#" 10.9464
+cap "x27/a_648_21#" "x27/Q" 0.0699782
+cap "x27/a_648_21#" "x3/a_76_199#" 0.519929
+cap "x27/a_1429_21#" "x27/SET_B" -0.0399097
+cap "x8/A0" "x4/x5[0].VDD" 6.79372
+cap "x8/A0" "x3/a_439_47#" 0.269495
+cap "x2/x2.VSS" "x27/a_582_47#" 1.32256
+cap "x27/a_474_413#" "x27/Q" 0.113481
+cap "x2/x2.VSS" "x27/a_892_329#" 0.771207
+cap "x8/S" "x27/SET_B" 31.1936
+cap "x3/a_76_199#" "x27/a_474_413#" 0.0417412
+cap "x3/a_505_21#" "x8/A0" 0.16542
+cap "x2/x2.VSS" "x8/X" 0.362867
+cap "x2/x2.VSS" "x27/a_1364_47#" 0.0891938
+cap "x2/x2.VSS" "x27/a_1663_329#" 0.2469
+cap "x2/x2.VSS" "x27/a_1255_47#" 3.32251
+cap "x27/a_648_21#" "x27/SET_B" 2.84217e-14
+cap "x27/CLK" "x27/a_1429_21#" 0.0141177
+cap "x27/a_381_47#" "x8/S" 2.29069
+cap "x27/a_2136_47#" "x27/a_193_47#" -0.00264095
+cap "x8/a_505_21#" "x4/x5[0].VDD" 12.8582
+cap "x2/x2.VSS" "x27/Q" 56.4357
+cap "x8/X" "x27/Q" 0.00758605
+cap "x2/x2.VSS" "x3/a_76_199#" 17.5358
+cap "x27/CLK" "x8/S" 11.9994
+cap "x3/a_439_47#" "x4/x5[0].VDD" -0.0136128
+cap "x27/CLK" "x27/a_648_21#" 2.77316
+cap "x8/a_439_47#" "x2/x2.VSS" -0.363989
+cap "x3/a_76_199#" "x27/Q" 57.1166
+cap "x3/a_505_21#" "x4/x5[0].VDD" 5.77766
+cap "x2/x2.VSS" "x27/SET_B" 15.2836
+cap "x27/CLK" "x27/a_474_413#" 3.62585
+cap "x27/a_1255_47#" "x27/SET_B" -0.0287411
+cap "x8/a_439_47#" "x27/Q" 0.113559
+cap "x27/Q" "x27/SET_B" 0.0250988
+cap "x27/a_27_47#" "x27/a_942_21#" -0.0358917
+cap "x27/a_2136_47#" "x8/S" 0.60314
+cap "x3/a_76_199#" "x27/SET_B" 0.854683
+cap "x27/a_381_47#" "x2/x2.VSS" 13.3915
+cap "x27/CLK" "x27/a_892_329#" 0.279579
+cap "x27/CLK" "x8/X" 0.155784
+cap "x27/CLK" "x2/x2.VSS" 79.4304
+cap "x2/x2.VSS" "x27/a_1545_47#" 1.15334
+cap "x27/CLK" "x27/a_1663_329#" 0.000743545
+cap "x27/CLK" "x27/a_1255_47#" 0.0321871
+cap "x27/a_381_47#" "x27/Q" 0.197893
+cap "x27/a_1341_413#" "x8/S" 0.513711
+cap "x27/CLK" "x27/Q" 25.845
+cap "x27/a_942_21#" "x27/a_193_47#" -0.00776475
+cap "x8/A0" "x27/a_27_47#" 1.44143
+cap "x27/CLK" "x3/a_76_199#" 9.98289
+cap "x27/a_1113_329#" "x8/S" 2.73439
+cap "x8/a_76_199#" "x4/x5[0].VDD" 3.52638
+cap "x27/CLK" "x8/a_439_47#" 0.071736
+cap "x27/a_2136_47#" "x2/x2.VSS" 0.916154
+cap "x27/CLK" "x27/SET_B" 0.597128
+cap "x8/A0" "x27/a_193_47#" 0.00534435
+cap "x8/a_505_21#" "x27/a_27_47#" 0.06831
+cap "x27/RESET_B" "x27/a_193_47#" -0.00345455
+cap "x4/x5[0].VDD" "x27/a_788_47#" 3.68855
+cap "x4/x5[0].VDD" "x8/a_535_374#" 0.225651
+cap "x2/x2.VSS" "x3/a_218_47#" 1.07813
+cap "x27/a_27_47#" "x4/x5[0].VDD" 31.306
+cap "x27/a_942_21#" "x8/S" 17.2491
+cap "x2/x2.VSS" "x27/a_1341_413#" 0.204568
+cap "x27/a_558_413#" "x8/S" 0.651197
+cap "x27/CLK" "x27/a_381_47#" 4.44719
+cap "x4/x5[0].VDD" "x27/a_1160_47#" 1.6881
+cap "x4/x6.floating" "x4/a_9918_2544#" -1.47147
+cap "x4/a_9918_2268#" "x4/IN" 0.0563282
+cap "x4/x6.floating" "x4/IN" 20.5302
+cap "x4/IN" "x4/x8.output_stack" 0.0134513
+cap "x4/IN" "x4/a_9918_2544#" 18.913
+cap "x4/a_9830_2682#" "x4/IN" 29.4066
+cap "x4/IN" "x4/x10.Y" 0.0108886
+cap "x4/IN" "x4/code_offset" 0.213155
+cap "x4/x11.Y" "x4/IN" 0.00907276
+cap "x4/VDD" "x4/a_9918_2268#" -0.601809
+cap "x4/x6.floating" "x4/VDD" 1.02471
+cap "x4/VDD" "x4/x8.output_stack" -0.185946
+cap "x4/VDD" "x4/a_9918_2544#" -1.03519
+cap "x4/IN" "x4/x5[6].floating" 0.568465
+cap "x4/a_9830_2682#" "x4/VDD" 2.02449
+cap "x4/VDD" "x4/IN" 325.612
+cap "x4/IN" "x4/VDD" 535.639
+cap "x4/x5[6].floating" "x4/IN" 0.170677
+cap "x4/x10.Y" "x4/IN" 1.18679
+cap "x4/x6.VDD" "async_clk_sar" 552.102
+cap "x4/x5[6].VDD" "async_clk_sar" 552.11
+cap "x4/x5[6].floating" "x4/x5[6].VDD" -1.36424e-12
+cap "x4/x5[3].delay_signal" "x8/X" 0.00949658
+cap "x4/x5[4].VDD" "x4/x2.VSS" 3.82924
+cap "x8/X" "x4/x5[4].VDD" 448.256
+cap "x4/a_15703_1681#" "x8/X" 1.39191
+cap "x4/x5[4].floating" "x4/x2.VSS" 0.759125
+cap "x8/X" "x4/x5[4].floating" 0.236849
+cap "x4/x5[4].floating" "x4/x5[4].VDD" 0.1554
+cap "x8/X" "x4/x2.floating" 0.0019586
+cap "x8/X" "x4/OUT" -0.425561
+cap "x8/A0" "x4/x2.VSS" 1.14115
+cap "x27/a_1429_21#" "x4/x2.VSS" 0.42542
+cap "x8/X" "x4/x5[1].floating" 0.0969542
+cap "x27/a_1341_413#" "x4/x2.VSS" 0.0372687
+cap "x27/SET_B" "x4/x2.VSS" 1.26925
+cap "x8/a_76_199#" "x4/x2.VSS" 13.24
+cap "x4/x2.VSS" "x4/x5[1].VDD" -1.75789
+cap "x4/x2.VSS" "x27/a_27_47#" 0.171722
+cap "x8/X" "x4/x5[1].VDD" 10.4995
+cap "x8/S" "x4/x2.VSS" 0.848451
+cap "x27/a_1255_47#" "x4/x2.VSS" 0.909805
+cap "x27/a_942_21#" "x4/x2.VSS" 0.227171
+cap "x4/x2.VSS" "x27/a_1545_47#" 0.0973209
+cap "x4/x5[1].floating" "x4/x2.VSS" 0.768323
+cap "x8/X" "x4/x2.VSS" 1.56549
+cap "x27/a_193_47#" "x4/x2.VSS" 0.908962
+cap "x4/x2.VSS" "x27/a_474_413#" 1.39437
+cap "x4/x2.VSS" "x27/SET_B" 0.0994358
+cap "x4/x2.VSS" "x27/a_942_21#" 0.774893
+cap "x27/a_27_47#" "x4/x2.VSS" 0.585234
+cap "x4/x2.VSS" "x3/a_505_21#" 1.01216
+cap "x27/a_193_47#" "x4/x2.VSS" 0.582868
+cap "x3/a_535_374#" "x4/x2.VSS" 0.280029
+cap "x4/x2.VSS" "x3/a_218_374#" 0.246438
+cap "x27/a_892_329#" "x4/x2.VSS" -2.49193e-17
+cap "x4/x2.VSS" "x27/CLK" 6.41754
+cap "x4/x2.VSS" "x27/Q" 0.939514
+cap "x4/x2.VSS" "x8/A0" 0.905352
+cap "x27/a_648_21#" "x4/x2.VSS" 1.18877
+cap "x3/a_439_47#" "x4/x2.VSS" 1.02306
+cap "x27/a_558_413#" "x4/x2.VSS" 0.268785
+cap "x4/x2.VSS" "x8/a_76_199#" 0.230437
+cap "x4/x2.VSS" "x3/a_218_47#" 0.381539
+cap "x4/x2.VSS" "x27/a_788_47#" 0.313308
+cap "x3/a_76_199#" "x4/x2.VSS" 3.61848
+cap "x27/a_582_47#" "x4/x2.VSS" 0.172953
+cap "x4/x2.VSS" "x8/a_505_21#" 2.64143
+cap "x27/a_381_47#" "x4/x2.VSS" 0.830353
+cap "x4/x2.VSS" "x8/S" 3.09111
+cap "x4/x2.VSS" "x4/x5[0].VDD" -12.9922
+merge "x2/x9.vss" "x3/VNB" -12825.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6676 -9160 -85473 -8266 0 0 0 0 -372270 -28684 0 0 0 0
+merge "x3/VNB" "x3/A1"
+merge "x3/A1" "x3/VGND"
+merge "x3/VGND" "li_2182_1987#"
+merge "li_2182_1987#" "x8/VNB"
+merge "x8/VNB" "x8/A1"
+merge "x8/A1" "x8/VGND"
+merge "x8/VGND" "li_1355_1985#"
+merge "li_1355_1985#" "x4/x3[0].VSS"
+merge "x4/x3[0].VSS" "m1_2276_726#"
+merge "m1_2276_726#" "m1_1816_726#"
+merge "m1_1816_726#" "m1_1540_726#"
+merge "m1_1540_726#" "x27/VNB"
+merge "x27/VNB" "x27/VGND"
+merge "x27/VGND" "m1_712_725#"
+merge "m1_712_725#" "m1_1448_726#"
+merge "m1_1448_726#" "m1_1172_726#"
+merge "m1_1172_726#" "m1_1080_726#"
+merge "m1_1080_726#" "m1_804_726#"
+merge "m1_804_726#" "m1_620_726#"
+merge "m1_620_726#" "x4/x4[0].VSS"
+merge "x4/x4[0].VSS" "x10/VNB"
+merge "x10/VNB" "x10/VGND"
+merge "x10/VGND" "x4/x4[2].VSS"
+merge "x4/x4[2].VSS" "m1_3_653#"
+merge "m1_3_653#" "x4/x7.VSS"
+merge "x4/x7.VSS" "x4/x2.VSS"
+merge "x4/x2.VSS" "x4/VSS"
+merge "x4/VSS" "x2/x3[0].VSS"
+merge "x2/x3[0].VSS" "x2/x4[0].VSS"
+merge "x2/x4[0].VSS" "x9/VNB"
+merge "x9/VNB" "x9/VGND"
+merge "x9/VGND" "x2/x2.VSS"
+merge "x2/x2.VSS" "a_n125_n1753#"
+merge "a_n125_n1753#" "x2/x4[2].VSS"
+merge "x2/x4[2].VSS" "m1_n123_n1733#"
+merge "m1_n123_n1733#" "x2/x7.VSS"
+merge "x2/x7.VSS" "x2/VSS"
+merge "x2/VSS" "vss"
+merge "x2/x5[0].VDD" "x2/x5[1].VDD" -939.883 0 0 0 0 -112519 -3106 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -276 -554 -3864 -580 0 0 0 0 -60840 -1014 0 0 0 0
+merge "x2/x5[1].VDD" "x2/x5[4].VDD"
+merge "x2/x5[4].VDD" "x9/VPWR"
+merge "x9/VPWR" "x9/VPB"
+merge "x9/VPB" "x2/x5[6].VDD"
+merge "x2/x5[6].VDD" "m1_n125_n2471#"
+merge "m1_n125_n2471#" "w_n132_n2517#"
+merge "w_n132_n2517#" "w_n645_n2733#"
+merge "x3/A0" "x27/Q" -267.602 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2312 -272 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x27/Q" "li_157_1193#"
+merge "x4/x5[1].VDD" "x4/x5[4].VDD" -10251.5 0 0 0 0 -2055239 -15200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 -43231 -8844 -13623 -6370 0 0 0 0 -70232 -1188 0 0 0 0
+merge "x4/x5[4].VDD" "x4/x5[6].VDD"
+merge "x4/x5[6].VDD" "x3/VPWR"
+merge "x3/VPWR" "x3/VPB"
+merge "x3/VPB" "x27/D"
+merge "x27/D" "m1_2130_1324#"
+merge "m1_2130_1324#" "x8/VPWR"
+merge "x8/VPWR" "x8/VPB"
+merge "x8/VPB" "x27/VPWR"
+merge "x27/VPWR" "x27/VPB"
+merge "x27/VPB" "x10/VPWR"
+merge "x10/VPWR" "x10/VPB"
+merge "x10/VPB" "x4/x5[0].VDD"
+merge "x4/x5[0].VDD" "m1_n125_1367#"
+merge "m1_n125_1367#" "w_n667_1716#"
+merge "x2/IN" "ready" -31.3139 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -658 -122 0 0 0 0 0 0 0 0 0 0
+merge "x3/X" "x8/A0" -169.663 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2312 -272 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x8/A0" "li_1279_1920#"
+merge "x8/X" "x4/IN" -2125.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -97720 -5802 0 0 0 0 0 0 0 0 0 0
+merge "x4/IN" "async_clk_sar"
+merge "x2/code[3]" "async_setb_delay_ctrl_code[3]" -28.0308 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1088 -132 0 0 0 0 0 0 0 0 0 0
+merge "x4/VDD" "x2/x6.VDD" -1888.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -200 0 0 -9760 -2472 0 0 0 0
+merge "x2/x6.VDD" "x2/VDD"
+merge "x2/VDD" "vdd"
+merge "vdd" "m2_n5830_n3534#"
+merge "x2/x4[0].SW" "x2/code[2]" -262.186 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -232 -124 0 0 0 0 0 0 0 0 0 0
+merge "x2/code[2]" "async_setb_delay_ctrl_code[2]"
+merge "x10/A" "x4/OUT" -137.475 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -665 -120 0 0 0 0 0 0 0 0 0 0
+merge "x4/OUT" "li_n50_995#"
+merge "x27/SET_B" "x9/Y" -151.235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -1540 -166 0 0 0 0 0 0 0 0 0 0
+merge "x9/Y" "li_50_n2021#"
+merge "x2/x3[0].SW" "x2/code[1]" -380.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -55052 -4042 0 0 0 0 0 0 0 0 0 0
+merge "x2/code[1]" "async_setb_delay_ctrl_code[1]"
+merge "x9/A" "x2/OUT" -107.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 -138 -98 0 0 0 0 0 0 0 0 0 0
+merge "x2/OUT" "li_n52_n2022#"
+merge "x2/x2.SW" "x2/code[0]" -227.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -94265 -6846 0 0 0 0 0 0 0 0 0 0
+merge "x2/code[0]" "async_setb_delay_ctrl_code[0]"
+merge "x27/RESET_B" "x10/Y" -222.004 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2312 -272 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x10/Y" "li_50_1000#"
+merge "x8/S" "eob" -116.012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x3/S" "x27/CLK" -133.639 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2312 -272 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x27/CLK" "sample_clk"
+merge "x4/code_offset" "x2/code_offset" -211.157 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3816 -356 0 0 0 0 0 0 0 0
+merge "x2/code_offset" "delay_offset"
+merge "x4/code[3]" "async_resetb_delay_ctrl_code[3]" -31.7535 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1428 -152 0 0 0 0 0 0 0 0 0 0
+merge "x4/code[2]" "async_resetb_delay_ctrl_code[2]" -260.856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -58 -118 0 0 0 0 0 0 0 0 0 0
+merge "x4/code[1]" "async_resetb_delay_ctrl_code[1]" -376.939 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54560 -4024 0 0 0 0 0 0 0 0 0 0
+merge "x4/code[0]" "async_resetb_delay_ctrl_code[0]" -226.97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -94175 -6844 0 0 0 0 0 0 0 0 0 0

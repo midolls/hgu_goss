@@ -1,0 +1,248 @@
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_half.sch
+.subckt hgu_cdac_half d<6> d<5> d<4> d<3> d<2> d<1> d<0> db<6> db<5> db<4> db<3> db<2> db<1> db<0>
++ VSS VREF t<6> t<5> t<4> t<3> t<2> t<1> t<0> tb<6> tb<5> tb<4> tb<3> tb<2> tb<1> tb<0> VDD
+*.iopin d<6>
+*.iopin d<5>
+*.iopin d<4>
+*.iopin d<3>
+*.iopin d<2>
+*.iopin d<1>
+*.iopin d<0>
+*.iopin db<6>
+*.iopin db<5>
+*.iopin db<4>
+*.iopin db<3>
+*.iopin db<2>
+*.iopin db<1>
+*.iopin db<0>
+*.ipin VSS
+*.ipin VREF
+*.iopin t<6>
+*.iopin t<5>
+*.iopin t<4>
+*.iopin t<3>
+*.iopin t<2>
+*.iopin t<1>
+*.iopin t<0>
+*.iopin tb<6>
+*.iopin tb<5>
+*.iopin tb<4>
+*.iopin tb<3>
+*.iopin tb<2>
+*.iopin tb<1>
+*.iopin tb<0>
+*.ipin VDD
+x1 sw5 sw1 sw0 sw2 sw6 sw4 sw3 t<6> t<5> t<4> t<3> t<2> t<1> t<0> VSS t<0> hgu_cdac_8bit_array
+x2 VREF d<4> d<1> d<2> d<3> d<5> d<6> d<0> sw2 sw3 sw4 sw5 sw0 sw1 sw6 VSS VDD hgu_cdac_drv
+x3 swd5 swd1 swd0 swd2 swd6 swd4 swd3 tb<6> tb<5> tb<4> tb<3> tb<2> tb<1> tb<0> VSS tb<0>
++ hgu_cdac_8bit_array
+x4 VREF db<4> db<1> db<2> db<3> db<5> db<6> db<0> swd2 swd3 swd4 swd5 swd0 swd1 swd6 VSS VDD
++ hgu_cdac_drv
+.ends
+
+* expanding   symbol:  ../xschem/hgu_cdac_8bit_array.sym # of pins=16
+** sym_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_8bit_array.sym
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_8bit_array.sch
+.subckt hgu_cdac_8bit_array drv<31:0> drv<1:0> drv<0> drv<3:0> drv<63:0> drv<15:0> drv<7:0>
++ tah<63:0> tah<31:0> tah<15:0> tah<7:0> tah<3:0> tah<1:0> tah<0> SUB tu
+*.iopin drv<0>
+*.iopin drv<1:0>
+*.iopin drv<3:0>
+*.iopin drv<7:0>
+*.iopin drv<15:0>
+*.iopin drv<31:0>
+*.iopin drv<63:0>
+*.iopin tah<0>
+*.iopin tah<1:0>
+*.iopin tah<3:0>
+*.iopin tah<7:0>
+*.iopin tah<15:0>
+*.iopin tah<31:0>
+*.iopin tah<63:0>
+*.iopin SUB
+*.iopin tu
+
+.ends
+
+
+* expanding   symbol:  ../xschem/hgu_cdac_drv.sym # of pins=17
+** sym_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_drv.sym
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_drv.sch
+.subckt hgu_cdac_drv VREF SAR<4> SAR<1> SAR<2> SAR<3> SAR<5> SAR<6> SAR<0> C<3:0> C<7:0> C<15:0>
++ C<31:0> C<0> C<1:0> C<63:0> VSS VDD
+*.ipin VREF
+*.ipin VSS
+*.ipin SAR<6>
+*.ipin SAR<5>
+*.ipin SAR<4>
+*.ipin SAR<3>
+*.ipin SAR<2>
+*.ipin SAR<1>
+*.ipin SAR<0>
+*.opin C<63:0>
+*.opin C<31:0>
+*.opin C<15:0>
+*.opin C<7:0>
+*.opin C<3:0>
+*.opin C<1:0>
+*.opin C<0>
+*.ipin VDD
+x7[63] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[62] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[61] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[60] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[59] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[58] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[57] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[56] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[55] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[54] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[53] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[52] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[51] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[50] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[49] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[48] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[47] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[46] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[45] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[44] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[43] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[42] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[41] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[40] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[39] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[38] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[37] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[36] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[35] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[34] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[33] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[32] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[31] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[30] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[29] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[28] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[27] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[26] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[25] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[24] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[23] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[22] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[21] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[20] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[19] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[18] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[17] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[16] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[15] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[14] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[13] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[12] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[11] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[10] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[9] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[8] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[7] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[6] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[5] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[4] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[3] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[2] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[1] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x7[0] VDD SAR<6> C<63:0> VSS VREF hgu_inverter
+x1 VDD SAR<0> C<0> VSS VREF hgu_inverter
+x2[1] VDD SAR<1> C<1:0> VSS VREF hgu_inverter
+x2[0] VDD SAR<1> C<1:0> VSS VREF hgu_inverter
+x3[3] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x3[2] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x3[1] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x3[0] VDD SAR<2> C<3:0> VSS VREF hgu_inverter
+x4[7] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[6] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[5] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[4] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[3] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[2] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[1] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x4[0] VDD SAR<3> C<7:0> VSS VREF hgu_inverter
+x5[15] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[14] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[13] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[12] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[11] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[10] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[9] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[8] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[7] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[6] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[5] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[4] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[3] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[2] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[1] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x5[0] VDD SAR<4> C<15:0> VSS VREF hgu_inverter
+x6[31] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[30] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[29] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[28] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[27] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[26] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[25] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[24] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[23] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[22] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[21] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[20] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[19] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[18] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[17] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[16] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[15] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[14] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[13] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[12] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[11] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[10] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[9] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[8] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[7] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[6] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[5] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[4] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[3] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[2] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[1] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+x6[0] VDD SAR<5> C<31:0> VSS VREF hgu_inverter
+.ends
+
+
+* expanding   symbol:  hgu_cdac_unit.sym # of pins=3
+** sym_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_unit.sym
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_cdac_unit.sch
+*.subckt hgu_cdac_unit PLUS MINUS SUB  csize=1
+*.iopin CTOP
+*.iopin CBOT
+*.iopin SUB
+*x1 CTOP CBOT SUB hgu_cdac_unit
+*.ends
+
+
+* expanding   symbol:  ../xschem/hgu_inverter.sym # of pins=5
+** sym_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_inverter.sym
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_inverter.sch
+.subckt hgu_inverter VDD IN OUT VSS VREF
+*.ipin IN
+*.ipin VREF
+*.ipin VSS
+*.opin OUT
+*.ipin VDD
+XM2 OUT IN VREF VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUT IN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.35 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

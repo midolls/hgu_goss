@@ -1,0 +1,22 @@
+* NGSPICE file created from inv_flat.ext - technology: sky130A
+
+.subckt inv_flat
+X0 x11.Y x11.A x11.VPWR x11.VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X1 x11.Y x11.A x11.VGND x11.VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+C0 x11.VGND x11.VPWR 0.0338f
+C1 x11.VGND x11.A 0.04f
+C2 x11.VPWR x11.A 0.037f
+C3 x11.VPB x11.VGND 0.00948f
+C4 x11.VPB x11.VPWR 0.0545f
+C5 x11.VPB x11.A 0.0451f
+C6 x11.VGND x11.Y 0.0998f
+C7 x11.Y x11.VPWR 0.128f
+C8 x11.Y x11.A 0.0476f
+C9 x11.VPB x11.Y 0.0177f
+C10 x11.VGND x11.VNB 0.251f
+C11 x11.Y x11.VNB 0.0961f
+C12 x11.VPWR x11.VNB 0.219f
+C13 x11.A x11.VNB 0.167f
+C14 x11.VPB x11.VNB 0.339f
+.ends
+

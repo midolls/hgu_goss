@@ -1,0 +1,93 @@
+* NGSPICE file created from hgu_delay_no_code.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_hvt_M479BZ a_15_n42# a_n73_n42# w_n110_n80# a_n15_n73#
+X0 a_15_n42# a_n15_n73# a_n73_n42# w_n110_n80# sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_L7T3GD a_15_n42# a_n15_n69# a_n73_n42# VSUBS
+X0 a_15_n42# a_n15_n69# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_hvt_M433PY a_63_n42# a_n125_n42# w_n161_n79# a_33_n68#
++ a_n81_n139# a_n33_n42#
+X0 a_n33_n42# a_n81_n139# a_n125_n42# w_n161_n79# sky130_fd_pr__pfet_01v8_hvt ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+X1 a_63_n42# a_33_n68# a_n33_n42# w_n161_n79# sky130_fd_pr__pfet_01v8_hvt ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+.ends
+
+.subckt hgu_sw_cap_nmos SW VSS delay_signal floating
+X0 delay_signal SW floating VSS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt hgu_sw_cap_pmos SW delay_signal VDD floating
+X0 delay_signal SW floating VDD sky130_fd_pr__pfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt hgu_pfet_hvt_stack_in_delay input_stack vdd output_stack
+X0 a_173_628# input_stack output_stack vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X1 a_173_352# input_stack a_85_214# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X2 a_173_628# input_stack a_85_490# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X3 a_173_76# input_stack a_85_214# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X4 a_173_76# input_stack vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+X5 a_173_352# input_stack a_85_490# vdd sky130_fd_pr__pfet_01v8_hvt ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt hgu_nfet_hvt_stack_in_delay input_stack vss output_stack
+X0 a_173_619# input_stack a_85_481# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X1 a_245_67# input_stack a_173_205# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X2 a_173_205# input_stack a_85_205# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X3 a_173_67# input_stack a_85_n71# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X4 a_245_343# input_stack a_173_481# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X5 a_245_619# input_stack a_173_757# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X6 a_245_67# input_stack a_173_67# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X7 a_173_n209# input_stack vss vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X8 a_245_n209# input_stack a_173_n71# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X9 a_173_481# input_stack a_85_481# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X10 a_173_757# input_stack output_stack vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X11 a_245_343# input_stack a_173_343# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X12 a_245_n209# input_stack a_173_n209# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X13 a_245_619# input_stack a_173_619# vss sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.0441 ps=0.63 w=0.42 l=0.15
+X14 a_173_n71# input_stack a_85_n71# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+X15 a_173_343# input_stack a_85_205# vss sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.122 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_MVW3GX a_63_n42# a_n125_n42# a_33_n68# a_n81_n130#
++ a_n33_n42# VSUBS
+X0 a_63_n42# a_33_n68# a_n33_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.13 pd=1.46 as=0.0693 ps=0.75 w=0.42 l=0.15
+X1 a_n33_n42# a_n81_n130# a_n125_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0693 pd=0.75 as=0.13 ps=1.46 w=0.42 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPB VPWR Y
+X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+.ends
+
+.subckt hgu_delay_no_code IN OUT code[3] code[1] code[2] VSS code_offset code[0] VDD
+XXM47 m1_15709_1756# VDD VDD Uc sky130_fd_pr__pfet_01v8_hvt_M479BZ
+XXM46 m1_15709_1756# OUT VDD Uc sky130_fd_pr__pfet_01v8_hvt_M479BZ
+XXM13 m1_15709_1421# Uc OUT VSS sky130_fd_pr__nfet_01v8_L7T3GD
+XXM48 m1_15709_1756# m1_15709_1756# VDD OUT OUT VSS sky130_fd_pr__pfet_01v8_hvt_M433PY
+XXM15 m1_15709_1421# Uc VSS VSS sky130_fd_pr__nfet_01v8_L7T3GD
+Xx2 code[0] VSS Uc x2/floating hgu_sw_cap_nmos
+Xx6 x6/SW Uc VDD x6/floating hgu_sw_cap_pmos
+Xx3[1] code[1] VSS Uc x3[1]/floating hgu_sw_cap_nmos
+Xx7 code_offset VSS Uc x7/floating hgu_sw_cap_nmos
+Xx3[0] code[1] VSS Uc x3[1]/floating hgu_sw_cap_nmos
+Xx8 IN VDD Uc hgu_pfet_hvt_stack_in_delay
+Xx9 IN VSS Uc hgu_nfet_hvt_stack_in_delay
+XXM1 m1_15709_1421# m1_15709_1421# OUT OUT VDD VSS sky130_fd_pr__nfet_01v8_MVW3GX
+Xx4[3] code[2] VSS Uc x4[3]/floating hgu_sw_cap_nmos
+Xx4[2] code[2] VSS Uc x4[3]/floating hgu_sw_cap_nmos
+Xx4[1] code[2] VSS Uc x4[3]/floating hgu_sw_cap_nmos
+Xx4[0] code[2] VSS Uc x4[3]/floating hgu_sw_cap_nmos
+Xx10 code[3] VSS VSS VDD VDD x10/Y sky130_fd_sc_hd__inv_1
+Xx5[7] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+Xx11 code_offset VSS VSS VDD VDD x6/SW sky130_fd_sc_hd__inv_1
+Xx5[6] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+Xx5[5] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+Xx5[4] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+Xx5[3] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+Xx5[2] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+Xx5[0] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+Xx5[1] x10/Y Uc VDD x5[7]/floating hgu_sw_cap_pmos
+.ends
+

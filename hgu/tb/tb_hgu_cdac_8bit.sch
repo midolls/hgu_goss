@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -18,10 +18,6 @@ lab=tah_vp}
 N 450 -660 450 -600 {
 lab=tah_vp}
 N 480 -660 480 -600 {
-lab=tah_vp}
-N 510 -660 510 -600 {
-lab=tah_vp}
-N 640 -660 640 -600 {
 lab=tah_vp}
 N 670 -660 670 -600 {
 lab=tah_vp}
@@ -50,10 +46,6 @@ lab=tah_vn}
 N 450 -500 450 -440 {
 lab=tah_vn}
 N 480 -500 480 -440 {
-lab=tah_vn}
-N 510 -500 510 -440 {
-lab=tah_vn}
-N 640 -500 640 -440 {
 lab=tah_vn}
 N 670 -500 670 -440 {
 lab=tah_vn}
@@ -267,9 +259,9 @@ N 450 70 450 110 {
 lab=upb1}
 N 480 100 480 140 {
 lab=upb0}
-C {../xschem/hgu_cdac_half.sym} -250 -540 0 0 {name=x1
+C {../xschem/hgu_cdac_half_RC.sym} -250 -540 0 0 {name=x1
 symname=hgu_cdac_half}
-C {../xschem/hgu_cdac_half.sym} -250 -560 2 1 {name=x2}
+C {../xschem/hgu_cdac_half_RC.sym} -250 -560 2 1 {name=x2}
 C {devices/vsource.sym} 300 -1200 2 0 {name=V1 value="PULSE(0 1.8 42.5n 1p 1p 157.5n 200n)"
 }
 C {devices/vsource.sym} 330 -1230 2 0 {name=V2 value="PULSE(0 1.8 65n 1p 1p 135n 200n)"}
@@ -289,7 +281,7 @@ C {devices/gnd.sym} 980 -440 0 0 {name=l4 lab=GND}
 C {devices/code.sym} -165 -910 0 0 {name=s1 only_toplevel=false value="
 .save all 
 .temp = 25
-.tran 100p 200n
+.tran 60p 200n
 .OPTIONS savecurrents
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
@@ -459,3 +451,13 @@ C {devices/lab_wire.sym} 270 -20 0 0 {name=p42 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 270 -40 0 0 {name=p43 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 880 -40 2 1 {name=p44 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 880 -20 2 1 {name=p45 sig_type=std_logic lab=VDD}
+C {devices/simulator_commands_shown.sym} -850 -1250 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false 
+value="
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_sw_buffer_flat_RC.spice
+.include /foss/designs/hgu_goss/hgu/spice/hgu_cdac_half_flat.mag.spice
+"}

@@ -1,0 +1,36 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698858643
+<< error_s >>
+rect 6357 2588 6377 3139
+rect 6705 2344 7005 2400
+rect 6578 2014 6635 2098
+rect 6638 1954 6695 2158
+rect 6709 1773 6735 1782
+rect 6357 766 6377 1633
+rect 6853 -1198 7079 -1152
+rect 6899 -1727 7079 -1198
+<< nwell >>
+rect 6438 2344 7452 3138
+<< metal1 >>
+rect 6674 1930 6742 1974
+<< metal4 >>
+rect 6638 614 6866 3256
+use hgu_delay_no_code  x1
+timestamp 1698845081
+transform 1 0 -2549 0 1 333
+box 9238 267 15993 2993
+use hgu_delay_no_code  x2
+timestamp 1698845081
+transform -1 0 22842 0 -1 615
+box 9238 267 15993 2993
+use hgu_delay_no_code  x3
+timestamp 1698845081
+transform -1 0 16087 0 -1 615
+box 9238 267 15993 2993
+use hgu_delay_no_code  x4
+timestamp 1698845081
+transform 1 0 -9238 0 1 333
+box 9238 267 15993 2993
+<< end >>

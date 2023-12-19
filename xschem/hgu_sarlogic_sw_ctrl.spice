@@ -1,0 +1,67 @@
+** sch_path: /foss/designs/hgu_goss/hgu/mag/../xschem/hgu_sarlogic_sw_ctrl.sch
+**.subckt hgu_sarlogic_sw_ctrl vdd_sw[1],vdd_sw[2],vdd_sw[3],vdd_sw[4],vdd_sw[5],vdd_sw[6],vdd_sw[7]
+*+ vdd_sw_b[1],vdd_sw_b[2],vdd_sw_b[3],vdd_sw_b[4],vdd_sw_b[5],vdd_sw_b[6],vdd_sw_b[7] vss_sw[1],vss_sw[2],vss_sw[3],vss_sw[4],vss_sw[5],vss_sw[6],vss_sw[7]
+*+ vss_sw_b[1],vss_sw_b[2],vss_sw_b[3],vss_sw_b[4],vss_sw_b[5],vss_sw_b[6],vss_sw_b[7] VDD VSS READY D[1],D[2],D[3],D[4],D[5],D[6],D[7]
+*+ check[0],check[1],check[2],check[3],check[4],check[5],check[6] reset
+*.opin vdd_sw[1],vdd_sw[2],vdd_sw[3],vdd_sw[4],vdd_sw[5],vdd_sw[6],vdd_sw[7]
+*.opin vdd_sw_b[1],vdd_sw_b[2],vdd_sw_b[3],vdd_sw_b[4],vdd_sw_b[5],vdd_sw_b[6],vdd_sw_b[7]
+*.opin vss_sw[1],vss_sw[2],vss_sw[3],vss_sw[4],vss_sw[5],vss_sw[6],vss_sw[7]
+*.opin vss_sw_b[1],vss_sw_b[2],vss_sw_b[3],vss_sw_b[4],vss_sw_b[5],vss_sw_b[6],vss_sw_b[7]
+*.ipin VDD
+*.ipin VSS
+*.ipin READY
+*.ipin D[1],D[2],D[3],D[4],D[5],D[6],D[7]
+*.ipin check[0],check[1],check[2],check[3],check[4],check[5],check[6]
+*.ipin reset
+x4 net1 D[7] VDD resetb VGND VNB VPB VPWR vdd_sw[7] vdd_sw_b[7] sky130_fd_sc_hd__dfbbn_1
+x5 net2 D[7] resetb VDD VGND VNB VPB VPWR vss_sw[7] vss_sw_b[7] sky130_fd_sc_hd__dfbbn_1
+x19 net3 D[6] VDD resetb VGND VNB VPB VPWR vdd_sw[6] vdd_sw_b[6] sky130_fd_sc_hd__dfbbn_1
+x21 net4 D[6] resetb VDD VGND VNB VPB VPWR vss_sw[6] vss_sw_b[6] sky130_fd_sc_hd__dfbbn_1
+x23 net5 D[5] VDD resetb VGND VNB VPB VPWR vdd_sw[5] vdd_sw_b[5] sky130_fd_sc_hd__dfbbn_1
+x24 net6 D[5] resetb VDD VGND VNB VPB VPWR vss_sw[5] vss_sw_b[5] sky130_fd_sc_hd__dfbbn_1
+x25 net7 D[4] VDD resetb VGND VNB VPB VPWR vdd_sw[4] vdd_sw_b[4] sky130_fd_sc_hd__dfbbn_1
+x26 net8 D[4] resetb VDD VGND VNB VPB VPWR vss_sw[4] vss_sw_b[4] sky130_fd_sc_hd__dfbbn_1
+x28 net9 D[3] VDD resetb VGND VNB VPB VPWR vdd_sw[3] vdd_sw_b[3] sky130_fd_sc_hd__dfbbn_1
+x29 net10 D[3] resetb VDD VGND VNB VPB VPWR vss_sw[3] vss_sw_b[3] sky130_fd_sc_hd__dfbbn_1
+x31 net11 D[2] VDD resetb VGND VNB VPB VPWR vdd_sw[2] vdd_sw_b[2] sky130_fd_sc_hd__dfbbn_1
+x32 net12 D[2] resetb VDD VGND VNB VPB VPWR vss_sw[2] vss_sw_b[2] sky130_fd_sc_hd__dfbbn_1
+x34 net13 D[1] VDD resetb VGND VNB VPB VPWR vdd_sw[1] vdd_sw_b[1] sky130_fd_sc_hd__dfbbn_1
+x35 net14 D[1] resetb VDD VGND VNB VPB VPWR vss_sw[1] vss_sw_b[1] sky130_fd_sc_hd__dfbbn_1
+x6 VSS READY check[6] VGND VNB VPB VPWR net1 sky130_fd_sc_hd__mux2_1
+x7 VSS READY check[6] VGND VNB VPB VPWR net2 sky130_fd_sc_hd__mux2_1
+x8 VSS READY check[5] VGND VNB VPB VPWR net3 sky130_fd_sc_hd__mux2_1
+x9 VSS READY check[5] VGND VNB VPB VPWR net4 sky130_fd_sc_hd__mux2_1
+x10 VSS READY check[4] VGND VNB VPB VPWR net5 sky130_fd_sc_hd__mux2_1
+x11 VSS READY check[4] VGND VNB VPB VPWR net6 sky130_fd_sc_hd__mux2_1
+x12 VSS READY check[3] VGND VNB VPB VPWR net7 sky130_fd_sc_hd__mux2_1
+x13 VSS READY check[3] VGND VNB VPB VPWR net8 sky130_fd_sc_hd__mux2_1
+x14 VSS READY check[2] VGND VNB VPB VPWR net9 sky130_fd_sc_hd__mux2_1
+x15 VSS READY check[2] VGND VNB VPB VPWR net10 sky130_fd_sc_hd__mux2_1
+x16 VSS READY check[1] VGND VNB VPB VPWR net11 sky130_fd_sc_hd__mux2_1
+x17 VSS READY check[1] VGND VNB VPB VPWR net12 sky130_fd_sc_hd__mux2_1
+x18 VSS READY check[0] VGND VNB VPB VPWR net13 sky130_fd_sc_hd__mux2_1
+x20 VSS READY check[0] VGND VNB VPB VPWR net14 sky130_fd_sc_hd__mux2_1
+C2[17] resetb VSS 5f m=1
+C2[16] resetb VSS 5f m=1
+C2[15] resetb VSS 5f m=1
+C2[14] resetb VSS 5f m=1
+C2[13] resetb VSS 5f m=1
+C2[12] resetb VSS 5f m=1
+C2[11] resetb VSS 5f m=1
+C2[10] resetb VSS 5f m=1
+C2[9] resetb VSS 5f m=1
+C2[8] resetb VSS 5f m=1
+C2[7] resetb VSS 5f m=1
+C2[6] resetb VSS 5f m=1
+C2[5] resetb VSS 5f m=1
+C2[4] resetb VSS 5f m=1
+C2[3] resetb VSS 5f m=1
+C2[2] resetb VSS 5f m=1
+C2[1] resetb VSS 5f m=1
+C2[0] resetb VSS 5f m=1
+x1 reset VGND VNB VPB VPWR net15 sky130_fd_sc_hd__buf_1
+x3 net15 VGND VNB VPB VPWR net16 sky130_fd_sc_hd__buf_4
+x2 net16 VGND VNB VPB VPWR net17 sky130_fd_sc_hd__buf_8
+x22 net17 VGND VNB VPB VPWR resetb sky130_fd_sc_hd__buf_16
+**.ends
+.end
