@@ -14,30 +14,32 @@ lab=GND}
 N 900 -1060 900 -1020 {
 lab=result[0:7]}
 N 1420 -1000 2140 -1000 {
-lab=tie_lo2}
+lab=tie_lo}
 N 1420 -700 1530 -700 {
-lab=tie_lo1}
+lab=tie_lo}
 N 1200 -1020 1220 -1020 {
 lab=#net1}
 N 790 -1060 900 -1060 {
 lab=result[0:7]}
 N 1420 -1300 1530 -1300 {
-lab=tie_lo3}
+lab=tie_lo}
 N 1860 -1300 1970 -1300 {
-lab=tie_lo4}
+lab=tie_lo}
 N 2300 -1300 2410 -1300 {
-lab=tie_lo5}
+lab=tie_lo}
 N 2740 -1300 2850 -1300 {
-lab=tie_lo6}
+lab=tie_lo}
 C {devices/code.sym} 520 -550 0 0 {name=spice2 only_toplevel=false value="
 
 .OPTIONS savecurrents
-.tran 40ps 500ns
+.tran 10ps 906.60ns
 .save vip vin out \\"result[0]"\\ \\"result[1]"\\ \\"result[2]"\\ \\"result[3]"\\ \\"result[4]"\\ \\"result[5]"\\ \\"result[6]"\\ \\"result[7]"\\
 .control
 	run
 	plot V(\\"result[0]\\")-4 V(\\"result[1]\\")-2 V(\\"result[2]\\") V(\\"result[3]\\")+2 V(\\"result[4]\\")+4 V(\\"result[5]\\")+6 V(\\"result[6]\\")+8 V(\\"result[7]\\")+10
-	plot V(vip) V(vin) V(out) 
+	plot V(vip)-V(vin)+0.9 V(out)
+	wrdata tran_v_90_100	V(vip) V(vin) V(out) i(v6) i(v7)
+
 	setplot tran1
 	linearize V(out)
 	set specwindow=hanning
@@ -65,6 +67,7 @@ value="
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/hgu_goss/hgu/mag/hgu_cdac_unit.spice
 .include /foss/designs/hgu_goss/hgu/spice/hgu_comp_flat_RC.spice
+
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_8bit_logic_flat_RC.spice
 
 .include /foss/designs/hgu_goss/hgu/spice/hgu_sarlogic_retimer_flat_RC.spice
@@ -137,8 +140,8 @@ C {devices/lab_wire.sym} 420 -1000 0 0 {name=p32 sig_type=std_logic lab=vin
 }
 C {devices/gnd.sym} 390 -1080 2 0 {name=l23 lab=GND}
 C {devices/gnd.sym} 390 -940 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 390 -970 0 1 {name=V2 value="sin(0.9 -0.45 2451171 0 0 0)"}
-C {devices/vsource.sym} 390 -1050 2 0 {name=V4 value="sin(0.9 0.45 2451171 0 0 0)"}
+C {devices/vsource.sym} 390 -970 0 1 {name=V2 value="sin(0.9 -0.45 2206053 0 0 0)"}
+C {devices/vsource.sym} 390 -1050 2 0 {name=V4 value="sin(0.9 0.45 2206053 0 0 0)"}
 C {devices/vdd.sym} 1060 -680 0 0 {name=l1 lab=VDD_offset}
 C {devices/gnd.sym} 1060 -620 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} 1060 -650 0 0 {name=V1 value=1.8}
@@ -197,18 +200,17 @@ value=1m
 footprint=1206
 device=resistor
 m=1}
-C {devices/vdd.sym} 1050 -540 0 0 {name=l25 lab=tie_hi}
-C {devices/gnd.sym} 1050 -480 0 0 {name=l26 lab=GND}
-C {devices/vsource.sym} 1050 -510 0 0 {name=V6 value=1.8}
-C {devices/vdd.sym} 1110 -540 0 0 {name=l43 lab=tie_lo1}
-C {devices/gnd.sym} 1110 -480 0 0 {name=l44 lab=GND}
-C {devices/vsource.sym} 1110 -510 0 0 {name=V7 value=0}
+C {devices/vdd.sym} 930 -560 0 0 {name=l25 lab=tie_hi}
+C {devices/vsource.sym} 930 -530 0 0 {name=V6 value=1.8}
+C {devices/vdd.sym} 990 -560 0 0 {name=l43 lab=tie_lo}
+C {devices/gnd.sym} 930 -440 0 0 {name=l44 lab=GND}
+C {devices/vsource.sym} 990 -530 0 0 {name=V7 value=0}
 C {devices/res.sym} 1420 -670 0 0 {name=R9
 value=1m
 footprint=1206
 device=resistor
 m=1}
-C {devices/vdd.sym} 1420 -700 0 0 {name=l45 lab=tie_lo1}
+C {devices/vdd.sym} 1420 -700 0 0 {name=l45 lab=tie_lo}
 C {devices/res.sym} 1530 -670 0 0 {name=R10
 value=1m
 footprint=1206
@@ -257,7 +259,7 @@ value=1m
 footprint=1206
 device=resistor
 m=1}
-C {devices/vdd.sym} 1420 -1000 0 0 {name=l20 lab=tie_lo2}
+C {devices/vdd.sym} 1420 -1000 0 0 {name=l20 lab=tie_lo}
 C {devices/vdd.sym} 1640 -900 2 0 {name=l50 lab=tie_hi}
 C {devices/vdd.sym} 1750 -900 2 0 {name=l51 lab=tie_hi}
 C {devices/vdd.sym} 2250 -900 2 0 {name=l52 lab=tie_hi}
@@ -272,7 +274,7 @@ value=1m
 footprint=1206
 device=resistor
 m=1}
-C {devices/vdd.sym} 1420 -1300 0 0 {name=l34 lab=tie_lo3}
+C {devices/vdd.sym} 1420 -1300 0 0 {name=l34 lab=tie_lo}
 C {devices/res.sym} 1860 -1270 0 0 {name=R19
 value=1m
 footprint=1206
@@ -351,21 +353,22 @@ device=resistor
 m=1}
 C {devices/vdd.sym} 2960 -1210 2 0 {name=l67 lab=tie_hi}
 C {devices/vdd.sym} 3070 -1210 2 0 {name=l68 lab=tie_hi}
-C {devices/vdd.sym} 1170 -540 0 0 {name=l21 lab=tie_lo2}
-C {devices/gnd.sym} 1170 -480 0 0 {name=l22 lab=GND}
-C {devices/vsource.sym} 1170 -510 0 0 {name=V3 value=0}
-C {devices/vdd.sym} 1230 -540 0 0 {name=l24 lab=tie_lo3}
-C {devices/gnd.sym} 1230 -480 0 0 {name=l36 lab=GND}
-C {devices/vsource.sym} 1230 -510 0 0 {name=V5 value=0}
-C {devices/vdd.sym} 2300 -1300 0 0 {name=l37 lab=tie_lo5}
-C {devices/vdd.sym} 1860 -1300 0 0 {name=l38 lab=tie_lo4}
-C {devices/vdd.sym} 2740 -1300 0 0 {name=l39 lab=tie_lo6}
-C {devices/vdd.sym} 1230 -400 0 0 {name=l40 lab=tie_lo4}
-C {devices/gnd.sym} 1230 -340 0 0 {name=l41 lab=GND}
-C {devices/vsource.sym} 1230 -370 0 0 {name=V8 value=0}
-C {devices/vdd.sym} 1170 -400 0 0 {name=l42 lab=tie_lo5}
-C {devices/gnd.sym} 1170 -340 0 0 {name=l46 lab=GND}
-C {devices/vsource.sym} 1170 -370 0 0 {name=V9 value=0}
-C {devices/vdd.sym} 1110 -400 0 0 {name=l69 lab=tie_lo6}
-C {devices/gnd.sym} 1110 -340 0 0 {name=l70 lab=GND}
-C {devices/vsource.sym} 1110 -370 0 0 {name=V10 value=0}
+C {devices/vdd.sym} 2300 -1300 0 0 {name=l37 lab=tie_lo}
+C {devices/vdd.sym} 1860 -1300 0 0 {name=l38 lab=tie_lo}
+C {devices/vdd.sym} 2740 -1300 0 0 {name=l39 lab=tie_lo}
+C {devices/res.sym} 930 -470 0 0 {name=R33
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {devices/gnd.sym} 990 -440 0 0 {name=l79 lab=GND}
+C {devices/res.sym} 990 -470 0 0 {name=R34
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {devices/capa.sym} 960 -560 1 0 {name=C1
+m=1
+value=10p
+footprint=1206
+device="ceramic capacitor"}
