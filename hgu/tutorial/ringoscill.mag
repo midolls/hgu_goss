@@ -1,0 +1,63 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1705829762
+<< locali >>
+rect -520 1672 -458 1674
+rect -520 1624 -518 1672
+rect -470 1624 -458 1672
+rect -232 1626 -116 1674
+rect -40 1626 180 1674
+rect 238 1626 458 1674
+rect 508 1626 728 1674
+rect 772 1626 870 1674
+rect -520 1622 -458 1624
+rect -232 1586 -192 1626
+rect -300 1538 -192 1586
+<< viali >>
+rect -518 1624 -470 1672
+rect -328 1624 -280 1672
+rect 870 1626 918 1674
+<< metal1 >>
+rect -520 1752 918 1796
+rect -520 1680 -464 1752
+rect 870 1686 918 1752
+rect -530 1672 -458 1680
+rect -530 1624 -518 1672
+rect -470 1624 -458 1672
+rect -530 1612 -458 1624
+rect -338 1672 -268 1684
+rect -338 1624 -328 1672
+rect -280 1624 -268 1672
+rect -338 1620 -268 1624
+rect 858 1674 930 1686
+rect 858 1626 870 1674
+rect 918 1626 930 1674
+rect -334 1582 -270 1620
+rect 858 1614 930 1626
+use sky130_fd_sc_hd__inv_2  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 -178 0 1 1410
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_2  x2
+timestamp 1683767628
+transform 1 0 98 0 1 1410
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_2  x3
+timestamp 1683767628
+transform 1 0 374 0 1 1410
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_2  x4
+timestamp 1683767628
+transform 1 0 650 0 1 1410
+box -38 -48 314 592
+use sky130_fd_sc_hd__nand2_1  x5 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1683767628
+transform 1 0 -530 0 1 1410
+box -38 -48 314 592
+<< labels >>
+flabel space 771 1626 870 1674 0 FreeSans 240 0 0 0 out
+port 2 nsew
+flabel metal1 -334 1582 -270 1644 0 FreeSans 240 0 0 0 enable
+port 4 nsew
+<< end >>
