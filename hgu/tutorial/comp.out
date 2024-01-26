@@ -1,0 +1,227 @@
+
+Subcircuit summary:
+Circuit 1: ringoscill.spice                |Circuit 2: ringoscill_flat.spice           
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__inv_2 (4)                 |(no matching element)                      
+sky130_fd_sc_hd__nand2_1 (1)               |(no matching element)                      
+(no matching element)                      |sky130_fd_pr__pfet_01v8_hvt (10)           
+(no matching element)                      |sky130_fd_pr__nfet_01v8 (10)               
+Number of devices: 5 **Mismatch**          |Number of devices: 20 **Mismatch**         
+Number of nets: 10 **Mismatch**            |Number of nets: 13 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: ringoscill.spice                |Circuit 2: ringoscill_flat.spice           
+
+---------------------------------------------------------------------------------------
+Net: net1                                  |Net: enable                                
+  sky130_fd_sc_hd__inv_2/1 = 1             |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_sc_hd__nand2_1/7 = 1           |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+                                           |                                           
+Net: net2                                  |Net: a_n417_1457#                          
+  sky130_fd_sc_hd__inv_2/6 = 1             |  sky130_fd_pr__nfet_01v8/3 = 1            
+  sky130_fd_sc_hd__inv_2/1 = 1             |  sky130_fd_pr__nfet_01v8/1 = 1            
+                                           |                                           
+Net: net3                                  |Net: x5.VPWR                               
+  sky130_fd_sc_hd__inv_2/6 = 1             |  sky130_fd_pr__pfet_01v8_hvt/1 = 1        
+  sky130_fd_sc_hd__inv_2/1 = 1             |  sky130_fd_pr__pfet_01v8_hvt/3 = 1        
+                                           |                                           
+Net: net4                                  |Net: x3.A                                  
+  sky130_fd_sc_hd__inv_2/6 = 1             |  sky130_fd_pr__pfet_01v8_hvt/1 = 1        
+  sky130_fd_sc_hd__inv_2/1 = 1             |  sky130_fd_pr__nfet_01v8/3 = 1            
+                                           |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
+                                           |  sky130_fd_pr__nfet_01v8/2 = 2            
+                                           |  sky130_fd_pr__nfet_01v8/1 = 1            
+                                           |  sky130_fd_pr__pfet_01v8_hvt/3 = 1        
+                                           |                                           
+Net: out                                   |Net: x2.A                                  
+  sky130_fd_sc_hd__inv_2/6 = 1             |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
+  sky130_fd_sc_hd__nand2_1/2 = 1           |  sky130_fd_pr__nfet_01v8/3 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 2            
+                                           |  sky130_fd_pr__pfet_01v8_hvt/1 = 1        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/3 = 1        
+                                           |  sky130_fd_pr__nfet_01v8/1 = 1            
+                                           |                                           
+Net: VGND                                  |Net: x4.A                                  
+  sky130_fd_sc_hd__inv_2/2 = 4             |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
+  sky130_fd_sc_hd__nand2_1/3 = 1           |  sky130_fd_pr__pfet_01v8_hvt/3 = 1        
+                                           |  sky130_fd_pr__nfet_01v8/2 = 2            
+                                           |  sky130_fd_pr__nfet_01v8/1 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/3 = 1            
+                                           |  sky130_fd_pr__pfet_01v8_hvt/1 = 1        
+                                           |                                           
+Net: VNB                                   |Net: x4.VPWR                               
+  sky130_fd_sc_hd__inv_2/3 = 4             |  sky130_fd_pr__pfet_01v8_hvt/3 = 4        
+  sky130_fd_sc_hd__nand2_1/4 = 1           |  sky130_fd_pr__pfet_01v8_hvt/1 = 4        
+                                           |                                           
+Net: VPB                                   |Net: x4.VGND                               
+  sky130_fd_sc_hd__inv_2/4 = 4             |  sky130_fd_pr__nfet_01v8/1 = 4            
+  sky130_fd_sc_hd__nand2_1/5 = 1           |  sky130_fd_pr__nfet_01v8/3 = 4            
+                                           |                                           
+Net: VPWR                                  |Net: x5.Y                                  
+  sky130_fd_sc_hd__inv_2/5 = 4             |  sky130_fd_pr__nfet_01v8/1 = 1            
+  sky130_fd_sc_hd__nand2_1/6 = 1           |  sky130_fd_pr__nfet_01v8/2 = 2            
+                                           |  sky130_fd_pr__pfet_01v8_hvt/2 = 2        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/3 = 1        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/1 = 1        
+                                           |                                           
+(no matching net)                          |Net: x5.B                                  
+                                           |  sky130_fd_pr__pfet_01v8_hvt/3 = 1        
+                                           |  sky130_fd_pr__nfet_01v8/1 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/3 = 1            
+                                           |  sky130_fd_pr__pfet_01v8_hvt/1 = 1        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/2 = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: x5.VNB                                
+                                           |  sky130_fd_pr__nfet_01v8/4 = 10           
+                                           |                                           
+(no matching net)                          |Net: x5.VPB                                
+                                           |  sky130_fd_pr__pfet_01v8_hvt/4 = 10       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: enable                                |Net: x5.VGND                               
+  sky130_fd_sc_hd__nand2_1/1 = 1           |  sky130_fd_pr__nfet_01v8/3 = 1            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: ringoscill.spice                |Circuit 2: ringoscill_flat.spice           
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__inv_2:1         |Instance: sky130_fd_pr__pfet_01v8_hvt:0    
+  1 = 2                                    |  1 = 8                                    
+  2 = 5                                    |  2 = 8                                    
+  3 = 5                                    |  3 = 8                                    
+  4 = 5                                    |  4 = 10                                   
+  5 = 5                                    |                                           
+  6 = 2                                    |                                           
+                                           |                                           
+Instance: sky130_fd_sc_hd__inv_2:2         |Instance: sky130_fd_pr__pfet_01v8_hvt:3    
+  1 = 2                                    |  1 = 8                                    
+  2 = 5                                    |  2 = 8                                    
+  3 = 5                                    |  3 = 6                                    
+  4 = 5                                    |  4 = 10                                   
+  5 = 5                                    |                                           
+  6 = 2                                    |                                           
+                                           |                                           
+Instance: sky130_fd_sc_hd__inv_2:3         |Instance: sky130_fd_pr__pfet_01v8_hvt:5    
+  1 = 2                                    |  1 = 8                                    
+  2 = 5                                    |  2 = 7                                    
+  3 = 5                                    |  3 = 8                                    
+  4 = 5                                    |  4 = 10                                   
+  5 = 5                                    |                                           
+  6 = 2                                    |                                           
+                                           |                                           
+Instance: sky130_fd_sc_hd__inv_2:4         |Instance: sky130_fd_pr__pfet_01v8_hvt:6    
+  1 = 2                                    |  1 = 8                                    
+  2 = 5                                    |  2 = 8                                    
+  3 = 5                                    |  3 = 8                                    
+  4 = 5                                    |  4 = 10                                   
+  5 = 5                                    |                                           
+  6 = 2                                    |                                           
+                                           |                                           
+Instance: sky130_fd_sc_hd__nand2_1:5       |Instance: sky130_fd_pr__pfet_01v8_hvt:10   
+  1 = 1                                    |  1 = 2                                    
+  2 = 2                                    |  2 = 2                                    
+  3 = 5                                    |  3 = 7                                    
+  4 = 5                                    |  4 = 10                                   
+  5 = 5                                    |                                           
+  6 = 5                                    |                                           
+  7 = 2                                    |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_hvt:12   
+                                           |  1 = 8                                    
+                                           |  2 = 7                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_hvt:13   
+                                           |  1 = 8                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_hvt:17   
+                                           |  1 = 6                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_hvt:18   
+                                           |  1 = 7                                    
+                                           |  2 = 6                                    
+                                           |  3 = 2                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_hvt:19   
+                                           |  1 = 8                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:1        
+                                           |  1 = 7                                    
+                                           |  2 = 2                                    
+                                           |  3 = 2                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:2        
+                                           |  1 = 8                                    
+                                           |  2 = 7                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:4        
+                                           |  1 = 8                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:7        
+                                           |  1 = 6                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:9        
+                                           |  1 = 8                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:11       
+                                           |  1 = 8                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:14       
+                                           |  1 = 8                                    
+                                           |  2 = 8                                    
+                                           |  3 = 6                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:15       
+                                           |  1 = 8                                    
+                                           |  2 = 7                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:16       
+                                           |  1 = 8                                    
+                                           |  2 = 8                                    
+                                           |  3 = 8                                    
+                                           |  4 = 10                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:8        
+                                           |  1 = 2                                    
+                                           |  2 = 6                                    
+                                           |  3 = 1                                    
+                                           |  4 = 10                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes ringoscill.spice and ringoscill_flat.spice are equivalent.
+
+Final result: Netlists do not match.
