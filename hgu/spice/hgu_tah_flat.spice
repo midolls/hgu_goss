@@ -5,10 +5,10 @@ X0 vip sw_n tah_vp VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83
 X1 tah_vn sw_n vin VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
 X2 vin sw_n tah_vn VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
 X3 tah_vn sw tah_vn VDD sky130_fd_pr__pfet_01v8 ad=8.85 pd=58.2 as=0.908 ps=5.83 w=5.5 l=0.13
-X4 vin sw_n tah_vn VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=1.71 ps=11.6 w=5.5 l=0.13
-X5 tah_vn sw_n vin VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.13
-X6 tah_vn sw tah_vn VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0 ps=0 w=5.5 l=0.13
-X7 tah_vp sw vip a_984_1934# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=0.454 ps=3.08 w=2.75 l=0.13
+X4 vin sw_n tah_vn VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=1.71 ps=11.6 w=5.5 l=0.15
+X5 tah_vn sw_n vin VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
+X6 tah_vn sw tah_vn VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0 ps=0 w=5.5 l=0.15
+X7 tah_vp sw vip a_984_1934# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=0.454 ps=3.08 w=2.75 l=0.15
 X8 tah_vp sw_n tah_vp a_984_1934# sky130_fd_pr__nfet_01v8 ad=4.43 pd=30.7 as=0.454 ps=3.08 w=2.75 l=0.15
 X9 tah_vn sw vin a_984_1934# sky130_fd_pr__nfet_01v8 ad=0.454 pd=3.08 as=0.454 ps=3.08 w=2.75 l=0.15
 X10 tah_vp sw_n vip VDD sky130_fd_pr__pfet_01v8 ad=0.908 pd=5.83 as=0.908 ps=5.83 w=5.5 l=0.15
