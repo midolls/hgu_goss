@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -26,7 +26,7 @@ lab=out}
 N -20 -150 20 -150 {
 lab=out}
 N -20 -190 20 -190 {
-lab=xxx}
+lab=enable}
 C {sky130_stdcells/inv_2.sym} 220 -170 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 330 -170 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_2.sym} 440 -170 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }

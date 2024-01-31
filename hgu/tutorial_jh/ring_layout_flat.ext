@@ -1,0 +1,88 @@
+timestamp 1706708240
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8_hvt l=l w=w a1=as p1=ps a2=ad p2=pd
+port "ring_osil" 1 144 966 352 1026 m1
+port "en" 0 66 1536 184 1602 m1
+port "vdd" 2 1076 644 1278 1946 m1
+port "gnd" 5 106 1190 460 1384 m1
+node "x1.inv_1" 0 0 430 1334 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x2.inv_1" 0 0 706 1334 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x3.inv_1" 0 0 982 1238 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.inv_1" 0 0 706 1238 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x5.nand2_1" 0 0 430 1334 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x4.A" 2015 362.327 556 715 p 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18756 1176 0 0 35140 1464 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "x4.A" "x3.Y"
+node "a_263_1381#" 289 1.94609 263 1381 ndif 0 0 0 0 0 0 0 0 7020 368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x3.A" 1998 715.171 832 715 p 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18756 1176 0 0 29940 1284 9364 548 46916 1416 0 0 0 0 0 0 0 0
+equiv "x3.A" "x2.Y"
+node "x2.A" 2015 352.735 580 1381 ndif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18756 1176 0 0 35140 1464 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "x2.A" "x1.Y"
+node "x5.Y" 1973 414.22 181 1381 ndif 0 0 0 0 0 0 0 0 6760 364 10800 508 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18756 1176 0 0 37698 1454 24492 1048 0 0 0 0 0 0 0 0 0 0
+equiv "x5.Y" "x1.A"
+node "ring_osil" 1999 898.25 144 966 m1 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19152 1188 0 0 30390 1298 27884 1176 45696 1420 0 0 0 0 0 0 0 0
+equiv "ring_osil" "x4.Y"
+equiv "ring_osil" "x5.B"
+node "en" 806 223.126 66 1536 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18888 1180 0 0 3350 234 11352 476 0 0 0 0 0 0 0 0 0 0
+equiv "en" "x5.A"
+node "vdd" 17627 3268.57 1076 644 m1 0 0 0 0 593684 4604 0 0 64584 2940 62400 3024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173604 5808 415660 6152 0 0 0 0 0 0 0 0 0 0
+equiv "vdd" "x1.VPWR"
+equiv "vdd" "x1.VPB"
+equiv "vdd" "x2.VPWR"
+equiv "vdd" "x2.VPB"
+equiv "vdd" "x3.VPWR"
+equiv "vdd" "x3.VPB"
+equiv "vdd" "x4.VPWR"
+equiv "vdd" "x4.VPB"
+equiv "vdd" "x5.VPWR"
+equiv "vdd" "x5.VPB"
+substrate "x1.VNB" 0 0 154 1246 ppd 0 0 0 0 0 0 0 0 33800 1820 66240 1816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140836 3548 168900 2140 0 0 0 0 0 0 0 0 0 0
+equiv "x1.VNB" "x1.VGND"
+equiv "x1.VNB" "x2.VNB"
+equiv "x1.VNB" "x2.VGND"
+equiv "x1.VNB" "x3.VNB"
+equiv "x1.VNB" "x3.VGND"
+equiv "x1.VNB" "x4.VNB"
+equiv "x1.VNB" "x4.VGND"
+equiv "x1.VNB" "x5.VNB"
+equiv "x1.VNB" "gnd"
+equiv "x1.VNB" "x5.VGND"
+cap "x2.A" "vdd" 302.649
+cap "vdd" "x3.A" 377.209
+cap "a_263_1381#" "vdd" 0.0568749
+cap "x5.Y" "vdd" 505.457
+cap "en" "x2.A" 0.074619
+cap "en" "x3.A" 0.408424
+cap "x2.A" "x4.A" 1.64856
+cap "x4.A" "x3.A" 83.7287
+cap "ring_osil" "vdd" 279.508
+cap "en" "x5.Y" 103.423
+cap "x2.A" "x3.A" 79.2515
+cap "x5.Y" "x4.A" 2.78261
+cap "x5.Y" "x2.A" 92.5769
+cap "en" "ring_osil" 76.6
+cap "x5.Y" "x3.A" 10.6934
+cap "ring_osil" "x4.A" 72.5097
+cap "x5.Y" "a_263_1381#" 9.63928
+cap "ring_osil" "x2.A" 9.32991
+cap "ring_osil" "x3.A" 74.9881
+cap "en" "vdd" 113.938
+cap "x4.A" "vdd" 300.517
+cap "ring_osil" "a_263_1381#" 0.244036
+cap "ring_osil" "x5.Y" 154.967
+device msubckt sky130_fd_pr__pfet_01v8_hvt 832 741 833 742 l=30 w=200 "vdd" "x3.A" 60 0 "x4.A" 200 10400,504 "vdd" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt 556 741 557 742 l=30 w=200 "vdd" "x4.A" 60 0 "ring_osil" 200 10400,504 "vdd" 200 10400,504
+device msubckt sky130_fd_pr__nfet_01v8 832 1061 833 1062 l=30 w=130 "x1.VNB" "x3.A" 60 0 "x4.A" 130 6760,364 "x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 556 1061 557 1062 l=30 w=130 "x1.VNB" "x4.A" 60 0 "ring_osil" 130 6760,364 "x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 826 1381 827 1382 l=30 w=130 "x1.VNB" "x2.A" 60 0 "x1.VNB" 130 6760,364 "x3.A" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 550 1381 551 1382 l=30 w=130 "x1.VNB" "x5.Y" 60 0 "x1.VNB" 130 6760,364 "x2.A" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 317 1381 318 1382 l=30 w=130 "x1.VNB" "ring_osil" 60 0 "a_263_1381#" 130 3510,184 "x1.VNB" 130 6760,364
+device msubckt sky130_fd_pr__nfet_01v8 233 1381 234 1382 l=30 w=130 "x1.VNB" "en" 60 0 "x5.Y" 130 6760,364 "a_263_1381#" 130 3510,184
+device msubckt sky130_fd_pr__pfet_01v8_hvt 826 1631 827 1632 l=30 w=200 "vdd" "x2.A" 60 0 "vdd" 200 10400,504 "x3.A" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt 550 1631 551 1632 l=30 w=200 "vdd" "x5.Y" 60 0 "vdd" 200 10400,504 "x2.A" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt 317 1631 318 1632 l=30 w=200 "vdd" "ring_osil" 60 0 "x5.Y" 200 5400,254 "vdd" 200 10400,504
+device msubckt sky130_fd_pr__pfet_01v8_hvt 233 1631 234 1632 l=30 w=200 "vdd" "en" 60 0 "vdd" 200 10400,504 "x5.Y" 200 5400,254

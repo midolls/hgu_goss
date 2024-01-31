@@ -1,0 +1,48 @@
+* NGSPICE file created from ring_layout_flat.ext - technology: sky130A
+
+.subckt ring_layout_flat en ring_osil gnd vdd
+X0 vdd x4.A ring_osil vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X1 vdd ring_osil x5.Y vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X2 x2.A x5.Y vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X3 a_263_1381# en x5.Y gnd sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X4 x3.A x2.A gnd gnd sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X5 gnd ring_osil a_263_1381# gnd sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X6 gnd x3.A x4.A gnd sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X7 x2.A x5.Y gnd gnd sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X8 gnd x4.A ring_osil gnd sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65 l=0.15
+X9 x5.Y en vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X10 vdd x3.A x4.A vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+X11 x3.A x2.A vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
+C0 ring_osil a_263_1381# 2.44e-19
+C1 x3.A x5.Y 0.0107f
+C2 ring_osil vdd 0.28f
+C3 vdd en 0.114f
+C4 x2.A x5.Y 0.0926f
+C5 ring_osil en 0.0766f
+C6 x4.A vdd 0.301f
+C7 ring_osil x4.A 0.0725f
+C8 x3.A x2.A 0.0793f
+C9 a_263_1381# x5.Y 0.00964f
+C10 vdd x5.Y 0.505f
+C11 ring_osil x5.Y 0.155f
+C12 en x5.Y 0.103f
+C13 x3.A vdd 0.377f
+C14 x4.A x5.Y 0.00278f
+C15 ring_osil x3.A 0.075f
+C16 vdd x2.A 0.303f
+C17 x3.A en 4.08e-19
+C18 ring_osil x2.A 0.00933f
+C19 en x2.A 7.46e-20
+C20 x4.A x3.A 0.0837f
+C21 a_263_1381# vdd 5.69e-20
+C22 x4.A x2.A 0.00165f
+C23 ring_osil gnd 0.898f
+C24 en gnd 0.223f
+C25 vdd gnd 3.27f
+C26 x4.A gnd 0.362f
+C27 a_263_1381# gnd 0.00195f
+C28 x3.A gnd 0.715f
+C29 x2.A gnd 0.353f
+C30 x5.Y gnd 0.414f
+.ends
+

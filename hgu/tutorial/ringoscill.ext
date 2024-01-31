@@ -5,10 +5,10 @@ style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
 use sky130_fd_sc_hd__nand2_1 x5 1 0 -530 0 1 1410
-use sky130_fd_sc_hd__inv_2 x4 1 0 650 0 1 1410
-use sky130_fd_sc_hd__inv_2 x3 1 0 374 0 1 1410
-use sky130_fd_sc_hd__inv_2 x2 1 0 98 0 1 1410
 use sky130_fd_sc_hd__inv_2 x1 1 0 -178 0 1 1410
+use sky130_fd_sc_hd__inv_2 x2 1 0 98 0 1 1410
+use sky130_fd_sc_hd__inv_2 x3 1 0 374 0 1 1410
+use sky130_fd_sc_hd__inv_2 x4 1 0 650 0 1 1410
 port "enable" 4 -334 1582 -270 1644 m1
 node "li_508_1626#" 59 101.446 508 1626 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10560 536 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_238_1626#" 59 101.757 238 1626 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10560 536 0 0 0 0 0 0 0 0 0 0 0 0
@@ -17,107 +17,107 @@ node "li_n300_1538#" 78 120.762 -300 1538 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "enable" 13 59.3435 -334 1582 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2304 192 6912 344 0 0 0 0 0 0 0 0 0 0
 node "li_n520_1622#" 96 837.499 -520 1622 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10232 616 80552 3600 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "li_n520_1622#" "li_n40_1626#" 15.4671
-cap "li_n40_1626#" "li_238_1626#" 14.2326
-cap "li_n520_1622#" "li_n300_1538#" 11.3991
-cap "li_n520_1622#" "li_508_1626#" 35.3432
-cap "li_238_1626#" "li_508_1626#" 15.6923
-cap "li_n520_1622#" "enable" 55.3648
-cap "enable" "li_238_1626#" 0.466564
-cap "li_n300_1538#" "li_n40_1626#" 11.7692
 cap "enable" "li_n40_1626#" 1.57872
-cap "enable" "li_n300_1538#" 40.6318
+cap "li_n520_1622#" "li_n40_1626#" 15.4671
 cap "enable" "li_508_1626#" 0.224313
+cap "enable" "li_n520_1622#" 55.3648
+cap "li_508_1626#" "li_n520_1622#" 35.3432
+cap "li_n40_1626#" "li_238_1626#" 14.2326
+cap "li_n300_1538#" "li_n40_1626#" 11.7692
+cap "enable" "li_238_1626#" 0.466564
+cap "li_n300_1538#" "enable" 40.6318
+cap "li_508_1626#" "li_238_1626#" 15.6923
 cap "li_n520_1622#" "li_238_1626#" 15.8668
-cap "x5/A" "x3/A" 0.544861
-cap "x4/VPWR" "x5/B" 436.222
-cap "x5/Y" "x2/A" 29.7389
-cap "x5/VPWR" "x5/B" 131.854
-cap "x5/VGND" "x5/Y" 3.00659
-cap "x4/VGND" "x5/Y" 34.2977
-cap "x4/A" "x3/A" 24.8221
-cap "x5/B" "x5/A" 2.24244
-cap "x5/VPB" "x5/Y" 17.4641
-cap "x5/VPWR" "x4/VPWR" 82.3423
-cap "x5/Y" "x3/A" 0.504043
+cap "li_n300_1538#" "li_n520_1622#" 11.3991
+cap "x1/VPWR" "x5/B" 436.222
+cap "x1/VPWR" "x1/VGND" -140.71
 cap "x5/a_113_47#" "x5/Y" 1.77636e-15
-cap "x4/A" "x5/B" 36.6169
-cap "x4/VPWR" "x5/A" 0.323929
-cap "x5/VPWR" "x5/A" 1.95337
-cap "x4/VGND" "x2/A" 27.1344
-cap "x5/B" "x5/Y" 59.1572
-cap "x4/VPWR" "x4/A" 15.8692
-cap "x5/VPB" "x2/A" 10.8158
-cap "x5/VGND" "x4/VGND" 46.0745
-cap "x4/VGND" "x5/VPB" -15.3435
-cap "x5/VGND" "x5/VPB" -3.34473
-cap "x4/A" "x5/A" 0.269462
-cap "x2/A" "x3/A" 26.2818
-cap "x4/VPWR" "x5/Y" -4.14445
-cap "x5/a_113_47#" "x4/VGND" 0.0621919
-cap "x5/VPWR" "x5/Y" -4.61618
-cap "x4/VGND" "x3/A" 27.1344
-cap "x5/B" "x2/A" 46.6003
-cap "x5/A" "x5/Y" 36.7538
-cap "x5/VPB" "x3/A" 10.0411
-cap "x4/VGND" "x5/B" 144.778
-cap "x5/VGND" "x5/B" 41.6209
-cap "x4/VPWR" "x2/A" 14.7263
-cap "x5/VPB" "x5/B" 42.231
-cap "x5/VPWR" "x2/A" 0.0304189
-cap "x4/VPWR" "x4/VGND" -140.71
-cap "x5/a_113_47#" "x5/B" 0.295289
-cap "x5/VPWR" "x5/VGND" -30.5194
-cap "x4/VPWR" "x5/VPB" -20.397
-cap "x5/A" "x2/A" 1.96514
-cap "x5/VPWR" "x5/VPB" 5.778
-cap "x5/B" "x3/A" 46.78
-cap "x4/VGND" "x5/A" 1.1281
-cap "x5/VGND" "x5/A" 15.2106
-cap "x4/A" "x2/A" 0.504043
-cap "x4/VPWR" "x3/A" 14.7719
 cap "x5/VPB" "x5/A" 5.45043
-cap "x5/VPWR" "x5/a_113_47#" -0.177826
-cap "x4/VGND" "x4/A" 27.7466
+cap "x5/B" "x2/Y" 46.78
+cap "x1/VGND" "x2/Y" 27.1344
+cap "x3/Y" "x5/VPB" 8.63639
+cap "x1/VPWR" "x5/VPWR" 82.3423
+cap "x5/A" "x5/Y" 36.7538
 cap "x5/a_113_47#" "x5/A" 0.0150583
-cap "x4/A" "x5/VPB" 8.63639
-cap "x5/B" "x5/Y" 0.322709
-cap "x4/VGND" "x5/VPB" -3.40185
-cap "x4/VGND" "x4/VPWR" -20.5995
-cap "x5/VPWR" "x5/B" 0.0546143
-cap "x4/VGND" "x4/A" -1.20898
-cap "x4/VGND" "x5/B" 48.2942
-cap "x5/A" "x5/B" 0.0384503
-cap "x4/VPWR" "x5/VPB" -1.31421
-cap "x4/A" "x4/VPWR" -1.63746
-cap "x2/A" "x5/B" 0.638095
-cap "x5/B" "x3/A" 1.55257
+cap "x5/VPB" "x5/B" 42.231
+cap "x1/VGND" "x5/VPB" -15.3435
+cap "x1/VPWR" "x1/Y" 14.7263
+cap "x5/VGND" "x5/VPB" -3.34473
+cap "x1/Y" "x2/Y" 26.2818
+cap "x1/VGND" "x5/Y" 34.2977
+cap "x5/B" "x5/Y" 59.1572
+cap "x3/Y" "x5/A" 0.269462
+cap "x5/a_113_47#" "x5/B" 0.295289
+cap "x1/VGND" "x5/a_113_47#" 0.0621919
+cap "x5/VPWR" "x5/VPB" 5.778
+cap "x5/VGND" "x5/Y" 3.00659
+cap "x1/VPWR" "x2/Y" 14.7719
+cap "x5/VPWR" "x5/Y" -4.61618
+cap "x5/VPB" "x1/Y" 10.8158
+cap "x5/VPWR" "x5/a_113_47#" -0.177826
+cap "x1/VGND" "x5/A" 1.1281
+cap "x5/B" "x5/A" 2.24244
+cap "x3/Y" "x5/B" 36.6169
+cap "x1/VGND" "x3/Y" 27.7466
+cap "x5/VGND" "x5/A" 15.2106
+cap "x5/Y" "x1/Y" 29.7389
+cap "x1/VPWR" "x5/VPB" -20.397
+cap "x5/VPWR" "x5/A" 1.95337
+cap "x1/VGND" "x5/B" 144.778
+cap "x5/VPB" "x2/Y" 10.0411
+cap "x5/A" "x1/Y" 1.96514
+cap "x5/VGND" "x5/B" 41.6209
+cap "x1/VPWR" "x5/Y" -4.14445
+cap "x1/VGND" "x5/VGND" 46.0745
+cap "x3/Y" "x1/Y" 0.504043
+cap "x5/Y" "x2/Y" 0.504043
+cap "x5/VPWR" "x5/B" 131.854
+cap "x5/VPWR" "x5/VGND" -30.5194
+cap "x5/B" "x1/Y" 46.6003
+cap "x1/VPWR" "x5/A" 0.323929
+cap "x1/VGND" "x1/Y" 27.1344
+cap "x1/VPWR" "x3/Y" 15.8692
+cap "x5/A" "x2/Y" 0.544861
+cap "x5/VPB" "x5/Y" 17.4641
+cap "x3/Y" "x2/Y" 24.8221
+cap "x5/VPWR" "x1/Y" 0.0304189
+cap "x5/B" "x1/Y" 0.638095
+cap "x5/B" "x2/Y" 1.55257
 cap "x5/B" "x5/VPB" 11.2913
-cap "x5/B" "x4/VPWR" 75.6579
-cap "x4/A" "x5/B" 17.3475
-merge "x1/VNB" "x2/VNB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x2/VNB" "x3/VNB"
-merge "x3/VNB" "x4/VNB"
-merge "x4/VNB" "x5/VNB"
+cap "x3/Y" "x1/VPWR" -1.63746
+cap "x5/B" "x1/VPWR" 75.6579
+cap "x5/B" "x5/VPWR" 0.0546143
+cap "x5/VPB" "x1/VGND" -3.40185
+cap "x1/VGND" "x1/VPWR" -20.5995
+cap "x5/B" "x3/Y" 17.3475
+cap "x1/VGND" "x3/Y" -1.20898
+cap "x5/B" "x5/Y" 0.322709
+cap "x5/B" "x1/VGND" 48.2942
+cap "x5/VPB" "x1/VPWR" -1.31421
+cap "x5/B" "x5/A" 0.0384503
+merge "x4/VNB" "x3/VNB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x3/VNB" "x2/VNB"
+merge "x2/VNB" "x1/VNB"
+merge "x1/VNB" "x5/VNB"
 merge "x5/VNB" "VSUBS"
-merge "x1/Y" "x2/A" -171.143 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4512 -380 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x2/A" "li_n40_1626#"
+merge "x2/A" "x1/Y" -171.143 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4512 -380 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1/Y" "li_n40_1626#"
 merge "x4/Y" "x5/B" -731.635 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5108 -404 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x5/B" "li_n520_1622#"
 merge "x1/A" "x5/Y" -161.326 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3360 -332 0 0 0 0 0 0 0 0 0 0 0 0
 merge "x5/Y" "li_n300_1538#"
-merge "x1/VPWR" "x2/VPWR" -468.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -204 0 -576 0 0 0 0 0 0 0 0 0 0
-merge "x2/VPWR" "x3/VPWR"
-merge "x3/VPWR" "x4/VPWR"
-merge "x1/VPB" "x5/VPB" -219.564 0 0 0 0 -73188 -3024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x5/VPB" "x2/VPB"
-merge "x2/VPB" "x3/VPB"
-merge "x3/VPB" "x4/VPB"
-merge "x1/VGND" "x2/VGND" -393.106 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -204 0 -576 0 0 0 0 0 0 0 0 0 0
-merge "x2/VGND" "x3/VGND"
-merge "x3/VGND" "x4/VGND"
-merge "x3/Y" "x4/A" -149.589 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4512 -380 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x4/A" "li_508_1626#"
+merge "x4/VPWR" "x3/VPWR" -468.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -204 0 -576 0 0 0 0 0 0 0 0 0 0
+merge "x3/VPWR" "x2/VPWR"
+merge "x2/VPWR" "x1/VPWR"
+merge "x4/VPB" "x3/VPB" -219.564 0 0 0 0 -73188 -3024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x3/VPB" "x2/VPB"
+merge "x2/VPB" "x1/VPB"
+merge "x1/VPB" "x5/VPB"
+merge "x4/A" "x3/Y" -149.589 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4512 -380 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x3/Y" "li_508_1626#"
+merge "x4/VGND" "x3/VGND" -393.106 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -204 0 -576 0 0 0 0 0 0 0 0 0 0
+merge "x3/VGND" "x2/VGND"
+merge "x2/VGND" "x1/VGND"
 merge "x5/A" "enable" -75.3904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2256 -190 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x2/Y" "x3/A" -169.789 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4512 -380 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x3/A" "li_238_1626#"
+merge "x3/A" "x2/Y" -169.789 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4512 -380 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x2/Y" "li_238_1626#"

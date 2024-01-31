@@ -1,0 +1,10 @@
+* SPICE3 file created from ring_layout.ext - technology: sky130A
+
+*.subckt ring_layout en ring_osil vdd
+Xx1 x5/Y x5/VNB x5/VNB vdd vdd x2/A sky130_fd_sc_hd__inv_1
+Xx2 x2/A x5/VNB x5/VNB vdd vdd x3/A sky130_fd_sc_hd__inv_1
+Xx3 x3/A x5/VNB x5/VNB vdd vdd x4/A sky130_fd_sc_hd__inv_1
+Xx4 x4/A x5/VNB x5/VNB vdd vdd ring_osil sky130_fd_sc_hd__inv_1
+Xx5 en ring_osil x5/VNB x5/VNB vdd vdd x5/Y sky130_fd_sc_hd__nand2_1
+*C0 vdd 0 3.12f
+.ends

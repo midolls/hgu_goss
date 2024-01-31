@@ -1,0 +1,50 @@
+| units: 500000 tech: sky130A format: MIT
+x x4.A ring_osil vdd vdd s=10400,504 d=10400,504 l=30 w=200 x=556 y=741 sky130_fd_pr__pfet_01v8_hvt
+x ring_osil x5.Y vdd vdd s=5400,254 d=10400,504 l=30 w=200 x=317 y=1631 sky130_fd_pr__pfet_01v8_hvt
+x x5.Y vdd x2.A vdd s=10400,504 d=10400,504 l=30 w=200 x=550 y=1631 sky130_fd_pr__pfet_01v8_hvt
+x en x5.Y a_263_1381# gnd s=6760,364 d=3510,184 l=30 w=130 x=233 y=1381 sky130_fd_pr__nfet_01v8
+x x2.A gnd x3.A gnd s=6760,364 d=6760,364 l=30 w=130 x=826 y=1381 sky130_fd_pr__nfet_01v8
+x ring_osil a_263_1381# gnd gnd s=3510,184 d=6760,364 l=30 w=130 x=317 y=1381 sky130_fd_pr__nfet_01v8
+x x3.A x4.A gnd gnd s=6760,364 d=6760,364 l=30 w=130 x=832 y=1061 sky130_fd_pr__nfet_01v8
+x x5.Y gnd x2.A gnd s=6760,364 d=6760,364 l=30 w=130 x=550 y=1381 sky130_fd_pr__nfet_01v8
+x x4.A ring_osil gnd gnd s=6760,364 d=6760,364 l=30 w=130 x=556 y=1061 sky130_fd_pr__nfet_01v8
+x en vdd x5.Y vdd s=10400,504 d=5400,254 l=30 w=200 x=233 y=1631 sky130_fd_pr__pfet_01v8_hvt
+x x3.A x4.A vdd vdd s=10400,504 d=10400,504 l=30 w=200 x=832 y=741 sky130_fd_pr__pfet_01v8_hvt
+x x2.A vdd x3.A vdd s=10400,504 d=10400,504 l=30 w=200 x=826 y=1631 sky130_fd_pr__pfet_01v8_hvt
+R ring_osil 1999
+= ring_osil x4.Y
+= ring_osil x5.B
+R en 806
+= en x5.A
+C vdd0 3.3
+R vdd 17627
+= vdd x1.VPWR
+= vdd x1.VPB
+= vdd x2.VPWR
+= vdd x2.VPB
+= vdd x3.VPWR
+= vdd x3.VPB
+= vdd x4.VPWR
+= vdd x4.VPB
+= vdd x5.VPWR
+= vdd x5.VPB
+R x4.A 2015
+= x4.A x3.Y
+R a_263_1381# 289
+R x3.A 1998
+= x3.A x2.Y
+R x2.A 2015
+= x2.A x1.Y
+R x5.Y 1973
+= x5.Y x1.A
+R gnd 4994
+= gnd x1.VGND
+= gnd x2.VNB
+= gnd x2.VGND
+= gnd x3.VNB
+= gnd x3.VGND
+= gnd x4.VNB
+= gnd x4.VGND
+= gnd x5.VNB
+= gnd x1.VNB
+= gnd x5.VGND

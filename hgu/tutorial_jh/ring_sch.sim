@@ -1,0 +1,66 @@
+| units: 500000 tech: sky130A format: MIT
+x x5/Y x5/VNB x2/A x5/VNB s=6760,364 d=6760,364 l=30 w=130 x=550 y=1381 sky130_fd_pr__nfet_01v8
+x x5/Y vdd x2/A vdd s=10400,504 d=10400,504 l=30 w=200 x=550 y=1631 sky130_fd_pr__pfet_01v8_hvt
+x x2/A x5/VNB x3/A x5/VNB s=6760,364 d=6760,364 l=30 w=130 x=826 y=1381 sky130_fd_pr__nfet_01v8
+x x2/A vdd x3/A vdd s=10400,504 d=10400,504 l=30 w=200 x=826 y=1631 sky130_fd_pr__pfet_01v8_hvt
+x x3/A x5/VNB x4/A x5/VNB s=6760,364 d=6760,364 l=30 w=130 x=861 y=1190 sky130_fd_pr__nfet_01v8
+x x3/A vdd x4/A vdd s=10400,504 d=10400,504 l=30 w=200 x=861 y=940 sky130_fd_pr__pfet_01v8_hvt
+x x4/A x5/VNB ring_osil x5/VNB s=6760,364 d=6760,364 l=30 w=130 x=585 y=1190 sky130_fd_pr__nfet_01v8
+x x4/A vdd ring_osil vdd s=10400,504 d=10400,504 l=30 w=200 x=585 y=940 sky130_fd_pr__pfet_01v8_hvt
+x en x5/Y vdd vdd s=5400,254 d=10400,504 l=30 w=200 x=262 y=1631 sky130_fd_pr__pfet_01v8_hvt
+x en x5/a_113_47# x5/Y x5/VNB s=3510,184 d=6760,364 l=30 w=130 x=262 y=1381 sky130_fd_pr__nfet_01v8
+x ring_osil x5/VNB x5/a_113_47# x5/VNB s=6760,364 d=3510,184 l=30 w=130 x=346 y=1381 sky130_fd_pr__nfet_01v8
+x ring_osil vdd x5/Y vdd s=10400,504 d=5400,254 l=30 w=200 x=346 y=1631 sky130_fd_pr__pfet_01v8_hvt
+R x5/VNB 4994
+= x5/VNB x1/VNB
+= x5/VNB x1/VGND
+= x5/VNB x2/VNB
+= x5/VNB x2/VGND
+= x5/VNB x3/VNB
+= x5/VNB x3/VGND
+= x5/VNB m1_832_1272#
+= x5/VNB m1_740_1274#
+= x5/VNB x4/VNB
+= x5/VNB x4/VGND
+= x5/VNB m1_644_1276#
+= x5/VNB m1_554_1274#
+= x5/VNB m1_458_1272#
+= x5/VNB x5/VGND
+= x5/VNB a_154_1246#
+= x5/VNB m1_106_1190#
+R x5/Y 1973
+= x5/Y x1/A
+= x5/Y li_276_1696#
+R en 807
+= en x5/A
+R ring_osil 2000
+= ring_osil x4/Y
+= ring_osil x5/B
+R x5/a_113_47# 289
+R x4/A 2016
+= x4/A x3/Y
+= x4/A li_598_978#
+C vdd0 3.1
+R vdd 17631
+= vdd x1/VPWR
+= vdd x1/VPB
+= vdd x2/VPWR
+= vdd x2/VPB
+= vdd x5/VPWR
+= vdd x5/VPB
+= vdd w_116_1874#
+= vdd x3/VPWR
+= vdd x4/VPB
+= vdd m1_734_644#
+= vdd x3/VPB
+= vdd x4/VPWR
+= vdd m1_644_646#
+= vdd m1_552_646#
+= vdd m1_460_646#
+= vdd w_392_606#
+R x3/A 1998
+= x3/A x2/Y
+= x3/A li_872_980#
+R x2/A 2016
+= x2/A x1/Y
+= x2/A li_608_1552#
