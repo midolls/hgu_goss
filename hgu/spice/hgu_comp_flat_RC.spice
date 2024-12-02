@@ -1,6 +1,6 @@
 * NGSPICE file created from hgu_comp_flat.ext - technology: sky130A
 
-.subckt hgu_comp ready cdac_vn comp_outp comp_outn cdac_vp clk VDD VSS
+.subckt hgu_comp ready cdac_vn comp_outp comp_outn cdac_vp clk VDD VSS P Q a_1566_n378# a_1248_n288#
 X0 ready.t0 a_564_n1721# VDD.t38 VDD.t37 sky130_fd_pr__pfet_01v8 ad=0.244 pd=2.26 as=0.244 ps=2.26 w=0.84 l=0.15
 X1 a_564_n1721# a_476_n1721# a_564_n1266# VSS.t62 sky130_fd_pr__nfet_01v8 ad=0.244 pd=2.26 as=0.122 ps=1.13 w=0.84 l=0.15
 X2 comp_outn.t2 a_1950_n1721# VDD.t18 VDD.t17 sky130_fd_pr__pfet_01v8 ad=0.26 pd=2.3 as=0.139 ps=1.17 w=0.84 l=0.15
